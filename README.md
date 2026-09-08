@@ -4,9 +4,14 @@ Financial Intelligence Desk — 手机端优先的个人财经资讯与学习网
 
 直接通过浏览器使用，可添加到手机主屏幕，无需下载应用商店 App。
 
-## 当前状态
+## 本地运行
 
-项目初始化阶段：已整理产品方案与独立目录结构，业务界面尚未实现。
+```bash
+npm install
+npm run dev
+```
+
+生产检查使用 `npm test -- --run`、`npm run typecheck` 和 `npm run build`。部署到 HTTPS 后，可通过手机浏览器菜单添加到主屏幕。
 
 ## MVP
 

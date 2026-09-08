@@ -1,0 +1,27 @@
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { MemoryRouter } from 'react-router-dom';
+import { describe, expect, it } from 'vitest';
+import { App } from '../../src/app/App';
+
+describe('Today page', () => {
+  it('shows dated demo market data and news navigation', () => {
+    render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
+
+    expect(screen.getAllByText('演示').length).toBeGreaterThan(0);
+    expect(screen.getByText(/数据截至 2026-09-08/)).toBeInTheDocument();
+    expect(screen.getByText('沪深300')).toBeInTheDocument();
+    expect(screen.getByText('恒生指数')).toBeInTheDocument();
+    expect(screen.getByText('标普500')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /芯片公司业绩增长/ })).toHaveAttribute('href', '/news/nvidia-results');
+  });
+
+  it('filters stories from the search control', async () => {
+    const user = userEvent.setup();
+    render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
+
+    await user.type(screen.getByRole('searchbox', { name: '搜索资讯' }), '物价');
+    expect(screen.getByText(/物价数据温和/)).toBeInTheDocument();
+    expect(screen.queryByText(/芯片公司业绩增长/)).not.toBeInTheDocument();
+  });
+});
