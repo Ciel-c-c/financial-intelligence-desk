@@ -13,6 +13,10 @@ npm run dev
 
 生产检查使用 `npm test -- --run`、`npm run typecheck` 和 `npm run build`。部署到 HTTPS 后，可通过手机浏览器菜单添加到主屏幕。
 
+## 发布
+
+推送到 `main` 后，GitHub Actions 会自动构建并发布到 GitHub Pages。首次发布前，需要在仓库 **Settings → Pages → Build and deployment** 中把 Source 设为 **GitHub Actions**。
+
 ## MVP
 
 - 全球财经新闻与 A股、港股、美股市场概览。
