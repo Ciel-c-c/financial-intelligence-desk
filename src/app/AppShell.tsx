@@ -5,7 +5,7 @@ export function AppShell() {
     <div className="app-shell">
       <header className="topbar">
         <NavLink to="/" className="brand"><span className="brand-mark">融</span><span>金融资讯台</span></NavLink>
-        <span className="demo-badge">演示</span>
+        <span className="demo-badge">每日更新</span>
       </header>
       <Outlet />
       <nav className="bottom-nav" aria-label="主要导航">
