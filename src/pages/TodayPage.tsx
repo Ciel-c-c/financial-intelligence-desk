@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react';
 import { MarketCard } from '../components/MarketCard';
 import { NewsCard } from '../components/NewsCard';
-import { dataTimestamp, markets, news } from '../data/demoData';
+import { SectorCard } from '../components/SectorCard';
+import { aShareIndices, dataTimestamp, news, sectors } from '../data/demoData';
 import { filterNews, type RegionFilter } from '../data/selectors';
 
 const regions: RegionFilter[] = ['全部', 'A股', '港股', '美股', '全球'];
@@ -16,16 +17,27 @@ export function TodayPage() {
 
   return (
     <main className="page today-page">
-      <section className="hero">
-        <p className="eyebrow">今天需要看懂什么</p>
-        <h1>三分钟，理清市场主线</h1>
-        <p>把今日股市与经济新闻翻译成小白能理解的因果关系。内容仅供学习，不构成投资建议。</p>
-        <small>数据截至 {dataTimestamp}</small>
+      <section className="market-hero">
+        <div className="market-hero-head"><div><p className="eyebrow">今日行情 · A股</p><h1>A股市场全景</h1></div><span className="market-status">已收盘</span></div>
+        <div className="market-summary"><strong>涨跌分化</strong><p>大盘股相对稳健，能源与高股息板块走强，成长板块承压。</p></div>
+        <small>数据截至 {dataTimestamp} · 当前为界面演示快照</small>
       </section>
 
       <section aria-labelledby="market-title">
-        <div className="section-heading"><div><p className="eyebrow">市场温度</p><h2 id="market-title">A · 港 · 美概览</h2></div><span>演示</span></div>
-        <div className="market-grid">{markets.map((item) => <MarketCard key={item.id} item={item} />)}</div>
+        <div className="section-heading"><div><p className="eyebrow">主要指数</p><h2 id="market-title">今天涨了还是跌了</h2></div><span>演示</span></div>
+        <div className="market-grid">{aShareIndices.map((item) => <MarketCard key={item.id} item={item} />)}</div>
+      </section>
+
+      <section aria-labelledby="sector-title">
+        <div className="section-heading"><div><p className="eyebrow">领涨与领跌</p><h2 id="sector-title">行业板块涨跌</h2></div><span>{sectors.length} 个板块</span></div>
+        <p className="section-intro">先看资金今天去了哪里，再点开“为什么这样走”理解背后的经济逻辑。</p>
+        <div className="sector-list">{sectors.map((item) => <SectorCard key={item.id} item={item} />)}</div>
+      </section>
+
+      <section className="impact-card" aria-labelledby="impact-title">
+        <p className="eyebrow">政治经济 → 股市</p><h2 id="impact-title">今天的影响链</h2>
+        <div className="impact-chain"><span>中东冲突升温</span><i>→</i><span>油价上涨</span><i>→</i><span>通胀担忧</span><i>→</i><span>降息更难</span><i>→</i><span>成长股承压</span></div>
+        <p>这是一条可能路径，不是确定预测。冲突缓和、供应增加或政策变化都可能改变结果。</p>
       </section>
 
       <section aria-labelledby="news-title">

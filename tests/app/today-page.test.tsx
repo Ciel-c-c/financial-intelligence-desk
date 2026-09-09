@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest';
 import { App } from '../../src/app/App';
 
 describe('Today page', () => {
-  it('shows dated demo market data and news navigation', () => {
+  it('opens with an A-share market dashboard and sector explanations', () => {
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
 
     expect(screen.getAllByText('演示').length).toBeGreaterThan(0);
@@ -13,9 +13,10 @@ describe('Today page', () => {
     expect(screen.getByRole('heading', { name: '今日要闻' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '股市新闻' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '经济新闻' })).toBeInTheDocument();
-    expect(screen.getByText('沪深300')).toBeInTheDocument();
-    expect(screen.getByText('恒生指数')).toBeInTheDocument();
-    expect(screen.getByText('标普500')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'A股市场全景' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '行业板块涨跌' })).toBeInTheDocument();
+    expect(screen.getAllByText('为什么这样走').length).toBeGreaterThan(0);
+    expect(screen.getByText('半导体')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /芯片公司业绩增长/ })).toHaveAttribute('href', '/news/nvidia-results');
   });
 

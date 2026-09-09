@@ -14,6 +14,16 @@ export interface MarketSnapshot {
   mode: ContentMode;
 }
 
+export interface SectorSnapshot {
+  id: string;
+  name: string;
+  changePercent: number;
+  direction: '领涨' | '上涨' | '下跌' | '领跌';
+  reason: string;
+  beginnerNote: string;
+  relatedNewsId?: string;
+}
+
 export interface CausalStep {
   title: string;
   explanation: string;

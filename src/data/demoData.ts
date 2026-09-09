@@ -1,4 +1,4 @@
-import type { Brief, KnowledgeCardData, MarketSnapshot, NewsItem } from './types';
+import type { Brief, KnowledgeCardData, MarketSnapshot, NewsItem, SectorSnapshot } from './types';
 
 export const dataTimestamp = '2026-09-09 00:30（北京时间）';
 
@@ -6,6 +6,24 @@ export const markets: MarketSnapshot[] = [
   { id: 'csi300', market: 'A股', indexName: '沪深300', value: '4,126.08', changePercent: 0.62, status: '已收盘', timestamp: dataTimestamp, source: '演示数据', delayed: true, mode: '演示' },
   { id: 'hsi', market: '港股', indexName: '恒生指数', value: '25,418.30', changePercent: -0.31, status: '已收盘', timestamp: dataTimestamp, source: '演示数据', delayed: true, mode: '演示' },
   { id: 'sp500', market: '美股', indexName: '标普500', value: '6,482.10', changePercent: 0.84, status: '已收盘', timestamp: dataTimestamp, source: '演示数据', delayed: true, mode: '演示' },
+];
+
+export const aShareIndices: MarketSnapshot[] = [
+  { id: 'shcomp', market: 'A股', indexName: '上证指数', value: '3,812.45', changePercent: 0.28, status: '已收盘', timestamp: dataTimestamp, source: '演示快照', delayed: true, mode: '演示' },
+  { id: 'szcomp', market: 'A股', indexName: '深证成指', value: '12,186.30', changePercent: -0.16, status: '已收盘', timestamp: dataTimestamp, source: '演示快照', delayed: true, mode: '演示' },
+  { id: 'chinext', market: 'A股', indexName: '创业板指', value: '2,648.72', changePercent: -0.54, status: '已收盘', timestamp: dataTimestamp, source: '演示快照', delayed: true, mode: '演示' },
+  { id: 'csi300-focus', market: 'A股', indexName: '沪深300', value: '4,126.08', changePercent: 0.62, status: '已收盘', timestamp: dataTimestamp, source: '演示快照', delayed: true, mode: '演示' },
+];
+
+export const sectors: SectorSnapshot[] = [
+  { id: 'oil-gas', name: '石油石化', changePercent: 3.18, direction: '领涨', reason: '国际油价接近100美元，市场预期上游企业销售价格和利润可能改善。', beginnerNote: '油价上涨通常先利好采油企业，但会增加航空、物流和制造业成本。', relatedNewsId: 'wall-street-oil-pressure' },
+  { id: 'coal', name: '煤炭', changePercent: 2.36, direction: '上涨', reason: '能源价格走高带动替代能源关注度，资金流向高股息资源板块。', beginnerNote: '高股息是公司把较多利润分给股东，但股息不代表股价不会下跌。' },
+  { id: 'auto', name: '汽车整车', changePercent: 1.42, direction: '上涨', reason: '出口数据较强，汽车是增长较快的出口品类之一。', beginnerNote: '出口增长可能增加车企收入，还要观察价格战和利润率。', relatedNewsId: 'china-exports-august' },
+  { id: 'banks', name: '银行', changePercent: 0.76, direction: '上涨', reason: '市场风险偏好偏弱时，资金倾向估值较低、分红相对稳定的板块。', beginnerNote: '银行股常被视为防守板块，但仍受利率、坏账和经济周期影响。' },
+  { id: 'consumer', name: '食品饮料', changePercent: -0.38, direction: '下跌', reason: '资金转向能源板块，消费修复仍需更多收入和需求数据确认。', beginnerNote: '消费股主要看居民愿不愿意花钱，以及公司能否提价。' },
+  { id: 'semiconductor', name: '半导体', changePercent: -1.12, direction: '下跌', reason: '利率预期和风险偏好压制高估值成长板块，前期涨幅也带来获利了结。', beginnerNote: '好行业不等于每天上涨；估值过高时，小利空也可能造成较大波动。', relatedNewsId: 'asia-oil-bonds' },
+  { id: 'software', name: '软件开发', changePercent: -1.67, direction: '下跌', reason: '成长股对资金成本更敏感，市场暂时偏好盈利稳定的价值板块。', beginnerNote: '利率越高，遥远未来的利润折算到今天通常越不值钱。' },
+  { id: 'solar', name: '光伏设备', changePercent: -2.21, direction: '领跌', reason: '市场继续担心供给过剩、产品降价和企业盈利压力。', beginnerNote: '销量增长若伴随价格下跌，公司收入和利润未必同步增长。' },
 ];
 
 export const news: NewsItem[] = [
