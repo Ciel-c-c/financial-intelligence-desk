@@ -22,8 +22,8 @@ export function TodayPage() {
     <main className="page today-page">
       <section className="market-hero">
         <div className="market-hero-head"><div><p className="eyebrow">全球市场仪表盘</p><h1>{marketTab === 'A股' ? 'A股市场全景' : `${marketTab}概览`}</h1></div><span className="market-status">今日</span></div>
-        <div className="market-summary"><strong>涨跌分化</strong><p>大盘股相对稳健，能源与高股息板块走强，成长板块承压。</p></div>
-        <small>数据截至 {dataTimestamp} · 当前为界面演示快照</small>
+        <div className="market-summary"><strong>指数小涨，个股偏弱</strong><p>上涨 1,778 只、下跌 3,580 只；煤炭与航运领涨，游戏与传媒领跌。</p></div>
+        <small>数据截至 {dataTimestamp} · 收盘数据为延迟快照</small>
       </section>
 
       <section aria-labelledby="market-title">
