@@ -2,14 +2,17 @@ import { useMemo, useState } from 'react';
 import { MarketCard } from '../components/MarketCard';
 import { NewsCard } from '../components/NewsCard';
 import { SectorCard } from '../components/SectorCard';
-import { aShareIndices, dataTimestamp, news, sectors } from '../data/demoData';
+import { PoliticalImpactCard } from '../components/PoliticalImpactCard';
+import { dataTimestamp, marketGroups, news, politicalImpacts, sectors } from '../data/demoData';
 import { filterNews, type RegionFilter } from '../data/selectors';
 
 const regions: RegionFilter[] = ['全部', 'A股', '港股', '美股', '全球'];
+const marketTabs = ['A股', '港股', '美股', '全球资产'] as const;
 
 export function TodayPage() {
   const [query, setQuery] = useState('');
   const [region, setRegion] = useState<RegionFilter>('全部');
+  const [marketTab, setMarketTab] = useState<(typeof marketTabs)[number]>('A股');
   const filtered = useMemo(() => filterNews(news, query, region), [query, region]);
   const headlines = filtered.filter((item) => item.mode === '今日快照').slice(0, 3);
   const stockNews = filtered.filter((item) => item.topic === '市场' || item.topic === '公司');
@@ -18,14 +21,15 @@ export function TodayPage() {
   return (
     <main className="page today-page">
       <section className="market-hero">
-        <div className="market-hero-head"><div><p className="eyebrow">今日行情 · A股</p><h1>A股市场全景</h1></div><span className="market-status">已收盘</span></div>
+        <div className="market-hero-head"><div><p className="eyebrow">全球市场仪表盘</p><h1>{marketTab === 'A股' ? 'A股市场全景' : `${marketTab}概览`}</h1></div><span className="market-status">今日</span></div>
         <div className="market-summary"><strong>涨跌分化</strong><p>大盘股相对稳健，能源与高股息板块走强，成长板块承压。</p></div>
         <small>数据截至 {dataTimestamp} · 当前为界面演示快照</small>
       </section>
 
       <section aria-labelledby="market-title">
-        <div className="section-heading"><div><p className="eyebrow">主要指数</p><h2 id="market-title">今天涨了还是跌了</h2></div><span>演示</span></div>
-        <div className="market-grid">{aShareIndices.map((item) => <MarketCard key={item.id} item={item} />)}</div>
+        <div className="section-heading"><div><p className="eyebrow">主要指数与资产</p><h2 id="market-title">今天涨了还是跌了</h2></div><span>延迟行情</span></div>
+        <div className="market-tabs" aria-label="市场切换">{marketTabs.map((item) => <button key={item} type="button" aria-pressed={marketTab === item} onClick={() => setMarketTab(item)}>{item}</button>)}</div>
+        <div className="market-grid">{marketGroups[marketTab].map((item) => <MarketCard key={item.id} item={item} />)}</div>
       </section>
 
       <section aria-labelledby="sector-title">
@@ -38,6 +42,11 @@ export function TodayPage() {
         <p className="eyebrow">政治经济 → 股市</p><h2 id="impact-title">今天的影响链</h2>
         <div className="impact-chain"><span>中东冲突升温</span><i>→</i><span>油价上涨</span><i>→</i><span>通胀担忧</span><i>→</i><span>降息更难</span><i>→</i><span>成长股承压</span></div>
         <p>这是一条可能路径，不是确定预测。冲突缓和、供应增加或政策变化都可能改变结果。</p>
+      </section>
+
+      <section aria-labelledby="political-title">
+        <div className="section-heading"><div><p className="eyebrow">政策 · 国际关系 · 地缘冲突</p><h2 id="political-title">政策与地缘影响</h2></div><span>{politicalImpacts.length} 个事件</span></div>
+        <div className="political-grid">{politicalImpacts.map((item) => <PoliticalImpactCard key={item.id} item={item} />)}</div>
       </section>
 
       <section aria-labelledby="news-title">

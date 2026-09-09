@@ -23,6 +23,9 @@ button { cursor:pointer; }
 .market-summary { margin:20px 0 14px; padding:15px 16px; border-radius:17px; background:rgba(255,255,255,.45); border:1px solid rgba(255,255,255,.62); }
 .market-summary strong { color:#59638e; font-size:1.05rem; }.market-summary p { margin:6px 0 0; color:#63667c; line-height:1.55; }
 .market-hero small,.section-intro { color:var(--muted); }.section-intro { margin:-5px 0 14px; line-height:1.6; font-size:.88rem; }
+.market-tabs { display:grid; grid-template-columns:repeat(4,1fr); gap:5px; margin-bottom:12px; padding:5px; border:1px solid rgba(255,255,255,.68); border-radius:15px; background:rgba(231,232,243,.62); box-shadow:inset 0 1px 3px rgba(62,66,99,.06); }
+.market-tabs button { min-width:0; padding:9px 4px; border:0; border-radius:11px; color:#6b6d83; background:transparent; font-size:.78rem; font-weight:800; white-space:nowrap; }
+.market-tabs button[aria-pressed="true"] { color:#4f5882; background:rgba(255,255,255,.76); box-shadow:0 5px 14px rgba(67,70,105,.12),inset 0 1px 0 white; }
 .eyebrow { margin:0; text-transform:uppercase; letter-spacing:.13em; font-size:.72rem; font-weight:800; color:var(--green); }
 .section-heading,.card-row { display:flex; justify-content:space-between; align-items:center; gap:12px; }
 .section-heading { margin-bottom:14px; }
@@ -51,6 +54,7 @@ button { cursor:pointer; }
 .beginner-note { display:grid; gap:4px; padding:11px 12px; border-radius:12px; color:#60637a; background:rgba(222,225,242,.58); font-size:.82rem; line-height:1.55; }.beginner-note b { color:#535d88; }
 .impact-card { padding:21px; border:1px solid rgba(255,255,255,.66); border-radius:22px; background:linear-gradient(135deg,rgba(234,238,250,.7),rgba(237,228,245,.58)); box-shadow:var(--glass-shadow); }.impact-card h2 { margin:5px 0 15px; }.impact-card>p:last-child { color:var(--muted); line-height:1.6; font-size:.82rem; }
 .impact-chain { display:flex; gap:7px; align-items:center; overflow-x:auto; padding-bottom:6px; }.impact-chain span { padding:8px 10px; border-radius:10px; background:rgba(255,255,255,.62); white-space:nowrap; font-size:.78rem; font-weight:800; }.impact-chain i { color:#7a7599; font-style:normal; }
+.political-grid { display:grid; gap:12px; }.political-card { padding:20px; border:1px solid rgba(255,255,255,.66); border-radius:20px; background:rgba(248,249,255,.62); box-shadow:var(--glass-shadow); backdrop-filter:blur(22px) saturate(135%); }.political-card header { display:flex; justify-content:space-between; color:#636b95; font-size:.72rem; font-weight:800; }.political-card header b { padding:3px 7px; border-radius:7px; color:#99566b; background:rgba(190,118,142,.13); }.political-card h3 { margin:13px 0 16px; line-height:1.45; }.political-card dl { display:grid; gap:13px; margin:0; }.political-card dl>div { display:grid; grid-template-columns:76px 1fr; gap:10px; padding-top:12px; border-top:1px solid var(--line); }.political-card dt { color:#77798e; font-size:.74rem; font-weight:800; }.political-card dd { margin:0; color:#5f6278; font-size:.84rem; line-height:1.6; }.political-card>a { display:inline-block; margin-top:16px; color:var(--green); font-size:.84rem; font-weight:800; }.asset-tags { display:flex; flex-wrap:wrap; gap:6px; }.asset-tags span { padding:4px 7px; border-radius:7px; background:rgba(222,225,242,.72); font-size:.73rem; }
 .news-card { padding:18px; }
 .news-card h3 { margin:14px 0 8px; font-size:1.08rem; line-height:1.45; }
 .news-card>a { text-decoration:none; }
@@ -63,7 +67,7 @@ button { cursor:pointer; }
 .bottom-nav a { display:grid; justify-items:center; gap:2px; padding:7px; border-radius:12px; color:#687674; text-decoration:none; }
 .bottom-nav a.active { color:#555f8c; background:rgba(255,255,255,.58); box-shadow:inset 0 1px 0 rgba(255,255,255,.84),0 5px 14px rgba(73,77,115,.1); }
 .bottom-nav span { font-weight:800; font-size:.86rem; }.bottom-nav small { font-size:.64rem; }
-@media (min-width:800px) { .page { width:min(100% - 48px,1080px); }.market-grid { grid-auto-flow:initial; grid-template-columns:repeat(4,1fr); overflow:visible; }.news-list { grid-template-columns:repeat(2,1fr); }.sector-list { grid-template-columns:repeat(2,1fr); }.bottom-nav { left:50%; right:auto; width:420px; transform:translateX(-50%); border:1px solid var(--line); border-bottom:0; border-radius:20px 20px 0 0; } }
+@media (min-width:800px) { .page { width:min(100% - 48px,1080px); }.market-grid { grid-auto-flow:initial; grid-template-columns:repeat(4,1fr); overflow:visible; }.news-list,.sector-list,.political-grid { grid-template-columns:repeat(2,1fr); }.bottom-nav { left:50%; right:auto; width:420px; transform:translateX(-50%); border:1px solid var(--line); border-bottom:0; border-radius:20px 20px 0 0; } }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
 .inner-page,.detail-page { padding-top:28px; }
 .page-title h1,.article-head h1 { font-family:Georgia,"Noto Serif SC",serif; letter-spacing:-.035em; }

@@ -24,6 +24,18 @@ export interface SectorSnapshot {
   relatedNewsId?: string;
 }
 
+export interface PoliticalImpact {
+  id: string;
+  event: string;
+  type: string;
+  status: '高关注' | '关注';
+  channel: string;
+  affected: string[];
+  watch: string;
+  counterRisk: string;
+  newsId?: string;
+}
+
 export interface CausalStep {
   title: string;
   explanation: string;

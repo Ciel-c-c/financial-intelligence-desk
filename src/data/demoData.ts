@@ -1,4 +1,4 @@
-import type { Brief, KnowledgeCardData, MarketSnapshot, NewsItem, SectorSnapshot } from './types';
+import type { Brief, KnowledgeCardData, MarketSnapshot, NewsItem, PoliticalImpact, SectorSnapshot } from './types';
 
 export const dataTimestamp = '2026-09-09 00:30（北京时间）';
 
@@ -15,6 +15,25 @@ export const aShareIndices: MarketSnapshot[] = [
   { id: 'csi300-focus', market: 'A股', indexName: '沪深300', value: '4,126.08', changePercent: 0.62, status: '已收盘', timestamp: dataTimestamp, source: '演示快照', delayed: true, mode: '演示' },
 ];
 
+export const marketGroups: Record<string, MarketSnapshot[]> = {
+  A股: aShareIndices,
+  港股: [
+    { id: 'hsi-main', market: '港股', indexName: '恒生指数', value: '25,317.18', changePercent: -0.38, status: '已收盘', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
+    { id: 'hstech', market: '港股', indexName: '恒生科技', value: '4,454.85', changePercent: -1.61, status: '已收盘', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
+    { id: 'hscei', market: '港股', indexName: '国企指数', value: '8,397.32', changePercent: -0.38, status: '已收盘', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
+  ],
+  美股: [
+    { id: 'sp500-main', market: '美股', indexName: '标普500', value: '7,673.52', changePercent: -0.58, status: '已收盘', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
+    { id: 'nasdaq', market: '美股', indexName: '纳斯达克', value: '26,421.41', changePercent: -0.32, status: '已收盘', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
+    { id: 'dow', market: '美股', indexName: '道琼斯', value: '52,786.07', changePercent: -1.18, status: '已收盘', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
+  ],
+  全球资产: [
+    { id: 'brent', market: '美股', indexName: '布伦特原油', value: '$99.07', changePercent: 2.13, status: '交易中', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
+    { id: 'gold', market: '美股', indexName: '黄金', value: '$3,624', changePercent: 0.47, status: '交易中', timestamp: dataTimestamp, source: '演示快照', delayed: true, mode: '演示' },
+    { id: 'ust10y', market: '美股', indexName: '美债10年收益率', value: '4.80%', changePercent: 0.27, status: '交易中', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
+  ],
+};
+
 export const sectors: SectorSnapshot[] = [
   { id: 'oil-gas', name: '石油石化', changePercent: 3.18, direction: '领涨', reason: '国际油价接近100美元，市场预期上游企业销售价格和利润可能改善。', beginnerNote: '油价上涨通常先利好采油企业，但会增加航空、物流和制造业成本。', relatedNewsId: 'wall-street-oil-pressure' },
   { id: 'coal', name: '煤炭', changePercent: 2.36, direction: '上涨', reason: '能源价格走高带动替代能源关注度，资金流向高股息资源板块。', beginnerNote: '高股息是公司把较多利润分给股东，但股息不代表股价不会下跌。' },
@@ -24,6 +43,23 @@ export const sectors: SectorSnapshot[] = [
   { id: 'semiconductor', name: '半导体', changePercent: -1.12, direction: '下跌', reason: '利率预期和风险偏好压制高估值成长板块，前期涨幅也带来获利了结。', beginnerNote: '好行业不等于每天上涨；估值过高时，小利空也可能造成较大波动。', relatedNewsId: 'asia-oil-bonds' },
   { id: 'software', name: '软件开发', changePercent: -1.67, direction: '下跌', reason: '成长股对资金成本更敏感，市场暂时偏好盈利稳定的价值板块。', beginnerNote: '利率越高，遥远未来的利润折算到今天通常越不值钱。' },
   { id: 'solar', name: '光伏设备', changePercent: -2.21, direction: '领跌', reason: '市场继续担心供给过剩、产品降价和企业盈利压力。', beginnerNote: '销量增长若伴随价格下跌，公司收入和利润未必同步增长。' },
+];
+
+export const politicalImpacts: PoliticalImpact[] = [
+  {
+    id: 'middle-east-energy', event: '中东冲突升级，能源设施与运输安全受关注', type: '地缘政治', status: '高关注',
+    channel: '供应中断预期推高油价，再通过企业成本和通胀影响央行利率判断。',
+    affected: ['石油石化 ↑', '航空运输 ↓', '化工成本 ↑', '成长股估值承压'],
+    watch: '布伦特油价、航运路线、冲突是否扩大、主要产油国表态。',
+    counterRisk: '若局势缓和或产油国增产，油价和相关交易可能快速反转。', newsId: 'wall-street-oil-pressure',
+  },
+  {
+    id: 'china-trade-policy', event: '中国出口增长，市场评估外需与贸易政策变化', type: '经济政策', status: '关注',
+    channel: '外需增加带动制造业订单，但关税、汇率和贸易限制会影响利润兑现。',
+    affected: ['汽车出口 ↑', '电子制造 ↑', '港口物流 ↑', '人民币汇率'],
+    watch: '后续出口订单、主要贸易伙伴政策、企业利润率和人民币走势。',
+    counterRisk: '单月增长可能包含提前出货，不能直接外推全年趋势。', newsId: 'china-exports-august',
+  },
 ];
 
 export const news: NewsItem[] = [

@@ -14,7 +14,12 @@ describe('Today page', () => {
     expect(screen.getByRole('heading', { name: '股市新闻' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '经济新闻' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'A股市场全景' })).toBeInTheDocument();
+    expect(screen.getAllByRole('button', { name: '港股' }).length).toBeGreaterThan(0);
+    expect(screen.getAllByRole('button', { name: '美股' }).length).toBeGreaterThan(0);
+    expect(screen.getByRole('button', { name: '全球资产' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '行业板块涨跌' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '政策与地缘影响' })).toBeInTheDocument();
+    expect(screen.getAllByText('受影响板块')).toHaveLength(2);
     expect(screen.getAllByText('为什么这样走').length).toBeGreaterThan(0);
     expect(screen.getByText('半导体')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /芯片公司业绩增长/ })).toHaveAttribute('href', '/news/nvidia-results');
