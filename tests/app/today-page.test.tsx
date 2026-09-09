@@ -9,7 +9,10 @@ describe('Today page', () => {
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
 
     expect(screen.getAllByText('演示').length).toBeGreaterThan(0);
-    expect(screen.getByText(/数据截至 2026-09-08/)).toBeInTheDocument();
+    expect(screen.getByText(/数据截至 2026-09-09/)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '今日要闻' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '股市新闻' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '经济新闻' })).toBeInTheDocument();
     expect(screen.getByText('沪深300')).toBeInTheDocument();
     expect(screen.getByText('恒生指数')).toBeInTheDocument();
     expect(screen.getByText('标普500')).toBeInTheDocument();

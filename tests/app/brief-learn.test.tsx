@@ -7,9 +7,9 @@ import { App } from '../../src/app/App';
 describe('Brief and learning', () => {
   it('links dated brief events to their explanations', () => {
     render(<MemoryRouter initialEntries={['/brief']}><App /></MemoryRouter>);
-    expect(screen.getByText('2026-09-08')).toBeInTheDocument();
-    expect(screen.getByText(/AI 投资、物价数据与利率预期/)).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /芯片公司业绩增长/ })).toHaveAttribute('href', '/news/nvidia-results');
+    expect(screen.getByText('2026-09-09')).toBeInTheDocument();
+    expect(screen.getByText(/油价接近100美元/)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /油价逼近100美元/ })).toHaveAttribute('href', '/news/wall-street-oil-pressure');
   });
 
   it('searches, expands and marks a knowledge card learned', async () => {

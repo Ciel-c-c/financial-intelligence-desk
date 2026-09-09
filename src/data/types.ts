@@ -1,5 +1,5 @@
 export type Region = 'A股' | '港股' | '美股' | '全球';
-export type ContentMode = '演示';
+export type ContentMode = '演示' | '今日快照';
 
 export interface MarketSnapshot {
   id: string;

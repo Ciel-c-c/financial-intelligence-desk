@@ -1,6 +1,6 @@
 import type { Brief, KnowledgeCardData, MarketSnapshot, NewsItem } from './types';
 
-export const dataTimestamp = '2026-09-08 08:30（北京时间）';
+export const dataTimestamp = '2026-09-09 00:30（北京时间）';
 
 export const markets: MarketSnapshot[] = [
   { id: 'csi300', market: 'A股', indexName: '沪深300', value: '4,126.08', changePercent: 0.62, status: '已收盘', timestamp: dataTimestamp, source: '演示数据', delayed: true, mode: '演示' },
@@ -52,6 +52,75 @@ export const news: NewsItem[] = [
       { title: '成长股可能受益', explanation: '投资者可能提高愿意支付的价格。', condition: '风险偏好没有同步恶化。' },
     ], mode: '演示',
   },
+  {
+    id: 'wall-street-oil-pressure', title: '油价逼近100美元，美股三大指数收跌', region: '美股', topic: '市场',
+    sourceName: 'Associated Press', sourceUrl: 'https://apnews.com/article/d3d6157a534584985987f828a940cffa', publishedAt: '2026-09-09 04:21',
+    summary: '中东冲突推高能源价格，市场担心通胀重新升温。标普500跌0.6%，道指跌1.2%，纳指跌0.3%。',
+    excerpt: 'AP 报道显示，布伦特原油盘中接近每桶99.50美元。能源成本上升会影响家庭支出、企业成本和央行利率判断。',
+    termIds: ['cpi', 'interest-rate'], facts: ['美股三大指数在9月8日收跌。', '布伦特原油价格盘中接近100美元。'],
+    consensus: ['能源价格持续上涨通常会增加通胀压力，并让降息变得更困难。'], inference: ['航空、运输和消费行业可能面临更高成本，能源生产商收入可能受益。'],
+    risks: ['油价可能因冲突缓和或供应恢复快速回落，市场影响并非单向。'],
+    causalChain: [
+      { title: '冲突影响能源供应', explanation: '市场担心原油运输和生产受阻。', condition: '紧张局势持续。' },
+      { title: '油价与成本上升', explanation: '运输、制造和生活成本可能提高。', condition: '企业无法通过效率提升抵消成本。' },
+      { title: '通胀与利率预期上升', explanation: '央行可能更谨慎地降息。', condition: '高油价传导到更广泛商品和服务。' },
+    ], mode: '今日快照',
+  },
+  {
+    id: 'china-exports-august', title: '中国8月出口同比增长25%，汽车与高科技产品需求较强', region: 'A股', topic: '宏观',
+    sourceName: 'Associated Press', sourceUrl: 'https://apnews.com/article/d3d6157a534584985987f828a940cffa', publishedAt: '2026-09-08 18:00',
+    summary: '出口增速较快，说明外需对制造业仍有支撑；市场会继续观察订单能否持续，以及贸易与汇率变化。',
+    excerpt: '报道援引中国公布的数据称，8月出口同比增长25%，汽车和高科技产品需求是主要推动因素。',
+    termIds: ['valuation'], facts: ['报道所列8月出口同比增长25%。'], consensus: ['出口增长通常支持制造业订单、就业和企业收入。'],
+    inference: ['汽车、电子和相关供应链可能获得基本面支持。'], risks: ['单月高增长可能受基数、提前出货或价格因素影响。'],
+    causalChain: [
+      { title: '海外订单增加', explanation: '外国买家购买更多中国产品。', condition: '需求不是短期提前释放。' },
+      { title: '制造业收入改善', explanation: '出口企业获得更多订单和现金流。', condition: '汇率和原材料成本可控。' },
+      { title: '产业链可能受益', explanation: '零部件、物流和设备需求可能增加。', condition: '订单能传导到利润。' },
+    ], mode: '今日快照',
+  },
+  {
+    id: 'hongkong-close-lower', title: '恒生指数收跌0.38%，恒生科技指数跌1.61%', region: '港股', topic: '市场',
+    sourceName: '新华社 / 中国网', sourceUrl: 'https://www.china.org.cn/china/Off_the_Wire/2026-09/08/content_118685854.shtml', publishedAt: '2026-09-08 16:30',
+    summary: '港股主要指数走弱，科技板块跌幅更大，反映成长股对利率、资金成本和风险偏好的变化更敏感。',
+    excerpt: '恒生指数收于25,317.18点，恒生中国企业指数跌0.38%，恒生科技指数跌1.61%。',
+    termIds: ['interest-rate', 'valuation'], facts: ['恒生指数9月8日收跌0.38%。', '恒生科技指数跌1.61%。'],
+    consensus: ['科技股估值通常对利率和资金流变化较敏感。'], inference: ['若海外利率继续上行，高估值成长股波动可能维持较高水平。'],
+    risks: ['单日涨跌不能代表趋势，公司盈利与后续资金流可能改变方向。'],
+    causalChain: [
+      { title: '风险偏好下降', explanation: '投资者减少高波动资产配置。', condition: '外部不确定性持续。' },
+      { title: '成长股估值承压', explanation: '未来利润折算到今天的价值降低。', condition: '利率预期同时上升。' },
+      { title: '科技指数跌幅扩大', explanation: '板块权重股同步走弱。', condition: '缺少盈利利好对冲。' },
+    ], mode: '今日快照',
+  },
+  {
+    id: 'new-york-fed-expectations', title: '纽约联储：中期通胀预期下降，就业担忧上升', region: '全球', topic: '经济',
+    sourceName: '纽约联邦储备银行', sourceUrl: 'https://www.newyorkfed.org/press', publishedAt: '2026-09-08 22:00',
+    summary: '消费者对未来通胀的担忧有所缓和，但对失业的担忧增加，显示经济预期中同时存在“价格改善”和“增长放缓”。',
+    excerpt: '纽约联储9月8日发布调查结果，指出中期通胀预期下降，而失业预期恶化。',
+    termIds: ['cpi', 'interest-rate'], facts: ['纽约联储发布了最新消费者预期调查。'],
+    consensus: ['通胀预期下降有助于稳定物价，但就业担忧会影响消费信心。'], inference: ['债券和利率敏感资产可能更关注增长放缓信号。'],
+    risks: ['消费者调查是预期指标，不等于之后公布的实际通胀或就业数据。'],
+    causalChain: [
+      { title: '通胀预期下降', explanation: '家庭预计价格上涨速度可能放缓。', condition: '实际能源和服务价格不再加速。' },
+      { title: '就业担忧上升', explanation: '家庭可能减少非必要消费。', condition: '担忧转化为真实招聘放缓。' },
+      { title: '政策判断更复杂', explanation: '央行需要同时考虑通胀和增长。', condition: '后续官方数据印证调查。' },
+    ], mode: '今日快照',
+  },
+  {
+    id: 'asia-oil-bonds', title: '油价和债券收益率上升，亚洲股市承压', region: '全球', topic: '市场',
+    sourceName: 'Dow Jones / Yahoo Finance', sourceUrl: 'https://finance.yahoo.com/markets/world-indices/articles/higher-oil-prices-bond-yields-104456376.html', publishedAt: '2026-09-08 18:44',
+    summary: '香港和东京市场下跌、上海小幅上涨。油价与债券收益率同时上升，压低投资者愿意为未来盈利支付的估值。',
+    excerpt: '报道显示，MSCI亚太指数当日下跌0.8%，布伦特原油在亚洲交易时段上涨至每桶98美元以上。',
+    termIds: ['interest-rate', 'valuation'], facts: ['报道所列MSCI亚太指数下跌0.8%。'],
+    consensus: ['高油价和高收益率通常同时压制股票估值。'], inference: ['能源进口依赖较高的市场和行业可能更敏感。'],
+    risks: ['不同市场产业结构不同，能源股上涨可能抵消部分指数压力。'],
+    causalChain: [
+      { title: '能源与融资成本上升', explanation: '企业经营和借款都变贵。', condition: '高价格持续。' },
+      { title: '利润与估值预期下调', explanation: '投资者重新估算公司价值。', condition: '企业无法转嫁成本。' },
+      { title: '亚洲股市承压', explanation: '资金更偏好现金或低风险资产。', condition: '风险偏好继续走弱。' },
+    ], mode: '今日快照',
+  },
 ];
 
 export const knowledge: KnowledgeCardData[] = [
@@ -62,8 +131,8 @@ export const knowledge: KnowledgeCardData[] = [
 ];
 
 export const brief: Brief = {
-  date: '2026-09-08', generatedAt: dataTimestamp, headline: 'AI 投资、物价数据与利率预期是今天的三条主线',
-  newsIds: ['nvidia-results', 'china-cpi', 'hongkong-rates'],
-  watchItems: ['观察科技公司资本开支是否持续。', '关注物价变化能否转化为消费和盈利改善。', '区分“利率下降利好估值”与“经济走弱伤害盈利”。'],
+  date: '2026-09-09', generatedAt: dataTimestamp, headline: '油价接近100美元，通胀与利率重新成为全球市场主线',
+  newsIds: ['wall-street-oil-pressure', 'china-exports-august', 'hongkong-close-lower'],
+  watchItems: ['观察油价是否继续向消费和企业成本传导。', '关注中国出口增长能否转化为制造业利润。', '留意美国通胀数据对下周利率决定的影响。'],
   knowledgeId: 'interest-rate', mode: '演示',
 };
