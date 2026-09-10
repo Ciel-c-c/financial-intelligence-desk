@@ -1,11 +1,17 @@
 import { NavLink, Outlet } from 'react-router-dom';
 
 export function AppShell() {
+  const assetUrl = (fileName: string) => `./${fileName}`;
+
   return (
     <div className="app-shell">
-      <div className="site-backdrop" aria-hidden="true" />
+      <div
+        className="site-backdrop"
+        aria-hidden="true"
+        style={{ backgroundImage: `url("${assetUrl('aurora-blue-purple-bg.png')}")` }}
+      />
       <aside className="desktop-sidebar">
-        <NavLink to="/" className="brand"><img className="brand-logo" src="/financial-lens-logo.png" alt="金融透镜标志" /><span><b>金融透镜</b><small>Financial Lens</small></span></NavLink>
+        <NavLink to="/" className="brand"><img className="brand-logo" src={assetUrl('financial-lens-logo.png')} alt="金融透镜标志" /><span><b>金融透镜</b><small>Financial Lens</small></span></NavLink>
         <p className="nav-caption">资讯中心</p>
         <nav aria-label="桌面主要导航">
           <NavLink to="/" end><span aria-hidden="true">⌂</span><b>今日市场</b></NavLink>
@@ -16,7 +22,7 @@ export function AppShell() {
       </aside>
       <div className="app-main">
         <header className="topbar">
-          <NavLink to="/" className="mobile-brand brand"><img className="brand-logo" src="/financial-lens-logo.png" alt="金融透镜标志" /><span>金融透镜</span></NavLink>
+          <NavLink to="/" className="mobile-brand brand"><img className="brand-logo" src={assetUrl('financial-lens-logo.png')} alt="金融透镜标志" /><span>金融透镜</span></NavLink>
           <div><strong>穿过噪音，看清市场</strong><p className="topbar-subtitle">每天看懂一点世界和市场</p></div>
           <span className="demo-badge">新闻与市场快照</span>
         </header>

@@ -59,5 +59,10 @@ describe('Today page', () => {
     const backdrop = container.querySelector('.site-backdrop');
     expect(backdrop).toBeInTheDocument();
     expect(backdrop).toHaveAttribute('aria-hidden', 'true');
+    expect(backdrop?.getAttribute('style')).toContain('./aurora-blue-purple-bg.png');
+    expect(screen.getAllByRole('img', { name: '金融透镜标志' })[0]).toHaveAttribute(
+      'src',
+      './financial-lens-logo.png',
+    );
   });
 });
