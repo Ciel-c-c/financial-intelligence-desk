@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
@@ -12,15 +12,15 @@ describe('Brief and learning', () => {
     expect(screen.getByRole('link', { name: /油价逼近100美元/ })).toHaveAttribute('href', '/news/wall-street-oil-pressure');
   });
 
-  it('searches, expands and marks a knowledge card learned', async () => {
+  it('searches, opens and marks an independent lesson learned', async () => {
     const user = userEvent.setup();
     render(<MemoryRouter initialEntries={['/learn']}><App /></MemoryRouter>);
     await user.type(screen.getByRole('searchbox', { name: '搜索知识' }), 'CPI');
-    expect(screen.getByRole('button', { name: /CPI/ })).toBeInTheDocument();
-    expect(screen.queryByRole('button', { name: /利率/ })).not.toBeInTheDocument();
-    await user.click(screen.getByRole('button', { name: /CPI/ }));
-    expect(screen.getByText(/一篮子常见商品/)).toBeInTheDocument();
-    await user.click(screen.getByRole('checkbox', { name: '标记 CPI 已学会' }));
-    expect(screen.getByText('已学会')).toBeInTheDocument();
+    const map = within(screen.getByRole('region', { name: '全部知识地图' }));
+    expect(map.queryByRole('link', { name: /利率与货币政策/ })).not.toBeInTheDocument();
+    await user.click(map.getByRole('link', { name: /通胀与实际购买力/ }));
+    expect(screen.getByRole('heading', { name: '通胀与实际购买力' })).toBeInTheDocument();
+    await user.click(screen.getByRole('checkbox', { name: '标记已学会' }));
+    expect(screen.getByRole('checkbox', { name: '标记已学会' })).toBeChecked();
   });
 });

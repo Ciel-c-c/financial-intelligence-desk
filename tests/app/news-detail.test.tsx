@@ -10,7 +10,7 @@ describe('News detail', () => {
     render(<MemoryRouter initialEntries={['/news/nvidia-results']}><App /></MemoryRouter>);
 
     expect(screen.getByRole('link', { name: '查看原始来源' })).toHaveAttribute('href', 'https://investor.nvidia.com/');
-    for (const label of ['事实', '市场共识', 'AI 推演', '风险与反例']) expect(screen.getByRole('heading', { name: label })).toBeInTheDocument();
+    for (const label of ['事实', '主流市场解释 · 机制参考', 'AI 推演', '风险与反例']) expect(screen.getByRole('heading', { name: label })).toBeInTheDocument();
     expect(screen.getByText('资本开支预算真正落地。')).toBeInTheDocument();
     await user.click(screen.getByRole('button', { name: /业绩指引/ }));
     expect(screen.getByText(/公司管理层对未来/)).toBeInTheDocument();
