@@ -3,6 +3,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 export function AppShell() {
   return (
     <div className="app-shell">
+      <div className="site-backdrop" aria-hidden="true" />
       <aside className="desktop-sidebar">
         <NavLink to="/" className="brand"><img className="brand-logo" src="/financial-lens-logo.png" alt="金融透镜标志" /><span><b>金融透镜</b><small>Financial Lens</small></span></NavLink>
         <p className="nav-caption">资讯中心</p>

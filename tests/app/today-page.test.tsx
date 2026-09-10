@@ -52,4 +52,12 @@ describe('Today page', () => {
     expect(screen.getByText('每天看懂一点世界和市场')).toBeInTheDocument();
     expect(screen.getAllByRole('img', { name: '金融透镜标志' }).length).toBeGreaterThan(0);
   });
+
+  it('renders a dedicated aurora backdrop behind the glass dashboard', () => {
+    const { container } = render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
+
+    const backdrop = container.querySelector('.site-backdrop');
+    expect(backdrop).toBeInTheDocument();
+    expect(backdrop).toHaveAttribute('aria-hidden', 'true');
+  });
 });
