@@ -3,6 +3,7 @@ import { MarketCard } from '../components/MarketCard';
 import { NewsCard } from '../components/NewsCard';
 import { SectorCard } from '../components/SectorCard';
 import { PoliticalImpactCard } from '../components/PoliticalImpactCard';
+import { SectorComparison } from '../components/SectorComparison';
 import { dataTimestamp, marketGroups, news, politicalImpacts, sectors } from '../data/demoData';
 import { filterNews, type RegionFilter } from '../data/selectors';
 
@@ -32,17 +33,20 @@ export function TodayPage() {
         <div className="market-grid">{marketGroups[marketTab].map((item) => <MarketCard key={item.id} item={item} />)}</div>
       </section>
 
-      <section aria-labelledby="sector-title">
+      <div className="dashboard-split">
+      <section aria-labelledby="sector-title" className="dashboard-panel">
         <div className="section-heading"><div><p className="eyebrow">领涨与领跌</p><h2 id="sector-title">行业板块涨跌</h2></div><span>{sectors.length} 个板块</span></div>
         <p className="section-intro">先看资金今天去了哪里，再点开“为什么这样走”理解背后的经济逻辑。</p>
+        <SectorComparison items={sectors} />
         <div className="sector-list">{sectors.map((item) => <SectorCard key={item.id} item={item} />)}</div>
       </section>
 
-      <section className="impact-card" aria-labelledby="impact-title">
+      <section className="impact-card dashboard-panel" aria-labelledby="impact-title">
         <p className="eyebrow">政治经济 → 股市</p><h2 id="impact-title">今天的影响链</h2>
         <div className="impact-chain"><span>中东冲突升温</span><i>→</i><span>油价上涨</span><i>→</i><span>通胀担忧</span><i>→</i><span>降息更难</span><i>→</i><span>成长股承压</span></div>
         <p>这是一条可能路径，不是确定预测。冲突缓和、供应增加或政策变化都可能改变结果。</p>
       </section>
+      </div>
 
       <section aria-labelledby="political-title">
         <div className="section-heading"><div><p className="eyebrow">政策 · 国际关系 · 地缘冲突</p><h2 id="political-title">政策与地缘影响</h2></div><span>{politicalImpacts.length} 个事件</span></div>

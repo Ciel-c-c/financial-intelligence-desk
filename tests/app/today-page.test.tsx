@@ -33,4 +33,14 @@ describe('Today page', () => {
     expect(screen.getByText(/物价数据温和/)).toBeInTheDocument();
     expect(screen.queryByText(/芯片公司业绩增长/)).not.toBeInTheDocument();
   });
+
+  it('exposes the dashboard navigation and sector comparison without hover', () => {
+    render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
+
+    expect(screen.getByRole('navigation', { name: '桌面主要导航' })).toBeInTheDocument();
+    expect(screen.getByRole('region', { name: '行业涨跌比较' })).toBeInTheDocument();
+    expect(screen.getByText('板块表现一览')).toBeInTheDocument();
+    expect(screen.getAllByText('+3.35%').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('-3.46%').length).toBeGreaterThan(0);
+  });
 });
