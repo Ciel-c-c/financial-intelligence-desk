@@ -4,7 +4,7 @@ export function AppShell() {
   return (
     <div className="app-shell">
       <aside className="desktop-sidebar">
-        <NavLink to="/" className="brand"><span className="brand-mark">融</span><span><b>金融资讯台</b><small>Financial Desk</small></span></NavLink>
+        <NavLink to="/" className="brand"><img className="brand-logo" src="/financial-lens-logo.png" alt="金融透镜标志" /><span><b>金融透镜</b><small>Financial Lens</small></span></NavLink>
         <p className="nav-caption">资讯中心</p>
         <nav aria-label="桌面主要导航">
           <NavLink to="/" end><span aria-hidden="true">⌂</span><b>今日市场</b></NavLink>
@@ -15,8 +15,8 @@ export function AppShell() {
       </aside>
       <div className="app-main">
         <header className="topbar">
-          <NavLink to="/" className="mobile-brand brand"><span className="brand-mark">融</span><span>金融资讯台</span></NavLink>
-          <div><p>资讯工作台</p><strong>看懂市场，而不只是看涨跌</strong></div>
+          <NavLink to="/" className="mobile-brand brand"><img className="brand-logo" src="/financial-lens-logo.png" alt="金融透镜标志" /><span>金融透镜</span></NavLink>
+          <div><strong>穿过噪音，看清市场</strong><p className="topbar-subtitle">每天看懂一点世界和市场</p></div>
           <span className="demo-badge">新闻与市场快照</span>
         </header>
         <Outlet />

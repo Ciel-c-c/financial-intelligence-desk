@@ -43,4 +43,13 @@ describe('Today page', () => {
     expect(screen.getAllByText('+3.35%').length).toBeGreaterThan(0);
     expect(screen.getAllByText('-3.46%').length).toBeGreaterThan(0);
   });
+
+  it('uses the Financial Lens brand and beginner-friendly message', () => {
+    render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
+
+    expect(screen.getAllByText('金融透镜').length).toBeGreaterThan(0);
+    expect(screen.getByText('穿过噪音，看清市场')).toBeInTheDocument();
+    expect(screen.getByText('每天看懂一点世界和市场')).toBeInTheDocument();
+    expect(screen.getAllByRole('img', { name: '金融透镜标志' }).length).toBeGreaterThan(0);
+  });
 });
