@@ -1,6 +1,6 @@
-:root { font-family: Inter, "Noto Sans SC", -apple-system, BlinkMacSystemFont, system-ui, sans-serif; color:#24243f; background:#e9eaf3; font-synthesis:none; --ink:#24243f; --green:#666e9f; --paper:rgba(249,249,255,.63); --line:rgba(113,119,161,.20); --muted:#71738a; --glass-shadow:0 18px 48px rgba(54,58,91,.12),inset 0 1px 0 rgba(255,255,255,.72); --liquid-glass:rgba(246,250,255,.18); --liquid-glass-soft:rgba(248,251,255,.12); --liquid-glass-border:rgba(255,255,255,.72); --liquid-glass-blur:28px; --liquid-glass-highlight:inset 0 1px 0 rgba(255,255,255,.88); --liquid-glass-shadow:0 18px 46px rgba(57,68,112,.14),0 2px 8px rgba(96,114,175,.08),inset 0 -1px 0 rgba(112,126,184,.10); }
+:root { font-family: Inter, "Noto Sans SC", -apple-system, BlinkMacSystemFont, system-ui, sans-serif; color:#24243f; background:#f7effb; font-synthesis:none; --ink:#24243f; --green:#666e9f; --market-up:#cf3f4f; --market-down:#16835f; --paper:rgba(252,248,255,.63); --line:rgba(139,105,157,.18); --muted:#746a7e; --glass-shadow:0 18px 48px rgba(102,65,119,.11),inset 0 1px 0 rgba(255,255,255,.72); --liquid-glass:rgba(255,248,255,.18); --liquid-glass-soft:rgba(255,249,254,.12); --liquid-glass-border:rgba(255,255,255,.72); --liquid-glass-blur:28px; --liquid-glass-highlight:inset 0 1px 0 rgba(255,255,255,.88); --liquid-glass-shadow:0 18px 46px rgba(119,70,132,.13),0 2px 8px rgba(177,99,151,.08),inset 0 -1px 0 rgba(166,105,170,.10); }
 * { box-sizing: border-box; }
-body { margin:0; min-width:320px; min-height:100vh; background:radial-gradient(circle at 8% 7%,rgba(151,171,212,.55),transparent 30%),radial-gradient(circle at 92% 24%,rgba(186,165,207,.46),transparent 32%),linear-gradient(145deg,#e5e8f2 0%,#f0edf3 48%,#dde5f0 100%); background-attachment:fixed; }
+body { margin:0; min-width:320px; min-height:100vh; background:radial-gradient(circle at 18% 12%,rgba(246,220,255,.72),transparent 38%),radial-gradient(circle at 86% 68%,rgba(255,214,235,.62),transparent 42%),linear-gradient(155deg,#faf7ff 0%,#f5edff 45%,#fbeaf5 100%); background-attachment:fixed; }
 body::before { content:""; position:fixed; inset:0; pointer-events:none; background:linear-gradient(115deg,rgba(255,255,255,.22),transparent 42%); z-index:-1; }
 a { color:inherit; }
 button,input { font:inherit; }
@@ -38,7 +38,7 @@ button { cursor:pointer; }
 .market-card strong { font-family:Georgia,serif; font-size:1.4rem; }
 .market-card p { margin:8px 0; font-weight:800; }
 .market-card small,.status { color:var(--muted); font-size:.72rem; }
-.positive { color:#a45f73; }.negative { color:#4f7890; }
+.positive { color:var(--market-up); }.negative { color:var(--market-down); }
 .search-field { display:block; color:var(--muted); font-size:.78rem; }
 .search-field span { display:block; margin:0 0 6px 4px; font-weight:700; }
 .search-field input { width:100%; border:1px solid var(--line); border-radius:14px; background:var(--paper); padding:13px 15px; outline:none; }
@@ -50,7 +50,7 @@ button { cursor:pointer; }
 .sector-list { display:grid; gap:10px; }
 .sector-card { padding:17px; border:1px solid rgba(255,255,255,.66); border-radius:19px; background:rgba(249,249,255,.6); box-shadow:var(--glass-shadow); backdrop-filter:blur(22px) saturate(135%); }
 .sector-main { display:flex; align-items:center; justify-content:space-between; gap:12px; }.sector-main>div { display:flex; align-items:center; gap:10px; }.sector-main h3 { margin:0; font-size:1rem; }.sector-main>strong { font-size:1.05rem; }
-.sector-rank { min-width:38px; padding:4px 6px; border-radius:8px; font-size:.67rem; font-weight:800; text-align:center; }.sector-rank.up { color:#9c536a; background:rgba(190,118,142,.13); }.sector-rank.down { color:#47748d; background:rgba(93,147,177,.13); }
+.sector-rank { min-width:38px; padding:4px 6px; border-radius:8px; font-size:.67rem; font-weight:800; text-align:center; }.sector-rank.up { color:var(--market-up); background:rgba(207,63,79,.12); }.sector-rank.down { color:var(--market-down); background:rgba(22,131,95,.12); }
 .sector-card details { margin-top:12px; border-top:1px solid var(--line); padding-top:10px; }.sector-card summary { color:#626990; cursor:pointer; font-size:.82rem; font-weight:800; }.sector-card details>p { color:#66697e; line-height:1.65; }.sector-card details>a { display:inline-block; margin-top:10px; color:var(--green); font-weight:800; font-size:.84rem; }
 .beginner-note { display:grid; gap:4px; padding:11px 12px; border-radius:12px; color:#60637a; background:rgba(222,225,242,.58); font-size:.82rem; line-height:1.55; }.beginner-note b { color:#535d88; }
 .impact-card { padding:21px; border:1px solid rgba(255,255,255,.66); border-radius:22px; background:linear-gradient(135deg,rgba(234,238,250,.7),rgba(237,228,245,.58)); box-shadow:var(--glass-shadow); }.impact-card h2 { margin:5px 0 15px; }.impact-card>p:last-child { color:var(--muted); line-height:1.6; font-size:.82rem; }
@@ -89,8 +89,8 @@ button { cursor:pointer; }
 .topbar>div { display:none; }
 .market-spark { height:34px; margin:10px 0 7px; display:flex; align-items:flex-end; overflow:hidden; }
 .market-spark i { display:block; width:100%; height:28px; opacity:.78; clip-path:polygon(0 78%,12% 65%,25% 72%,38% 35%,52% 48%,65% 18%,78% 30%,100% 4%,100% 100%,0 100%); }
-.spark-up { background:linear-gradient(180deg,rgba(164,95,115,.7),rgba(164,95,115,.06)); }
-.spark-down { background:linear-gradient(180deg,rgba(79,120,144,.7),rgba(79,120,144,.06)); transform:scaleY(-1); }
+.spark-up { background:linear-gradient(180deg,rgba(207,63,79,.76),rgba(207,63,79,.06)); }
+.spark-down { background:linear-gradient(180deg,rgba(22,131,95,.76),rgba(22,131,95,.06)); transform:scaleY(-1); }
 .dashboard-split { display:grid; gap:20px; }
 .dashboard-panel { min-width:0; }
 .sector-comparison { margin-bottom:12px; padding:18px; border:1px solid rgba(255,255,255,.68); border-radius:20px; background:rgba(249,249,255,.6); box-shadow:var(--glass-shadow); }
@@ -98,7 +98,7 @@ button { cursor:pointer; }
 .comparison-head h3 { margin:4px 0 16px; font-size:1.08rem; }
 .comparison-head>span { color:var(--muted); font-size:.72rem; white-space:nowrap; }
 .comparison-head i { display:inline-block; width:8px; height:8px; margin-left:6px; border-radius:50%; }
-.legend-up,.bar-up { background:#a45f73; }.legend-down,.bar-down { background:#4f7890; }
+.legend-up,.bar-up { background:var(--market-up); }.legend-down,.bar-down { background:var(--market-down); }
 .comparison-chart { display:grid; gap:11px; }
 .comparison-row { display:grid; grid-template-columns:minmax(72px,1fr) minmax(90px,2fr) 58px; align-items:center; gap:10px; font-size:.78rem; }
 .comparison-row>span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
@@ -131,7 +131,7 @@ button { cursor:pointer; }
 }
 
 @media (min-width:1000px) {
-  body { background:radial-gradient(circle at 4% 8%,rgba(151,171,212,.58),transparent 27%),radial-gradient(circle at 93% 20%,rgba(186,165,207,.52),transparent 30%),linear-gradient(145deg,#e2e6f1 0%,#f1eef4 48%,#dce4ef 100%); }
+  body { background:radial-gradient(circle at 18% 12%,rgba(246,220,255,.72),transparent 38%),radial-gradient(circle at 86% 68%,rgba(255,214,235,.62),transparent 42%),linear-gradient(155deg,#faf7ff 0%,#f5edff 45%,#fbeaf5 100%); }
   .app-shell { display:grid; grid-template-columns:224px minmax(0,1fr); gap:22px; max-width:1500px; margin:auto; padding:20px 24px 30px; }
   .desktop-sidebar { position:sticky; top:20px; align-self:start; height:calc(100vh - 40px); display:flex; flex-direction:column; padding:22px 16px; border:1px solid rgba(255,255,255,.66); border-radius:26px; background:rgba(242,243,250,.58); box-shadow:var(--glass-shadow); backdrop-filter:blur(24px) saturate(140%); }
   .desktop-sidebar .brand { padding:2px 4px 22px; }
@@ -170,9 +170,9 @@ button { cursor:pointer; }
 .news-card:hover { transform:translateY(-2px); box-shadow:0 22px 54px rgba(54,58,91,.16),inset 0 1px 0 rgba(255,255,255,.78); }
 
 /* Bright white-centered aurora + optically clear, iOS-inspired liquid glass. */
-body { position:relative; background:linear-gradient(112deg,rgba(231,239,249,.76) 0%,rgba(250,250,253,.66) 48%,rgba(238,231,248,.72) 100%); }
-body::before { z-index:-2; background:radial-gradient(ellipse at 49% 38%,rgba(255,255,255,.78),transparent 45%),radial-gradient(ellipse at 95% 40%,rgba(226,216,244,.34),transparent 56%); }
-.site-backdrop { position:fixed; z-index:-3; inset:0; pointer-events:none; opacity:.4; background-size:cover; background-position:center center; background-repeat:no-repeat; filter:saturate(.58) brightness(1.08) blur(3px); transform:scale(1.018); }
+body { position:relative; background:radial-gradient(circle at 18% 12%,rgba(246,220,255,.72),transparent 38%),radial-gradient(circle at 86% 68%,rgba(255,214,235,.62),transparent 42%),linear-gradient(155deg,#faf7ff 0%,#f5edff 45%,#fbeaf5 100%); }
+body::before { z-index:-2; background:radial-gradient(ellipse at 54% 34%,rgba(255,255,255,.72),transparent 48%),radial-gradient(ellipse at 92% 72%,rgba(255,220,241,.3),transparent 54%); }
+.site-backdrop { position:fixed; z-index:-3; inset:0; pointer-events:none; opacity:1; background-image:none!important; background:radial-gradient(circle at 18% 12%,rgba(246,220,255,.72),transparent 38%),radial-gradient(circle at 86% 68%,rgba(255,214,235,.62),transparent 42%),linear-gradient(155deg,#faf7ff 0%,#f5edff 45%,#fbeaf5 100%); }
 .topbar,.desktop-sidebar,.bottom-nav,.market-hero,.market-card,.sector-card,.sector-comparison,.impact-card,.political-card,.news-card,.empty-state,.reading-card,.watch-card,.daily-knowledge,.analysis-block,.knowledge-card,.brief-list a,.causal-chain li,.subject-section,.learning-event,.lesson-prerequisites,.lesson-quiz {
   background:linear-gradient(145deg,rgba(255,255,255,.27),var(--liquid-glass) 42%,rgba(225,232,255,.12));
   border-color:var(--liquid-glass-border);
@@ -203,7 +203,7 @@ body::before { z-index:-2; background:radial-gradient(ellipse at 49% 38%,rgba(25
 @media (max-width:520px) {
   :root { --liquid-glass-blur:18px; --liquid-glass-shadow:0 12px 30px rgba(57,68,112,.12),0 2px 6px rgba(96,114,175,.07),inset 0 -1px 0 rgba(112,126,184,.08); }
   .site-backdrop { background-position:center center; }
-  body::after { content:""; position:fixed; z-index:-1; inset:0; pointer-events:none; background:linear-gradient(160deg,rgba(220,236,255,.1),rgba(248,251,255,.03) 50%,rgba(231,215,255,.1)); }
+  body::after { content:""; position:fixed; z-index:-1; inset:0; pointer-events:none; background:linear-gradient(160deg,rgba(255,245,255,.08),rgba(255,255,255,.02) 50%,rgba(255,224,244,.1)); }
   .market-card::before,.news-card::before,.sector-card::before,.political-card::before { opacity:.5; }
 }
 
