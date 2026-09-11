@@ -1,4 +1,4 @@
-export type SnapshotStatus = 'latest' | 'partial' | 'source_error';
+export type SnapshotStatus = 'fresh' | 'delayed' | 'source_error';
 export type RelevanceLevel = 'high' | 'medium' | 'low';
 
 export interface EventSource { name: string; url: string; publishedAt: string }
@@ -12,31 +12,41 @@ export interface GlobalEvent {
   headline: string;
   sourceHeadline?: string;
   oneLine: string;
+  oneSentenceExplanation?: string;
   summary: string;
   publishedAt: string;
+  firstPublishedAt?: string;
+  latestSourceAt?: string;
   fetchedAt: string;
   region: string;
+  countries?: string[];
   topic: string;
   eventType: string;
   relevance: Relevance;
+  marketRelevance?: RelevanceLevel;
+  marketRelevanceScore?: number;
+  relevanceReasons?: string[];
   fact: string[];
+  factSummary?: string;
   marketView: string[];
   scenarios: string[];
   simpleExample: string;
   professionalConcept: string;
   causalChain: CausalNode[];
+  impactChain?: CausalNode[];
   relatedAssets: RelatedAsset[];
   relatedIndustries: string[];
   knowledgeIds: string[];
   relatedKnowledgePoints?: string[];
   conditionsThatChangeView: string[];
+  watchConditions?: string[];
   marketReaction: MarketReaction[];
   sources: EventSource[];
 }
 
 export interface SourceHealth { id: string; name: string; status: 'ok' | 'error'; itemCount: number; error?: string }
 export interface GlobalSituationSnapshot {
-  schemaVersion: 1;
+  schemaVersion: 1 | 2;
   attemptedAt: string;
   lastSuccessfulAt: string;
   status: SnapshotStatus;

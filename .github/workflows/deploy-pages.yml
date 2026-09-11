@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron: '17 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -19,6 +17,7 @@ concurrency:
 
 jobs:
   build-and-deploy:
+    timeout-minutes: 20
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -36,16 +35,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Restore last successful situation snapshot
-        run: |
-          mkdir -p work
-          curl --fail --silent --show-error --max-time 20 \
-            https://ciel-c-c.github.io/financial-intelligence-desk/data/global-situation.json \
-            --output work/last-situation-snapshot.json \
-            || cp public/data/global-situation.json work/last-situation-snapshot.json
-
-      - name: Refresh official global situation feeds
-        run: npm run fetch:situation -- --previous work/last-situation-snapshot.json
+      - name: Validate committed data snapshots
+        run: npm run validate:data
 
       - name: Test
         run: npm test -- --run

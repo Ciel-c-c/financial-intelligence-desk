@@ -20,7 +20,7 @@ async function readSnapshot(path) {
   try { return JSON.parse(await readFile(resolve(path), 'utf8')); } catch { return undefined; }
 }
 
-async function fetchSource(source, fetchedAt) {
+export async function fetchSource(source, fetchedAt) {
   try {
     const response = await fetch(source.url, { headers:{ 'user-agent':'Financial-Lens-Snapshot/1.0 (+https://github.com/Ciel-c-c/financial-intelligence-desk)', accept:'application/rss+xml, application/atom+xml, application/xml, text/xml' }, signal:AbortSignal.timeout(15_000) });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);

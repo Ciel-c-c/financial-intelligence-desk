@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "attemptedAt": "2026-09-11T15:14:18.261Z",
+  "lastSuccessfulAt": "2026-09-11T15:14:18.261Z",
+  "status": "fresh",
+  "datasets": [
+    {
+      "id": "global-situation",
+      "status": "fresh",
+      "lastSuccessfulAt": "2026-09-11T15:14:18.261Z"
+    },
+    {
+      "id": "market-snapshot",
+      "status": "fresh",
+      "lastSuccessfulAt": "2026-09-11T15:14:18.261Z"
+    },
+    {
+      "id": "macro-events",
+      "status": "fresh",
+      "lastSuccessfulAt": "2026-09-11T15:14:18.261Z"
+    }
+  ],
+  "sourceHealth": [
+    {
+      "id": "fed",
+      "name": "Federal Reserve",
+      "status": "ok",
+      "itemCount": 20
+    },
+    {
+      "id": "ecb",
+      "name": "European Central Bank",
+      "status": "ok",
+      "itemCount": 15
+    },
+    {
+      "id": "boj",
+      "name": "Bank of Japan",
+      "status": "ok",
+      "itemCount": 30
+    },
+    {
+      "id": "un",
+      "name": "UN News",
+      "status": "ok",
+      "itemCount": 30
+    }
+  ]
+}

@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "typecheck": "tsc -b --pretty false",
     "test": "vitest",
-    "fetch:situation": "node scripts/fetch-global-situation.mjs"
+    "fetch:situation": "node scripts/fetch-global-situation.mjs",
+    "update:data": "node scripts/update-data-snapshots.mjs",
+    "validate:data": "node scripts/validate-snapshots.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

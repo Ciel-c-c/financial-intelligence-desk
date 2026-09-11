@@ -15,7 +15,7 @@ npm run dev
 
 ## 发布
 
-推送到 `main` 后，GitHub Actions 会运行测试、类型检查、生产构建并发布到 GitHub Pages。工作流也会在每小时第 17 分钟抓取一次官方公开源，生成 `public/data/global-situation.json` 后重新发布。
+推送到 `main` 后，GitHub Actions 会运行测试、类型检查、生产构建并发布到 GitHub Pages。独立的 `Update public data snapshots` 工作流在每小时第 17 分钟运行；即使电脑关闭、Codex 不在线，也会抓取、校验并由 GitHub bot 提交四个统一 JSON 快照，再触发 Pages 发布。
 
 全球局势数据链路：
 
@@ -28,7 +28,7 @@ Fed / ECB / BOJ / UN 官方 RSS
   → GitHub Pages
 ```
 
-抓取开始前，工作流会下载线上最近一次快照。本轮全部来源失败时保留其事件，写入 `source_error` 状态和本次尝试时间；页面继续展示 Last Successful Snapshot，并明确标记异常。部分来源失败时状态为 `partial`。本地可运行 `npm run fetch:situation` 刷新快照。
+候选快照写入前必须通过 schema 校验。本轮全部主要来源失败、事件数异常为零或 JSON 不合法时，不覆盖 Last Successful Snapshot；`update-status.json` 会标记 `source_error`。部分来源或市场数据延迟时标记 `delayed`。前端使用更新时间做 cache busting，并请求 `no-store`。详见 [自动数据管线](docs/data-pipeline.md)。
 
 ## MVP
 

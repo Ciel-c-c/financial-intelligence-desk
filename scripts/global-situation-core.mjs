@@ -1,25 +1,25 @@
 import { createHash } from 'node:crypto';
 
-const CRITERIA = ['energySupply','tradeSupplyChain','inflation','growth','centralBank','fiscalPolicy','earnings','capitalFlows','riskAppetite','marketReaction'];
+export const CRITERIA = ['energySupply','trade','supplyChain','inflation','growth','centralBank','fiscalPolicy','earnings','capitalFlows','riskAppetite','marketReaction'];
 const STOP_WORDS = new Set(['the','a','an','and','or','to','of','in','on','for','after','following','its','policy','meeting']);
 
 const rules = [
   {
     eventType: 'energy-security', region: 'middle-east',
     test: /\b(oil|opec|energy|shipping|strait|gulf|pipeline|tanker|crude|lng|electricity)\b|red sea/i,
-    criteria: ['energySupply','tradeSupplyChain','inflation','growth','earnings','riskAppetite'],
+    criteria: ['energySupply','trade','supplyChain','inflation','growth','earnings','riskAppetite'],
     knowledgeIds: ['geopolitics','supply-demand','cpi','trade'],
   },
   {
     eventType: 'geopolitical-conflict', region: 'global',
     test: /\bsanction(s|ed)?\b|\bceasefire\b|military escalation|\b(war|conflict)\b.{0,120}\b(oil|shipping|energy|trade|supply)\b/i,
-    criteria: ['tradeSupplyChain','growth','fiscalPolicy','capitalFlows','riskAppetite'],
+    criteria: ['trade','supplyChain','growth','fiscalPolicy','capitalFlows','riskAppetite'],
     knowledgeIds: ['geopolitics','probability','trade','drawdown'],
   },
   {
     eventType: 'trade-policy', region: 'global',
     test: /tariff|trade restriction|export control|sanction|semiconductor|chip|customs|import duty/i,
-    criteria: ['tradeSupplyChain','inflation','growth','earnings','capitalFlows','riskAppetite'],
+    criteria: ['trade','supplyChain','inflation','growth','earnings','capitalFlows','riskAppetite'],
     knowledgeIds: ['trade','elasticity','exchange-rate','geopolitics'],
   },
   {
@@ -83,6 +83,14 @@ export function parseFeed(xml, source, fetchedAt = new Date().toISOString()) {
     publishedAt: toIso(tag(block, ['pubDate','published','updated','dc:date']), fetchedAt),
     fetchedAt,
   })).filter(item => item.headline && /^https?:\/\//.test(item.sourceUrl));
+}
+
+export function normalizeSourceItem(value, source, fetchedAt = new Date().toISOString()) {
+  if (!value || typeof value !== 'object') return undefined;
+  const headline = String(value.headline ?? '').replace(/\s+/g, ' ').trim();
+  const sourceUrl = String(value.sourceUrl ?? source?.url ?? '').trim();
+  if (!headline || !/^https?:\/\//.test(sourceUrl)) return undefined;
+  return { headline, summary:String(value.summary ?? '').replace(/\s+/g, ' ').trim(), source:String(value.source ?? source?.name ?? 'Official source'), sourceUrl, publishedAt:toIso(value.publishedAt, fetchedAt), fetchedAt };
 }
 
 export function scoreMarketRelevance(criteria) {
@@ -207,32 +215,43 @@ function localizeHeadline(item) {
 
 function toEvent(item) {
   const narrative = narrativeFor(item.eventType);
+  const firstPublishedAt = [...item.sources].map(source => source.publishedAt).sort()[0] ?? item.publishedAt;
+  const latestSourceAt = [...item.sources].map(source => source.publishedAt).sort().at(-1) ?? item.publishedAt;
+  const causalChain = narrative.chain.map(([title, beginnerExplanation, condition], index) => ({ id: `${index + 1}`, title, beginnerExplanation, condition, uncertain: index > 0 }));
   return {
     id: eventId(item), headline: localizeHeadline(item), sourceHeadline:item.headline, oneLine: narrative.oneLine,
+    oneSentenceExplanation: narrative.oneLine,
     summary: item.summary || narrative.oneLine,
-    publishedAt: item.publishedAt, fetchedAt: item.fetchedAt,
-    region: item.region, topic: item.eventType, eventType: item.eventType,
+    publishedAt: item.publishedAt, firstPublishedAt, latestSourceAt, fetchedAt: item.fetchedAt,
+    region: item.region, countries: countriesForRegion(item.region), topic: item.eventType, eventType: item.eventType,
     relevance: item.relevance,
+    marketRelevance: item.relevance.level, marketRelevanceScore: item.relevance.score, relevanceReasons: item.relevance.criteria,
     fact: [item.summary || `官方来源发布：${item.headline}`],
+    factSummary: item.summary || `官方来源发布：${item.headline}`,
     marketView: [narrative.why, narrative.professional],
     scenarios: [`如果相关影响继续，${narrative.chain.at(-1)[0]}。这是一种有条件的路径。`],
     simpleExample: narrative.example, professionalConcept: narrative.professional,
-    causalChain: narrative.chain.map(([title, beginnerExplanation, condition], index) => ({ id: `${index + 1}`, title, beginnerExplanation, condition, uncertain: index > 0 })),
+    causalChain, impactChain: causalChain,
     relatedAssets: narrative.assets.map(([name, explanation]) => ({ name, explanation })),
     relatedIndustries: item.eventType === 'energy-security' ? ['能源','航空','航运','化工'] : item.eventType === 'trade-policy' ? ['半导体','工业制造','零售','航运'] : ['银行','房地产','科技','可选消费'],
     knowledgeIds: item.knowledgeIds,
     relatedKnowledgePoints: item.knowledgeIds,
-    conditionsThatChangeView: narrative.conditions,
+    conditionsThatChangeView: narrative.conditions, watchConditions: narrative.conditions,
     marketReaction: [],
     sources: item.sources,
   };
+}
+
+function countriesForRegion(region) {
+  return ({ 'united-states':['US'], china:['CN'], europe:['EU'], japan:['JP'], 'middle-east':[] })[region] ?? [];
 }
 
 export function buildSnapshot({ attemptedAt, sourceResults, previous }) {
   const successful = sourceResults.filter(result => result.ok);
   const failed = sourceResults.filter(result => !result.ok);
   const sourceHealth = sourceResults.map(result => ({ id: result.id, name: result.name, status: result.ok ? 'ok' : 'error', itemCount: result.items.length, error: result.error }));
-  if (!successful.length) return { ...(previous ?? { schemaVersion: 1, events: [] }), attemptedAt, status: 'source_error', sourceHealth };
+  if (!successful.length) return { ...(previous ?? { schemaVersion: 2, events: [] }), attemptedAt, status: 'source_error', sourceHealth };
   const events = clusterEvents(successful.flatMap(result => result.items)).map(toEvent).filter(event => event.relevance.level !== 'low').slice(0, 12);
-  return { schemaVersion: 1, attemptedAt, lastSuccessfulAt: attemptedAt, status: failed.length ? 'partial' : 'latest', sourceHealth, events };
+  if (!events.length) return { ...(previous ?? { schemaVersion: 2, events: [] }), attemptedAt, status:'source_error', sourceHealth };
+  return { schemaVersion: 2, attemptedAt, lastSuccessfulAt: attemptedAt, status: failed.length ? 'delayed' : 'fresh', sourceHealth, events };
 }

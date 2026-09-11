@@ -85,7 +85,7 @@ const fedEvent = {
 };
 
 export const globalSituationSeed: GlobalSituationSnapshot = {
-  schemaVersion:1, attemptedAt:'2026-09-11T10:00:00+08:00', lastSuccessfulAt:'2026-09-11T10:00:00+08:00', status:'latest',
+  schemaVersion:1, attemptedAt:'2026-09-11T10:00:00+08:00', lastSuccessfulAt:'2026-09-11T10:00:00+08:00', status:'fresh',
   sourceHealth:[{id:'seed',name:'已发布新闻与官方快照',status:'ok',itemCount:4}],
   events:[energyEvent,ecbEvent,tradeEvent,fedEvent],
 };

@@ -25,16 +25,16 @@ describe('global situation ingestion', () => {
     expect(parseFeed(atom, { id: 'ecb', name: 'European Central Bank', url: 'https://example.test/atom' }, fetchedAt)[0].sourceUrl).toBe('https://example.test/ecb');
   });
 
-  it('scores the ten financial transmission criteria at stable boundaries', () => {
+  it('scores the eleven financial transmission criteria at stable boundaries', () => {
     expect(scoreMarketRelevance(['energySupply', 'inflation', 'centralBank', 'riskAppetite', 'marketReaction', 'growth'])).toEqual({ level: 'high', score: 6 });
-    expect(scoreMarketRelevance(['tradeSupplyChain', 'earnings', 'capitalFlows'])).toEqual({ level: 'medium', score: 3 });
+    expect(scoreMarketRelevance(['trade', 'supplyChain', 'earnings'])).toEqual({ level: 'medium', score: 3 });
     expect(scoreMarketRelevance(['fiscalPolicy', 'growth'])).toEqual({ level: 'low', score: 2 });
   });
 
   it('classifies policy and conflict language into finance-first fields', () => {
     const conflict = classifyItem({ headline: 'Shipping disruption near key oil route raises supply concerns', summary: 'Insurers and energy importers assess the disruption.', source: 'UN News', sourceUrl: 'https://example.test/a', publishedAt: fetchedAt, fetchedAt });
     expect(conflict).toMatchObject({ region: 'middle-east', eventType: 'energy-security' });
-    expect(conflict.relevance.criteria).toEqual(expect.arrayContaining(['energySupply', 'tradeSupplyChain', 'inflation', 'earnings', 'riskAppetite']));
+    expect(conflict.relevance.criteria).toEqual(expect.arrayContaining(['energySupply', 'trade', 'supplyChain', 'inflation', 'earnings', 'riskAppetite']));
     expect(conflict.knowledgeIds).toEqual(expect.arrayContaining(['geopolitics', 'supply-demand', 'cpi']));
 
     const unrelated = classifyItem({ headline: "Warning against scams using an institution's name", summary: 'A public safety notice.', source: 'Official source', sourceUrl: 'https://example.test/b', publishedAt: fetchedAt, fetchedAt });
@@ -70,12 +70,13 @@ describe('global situation ingestion', () => {
       { id: 'ecb', name: 'European Central Bank', ok: true, items: [item] },
       { id: 'boj', name: 'Bank of Japan', ok: false, items: [], error: 'timeout' },
     ] });
-    expect(result.status).toBe('partial');
+    expect(result.status).toBe('delayed');
     expect(result.lastSuccessfulAt).toBe(fetchedAt);
     expect(result.events.length).toBeGreaterThan(0);
     expect(result.events[0]).toHaveProperty('fact');
     expect(result.events[0]).toHaveProperty('marketView');
     expect(result.events[0]).toHaveProperty('scenarios');
     expect(result.events[0].relatedKnowledgePoints).toEqual(result.events[0].knowledgeIds);
+    expect(result.events[0]).toMatchObject({ marketRelevance:'high', oneSentenceExplanation:expect.any(String), factSummary:expect.any(String) });
   });
 });
