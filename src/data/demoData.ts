@@ -1,6 +1,7 @@
 import type { Brief, KnowledgeCardData, MarketSnapshot, NewsItem, PoliticalImpact, SectorSnapshot } from './types';
 
-export const dataTimestamp = '2026-09-09 18:30（北京时间）';
+export const dataTimestamp = '2026-09-11 11:30（北京时间）';
+const previousChinaCloseTimestamp = '2026-09-09 18:30（北京时间）';
 
 export const markets: MarketSnapshot[] = [
   { id: 'csi300', market: 'A股', indexName: '沪深300', value: '4,126.08', changePercent: 0.62, status: '已收盘', timestamp: dataTimestamp, source: '演示数据', delayed: true, mode: '演示' },
@@ -9,23 +10,23 @@ export const markets: MarketSnapshot[] = [
 ];
 
 export const aShareIndices: MarketSnapshot[] = [
-  { id: 'shcomp', market: 'A股', indexName: '上证指数', value: '3,951.51', changePercent: 0.28, status: '已收盘', timestamp: dataTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
-  { id: 'szcomp', market: 'A股', indexName: '深证成指', value: '13,723.32', changePercent: 0.15, status: '已收盘', timestamp: dataTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
-  { id: 'chinext', market: 'A股', indexName: '创业板指', value: '3,354.97', changePercent: -0.14, status: '已收盘', timestamp: dataTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
-  { id: 'csi300-focus', market: 'A股', indexName: '沪深300', value: '4,572.60', changePercent: 0.30, status: '已收盘', timestamp: dataTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
+  { id: 'shcomp', market: 'A股', indexName: '上证指数', value: '3,951.51', changePercent: 0.28, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
+  { id: 'szcomp', market: 'A股', indexName: '深证成指', value: '13,723.32', changePercent: 0.15, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
+  { id: 'chinext', market: 'A股', indexName: '创业板指', value: '3,354.97', changePercent: -0.14, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
+  { id: 'csi300-focus', market: 'A股', indexName: '沪深300', value: '4,572.60', changePercent: 0.30, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
 ];
 
 export const marketGroups: Record<string, MarketSnapshot[]> = {
   A股: aShareIndices,
   港股: [
-    { id: 'hsi-main', market: '港股', indexName: '恒生指数', value: '25,274.96', changePercent: -0.17, status: '已收盘', timestamp: dataTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
-    { id: 'hstech', market: '港股', indexName: '恒生科技', value: '4,420.79', changePercent: -0.76, status: '已收盘', timestamp: dataTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
-    { id: 'hscei', market: '港股', indexName: '国企指数', value: '8,369.05', changePercent: -0.34, status: '已收盘', timestamp: dataTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
+    { id: 'hsi-main', market: '港股', indexName: '恒生指数', value: '25,274.96', changePercent: -0.17, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
+    { id: 'hstech', market: '港股', indexName: '恒生科技', value: '4,420.79', changePercent: -0.76, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
+    { id: 'hscei', market: '港股', indexName: '国企指数', value: '8,369.05', changePercent: -0.34, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
   ],
   美股: [
-    { id: 'sp500-main', market: '美股', indexName: '标普500', value: '7,673.52', changePercent: -0.58, status: '已收盘', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
-    { id: 'nasdaq', market: '美股', indexName: '纳斯达克', value: '26,421.41', changePercent: -0.32, status: '已收盘', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
-    { id: 'dow', market: '美股', indexName: '道琼斯', value: '52,786.07', changePercent: -1.18, status: '已收盘', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
+    { id: 'sp500-main', market: '美股', indexName: '标普500', value: '7,591.70', changePercent: -0.58, status: '已收盘', timestamp: dataTimestamp, source: 'AP / Dow Jones Market Data', delayed: true, mode: '今日快照' },
+    { id: 'nasdaq', market: '美股', indexName: '纳斯达克', value: '26,081.72', changePercent: -0.65, status: '已收盘', timestamp: dataTimestamp, source: 'AP / Dow Jones Market Data', delayed: true, mode: '今日快照' },
+    { id: 'dow', market: '美股', indexName: '道琼斯', value: '52,064.10', changePercent: -0.60, status: '已收盘', timestamp: dataTimestamp, source: 'AP / Dow Jones Market Data', delayed: true, mode: '今日快照' },
   ],
   全球资产: [
     { id: 'brent', market: '美股', indexName: '布伦特原油', value: '$99.07', changePercent: 2.13, status: '交易中', timestamp: dataTimestamp, source: '今日快照', delayed: true, mode: '今日快照' },
@@ -44,6 +45,13 @@ export const sectors: SectorSnapshot[] = [
 ];
 
 export const politicalImpacts: PoliticalImpact[] = [
+  {
+    id: 'ecb-rate-hike', event: '欧洲央行加息0.25个百分点，应对能源推动的通胀', type: '货币政策', status: '高关注',
+    channel: '油价推高通胀压力，央行用加息压低需求；融资成本随之上升，股票估值和经济增长承压。',
+    affected: ['欧洲银行 ↑', '高估值成长股 ↓', '房地产 ↓', '欧元与债券波动'],
+    watch: '能源价格、欧元区通胀、企业融资成本、欧洲央行后续表态。',
+    counterRisk: '如果能源价格回落或经济快速放缓，央行可能停止继续加息。', newsId: 'ecb-energy-rate-hike',
+  },
   {
     id: 'middle-east-energy', event: '中东冲突升级，能源设施与运输安全受关注', type: '地缘政治', status: '高关注',
     channel: '供应中断预期推高油价，再通过企业成本和通胀影响央行利率判断。',
@@ -120,17 +128,32 @@ export const news: NewsItem[] = [
     ], mode: '演示',
   },
   {
-    id: 'wall-street-oil-pressure', title: '油价逼近100美元，美股三大指数收跌', region: '美股', topic: '市场',
-    sourceName: 'Associated Press', sourceUrl: 'https://apnews.com/article/d3d6157a534584985987f828a940cffa', publishedAt: '2026-09-09 04:21',
-    summary: '中东冲突推高能源价格，市场担心通胀重新升温。标普500跌0.6%，道指跌1.2%，纳指跌0.3%。',
-    excerpt: 'AP 报道显示，布伦特原油盘中接近每桶99.50美元。能源成本上升会影响家庭支出、企业成本和央行利率判断。',
-    termIds: ['cpi', 'interest-rate'], facts: ['美股三大指数在9月8日收跌。', '布伦特原油价格盘中接近100美元。'],
+    id: 'wall-street-oil-pressure', title: '油价站上100美元，美股三大指数连续第四天下跌', region: '美股', topic: '市场',
+    sourceName: 'Associated Press', sourceUrl: 'https://apnews.com/article/7fbc77061abd778608068d3beb1bbbaf', publishedAt: '2026-09-11 05:30',
+    summary: '油价与美债收益率同时上升，市场担心通胀持续和借贷成本走高。标普500跌0.58%，道指跌0.60%，纳指跌0.65%。',
+    excerpt: '标普500收于7,591.70点，道指收于52,064.10点，纳指收于26,081.72点；三大指数连续第四个交易日下跌。',
+    termIds: ['cpi', 'interest-rate'], facts: ['美股三大指数在9月10日连续第四天下跌。', 'WTI与布伦特原油均升至每桶100美元上方。'],
     consensus: ['能源价格持续上涨通常会增加通胀压力，并让降息变得更困难。'], inference: ['航空、运输和消费行业可能面临更高成本，能源生产商收入可能受益。'],
     risks: ['油价可能因冲突缓和或供应恢复快速回落，市场影响并非单向。'],
     causalChain: [
       { title: '冲突影响能源供应', explanation: '市场担心原油运输和生产受阻。', condition: '紧张局势持续。' },
       { title: '油价与成本上升', explanation: '运输、制造和生活成本可能提高。', condition: '企业无法通过效率提升抵消成本。' },
       { title: '通胀与利率预期上升', explanation: '央行可能更谨慎地降息。', condition: '高油价传导到更广泛商品和服务。' },
+    ], mode: '今日快照',
+  },
+  {
+    id: 'ecb-energy-rate-hike', title: '欧洲央行加息0.25个百分点，防止能源涨价扩散', region: '全球', topic: '经济',
+    sourceName: 'Associated Press', sourceUrl: 'https://apnews.com/article/de62b59fba535fccaf6f75e52d037c63', publishedAt: '2026-09-10 20:20',
+    summary: '欧洲央行选择加息来压制能源价格推动的通胀。对小白来说，这意味着央行担心油价上涨不只影响加油费，还会逐步传到运输、商品和服务价格。',
+    excerpt: '欧洲央行将政策利率提高0.25个百分点，强调要防止能源成本扩散到更广泛的物价。',
+    termIds: ['cpi', 'interest-rate'], facts: ['欧洲央行9月10日宣布加息0.25个百分点。'],
+    consensus: ['加息可以压低需求和通胀，但也会让企业、家庭贷款更贵。'],
+    inference: ['欧洲银行息差可能受益，高估值成长股、房地产和高负债企业可能承压。'],
+    risks: ['若经济增长快速转弱，加息对企业盈利的伤害可能超过控制通胀的短期收益。'],
+    causalChain: [
+      { title: '能源价格上涨', explanation: '交通、生产和生活成本上升。', condition: '高油价持续而非短期冲高。' },
+      { title: '通胀扩散风险增加', explanation: '企业可能把更高成本转给消费者。', condition: '消费者仍能承受涨价。' },
+      { title: '央行提高利率', explanation: '借钱更贵，需求和价格压力可能下降。', condition: '货币政策传导有效。' },
     ], mode: '今日快照',
   },
   {
@@ -198,8 +221,8 @@ export const knowledge: KnowledgeCardData[] = [
 ];
 
 export const brief: Brief = {
-  date: '2026-09-09', generatedAt: dataTimestamp, headline: 'A股指数小涨但个股偏弱，港股科技板块继续承压',
-  newsIds: ['a-share-close-sep-9', 'hongkong-close-lower', 'wall-street-oil-pressure'],
-  watchItems: ['观察A股市场广度能否改善，而不只看指数涨跌。', '关注煤炭和航运上涨是否得到商品价格与运价支持。', '留意油价变化如何影响全球通胀与利率预期。'],
+  date: '2026-09-11', generatedAt: dataTimestamp, headline: '油价与债券收益率齐升，美股连续第四日下跌，欧洲央行加息',
+  newsIds: ['wall-street-oil-pressure', 'ecb-energy-rate-hike', 'a-share-close-sep-9'],
+  watchItems: ['观察油价站上100美元后是否继续推高通胀预期。', '关注接近5%的美债收益率如何压制成长股估值。', '留意欧洲央行加息是否带来更多央行政策转向。'],
   knowledgeId: 'interest-rate', mode: '今日快照',
 };

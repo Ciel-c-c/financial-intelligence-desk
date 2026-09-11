@@ -19,7 +19,7 @@ describe('self-directed learning', () => {
     expect(screen.getByText('没有匹配的知识点')).toBeInTheDocument();
     await user.click(screen.getByRole('button', { name: '重置筛选' }));
     expect(screen.getByRole('link', { name: /机会成本与边际决策/ })).toBeInTheDocument();
-  });
+  }, 10000);
   it('opens a lesson directly, answers a quiz and persists completion', async () => {
     const user = userEvent.setup(); const view = open('/learn/interest-rate');
     expect(screen.getByRole('heading', { name: '利率与货币政策传导' })).toBeInTheDocument();

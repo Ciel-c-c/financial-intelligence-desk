@@ -4,7 +4,7 @@ import { NewsCard } from '../components/NewsCard';
 import { SectorCard } from '../components/SectorCard';
 import { PoliticalImpactCard } from '../components/PoliticalImpactCard';
 import { SectorComparison } from '../components/SectorComparison';
-import { dataTimestamp, marketGroups, news, politicalImpacts, sectors } from '../data/demoData';
+import { marketGroups, news, politicalImpacts, sectors } from '../data/demoData';
 import { filterNews, type RegionFilter } from '../data/selectors';
 
 const regions: RegionFilter[] = ['全部', 'A股', '港股', '美股', '全球'];
@@ -24,7 +24,7 @@ export function TodayPage() {
       <section className="market-hero">
         <div className="market-hero-head"><div><p className="eyebrow">全球市场仪表盘</p><h1>{marketTab === 'A股' ? 'A股市场全景' : `${marketTab}概览`}</h1></div><span className="market-status">今日</span></div>
         <div className="market-summary"><strong>指数小涨，个股偏弱</strong><p>上涨 1,778 只、下跌 3,580 只；煤炭与航运领涨，游戏与传媒领跌。</p></div>
-        <small>数据截至 {dataTimestamp} · 收盘数据为延迟快照</small>
+        <small>数据截至 {marketGroups[marketTab][0].timestamp} · 收盘数据为延迟快照</small>
       </section>
 
       <section aria-labelledby="market-title">

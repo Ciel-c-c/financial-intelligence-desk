@@ -19,7 +19,7 @@ describe('Today page', () => {
     expect(screen.getByRole('button', { name: '全球资产' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '行业板块涨跌' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '政策与地缘影响' })).toBeInTheDocument();
-    expect(screen.getAllByText('受影响板块')).toHaveLength(2);
+    expect(screen.getAllByText('受影响板块')).toHaveLength(3);
     expect(screen.getAllByText('为什么这样走').length).toBeGreaterThan(0);
     expect(screen.getByText('煤炭开采')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /芯片公司业绩增长/ })).toHaveAttribute('href', '/news/nvidia-results');
