@@ -36,4 +36,4 @@ npm run validate:data
 npm test -- --run
 ```
 
-在 GitHub 仓库的 **Actions → Update public data snapshots → Run workflow** 可手动刷新。发布工作流不访问数据源，只验证仓库快照、测试、构建并部署，因此一次成功的数据 bot 提交会触发确定性的 Pages 发布。
+在 GitHub 仓库的 **Actions → Update public data snapshots → Run workflow** 可手动刷新。发布工作流不访问数据源；它监听数据工作流成功完成的 `workflow_run`，从最新 `main` 检出 bot 已提交的快照，再验证、测试、构建并部署。这里不依赖 `GITHUB_TOKEN` 提交触发另一个 push workflow。
