@@ -13,7 +13,7 @@ export function LearnPage() {
   const filtered = filterLessons(query,subject,level).filter(item => status === 'all' || (status === 'learned' ? learned.includes(item.id) : !learned.includes(item.id)));
   function reset() { setQuery(''); setSubject('all'); setLevel('all'); setStatus('all'); }
   return <main className="page inner-page learning-center">
-    <header className="learning-hero"><p className="eyebrow">THE ECONOMIC FIELD GUIDE / 学一点</p><h1>把世界的变化，<br />读成自己的判断。</h1><p>从一条新闻出发，或从一个问题开始。先理解机制，再检验条件。</p>
+    <header className="learning-hero"><p className="eyebrow">ECONOMICS &amp; MARKETS ACADEMY / 经济与市场学院</p><h1>把世界的变化，<br />读成自己的判断。</h1><p>从一个生活例子开始，再理解专业机制。可以沿 Level 0–4 学，也可以直接打开任何知识点。</p>
       <div className="learning-stats"><span><b>{subjects.length}</b> 个领域</span><span><b>{lessons.length}</b> 个核心知识点</span><span><b>{learned.length}/{lessons.length}</b> 已学会</span></div>
       <button className="map-jump" onClick={() => document.getElementById('knowledge-map')?.scrollIntoView({ block: 'start' })}>直接浏览全部知识 ↓</button>
     </header>

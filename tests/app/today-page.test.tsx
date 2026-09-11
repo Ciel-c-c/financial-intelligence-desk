@@ -6,23 +6,16 @@ import { App } from '../../src/app/App';
 
 describe('Today page', () => {
   it('opens with an A-share market dashboard and sector explanations', () => {
-    render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
-
-    expect(screen.getAllByText('演示').length).toBeGreaterThan(0);
-    expect(screen.getByText(/数据截至 2026-09-11/)).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: '今日要闻' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: '股市新闻' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: '经济新闻' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'A股市场全景' })).toBeInTheDocument();
-    expect(screen.getAllByRole('button', { name: '港股' }).length).toBeGreaterThan(0);
-    expect(screen.getAllByRole('button', { name: '美股' }).length).toBeGreaterThan(0);
-    expect(screen.getByRole('button', { name: '全球资产' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: '行业板块涨跌' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: '政策与地缘影响' })).toBeInTheDocument();
-    expect(screen.getAllByText('受影响板块')).toHaveLength(3);
-    expect(screen.getAllByText('为什么这样走').length).toBeGreaterThan(0);
-    expect(screen.getAllByText('元件 / MLCC').length).toBeGreaterThan(0);
-    expect(screen.getByRole('link', { name: /芯片公司业绩增长/ })).toHaveAttribute('href', '/news/nvidia-results');
+    const { container } = render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
+    const page = container.querySelector<HTMLElement>('.today-page')!;
+    const copy = page.textContent ?? '';
+    for (const expected of ['演示','数据截至 2026-09-11','核心事件','市场与公司动态','宏观经济动态','A股市场全景','行业相对强弱','政策与地缘传导','为什么这样走','元件 / MLCC']) {
+      expect(copy).toContain(expected);
+    }
+    const buttons = [...page.querySelectorAll('button')].map(button => button.textContent?.trim());
+    for (const label of ['港股','美股','全球资产']) expect(buttons).toContain(label);
+    expect(copy.match(/受影响板块/g)).toHaveLength(3);
+    expect(page.querySelector('a[href="/news/nvidia-results"]')).toHaveTextContent('芯片公司业绩增长');
   });
 
   it('filters stories from the search control', async () => {

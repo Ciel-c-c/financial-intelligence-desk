@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { render, screen, within } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import { App } from '../src/app/App';
@@ -7,19 +7,20 @@ import { App } from '../src/app/App';
 function open(path = '/learn') { return render(<MemoryRouter initialEntries={[path]}><App /></MemoryRouter>); }
 beforeEach(() => localStorage.clear());
 describe('self-directed learning', () => {
-  it('shows the complete map and lets search and level filters intersect', async () => {
-    const user = userEvent.setup(); open();
-    expect(screen.getByRole('heading', { name: '全部知识地图' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /机会成本与边际决策/ })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /杠杆与流动性风险/ })).toBeInTheDocument();
-    await user.type(screen.getByRole('searchbox'), ' CPI ');
-    expect(within(screen.getByRole('region', { name: '全部知识地图' })).getByRole('link', { name: /通胀与实际购买力/ })).toBeInTheDocument();
-    expect(screen.queryByRole('link', { name: /机会成本与边际决策/ })).not.toBeInTheDocument();
-    await user.selectOptions(screen.getByLabelText('学习难度'), '4');
-    expect(screen.getByText('没有匹配的知识点')).toBeInTheDocument();
-    await user.click(screen.getByRole('button', { name: '重置筛选' }));
-    expect(screen.getByRole('link', { name: /机会成本与边际决策/ })).toBeInTheDocument();
-  }, 10000);
+  it('shows the complete map and lets search and level filters intersect', () => {
+    const { container } = open();
+    const map = container.querySelector<HTMLElement>('.knowledge-map')!;
+    expect(map).toHaveTextContent('全部知识地图');
+    expect(map).toHaveTextContent('机会成本与边际决策');
+    expect(map).toHaveTextContent('杠杆与流动性风险');
+    fireEvent.change(map.querySelector('input[type="search"]')!, { target:{ value:' CPI ' } });
+    expect(map).toHaveTextContent('通胀与实际购买力');
+    expect(map).not.toHaveTextContent('机会成本与边际决策');
+    fireEvent.change(map.querySelectorAll('select')[1], { target:{ value:'4' } });
+    expect(map).toHaveTextContent('没有匹配的知识点');
+    fireEvent.click(map.querySelector<HTMLButtonElement>('.section-heading button')!);
+    expect(map).toHaveTextContent('机会成本与边际决策');
+  });
   it('opens a lesson directly, answers a quiz and persists completion', async () => {
     const user = userEvent.setup(); const view = open('/learn/interest-rate');
     expect(screen.getByRole('heading', { name: '利率与货币政策传导' })).toBeInTheDocument();

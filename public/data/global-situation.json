@@ -1,0 +1,1214 @@
+{
+  "schemaVersion": 1,
+  "attemptedAt": "2026-09-11T14:39:31.307Z",
+  "lastSuccessfulAt": "2026-09-11T14:39:31.307Z",
+  "status": "latest",
+  "sourceHealth": [
+    {
+      "id": "fed",
+      "name": "Federal Reserve",
+      "status": "ok",
+      "itemCount": 20
+    },
+    {
+      "id": "ecb",
+      "name": "European Central Bank",
+      "status": "ok",
+      "itemCount": 15
+    },
+    {
+      "id": "boj",
+      "name": "Bank of Japan",
+      "status": "ok",
+      "itemCount": 30
+    },
+    {
+      "id": "un",
+      "name": "UN News",
+      "status": "ok",
+      "itemCount": 30
+    }
+  ],
+  "events": [
+    {
+      "id": "07c10e382b04",
+      "headline": "欧洲央行公布货币政策声明与问答",
+      "sourceHeadline": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
+      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "summary": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "publishedAt": "2026-09-10T13:00:00.000Z",
+      "fetchedAt": "2026-09-11T14:39:31.307Z",
+      "region": "europe",
+      "topic": "monetary-policy",
+      "eventType": "monetary-policy",
+      "relevance": {
+        "level": "medium",
+        "score": 4,
+        "criteria": [
+          "inflation",
+          "growth",
+          "centralBank",
+          "capitalFlows"
+        ]
+      },
+      "fact": [
+        "官方来源发布：Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)"
+      ],
+      "marketView": [
+        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
+        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
+      ],
+      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
+      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "国债收益率",
+          "explanation": "它最直接反映政策、通胀和期限补偿。"
+        },
+        {
+          "name": "美元",
+          "explanation": "相对利率会改变持有不同货币的吸引力。"
+        },
+        {
+          "name": "Nasdaq",
+          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
+        },
+        {
+          "name": "银行股",
+          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "relatedKnowledgePoints": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "conditionsThatChangeView": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "European Central Bank",
+          "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is260910~6a45359cfc.en.html",
+          "publishedAt": "2026-09-10T13:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "584be1dcfd58",
+      "headline": "欧洲央行公布最新货币政策决定",
+      "sourceHeadline": "Monetary policy decisions",
+      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "summary": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "publishedAt": "2026-09-10T12:15:00.000Z",
+      "fetchedAt": "2026-09-11T14:39:31.307Z",
+      "region": "europe",
+      "topic": "monetary-policy",
+      "eventType": "monetary-policy",
+      "relevance": {
+        "level": "high",
+        "score": 6,
+        "criteria": [
+          "inflation",
+          "growth",
+          "centralBank",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "fact": [
+        "官方来源发布：Monetary policy decisions"
+      ],
+      "marketView": [
+        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
+        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
+      ],
+      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
+      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "国债收益率",
+          "explanation": "它最直接反映政策、通胀和期限补偿。"
+        },
+        {
+          "name": "美元",
+          "explanation": "相对利率会改变持有不同货币的吸引力。"
+        },
+        {
+          "name": "Nasdaq",
+          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
+        },
+        {
+          "name": "银行股",
+          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "relatedKnowledgePoints": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "conditionsThatChangeView": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "European Central Bank",
+          "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp260910~314e508016.en.html",
+          "publishedAt": "2026-09-10T12:15:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "2121054dfc16",
+      "headline": "也门与红海局势出现新一轮升级",
+      "sourceHeadline": "Security Council LIVE: Fresh attacks prompt emergency meeting on Yemen",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "On the heels of reported Houthi attacks on Saudi Arabia on Tuesday and the capture of another key port by the militants on Yemen’s Red Sea coast – including the seizure of eight UN vehicles from a key aid hub there – the Security Council is meeting on Thursday at 3pm in New York to discuss the latest developments.",
+      "publishedAt": "2026-09-10T12:00:00.000Z",
+      "fetchedAt": "2026-09-11T14:39:31.307Z",
+      "region": "middle-east",
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "high",
+        "score": 6,
+        "criteria": [
+          "energySupply",
+          "tradeSupplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "riskAppetite"
+        ]
+      },
+      "fact": [
+        "On the heels of reported Houthi attacks on Saudi Arabia on Tuesday and the capture of another key port by the militants on Yemen’s Red Sea coast – including the seizure of eight UN vehicles from a key aid hub there – the Security Council is meeting on Thursday at 3pm in New York to discuss the latest developments."
+      ],
+      "marketView": [
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168309",
+          "publishedAt": "2026-09-10T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "6be6f5ffb968",
+      "headline": "日本央行委员就经济、物价与货币政策发表讲话",
+      "sourceHeadline": "Speech by Board Member MASU in Fukui (Economic Activity, Prices, and Monetary Policy in Japan)",
+      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "summary": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "publishedAt": "2026-09-10T01:30:00.000Z",
+      "fetchedAt": "2026-09-11T14:39:31.307Z",
+      "region": "japan",
+      "topic": "monetary-policy",
+      "eventType": "monetary-policy",
+      "relevance": {
+        "level": "medium",
+        "score": 4,
+        "criteria": [
+          "inflation",
+          "growth",
+          "centralBank",
+          "capitalFlows"
+        ]
+      },
+      "fact": [
+        "官方来源发布：Speech by Board Member MASU in Fukui (Economic Activity, Prices, and Monetary Policy in Japan)"
+      ],
+      "marketView": [
+        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
+        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
+      ],
+      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
+      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "国债收益率",
+          "explanation": "它最直接反映政策、通胀和期限补偿。"
+        },
+        {
+          "name": "美元",
+          "explanation": "相对利率会改变持有不同货币的吸引力。"
+        },
+        {
+          "name": "Nasdaq",
+          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
+        },
+        {
+          "name": "银行股",
+          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "relatedKnowledgePoints": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "conditionsThatChangeView": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "Bank of Japan",
+          "url": "http://www.boj.or.jp/en/about/press/koen_2026/ko260910a.htm",
+          "publishedAt": "2026-09-10T01:30:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "b6d94ba2e415",
+      "headline": "利比亚选举安排取得新进展",
+      "sourceHeadline": "UN hails Libya election deal as Security Council urges Libyans to seize the moment",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "The UN Security Council has welcomed a breakthrough agreement between Libya&#039;s rival political blocs, calling it \"an important step\" towards the country&#039;s first national elections in over a decade – while pressing all sides to move quickly from paper to practice.",
+      "publishedAt": "2026-09-09T12:00:00.000Z",
+      "fetchedAt": "2026-09-11T14:39:31.307Z",
+      "region": "global",
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "fact": [
+        "The UN Security Council has welcomed a breakthrough agreement between Libya&#039;s rival political blocs, calling it \"an important step\" towards the country&#039;s first national elections in over a decade – while pressing all sides to move quickly from paper to practice."
+      ],
+      "marketView": [
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168302",
+          "publishedAt": "2026-09-09T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "cdc237f2af3b",
+      "headline": "战争冲突对国际航运与船员安全的影响上升",
+      "sourceHeadline": "Ships and seafarers increasingly caught in the crossfire of unrelated wars",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "The global shipping industry is facing a \"genuinely unprecedented\" convergence of maritime crises, with vessels and seafarers increasingly used as “leverage” in conflicts that have nothing to do with them.",
+      "publishedAt": "2026-09-08T12:00:00.000Z",
+      "fetchedAt": "2026-09-11T14:39:31.307Z",
+      "region": "middle-east",
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "high",
+        "score": 6,
+        "criteria": [
+          "energySupply",
+          "tradeSupplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "riskAppetite"
+        ]
+      },
+      "fact": [
+        "The global shipping industry is facing a \"genuinely unprecedented\" convergence of maritime crises, with vessels and seafarers increasingly used as “leverage” in conflicts that have nothing to do with them."
+      ],
+      "marketView": [
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168297",
+          "publishedAt": "2026-09-08T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "288fed9bd73c",
+      "headline": "AI 数据中心给全球电力系统带来更大压力",
+      "sourceHeadline": "AI datacentres pose growing threat to electricity systems worldwide",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "Use of data-intensive technologies – in particular artificial intelligence (AI) data centres – is growing faster than electricity infrastructure can handle, the UN’s economic commission for Europe has warned, raising concerns about the future reliability and resilience of energy systems worldwide.&nbsp;",
+      "publishedAt": "2026-09-08T12:00:00.000Z",
+      "fetchedAt": "2026-09-11T14:39:31.307Z",
+      "region": "europe",
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "medium",
+        "score": 3,
+        "criteria": [
+          "energySupply",
+          "growth",
+          "earnings"
+        ]
+      },
+      "fact": [
+        "Use of data-intensive technologies – in particular artificial intelligence (AI) data centres – is growing faster than electricity infrastructure can handle, the UN’s economic commission for Europe has warned, raising concerns about the future reliability and resilience of energy systems worldwide.&nbsp;"
+      ],
+      "marketView": [
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168296",
+          "publishedAt": "2026-09-08T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "a20646c0f1f3",
+      "headline": "欧洲央行讨论家庭预期、行为与货币政策",
+      "sourceHeadline": "Boris Vujčić: Listening to households: expectations, behaviour and monetary policy",
+      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "summary": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "publishedAt": "2026-09-01T16:00:00.000Z",
+      "fetchedAt": "2026-09-11T14:39:31.307Z",
+      "region": "europe",
+      "topic": "monetary-policy",
+      "eventType": "monetary-policy",
+      "relevance": {
+        "level": "medium",
+        "score": 4,
+        "criteria": [
+          "inflation",
+          "growth",
+          "centralBank",
+          "capitalFlows"
+        ]
+      },
+      "fact": [
+        "官方来源发布：Boris Vujčić: Listening to households: expectations, behaviour and monetary policy"
+      ],
+      "marketView": [
+        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
+        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
+      ],
+      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
+      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "国债收益率",
+          "explanation": "它最直接反映政策、通胀和期限补偿。"
+        },
+        {
+          "name": "美元",
+          "explanation": "相对利率会改变持有不同货币的吸引力。"
+        },
+        {
+          "name": "Nasdaq",
+          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
+        },
+        {
+          "name": "银行股",
+          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "relatedKnowledgePoints": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "conditionsThatChangeView": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "European Central Bank",
+          "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260901~bb28f33f54.en.html",
+          "publishedAt": "2026-09-01T16:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bc6e48ed98ea",
+      "headline": "日本公布贷款与贴现合同平均利率",
+      "sourceHeadline": "Average Contract Interest Rates on Loans and Discounts (July)",
+      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "summary": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "publishedAt": "2026-08-30T23:50:00.000Z",
+      "fetchedAt": "2026-09-11T14:39:31.307Z",
+      "region": "japan",
+      "topic": "monetary-policy",
+      "eventType": "monetary-policy",
+      "relevance": {
+        "level": "medium",
+        "score": 4,
+        "criteria": [
+          "inflation",
+          "growth",
+          "centralBank",
+          "capitalFlows"
+        ]
+      },
+      "fact": [
+        "官方来源发布：Average Contract Interest Rates on Loans and Discounts (July)"
+      ],
+      "marketView": [
+        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
+        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
+      ],
+      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
+      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "国债收益率",
+          "explanation": "它最直接反映政策、通胀和期限补偿。"
+        },
+        {
+          "name": "美元",
+          "explanation": "相对利率会改变持有不同货币的吸引力。"
+        },
+        {
+          "name": "Nasdaq",
+          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
+        },
+        {
+          "name": "银行股",
+          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "relatedKnowledgePoints": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "conditionsThatChangeView": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "Bank of Japan",
+          "url": "http://www.boj.or.jp/en/statistics/dl/loan/yaku/yaku2607.pdf",
+          "publishedAt": "2026-08-30T23:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "e0169e55d181",
+      "headline": "美联储发布最新 FOMC 声明",
+      "sourceHeadline": "Federal Reserve issues FOMC statement",
+      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "summary": "Federal Reserve issues FOMC statement",
+      "publishedAt": "2026-07-29T18:00:00.000Z",
+      "fetchedAt": "2026-09-11T14:39:31.307Z",
+      "region": "united-states",
+      "topic": "monetary-policy",
+      "eventType": "monetary-policy",
+      "relevance": {
+        "level": "high",
+        "score": 6,
+        "criteria": [
+          "inflation",
+          "growth",
+          "centralBank",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "fact": [
+        "Federal Reserve issues FOMC statement"
+      ],
+      "marketView": [
+        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
+        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
+      ],
+      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
+      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "国债收益率",
+          "explanation": "它最直接反映政策、通胀和期限补偿。"
+        },
+        {
+          "name": "美元",
+          "explanation": "相对利率会改变持有不同货币的吸引力。"
+        },
+        {
+          "name": "Nasdaq",
+          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
+        },
+        {
+          "name": "银行股",
+          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "relatedKnowledgePoints": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "conditionsThatChangeView": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+          "publishedAt": "2026-07-29T18:00:00.000Z"
+        }
+      ]
+    }
+  ]
+}

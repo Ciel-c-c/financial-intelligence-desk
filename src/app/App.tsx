@@ -6,6 +6,8 @@ import { LearnPage } from '../pages/LearnPage';
 import { LessonPage } from '../pages/LessonPage';
 import { NewsDetailPage } from '../pages/NewsDetailPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
+import { GlobalSituationPage } from '../pages/GlobalSituationPage';
+import { GlobalEventPage } from '../pages/GlobalEventPage';
 
 export function App() {
   return (
@@ -13,6 +15,8 @@ export function App() {
       <Route element={<AppShell />}>
         <Route index element={<TodayPage />} />
         <Route path="brief" element={<BriefPage />} />
+        <Route path="situation" element={<GlobalSituationPage />} />
+        <Route path="situation/:id" element={<GlobalEventPage />} />
         <Route path="learn" element={<LearnPage />} />
         <Route path="learn/:id" element={<LessonPage />} />
         <Route path="news/:id" element={<NewsDetailPage />} />
