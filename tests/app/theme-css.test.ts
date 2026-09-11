@@ -4,14 +4,19 @@ import { describe, expect, it } from 'vitest';
 
 const css = readFileSync(join(process.cwd(), 'src/styles/global.css'), 'utf8');
 
-describe('pink-purple liquid glass theme', () => {
-  it('uses one white, lavender and pink backdrop without the old blue upper wash', () => {
-    expect(css).toContain('linear-gradient(155deg,#faf7ff 0%,#f5edff 45%,#fbeaf5 100%)');
-    expect(css).toContain('radial-gradient(circle at 18% 12%,rgba(246,220,255,.72),transparent 38%)');
-    expect(css).toContain('radial-gradient(circle at 86% 68%,rgba(255,214,235,.62),transparent 42%)');
+describe('lavender liquid glass theme', () => {
+  it('keeps the full-page backdrop low-saturation and lavender-led', () => {
+    expect(css).toContain('--backdrop-lavender:#ddd3ee');
+    expect(css).toContain('--backdrop-pale-purple:#eee9f7');
+    expect(css).toContain('--backdrop-pearl:#fbfaf7');
+    expect(css).toContain('--backdrop-lavender-white:#f7f4fb');
+    expect(css).toContain('var(--backdrop-lavender) 0 10%');
+    expect(css).toContain('var(--backdrop-pale-purple) 20% 60%');
+    expect(css).toContain('var(--backdrop-pearl) 70% 80%');
+    expect(css).toContain('var(--backdrop-lavender-white) 90% 100%');
     expect(css).toContain('background-image:none!important');
-    expect(css).not.toContain('rgba(231,239,249,.76)');
-    expect(css).not.toContain('rgba(151,171,212,.58)');
+    expect(css).not.toContain('#fbeaf5');
+    expect(css).not.toContain('rgba(255,214,235');
   });
 
   it('uses conventional Chinese market red for gains and green for losses', () => {
@@ -22,7 +27,7 @@ describe('pink-purple liquid glass theme', () => {
   });
 
   it('uses shared clear-glass optics with specular edges and graceful fallbacks', () => {
-    expect(css).toContain('--liquid-glass:rgba(255,248,255,.18)');
+    expect(css).toContain('--liquid-glass:rgba(255,255,255,.16)');
     expect(css).toContain('--liquid-glass-border:rgba(255,255,255,.72)');
     expect(css).toContain('--liquid-glass-highlight:inset 0 1px 0 rgba(255,255,255,.88)');
     expect(css).toContain('backdrop-filter:blur(var(--liquid-glass-blur)) saturate(150%) contrast(103%)');
