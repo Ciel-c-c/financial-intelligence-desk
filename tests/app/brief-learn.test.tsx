@@ -8,7 +8,7 @@ describe('Brief and learning', () => {
   it('links dated brief events to their explanations', () => {
     render(<MemoryRouter initialEntries={['/brief']}><App /></MemoryRouter>);
     expect(screen.getByText('2026-09-11')).toBeInTheDocument();
-    expect(screen.getByText(/油价与债券收益率齐升/)).toBeInTheDocument();
+    expect(screen.getByText(/全球高油价与高利率/)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /油价站上100美元/ })).toHaveAttribute('href', '/news/wall-street-oil-pressure');
   });
 

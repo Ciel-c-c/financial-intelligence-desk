@@ -23,7 +23,7 @@ export function TodayPage() {
     <main className="page today-page">
       <section className="market-hero">
         <div className="market-hero-head"><div><p className="eyebrow">全球市场仪表盘</p><h1>{marketTab === 'A股' ? 'A股市场全景' : `${marketTab}概览`}</h1></div><span className="market-status">今日</span></div>
-        <div className="market-summary"><strong>指数小涨，个股偏弱</strong><p>上涨 1,778 只、下跌 3,580 只；煤炭与航运领涨，游戏与传媒领跌。</p></div>
+        <div className="market-summary"><strong>A股午后回升，三大指数仍收跌</strong><p>沪指、深成指跌超 1%；元件、通信和电力相对强，金融与贵金属承压。</p></div>
         <small>数据截至 {marketGroups[marketTab][0].timestamp} · 收盘数据为延迟快照</small>
       </section>
 

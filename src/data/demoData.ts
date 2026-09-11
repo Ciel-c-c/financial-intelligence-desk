@@ -1,7 +1,7 @@
 import type { Brief, KnowledgeCardData, MarketSnapshot, NewsItem, PoliticalImpact, SectorSnapshot } from './types';
 
-export const dataTimestamp = '2026-09-11 11:30（北京时间）';
-const previousChinaCloseTimestamp = '2026-09-09 18:30（北京时间）';
+export const dataTimestamp = '2026-09-11 18:30（北京时间）';
+const previousHongKongCloseTimestamp = '2026-09-09 18:30（北京时间）';
 
 export const markets: MarketSnapshot[] = [
   { id: 'csi300', market: 'A股', indexName: '沪深300', value: '4,126.08', changePercent: 0.62, status: '已收盘', timestamp: dataTimestamp, source: '演示数据', delayed: true, mode: '演示' },
@@ -10,18 +10,17 @@ export const markets: MarketSnapshot[] = [
 ];
 
 export const aShareIndices: MarketSnapshot[] = [
-  { id: 'shcomp', market: 'A股', indexName: '上证指数', value: '3,951.51', changePercent: 0.28, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
-  { id: 'szcomp', market: 'A股', indexName: '深证成指', value: '13,723.32', changePercent: 0.15, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
-  { id: 'chinext', market: 'A股', indexName: '创业板指', value: '3,354.97', changePercent: -0.14, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
-  { id: 'csi300-focus', market: 'A股', indexName: '沪深300', value: '4,572.60', changePercent: 0.30, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '同花顺 / 证券时报', delayed: true, mode: '今日快照' },
+  { id: 'shcomp', market: 'A股', indexName: '上证指数', value: '3,888.11', changePercent: -1.18, status: '已收盘', timestamp: dataTimestamp, source: '新华财经', delayed: true, mode: '今日快照' },
+  { id: 'szcomp', market: 'A股', indexName: '深证成指', value: '13,471.26', changePercent: -1.08, status: '已收盘', timestamp: dataTimestamp, source: '新华财经', delayed: true, mode: '今日快照' },
+  { id: 'chinext', market: 'A股', indexName: '创业板指', value: '3,322.04', changePercent: -0.49, status: '已收盘', timestamp: dataTimestamp, source: '新华财经', delayed: true, mode: '今日快照' },
 ];
 
 export const marketGroups: Record<string, MarketSnapshot[]> = {
   A股: aShareIndices,
   港股: [
-    { id: 'hsi-main', market: '港股', indexName: '恒生指数', value: '25,274.96', changePercent: -0.17, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
-    { id: 'hstech', market: '港股', indexName: '恒生科技', value: '4,420.79', changePercent: -0.76, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
-    { id: 'hscei', market: '港股', indexName: '国企指数', value: '8,369.05', changePercent: -0.34, status: '9月9日收盘', timestamp: previousChinaCloseTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
+    { id: 'hsi-main', market: '港股', indexName: '恒生指数', value: '25,274.96', changePercent: -0.17, status: '9月9日收盘', timestamp: previousHongKongCloseTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
+    { id: 'hstech', market: '港股', indexName: '恒生科技', value: '4,420.79', changePercent: -0.76, status: '9月9日收盘', timestamp: previousHongKongCloseTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
+    { id: 'hscei', market: '港股', indexName: '国企指数', value: '8,369.05', changePercent: -0.34, status: '9月9日收盘', timestamp: previousHongKongCloseTimestamp, source: '新华社', delayed: true, mode: '今日快照' },
   ],
   美股: [
     { id: 'sp500-main', market: '美股', indexName: '标普500', value: '7,591.70', changePercent: -0.58, status: '已收盘', timestamp: dataTimestamp, source: 'AP / Dow Jones Market Data', delayed: true, mode: '今日快照' },
@@ -36,12 +35,12 @@ export const marketGroups: Record<string, MarketSnapshot[]> = {
 };
 
 export const sectors: SectorSnapshot[] = [
-  { id: 'coal', name: '煤炭开采', changePercent: 3.35, direction: '领涨', reason: '能源价格偏强，资金关注资源品盈利弹性与高股息属性。', beginnerNote: '商品涨价可能抬高煤企收入，但还要看产量、成本和政策调控。' },
-  { id: 'shipping', name: '港口航运', changePercent: 2.87, direction: '上涨', reason: '市场交易运价和供应链扰动预期，板块获得资金关注。', beginnerNote: '运价上涨可能增加航运公司收入，也可能提高进出口企业成本。' },
-  { id: 'components', name: '元件', changePercent: 2.20, direction: '上涨', reason: '电子与通信行业获得主力资金净流入，部分硬件方向走强。', beginnerNote: '板块上涨不代表所有公司基本面同步改善，要继续看订单和利润。' },
-  { id: 'appliances', name: '小家电', changePercent: -2.02, direction: '下跌', reason: '市场广度偏弱，消费相关板块承受资金流出压力。', beginnerNote: '消费板块要看居民需求、渠道库存与企业能否保持利润率。' },
-  { id: 'media', name: '传媒', changePercent: -3.38, direction: '下跌', reason: '传媒行业主力资金净流出超过30亿元，短线情绪转弱。', beginnerNote: '资金流能解释短期价格压力，但不能单独判断公司长期价值。' },
-  { id: 'games', name: '游戏', changePercent: -3.46, direction: '领跌', reason: '成长主题出现获利回吐，游戏板块跌幅居前。', beginnerNote: '热门板块前期涨幅大时，投资者兑现利润会放大回调。' },
+  { id: 'components', name: '元件 / MLCC', changePercent: null, direction: '领涨', reason: 'MLCC与PCB概念逆势活跃，市场继续交易AI硬件需求与部分产品供需偏紧。', beginnerNote: 'MLCC是电子设备里的基础零件；需求增加可能改善厂商订单，但主题上涨仍需利润验证。', asOf: '9月11日收盘' },
+  { id: 'communications', name: '通信设备', changePercent: null, direction: '上涨', reason: '光纤、铜缆等AI硬件方向局部活跃，在大盘回落时仍有资金承接。', beginnerNote: '算力增长会增加网络连接需求，但高景气也可能已经反映在股价里。', asOf: '9月11日收盘' },
+  { id: 'power', name: '电力', changePercent: null, direction: '上涨', reason: '算力用电预期和防御属性共同支撑，部分电力股逆势走强。', beginnerNote: '电力需求稳定时常有防御性，但煤价、上网电价和负债也会影响利润。', asOf: '9月11日收盘' },
+  { id: 'precious-metals', name: '贵金属', changePercent: null, direction: '领跌', reason: '海外利率上升和美元走强带来压力，前期上涨后资金集中兑现利润。', beginnerNote: '黄金通常怕实际利率上升，因为持有黄金本身没有利息。', relatedNewsId: 'wall-street-oil-pressure', asOf: '9月11日收盘' },
+  { id: 'securities', name: '证券', changePercent: null, direction: '下跌', reason: '市场整体风险偏好下降，大金融板块明显回调。', beginnerNote: '券商业绩与成交活跃度相关，但放量下跌也会压低市场对其短期盈利的预期。', asOf: '9月11日收盘' },
+  { id: 'diversified-finance', name: '多元金融', changePercent: null, direction: '领跌', reason: '高波动金融题材出现获利回吐，跌幅位居市场前列。', beginnerNote: '金融题材弹性大、波动也大，短期涨幅越高，回撤风险通常越需要留意。', asOf: '9月11日收盘' },
 ];
 
 export const politicalImpacts: PoliticalImpact[] = [
@@ -70,18 +69,18 @@ export const politicalImpacts: PoliticalImpact[] = [
 
 export const news: NewsItem[] = [
   {
-    id: 'a-share-close-sep-9', title: 'A股指数小幅收涨，但超过3500只个股下跌', region: 'A股', topic: '市场',
-    sourceName: '同花顺 / 证券时报', sourceUrl: 'https://news.10jqka.com.cn/20260909/c679738445.shtml', publishedAt: '2026-09-09 15:30',
-    summary: '上证指数涨0.28%，深证成指涨0.15%，创业板指跌0.14%。指数看起来平稳，但下跌股票明显多于上涨股票，市场赚钱效应偏弱。',
-    excerpt: '两市上涨1,778只、下跌3,580只。煤炭、港口航运和元件领涨，游戏、传媒和小家电跌幅居前。',
-    termIds: ['valuation'], facts: ['上证指数收于3,951.51点，涨0.28%。', '两市1,778只股票上涨、3,580只下跌。', '全天成交额约1.87万亿元。'],
-    consensus: ['权重股支撑指数，而多数个股走弱，说明指数涨跌没有完整反映持股体验。'],
-    inference: ['短线资金偏向资源、航运和部分硬件方向，传媒与游戏的风险偏好下降。'],
-    risks: ['单日资金流与涨跌不能确认中长期趋势，后续仍要看成交量、盈利和政策变化。'],
+    id: 'a-share-close-sep-9', title: 'A股三大指数收跌，午后收复部分失地', region: 'A股', topic: '市场',
+    sourceName: '新华财经', sourceUrl: 'https://www.cnfin.com/yw-lb/detail/20260911/4468708_1.html', publishedAt: '2026-09-11 15:30',
+    summary: '上证指数跌1.18%，深证成指跌1.08%，创业板指跌0.49%。三大指数盘中一度跌逾2%，午后回升，但外部市场和利率压力仍压低风险偏好。',
+    excerpt: '两市成交约1.97万亿元，较上一交易日放量约3,248亿元。元件、通信设备和电力相对活跃，多元金融、证券和贵金属跌幅居前。',
+    termIds: ['valuation', 'interest-rate'], facts: ['上证指数收于3,888.11点，跌1.18%。', '深证成指跌1.08%，创业板指跌0.49%。', '沪深两市成交额约1.97万亿元。'],
+    consensus: ['油价和海外利率上升会降低投资者承担风险的意愿，高估值与高波动板块通常更敏感。'],
+    inference: ['午后跌幅收窄说明低位出现承接，但还不足以确认调整已经结束。'],
+    risks: ['单日放量下跌可能是恐慌释放，也可能是调整延续，需结合后续市场广度和成交结构判断。'],
     causalChain: [
-      { title: '资金集中在少数板块', explanation: '煤炭、航运等方向吸引资金。', condition: '能源价格和事件预期继续存在。' },
-      { title: '权重指数保持小涨', explanation: '少数较大公司能支撑指数。', condition: '权重股没有同步回落。' },
-      { title: '多数个股体验偏弱', explanation: '下跌股票数量约为上涨股票两倍。', condition: '市场广度未明显改善。' },
+      { title: '海外风险升温', explanation: '高油价与高利率让全球资金更谨慎。', condition: '油价和债券收益率维持高位。' },
+      { title: 'A股早盘普遍回落', explanation: '投资者降低高波动资产仓位。', condition: '国内利好不足以完全抵消外部压力。' },
+      { title: '午后出现承接', explanation: '部分资金在低位买入元件、电力等方向。', condition: '后续成交和盈利预期能够支持。' },
     ], mode: '今日快照',
   },
   {
@@ -221,8 +220,8 @@ export const knowledge: KnowledgeCardData[] = [
 ];
 
 export const brief: Brief = {
-  date: '2026-09-11', generatedAt: dataTimestamp, headline: '油价与债券收益率齐升，美股连续第四日下跌，欧洲央行加息',
-  newsIds: ['wall-street-oil-pressure', 'ecb-energy-rate-hike', 'a-share-close-sep-9'],
-  watchItems: ['观察油价站上100美元后是否继续推高通胀预期。', '关注接近5%的美债收益率如何压制成长股估值。', '留意欧洲央行加息是否带来更多央行政策转向。'],
+  date: '2026-09-11', generatedAt: dataTimestamp, headline: '全球高油价与高利率压低风险偏好，A股午后收复部分失地',
+  newsIds: ['a-share-close-sep-9', 'wall-street-oil-pressure', 'ecb-energy-rate-hike'],
+  watchItems: ['观察A股午后承接能否延续，尤其是上涨股票数量和成交结构。', '关注MLCC、通信和电力的相对强势能否得到订单与盈利验证。', '留意油价与美债收益率是否回落，减轻全球成长股估值压力。'],
   knowledgeId: 'interest-rate', mode: '今日快照',
 };

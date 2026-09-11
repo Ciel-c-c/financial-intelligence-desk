@@ -9,7 +9,7 @@ describe('Today page', () => {
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
 
     expect(screen.getAllByText('演示').length).toBeGreaterThan(0);
-    expect(screen.getByText(/数据截至 2026-09-09/)).toBeInTheDocument();
+    expect(screen.getByText(/数据截至 2026-09-11/)).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '今日要闻' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '股市新闻' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '经济新闻' })).toBeInTheDocument();
@@ -21,7 +21,7 @@ describe('Today page', () => {
     expect(screen.getByRole('heading', { name: '政策与地缘影响' })).toBeInTheDocument();
     expect(screen.getAllByText('受影响板块')).toHaveLength(3);
     expect(screen.getAllByText('为什么这样走').length).toBeGreaterThan(0);
-    expect(screen.getByText('煤炭开采')).toBeInTheDocument();
+    expect(screen.getAllByText('元件 / MLCC').length).toBeGreaterThan(0);
     expect(screen.getByRole('link', { name: /芯片公司业绩增长/ })).toHaveAttribute('href', '/news/nvidia-results');
   });
 
@@ -40,8 +40,8 @@ describe('Today page', () => {
     expect(screen.getByRole('navigation', { name: '桌面主要导航' })).toBeInTheDocument();
     expect(screen.getByRole('region', { name: '行业涨跌比较' })).toBeInTheDocument();
     expect(screen.getByText('板块表现一览')).toBeInTheDocument();
-    expect(screen.getAllByText('+3.35%').length).toBeGreaterThan(0);
-    expect(screen.getAllByText('-3.46%').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('领涨').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('领跌').length).toBeGreaterThan(0);
   });
 
   it('uses the Financial Lens brand and beginner-friendly message', () => {
