@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
@@ -57,5 +57,20 @@ describe('Today page', () => {
       'src',
       './financial-lens-logo.png',
     );
+  });
+
+  it('keeps market direction explicit and makes mobile transmission steps expandable', () => {
+    const { container } = render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
+    const marketCards = [...container.querySelectorAll('.market-card')];
+
+    expect(marketCards.length).toBeGreaterThan(0);
+    for (const card of marketCards) {
+      expect(card.querySelector('.market-change')?.textContent).toMatch(/[↑↓].*(上涨|下跌)/);
+    }
+
+    const chain = screen.getByRole('list', { name: '宏观传导路径' });
+    expect(chain).toHaveClass('impact-chain');
+    expect(within(chain).getAllByRole('button')).toHaveLength(5);
+    expect(within(chain).getByRole('button', { name: /油价上涨/ })).toHaveAttribute('aria-expanded');
   });
 });

@@ -9,11 +9,19 @@ import { filterNews, type RegionFilter } from '../data/selectors';
 
 const regions: RegionFilter[] = ['全部', 'A股', '港股', '美股', '全球'];
 const marketTabs = ['A股', '港股', '美股', '全球资产'] as const;
+const transmissionSteps = [
+  { title: '中东冲突升温', detail: '供应与运输风险溢价上升。' },
+  { title: '油价上涨', detail: '能源成本向生产和运输环节传导。' },
+  { title: '通胀担忧', detail: '市场重新评估物价回落的速度。' },
+  { title: '降息更难', detail: '利率可能在更高水平维持更久。' },
+  { title: '成长股承压', detail: '较高贴现率压低远期盈利估值。' },
+] as const;
 
 export function TodayPage() {
   const [query, setQuery] = useState('');
   const [region, setRegion] = useState<RegionFilter>('全部');
   const [marketTab, setMarketTab] = useState<(typeof marketTabs)[number]>('A股');
+  const [openTransmissionStep, setOpenTransmissionStep] = useState<number | null>(null);
   const filtered = useMemo(() => filterNews(news, query, region), [query, region]);
   const headlines = filtered.filter((item) => item.mode === '今日快照').slice(0, 3);
   const stockNews = filtered.filter((item) => item.topic === '市场' || item.topic === '公司');
@@ -43,7 +51,10 @@ export function TodayPage() {
 
       <section className="impact-card dashboard-panel" aria-labelledby="impact-title">
         <p className="eyebrow">政治经济 → 资产价格</p><h2 id="impact-title">核心市场传导</h2>
-        <div className="impact-chain"><span>中东冲突升温</span><i>→</i><span>油价上涨</span><i>→</i><span>通胀担忧</span><i>→</i><span>降息更难</span><i>→</i><span>成长股承压</span></div>
+        <ol className="impact-chain" aria-label="宏观传导路径">{transmissionSteps.map((step, index) => {
+          const expanded = openTransmissionStep === index;
+          return <li key={step.title}><button type="button" aria-expanded={expanded} onClick={() => setOpenTransmissionStep(expanded ? null : index)}><span>{step.title}</span><b aria-hidden="true">{index < transmissionSteps.length - 1 ? '↓' : '•'}</b></button>{expanded && <p>{step.detail}</p>}</li>;
+        })}</ol>
         <p>这是一条可能路径，不是确定预测。冲突缓和、供应增加或政策变化都可能改变结果。</p>
       </section>
       </div>

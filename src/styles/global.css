@@ -183,3 +183,120 @@ body::before { z-index:-2; background:radial-gradient(ellipse at 49% 38%,rgba(25
   .site-backdrop { background-position:center center; }
   body::after { content:""; position:fixed; z-index:-1; inset:0; pointer-events:none; background:rgba(248,251,255,.08); }
 }
+
+/* Responsive market dashboard: content-led mobile layout */
+.market-card strong,.market-change,.comparison-row strong,.sector-main>strong,.news-card time {
+  font-variant-numeric:tabular-nums;
+}
+.market-card,.sector-card,.political-card,.news-card,.dashboard-panel { min-width:0; }
+.market-quote { min-width:0; }
+.market-change { white-space:nowrap; }
+.impact-chain { margin:0; list-style:none; }
+.impact-chain li { min-width:0; }
+.impact-chain button { color:inherit; }
+
+@media (max-width:767px) {
+  .app-shell { padding-bottom:calc(82px + env(safe-area-inset-bottom)); }
+  .topbar { height:56px; padding:0 12px; gap:8px; }
+  .topbar .mobile-brand { min-width:0; min-height:44px; gap:7px; font-size:.9rem; }
+  .topbar .brand-logo { width:32px; height:32px; }
+  .topbar>.demo-badge { max-width:112px; padding:4px 7px; font-size:.66rem; }
+  .page { width:calc(100% - 24px); gap:22px; padding-top:12px; }
+  .today-page>section,.dashboard-split { min-width:0; }
+  .market-hero { padding:15px; border-radius:19px; }
+  .market-hero-head { gap:10px; }
+  .market-hero h1 { font-size:clamp(1.8rem,8.7vw,2.25rem); line-height:1.08; }
+  .market-summary { margin:12px 0 9px; padding:11px 12px; border-radius:13px; }
+  .market-summary strong { font-size:.98rem; }
+  .market-summary p { margin-top:4px; font-size:.84rem; line-height:1.45; }
+  .market-hero>small { display:block; line-height:1.45; }
+  .section-heading { align-items:flex-start; margin-bottom:10px; }
+  .section-heading>div { min-width:0; }
+  .section-heading h2 { font-size:clamp(1.25rem,5.5vw,1.45rem); line-height:1.2; }
+  .section-heading>span { flex:0 0 auto; max-width:42%; white-space:normal; text-align:center; }
+  .section-intro { margin:-2px 0 11px; font-size:.82rem; line-height:1.5; }
+  .market-tabs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:5px; overflow:visible; }
+  .market-tabs button { min-width:0; min-height:44px; padding:8px; white-space:normal; }
+  .market-grid { grid-auto-flow:initial; grid-template-columns:repeat(2,minmax(0,1fr)); grid-auto-columns:auto; gap:9px; overflow:visible; padding:0; scroll-snap-type:none; }
+  .market-card { display:grid; grid-template-rows:auto 1fr auto auto; padding:13px; border-radius:17px; }
+  .market-card .card-row { align-items:flex-start; gap:6px; }
+  .market-card .eyebrow { overflow-wrap:anywhere; }
+  .market-card-body { display:grid; align-content:start; }
+  .market-quote h3 { min-height:2.6em; margin:12px 0 4px; font-size:.9rem; line-height:1.3; overflow-wrap:break-word; }
+  .market-card strong { display:block; font-size:clamp(1.2rem,5.8vw,1.48rem); line-height:1.15; white-space:nowrap; letter-spacing:-.02em; }
+  .market-card p { margin:7px 0 2px; font-size:.78rem; }
+  .market-spark { height:25px; margin:5px 0; }
+  .market-spark i { height:22px; }
+  .dashboard-split { gap:18px; }
+  .sector-comparison { padding:14px; border-radius:17px; }
+  .comparison-head { display:flex; flex-wrap:wrap; align-items:end; }
+  .comparison-head h3 { margin-bottom:2px; }
+  .comparison-head>span { margin:0; white-space:normal; }
+  .comparison-chart { gap:8px; margin-top:12px; }
+  .comparison-row { grid-template-columns:minmax(58px,72px) minmax(0,1fr) 56px; gap:7px; font-size:.75rem; }
+  .comparison-row>span { white-space:normal; line-height:1.2; }
+  .comparison-track { height:7px; }
+  .sector-comparison>small { margin-top:10px; font-size:.72rem; }
+  .sector-card { padding:14px; }
+  .sector-main { align-items:center; gap:8px; }
+  .sector-main>div { min-width:0; align-items:center; gap:7px; }
+  .sector-main h3 { line-height:1.25; overflow-wrap:break-word; }
+  .sector-main>strong { flex:0 0 auto; font-size:.95rem; white-space:nowrap; }
+  .sector-card summary,.sector-card details>a { display:flex; align-items:center; min-height:44px; }
+  .impact-card { padding:15px; border-radius:18px; }
+  .impact-card h2 { margin-bottom:11px; font-size:1.35rem; }
+  .impact-chain { display:grid; gap:0; overflow:visible; padding:0; }
+  .impact-chain li { position:relative; display:grid; }
+  .impact-chain button { width:100%; min-height:44px; display:flex; align-items:center; justify-content:space-between; gap:10px; padding:9px 11px; border:1px solid rgba(255,255,255,.45); border-radius:11px; background:rgba(255,255,255,.16); font-size:.82rem; font-weight:800; text-align:left; }
+  .impact-chain button b { color:#77719a; font-size:1rem; }
+  .impact-chain li:not(:last-child)::after { content:""; width:1px; height:7px; margin:auto; background:rgba(113,119,161,.45); }
+  .impact-chain li>p { margin:5px 3px 8px; color:#60637a; font-size:.77rem; line-height:1.5; }
+  .political-card,.news-card { padding:15px; border-radius:17px; }
+  .political-card header { gap:8px; }
+  .political-card header span { min-width:0; overflow-wrap:anywhere; }
+  .political-card h3,.news-card h3 { margin:10px 0 8px; font-size:1rem; line-height:1.42; overflow-wrap:break-word; }
+  .political-card dl { gap:9px; }
+  .political-card dl>div { grid-template-columns:1fr; gap:3px; padding-top:9px; }
+  .asset-tags { min-width:0; }
+  .asset-tags span { max-width:100%; overflow-wrap:anywhere; }
+  .political-card>a,.news-card>a { display:flex; align-items:center; min-height:44px; }
+  .news-card>a h3 { display:-webkit-box; overflow:hidden; -webkit-box-orient:vertical; -webkit-line-clamp:3; }
+  .news-card>p { display:-webkit-box; overflow:hidden; -webkit-box-orient:vertical; -webkit-line-clamp:3; font-size:.86rem; line-height:1.55; }
+  .news-card footer { margin-top:11px; }
+  .region-filter { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:7px; overflow:visible; }
+  .region-filter button { min-width:0; min-height:44px; padding:7px 9px; white-space:normal; }
+  .bottom-nav { min-height:64px; padding:6px max(8px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left)); }
+  .bottom-nav a { min-width:0; min-height:48px; align-content:center; padding:5px 2px; }
+  .bottom-nav small { overflow:hidden; max-width:100%; text-overflow:ellipsis; white-space:nowrap; }
+}
+
+@media (max-width:359px) {
+  .page { width:calc(100% - 16px); }
+  .topbar>.demo-badge { display:none; }
+  .market-grid { grid-template-columns:1fr; }
+  .market-card { grid-template-columns:minmax(0,1fr) auto; grid-template-rows:auto auto auto; column-gap:12px; }
+  .market-card .card-row { grid-column:1/-1; }
+  .market-card-body { grid-column:1; }
+  .market-quote h3 { min-height:0; }
+  .market-spark { grid-column:2; grid-row:2; width:72px; align-self:end; }
+  .market-card>small { grid-column:1/-1; }
+  .comparison-row { grid-template-columns:56px minmax(0,1fr) 54px; gap:5px; }
+}
+
+@media (min-width:768px) and (max-width:999px) {
+  .page { width:min(100% - 40px,900px); }
+  .market-grid { grid-template-columns:repeat(2,minmax(0,1fr)); grid-auto-flow:initial; overflow:visible; }
+  .dashboard-split { grid-template-columns:minmax(0,1fr); }
+  .impact-chain { display:flex; }
+  .impact-chain button { min-height:44px; border:0; border-radius:10px; padding:8px 10px; background:rgba(255,255,255,.2); font-size:.78rem; font-weight:800; }
+  .impact-chain button b { margin-left:7px; transform:rotate(-90deg); }
+  .impact-chain li>p { max-width:160px; color:var(--muted); font-size:.75rem; }
+}
+
+@media (min-width:1000px) {
+  .impact-chain { display:flex; gap:7px; align-items:flex-start; overflow:visible; padding:0; }
+  .impact-chain li { flex:1 1 0; min-width:0; }
+  .impact-chain button { width:100%; min-height:44px; display:flex; align-items:center; justify-content:space-between; gap:5px; border:0; border-radius:10px; padding:8px 9px; background:rgba(255,255,255,.2); font-size:.76rem; font-weight:800; text-align:left; }
+  .impact-chain button b { transform:rotate(-90deg); color:#77719a; }
+  .impact-chain li>p { margin:7px 3px 0; color:var(--muted); font-size:.74rem; line-height:1.45; }
+}
