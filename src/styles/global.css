@@ -170,16 +170,16 @@ button { cursor:pointer; }
 .news-card:hover { transform:translateY(-2px); box-shadow:0 22px 54px rgba(54,58,91,.16),inset 0 1px 0 rgba(255,255,255,.78); }
 
 /* Selected pale-blue/lavender aurora + clear, colorless frosted-glass surfaces */
-body { position:relative; background:#d6e8f7; }
-body::before { z-index:-2; background:linear-gradient(120deg,rgba(220,245,255,.1),rgba(224,211,255,.12)); }
-.site-backdrop { position:fixed; z-index:-3; inset:0; pointer-events:none; background-size:cover; background-position:center center; background-repeat:no-repeat; filter:saturate(.92) brightness(.9); transform:scale(1.015); }
-.topbar,.desktop-sidebar,.bottom-nav,.market-hero,.market-card,.sector-card,.sector-comparison,.impact-card,.political-card,.news-card,.empty-state,.reading-card,.watch-card,.daily-knowledge,.analysis-block,.knowledge-card,.brief-list a,.causal-chain li,.subject-section,.learning-event,.lesson-prerequisites,.lesson-quiz { background:rgba(244,246,255,.16); border-color:rgba(255,255,255,.46); box-shadow:0 18px 46px rgba(38,45,86,.2),inset 0 1px 0 rgba(255,255,255,.56); backdrop-filter:blur(24px) saturate(118%); -webkit-backdrop-filter:blur(24px) saturate(118%); }
-.market-summary,.comparison-track,.beginner-note,.asset-tags span,.subject-section header,.lesson-chain li,.learning-empty { background:rgba(246,248,255,.18); border-color:rgba(255,255,255,.36); }
-.market-tabs,.search-field input,.region-filter button,.learning-filters select,.learning-filters input { background:rgba(246,248,255,.2); border-color:rgba(255,255,255,.42); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); }
-.market-tabs button[aria-pressed="true"],.region-filter button[aria-pressed="true"] { background:linear-gradient(135deg,rgba(82,112,178,.88),rgba(124,91,166,.88)); }
-.desktop-sidebar nav a.active { background:linear-gradient(135deg,rgba(75,110,181,.9),rgba(127,88,166,.9)); }
+body { position:relative; background:#dedcf2; }
+body::before { z-index:-2; background:linear-gradient(105deg,rgba(205,224,247,.09) 0%,rgba(215,202,239,.22) 48%,rgba(188,166,222,.34) 100%); }
+.site-backdrop { position:fixed; z-index:-3; inset:0; pointer-events:none; background-size:cover; background-position:68% center; background-repeat:no-repeat; filter:saturate(.78) brightness(.92) hue-rotate(6deg); transform:scale(1.015); }
+.topbar,.desktop-sidebar,.bottom-nav,.market-hero,.market-card,.sector-card,.sector-comparison,.impact-card,.political-card,.news-card,.empty-state,.reading-card,.watch-card,.daily-knowledge,.analysis-block,.knowledge-card,.brief-list a,.causal-chain li,.subject-section,.learning-event,.lesson-prerequisites,.lesson-quiz { background:rgba(246,245,255,.1); border-color:rgba(255,255,255,.43); box-shadow:0 18px 48px rgba(58,45,92,.17),inset 0 1px 0 rgba(255,255,255,.48); backdrop-filter:blur(28px) saturate(112%); -webkit-backdrop-filter:blur(28px) saturate(112%); }
+.market-summary,.comparison-track,.beginner-note,.asset-tags span,.subject-section header,.lesson-chain li,.learning-empty { background:rgba(248,246,255,.11); border-color:rgba(255,255,255,.34); }
+.market-tabs,.search-field input,.region-filter button,.learning-filters select,.learning-filters input { background:rgba(248,246,255,.13); border-color:rgba(255,255,255,.4); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); }
+.market-tabs button[aria-pressed="true"],.region-filter button[aria-pressed="true"] { background:linear-gradient(135deg,rgba(113,108,170,.86),rgba(140,107,174,.88)); }
+.desktop-sidebar nav a.active { background:linear-gradient(135deg,rgba(108,108,171,.88),rgba(141,105,174,.9)); }
 
 @media (max-width:520px) {
-  .site-backdrop { background-position:42% center; filter:saturate(.88) brightness(.88); }
-  body::after { content:""; position:fixed; z-index:-1; inset:0; pointer-events:none; background:rgba(239,246,255,.1); }
+  .site-backdrop { background-position:72% center; filter:saturate(.74) brightness(.91) hue-rotate(6deg); }
+  body::after { content:""; position:fixed; z-index:-1; inset:0; pointer-events:none; background:rgba(221,211,242,.1); }
 }
