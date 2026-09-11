@@ -170,9 +170,9 @@ button { cursor:pointer; }
 .news-card:hover { transform:translateY(-2px); box-shadow:0 22px 54px rgba(54,58,91,.16),inset 0 1px 0 rgba(255,255,255,.78); }
 
 /* Selected pale-blue/lavender aurora + clear, colorless frosted-glass surfaces */
-body { position:relative; background:#dce3ef; }
-body::before { z-index:-2; background:linear-gradient(112deg,rgba(205,224,242,.12) 0%,rgba(215,205,232,.16) 40%,rgba(207,194,226,.2) 100%); }
-.site-backdrop { position:fixed; z-index:-3; inset:0; pointer-events:none; background-size:cover; background-position:56% center; background-repeat:no-repeat; filter:saturate(.66) brightness(.94); transform:scale(1.015); }
+body { position:relative; background:#d6e8f7; }
+body::before { z-index:-2; background:linear-gradient(120deg,rgba(220,245,255,.1),rgba(224,211,255,.12)); }
+.site-backdrop { position:fixed; z-index:-3; inset:0; pointer-events:none; background-size:cover; background-position:center center; background-repeat:no-repeat; filter:saturate(.92) brightness(.9); transform:scale(1.015); }
 .topbar,.desktop-sidebar,.bottom-nav,.market-hero,.market-card,.sector-card,.sector-comparison,.impact-card,.political-card,.news-card,.empty-state,.reading-card,.watch-card,.daily-knowledge,.analysis-block,.knowledge-card,.brief-list a,.causal-chain li,.subject-section,.learning-event,.lesson-prerequisites,.lesson-quiz { background:rgba(255,255,255,.09); border-color:rgba(255,255,255,.43); box-shadow:0 18px 48px rgba(54,58,91,.15),inset 0 1px 0 rgba(255,255,255,.5); backdrop-filter:blur(28px) saturate(108%); -webkit-backdrop-filter:blur(28px) saturate(108%); }
 .market-summary,.comparison-track,.beginner-note,.asset-tags span,.subject-section header,.lesson-chain li,.learning-empty { background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.34); }
 .market-tabs,.search-field input,.region-filter button,.learning-filters select,.learning-filters input { background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.4); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); }
@@ -180,6 +180,6 @@ body::before { z-index:-2; background:linear-gradient(112deg,rgba(205,224,242,.1
 .desktop-sidebar nav a.active { background:linear-gradient(135deg,rgba(105,127,169,.86),rgba(135,112,161,.86)); }
 
 @media (max-width:520px) {
-  .site-backdrop { background-position:58% center; filter:saturate(.64) brightness(.94); }
-  body::after { content:""; position:fixed; z-index:-1; inset:0; pointer-events:none; background:rgba(244,246,251,.06); }
+  .site-backdrop { background-position:42% center; filter:saturate(.88) brightness(.88); }
+  body::after { content:""; position:fixed; z-index:-1; inset:0; pointer-events:none; background:rgba(239,246,255,.1); }
 }
