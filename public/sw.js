@@ -1,4 +1,4 @@
-const CACHE_NAME = 'financial-desk-shell-v1';
+const CACHE_NAME = 'financial-desk-shell-v2';
 const APP_SHELL = ['./', './offline.html', './manifest.webmanifest', './icon.svg'];
 
 self.addEventListener('install', (event) => {
@@ -7,8 +7,13 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-  event.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))));
-  self.clients.claim();
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    await Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)));
+    await self.clients.claim();
+    const clients = await self.clients.matchAll({ type: 'window' });
+    await Promise.all(clients.map((client) => client.navigate(client.url)));
+  })());
 });
 
 self.addEventListener('fetch', (event) => {
