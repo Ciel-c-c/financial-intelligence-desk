@@ -72,8 +72,10 @@ export interface KnowledgeCardData {
   marketChain: string[];
 }
 
+export type ImpactDimension = '投资' | '汇率' | '住房' | '工作' | '消费' | '企业经营';
+
 export interface PersonalImpact {
-  label: string;
+  label: ImpactDimension;
   impact: string;
   why: string;
   condition: string;

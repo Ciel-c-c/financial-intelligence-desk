@@ -18,7 +18,7 @@ export function SoWhatSection({ data }: { data: SoWhatData }) {
         <div className="so-card"><h3>为什么？</h3><Flow nodes={whyNodes} label="原因到结果的机制" /></div>
         <div className="so-card expectation-card"><h3>市场在赌什么？</h3><p>已经发生的消息很快会进入价格。现在交易的是下一步：</p><Flow nodes={data.marketBet} label="市场预期链" /><p>{data.expectationGap}</p></div>
         <div className="so-card counter-card"><h3>换个方向看</h3><p>{data.counterView}</p></div>
-        <div className="so-card"><h3>跟我有什么关系？</h3><div className="impact-list">{data.personalImpact.map((impact) => <article key={impact.label}><h4>{impact.label}</h4><p><b>可能影响：</b>{impact.impact}</p><p><b>为什么：</b>{impact.why}</p><p><b>要看条件：</b>{impact.condition}</p></article>)}</div></div>
+        <div className="so-card"><h3>跟我有什么关系？</h3><div className="impact-list">{data.personalImpact.map((impact) => <article key={impact.label}><h4>{impact.label}</h4><p><b>影响什么：</b>{impact.impact}</p><p><b>为什么：</b>{impact.why}</p><p><b>什么情况下不成立：</b>{impact.condition}</p></article>)}</div></div>
       </div>}
       <button className="so-toggle" type="button" aria-expanded={expanded} aria-controls="so-what-more" onClick={() => setExpanded((value) => !value)}>{expanded ? '收起深入解读 ↑' : '继续看懂：预期、反例和与你的关系 ↓'}</button>
     </section>
