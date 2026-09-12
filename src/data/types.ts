@@ -68,6 +68,28 @@ export interface KnowledgeCardData {
   definition: string;
   example: string;
   misconception: string;
+  plainLanguage: string;
+  marketChain: string[];
+}
+
+export interface PersonalImpact {
+  label: string;
+  impact: string;
+  why: string;
+  condition: string;
+}
+
+export interface SoWhatData {
+  analogy: { image: string; explanation: string };
+  next: string[];
+  condition: string[];
+  why: { cause: string; mechanisms: string[]; result: string };
+  surface: string;
+  focus: string[];
+  marketBet: string[];
+  expectationGap: string;
+  counterView: string;
+  personalImpact: PersonalImpact[];
 }
 
 export interface Brief {

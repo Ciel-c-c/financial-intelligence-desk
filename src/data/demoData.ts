@@ -213,10 +213,10 @@ export const news: NewsItem[] = [
 ];
 
 export const knowledge: KnowledgeCardData[] = [
-  { id: 'cpi', term: 'CPI', definition: '居民购买一篮子常见商品和服务时，价格整体变化了多少。', example: '同样一篮子菜去年100元、今年102元，价格大约上涨2%。', misconception: 'CPI 下降不一定代表所有东西都降价，也可能只是上涨得更慢。' },
-  { id: 'interest-rate', term: '利率', definition: '借钱要支付的价格，也是资金的时间成本。', example: '房贷利率下降时，每月利息负担通常会减少。', misconception: '降息并不保证股票上涨，经济走弱也可能同时压低企业利润。' },
-  { id: 'valuation', term: '估值', definition: '市场愿意为公司未来赚钱能力支付多少价格。', example: '两家公司都赚1元，股价分别为10元和30元，市场给它们的估值不同。', misconception: '低估值不等于一定便宜，可能反映业务风险较高。' },
-  { id: 'guidance', term: '业绩指引', definition: '公司管理层对未来一段时间收入或利润的预期。', example: '公司说下季度收入可能在100亿元上下，这就是指引。', misconception: '指引是预测，不是已经发生的事实。' },
+  { id: 'cpi', term: 'CPI', definition: '消费者价格指数，衡量居民购买的一篮子商品与服务价格的整体变化。', plainLanguage: '可以把 CPI 想成生活成本温度计：下降也可能只是价格涨得慢了，并不等于东西普遍变便宜。', marketChain: ['CPI 高于预期', '降息空间可能收窄', '债券收益率可能上升', '股票估值承压'], example: '同样一篮子菜去年100元、今年102元，价格大约上涨2%。', misconception: 'CPI 下降不一定代表所有东西都降价，也可能只是上涨得更慢。' },
+  { id: 'interest-rate', term: '利率', definition: '资金在一段时间内的使用价格，也是储蓄和投资比较回报的基础报价。', plainLanguage: '利率就像钱的租金。租金变贵，家庭和企业借钱会更谨慎。', marketChain: ['利率上升', '融资成本提高', '投资与消费可能放缓', '盈利和估值承压'], example: '房贷利率下降时，每月利息负担通常会减少。', misconception: '降息并不保证股票上涨，经济走弱也可能同时压低企业利润。' },
+  { id: 'valuation', term: '估值', definition: '市场根据企业未来现金流、增长和风险，为其资产给出的价格水平。', plainLanguage: '像为一棵果树出价：不只看今年结了多少果，还要估计以后能结多少、多久才能收回成本。', marketChain: ['增长预期变化', '未来利润预测变化', '投资者调整愿付价格', '股价重新定价'], example: '两家公司都赚1元，股价分别为10元和30元，市场给它们的估值不同。', misconception: '低估值不等于一定便宜，可能反映业务风险较高。' },
+  { id: 'guidance', term: '业绩指引', definition: '公司管理层对未来收入或利润给出的预测区间，通常基于当前订单、成本和经营状况。', plainLanguage: '像餐厅老板不只报上月营业额，还告诉你下个月订位和食材成本大概怎样。市场会拿这份预告和原来的期待比较。', marketChain: ['公司发布指引', '市场对比原先预期', '调整收入与利润预测', '股价重新定价'], example: '公司说下季度收入可能在100亿元上下，这就是指引。', misconception: '指引是预测，不是已经发生的事实。' },
 ];
 
 export const brief: Brief = {
