@@ -12,18 +12,28 @@ describe('warm porcelain molded liquid glass theme', () => {
     expect(css).not.toContain('linear-gradient(112deg,rgba(231,239,249,.76)');
   });
 
-  it('keeps content cards clear and shapes them with optical edges and depth', () => {
-    expect(css).toContain('--glass-content:rgba(255,255,255,.075)');
-    expect(css).toContain('--glass-edge-shadow:inset 0 1.5px 1px rgba(255,255,255,.92)');
-    expect(css).toContain('--glass-lower-edge:inset 0 -1.5px 2px rgba(105,96,118,.12)');
-    expect(css).toContain('--glass-float-shadow:0 16px 38px rgba(83,77,96,.085)');
-    expect(css).toContain('background:var(--glass-content)');
+  it('defines one molded-glass material system with separate optical layers', () => {
+    expect(css).toContain('--glass-clear:rgba(255,255,255,.025)');
+    expect(css).toContain('--glass-active:rgba(239,234,248,.68)');
+    expect(css).toContain('--glass-rim-highlight:rgba(255,255,255,.94)');
+    expect(css).toContain('--glass-inner-highlight:rgba(255,255,255,.52)');
+    expect(css).toContain('--glass-contact-shadow:0 5px 8px rgba(85,76,98,.12)');
+    expect(css).toContain('--glass-floating-shadow:0 20px 42px rgba(91,82,105,.075)');
+    expect(css).toContain('--glass-lavender-tint:rgba(239,234,248,.68)');
   });
 
-  it('uses clear controls by default and lavender molded glass only when selected', () => {
-    expect(css).toContain('--glass-control:rgba(255,255,255,.105)');
-    expect(css).toContain('--glass-selected:rgba(239,234,248,.72)');
-    expect(css).toContain('background:var(--glass-selected)');
+  it('gives clear content and controls a convex center with a thick luminous rim', () => {
+    expect(css).toContain('background:var(--glass-clear)');
+    expect(css).toContain('border:2px solid var(--glass-rim-highlight)');
+    expect(css).toContain('var(--glass-contact-shadow),var(--glass-floating-shadow)');
+    expect(css).toContain('linear-gradient(180deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,.025) 42%,rgba(116,103,130,.045) 100%)');
+  });
+
+  it('uses pale lavender only for selected molded controls', () => {
+    expect(css).toContain('background:var(--glass-active)');
+    expect(css).toContain('0 6px 10px rgba(101,82,123,.15)');
+    expect(css).not.toContain('.search-field input { background:rgba(250,250,255,.62)');
+    expect(css).not.toContain('.region-filter button { background:rgba(248,248,255,.42)');
   });
 
   it('uses conventional Chinese market red for gains and green for losses', () => {

@@ -1,4 +1,4 @@
-:root { font-family:Inter,"Noto Sans SC",-apple-system,BlinkMacSystemFont,system-ui,sans-serif; color:#292733; background:#f7f6f3; font-synthesis:none; --ink:#292733; --green:#666e9f; --market-up:#cf3f4f; --market-down:#16835f; --porcelain:#f7f6f3; --paper:rgba(255,255,255,.075); --line:rgba(126,117,139,.16); --muted:#746f7b; --glass-content:rgba(255,255,255,.075); --glass-control:rgba(255,255,255,.105); --glass-selected:rgba(239,234,248,.72); --glass-edge-shadow:inset 0 1.5px 1px rgba(255,255,255,.92); --glass-lower-edge:inset 0 -1.5px 2px rgba(105,96,118,.12); --glass-float-shadow:0 16px 38px rgba(83,77,96,.085); --glass-shadow:var(--glass-edge-shadow),var(--glass-lower-edge),var(--glass-float-shadow),0 3px 9px rgba(83,77,96,.045); --liquid-glass:var(--glass-content); --liquid-glass-soft:rgba(255,255,255,.055); --liquid-glass-border:rgba(255,255,255,.72); --liquid-glass-blur:22px; --liquid-glass-highlight:var(--glass-edge-shadow); --liquid-glass-shadow:var(--glass-lower-edge),var(--glass-float-shadow); }
+:root { font-family:Inter,"Noto Sans SC",-apple-system,BlinkMacSystemFont,system-ui,sans-serif; color:#292733; background:#f7f6f3; font-synthesis:none; --ink:#292733; --green:#666e9f; --market-up:#cf3f4f; --market-down:#16835f; --porcelain:#f7f6f3; --paper:rgba(255,255,255,.025); --line:rgba(126,117,139,.16); --muted:#746f7b; --glass-clear:rgba(255,255,255,.025); --glass-active:rgba(239,234,248,.68); --glass-rim-highlight:rgba(255,255,255,.94); --glass-inner-highlight:rgba(255,255,255,.52); --glass-contact-shadow:0 5px 8px rgba(85,76,98,.12); --glass-floating-shadow:0 20px 42px rgba(91,82,105,.075); --glass-lavender-tint:rgba(239,234,248,.68); --glass-inner-bevel:inset 0 2px 2px var(--glass-inner-highlight),inset 2px 0 2px rgba(255,255,255,.32),inset -2px 0 2px rgba(229,220,239,.2),inset 0 -4px 5px rgba(105,94,119,.105); --glass-shadow:var(--glass-inner-bevel),var(--glass-contact-shadow),var(--glass-floating-shadow); --liquid-glass:var(--glass-clear); --liquid-glass-soft:rgba(255,255,255,.025); --liquid-glass-border:var(--glass-rim-highlight); --liquid-glass-blur:14px; --liquid-glass-highlight:inset 0 2px 2px var(--glass-inner-highlight); --liquid-glass-shadow:var(--glass-contact-shadow),var(--glass-floating-shadow); }
 * { box-sizing: border-box; }
 body { margin:0; min-width:320px; min-height:100vh; background:radial-gradient(circle at 8% 7%,rgba(151,171,212,.55),transparent 30%),radial-gradient(circle at 92% 24%,rgba(186,165,207,.46),transparent 32%),linear-gradient(145deg,#e5e8f2 0%,#f0edf3 48%,#dde5f0 100%); background-attachment:fixed; }
 body::before { content:""; position:fixed; inset:0; pointer-events:none; background:linear-gradient(115deg,rgba(255,255,255,.22),transparent 42%); z-index:-1; }
@@ -168,36 +168,36 @@ body::after { background:radial-gradient(ellipse at 72% 72%,rgba(239,234,248,.08
 .market-card,.news-card,.political-card,.sector-card,.sector-comparison,.impact-card,.market-hero,.hero,.empty-state,.reading-card,.watch-card,.daily-knowledge,.analysis-block,.knowledge-card,.brief-list a,.causal-chain li,.subject-section,.learning-event,.lesson-prerequisites,.lesson-quiz {
   position:relative;
   isolation:isolate;
-  background:var(--glass-content);
-  border:1px solid rgba(255,255,255,.74);
-  box-shadow:var(--glass-edge-shadow),var(--glass-lower-edge),var(--glass-float-shadow),inset 1px 0 1px rgba(245,237,255,.3),inset -1px 0 1px rgba(255,250,239,.28);
-  backdrop-filter:blur(22px) saturate(112%) contrast(101%);
-  -webkit-backdrop-filter:blur(22px) saturate(112%) contrast(101%);
+  background:var(--glass-clear);
+  border:2px solid var(--glass-rim-highlight);
+  box-shadow:var(--glass-inner-bevel),var(--glass-contact-shadow),var(--glass-floating-shadow);
+  backdrop-filter:blur(14px) saturate(108%) contrast(102%);
+  -webkit-backdrop-filter:blur(14px) saturate(108%) contrast(102%);
 }
-.market-card::before,.news-card::before,.political-card::before,.sector-card::before {
-  content:""; position:absolute; z-index:-1; inset:1px; pointer-events:none; border-radius:inherit;
-  background:linear-gradient(142deg,rgba(255,255,255,.3),transparent 24%,transparent 67%,rgba(225,214,240,.055));
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.64); opacity:.76;
+.market-card::before,.news-card::before,.political-card::before,.sector-card::before,.sector-comparison::before,.impact-card::before,.market-hero::before,.hero::before {
+  content:""; position:absolute; z-index:-1; inset:-1px; pointer-events:none; border-radius:inherit;
+  background:linear-gradient(180deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,.025) 42%,rgba(116,103,130,.045) 100%);
+  box-shadow:inset 0 3px 2px rgba(255,255,255,.64),inset 0 -3px 3px rgba(102,91,116,.09); opacity:.78;
 }
-.market-card::after,.news-card::after,.political-card::after,.sector-card::after {
-  content:""; position:absolute; inset:0; pointer-events:none; border-radius:inherit;
-  background:linear-gradient(100deg,transparent 4%,rgba(255,255,255,.17) 14%,transparent 27%);
-  mask:linear-gradient(#000,transparent 38%); opacity:.7;
+.market-card::after,.news-card::after,.political-card::after,.sector-card::after,.sector-comparison::after,.impact-card::after,.market-hero::after,.hero::after {
+  content:""; position:absolute; z-index:-1; inset:3px; pointer-events:none; border-radius:inherit;
+  background:radial-gradient(ellipse at 18% 0%,rgba(255,255,255,.44),transparent 42%),linear-gradient(100deg,rgba(255,255,255,.12),transparent 18%,transparent 82%,rgba(230,219,241,.11));
+  box-shadow:inset 0 1px 1px rgba(255,255,255,.34); opacity:.62;
 }
 
 .topbar,.bottom-nav,.desktop-sidebar,.market-tabs,.search-field input,.region-filter button,.learning-filters select,.learning-filters input,.impact-chain button {
-  background:var(--glass-control);
-  border-color:rgba(255,255,255,.76);
-  box-shadow:var(--glass-edge-shadow),var(--glass-lower-edge),0 10px 25px rgba(83,77,96,.07);
-  backdrop-filter:blur(24px) saturate(112%);
-  -webkit-backdrop-filter:blur(24px) saturate(112%);
+  background:linear-gradient(180deg,rgba(255,255,255,.24),var(--glass-clear) 48%,rgba(111,99,126,.045));
+  border:2px solid var(--glass-rim-highlight);
+  box-shadow:var(--glass-inner-bevel),var(--glass-contact-shadow),var(--glass-floating-shadow);
+  backdrop-filter:blur(16px) saturate(110%);
+  -webkit-backdrop-filter:blur(16px) saturate(110%);
 }
 .market-tabs button,.bottom-nav a,.desktop-sidebar nav a { background:transparent; color:#625e6b; }
 .market-tabs button[aria-pressed="true"],.region-filter button[aria-pressed="true"],.bottom-nav a.active,.desktop-sidebar nav a.active {
   color:#40394f;
-  background:var(--glass-selected);
+  background:var(--glass-active);
   border-color:rgba(255,255,255,.88);
-  box-shadow:inset 0 1.5px 1px rgba(255,255,255,.96),inset 0 -1px 2px rgba(132,108,159,.13),inset 1px 0 1px rgba(215,197,237,.3),0 10px 24px rgba(103,87,123,.13);
+  box-shadow:inset 0 3px 2px rgba(255,255,255,.92),inset 2px 0 2px rgba(255,255,255,.38),inset -2px 0 2px rgba(202,184,224,.3),inset 0 -4px 5px rgba(119,95,147,.13),0 6px 10px rgba(101,82,123,.15),0 18px 36px rgba(107,89,128,.1);
 }
 .region-filter button[aria-pressed="true"] { border:1px solid rgba(255,255,255,.88); }
 .market-summary,.beginner-note,.asset-tags span,.comparison-track { background:rgba(255,255,255,.09); }
@@ -214,12 +214,10 @@ body::after { background:radial-gradient(ellipse at 72% 72%,rgba(239,234,248,.08
   .app-shell { grid-template-columns:240px minmax(0,1fr); }
   .news-list,.political-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
 }
-.reading-card,.watch-card,.daily-knowledge,.analysis-block,.knowledge-card,.brief-list a,.causal-chain li { background:rgba(249,249,255,.58); border-color:rgba(255,255,255,.64); box-shadow:var(--glass-shadow); backdrop-filter:blur(22px) saturate(135%); -webkit-backdrop-filter:blur(22px) saturate(135%); }
-.search-field input { background:rgba(250,250,255,.62); border-color:rgba(255,255,255,.7); box-shadow:var(--glass-shadow); backdrop-filter:blur(18px); }
-.search-field input:focus { border-color:#858db8; box-shadow:0 0 0 4px rgba(113,126,174,.14),var(--glass-shadow); }
-.region-filter button { background:rgba(248,248,255,.42); border-color:rgba(255,255,255,.65); }
+.reading-card,.watch-card,.daily-knowledge,.analysis-block,.knowledge-card,.brief-list a,.causal-chain li { background:var(--glass-clear); border-color:var(--glass-rim-highlight); box-shadow:var(--glass-shadow); backdrop-filter:blur(14px) saturate(108%); -webkit-backdrop-filter:blur(14px) saturate(108%); }
+.search-field input:focus { border-color:rgba(222,207,239,.95); box-shadow:var(--glass-inner-bevel),0 0 0 4px rgba(239,234,248,.48),var(--glass-contact-shadow),var(--glass-floating-shadow); }
 .news-card { transition:transform .2s ease,box-shadow .2s ease; }
-.news-card:hover { transform:translateY(-2px); box-shadow:0 22px 54px rgba(54,58,91,.16),inset 0 1px 0 rgba(255,255,255,.78); }
+.news-card:hover { transform:translateY(-2px); box-shadow:var(--glass-inner-bevel),0 7px 11px rgba(85,76,98,.13),0 25px 50px rgba(91,82,105,.09); }
 
 /* Responsive market dashboard: content-led mobile layout */
 .market-card strong,.market-change,.comparison-row strong,.sector-main>strong,.news-card time {
