@@ -12,13 +12,13 @@ describe('home screen icons', () => {
     const html = readFileSync(join(process.cwd(), 'index.html'), 'utf8');
 
     expect(manifest.icons).toEqual([
-      { src: 'icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
-      { src: 'icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
-      { src: 'icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+      { src: 'home-icon-192-pearl.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+      { src: 'home-icon-512-pearl.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+      { src: 'home-icon-maskable-512-pearl.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
     ]);
-    expect(html).toContain('<link rel="apple-touch-icon" href="%BASE_URL%apple-touch-icon.png" />');
+    expect(html).toContain('<link rel="apple-touch-icon" href="%BASE_URL%apple-touch-icon-pearl.png" />');
 
-    for (const file of ['icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png']) {
+    for (const file of ['home-icon-192-pearl.png', 'home-icon-512-pearl.png', 'home-icon-maskable-512-pearl.png', 'apple-touch-icon-pearl.png']) {
       expect(existsSync(join(process.cwd(), 'public', file)), `${file} should exist`).toBe(true);
     }
   });

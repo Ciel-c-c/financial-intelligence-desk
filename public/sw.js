@@ -1,5 +1,5 @@
-const CACHE_NAME = 'financial-desk-shell-v3';
-const APP_SHELL = ['./', './offline.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png'];
+const CACHE_NAME = 'financial-desk-shell-v4';
+const APP_SHELL = ['./', './offline.html', './manifest.webmanifest', './home-icon-192-pearl.png', './home-icon-512-pearl.png', './home-icon-maskable-512-pearl.png', './apple-touch-icon-pearl.png'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));

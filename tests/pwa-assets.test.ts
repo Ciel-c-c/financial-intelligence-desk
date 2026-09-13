@@ -18,7 +18,7 @@ describe('PWA assets', () => {
     const worker = await readFile('public/sw.js', 'utf8');
     const entry = await readFile('src/main.tsx', 'utf8');
 
-    expect(worker).toContain("const CACHE_NAME = 'financial-desk-shell-v3'");
+    expect(worker).toContain("const CACHE_NAME = 'financial-desk-shell-v4'");
     expect(worker).toContain("client.navigate(client.url)");
     expect(entry).toContain("updateViaCache: 'none'");
     expect(entry).toContain('registration.update()');
