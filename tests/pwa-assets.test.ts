@@ -22,5 +22,7 @@ describe('PWA assets', () => {
     expect(worker).toContain("client.navigate(client.url)");
     expect(entry).toContain("updateViaCache: 'none'");
     expect(entry).toContain('registration.update()');
+    expect(worker).toContain("pathname.includes('/data/')");
+    expect(worker).toContain('event.respondWith(fetch(event.request))');
   });
 });
