@@ -1,0 +1,3 @@
+import { newsFeedSeed } from './newsFeedSeed'; import type { NewsFeedSnapshot } from './newsFeedTypes';
+const valid=(value:any):value is NewsFeedSnapshot=>value?.schemaVersion===1&&['fresh','delayed','source_error'].includes(value.status)&&Array.isArray(value.latest)&&Array.isArray(value.continuing)&&value.continuing.length<=6&&Array.isArray(value.retainedDetails)&&Array.isArray(value.sourceHealth);
+export async function loadNewsFeed(fetchImpl:typeof fetch=fetch):Promise<NewsFeedSnapshot>{try{const response=await fetchImpl('./data/news-feed.json',{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);const value=await response.json();return valid(value)?value:newsFeedSeed;}catch{return newsFeedSeed;}}
