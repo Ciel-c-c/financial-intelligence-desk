@@ -7,10 +7,11 @@ export function parseNewsFeed(xml, source, fetchedAt) {
   const blocks = [...xml.matchAll(/<(item|entry)(?:\s[^>]*)?>([\s\S]*?)<\/\1>/gi)].map(match => match[2]);
   return blocks.map(block => {
     const originalTitle = decode(field(block,['title']));
-    const canonicalUrl = decode(field(block,['link','guid'])) || atomLink(block);
+    const rawUrl = decode(field(block,['link','guid'])) || atomLink(block);
     const rawDate = decode(field(block,['pubDate','published','updated','dc:date']));
     const published = Date.parse(rawDate);
-    if (!originalTitle || !canonicalUrl || !Number.isFinite(published) || !allowed(canonicalUrl, source.publisherDomains)) return undefined;
+    if (!originalTitle || !rawUrl || !Number.isFinite(published) || !allowed(rawUrl, source.publisherDomains)) return undefined;
+    const parsedUrl=new URL(rawUrl); if(parsedUrl.protocol==='http:') parsedUrl.protocol='https:'; const canonicalUrl=parsedUrl.toString();
     const summary = decode(field(block,['description','summary','content']));
     return { sourceId:source.id, sourceName:source.name, sourceTier:source.tier, sourceUrl:source.feedUrl, canonicalUrl, originalLanguage:source.defaultLanguage, originalTitle, originalSummary:summary || undefined, publishedAt:new Date(published).toISOString(), fetchedAt };
   }).filter(Boolean);

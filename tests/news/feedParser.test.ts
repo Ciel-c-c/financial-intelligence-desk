@@ -14,4 +14,5 @@ describe('news feed adapters', () => {
     const fetchImpl = vi.fn().mockResolvedValue({ ok: false, status: 503 });
     await expect(fetchNewsSource(source, '2026-09-14T10:17:00Z', fetchImpl)).resolves.toMatchObject({ ok: false, items: [], error: 'HTTP 503' });
   });
+  it('upgrades legacy same-domain official links to HTTPS',()=>{const boj={...source,publisherDomains:['boj.or.jp','www.boj.or.jp']};const xml=`<rss><channel><item><title>Policy data</title><link>http://www.boj.or.jp/en/a.htm</link><pubDate>Sun, 14 Sep 2026 10:00:00 GMT</pubDate></item></channel></rss>`;expect(parseNewsFeed(xml,boj,'2026-09-14T10:17:00Z')[0].canonicalUrl).toBe('https://www.boj.or.jp/en/a.htm');});
 });

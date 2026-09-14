@@ -13,6 +13,14 @@ npm run dev
 
 生产检查使用 `npm test -- --run`、`npm run typecheck` 和 `npm run build`。部署到 HTTPS 后，可通过手机浏览器菜单添加到主屏幕。
 
+## 实时财经新闻
+
+`npm run update:news` 从 `scripts/news/source-registry.mjs` 中已核验的白名单来源抓取新闻，生成 `public/data/news-feed.json`。首页主列表使用滚动 24 小时窗口；24–72 小时仍有明确传导信号的重大事件单独进入「持续影响」，最多 6 条。来源需每 90 天复核，验证证据记录在 `docs/news-source-registry.md`。
+
+英文内容可通过 GitHub Secrets `NEWS_TRANSLATION_API_URL`、`NEWS_TRANSLATION_API_KEY`、`NEWS_TRANSLATION_MODEL` 接入结构化中文整理。未配置或生成校验失败时，页面保留英文原标题与原始链接，不猜测中文。密钥不得写入仓库或前端资源。
+
+`npm run validate:data` 会验证全部公开快照。单个来源失败时发布其他可靠来源并标记异常；全部来源失败时保留上一份成功快照，不把旧数据标成最新。
+
 ## 发布
 
 推送到 `main` 后，GitHub Actions 会运行测试、类型检查、生产构建并发布到 GitHub Pages。独立的 `Update public data snapshots` 工作流在每小时第 17 分钟运行；即使电脑关闭、Codex 不在线，也会抓取、校验并由 GitHub bot 提交四个统一 JSON 快照，再触发 Pages 发布。
