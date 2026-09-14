@@ -4,6 +4,7 @@ export { validateNewsSnapshot } from './news/news-contract.mjs';
 export { validateSiteSnapshot } from './site/site-contract.mjs';
 export { validateMarketOverview } from './site/market-pipeline.mjs';
 export { validateSectorPerformance } from './site/sector-pipeline.mjs';
+export { validateDailyBrief } from './site/brief-pipeline.mjs';
 
 const isIso = value => typeof value === 'string' && Number.isFinite(new Date(value).valueOf());
 const isStringArray = value => Array.isArray(value) && value.every(item => typeof item === 'string');
