@@ -6,11 +6,18 @@ import { knowledge } from '../data/demoData';
 import { getNewsById } from '../data/selectors';
 import { knowledgeForEvent } from '../data/learningEvents';
 import { soWhatForNews } from '../data/soWhat';
+import { useNewsFeed } from '../data/useNewsFeed';
+import { findLiveNewsById } from '../data/selectors';
+import { LiveNewsDetail } from '../components/LiveNewsDetail';
 
 export function NewsDetailPage() {
   const { id = '' } = useParams();
+  const {snapshot,loading}=useNewsFeed();
+  const liveItem=findLiveNewsById(snapshot,id);
+  if(liveItem)return <LiveNewsDetail item={liveItem}/>;
   const item = getNewsById(id);
-  if (!item) return <main className="page detail-page"><Link to="/">← 返回今日</Link><h1>没有找到这条资讯</h1><p>它可能已移动，返回首页查看现有演示内容。</p></main>;
+  if (!item&&loading) return <main className="page detail-page"><p>正在加载资讯…</p></main>;
+  if (!item) return <main className="page detail-page"><Link to="/">← 返回今日</Link><h1>没有找到这条资讯</h1><p>它可能已移出保留期，请返回首页查看最新新闻。</p></main>;
   const terms = knowledge.filter((term) => item.termIds.includes(term.id));
   return (
     <main className="page detail-page">
