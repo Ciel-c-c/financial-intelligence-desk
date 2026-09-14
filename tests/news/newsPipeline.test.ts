@@ -25,5 +25,6 @@ describe('news snapshot pipeline',()=>{
     await updateNewsFeed({now:'2026-09-14T10:17:00Z',sourceResults:[{id:'nbs-cn',name:'国家统计局',ok:true,items:[raw]}],outputPath,statusPath,enrichmentOptions:{cache:{}}});
     const status=JSON.parse(await readFile(statusPath,'utf8'));
     expect(status.datasets).toEqual([{id:'news-feed',status:'fresh',lastSuccessfulAt:'2026-09-14T10:17:00Z'}]);
+    expect(status.sourceHealth[0]).toMatchObject({id:'news-nbs-cn',name:'国家统计局（新闻）'});
   });
 });
