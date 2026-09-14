@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "attemptedAt": "2026-09-14T13:21:37.336Z",
+  "lastSuccessfulAt": "2026-09-14T13:21:37.336Z",
+  "dataAsOf": "2026-09-12T00:00:00.000Z",
+  "nextExpectedAt": "2026-09-14T14:21:37.336Z",
+  "status": "partial",
+  "freshness": "delayed",
+  "sourceHealth": [{ "id": "ecb-reference-rates", "status": "ok", "itemCount": 4 }],
+  "groups": {
+    "aShare": [],
+    "hongKong": [],
+    "us": [],
+    "globalAssets": [
+      { "id": "EURUSD", "group": "globalAssets", "name": "欧元兑USD", "symbol": "EURUSD", "value": 1.1731, "currency": "USD", "unit": "USD", "marketState": "previous_close", "dataAsOf": "2026-09-12T00:00:00.000Z", "fetchedAt": "2026-09-14T13:21:37.336Z", "freshness": "delayed", "source": { "id": "ecb-reference-rates", "name": "European Central Bank", "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html" } },
+      { "id": "EURJPY", "group": "globalAssets", "name": "欧元兑JPY", "symbol": "EURJPY", "value": 173.18, "currency": "JPY", "unit": "JPY", "marketState": "previous_close", "dataAsOf": "2026-09-12T00:00:00.000Z", "fetchedAt": "2026-09-14T13:21:37.336Z", "freshness": "delayed", "source": { "id": "ecb-reference-rates", "name": "European Central Bank", "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html" } },
+      { "id": "EURGBP", "group": "globalAssets", "name": "欧元兑GBP", "symbol": "EURGBP", "value": 0.8658, "currency": "GBP", "unit": "GBP", "marketState": "previous_close", "dataAsOf": "2026-09-12T00:00:00.000Z", "fetchedAt": "2026-09-14T13:21:37.336Z", "freshness": "delayed", "source": { "id": "ecb-reference-rates", "name": "European Central Bank", "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html" } },
+      { "id": "EURCNY", "group": "globalAssets", "name": "欧元兑CNY", "symbol": "EURCNY", "value": 8.2075, "currency": "CNY", "unit": "CNY", "marketState": "previous_close", "dataAsOf": "2026-09-12T00:00:00.000Z", "fetchedAt": "2026-09-14T13:21:37.336Z", "freshness": "delayed", "source": { "id": "ecb-reference-rates", "name": "European Central Bank", "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html" } }
+    ]
+  },
+  "groupHealth": {
+    "aShare": { "status": "unavailable", "sourceIds": [], "fallbackReason": "尚未获得经过验证的数据" },
+    "hongKong": { "status": "unavailable", "sourceIds": [], "fallbackReason": "尚未获得经过验证的数据" },
+    "us": { "status": "unavailable", "sourceIds": [], "fallbackReason": "尚未获得经过验证的数据" },
+    "globalAssets": { "status": "fresh", "sourceIds": ["ecb-reference-rates"] }
+  }
+}

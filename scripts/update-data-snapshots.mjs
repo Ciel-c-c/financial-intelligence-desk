@@ -2,10 +2,11 @@ import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { buildSnapshot } from './global-situation-core.mjs';
 import { fetchSource, sources } from './fetch-global-situation.mjs';
-import { promoteValidatedSnapshot, readJson, validateGlobalSituation, validateMacroEvents, validateMarketSnapshot, validateUpdateStatus, writeJsonAtomic } from './snapshot-schema.mjs';
+import { promoteValidatedSnapshot, readJson, validateGlobalSituation, validateMacroEvents, validateMarketOverview, validateUpdateStatus, writeJsonAtomic } from './snapshot-schema.mjs';
+import { buildMarketOverview } from './site/market-pipeline.mjs';
 
 const DATA_DIR = resolve('public/data');
-const paths = { situation:resolve(DATA_DIR,'global-situation.json'), market:resolve(DATA_DIR,'market-snapshot.json'), macro:resolve(DATA_DIR,'macro-events.json'), status:resolve(DATA_DIR,'update-status.json') };
+const paths = { situation:resolve(DATA_DIR,'global-situation.json'), market:resolve(DATA_DIR,'market-overview.json'), macro:resolve(DATA_DIR,'macro-events.json'), status:resolve(DATA_DIR,'update-status.json') };
 
 function xmlEntities(value='') { return value.replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;|&apos;/g,"'"); }
 
@@ -25,7 +26,7 @@ async function fetchMarket(attemptedAt) {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const instruments = parseEcbFx(xmlEntities(await response.text()), attemptedAt);
     if (!instruments.length) throw new Error('No supported ECB rates');
-    return { schemaVersion:1, generatedAt:attemptedAt, status:instruments.some(item => item.freshness === 'delayed') ? 'delayed':'fresh', instruments };
+    return buildMarketOverview({ attemptedAt, sourceResults:[{ sourceId:'ecb-reference-rates', market:'globalAssets', status:'ok', instruments:instruments.map(item=>({ id:item.id, group:'globalAssets', name:item.label, symbol:item.id, value:item.value, currency:item.unit, unit:item.unit, marketState:'delayed', dataAsOf:item.timestamp, fetchedAt:attemptedAt, freshness:item.freshness, source:{ id:'ecb-reference-rates', name:item.source.name, url:item.source.url } })) }] });
   } catch (error) { return { error:error instanceof Error ? error.message:String(error) }; }
 }
 
@@ -43,8 +44,8 @@ export async function updateSnapshots({ now = new Date().toISOString(), sourceRe
   const activeSituation = situationValid ? candidateSituation : previousSituation;
 
   const marketCandidate = marketResult ?? await fetchMarket(now);
-  const marketValid = validateMarketSnapshot(marketCandidate);
-  if (marketValid) await promoteValidatedSnapshot({ path:paths.market, candidate:marketCandidate, validate:validateMarketSnapshot });
+  const marketValid = validateMarketOverview(marketCandidate);
+  if (marketValid) await promoteValidatedSnapshot({ path:paths.market, candidate:marketCandidate, validate:validateMarketOverview });
 
   let macroValid = false;
   if (activeSituation && validateGlobalSituation(activeSituation)) {
@@ -55,7 +56,7 @@ export async function updateSnapshots({ now = new Date().toISOString(), sourceRe
   const lastSuccessfulAt = situationValid ? now : (previousSituation?.lastSuccessfulAt ?? previousStatus?.lastSuccessfulAt ?? now);
   const status = { schemaVersion:1, attemptedAt:now, lastSuccessfulAt, status:!situationValid ? 'source_error' : (!marketValid || candidateSituation.status === 'delayed' ? 'delayed':'fresh'), datasets:[
     { id:'global-situation', status:situationValid ? candidateSituation.status:'source_error', lastSuccessfulAt },
-    { id:'market-snapshot', status:marketValid ? marketCandidate.status:'source_error', lastSuccessfulAt:marketValid ? now : (previousMarket?.generatedAt ?? null) },
+    { id:'market-overview', status:marketValid ? marketCandidate.status:'source_error', lastSuccessfulAt:marketValid ? now : (previousMarket?.lastSuccessfulAt ?? null) },
     { id:'macro-events', status:macroValid ? (situationValid ? candidateSituation.status:'delayed'):'source_error', lastSuccessfulAt:macroValid ? now:null },
   ], sourceHealth:candidateSituation.sourceHealth ?? [], message:!situationValid ? '本轮主要来源失败或候选快照未通过校验，继续使用最近一次成功快照。':undefined };
   if (!validateUpdateStatus(status)) throw new Error('Generated update status is invalid');
