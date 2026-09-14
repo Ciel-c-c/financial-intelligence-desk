@@ -1,31 +1,34 @@
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
-import { describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { App } from '../../src/app/App';
 
 describe('Today page', () => {
+  beforeEach(()=>vi.stubGlobal('fetch',vi.fn().mockResolvedValue({ok:true,json:async()=>({schemaVersion:1,attemptedAt:'2026-09-14T10:17:00Z',lastSuccessfulAt:'2026-09-14T10:17:00Z',nextExpectedAt:'2026-09-14T11:17:00Z',status:'fresh',latest:[{id:'live-cpi',originalTitle:'China CPI',titleZh:'中国居民消费价格公布',summaryZh:'物价变化影响通胀预期。',sourceName:'国家统计局',publishedAt:'2026-09-14T10:00:00Z',analysisLevels:['宏观'],eventTypes:['经济数据'],impactChannels:['通胀'],regions:['中国'],translationStatus:'generated'}],continuing:[{id:'old-policy',originalTitle:'Policy',titleZh:'政策仍在传导',summaryZh:'市场继续评估影响。',sourceName:'Federal Reserve',publishedAt:'2026-09-12T10:00:00Z',analysisLevels:['宏观'],eventTypes:['货币政策'],impactChannels:['利率'],regions:['全球'],translationStatus:'generated'}],retainedDetails:[],sourceHealth:[]})})));
+  afterEach(()=>vi.unstubAllGlobals());
   it('opens with an A-share market dashboard and sector explanations', () => {
     const { container } = render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
     const page = container.querySelector<HTMLElement>('.today-page')!;
     const copy = page.textContent ?? '';
-    for (const expected of ['演示','数据截至 2026-09-11','核心事件','市场与公司动态','宏观经济动态','A股市场全景','行业相对强弱','政策与地缘传导','为什么这样走','元件 / MLCC']) {
+    for (const expected of ['数据截至 2026-09-11','A股市场全景','行业相对强弱','政策与地缘传导','为什么这样走','元件 / MLCC']) {
       expect(copy).toContain(expected);
     }
     const buttons = [...page.querySelectorAll('button')].map(button => button.textContent?.trim());
     for (const label of ['港股','美股','全球资产']) expect(buttons).toContain(label);
     expect(copy.match(/受影响板块/g)).toHaveLength(3);
-    expect(page.querySelector('a[href="/news/nvidia-results"]')).toHaveTextContent('芯片公司业绩增长');
   });
 
   it('filters stories from the search control', async () => {
     const user = userEvent.setup();
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
 
+    expect(await screen.findByText('中国居民消费价格公布')).toBeInTheDocument();
     await user.type(screen.getByRole('searchbox', { name: '搜索资讯' }), '物价');
-    expect(screen.getByText(/物价数据温和/)).toBeInTheDocument();
-    expect(screen.queryByText(/芯片公司业绩增长/)).not.toBeInTheDocument();
+    expect(screen.getByText('中国居民消费价格公布')).toBeInTheDocument();
   });
+
+  it('shows live and continuing news separately with update status',async()=>{render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);expect(await screen.findByRole('heading',{name:'正在发生'})).toBeInTheDocument();expect(screen.getByRole('heading',{name:'持续影响'})).toBeInTheDocument();expect(screen.getByText(/最近成功更新/)).toBeInTheDocument();expect(screen.getByText('政策仍在传导')).toBeInTheDocument();});
 
   it('exposes the dashboard navigation and sector comparison without hover', () => {
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);

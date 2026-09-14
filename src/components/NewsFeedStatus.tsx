@@ -1,0 +1,2 @@
+import type{NewsFeedSnapshot}from'../data/newsFeedTypes';
+export function NewsFeedStatus({snapshot}:{snapshot:NewsFeedSnapshot}){const label=snapshot.status==='fresh'?'正常':snapshot.status==='delayed'?'部分来源异常':'更新延迟';return <div className={`news-feed-status ${snapshot.status}`}><strong>{label}</strong><span>最近成功更新：{new Date(snapshot.lastSuccessfulAt).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'})}</span><span>24 小时新闻：{snapshot.latest.length} 条</span></div>}

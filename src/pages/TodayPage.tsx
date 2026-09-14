@@ -1,13 +1,12 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { MarketCard } from '../components/MarketCard';
-import { NewsCard } from '../components/NewsCard';
+import { NewsFeedSections } from '../components/NewsFeedSections';
 import { SectorCard } from '../components/SectorCard';
 import { PoliticalImpactCard } from '../components/PoliticalImpactCard';
 import { SectorComparison } from '../components/SectorComparison';
-import { marketGroups, news, politicalImpacts, sectors } from '../data/demoData';
-import { filterNews, type RegionFilter } from '../data/selectors';
+import { marketGroups, politicalImpacts, sectors } from '../data/demoData';
+import { useNewsFeed } from '../data/useNewsFeed';
 
-const regions: RegionFilter[] = ['全部', 'A股', '港股', '美股', '全球'];
 const marketTabs = ['A股', '港股', '美股', '全球资产'] as const;
 const transmissionSteps = [
   { title: '中东冲突升温', detail: '供应与运输风险溢价上升。' },
@@ -18,14 +17,9 @@ const transmissionSteps = [
 ] as const;
 
 export function TodayPage() {
-  const [query, setQuery] = useState('');
-  const [region, setRegion] = useState<RegionFilter>('全部');
+  const {snapshot:newsSnapshot,loading:newsLoading,error:newsError}=useNewsFeed();
   const [marketTab, setMarketTab] = useState<(typeof marketTabs)[number]>('A股');
   const [openTransmissionStep, setOpenTransmissionStep] = useState<number | null>(null);
-  const filtered = useMemo(() => filterNews(news, query, region), [query, region]);
-  const headlines = filtered.filter((item) => item.mode === '今日快照').slice(0, 3);
-  const stockNews = filtered.filter((item) => item.topic === '市场' || item.topic === '公司');
-  const economyNews = filtered.filter((item) => item.topic === '宏观' || item.topic === '经济');
 
   return (
     <main className="page today-page">
@@ -64,16 +58,7 @@ export function TodayPage() {
         <div className="political-grid">{politicalImpacts.map((item) => <PoliticalImpactCard key={item.id} item={item} />)}</div>
       </section>
 
-      <section aria-labelledby="news-title">
-        <div className="section-heading"><div><p className="eyebrow">今日资讯</p><h2 id="news-title">市场资讯检索</h2></div><span>{filtered.length} 条</span></div>
-        <label className="search-field"><span>搜索资讯</span><input type="search" aria-label="搜索资讯" placeholder="搜索公司、主题或关键词" value={query} onChange={(event) => setQuery(event.target.value)} /></label>
-        <div className="region-filter" aria-label="地区筛选">{regions.map((item) => <button key={item} type="button" aria-pressed={region === item} onClick={() => setRegion(item)}>{item}</button>)}</div>
-      </section>
-
-      {headlines.length > 0 && <section aria-labelledby="headline-title"><div className="section-heading"><div><p className="eyebrow">最重要的三件事</p><h2 id="headline-title">核心事件</h2></div></div><div className="news-list">{headlines.map((item) => <NewsCard key={item.id} item={item} />)}</div></section>}
-      {stockNews.length > 0 && <section aria-labelledby="stock-news-title"><div className="section-heading"><div><p className="eyebrow">市场与公司</p><h2 id="stock-news-title">市场与公司动态</h2></div><span>{stockNews.length} 条</span></div><div className="news-list">{stockNews.map((item) => <NewsCard key={item.id} item={item} />)}</div></section>}
-      {economyNews.length > 0 && <section aria-labelledby="economy-news-title"><div className="section-heading"><div><p className="eyebrow">宏观与政策</p><h2 id="economy-news-title">宏观经济动态</h2></div><span>{economyNews.length} 条</span></div><div className="news-list">{economyNews.map((item) => <NewsCard key={item.id} item={item} />)}</div></section>}
-      {filtered.length === 0 && <p className="empty-state">没有找到匹配资讯，换个关键词试试。</p>}
+      <NewsFeedSections snapshot={newsSnapshot} loading={newsLoading} error={newsError}/>
     </main>
   );
 }
