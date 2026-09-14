@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-14T13:07:03.836Z",
-  "lastSuccessfulAt": "2026-09-14T13:07:03.836Z",
-  "nextExpectedAt": "2026-09-14T14:07:03.836Z",
-  "status": "fresh",
+  "attemptedAt": "2026-09-14T13:21:38.198Z",
+  "lastSuccessfulAt": "2026-09-14T13:21:38.198Z",
+  "nextExpectedAt": "2026-09-14T14:21:38.198Z",
+  "status": "delayed",
   "latest": [
     {
       "sourceId": "ecb",
@@ -14,7 +14,7 @@
       "originalLanguage": "en",
       "originalTitle": "Piero Cipollone: The future of euro cash: trusted today, designed for tomorrow",
       "publishedAt": "2026-09-14T13:00:00.000Z",
-      "fetchedAt": "2026-09-14T13:07:03.836Z",
+      "fetchedAt": "2026-09-14T13:21:38.198Z",
       "id": "8c85eac70820c8b3748b",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -55,7 +55,7 @@
       "originalTitle": "South Sudan: UNICEF reaches communities cut off by conflict in Jonglei state",
       "originalSummary": "The UN Children’s Fund (UNICEF) and partners have delivered lifesaving assistance to families in conflict-affected communities in South Sudan’s Jonglei state, many of whom had gone months without humanitarian support.",
       "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-14T13:07:03.836Z",
+      "fetchedAt": "2026-09-14T13:21:38.198Z",
       "id": "a14fff99a25c7e5c5bff",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -96,7 +96,7 @@
       "originalLanguage": "en",
       "originalTitle": "Isabel Schnabel: Macroeconomic, fiscal and financial stability in a shock-prone world",
       "publishedAt": "2026-09-14T09:15:00.000Z",
-      "fetchedAt": "2026-09-14T13:07:03.836Z",
+      "fetchedAt": "2026-09-14T13:21:38.198Z",
       "id": "ff8aee621ff334c61144",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -136,7 +136,7 @@
       "originalLanguage": "en",
       "originalTitle": "Japanese Government Bonds Held by the Bank of Japan",
       "publishedAt": "2026-09-14T08:00:00.000Z",
-      "fetchedAt": "2026-09-14T13:07:03.836Z",
+      "fetchedAt": "2026-09-14T13:21:38.198Z",
       "id": "a68200e7e4988831b94b",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -175,7 +175,7 @@
       "originalLanguage": "en",
       "originalTitle": "IMES Discussion Paper Series (2026)",
       "publishedAt": "2026-09-14T02:00:00.000Z",
-      "fetchedAt": "2026-09-14T13:07:03.836Z",
+      "fetchedAt": "2026-09-14T13:21:38.198Z",
       "id": "b3b2d810c7b4a3a728be",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -205,6 +205,48 @@
       "inferences": [],
       "contentFingerprint": "574fdac21dec9f85afc37aa6638f36bdd0cc8ca5f838999e8ce4469e848561cb"
     },
+    {
+      "sourceId": "boj",
+      "sourceName": "Bank of Japan",
+      "sourceTier": "official",
+      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
+      "canonicalUrl": "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac260910.htm",
+      "originalLanguage": "en",
+      "originalTitle": "Bank of Japan Accounts (September 10)",
+      "publishedAt": "2026-09-14T01:00:00.000Z",
+      "fetchedAt": "2026-09-14T13:21:38.198Z",
+      "id": "35af090725006d2ea627",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|bankofjapanaccou|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "103fd6f01a6681ac85bd72633ed9831ccdb8bf7e267ad844ac1220cf85046995"
+    }
+  ],
+  "continuing": [],
+  "retainedDetails": [
     {
       "sourceId": "nbs-cn",
       "sourceName": "国家统计局",
@@ -249,55 +291,15 @@
       ],
       "expectations": [],
       "inferences": []
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac260910.htm",
-      "originalLanguage": "en",
-      "originalTitle": "Bank of Japan Accounts (September 10)",
-      "publishedAt": "2026-09-14T01:00:00.000Z",
-      "fetchedAt": "2026-09-14T13:07:03.836Z",
-      "id": "35af090725006d2ea627",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|bankofjapanaccou|2026-09-14",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "103fd6f01a6681ac85bd72633ed9831ccdb8bf7e267ad844ac1220cf85046995"
     }
   ],
-  "continuing": [],
-  "retainedDetails": [],
   "sourceHealth": [
     {
       "id": "nbs-cn",
       "name": "国家统计局",
-      "status": "ok",
-      "itemCount": 50
+      "status": "error",
+      "itemCount": 0,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -323,5 +325,6 @@
       "status": "ok",
       "itemCount": 30
     }
-  ]
+  ],
+  "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
 }
