@@ -5,11 +5,10 @@ import { describe, expect, it } from 'vitest';
 import { App } from '../../src/app/App';
 
 describe('Brief and learning', () => {
-  it('links dated brief events to their explanations', () => {
+  it('does not present a demo brief as current data', async () => {
     render(<MemoryRouter initialEntries={['/brief']}><App /></MemoryRouter>);
-    expect(screen.getByText('2026-09-11')).toBeInTheDocument();
-    expect(screen.getByText(/全球高油价与高利率/)).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /油价站上100美元/ })).toHaveAttribute('href', '/news/wall-street-oil-pressure');
+    expect(await screen.findByText(/暂无足够的新事实生成可靠简报/)).toBeInTheDocument();
+    expect(screen.queryByText(/全球高油价与高利率/)).not.toBeInTheDocument();
   });
 
   it('searches, opens and marks an independent lesson learned', async () => {

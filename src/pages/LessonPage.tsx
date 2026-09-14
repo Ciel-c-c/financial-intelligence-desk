@@ -5,7 +5,7 @@ import type { Lesson } from '../data/curriculum';
 import { learningEvents, knowledgeForEvent } from '../data/learningEvents';
 import { useLearningProgress } from '../data/learningProgress';
 import { eventsForKnowledge } from '../data/globalSituation';
-import { globalSituationSeed } from '../data/globalSituationSeed';
+import { useGlobalSituation } from '../data/useGlobalSituation';
 
 function explainBackground(value: string) {
   const sentences = value.match(/[^。！？]+[。！？]?/g)?.map(item => item.trim()).filter(Boolean) ?? [value];
@@ -17,10 +17,11 @@ function LessonContent({ lesson }: { lesson: Lesson }) {
   const pageRef = useRef<HTMLElement>(null);
   useEffect(() => { pageRef.current?.scrollIntoView?.({ block: 'start' }); }, []);
   const { learned, update, saveError } = useLearningProgress();
+  const situationSnapshot = useGlobalSituation();
   const group = subjects.find(item => item.id === lesson.subject)!;
   const source = sources[group.source as keyof typeof sources];
   const related = learningEvents.filter(item => knowledgeForEvent(item).some(point => point.id === lesson.id));
-  const situationEvents = eventsForKnowledge(globalSituationSeed.events,lesson.id);
+  const situationEvents = eventsForKnowledge(situationSnapshot.events,lesson.id);
   const explanation = explainBackground(lesson.background);
   const path = beginnerPath.flatMap(step => step.ids);
   const nextId = path.includes(lesson.id) ? path[path.indexOf(lesson.id) + 1] : undefined;

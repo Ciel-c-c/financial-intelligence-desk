@@ -1,6 +1,9 @@
 import { NavLink, Outlet } from 'react-router-dom';
+import { SiteDataStatus } from '../components/SiteDataStatus';
+import { useSiteData } from '../data/useSiteData';
 
 export function AppShell() {
+  const { site, errors, refresh } = useSiteData();
   const assetUrl = (fileName: string) => `./${fileName}`;
 
   return (
@@ -27,6 +30,7 @@ export function AppShell() {
           <div><strong>穿过噪音，看清市场</strong><p className="topbar-subtitle">每天看懂一点世界和市场</p></div>
           <span className="demo-badge">市场与事件快照</span>
         </header>
+        <SiteDataStatus snapshot={site} errors={errors} onRefresh={refresh} />
         <Outlet />
       </div>
       <nav className="bottom-nav" aria-label="主要导航">

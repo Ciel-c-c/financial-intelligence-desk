@@ -1,14 +1,8 @@
-import { Link } from 'react-router-dom';
-import { brief, knowledge, news } from '../data/demoData';
+import { useSiteData } from '../data/useSiteData';
 
 export function BriefPage() {
-  const dailyKnowledge = knowledge.find((item) => item.id === brief.knowledgeId)!;
-  return (
-    <main className="page inner-page">
-      <header className="page-title"><p className="eyebrow">DAILY MARKET BRIEF · {brief.mode}</p><h1>每日市场简报</h1><time>{brief.date}</time><p>{brief.headline}</p><small>生成于 {brief.generatedAt}</small></header>
-      <section><h2 className="display-heading">重点事件</h2><div className="brief-list">{brief.newsIds.map((id, index) => { const item = news.find((entry) => entry.id === id)!; return <Link to={`/news/${id}`} key={id}><span>0{index + 1}</span><strong>{item.title}</strong><small>查看通俗解读 →</small></Link>; })}</div></section>
-      <section className="watch-card"><p className="eyebrow">今天观察什么</p><ul>{brief.watchItems.map((item) => <li key={item}>{item}</li>)}</ul></section>
-      <section className="daily-knowledge"><p className="eyebrow">今天学一个</p><h2>{dailyKnowledge.term}</h2><p>{dailyKnowledge.definition}</p><Link to="/learn">去知识卡继续学 →</Link></section>
-    </main>
-  );
+  const { brief, loading, errors, refresh } = useSiteData();
+  if (loading) return <main className="page inner-page"><p className="empty-state">正在读取最新简报…</p></main>;
+  if (!brief || brief.status === 'unavailable') return <main className="page inner-page"><header className="page-title"><p className="eyebrow">DAILY MARKET BRIEF</p><h1>每日市场简报</h1></header><p className="empty-state">暂无足够的新事实生成可靠简报。不会用旧演示内容补位。{errors['daily-brief'] ? ` ${errors['daily-brief']}` : ''}<button type="button" onClick={refresh}>检查更新</button></p></main>;
+  return <main className="page inner-page"><header className="page-title"><p className="eyebrow">DAILY MARKET BRIEF · {brief.edition === 'morning' ? '早间版' : '收盘版'}</p><h1>每日市场简报</h1><time>{new Date(brief.dataAsOf ?? brief.generatedAt).toLocaleDateString('zh-CN', { timeZone: 'Asia/Shanghai' })}</time><p>基于同一批经过验证的市场、新闻与全球局势快照。</p><small>生成于 {new Date(brief.generatedAt).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai', hour12: false })}</small></header><section><h2 className="display-heading">今天发生了什么</h2><ol className="brief-facts">{brief.facts.map((fact, index) => <li key={`${fact}-${index}`}>{fact}</li>)}</ol></section>{brief.marketFocus && <section className="watch-card"><p className="eyebrow">市场真正关注什么</p><p>{brief.marketFocus.text}</p></section>}{brief.watchItems.length > 0 && <section className="watch-card"><p className="eyebrow">接下来观察什么</p><ul>{brief.watchItems.map(item => <li key={item}>{item}</li>)}</ul></section>}{brief.invalidationConditions.length > 0 && <section className="watch-card"><p className="eyebrow">什么情况下判断会失效</p><ul>{brief.invalidationConditions.map(item => <li key={item}>{item}</li>)}</ul></section>}</main>;
 }
