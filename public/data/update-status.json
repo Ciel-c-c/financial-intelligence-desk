@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-15T04:27:30.290Z",
-  "lastSuccessfulAt": "2026-09-15T04:27:30.290Z",
-  "status": "fresh",
+  "attemptedAt": "2026-09-15T04:29:48.745Z",
+  "lastSuccessfulAt": "2026-09-15T04:29:48.745Z",
+  "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "fresh",
-      "lastSuccessfulAt": "2026-09-15T04:27:30.290Z"
+      "lastSuccessfulAt": "2026-09-15T04:29:48.745Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-15T04:27:30.290Z"
+      "lastSuccessfulAt": "2026-09-15T04:29:48.745Z"
     },
     {
       "id": "macro-events",
       "status": "fresh",
-      "lastSuccessfulAt": "2026-09-15T04:27:30.290Z"
+      "lastSuccessfulAt": "2026-09-15T04:29:48.745Z"
     },
     {
       "id": "news-feed",
-      "status": "fresh",
-      "lastSuccessfulAt": "2026-09-15T04:27:30.290Z"
+      "status": "delayed",
+      "lastSuccessfulAt": "2026-09-15T04:29:48.745Z"
     }
   ],
   "sourceHealth": [
@@ -53,8 +53,9 @@
     {
       "id": "news-nbs-cn",
       "name": "国家统计局（新闻）",
-      "status": "ok",
-      "itemCount": 50
+      "status": "error",
+      "itemCount": 0,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "news-fed",
@@ -80,5 +81,6 @@
       "status": "ok",
       "itemCount": 30
     }
-  ]
+  ],
+  "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
 }
