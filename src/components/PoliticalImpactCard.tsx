@@ -6,6 +6,7 @@ export function PoliticalImpactCard({ item }: { item: PoliticalImpact }) {
     <article className="political-card">
       <header><span>{item.type}</span><b>{item.status}</b></header>
       <h3>{item.event}</h3>
+      {item.publishedAt&&<small>新闻日期：{item.publishedAt.slice(0,10)} · {Date.now()-Date.parse(item.publishedAt)>86400_000?'背景参考，非今日重点':'近 24 小时报道'}</small>}
       <dl>
         <div><dt>传导渠道</dt><dd>{item.channel}</dd></div>
         <div><dt>受影响板块</dt><dd className="asset-tags">{item.affected.map((asset) => <span key={asset}>{asset}</span>)}</dd></div>

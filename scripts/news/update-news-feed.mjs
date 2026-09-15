@@ -9,17 +9,26 @@ import { classifyNewsItem } from './news-classifier.mjs';
 import { clusterNewsItems } from './news-clusterer.mjs';
 import { selectNewsWindows } from './news-ranking.mjs';
 import { enrichNewsItems } from './news-enrichment.mjs';
+import { refreshReviewedNews } from './reviewed-news.mjs';
+import { toPublicEvidence } from './full-article.mjs';
+import { reviewChineseArticle } from './chinese-editorial.mjs';
 
 const defaultPath=resolve('public/data/news-feed.json');
-export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOptions={}}){
+export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOptions={},reviewedNews=[]}){
   const healthy=sourceResults.filter(result=>result.ok); const sourceHealth=sourceResults.map(result=>({id:result.id,name:result.name,status:result.ok?'ok':'error',itemCount:result.items.length,...(result.error?{error:result.error}:{})}));
-  if(!healthy.length&&previous) return {...previous,attemptedAt:now,nextExpectedAt:new Date(Date.parse(now)+3600_000).toISOString(),status:'source_error',sourceHealth,message:'本轮全部新闻来源失败，继续使用最近一次成功快照。'};
-  const normalized=healthy.flatMap(result=>result.items).map(normalizeNewsItem).map(classifyNewsItem); const clustered=clusterNewsItems(normalized); const enriched=await enrichNewsItems(clustered,enrichmentOptions); const {latest,continuing}=selectNewsWindows(enriched,now);
+  if(!healthy.length&&previous){
+    const replacements=new Map(reviewedNews.map(item=>[item.canonicalUrl,item]));
+    const cached=[...(previous.latest??[]),...(previous.continuing??[]),...(previous.retainedDetails??[])].filter(item=>!replacements.has(item.canonicalUrl));
+    const all=[...reviewedNews,...cached].map(toPublicEvidence);
+    const windows=selectNewsWindows(all,now),active=new Set([...windows.latest,...windows.continuing].map(item=>item.id));
+    return {...previous,...windows,retainedDetails:all.filter(item=>!active.has(item.id)),attemptedAt:now,nextExpectedAt:new Date(Date.parse(now)+3600_000).toISOString(),status:'source_error',sourceHealth,message:'本轮新闻列表来源失败，保留此前已核验报道；正文复核变化与失效标记已同步。'};
+  }
+  const normalized=healthy.flatMap(result=>result.items).filter(raw=>!reviewedNews.some(item=>item.canonicalUrl===raw.canonicalUrl)).map(normalizeNewsItem).map(classifyNewsItem); const clustered=clusterNewsItems(normalized); const enriched=[...reviewedNews,...(await enrichNewsItems(clustered,enrichmentOptions)).map(reviewChineseArticle)].map(toPublicEvidence); const {latest,continuing}=selectNewsWindows(enriched,now);
   const activeIds=new Set([...latest,...continuing].map(item=>item.id)); const retainedDetails=[...enriched,...(previous?.latest??[]),...(previous?.continuing??[]),...(previous?.retainedDetails??[])].filter(item=>!activeIds.has(item.id)&&Number.isFinite(Date.parse(item.publishedAt))&&Date.parse(item.publishedAt)<=Date.parse(now)).filter((item,index,array)=>array.findIndex(candidate=>candidate.id===item.id)===index).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,60);
   const status=sourceResults.some(result=>!result.ok)?'delayed':'fresh'; return {schemaVersion:1,attemptedAt:now,lastSuccessfulAt:now,nextExpectedAt:new Date(Date.parse(now)+3600_000).toISOString(),status,latest,continuing,retainedDetails,sourceHealth,...(status==='delayed'?{message:'部分新闻来源暂时异常，已发布其余可靠来源。'}:{})};
 }
 export async function updateNewsFeed({now=new Date().toISOString(),sourceResults,outputPath=defaultPath,statusPath=outputPath===defaultPath?resolve('public/data/update-status.json'):undefined,previous,enrichmentOptions}={}){
-  const old=previous??await readJson(outputPath); const results=sourceResults??await Promise.all(newsSources.filter(source=>source.enabled).map(source=>fetchNewsSource(source,now))); const options=enrichmentOptions??{endpoint:process.env.NEWS_TRANSLATION_API_URL,apiKey:process.env.NEWS_TRANSLATION_API_KEY,model:process.env.NEWS_TRANSLATION_MODEL,fetchImpl:fetch,cache:{}}; const candidate=await buildNewsSnapshot({now,sourceResults:results,previous:old,enrichmentOptions:options}); if(!validateNewsSnapshot(candidate)) throw new Error('Generated news snapshot is invalid'); await writeJsonAtomic(outputPath,candidate);
+  const old=previous??await readJson(outputPath); const results=sourceResults??await Promise.all(newsSources.filter(source=>source.enabled).map(source=>fetchNewsSource(source,now))); const reviewedNews=sourceResults?[]:await refreshReviewedNews(now); const options=enrichmentOptions??{cache:{}}; const candidate=await buildNewsSnapshot({now,sourceResults:results,previous:old,enrichmentOptions:options,reviewedNews}); if(!validateNewsSnapshot(candidate)) throw new Error('Generated news snapshot is invalid'); await writeJsonAtomic(outputPath,candidate);
   if(statusPath){const existing=await readJson(statusPath);const others=(existing?.datasets??[]).filter(dataset=>dataset.id!=='news-feed');const newsHealth=candidate.sourceHealth.map(source=>({...source,id:`news-${source.id}`,name:`${source.name}（新闻）`}));const oldHealth=(existing?.sourceHealth??[]).filter(source=>!source.id.startsWith('news-'));const status={schemaVersion:1,attemptedAt:now,lastSuccessfulAt:candidate.lastSuccessfulAt,status:candidate.status,datasets:[...others,{id:'news-feed',status:candidate.status,lastSuccessfulAt:candidate.lastSuccessfulAt}],sourceHealth:[...oldHealth,...newsHealth],...(candidate.message?{message:candidate.message}:{})};await writeJsonAtomic(statusPath,status);}
   return candidate;
 }

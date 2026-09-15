@@ -26,6 +26,7 @@ export interface SectorSnapshot {
 }
 
 export interface PoliticalImpact {
+  publishedAt?:string;
   id: string;
   event: string;
   type: string;

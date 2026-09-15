@@ -1,13 +1,20 @@
-import { render, screen } from '@testing-library/react';
+import { render,screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
-import { it, expect, vi } from 'vitest';
-import { BriefPage } from '../../src/pages/BriefPage';
-
-vi.mock('../../src/data/useSiteData', () => ({ useSiteData: () => ({ loading:false, refresh:()=>{}, brief:{ schemaVersion:1, attemptedAt:'2026-09-15T03:00:00Z', lastSuccessfulAt:'2026-09-15T03:00:00Z', dataAsOf:'2026-09-15T02:00:00Z', nextExpectedAt:'2026-09-15T04:00:00Z', status:'fresh', freshness:'delayed', sourceHealth:[], edition:'morning', generatedAt:'2026-09-15T03:00:00Z', snapshotVersions:{news:'n1'}, facts:['8月数据今天发布'], stories:[{id:'today-data',title:'8月数据今天发布',publishedAt:'2026-09-15T02:00:00Z',sourceName:'国家统计局',sourceUrl:'https://www.stats.gov.cn/'}],watchItems:[],invalidationConditions:[] } }) }));
-
-it('opens the current news detail from the restored brief card', () => {
-  render(<MemoryRouter><BriefPage /></MemoryRouter>);
-  expect(screen.getByRole('link',{name:/8月数据今天发布/})).toHaveAttribute('href','/news/today-data');
-  expect(screen.getByText(/发布：2026/)).toBeInTheDocument();
-  expect(screen.getByText('今天学一个')).toBeInTheDocument();
+import { webcrypto } from 'node:crypto';
+import { afterEach,expect,it,vi } from 'vitest';
+import { App } from '../../src/app/App';
+import { reviewedFetch } from '../fixtures/reviewedFeed';
+afterEach(()=>vi.unstubAllGlobals());
+it('opens complete professional analysis from a dated brief card',async()=>{
+ vi.stubGlobal('crypto',webcrypto);vi.stubGlobal('fetch',vi.fn(reviewedFetch));
+ const user=userEvent.setup();
+ render(<MemoryRouter initialEntries={['/brief']}><App/></MemoryRouter>);
+ const link=await screen.findByRole('link',{name:/欧洲央行加息/});
+ expect(link).toHaveAttribute('href','/news/ecb-energy-rate-hike');
+ expect(screen.getByText(/不作为今日重点/)).toBeInTheDocument();
+ expect(screen.getByText('今天学一个')).toBeInTheDocument();
+ await user.click(link);
+ expect(await screen.findByRole('heading',{name:'所以呢？'})).toBeInTheDocument();
+ expect(screen.getByRole('heading',{name:'主流市场解释 · 机制参考'})).toBeInTheDocument();
 });

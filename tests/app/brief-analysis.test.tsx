@@ -1,14 +1,12 @@
-import { render, screen } from '@testing-library/react';
+import { render,screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import { expect, it } from 'vitest';
+import { expect,it } from 'vitest';
 import { BriefStoryCard } from '../../src/components/BriefStoryCard';
-import type { LiveNewsItem } from '../../src/data/newsFeedTypes';
-it('puts a mechanism and its limits alongside a clickable brief story',()=>{
- const story={id:'shipping',title:'航运路线受扰',publishedAt:'2026-09-15T01:00:00Z',sourceName:'BBC',sourceUrl:'https://bbc.com/a'};
- const item={...story,originalTitle:'Shipping disruption',summaryZh:'运输路线发生变化。',facts:['运输路线发生变化。'],eventTypes:[],regions:['全球'],keyTerms:[],impactChannels:[]} as unknown as LiveNewsItem;
- render(<MemoryRouter><BriefStoryCard story={story} item={item} index={0}/></MemoryRouter>);
- expect(screen.getByRole('link',{name:/航运路线受扰/})).toHaveAttribute('href','/news/shipping');
- expect(screen.getByText('机制参考：')).toBeInTheDocument();
- expect(screen.getByText('真正重点：')).toBeInTheDocument();
- expect(screen.getByText(/合同锁定运价/)).toBeInTheDocument();
+import { reviewedItem } from '../fixtures/reviewedFeed';
+it('uses the earlier numbered clickable card for a complete reviewed story',()=>{
+ const {container}=render(<MemoryRouter><BriefStoryCard index={0} item={reviewedItem} story={{id:reviewedItem.id,title:reviewedItem.titleZh!,publishedAt:reviewedItem.publishedAt,sourceName:reviewedItem.sourceName,sourceUrl:reviewedItem.canonicalUrl}}/></MemoryRouter>);
+ expect(screen.getByRole('link',{name:/欧洲央行加息/})).toHaveAttribute('href','/news/ecb-energy-rate-hike');
+ expect(screen.getByText('01')).toBeInTheDocument();
+ expect(screen.getByText(/新闻日期：2026-09-10/)).toBeInTheDocument();
+ expect(container.querySelector('article')).not.toBeInTheDocument();
 });

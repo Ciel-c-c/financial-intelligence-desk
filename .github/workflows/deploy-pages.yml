@@ -46,7 +46,7 @@ jobs:
         run: npm run validate:data
 
       - name: Test
-        run: npm test -- --run
+        run: npm test -- --run --maxWorkers=4
 
       - name: Typecheck
         run: npm run typecheck

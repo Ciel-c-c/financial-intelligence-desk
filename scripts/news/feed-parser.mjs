@@ -11,7 +11,7 @@ export function parseNewsFeed(xml, source, fetchedAt) {
     const rawDate = decode(field(block,['pubDate','published','updated','dc:date']));
     const published = Date.parse(rawDate);
     if (!originalTitle || !rawUrl || !Number.isFinite(published) || !allowed(rawUrl, source.publisherDomains)) return undefined;
-    const parsedUrl=new URL(rawUrl); if(parsedUrl.protocol==='http:') parsedUrl.protocol='https:'; const canonicalUrl=parsedUrl.toString();
+    const parsedUrl=new URL(rawUrl); if(parsedUrl.protocol==='http:') parsedUrl.protocol='https:'; parsedUrl.pathname=parsedUrl.pathname.replace(/\/{2,}/g,'/'); const canonicalUrl=parsedUrl.toString();
     const summary = decode(field(block,['description','summary','content']));
     return { sourceId:source.id, sourceName:source.name, sourceTier:source.tier, sourceUrl:source.feedUrl, canonicalUrl, originalLanguage:source.defaultLanguage, originalTitle, originalSummary:summary || undefined, publishedAt:new Date(published).toISOString(), fetchedAt };
   }).filter(Boolean);

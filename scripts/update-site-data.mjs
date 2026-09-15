@@ -7,6 +7,16 @@ import { buildDailyBrief } from './site/brief-pipeline.mjs';
 import { buildSiteSnapshot } from './site/site-contract.mjs';
 
 const DATASET_IDS = ['news-feed', 'market-overview', 'sector-performance', 'global-situation', 'daily-brief'];
+export function selectBriefNews(news,now){
+ return (news?.latest??[]).filter(record=>{
+  const age=Date.parse(now)-Date.parse(record.publishedAt),article=record.article,review=record.editorial,item=review?.item;
+  return age>=0&&age<=86400_000&&article?.status==='complete'&&/^[a-f0-9]{64}$/.test(article.sha256)
+   &&review?.sourceBodyHash===article.sha256&&review.originalTitle===record.originalTitle
+   &&item?.id===record.id&&item.publishedAt===record.publishedAt&&item.sourceUrl===record.canonicalUrl&&article.sourceUrl===record.canonicalUrl
+   &&item.title===record.titleZh&&item.summary===record.summaryZh
+   &&[item.facts,item.consensus,item.inference,item.risks,item.causalChain,review.watchItems].every(section=>Array.isArray(section)&&section.length>0);
+ }).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,8);
+}
 
 function latest(items, field) {
   return (items ?? []).map(item => item[field]).filter(value => typeof value === 'string' && Number.isFinite(new Date(value).valueOf())).sort().at(-1) ?? null;
@@ -55,12 +65,13 @@ async function runDefaultDatasets({ now, dataDir, dryRun }) {
   const snapshots = Object.fromEntries(await Promise.all(DATASET_IDS.filter(id => id !== 'daily-brief').map(async id => [id, await readJson(join(dataDir, `${id}.json`))])));
   const news = snapshots['news-feed'];
   const market = snapshots['market-overview'];
+  const reviewedNews=selectBriefNews(news,now);
   const facts = [
-    ...(news?.latest ?? []).slice(0, 3).map(item => item.titleZh ?? item.originalTitle).filter(Boolean),
+    ...reviewedNews.slice(0,3).flatMap(item=>item.editorial.item.facts),
     ...Object.values(market?.groups ?? {}).flat().slice(0, 2).map(item => `${item.name}：${item.value}${item.unit ? ` ${item.unit}` : ''}`),
   ];
   const existingBrief = await readJson(join(dataDir, 'daily-brief.json'));
-  const currentStories = (news?.latest ?? []).filter(item => Date.parse(now) - Date.parse(item.publishedAt) >= 0 && Date.parse(now) - Date.parse(item.publishedAt) <= 24 * 3600_000).slice(0,8).map(item => ({ id:item.id, title:item.titleZh ?? item.originalTitle, publishedAt:item.publishedAt, sourceName:item.sourceName, sourceUrl:item.canonicalUrl }));
+  const currentStories = reviewedNews.map(item => ({ id:item.id, title:item.titleZh, publishedAt:item.publishedAt, sourceName:item.sourceName, sourceUrl:item.canonicalUrl }));
   const brief = !shouldGenerateBrief(now) && existingBrief?.stories?.length && existingBrief.snapshotVersions?.news === versionOf(news) ? existingBrief : buildDailyBrief({
     edition: briefEdition(now), generatedAt: now,
     snapshots: {
@@ -70,9 +81,9 @@ async function runDefaultDatasets({ now, dataDir, dryRun }) {
       situation: { version: versionOf(snapshots['global-situation']), dataAsOf: latest(snapshots['global-situation']?.events, 'latestSourceAt') },
     },
     facts,
-    stories: currentStories.length ? currentStories : existingBrief?.stories ?? [],
-    watchItems: [],
-    invalidationConditions: [],
+    stories: currentStories,
+    watchItems: [...new Set(reviewedNews.flatMap(item=>item.editorial.watchItems))].slice(0,8),
+    invalidationConditions: [...new Set(reviewedNews.flatMap(item=>item.editorial.item.risks))].slice(0,8),
   });
   snapshots['daily-brief'] = brief;
   if (!dryRun && brief !== existingBrief) await writeJsonAtomic(join(dataDir, 'daily-brief.json'), brief);

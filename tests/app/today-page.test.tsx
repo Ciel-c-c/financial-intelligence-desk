@@ -2,6 +2,8 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { App } from '../../src/app/App';
+import { webcrypto } from 'node:crypto';
+import { reviewedFetch,reviewedItem } from '../fixtures/reviewedFeed';
 
 describe('Today page', () => {
   beforeEach(()=>vi.stubGlobal('fetch',vi.fn().mockResolvedValue({ok:true,json:async()=>({schemaVersion:1,attemptedAt:'2026-09-14T10:17:00Z',lastSuccessfulAt:'2026-09-14T10:17:00Z',nextExpectedAt:'2026-09-14T11:17:00Z',status:'fresh',latest:[{id:'live-cpi',originalTitle:'China CPI',titleZh:'中国居民消费价格公布',summaryZh:'物价变化影响通胀预期。',sourceName:'国家统计局',publishedAt:'2026-09-14T10:00:00Z',analysisLevels:['宏观'],eventTypes:['经济数据'],impactChannels:['通胀'],regions:['中国'],translationStatus:'generated'}],continuing:[{id:'old-policy',originalTitle:'Policy',titleZh:'政策仍在传导',summaryZh:'市场继续评估影响。',sourceName:'Federal Reserve',publishedAt:'2026-09-12T10:00:00Z',analysisLevels:['宏观'],eventTypes:['货币政策'],impactChannels:['利率'],regions:['全球'],translationStatus:'generated'}],retainedDetails:[],sourceHealth:[]})})));
@@ -19,21 +21,30 @@ describe('Today page', () => {
   });
 
   it('keeps markets before news without news filtering', async () => {
+    vi.stubGlobal('crypto',webcrypto);vi.stubGlobal('fetch',reviewedFetch);
     const {container}=render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
 
-    expect(await screen.findByText('中国居民消费价格公布')).toBeInTheDocument();
+    expect((await screen.findAllByText(reviewedItem.titleZh!)).length).toBeGreaterThan(0);
     expect(screen.queryByRole('searchbox')).not.toBeInTheDocument();
     expect(container.querySelector('.today-page')?.firstElementChild?.className).not.toContain('live-news-feed');
   });
 
-  it('separates current news from explicitly dated background reports',async()=>{render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);expect(await screen.findByRole('heading',{name:'正在发生'})).toBeInTheDocument();expect(screen.getByRole('heading',{name:'此前报道 / 背景参考'})).toBeInTheDocument();expect(screen.getByText(/最近成功更新/)).toBeInTheDocument();expect(screen.getByText('政策仍在传导')).toBeInTheDocument();});
+  it('keeps complete old reports explicitly dated and linked, not presented as current news',async()=>{
+    vi.stubGlobal('crypto',webcrypto);vi.stubGlobal('fetch',reviewedFetch);
+    render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
+    expect(await screen.findByRole('heading',{name:'此前报道 / 背景参考'})).toBeInTheDocument();
+    expect(screen.queryByRole('heading',{name:'正在发生'})).not.toBeInTheDocument();
+    expect(screen.getByRole('link',{name:'查看事件完整解读 →'})).toHaveAttribute('href',`/news/${reviewedItem.id}`);
+    expect(screen.getByText(/新闻日期.*2026-09-10/)).toBeInTheDocument();
+    expect(screen.getByText('反向风险')).toBeInTheDocument();
+  });
 
   it('exposes dashboard navigation and keeps data state visible without hover', () => {
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
 
     expect(screen.getByRole('navigation', { name: '桌面主要导航' })).toBeInTheDocument();
     expect(screen.getByRole('region', { name: '行业相对强弱' })).toBeInTheDocument();
-    expect(screen.getAllByText('暂无可靠数据').length).toBeGreaterThan(0);
+    expect(screen.getByText('暂无可靠市场数据')).toBeInTheDocument();
   });
 
   it('uses the Financial Lens brand and beginner-friendly message', () => {
