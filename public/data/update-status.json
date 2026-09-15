@@ -53,8 +53,9 @@
     {
       "id": "news-nbs-cn",
       "name": "国家统计局（新闻）",
-      "status": "ok",
-      "itemCount": 50
+      "status": "error",
+      "itemCount": 0,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "news-fed",
@@ -80,5 +81,6 @@
       "status": "ok",
       "itemCount": 30
     }
-  ]
+  ],
+  "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
 }
