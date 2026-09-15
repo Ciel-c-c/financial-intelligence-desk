@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "attemptedAt": "2026-09-15T04:27:30.290Z",
+  "lastSuccessfulAt": "2026-09-15T04:27:30.290Z",
+  "status": "partial",
+  "datasets": [
+    {
+      "id": "news-feed",
+      "status": "fresh",
+      "freshness": "delayed",
+      "lastSuccessfulAt": "2026-09-15T04:27:30.290Z",
+      "dataAsOf": "2026-09-15T02:00:06.000Z",
+      "nextExpectedAt": "2026-09-15T05:27:30.290Z"
+    },
+    {
+      "id": "market-overview",
+      "status": "partial",
+      "freshness": "close",
+      "lastSuccessfulAt": "2026-09-15T04:27:30.290Z",
+      "dataAsOf": "2026-09-14T00:00:00.000Z",
+      "nextExpectedAt": "2026-09-15T05:27:30.290Z"
+    },
+    {
+      "id": "sector-performance",
+      "status": "unavailable",
+      "freshness": "historical",
+      "lastSuccessfulAt": null,
+      "dataAsOf": null,
+      "nextExpectedAt": "2026-09-14T14:21:37.336Z",
+      "fallbackReason": "尚未接入经过许可和核验的行业表现来源"
+    },
+    {
+      "id": "global-situation",
+      "status": "fresh",
+      "freshness": "delayed",
+      "lastSuccessfulAt": "2026-09-15T04:27:30.290Z",
+      "dataAsOf": "2026-09-10T13:00:00.000Z",
+      "nextExpectedAt": "2026-09-15T05:27:30.290Z"
+    },
+    {
+      "id": "daily-brief",
+      "status": "unavailable",
+      "freshness": "historical",
+      "lastSuccessfulAt": null,
+      "dataAsOf": null,
+      "nextExpectedAt": "2026-09-14T22:30:00.000Z",
+      "fallbackReason": "没有足够的新事实生成简报"
+    }
+  ]
+}

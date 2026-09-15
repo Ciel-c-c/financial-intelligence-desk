@@ -5,12 +5,11 @@ import { FreshnessBanner } from '../components/FreshnessBanner';
 import { MarketRelevance } from '../components/MarketRelevance';
 import { findLesson } from '../data/curriculum';
 import { findGlobalEvent, formatSnapshotTime } from '../data/globalSituation';
-import { globalSituationSeed } from '../data/globalSituationSeed';
 import { useGlobalSituation } from '../data/useGlobalSituation';
 
 export function GlobalEventPage() {
   const { id = '' } = useParams(); const snapshot = useGlobalSituation();
-  const item = findGlobalEvent(snapshot.events,id) ?? findGlobalEvent(globalSituationSeed.events,id);
+  const item = findGlobalEvent(snapshot.events,id);
   const [asset,setAsset] = useState('');
   if (!item) return <main className="page detail-page"><Link to="/situation">← 返回全球局势</Link><h1>未找到这个事件</h1><p>快照可能已更新，请返回查看当前事件。</p></main>;
   const currentAsset = item.relatedAssets.find(entry => entry.name === asset);

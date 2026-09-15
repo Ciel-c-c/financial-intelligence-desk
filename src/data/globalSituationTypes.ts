@@ -1,4 +1,4 @@
-export type SnapshotStatus = 'fresh' | 'delayed' | 'source_error';
+export type SnapshotStatus = 'fresh' | 'partial' | 'delayed' | 'source_error' | 'unavailable';
 export type RelevanceLevel = 'high' | 'medium' | 'low';
 
 export interface EventSource { name: string; url: string; publishedAt: string }
@@ -48,7 +48,7 @@ export interface SourceHealth { id: string; name: string; status: 'ok' | 'error'
 export interface GlobalSituationSnapshot {
   schemaVersion: 1 | 2;
   attemptedAt: string;
-  lastSuccessfulAt: string;
+  lastSuccessfulAt: string | null;
   status: SnapshotStatus;
   sourceHealth: SourceHealth[];
   events: GlobalEvent[];

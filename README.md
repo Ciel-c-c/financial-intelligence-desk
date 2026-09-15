@@ -19,11 +19,11 @@ npm run dev
 
 英文内容可通过 GitHub Secrets `NEWS_TRANSLATION_API_URL`、`NEWS_TRANSLATION_API_KEY`、`NEWS_TRANSLATION_MODEL` 接入结构化中文整理。未配置或生成校验失败时，页面保留英文原标题与原始链接，不猜测中文。密钥不得写入仓库或前端资源。
 
-`npm run validate:data` 会验证全部公开快照。单个来源失败时发布其他可靠来源并标记异常；全部来源失败时保留上一份成功快照，不把旧数据标成最新。
+`npm run update:data` 统一更新新闻、市场、全球局势、行业和简报状态，`npm run validate:data` 会验证全部公开快照。单个来源失败时发布其他可靠来源并标记异常；全部来源失败时保留上一份成功快照，不把旧数据标成最新。`public/data/site-snapshot.json` 是全站健康状态入口，各业务 JSON 独立失败和降级。
 
 ## 发布
 
-推送到 `main` 后，GitHub Actions 会运行测试、类型检查、生产构建并发布到 GitHub Pages。独立的 `Update public data snapshots` 工作流在每小时第 17 分钟运行；即使电脑关闭、Codex 不在线，也会抓取、校验并由 GitHub bot 提交四个统一 JSON 快照，再触发 Pages 发布。
+推送到 `main` 后，GitHub Actions 会运行测试、类型检查、生产构建并发布到 GitHub Pages。独立的 `Update public data snapshots` 工作流在每小时第 17 分钟运行；即使电脑关闭、Codex 不在线，也会抓取、校验并由 GitHub bot 提交独立业务快照及统一状态索引，再触发一次 Pages 发布。简报仅在北京时间 06 点和 16 点生成。
 
 全球局势数据链路：
 
@@ -36,7 +36,7 @@ Fed / ECB / BOJ / UN 官方 RSS
   → GitHub Pages
 ```
 
-候选快照写入前必须通过 schema 校验。本轮全部主要来源失败、事件数异常为零或 JSON 不合法时，不覆盖 Last Successful Snapshot；`update-status.json` 会标记 `source_error`。部分来源或市场数据延迟时标记 `delayed`。前端使用更新时间做 cache busting，并请求 `no-store`。详见 [自动数据管线](docs/data-pipeline.md)。
+候选快照写入前必须通过 schema 校验。本轮全部主要来源失败、事件数异常为零或 JSON 不合法时，不覆盖 Last Successful Snapshot；`site-snapshot.json` 会标记 `partial`、`delayed` 或 `unavailable`。前端使用更新时间做 cache busting，并请求 `no-store`；Service Worker 不缓存动态 JSON。详见 [自动数据管线](docs/data-pipeline.md)、[数据来源注册表](docs/data-sources.md) 和 [动态数据运行手册](docs/operations/dynamic-data-runbook.md)。
 
 ## MVP
 
