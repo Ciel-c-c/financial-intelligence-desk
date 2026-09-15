@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-15T05:39:33.762Z",
-  "lastSuccessfulAt": "2026-09-15T05:39:33.762Z",
+  "attemptedAt": "2026-09-15T06:02:35.621Z",
+  "lastSuccessfulAt": "2026-09-15T06:02:35.621Z",
   "status": "fresh",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-15T05:39:33.762Z"
+      "lastSuccessfulAt": "2026-09-15T06:02:35.621Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-15T05:39:33.762Z"
+      "lastSuccessfulAt": "2026-09-15T06:02:35.621Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-15T05:39:33.762Z"
+      "lastSuccessfulAt": "2026-09-15T06:02:35.621Z"
     },
     {
       "id": "news-feed",
       "status": "fresh",
-      "lastSuccessfulAt": "2026-09-15T05:39:33.762Z"
+      "lastSuccessfulAt": "2026-09-15T06:02:35.621Z"
     }
   ],
   "sourceHealth": [
@@ -53,9 +53,8 @@
     {
       "id": "news-nbs-cn",
       "name": "国家统计局（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "status": "ok",
+      "itemCount": 50
     },
     {
       "id": "news-fed",
@@ -73,7 +72,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 42
+      "itemCount": 43
     },
     {
       "id": "news-un",
@@ -81,6 +80,5 @@
       "status": "ok",
       "itemCount": 30
     }
-  ],
-  "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
+  ]
 }

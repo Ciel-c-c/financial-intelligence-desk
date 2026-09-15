@@ -3,7 +3,7 @@ import { validateDatasetEnvelope } from './site-contract.mjs';
 const EDITIONS = ['morning', 'close'];
 const isIso = value => typeof value === 'string' && Number.isFinite(new Date(value).valueOf());
 
-export function buildDailyBrief({ edition, generatedAt, snapshots = {}, facts = [], focus, watchItems = [], invalidationConditions = [] }) {
+export function buildDailyBrief({ edition, generatedAt, snapshots = {}, facts = [], stories = [], focus, watchItems = [], invalidationConditions = [] }) {
   if (!EDITIONS.includes(edition)) throw new Error(`unsupported brief edition: ${edition}`);
   if (!isIso(generatedAt)) throw new Error('valid generatedAt is required');
   if (focus && (!Array.isArray(focus.evidenceIds) || focus.evidenceIds.length === 0)) throw new Error('brief focus requires evidence');
@@ -25,6 +25,7 @@ export function buildDailyBrief({ edition, generatedAt, snapshots = {}, facts = 
     generatedAt,
     snapshotVersions,
     facts,
+    stories,
     ...(focus ? { marketFocus: focus } : {}),
     watchItems,
     invalidationConditions,
@@ -35,6 +36,7 @@ export function validateDailyBrief(value) {
   return validateDatasetEnvelope(value) && EDITIONS.includes(value.edition) && isIso(value.generatedAt)
     && value.snapshotVersions && typeof value.snapshotVersions === 'object'
     && Array.isArray(value.facts) && value.facts.every(item => typeof item === 'string')
+    && (value.stories === undefined || Array.isArray(value.stories) && value.stories.every(item => typeof item.id === 'string' && typeof item.title === 'string' && isIso(item.publishedAt) && typeof item.sourceName === 'string' && /^https:\/\//.test(item.sourceUrl)))
     && Array.isArray(value.watchItems) && value.watchItems.every(item => typeof item === 'string')
     && Array.isArray(value.invalidationConditions) && value.invalidationConditions.every(item => typeof item === 'string')
     && (value.marketFocus === undefined || typeof value.marketFocus.text === 'string' && Array.isArray(value.marketFocus.evidenceIds) && value.marketFocus.evidenceIds.length > 0);

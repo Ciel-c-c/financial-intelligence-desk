@@ -4,6 +4,11 @@ import { buildDailyBrief, validateDailyBrief } from '../../scripts/site/brief-pi
 const snapshot = (version: string, dataAsOf: string) => ({ version, dataAsOf, status: 'fresh' });
 
 describe('daily brief pipeline', () => {
+  it('keeps clickable story identity and actual publication date', () => {
+    const stories = [{ id:'news-1', title:'8月经济数据于今日发布', publishedAt:'2026-09-15T02:00:00Z', sourceName:'国家统计局', sourceUrl:'https://www.stats.gov.cn/news' }];
+    const result = buildDailyBrief({ edition:'morning', generatedAt:'2026-09-15T03:00:00Z', facts:['8月经济数据于今日发布'], stories });
+    expect(result.stories).toEqual(stories);
+  });
   it('records input versions and keeps fact, interpretation and inference separate', () => {
     const result = buildDailyBrief({
       edition: 'morning', generatedAt: '2026-09-14T22:30:00Z',

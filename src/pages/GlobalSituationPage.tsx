@@ -14,7 +14,7 @@ const themeNames: Record<string,{ title:string; plain:string }> = {
 
 export function GlobalSituationPage() {
   const snapshot = useGlobalSituation();
-  const events = snapshot.events;
+  const events = snapshot.events.filter(event => Date.now() - Date.parse(event.latestSourceAt ?? event.publishedAt) <= 24 * 3600_000);
   const featured = [...events].sort((a,b) => b.relevance.score - a.relevance.score)[0];
   const themes = Object.entries(themeNames).map(([id,value]) => ({...value,count:events.filter(event => event.eventType === id).length})).filter(theme => theme.count > 0);
   const watchItems = events.flatMap(event => event.watchConditions ?? event.conditionsThatChangeView ?? []).filter((item,index,list) => list.indexOf(item) === index).slice(0,5);

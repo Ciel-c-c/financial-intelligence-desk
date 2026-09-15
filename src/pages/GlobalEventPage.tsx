@@ -20,7 +20,7 @@ export function GlobalEventPage() {
     <section className="one-line-card"><span>① 一句话看懂</span><p>{item.oneLine}</p></section>
     <div className="evidence-grid">
       <section><span className="evidence-tag fact-tag">FACT｜事实</span><h2>发生了什么</h2>{item.sourceHeadline && <p className="source-headline">原始标题：{item.sourceHeadline}</p>}<ul>{item.fact.map(fact => <li key={fact}>{fact}</li>)}</ul><div className="event-sources"><b>原始来源</b>{item.sources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.name} · {formatSnapshotTime(source.publishedAt)} ↗</a>)}</div></section>
-      <section><span className="evidence-tag market-tag">MARKET VIEW｜市场解释</span><h2>为什么市场在乎</h2><ul>{item.marketView.map(view => <li key={view}>{view}</li>)}</ul></section>
+      <section><span className="evidence-tag market-tag">MECHANISM｜条件性机制参考</span><h2>为什么可能影响市场</h2><ul>{item.marketView.map(view => <li key={view}>{view}</li>)}</ul></section>
       <section><span className="evidence-tag scenario-tag">SCENARIO｜情景推演</span><h2>如果条件持续</h2><ul>{item.scenarios.map(scenario => <li key={scenario}>{scenario}</li>)}</ul><small>推演不是事实，也不是涨跌预测。</small></section>
     </div>
     <section className="simple-example"><div className="example-visual" aria-hidden="true"><span>日常成本</span><i>→</i><span>企业账单</span><i>→</i><span>你的资产</span></div><div><p className="eyebrow">PLAIN LANGUAGE FIRST</p><h2>举个简单例子</h2><p>{item.simpleExample}</p><aside><b>专业一点说：</b>{item.professionalConcept}</aside></div></section>

@@ -180,7 +180,26 @@ const narratives = {
   },
 };
 
-function narrativeFor(type) {
+function narrativeFor(type, item) {
+  const text = `${item.headline} ${item.summary}`;
+  if (type === 'energy-security' && /shipping|ships|seafarers|red sea|航运|红海/i.test(text)) return {
+    oneLine:'本条涉及航线与交付风险；是否影响能源价格，需要另查实际供应。',
+    why:'航运受阻不等于石油供给减少。先核实航线、货物和港口，再判断是否绕行以及谁承担成本。',
+    professional:'条件性机制参考：绕行、保险费与交付周期可能改变贸易成本，不是已观察到的价格反应。',
+    example:'一批货原本十天送到，如果实际绕行，可能多付运费、多占用库存资金。没有使用受影响航线的企业，未必受影响。',
+    chain:[['航线安全风险','来源报告航运风险，需核实范围。','存在实际航线暴露'],['船舶可能绕行','路线更长，交付可能延迟。','船公司实际改变航线'],['运费与保险成本可能增加','航程和保险风险可能增加账单。','运力和保险安排无法抵消'],['交付与企业利润可能受压','进口商可能增加库存或承担成本。','成本无法完全转嫁']],
+    assets:[['航运企业','航程和运费影响收入，但燃料、保险和运营成本也可能增加。'],['进口企业','运输延迟可能增加库存占款，本地供应和固定合同可能减弱影响。']],
+    conditions:['船舶没有实际绕行','航线恢复安全','货物使用其他路线','运力充足或合同锁定费用'],
+  };
+  if (type === 'energy-security' && /electricity|datacent|电力|数据中心/i.test(text)) return {
+    oneLine:'本条涉及电力需求与系统承载能力，不是石油供应中断。',
+    why:'新增用电需要电源、电网和接入容量同时跟上。需求增长不等于电价必涨，也不等于所有能源企业受益。',
+    professional:'条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。',
+    example:'新增园区需要更多电。如果现有容量够用，需求增加未必推高账单；容量不足则需要先扩建。',
+    chain:[['电力需求可能增加','新设施运行会消耗电力。','项目实际投运'],['电源与电网容量受考验','高峰负荷可能接近上限。','备用容量不足'],['扩容投资可能增加','发电和输配电需要建设周期。','获得许可与融资'],['企业供电成本可能变化','电价或接入费用可能传入成本。','当地定价规则允许传导']],
+    assets:[['电网设备企业','扩容可能形成订单，但要看招标、交付与利润率。'],['数据中心企业','供电影响项目回报，长协和自备电源可能抵消影响。']],
+    conditions:['项目延期','现有容量充足','效率提升抵消用电增长','电价受监管或合同锁定'],
+  };
   return narratives[type] ?? {
     oneLine: '一项政策或政治变化正在改变增长、成本或资金流的预期。',
     why: '市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。',
@@ -214,7 +233,7 @@ function localizeHeadline(item) {
 }
 
 function toEvent(item) {
-  const narrative = narrativeFor(item.eventType);
+  const narrative = narrativeFor(item.eventType, item);
   const firstPublishedAt = [...item.sources].map(source => source.publishedAt).sort()[0] ?? item.publishedAt;
   const latestSourceAt = [...item.sources].map(source => source.publishedAt).sort().at(-1) ?? item.publishedAt;
   const causalChain = narrative.chain.map(([title, beginnerExplanation, condition], index) => ({ id: `${index + 1}`, title, beginnerExplanation, condition, uncertain: index > 0 }));
@@ -228,7 +247,7 @@ function toEvent(item) {
     marketRelevance: item.relevance.level, marketRelevanceScore: item.relevance.score, relevanceReasons: item.relevance.criteria,
     fact: [item.summary || `官方来源发布：${item.headline}`],
     factSummary: item.summary || `官方来源发布：${item.headline}`,
-    marketView: [narrative.why, narrative.professional],
+    marketView: [`本条来源报告：${localizeHeadline(item)}。以下为条件性机制参考，不是已核实的市场结论。`, narrative.why, narrative.professional],
     scenarios: [`如果相关影响继续，${narrative.chain.at(-1)[0]}。这是一种有条件的路径。`],
     simpleExample: narrative.example, professionalConcept: narrative.professional,
     causalChain, impactChain: causalChain,

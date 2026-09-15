@@ -10,6 +10,17 @@ import {
 const fetchedAt = '2026-09-11T03:00:00.000Z';
 
 describe('global situation ingestion', () => {
+  it('explains shipping disruption without asserting an oil supply shock', () => {
+    const result = buildSnapshot({ attemptedAt: fetchedAt, sourceResults: [{ id:'un', name:'UN News', ok:true, items:[{ headline:'Red Sea ships face attacks and shipping disruption', summary:'Ships reroute around the affected route.', source:'UN News', sourceUrl:'https://example.test/shipping', publishedAt:fetchedAt, fetchedAt }] }] });
+    expect(result.events[0].causalChain.map(node => node.title).join(' ')).toContain('绕行');
+    expect(result.events[0].causalChain.map(node => node.title).join(' ')).not.toContain('原油');
+    expect(result.events[0].marketView.join(' ')).toContain('不等于');
+  });
+  it('does not apply the oil narrative to AI electricity demand', () => {
+    const result = buildSnapshot({ attemptedAt: fetchedAt, sourceResults: [{ id:'un', name:'UN News', ok:true, items:[{ headline:'AI datacentres increase electricity demand', summary:'Electricity systems face rising demand.', source:'UN News', sourceUrl:'https://example.test/power', publishedAt:fetchedAt, fetchedAt }] }] });
+    expect(result.events[0].causalChain.map(node => node.title).join(' ')).toContain('电力');
+    expect(result.events[0].simpleExample).not.toContain('桶油');
+  });
   it('does not label a five-day-old event fresh after fetching it today', () => {
     const result = buildSnapshot({ attemptedAt: '2026-09-15T04:00:00Z', sourceResults: [{ id: 'un', name: 'UN News', ok: true, items: [{ headline: 'Shipping disruption near key oil route raises supply concerns', summary: 'Oil supply concerns', source: 'UN News', sourceUrl: 'https://example.test/oil', publishedAt: '2026-09-10T13:00:00Z', fetchedAt: '2026-09-15T04:00:00Z' }] }] });
     expect(result.status).toBe('delayed');

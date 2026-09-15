@@ -11,7 +11,8 @@ import type { MarketGroup } from '../data/siteSnapshotTypes';
 export function TodayPage() {
   const { snapshot: newsSnapshot, loading: newsLoading, error: newsError } = useNewsFeed();
   const { market, sectors } = useSiteData();
-  const situation = useGlobalSituation();
+  const rawSituation = useGlobalSituation();
+  const situation = { ...rawSituation, events: rawSituation.events.filter(event => Date.now() - Date.parse(event.latestSourceAt ?? event.publishedAt) <= 24 * 3600_000) };
   const [marketTab, setMarketTab] = useState<MarketGroup>('aShare');
   const recentEvents = situation.events.filter(event => Date.now() - Date.parse(event.latestSourceAt ?? event.publishedAt) <= 24 * 3600_000);
   const featured = [...recentEvents].sort((a, b) => Date.parse(b.latestSourceAt ?? b.publishedAt) - Date.parse(a.latestSourceAt ?? a.publishedAt) || b.relevance.score - a.relevance.score)[0];
