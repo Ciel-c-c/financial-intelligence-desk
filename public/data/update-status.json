@@ -1,28 +1,23 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-15T07:27:01.597Z",
-  "lastSuccessfulAt": "2026-09-15T07:27:01.597Z",
+  "attemptedAt": "2026-09-15T07:43:59.938Z",
+  "lastSuccessfulAt": "2026-09-15T07:43:59.938Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-15T07:27:01.597Z"
+      "lastSuccessfulAt": "2026-09-15T07:43:59.938Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-15T07:27:01.597Z"
+      "lastSuccessfulAt": "2026-09-15T07:43:59.938Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-15T07:27:01.597Z"
-    },
-    {
-      "id": "news-feed",
-      "status": "delayed",
-      "lastSuccessfulAt": "2026-09-15T07:27:01.597Z"
+      "lastSuccessfulAt": "2026-09-15T07:43:59.938Z"
     }
   ],
   "sourceHealth": [
@@ -31,7 +26,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -80,62 +75,6 @@
       "name": "U.S. Energy Information Administration",
       "status": "ok",
       "itemCount": 15
-    },
-    {
-      "id": "news-nbs-cn",
-      "name": "国家统计局（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "news-fed",
-      "name": "Federal Reserve（新闻）",
-      "status": "ok",
-      "itemCount": 20
-    },
-    {
-      "id": "news-ecb",
-      "name": "European Central Bank（新闻）",
-      "status": "ok",
-      "itemCount": 15
-    },
-    {
-      "id": "news-boj",
-      "name": "Bank of Japan（新闻）",
-      "status": "ok",
-      "itemCount": 42
-    },
-    {
-      "id": "news-un",
-      "name": "UN News（新闻）",
-      "status": "ok",
-      "itemCount": 30
-    },
-    {
-      "id": "news-bbc-world",
-      "name": "BBC News · 世界（新闻）",
-      "status": "ok",
-      "itemCount": 33
-    },
-    {
-      "id": "news-bbc-business",
-      "name": "BBC News · 财经（新闻）",
-      "status": "ok",
-      "itemCount": 50
-    },
-    {
-      "id": "news-bis-press",
-      "name": "Bank for International Settlements（新闻）",
-      "status": "ok",
-      "itemCount": 10
-    },
-    {
-      "id": "news-eia-energy",
-      "name": "U.S. Energy Information Administration（新闻）",
-      "status": "ok",
-      "itemCount": 15
     }
-  ],
-  "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
+  ]
 }
