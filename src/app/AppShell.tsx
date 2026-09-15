@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import { SiteDataStatus } from '../components/SiteDataStatus';
 import { useSiteData } from '../data/useSiteData';
+import { BrowserTranslationControl } from '../components/BrowserTranslation';
 
 export function AppShell() {
   const { site, errors, refresh } = useSiteData();
@@ -31,6 +32,7 @@ export function AppShell() {
           <span className="demo-badge">市场与事件快照</span>
         </header>
         <SiteDataStatus snapshot={site} errors={errors} onRefresh={refresh} />
+        <BrowserTranslationControl />
         <Outlet />
       </div>
       <nav className="bottom-nav" aria-label="主要导航">

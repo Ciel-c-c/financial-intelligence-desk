@@ -8,10 +8,11 @@ import { NewsDetailPage } from '../pages/NewsDetailPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
 import { GlobalSituationPage } from '../pages/GlobalSituationPage';
 import { GlobalEventPage } from '../pages/GlobalEventPage';
+import { BrowserTranslationProvider } from '../components/BrowserTranslation';
 
 export function App() {
   return (
-    <Routes>
+    <BrowserTranslationProvider><Routes>
       <Route element={<AppShell />}>
         <Route index element={<TodayPage />} />
         <Route path="brief" element={<BriefPage />} />
@@ -22,6 +23,6 @@ export function App() {
         <Route path="news/:id" element={<NewsDetailPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
-    </Routes>
+    </Routes></BrowserTranslationProvider>
   );
 }

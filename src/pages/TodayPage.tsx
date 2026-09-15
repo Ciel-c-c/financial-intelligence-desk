@@ -25,10 +25,10 @@ export function TodayPage() {
   } : undefined, [featured]);
 
   return <main className="page today-page">
-    <NewsFeedSections snapshot={newsSnapshot} loading={newsLoading} error={newsError} />
     <MarketOverview snapshot={market} activeGroup={marketTab} onGroupChange={setMarketTab} />
     <div className="dashboard-split"><SectorPerformance snapshot={sectors} activeGroup={marketTab} /><CoreTransmission chain={chain} /></div>
     <section aria-labelledby="political-title"><div className="section-heading"><div><p className="eyebrow">政策 · 国际关系 · 地缘冲突</p><h2 id="political-title">政策与地缘传导</h2></div><span>{situation.events.length} 个事件</span></div>{situation.events.length ? <div className="political-grid">{situation.events.slice(0, 6).map(event => <article className="political-card" key={event.id}><span className="eyebrow">{event.region}</span><h3>{event.headline}</h3><p>{event.oneLine ?? event.oneSentenceExplanation}</p><small>数据时间：{new Date(event.latestSourceAt ?? event.publishedAt).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai', hour12: false })}</small></article>)}</div> : <p className="empty-state">当前没有可验证的动态政策与地缘事件。</p>}</section>
     <PreviousGlobalEvents events={rawSituation.events.filter(event => !isRecentNews(event.latestSourceAt ?? event.publishedAt))} open={!recentEvents.length}/>
+    <NewsFeedSections snapshot={newsSnapshot} loading={newsLoading} error={newsError} showFilters={false} />
   </main>;
 }

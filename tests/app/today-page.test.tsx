@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { App } from '../../src/app/App';
@@ -19,13 +18,12 @@ describe('Today page', () => {
     expect(copy).not.toContain('元件 / MLCC');
   });
 
-  it('filters stories from the search control', async () => {
-    const user = userEvent.setup();
-    render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
+  it('keeps markets before news without news filtering', async () => {
+    const {container}=render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
 
     expect(await screen.findByText('中国居民消费价格公布')).toBeInTheDocument();
-    await user.type(screen.getByRole('searchbox', { name: '搜索资讯' }), '物价');
-    expect(screen.getByText('中国居民消费价格公布')).toBeInTheDocument();
+    expect(screen.queryByRole('searchbox')).not.toBeInTheDocument();
+    expect(container.querySelector('.today-page')?.firstElementChild?.className).not.toContain('live-news-feed');
   });
 
   it('separates current news from explicitly dated background reports',async()=>{render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);expect(await screen.findByRole('heading',{name:'正在发生'})).toBeInTheDocument();expect(screen.getByRole('heading',{name:'此前报道 / 背景参考'})).toBeInTheDocument();expect(screen.getByText(/最近成功更新/)).toBeInTheDocument();expect(screen.getByText('政策仍在传导')).toBeInTheDocument();});

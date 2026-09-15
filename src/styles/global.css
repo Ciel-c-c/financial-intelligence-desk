@@ -375,3 +375,13 @@ body::after { background:radial-gradient(ellipse at 72% 72%,rgba(239,234,248,.08
 .news-filters select,.news-filters button{min-height:42px;border:1px solid var(--line);border-radius:12px;background:var(--glass);color:inherit;padding:0 12px}.news-tags{display:flex;gap:6px;overflow-x:auto}.live-news-card .topic{white-space:nowrap}
 @media(max-width:720px){.news-filters{align-items:stretch}.news-filters label,.news-filters select,.news-filters button{width:100%}.news-feed-status{align-items:flex-start;flex-direction:column}.live-news-card p{display:block}}
 @media(max-width:720px){.site-data-status summary{align-items:flex-start;flex-direction:column;gap:3px}.site-data-status p{grid-template-columns:1fr}.site-data-status p small{grid-column:1}.market-card a,.sector-card a{overflow-wrap:anywhere}}
+.brief-story-card { padding: 20px; border: 1px solid var(--glass-rim-highlight); border-radius: 20px; background: var(--glass-clear); box-shadow: var(--glass-shadow); }
+.brief-story-card > a:first-child { display: grid; grid-template-columns: 38px 1fr; gap: 10px; }
+.brief-story-card > a:first-child small { grid-column: 2; }
+.brief-story-card p { line-height: 1.75; overflow-wrap: anywhere; }
+.brief-story-card > a:last-child { font-size: 13px; }
+.brief-list .brief-story-card > a:last-child { display: inline; padding: 0; border: 0; background: none; box-shadow: none; }
+.translation-control { max-width: 1180px; margin: 0 auto; }
+.translation-control { padding: 12px 20px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; font-size: 12px; }
+.translation-control button { padding: 8px 12px; border-radius: 12px; }
+.translation-control p { flex-basis: 100%; margin: 0; }
