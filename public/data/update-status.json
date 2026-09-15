@@ -1,31 +1,37 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-15T07:11:51.290Z",
-  "lastSuccessfulAt": "2026-09-15T07:11:51.290Z",
+  "attemptedAt": "2026-09-15T07:27:01.597Z",
+  "lastSuccessfulAt": "2026-09-15T07:27:01.597Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-15T07:11:51.290Z"
+      "lastSuccessfulAt": "2026-09-15T07:27:01.597Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-15T07:11:51.290Z"
+      "lastSuccessfulAt": "2026-09-15T07:27:01.597Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-15T07:11:51.290Z"
+      "lastSuccessfulAt": "2026-09-15T07:27:01.597Z"
+    },
+    {
+      "id": "news-feed",
+      "status": "delayed",
+      "lastSuccessfulAt": "2026-09-15T07:27:01.597Z"
     }
   ],
   "sourceHealth": [
     {
       "id": "nbs-cn",
       "name": "国家统计局",
-      "status": "ok",
-      "itemCount": 50
+      "status": "error",
+      "itemCount": 0,
+      "error": "fetch failed"
     },
     {
       "id": "fed",
@@ -54,16 +60,14 @@
     {
       "id": "bbc-world",
       "name": "BBC News · 世界",
-      "status": "error",
-      "itemCount": 0,
-      "error": "fetch failed"
+      "status": "ok",
+      "itemCount": 33
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
-      "status": "error",
-      "itemCount": 0,
-      "error": "fetch failed"
+      "status": "ok",
+      "itemCount": 50
     },
     {
       "id": "bis-press",
@@ -74,6 +78,61 @@
     {
       "id": "eia-energy",
       "name": "U.S. Energy Information Administration",
+      "status": "ok",
+      "itemCount": 15
+    },
+    {
+      "id": "news-nbs-cn",
+      "name": "国家统计局（新闻）",
+      "status": "error",
+      "itemCount": 0,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "news-fed",
+      "name": "Federal Reserve（新闻）",
+      "status": "ok",
+      "itemCount": 20
+    },
+    {
+      "id": "news-ecb",
+      "name": "European Central Bank（新闻）",
+      "status": "ok",
+      "itemCount": 15
+    },
+    {
+      "id": "news-boj",
+      "name": "Bank of Japan（新闻）",
+      "status": "ok",
+      "itemCount": 42
+    },
+    {
+      "id": "news-un",
+      "name": "UN News（新闻）",
+      "status": "ok",
+      "itemCount": 30
+    },
+    {
+      "id": "news-bbc-world",
+      "name": "BBC News · 世界（新闻）",
+      "status": "ok",
+      "itemCount": 33
+    },
+    {
+      "id": "news-bbc-business",
+      "name": "BBC News · 财经（新闻）",
+      "status": "ok",
+      "itemCount": 50
+    },
+    {
+      "id": "news-bis-press",
+      "name": "Bank for International Settlements（新闻）",
+      "status": "ok",
+      "itemCount": 10
+    },
+    {
+      "id": "news-eia-energy",
+      "name": "U.S. Energy Information Administration（新闻）",
       "status": "ok",
       "itemCount": 15
     }

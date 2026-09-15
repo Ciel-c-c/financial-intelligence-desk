@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-15T07:11:51.290Z",
-  "lastSuccessfulAt": "2026-09-15T07:11:51.290Z",
-  "nextExpectedAt": "2026-09-15T08:11:51.290Z",
+  "attemptedAt": "2026-09-15T07:27:01.597Z",
+  "lastSuccessfulAt": "2026-09-15T07:27:01.597Z",
+  "nextExpectedAt": "2026-09-15T08:27:01.597Z",
   "status": "delayed",
   "latest": [
     {
@@ -14,7 +14,7 @@
       "originalLanguage": "en",
       "originalTitle": "Signing of the Third Bilateral Swap Arrangement between Japan and Malaysia",
       "publishedAt": "2026-09-15T06:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "f781a4fed5306c68d89e",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -45,100 +45,26 @@
       "contentFingerprint": "6260c50f1e4ef048135af8fab787ec479d4518d17daaba1102330a9559e0dee1"
     },
     {
-      "sourceId": "ecb",
-      "sourceName": "European Central Bank",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
-      "canonicalUrl": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260914_2~a3f0efbee4.en.html",
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw980n0nd0qjo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Christine Lagarde: A new age of capital: growth, sovereignty and AI",
-      "publishedAt": "2026-09-14T15:15:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "7c8d580956a64956bdd2",
-      "verificationStatus": "official",
+      "originalTitle": "Trump says AI safety fears a 'hoax' as he rejects calls for greater safeguards",
+      "originalSummary": "The US president's comments come after Anthropic co-founder Jack Clark told the BBC an AI \"kill switch\" may need to be mandatory.",
+      "publishedAt": "2026-09-15T03:47:27.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "ad713a7476b3181918c2",
+      "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cw980n0nd0qjo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-15T03:47:27.000Z"
+        }
       ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "欧洲",
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|christinelagarde|2026-09-14",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "51b2bb4fbc42b5131ed53740a8917632b0d7726b624430545da17092e96aacde"
-    },
-    {
-      "sourceId": "ecb",
-      "sourceName": "European Central Bank",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
-      "canonicalUrl": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260914_1~91d3436449.en.html",
-      "originalLanguage": "en",
-      "originalTitle": "Piero Cipollone: The future of euro cash: trusted today, designed for tomorrow",
-      "publishedAt": "2026-09-14T13:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "8c85eac70820c8b3748b",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "欧洲",
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|pierocipolloneth|2026-09-14",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "8d84be37c3482405405ccf78f154986264630f6576847200b0fc34e41b86f76f"
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168333",
-      "originalLanguage": "en",
-      "originalTitle": "Six UN staff killed in Gaza school strike; Lebanon violations mount",
-      "originalSummary": "Israeli strikes killed six UN workers and civilians at a school sheltering displaced families in Gaza as needs grow, according to the UN agency for Palestine refugees, UNRWA.",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "b1ddd36cec3253cea3bd",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
       "keyTerms": [
         "供需"
       ],
@@ -155,32 +81,38 @@
       "regions": [
         "全球"
       ],
-      "importanceScore": 70,
+      "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|sixunstaffkilled|2026-09-14",
+      "clusterId": "监管|trumpsaysaisafet|2026-09-15",
       "detailStatus": "brief",
       "facts": [
-        "Israeli strikes killed six UN workers and civilians at a school sheltering displaced families in Gaza as needs grow, according to the UN agency for Palestine refugees, UNRWA."
+        "The US president's comments come after Anthropic co-founder Jack Clark told the BBC an AI \"kill switch\" may need to be mandatory."
       ],
       "expectations": [],
       "inferences": [],
-      "contentFingerprint": "6b2c6b979091d68645459eb751bccbb96ec50ef7a9c2281e1ff543bebd7979d7"
+      "contentFingerprint": "31982ad6c8c2b190c343e1048d399b3d85a88bb0756dcdea62ce30c517471364"
     },
     {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168331",
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck20989806e9o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "UN agencies warn humanitarian system in Sudan ‘could collapse’",
-      "originalSummary": "UN aid agencies on Monday said they may be forced to scale back humanitarian aid in Sudan – home of the world’s worst hunger and displacement crisis – due to funding shortfalls.",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "4426a2be545b6998e708",
-      "verificationStatus": "official",
+      "originalTitle": "AI regulation faces political deadlock as calls grow for Congress to act",
+      "originalSummary": "With Trump opposed and Congress divided, new safety legislation on AI is unlikely to pass anytime soon despite mounting pressure.",
+      "publishedAt": "2026-09-15T02:50:36.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "cc762825c6d4749c32ac",
+      "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
-      "relatedSources": [],
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/ck20989806e9o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-15T02:50:36.000Z"
+        }
+      ],
       "keyTerms": [
         "供需"
       ],
@@ -197,370 +129,34 @@
       "regions": [
         "全球"
       ],
-      "importanceScore": 70,
+      "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|unagencieswarnhu|2026-09-14",
+      "clusterId": "监管|airegulationface|2026-09-15",
       "detailStatus": "brief",
       "facts": [
-        "UN aid agencies on Monday said they may be forced to scale back humanitarian aid in Sudan – home of the world’s worst hunger and displacement crisis – due to funding shortfalls."
+        "With Trump opposed and Congress divided, new safety legislation on AI is unlikely to pass anytime soon despite mounting pressure."
       ],
       "expectations": [],
       "inferences": [],
-      "contentFingerprint": "ec238ec13c6fd4b8b283678d083a0e02e6161bd9b7acdffee8bc17bd1d68f3ca"
+      "contentFingerprint": "0d8fec4bcdee119f30b76546348d4e13fa0604b2ef9a3e7cb3b0f89b7a0957fd"
     },
     {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168330",
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq6m03ld7nvo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Money sent home by migrants nearly doubles in a decade",
-      "originalSummary": "Migrants sent $728.6 billion home to families in low and middle-income countries in 2025, nearly double the amount recorded a decade earlier, according to a new report from the UN’s International Fund for Agricultural Development (IFAD).",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "34b95e751ccda6eeb151",
-      "verificationStatus": "official",
+      "originalTitle": "What is the triple lock and how much is the state pension worth?",
+      "originalSummary": "The triple lock guarantees that the state pension is not overtaken by inflation or wage increases.",
+      "publishedAt": "2026-09-15T07:20:55.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "12f676687ef8fbf71375",
+      "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
       "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|moneysenthomebym|2026-09-14",
-      "detailStatus": "brief",
-      "facts": [
-        "Migrants sent $728.6 billion home to families in low and middle-income countries in 2025, nearly double the amount recorded a decade earlier, according to a new report from the UN’s International Fund for Agricultural Development (IFAD)."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "5c508b1e01c9cc97dc16e64c8638477122020f7e2b098a292858c30a7d1393dd"
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168329",
-      "originalLanguage": "en",
-      "originalTitle": "Highly persistent toxic waste threatens ‘many, if not all, human rights’",
-      "originalSummary": "Poor management of toxic chemicals and hazardous waste threatens “many, if not all, human rights,” the newly appointed independent human rights independent expert on the rising threat told the Human Rights Council on Monday.&nbsp;",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "8bd234664fc260a572b9",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|highlypersistent|2026-09-14",
-      "detailStatus": "brief",
-      "facts": [
-        "Poor management of toxic chemicals and hazardous waste threatens “many, if not all, human rights,” the newly appointed independent human rights independent expert on the rising threat told the Human Rights Council on Monday.&nbsp;"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "7257484f7f394131210d684ecdea9fa8942347d27ba5c5c4d0c94ee854fb6f87"
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168328",
-      "originalLanguage": "en",
-      "originalTitle": "Civilians bear the brunt, with deadly US strikes in Iran and thousands displaced in Yemen",
-      "originalSummary": "Independent UN human rights investigators called for an immediate cessation of hostilities on Monday following a series of United States airstrikes on Iran in recent weeks that have killed civilians as tensions ripple through the region.",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "a5b574fffa3ac43ea185",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|civiliansbearthe|2026-09-14",
-      "detailStatus": "brief",
-      "facts": [
-        "Independent UN human rights investigators called for an immediate cessation of hostilities on Monday following a series of United States airstrikes on Iran in recent weeks that have killed civilians as tensions ripple through the region."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "06756838941e993c3067bb26118779e5db719505760e21bbbf846eed9bd7b9b0"
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168326",
-      "originalLanguage": "en",
-      "originalTitle": "Countries must increase AI regulation to avoid ‘existential risks’: Türk",
-      "originalSummary": "Voluntary self-regulation by companies developing frontier artificial intelligence (AI) is “nowhere near sufficient” to address existing harms and prevent advanced autonomous AI models from circumventing human safeguards, UN human rights chief Volker Türk&nbsp;wrote on Monday.",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "ba962c5748bfec16b921",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|countriesmustinc|2026-09-14",
-      "detailStatus": "brief",
-      "facts": [
-        "Voluntary self-regulation by companies developing frontier artificial intelligence (AI) is “nowhere near sufficient” to address existing harms and prevent advanced autonomous AI models from circumventing human safeguards, UN human rights chief Volker Türk&nbsp;wrote on Monday."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "9675da7a36858c7d373eadb19a7246643e5db88b2f3b5c7e4a2d51a54178d0fa"
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168325",
-      "originalLanguage": "en",
-      "originalTitle": "IAEA chief underscores commitment to nuclear safety and verification",
-      "originalSummary": "The Director General of the UN nuclear watchdog, IAEA, opened its 70th General Conference on Monday in Vienna with a message full of optimism, stressing that despite the many difficulties and tensions the world is witnessing a “common spirit of dedication” which still guides their work.",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "0620bd4a015ae058751e",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|iaeachiefundersc|2026-09-14",
-      "detailStatus": "brief",
-      "facts": [
-        "The Director General of the UN nuclear watchdog, IAEA, opened its 70th General Conference on Monday in Vienna with a message full of optimism, stressing that despite the many difficulties and tensions the world is witnessing a “common spirit of dedication” which still guides their work."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "a510d6c244e429cc13108955cca3be549d15c0ee2d59f1ff3e72300708343182"
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168324",
-      "originalLanguage": "en",
-      "originalTitle": "South Sudan: UNICEF reaches communities cut off by conflict in Jonglei state",
-      "originalSummary": "The UN Children’s Fund (UNICEF) and partners have delivered lifesaving assistance to families in conflict-affected communities in South Sudan’s Jonglei state, many of whom had gone months without humanitarian support.",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "a14fff99a25c7e5c5bff",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|southsudanunicef|2026-09-14",
-      "detailStatus": "brief",
-      "facts": [
-        "The UN Children’s Fund (UNICEF) and partners have delivered lifesaving assistance to families in conflict-affected communities in South Sudan’s Jonglei state, many of whom had gone months without humanitarian support."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "6b17ff14e98d441aee35e6a7a8f6845dc948518d72e050dca3d5f90f93ae9ebd"
-    },
-    {
-      "sourceId": "ecb",
-      "sourceName": "European Central Bank",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
-      "canonicalUrl": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260914~0ffd556bc8.en.pdf",
-      "originalLanguage": "en",
-      "originalTitle": "Isabel Schnabel: Macroeconomic, fiscal and financial stability in a shock-prone world",
-      "publishedAt": "2026-09-14T09:15:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "ff8aee621ff334c61144",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "欧洲",
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|isabelschnabelma|2026-09-14",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "f2e2d9d9299c196d9e49c11d4089db6820ae8a2253d716c6cb40b34d1e957df0"
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei260910.xlsx",
-      "originalLanguage": "en",
-      "originalTitle": "Japanese Government Bonds Held by the Bank of Japan",
-      "publishedAt": "2026-09-14T08:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:09:42.303Z",
-      "id": "a68200e7e4988831b94b",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|japanesegovernme|2026-09-14",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "83b48b6cc0f7a64fc66b32f95ea977bd1ff00820764fcc2caa2562f2beee67a7"
-    }
-  ],
-  "continuing": [],
-  "retainedDetails": [
-    {
-      "sourceId": "nbs-cn",
-      "sourceName": "国家统计局",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-      "canonicalUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
-      "originalLanguage": "zh",
-      "originalTitle": "8月份国民经济运行平稳、发展向新向优",
-      "originalSummary": "（2026年9月15日）国家统计局 8月份，在以习近平同志为核心的党中央坚强领导下，各地区各部门认真贯彻落实党中央、国务院决策部署，坚持稳中求进工作总基调，着力发挥宏观政策效能，深化改革扩大开放，加快推动新旧动能转换，持续推进高质量发展，生产供给平稳增长，就业物价总体稳定，对外贸易快速增长，新动能支...",
-      "publishedAt": "2026-09-15T02:00:06.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "6c4af0dd4a3885b1d70d",
-      "verificationStatus": "official",
-      "titleZh": "8月份国民经济运行平稳、发展向新向优",
-      "summaryZh": "（2026年9月15日）国家统计局 8月份，在以习近平同志为核心的党中央坚强领导下，各地区各部门认真贯彻落实党中央、国务院决策部署，坚持稳中求进工作总基调，着力发挥宏观政策效能，深化改革扩大开放，加快推动新旧动能转换，持续推进高质量发展，生产供给平稳增长，就业物价总体稳定，对外贸易快速增长，新动能支...",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
+        "通胀"
       ],
       "causalSignals": [],
       "analysisLevels": [
@@ -570,39 +166,84 @@
         "经济数据"
       ],
       "impactChannels": [
-        "供需"
+        "通胀"
       ],
       "regions": [
-        "中国",
-        "A股相关",
-        "港股相关"
+        "全球"
       ],
-      "importanceScore": 70,
+      "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "经济数据|8月份国民经济运行平稳发展向新向|2026-09-15",
+      "clusterId": "经济数据|whatisthetriplel|2026-09-15",
       "detailStatus": "professional",
       "facts": [
-        "（2026年9月15日）国家统计局 8月份，在以习近平同志为核心的党中央坚强领导下，各地区各部门认真贯彻落实党中央、国务院决策部署，坚持稳中求进工作总基调，着力发挥宏观政策效能，深化改革扩大开放，加快推动新旧动能转换，持续推进高质量发展，生产供给平稳增长，就业物价总体稳定，对外贸易快速增长，新动能支..."
+        "The triple lock guarantees that the state pension is not overtaken by inflation or wage increases."
       ],
       "expectations": [],
-      "inferences": []
+      "inferences": [],
+      "contentFingerprint": "a31b657e62b314b8820fd14010f1d9e8ff282dba94757b1d568f3d39707d39b3"
     },
     {
-      "sourceId": "nbs-cn",
-      "sourceName": "国家统计局",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-      "canonicalUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965308.html",
-      "originalLanguage": "zh",
-      "originalTitle": "2026年8月份规模以上工业增加值增长5.2%",
-      "originalSummary": "8月份，规模以上工业增加值同比实际增长5.2%（增加值增速均为扣除价格因素的实际增长率），增速比上月加快0.7个百分点。从环比看，8月份，规模以上工业增加值比上月增长0.54%。1—8月份，规模以上工业增加值同比增长5.3%。 分三大门类看，8月份，采矿业增加值同比下降1.4%，制造业增长6.1%，电力、热力、燃气...",
-      "publishedAt": "2026-09-15T02:00:05.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "82801a93d4b104ebf1f4",
-      "verificationStatus": "official",
-      "titleZh": "2026年8月份规模以上工业增加值增长5.2%",
-      "summaryZh": "8月份，规模以上工业增加值同比实际增长5.2%（增加值增速均为扣除价格因素的实际增长率），增速比上月加快0.7个百分点。从环比看，8月份，规模以上工业增加值比上月增长0.54%。1—8月份，规模以上工业增加值同比增长5.3%。 分三大门类看，8月份，采矿业增加值同比下降1.4%，制造业增长6.1%，电力、热力、燃气...",
-      "translationStatus": "original-zh",
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c3eq7485kewo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "I got paid $5,000 to move to a place I'd never heard of",
+      "originalSummary": "Relocation schemes offer support for people who want to swap big cities for a cheaper, quieter life.",
+      "publishedAt": "2026-09-14T23:08:28.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "ece6b169dd76ed7f7619",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/c3eq7485kewo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-14T23:08:28.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|igotpaid5000tomo|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "Relocation schemes offer support for people who want to swap big cities for a cheaper, quieter life."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "f4eb59aa4af53377cffa6889ad9b5bea4838ba988ab38d6b6ccc0371887d92cb"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c2l8v7l0djqo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "State pension likely to rise by £488 a year in April",
+      "originalSummary": "The triple lock has come under scrutiny as the number of pensioners rises making the policy more expensive.",
+      "publishedAt": "2026-09-15T07:01:23.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "04f3027d7b33720874c4",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
       "relatedSources": [],
       "keyTerms": [
         "供需"
@@ -618,36 +259,33 @@
         "供需"
       ],
       "regions": [
-        "中国",
-        "A股相关",
-        "港股相关"
+        "全球"
       ],
-      "importanceScore": 70,
+      "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|2026年8月份规模以上工业增加|2026-09-15",
+      "clusterId": "监管|statepensionlike|2026-09-15",
       "detailStatus": "brief",
       "facts": [
-        "8月份，规模以上工业增加值同比实际增长5.2%（增加值增速均为扣除价格因素的实际增长率），增速比上月加快0.7个百分点。从环比看，8月份，规模以上工业增加值比上月增长0.54%。1—8月份，规模以上工业增加值同比增长5.3%。 分三大门类看，8月份，采矿业增加值同比下降1.4%，制造业增长6.1%，电力、热力、燃气..."
+        "The triple lock has come under scrutiny as the number of pensioners rises making the policy more expensive."
       ],
       "expectations": [],
-      "inferences": []
+      "inferences": [],
+      "contentFingerprint": "d8a8c663709edb4221fba05271096dd748a56fc03f3c9def467a7caf65120a0c"
     },
     {
-      "sourceId": "nbs-cn",
-      "sourceName": "国家统计局",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-      "canonicalUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965309.html",
-      "originalLanguage": "zh",
-      "originalTitle": "2026年1—8月份全国固定资产投资基本情况",
-      "originalSummary": "1—8月份，全国固定资产投资（不含农户）293092亿元，同比下降7.2%（按可比口径计算，详见附注7）。其中，知识产权产品投资同比增长9.2%。 分产业看，第一产业投资5832亿元，同比下降2.4%；第二产业投资113094亿元，下降2.9%；第三产业投资174166亿元，下降9.9%。 工业投资同比下降2.9%。其中，采矿业投...",
-      "publishedAt": "2026-09-15T02:00:04.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "517fdc81f34a21b2a39f",
-      "verificationStatus": "official",
-      "titleZh": "2026年1—8月份全国固定资产投资基本情况",
-      "summaryZh": "1—8月份，全国固定资产投资（不含农户）293092亿元，同比下降7.2%（按可比口径计算，详见附注7）。其中，知识产权产品投资同比增长9.2%。 分产业看，第一产业投资5832亿元，同比下降2.4%；第二产业投资113094亿元，下降2.9%；第三产业投资174166亿元，下降9.9%。 工业投资同比下降2.9%。其中，采矿业投...",
-      "translationStatus": "original-zh",
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqe8x6gkk250o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "China tightens travel restrictions for citizens",
+      "originalSummary": "Observers say the new rules will further tighten the Chinese government's control over its citizens.",
+      "publishedAt": "2026-09-15T06:43:09.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "1887bb9c02cdcb019037",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
       "relatedSources": [],
       "keyTerms": [
         "供需"
@@ -663,36 +301,33 @@
         "供需"
       ],
       "regions": [
-        "中国",
-        "A股相关",
-        "港股相关"
+        "全球"
       ],
-      "importanceScore": 70,
+      "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|2026年18月份全国固定资产投|2026-09-15",
+      "clusterId": "监管|chinatightenstra|2026-09-15",
       "detailStatus": "brief",
       "facts": [
-        "1—8月份，全国固定资产投资（不含农户）293092亿元，同比下降7.2%（按可比口径计算，详见附注7）。其中，知识产权产品投资同比增长9.2%。 分产业看，第一产业投资5832亿元，同比下降2.4%；第二产业投资113094亿元，下降2.9%；第三产业投资174166亿元，下降9.9%。 工业投资同比下降2.9%。其中，采矿业投..."
+        "Observers say the new rules will further tighten the Chinese government's control over its citizens."
       ],
       "expectations": [],
-      "inferences": []
+      "inferences": [],
+      "contentFingerprint": "67327724296b6664c17d17be215517b515d68a0c65b86fbb72efe55edef3350d"
     },
     {
-      "sourceId": "nbs-cn",
-      "sourceName": "国家统计局",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-      "canonicalUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965310.html",
-      "originalLanguage": "zh",
-      "originalTitle": "2026年1—8月份全国房地产市场基本情况",
-      "originalSummary": "一、房地产开发投资完成情况 1—8月份，全国房地产开发投资47979亿元，同比下降19.9%（按可比口径计算，详见附注5）；其中，住宅投资37017亿元，下降19.7%。 1—8月份，房地产开发企业房屋施工面积560770万平方米，同比下降12.8%。其中，住宅施工面积389347万平方米，下降13.2%。房屋新开工面积29894万...",
-      "publishedAt": "2026-09-15T02:00:03.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "2ee58816071675f0074e",
-      "verificationStatus": "official",
-      "titleZh": "2026年1—8月份全国房地产市场基本情况",
-      "summaryZh": "一、房地产开发投资完成情况 1—8月份，全国房地产开发投资47979亿元，同比下降19.9%（按可比口径计算，详见附注5）；其中，住宅投资37017亿元，下降19.7%。 1—8月份，房地产开发企业房屋施工面积560770万平方米，同比下降12.8%。其中，住宅施工面积389347万平方米，下降13.2%。房屋新开工面积29894万...",
-      "translationStatus": "original-zh",
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cjx2zgk7edlzo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Nato jets down drone that entered Lithuanian airspace",
+      "originalSummary": "The origin of the drone is currently unknown, but authorities say it likely entered Lithuania from neighbouring Belarus, an ally of Russia.",
+      "publishedAt": "2026-09-15T06:29:17.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "12fb82ef353f674988af",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
       "relatedSources": [],
       "keyTerms": [
         "供需"
@@ -708,154 +343,18 @@
         "供需"
       ],
       "regions": [
-        "中国",
-        "A股相关",
-        "港股相关"
+        "全球"
       ],
-      "importanceScore": 70,
+      "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|2026年18月份全国房地产市场|2026-09-15",
+      "clusterId": "监管|natojetsdowndron|2026-09-15",
       "detailStatus": "brief",
       "facts": [
-        "一、房地产开发投资完成情况 1—8月份，全国房地产开发投资47979亿元，同比下降19.9%（按可比口径计算，详见附注5）；其中，住宅投资37017亿元，下降19.7%。 1—8月份，房地产开发企业房屋施工面积560770万平方米，同比下降12.8%。其中，住宅施工面积389347万平方米，下降13.2%。房屋新开工面积29894万..."
+        "The origin of the drone is currently unknown, but authorities say it likely entered Lithuania from neighbouring Belarus, an ally of Russia."
       ],
       "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "nbs-cn",
-      "sourceName": "国家统计局",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-      "canonicalUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
-      "originalLanguage": "zh",
-      "originalTitle": "2026年1—8月份社会消费品零售总额增长1.1%",
-      "originalSummary": "1—8月份，社会消费品零售总额327569亿元，同比增长1.1%。其中，除汽车以外的消费品零售额301764亿元，增长2.7%。8月份，社会消费品零售总额39824亿元，同比增长0.4%。其中，除汽车以外的消费品零售额36545亿元，增长2.5%。 按经营单位所在地分，1—8月份，城镇消费品零售额283743亿元，同比增长1.0%；乡村消...",
-      "publishedAt": "2026-09-15T02:00:02.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "ff04d3319b9aa7ae85c4",
-      "verificationStatus": "official",
-      "titleZh": "2026年1—8月份社会消费品零售总额增长1.1%",
-      "summaryZh": "1—8月份，社会消费品零售总额327569亿元，同比增长1.1%。其中，除汽车以外的消费品零售额301764亿元，增长2.7%。8月份，社会消费品零售总额39824亿元，同比增长0.4%。其中，除汽车以外的消费品零售额36545亿元，增长2.5%。 按经营单位所在地分，1—8月份，城镇消费品零售额283743亿元，同比增长1.0%；乡村消...",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "中国",
-        "A股相关",
-        "港股相关"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|2026年18月份社会消费品零售|2026-09-15",
-      "detailStatus": "brief",
-      "facts": [
-        "1—8月份，社会消费品零售总额327569亿元，同比增长1.1%。其中，除汽车以外的消费品零售额301764亿元，增长2.7%。8月份，社会消费品零售总额39824亿元，同比增长0.4%。其中，除汽车以外的消费品零售额36545亿元，增长2.5%。 按经营单位所在地分，1—8月份，城镇消费品零售额283743亿元，同比增长1.0%；乡村消..."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "nbs-cn",
-      "sourceName": "国家统计局",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-      "canonicalUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965312.html",
-      "originalLanguage": "zh",
-      "originalTitle": "2026年8月份能源生产情况",
-      "originalSummary": "8月份，规模以上工业（以下简称规上工业）原煤生产降幅收窄，原油生产稳定增长，天然气生产由降转增，电力生产保持平稳。 一、原煤、原油和天然气生产及相关情况 原煤生产降幅收窄。8月份，规上工业原煤产量3.6亿吨，同比下降7.7%，降幅比7月份收窄2.4个百分点；日均产量1167万吨。 1—8月份，规上工...",
-      "publishedAt": "2026-09-15T02:00:01.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "e13ef396f70f40ff159c",
-      "verificationStatus": "official",
-      "titleZh": "2026年8月份能源生产情况",
-      "summaryZh": "8月份，规模以上工业（以下简称规上工业）原煤生产降幅收窄，原油生产稳定增长，天然气生产由降转增，电力生产保持平稳。 一、原煤、原油和天然气生产及相关情况 原煤生产降幅收窄。8月份，规上工业原煤产量3.6亿吨，同比下降7.7%，降幅比7月份收窄2.4个百分点；日均产量1167万吨。 1—8月份，规上工...",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "中国",
-        "A股相关",
-        "港股相关"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|2026年8月份能源生产情况|2026-09-15",
-      "detailStatus": "brief",
-      "facts": [
-        "8月份，规模以上工业（以下简称规上工业）原煤生产降幅收窄，原油生产稳定增长，天然气生产由降转增，电力生产保持平稳。 一、原煤、原油和天然气生产及相关情况 原煤生产降幅收窄。8月份，规上工业原煤产量3.6亿吨，同比下降7.7%，降幅比7月份收窄2.4个百分点；日均产量1167万吨。 1—8月份，规上工..."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "nbs-cn",
-      "sourceName": "国家统计局",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-      "canonicalUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965304.html",
-      "originalLanguage": "zh",
-      "originalTitle": "2026年8月份70个大中城市商品住宅销售价格变动情况",
-      "originalSummary": "表1：2026年8月70个大中城市新建商品住宅销售价格指数 城市环比同比1-8月平均城市环比同比1-8月平均上月=100上年同月=100上年同期=100上月=100上年同月=100上年同期=100北 京99.897.797.8唐 山99.694.193.9天 津99.895.995.5秦 皇 岛99.594.994.8石 家 庄99.495.795.6包 头99.593.292.7太 原99.898.298....",
-      "publishedAt": "2026-09-15T01:30:01.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "90bf303316524d45d1c4",
-      "verificationStatus": "official",
-      "titleZh": "2026年8月份70个大中城市商品住宅销售价格变动情况",
-      "summaryZh": "表1：2026年8月70个大中城市新建商品住宅销售价格指数 城市环比同比1-8月平均城市环比同比1-8月平均上月=100上年同月=100上年同期=100上月=100上年同月=100上年同期=100北 京99.897.797.8唐 山99.694.193.9天 津99.895.995.5秦 皇 岛99.594.994.8石 家 庄99.495.795.6包 头99.593.292.7太 原99.898.298....",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "中国",
-        "A股相关",
-        "港股相关"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|2026年8月份70个大中城市商|2026-09-15",
-      "detailStatus": "brief",
-      "facts": [
-        "表1：2026年8月70个大中城市新建商品住宅销售价格指数 城市环比同比1-8月平均城市环比同比1-8月平均上月=100上年同月=100上年同期=100上月=100上年同月=100上年同期=100北 京99.897.797.8唐 山99.694.193.9天 津99.895.995.5秦 皇 岛99.594.994.8石 家 庄99.495.795.6包 头99.593.292.7太 原99.898.298...."
-      ],
-      "expectations": [],
-      "inferences": []
+      "inferences": [],
+      "contentFingerprint": "decfdec2845309584a8b3f1591b82cac7dbe6d85faf58612de178048110c2f0b"
     },
     {
       "sourceId": "ecb",
@@ -866,7 +365,7 @@
       "originalLanguage": "en",
       "originalTitle": "Christine Lagarde: A new age of capital: growth, sovereignty and AI",
       "publishedAt": "2026-09-14T15:15:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "7c8d580956a64956bdd2",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -898,6 +397,174 @@
       "contentFingerprint": "51b2bb4fbc42b5131ed53740a8917632b0d7726b624430545da17092e96aacde"
     },
     {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c6j9xym8zjy3o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Superstars and broken records: 2026 Emmy highlights",
+      "originalSummary": "The 78th Primetime Emmy Awards were hosted by Law & Order star Mariska Hargitay at the Peacock Theatre in Los Angeles.",
+      "publishedAt": "2026-09-15T05:14:24.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "194d924a1fe6e07182b0",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|superstarsandbro|2026-09-15",
+      "detailStatus": "brief",
+      "facts": [
+        "The 78th Primetime Emmy Awards were hosted by Law & Order star Mariska Hargitay at the Peacock Theatre in Los Angeles."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "585eef9f529ae299c8a94392ea35f33c4c7564319a79b58fc349c2d3e6d6a7ea"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6n9w87ejqn2o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Pubs, hotels and gyms in Wales to get 30% business rates cut",
+      "originalSummary": "The cuts comes into effect in April, but the largest businesses will pay higher rates to fund the changes.",
+      "publishedAt": "2026-09-15T05:13:08.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "078b09eed21545d9985f",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|pubshotelsandgym|2026-09-15",
+      "detailStatus": "brief",
+      "facts": [
+        "The cuts comes into effect in April, but the largest businesses will pay higher rates to fund the changes."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "db15afad466e0e8ae6743756961154210eace2d7238ce7860cc5721adbf4c563"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cj9xerk9v2po?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Charities praise will gifts despite cost of living",
+      "originalSummary": "Jersey charities say leaving donations in wills can be \"transformational\", regardless of how much.",
+      "publishedAt": "2026-09-15T05:03:47.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "6e98930aadd34677b0ec",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|charitiespraisew|2026-09-15",
+      "detailStatus": "brief",
+      "facts": [
+        "Jersey charities say leaving donations in wills can be \"transformational\", regardless of how much."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "8d03aa248c020f07e097261dbb8afc36b43a5fb167b56e1b359ce19f3bfc802e"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c33kmred368o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Ukraine's postal workers deliver lifeline under Russian fire",
+      "originalSummary": "The state post service delivers pensions, medicine and letters to people just miles from the front.",
+      "publishedAt": "2026-09-15T05:01:46.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "0708afa5db6541ef98d9",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ukrainespostalwo|2026-09-15",
+      "detailStatus": "brief",
+      "facts": [
+        "The state post service delivers pensions, medicine and letters to people just miles from the front."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "24bd15d238dd8e340172e24235b258e70602be44239989355fcda1747c985401"
+    },
+    {
       "sourceId": "ecb",
       "sourceName": "European Central Bank",
       "sourceTier": "official",
@@ -906,7 +573,7 @@
       "originalLanguage": "en",
       "originalTitle": "Piero Cipollone: The future of euro cash: trusted today, designed for tomorrow",
       "publishedAt": "2026-09-14T13:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "8c85eac70820c8b3748b",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -938,6 +605,48 @@
       "contentFingerprint": "8d84be37c3482405405ccf78f154986264630f6576847200b0fc34e41b86f76f"
     },
     {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqlykdx48xrpo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Welsh actor Matthew Rhys makes Emmy Awards history with double win",
+      "originalSummary": "He becomes the first person to win two lead acting prizes in one night at the prestigious TV ceremony.",
+      "publishedAt": "2026-09-15T03:50:06.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "6a50f46a8e85af9e3732",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|welshactormatthe|2026-09-15",
+      "detailStatus": "brief",
+      "facts": [
+        "He becomes the first person to win two lead acting prizes in one night at the prestigious TV ceremony."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "33b695a3cc3f5662e4ccedffcb02ab5c6de0fc962a9d4a0cc55e0363edd0912b"
+    },
+    {
       "sourceId": "un",
       "sourceName": "UN News",
       "sourceTier": "official",
@@ -947,7 +656,7 @@
       "originalTitle": "Six UN staff killed in Gaza school strike; Lebanon violations mount",
       "originalSummary": "Israeli strikes killed six UN workers and civilians at a school sheltering displaced families in Gaza as needs grow, according to the UN agency for Palestine refugees, UNRWA.",
       "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "b1ddd36cec3253cea3bd",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -989,7 +698,7 @@
       "originalTitle": "UN agencies warn humanitarian system in Sudan ‘could collapse’",
       "originalSummary": "UN aid agencies on Monday said they may be forced to scale back humanitarian aid in Sudan – home of the world’s worst hunger and displacement crisis – due to funding shortfalls.",
       "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "4426a2be545b6998e708",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1031,7 +740,7 @@
       "originalTitle": "Money sent home by migrants nearly doubles in a decade",
       "originalSummary": "Migrants sent $728.6 billion home to families in low and middle-income countries in 2025, nearly double the amount recorded a decade earlier, according to a new report from the UN’s International Fund for Agricultural Development (IFAD).",
       "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "34b95e751ccda6eeb151",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1073,7 +782,7 @@
       "originalTitle": "Highly persistent toxic waste threatens ‘many, if not all, human rights’",
       "originalSummary": "Poor management of toxic chemicals and hazardous waste threatens “many, if not all, human rights,” the newly appointed independent human rights independent expert on the rising threat told the Human Rights Council on Monday.&nbsp;",
       "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "8bd234664fc260a572b9",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1115,7 +824,7 @@
       "originalTitle": "Civilians bear the brunt, with deadly US strikes in Iran and thousands displaced in Yemen",
       "originalSummary": "Independent UN human rights investigators called for an immediate cessation of hostilities on Monday following a series of United States airstrikes on Iran in recent weeks that have killed civilians as tensions ripple through the region.",
       "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "a5b574fffa3ac43ea185",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1157,7 +866,7 @@
       "originalTitle": "Countries must increase AI regulation to avoid ‘existential risks’: Türk",
       "originalSummary": "Voluntary self-regulation by companies developing frontier artificial intelligence (AI) is “nowhere near sufficient” to address existing harms and prevent advanced autonomous AI models from circumventing human safeguards, UN human rights chief Volker Türk&nbsp;wrote on Monday.",
       "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "ba962c5748bfec16b921",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1199,7 +908,7 @@
       "originalTitle": "IAEA chief underscores commitment to nuclear safety and verification",
       "originalSummary": "The Director General of the UN nuclear watchdog, IAEA, opened its 70th General Conference on Monday in Vienna with a message full of optimism, stressing that despite the many difficulties and tensions the world is witnessing a “common spirit of dedication” which still guides their work.",
       "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "0620bd4a015ae058751e",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1241,7 +950,7 @@
       "originalTitle": "South Sudan: UNICEF reaches communities cut off by conflict in Jonglei state",
       "originalSummary": "The UN Children’s Fund (UNICEF) and partners have delivered lifesaving assistance to families in conflict-affected communities in South Sudan’s Jonglei state, many of whom had gone months without humanitarian support.",
       "publishedAt": "2026-09-14T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "a14fff99a25c7e5c5bff",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1274,6 +983,132 @@
       "contentFingerprint": "6b17ff14e98d441aee35e6a7a8f6845dc948518d72e050dca3d5f90f93ae9ebd"
     },
     {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck790xg41ygro?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "US confirms for first time it has deployed space weapons",
+      "originalSummary": "The US Air Force Secretary says the weapons are necessary to defend the country against enemy action.",
+      "publishedAt": "2026-09-15T01:52:02.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "da4d9400a6f57cf3cf3f",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|usconfirmsforfir|2026-09-15",
+      "detailStatus": "brief",
+      "facts": [
+        "The US Air Force Secretary says the weapons are necessary to defend the country against enemy action."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "57452f47d72fb63ae6e78d78335848ad578128c9429dee0339e2e150dac368a8"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c5yjpdy4gjlo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Supreme Court blocks Trump's plan to restrict mail-in ballots",
+      "originalSummary": "The Trump administration had asked the court to lift a federal judge's temporary block on new rules for mail-in ballots.",
+      "publishedAt": "2026-09-15T01:15:15.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "b3e2f5c54e339daf4a6a",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|supremecourtbloc|2026-09-15",
+      "detailStatus": "brief",
+      "facts": [
+        "The Trump administration had asked the court to lift a federal judge's temporary block on new rules for mail-in ballots."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "7e27a114cda8b8dd11554d1df3f08499b248d68dc25f87fca347d9a59b52002b"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqgk5e2j0gg8o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "AI 'kill switch' may need to be mandatory, Anthropic co-founder tells BBC",
+      "originalSummary": "US President Donald Trump dismisses calls to slow the development of AI, saying that claims of it \"taking over the World\" are a \"HOAX\".",
+      "publishedAt": "2026-09-15T00:32:21.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "afd3ac5b6e41f3a2e010",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|aikillswitchmayn|2026-09-15",
+      "detailStatus": "brief",
+      "facts": [
+        "US President Donald Trump dismisses calls to slow the development of AI, saying that claims of it \"taking over the World\" are a \"HOAX\"."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "91b7797a73da1663d013cfde485738b937e1a724552102c7465e1be46ba414a0"
+    },
+    {
       "sourceId": "ecb",
       "sourceName": "European Central Bank",
       "sourceTier": "official",
@@ -1282,7 +1117,7 @@
       "originalLanguage": "en",
       "originalTitle": "Isabel Schnabel: Macroeconomic, fiscal and financial stability in a shock-prone world",
       "publishedAt": "2026-09-14T09:15:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "ff8aee621ff334c61144",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1314,6 +1149,48 @@
       "contentFingerprint": "f2e2d9d9299c196d9e49c11d4089db6820ae8a2253d716c6cb40b34d1e957df0"
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm4gl6j53w19o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Pubs in England and Wales to allow digital ID apps to prove age",
+      "originalSummary": "New rules introduced on Tuesday mean establishments will be able to accept digital ID apps alongside physical documents.",
+      "publishedAt": "2026-09-14T23:07:56.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "4e8ff244db94a90753cd",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|pubsinenglandand|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "New rules introduced on Tuesday mean establishments will be able to accept digital ID apps alongside physical documents."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "418a750ddf98a45d80698a3fa643e35a82d4ba692b7bd8c1df77827666e6be33"
+    },
+    {
       "sourceId": "boj",
       "sourceName": "Bank of Japan",
       "sourceTier": "official",
@@ -1322,7 +1199,7 @@
       "originalLanguage": "en",
       "originalTitle": "Japanese Government Bonds Held by the Bank of Japan",
       "publishedAt": "2026-09-14T08:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "a68200e7e4988831b94b",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1351,10 +1228,946 @@
       "expectations": [],
       "inferences": [],
       "contentFingerprint": "83b48b6cc0f7a64fc66b32f95ea977bd1ff00820764fcc2caa2562f2beee67a7"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmqjkg121kr9o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Donald Trump Jr and Bettina Trump say Putin ally paid for some wedding festivities as a 'gift'",
+      "originalSummary": "An Instagram post from the couple said two nights of their wedding festivities in the Bahamas were partially funded by Umar Kremlev.",
+      "publishedAt": "2026-09-14T22:56:44.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "fcf9efc6b68e2655ce18",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|donaldtrumpjrand|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "An Instagram post from the couple said two nights of their wedding festivities in the Bahamas were partially funded by Umar Kremlev."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "2c7e51e194bf7b5c1ec44e40ff18b3ee586e58aced36609e1f37264abe6182e0"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmly433ke05vo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "US scraps limits on emissions from coal and gas power plants",
+      "originalSummary": "The Environment Protection Agency says the move will save the country billions of dollars and reduce energy prices.",
+      "publishedAt": "2026-09-14T22:04:14.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "44fea2a7a3fc9e64de60",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|usscrapslimitson|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "The Environment Protection Agency says the move will save the country billions of dollars and reduce energy prices."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "77c312d2d5faec369759ed19a3527337a65dbd1f18a1cf7a7ea77618956191ed"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cmdx5wdl7z0lo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "‘Great’ or ‘alarming’ - Should AI be reined in?",
+      "originalSummary": "The BBC asked people in Washington DC about the technology’s rapid development and whether it poses a threat to humanity, as some experts warn.",
+      "publishedAt": "2026-09-14T21:58:41.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "936812193a12b1c9ae8e",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|greatoralarmings|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "The BBC asked people in Washington DC about the technology’s rapid development and whether it poses a threat to humanity, as some experts warn."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "ba82ecf132a18f02d81cdbd8b670925965c1efe8645e60a9f91fec69c5160ca6"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmpq04wx8l4eo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Legendary costume designer Bob Mackie dies aged 87",
+      "originalSummary": "The \"Sultan of Sequins\" created iconic and dazzling costumes for stars including Cher, Tina Turner and Elton John.",
+      "publishedAt": "2026-09-14T21:29:12.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "1ec3b5cea5e197a4ee8b",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|legendarycostume|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "The \"Sultan of Sequins\" created iconic and dazzling costumes for stars including Cher, Tina Turner and Elton John."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "8a5541661db662c1241e7c3ba609a9917f8b457770b8c4f392f981e4c0fa01de"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Petrol and diesel prices hit highest since 2022",
+      "originalSummary": "The cost of filling up a vehicle has rebounded, according to the RAC, as oil prices remain elevated.",
+      "publishedAt": "2026-09-14T11:42:52.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "25abd4f1494f5be1f883",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-14T11:42:52.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|petrolanddieselp|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "The cost of filling up a vehicle has rebounded, according to the RAC, as oil prices remain elevated."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "57113bcf0b5f18d2aedfbdd4f6de8437532a8fda9977af9ed135ad45eb3fbe2e"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c0m3neyyzm7o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Carney gambles on the world's biggest investors betting on Canada",
+      "originalSummary": "In the midst of a trade war with the US, the prime minister leveraged his connections in global finance to invite some of the world's biggest investors to Canada.",
+      "publishedAt": "2026-09-14T19:29:12.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "a3eba4b9be4385e184b1",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|carneygamblesont|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "In the midst of a trade war with the US, the prime minister leveraged his connections in global finance to invite some of the world's biggest investors to Canada."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "91b74f8e7ee4033f7df05a46c9966bf3e325e3379186971d8337903cfda56d93"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm9w47ngje9no?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Government set to nationalise troubled steel firm",
+      "originalSummary": "Production at SSUK sites in South Yorkshire and the West Midlands was paused earlier this year.",
+      "publishedAt": "2026-09-14T19:06:46.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "59b71cf64677e80dde64",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|governmentsetton|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "Production at SSUK sites in South Yorkshire and the West Midlands was paused earlier this year."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "648e736157e52553d8884b84af8ea668118bca6aa325ad187c09b5dc57d312b6"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9vgy8d8256go?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Israeli minister threatens to revoke filmmakers' citizenship over Gaza documentary",
+      "originalSummary": "The film accuses the Israeli army of mass civilian killing in Gaza, and Israeli officials say it could be treasonous.",
+      "publishedAt": "2026-09-14T18:26:20.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "ef2a708622a00000c9c2",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|israeliministert|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "The film accuses the Israeli army of mass civilian killing in Gaza, and Israeli officials say it could be treasonous."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "f9bbfbfb36d456dae0c4c35229490293cd6026107ab4f20fdde90f9b4cc1ce22"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqrk37rrpk23o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Immigrants held in small outdoor cages at 'Alligator Alcatraz' in Florida, investigators find",
+      "originalSummary": "DHS inspectors say they found the immigration-detention centre violated basic standards for hygiene, medical care, food and safety.",
+      "publishedAt": "2026-09-14T16:48:10.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "ddbc90f2ba611d022e51",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|immigrantsheldin|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "DHS inspectors say they found the immigration-detention centre violated basic standards for hygiene, medical care, food and safety."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "2545a28488611a802254f5afc20ebf91f2d9ede3a524deed77380bc8527d82e5"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cxly50gzldz9o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Africa's richest man launches continent's biggest share sale",
+      "originalSummary": "Nigerian billionaire Aliko Dangote says he wants ordinary people to share in the success of his oil refinery.",
+      "publishedAt": "2026-09-14T16:23:42.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "cef47ebc4c7eb899fdf1",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|africasrichestma|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "Nigerian billionaire Aliko Dangote says he wants ordinary people to share in the success of his oil refinery."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "15952d2f7c1b1b503055cd83b2e5f76cd516544c73b46f5b3ad579e379773c69"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/czezwd6xw0zo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Heading off to uni? Here's what to insure against theft",
+      "originalSummary": "What should new students consider to keep your belongings safe and covered by insurance?",
+      "publishedAt": "2026-09-14T08:13:56.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "c44d547e4ba82ddcc097",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/czezwd6xw0zo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-14T08:13:56.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|headingofftounih|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "What should new students consider to keep your belongings safe and covered by insurance?"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "291754fec64d482fbf13e0f6d3f4203d61106649bf30e577a21a4cd5fc99d45a"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx1l6rzj86vgo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Flash flooding interrupts half-marathon, submerges cars",
+      "originalSummary": "Parts of New York, New Jersey and Connecticut were hit by flash flooding, leading to water rescues, stranded motorists and half-marathon runners battling the floodwaters.",
+      "publishedAt": "2026-09-14T15:01:28.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "eb1f154500e5ce157729",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|flashfloodingint|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "Parts of New York, New Jersey and Connecticut were hit by flash flooding, leading to water rescues, stranded motorists and half-marathon runners battling the floodwaters."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "757f198d4ce1c0bf342e9b5abab3afb86aaf38f4881caddef17e5388bc421308"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cxyvzggzd5jgo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Body of missing runner found in South Africa",
+      "originalSummary": "A nationwide appeal was launched after Elizabeth Moselakgomo went missing last week. Four other women's bodies have been found nearby.",
+      "publishedAt": "2026-09-14T14:58:48.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "73e1f73d17338d7b635b",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|bodyofmissingrun|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "A nationwide appeal was launched after Elizabeth Moselakgomo went missing last week. Four other women's bodies have been found nearby."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "36b8638450a418c10435b474098a897fcedcdef99d160cf7d355a9ecedd2feb0"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/clyl18x4734o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "'Culture shift' needed in how UK does business, PM urges",
+      "originalSummary": "Burnham says those who take risks should be backed by government, but his government has been criticised for increasing business costs.",
+      "publishedAt": "2026-09-14T14:22:55.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "d7ebf99777982fd023d5",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|cultureshiftneed|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "Burnham says those who take risks should be backed by government, but his government has been criticised for increasing business costs."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "030dcfa5a36c430256d48aaf091ac9c8ccdce91a45eab4ce56095d247d64fd1d"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cy459y5y9yxo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Wild dogs record 2,500-mile trek across Zambia in search of a mate",
+      "originalSummary": "Scientists say the record-breaking journey by three brothers offers hope wildlife can survive growing pressures.",
+      "publishedAt": "2026-09-14T14:08:12.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "955c8d656e84d025a363",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|wilddogsrecord25|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "Scientists say the record-breaking journey by three brothers offers hope wildlife can survive growing pressures."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "a8c03d19faa675f3a5a040ed2df85d2b02628c2dd4425d6c5202140836b667b3"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ce8en6v3601o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Zambians warned not to eat dead wildlife after anthrax kills dozens of animals",
+      "originalSummary": "At least 12 people are being treated for anthrax after eating infected meat from wildlife carcasses.",
+      "publishedAt": "2026-09-14T11:35:08.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "2f698a81cd2e663f9cea",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|zambianswarnedno|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "At least 12 people are being treated for anthrax after eating infected meat from wildlife carcasses."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "035be3c93109212179d757ad7ef79ae7619d043832813b354ef1f4e0870e5d44"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cn8me133119o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "China criticises idea it is in 'malicious competition' over AI",
+      "originalSummary": "It follows the Anthropic CEO's calls for a slowdown in AI development - but in a way that prevents China from pulling ahead in the race.",
+      "publishedAt": "2026-09-14T11:31:39.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "98d19a31856f4e4a0857",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|chinacriticisesi|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "It follows the Anthropic CEO's calls for a slowdown in AI development - but in a way that prevents China from pulling ahead in the race."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "9bf85b2d64f833ea27747ce6526c28c3aed4febd83de0cb3bebefe55ab77e838"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx2z5y37p90o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Hyrox apologises for allowing race to continue after athlete soils herself",
+      "originalSummary": "Some raised concerns around hygiene while others praised the competitor's resolve to finish the race and push through adversity.",
+      "publishedAt": "2026-09-14T11:20:07.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "8abb63eacc675422fe1e",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|hyroxapologisesf|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "Some raised concerns around hygiene while others praised the competitor's resolve to finish the race and push through adversity."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "030b2a9082a95ce72751293cb33bf407d69c6e1527247b5dc49f3bfb0585e800"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ce87qzrz7p8o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Malaysian boy acquitted for murder of schoolgirl on grounds of insanity",
+      "originalSummary": "The killing of the 16-year-old nearly a year ago had shocked Malaysia and sparked debate about social media.",
+      "publishedAt": "2026-09-14T08:58:27.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "24e09ff07c66e582849f",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|malaysianboyacqu|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "The killing of the 16-year-old nearly a year ago had shocked Malaysia and sparked debate about social media."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "ffd402eb75ccc96ecd0cab5f88ee2353b6ce764fcf40839076eff6abbdd01c9a"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwyzvgj70y4o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "MPs and Lords call for new law to address AI threat to human rights",
+      "originalSummary": "Existing laws are not equipped to address the risks to human rights being posed by artificial intelligence, UK politicians say.",
+      "publishedAt": "2026-09-14T08:07:08.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "f6c1578b1115c0b04895",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|mpsandlordscallf|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "Existing laws are not equipped to address the risks to human rights being posed by artificial intelligence, UK politicians say."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "697010513ff8ccfff0a74cdf36abe2ce28d85958d68d96558144744200c3ff48"
     }
   ],
   "continuing": [],
   "retainedDetails": [
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckgwzlwglldo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Bali police investigate after Australian man and children found dead in home",
+      "originalSummary": "Police were called after the man's wife became concerned and asked neighbours to check on her family.",
+      "publishedAt": "2026-09-14T07:15:35.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "5b81b04eba18fbde5975",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|balipoliceinvest|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "Police were called after the man's wife became concerned and asked neighbours to check on her family."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "44e2bdb63a0982aff73c8ab28bebf41018447430872bf1bd550309792d43173d"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx2zg554w9ko?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Amazon pauses work with cargo firm after fatal crash",
+      "originalSummary": "The 21 Air-operated jet overshot a runway at Miami International Airport and hit several vehicles.",
+      "publishedAt": "2026-09-14T02:40:06.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "9f2a636e02902b0d79f8",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|amazonpauseswork|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "The 21 Air-operated jet overshot a runway at Miami International Airport and hit several vehicles."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "8ecc8baf13579b549d41965da61dd8b1a805b0696c665180b2fa1b90579cbcef"
+    },
     {
       "sourceId": "boj",
       "sourceName": "Bank of Japan",
@@ -1364,7 +2177,7 @@
       "originalLanguage": "en",
       "originalTitle": "IMES Discussion Paper Series (2026)",
       "publishedAt": "2026-09-14T02:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "b3b2d810c7b4a3a728be",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1440,6 +2253,48 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
+      "originalSummary": "No casualties were reported after a Russian drone struck a train shortly after Boris Johnson and top European officials left the area.",
+      "publishedAt": "2026-09-14T01:12:20.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "eb56cdf3e213e11d10ad",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|watchwhyarussian|2026-09-14",
+      "detailStatus": "brief",
+      "facts": [
+        "No casualties were reported after a Russian drone struck a train shortly after Boris Johnson and top European officials left the area."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "9bcc3615c9aa1607b45537503eba434e91c2e73847c0ef723dfb814ac3567a49"
+    },
+    {
       "sourceId": "boj",
       "sourceName": "Bank of Japan",
       "sourceTier": "official",
@@ -1448,7 +2303,7 @@
       "originalLanguage": "en",
       "originalTitle": "Bank of Japan Accounts (September 10)",
       "publishedAt": "2026-09-14T01:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "35af090725006d2ea627",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1479,6 +2334,264 @@
       "contentFingerprint": "103fd6f01a6681ac85bd72633ed9831ccdb8bf7e267ad844ac1220cf85046995"
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c4gqjv476qeo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Rent rises set to speed up in gloomy forecast for tenants",
+      "originalSummary": "The cost of renting is expected to rise by 4% or 5% a year by December, says property website Zoopla.",
+      "publishedAt": "2026-09-13T23:05:45.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "47f04449a370e1e3231d",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|rentrisessettosp|2026-09-13",
+      "detailStatus": "brief",
+      "facts": [
+        "The cost of renting is expected to rise by 4% or 5% a year by December, says property website Zoopla."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "1aa488d619c6d2b1ccf7cdb283c0dc62116dd5d7fa9f095830aa30fd94582d10"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx2z79n0eeno?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Trump says he will remove all Irish whiskey tariffs as he ends two-day visit",
+      "originalSummary": "Whiskey distilled in the Republic of Ireland faces the standard 15% tariff which applies to EU goods entering the US.",
+      "publishedAt": "2026-09-13T19:34:36.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "0776fd9698f5a661af68",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cx2z79n0eeno?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-13T19:34:36.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|trumpsayshewillr|2026-09-13",
+      "detailStatus": "brief",
+      "facts": [
+        "Whiskey distilled in the Republic of Ireland faces the standard 15% tariff which applies to EU goods entering the US."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "cdd5f79bdcd21f2e20f5ffbd16ef094c2547c696bf56f3e684847237477bcf1e"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c7v48vp31mdo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Trump downplays warnings of AI risks, citing rivalry with China",
+      "originalSummary": "The US president said \"negative forces\" were airing concerns about \"things that won't happen\".",
+      "publishedAt": "2026-09-13T18:49:37.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "97262868f067d819c417",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|trumpdownplayswa|2026-09-13",
+      "detailStatus": "brief",
+      "facts": [
+        "The US president said \"negative forces\" were airing concerns about \"things that won't happen\"."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "8140093c958e2a95080d7db5feb90f6c1fc65df7e113c44fcb41f594fdb15702"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwyzp47py48o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Questions mount over what an AI 'slowdown' would look like",
+      "originalSummary": "While pacing AI development might sound like a quick fix, it is far from an easy solution.",
+      "publishedAt": "2026-09-13T18:20:22.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "b008e5bb58c736d201ee",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|questionsmountov|2026-09-13",
+      "detailStatus": "brief",
+      "facts": [
+        "While pacing AI development might sound like a quick fix, it is far from an easy solution."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "aebcbfcc72dd42917ebc8d81bea0769f228a78bdb1208d35984556ee641d9cba"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c1kx0gyje9wo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "AI staff 'genuinely frightened' for humanity's future, ex-Anthropic researcher tells BBC",
+      "originalSummary": "It comes as the AI firm's boss has called for the technology's development to be slowed down, citing \"serious\" risks.",
+      "publishedAt": "2026-09-13T14:53:40.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "296063b7c6d6a00655e2",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|aistaffgenuinely|2026-09-13",
+      "detailStatus": "brief",
+      "facts": [
+        "It comes as the AI firm's boss has called for the technology's development to be slowed down, citing \"serious\" risks."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "356f95c55e99f2104fc39c027805e36a7bfa48d8347bfbfc295439c178fc495e"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cpve191wy47o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Turkish police detain dozens in raids on gay bars and homes of LGBTQ+ activists",
+      "originalSummary": "Human rights groups in Turkey have accused the government of using a family- values campaign to target the LGBTQ+ community.",
+      "publishedAt": "2026-09-13T14:25:56.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "d27c7838a1c4eeb5c20d",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|turkishpolicedet|2026-09-13",
+      "detailStatus": "brief",
+      "facts": [
+        "Human rights groups in Turkey have accused the government of using a family- values campaign to target the LGBTQ+ community."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "a8a2c8fd5e36c5cf4aeb50ca18de4e2819a82200f135c234f995e877c77295aa"
+    },
+    {
       "sourceId": "un",
       "sourceName": "UN News",
       "sourceTier": "official",
@@ -1488,7 +2601,7 @@
       "originalTitle": "Guterres: Old global order must change as power shifts to emerging economies",
       "originalSummary": "UN Secretary-General António Guterres told leaders of a bloc of major emerging economies in New Delhi on Sunday that a more balanced global order requires an overhaul of the institutions built after the Second World War, including the UN Security Council.",
       "publishedAt": "2026-09-13T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "cf170216302bbbf323f2",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1530,7 +2643,7 @@
       "originalTitle": "Married at 13, pregnant and starving: Child brides of Yemen",
       "originalSummary": "Fatimah* was 13 when she was married off to an older man. Two years later, she gave birth to twin daughters.",
       "publishedAt": "2026-09-13T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "44c808429d784de5f57e",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1563,6 +2676,348 @@
       "contentFingerprint": "2bea094128e59a5463d2c827a3020a37fd0ad7d0b52ccb01688fd517a83639f0"
     },
     {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq635037g18o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Dramatic insider warnings over AI fall flat with some in Silicon Valley",
+      "originalSummary": "A recent spate of stark warnings about the dangers of AI has been met with scepticism by executives and investors.",
+      "publishedAt": "2026-09-13T09:05:10.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "5c4c86e7fe01c057fe14",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cq635037g18o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-13T09:05:10.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|dramaticinsiderw|2026-09-13",
+      "detailStatus": "brief",
+      "facts": [
+        "A recent spate of stark warnings about the dangers of AI has been met with scepticism by executives and investors."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "75400594170510d238f1d992bdd5be537a19f4dbf0886869e5d305abfee164a2"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cj3dzy3n84no?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Critics celebrate Céline Dion's 'high-stakes' comeback show in Paris",
+      "originalSummary": "The iconic Canadian singer kicked off her long-awaited comeback show in Paris on Saturday, after a six-year hiatus due to health issues.",
+      "publishedAt": "2026-09-13T02:41:51.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "ea4425012f3bf810d1da",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|criticscelebrate|2026-09-13",
+      "detailStatus": "brief",
+      "facts": [
+        "The iconic Canadian singer kicked off her long-awaited comeback show in Paris on Saturday, after a six-year hiatus due to health issues."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "de56f5fbfc5443e1a8741ffcb5df8db9be39f728a43cb17a6d3feb3779d5e6fb"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c62ene9kr71o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Russians seek answers over hundreds missing after Ukraine's 2024 incursion",
+      "originalSummary": "Officials say more than 300 Russians remain missing after the 2024 Kursk offensive, but no-one really knows the true figure.",
+      "publishedAt": "2026-09-12T23:51:05.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "33f64d4aea997a25bc0c",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|russiansseekansw|2026-09-12",
+      "detailStatus": "brief",
+      "facts": [
+        "Officials say more than 300 Russians remain missing after the 2024 Kursk offensive, but no-one really knows the true figure."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "b1c4104a256e6ed6d0060f1ca9c5e92f876540830ba1620600844fcb3a7c61e5"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c5y6z72z9lno?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Best friends for decades - until a DNA test revealed they were sisters",
+      "originalSummary": "Meena Geltink and Minal Tijssen were adopted from orphanages in Mumbai in the 1980s and grew up in the Netherlands.",
+      "publishedAt": "2026-09-12T22:00:28.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "6145760b6d96fbb4eb2a",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|bestfriendsforde|2026-09-12",
+      "detailStatus": "brief",
+      "facts": [
+        "Meena Geltink and Minal Tijssen were adopted from orphanages in Mumbai in the 1980s and grew up in the Netherlands."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "71689ae0ad926965c0a18b13bde30ffe57eaeaa5d9376bc12b2624929075c23e"
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwyzppd1d5lo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Trump's comments on a united Ireland may have targeted audience across the Atlantic",
+      "originalSummary": "Nobody could have predicted that today's main global headline would be Trump's desire to see a unified Ireland.",
+      "publishedAt": "2026-09-12T21:25:28.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "6314502da3f82a608dab",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|trumpscommentson|2026-09-12",
+      "detailStatus": "brief",
+      "facts": [
+        "Nobody could have predicted that today's main global headline would be Trump's desire to see a unified Ireland."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "a7836f758c04a30fd732ba916d5b481b87509c2a78f148218cbe3083df76a24d"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Anthropic boss Dario Amodei calls for AI development to slow down",
+      "originalSummary": "The call comes amid growing concerns that AI models may become able to inflict serious damage worldwide.",
+      "publishedAt": "2026-09-12T21:16:47.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "b04754e3d7fb20eaa580",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|anthropicbossdar|2026-09-12",
+      "detailStatus": "brief",
+      "facts": [
+        "The call comes amid growing concerns that AI models may become able to inflict serious damage worldwide."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "44b879596992f50567b071de8641615fa9f70f049fd7af70f80dbea94995ab78"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cd94kze0y9qo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Iceland to open first store in the Falklands",
+      "originalSummary": "Boss Lord Richard Walker says it would be the the first UK high street brand to operate there.",
+      "publishedAt": "2026-09-12T20:50:54.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "6945f7dc47a5ba341593",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|icelandtoopenfir|2026-09-12",
+      "detailStatus": "brief",
+      "facts": [
+        "Boss Lord Richard Walker says it would be the the first UK high street brand to operate there."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "83d24fb20037114b08eddd0f89b6ae36e99a874e2e01c1403a38e922afceecd6"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crm9xk9eg88o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "'Skimpflation' warning as tinned mackerel alternative hits more supermarket shelves",
+      "originalSummary": "Consumer group Which? has called the sale of jack mackerel, a cheaper, less nutritious species of fish, an example of \"skimpflation\".",
+      "publishedAt": "2026-09-12T20:37:29.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "43c2a532882dbac4eb6f",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|skimpflationwarn|2026-09-12",
+      "detailStatus": "brief",
+      "facts": [
+        "Consumer group Which? has called the sale of jack mackerel, a cheaper, less nutritious species of fish, an example of \"skimpflation\"."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "cf8aa26d5e8edb61a791d109dbc9b1f16322cb954b2f0333c1f21155901759f5"
+    },
+    {
       "sourceId": "ecb",
       "sourceName": "European Central Bank",
       "sourceTier": "official",
@@ -1571,7 +3026,7 @@
       "originalLanguage": "en",
       "originalTitle": "Christine Lagarde: Interview with Ouest-France",
       "publishedAt": "2026-09-12T20:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "5b78619ac44c4343e7d4",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -1618,7 +3073,7 @@
       "originalTitle": "‘Where do we go?’: How Israel’s ‘yellow line’ is closing in on Palestinians",
       "originalSummary": "Ola&nbsp;Ishtiwi&nbsp;sits with her children in front of&nbsp;the&nbsp;remains of her home in the Al-Tuffah neighbourhood in eastern Gaza City, a few metres away from&nbsp;a series of&nbsp;painted cement blocks&nbsp;Israel has&nbsp;placed to mark what has become known as the&nbsp;“yellow line”.",
       "publishedAt": "2026-09-12T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "1b02a325b708a4d9cb71",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1659,7 +3114,7 @@
       "originalLanguage": "en",
       "originalTitle": "Philip R. Lane: Outlook for the euro area economy",
       "publishedAt": "2026-09-11T17:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "ca0556601396c53ba852",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1691,6 +3146,132 @@
       "contentFingerprint": "cd20d4578fc0104ef47de0cebacab5ce72d570687fe02a6a57f49fb0d8436222"
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c5yejw9pjjyo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Ryanair boss O'Leary defends 'high-fare rapists' airlines remarks",
+      "originalSummary": "O'Leary has said airline passengers \"can't afford to fly with the high-fare rapists around Europe\".",
+      "publishedAt": "2026-09-11T15:37:25.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "3341fe7b0ca38b8ba3f5",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ryanairbossolear|2026-09-11",
+      "detailStatus": "brief",
+      "facts": [
+        "O'Leary has said airline passengers \"can't afford to fly with the high-fare rapists around Europe\"."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "01ec4e7f5c993ef1522900ee178a93b8c49cee229b66105f4fb4b89e41ad4b97"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cd94y7d7qyzo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Alstom to build new battery-electric train fleet",
+      "originalSummary": "The government says the work will support thousands of jobs across the UK.",
+      "publishedAt": "2026-09-11T14:43:33.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "847a49ace263d61e9e35",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|alstomtobuildnew|2026-09-11",
+      "detailStatus": "brief",
+      "facts": [
+        "The government says the work will support thousands of jobs across the UK."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "869ff384551c08ccf7eb2d433b534a849c802a55c758d0dd8b43b4ebc357d9ee"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cly41rdkrleo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "US prices remain high as fuel costs squeeze household budgets",
+      "originalSummary": "Prices in the US rose 3.4% in the 12 months to August, according to the latest official report on inflation.",
+      "publishedAt": "2026-09-11T14:22:42.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "963510876e828841d773",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "通胀"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "经济数据"
+      ],
+      "impactChannels": [
+        "通胀"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "经济数据|uspricesremainhi|2026-09-11",
+      "detailStatus": "professional",
+      "facts": [
+        "Prices in the US rose 3.4% in the 12 months to August, according to the latest official report on inflation."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "3f4ad012afcf46bfc023d55c70be58cd5b8b85b7c6deb0df25160b8d933bfc30"
+    },
+    {
       "sourceId": "fed",
       "sourceName": "Federal Reserve",
       "sourceTier": "official",
@@ -1700,7 +3281,7 @@
       "originalTitle": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service providers",
       "originalSummary": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service providers",
       "publishedAt": "2026-09-11T14:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "49ee54d5d33c04b5bb9f",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1744,7 +3325,7 @@
       "originalTitle": "Security Council LIVE: Ambassadors mark 9/11 with counter-terrorism push on AI and drones",
       "originalSummary": "The Security Council met to mark 25 years since the 9/11 attacks with a briefing on counter-terrorism as ambassadors take stock of a threat that has morphed dramatically since resolution 1373 built the council&#039;s counter-terrorism machinery in 2001. Briefers highlighted militants&#039; growing use of artificial intelligence, drones and encrypted platforms for recruitment and attack planning.",
       "publishedAt": "2026-09-11T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "1ab0fcdadd9d2304b304",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1786,7 +3367,7 @@
       "originalTitle": "The world just had the hottest August ever",
       "originalSummary": "Earth just had the hottest August on record, according to newly released weather data.",
       "publishedAt": "2026-09-11T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "210b8b7baaabb5ead218",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1828,7 +3409,7 @@
       "originalTitle": "Surge in displacement following fighting in southwest Yemen",
       "originalSummary": "At least 46,000 people have been displaced since renewed fighting last week between Houthi rebels and pro-government forces in southwestern Yemen, the International Organization for Migration (IOM) reported on Friday.&nbsp;",
       "publishedAt": "2026-09-11T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "2c4962d1c3c18fe1bb35",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1870,7 +3451,7 @@
       "originalTitle": "Terrorist propaganda is outpacing global efforts to stop it, UN report finds",
       "originalSummary": "Terrorist groups are recruiting, raising money and even planning operations through propaganda that is now “embedded” in every stage of their work, a new UN report warns – and governments are struggling to keep pace.&nbsp;",
       "publishedAt": "2026-09-11T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "b5ffa46c4bde8e6a8cfd",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1903,6 +3484,48 @@
       "contentFingerprint": "94d53da8b45c377f604ba58437ff9615805e4bbf65b26e4ed11a18826012f5be"
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq5xjlvn71lo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "AI boom helps drive surprise UK growth in July",
+      "originalSummary": "The economy expanded by 0.4%, official figures show, whereas analysts had predicted no growth.",
+      "publishedAt": "2026-09-11T10:17:28.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "de5a5f827201770bdbb4",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|aiboomhelpsdrive|2026-09-11",
+      "detailStatus": "brief",
+      "facts": [
+        "The economy expanded by 0.4%, official figures show, whereas analysts had predicted no growth."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "7ba06e88b62cad6125df3fa97802371a92d742b05f18bf78d846e00b40dd44dd"
+    },
+    {
       "sourceId": "boj",
       "sourceName": "Bank of Japan",
       "sourceTier": "official",
@@ -1911,7 +3534,7 @@
       "originalLanguage": "en",
       "originalTitle": "Central Bank Digital Currency Experiments: Progress Report on the Pilot Program (June 2026)",
       "publishedAt": "2026-09-11T01:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "0bdd41a120631370918b",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1950,7 +3573,7 @@
       "originalLanguage": "en",
       "originalTitle": "Sixth General Meeting of the CBDC Forum",
       "publishedAt": "2026-09-11T01:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "0064d6e2842eefec933e",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1989,7 +3612,7 @@
       "originalLanguage": "en",
       "originalTitle": "Corporate Goods Price Index (Aug.)",
       "publishedAt": "2026-09-10T23:50:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "e7fb7a8802fe47d9bf6d",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2020,6 +3643,90 @@
       "contentFingerprint": "3fddbf02a0f43684979b0596de146dd5d512a98e4ef8ebd0644867a8d0e14679"
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cjeg8ly0qd3o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Can Europe recharge its battery industry?",
+      "originalSummary": "Europe has some promising battery tech, but can it make up ground lost to Chinese battery giants?",
+      "publishedAt": "2026-09-10T23:05:47.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "4dedc3637e825d86b0d7",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|caneuroperecharg|2026-09-10",
+      "detailStatus": "brief",
+      "facts": [
+        "Europe has some promising battery tech, but can it make up ground lost to Chinese battery giants?"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "09ad42cca1a835db40fd413ed4a9bd1fb2136e91b29a88e4288dc2a0d4364050"
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cde02k65427o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "I asked my husband to pay into my pension when we had a child - here's why",
+      "originalSummary": "Molly and Taylor Haylett explain the changes to how they managed their finances when they started a family.",
+      "publishedAt": "2026-09-10T23:04:30.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "0258f288c5fec91ddf3a",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|iaskedmyhusbandt|2026-09-10",
+      "detailStatus": "brief",
+      "facts": [
+        "Molly and Taylor Haylett explain the changes to how they managed their finances when they started a family."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "eff1ccf65ca422ad49a9f1e8f3639df66dd13df6636660438fb6bb30edb5b578"
+    },
+    {
       "sourceId": "fed",
       "sourceName": "Federal Reserve",
       "sourceTier": "official",
@@ -2029,7 +3736,7 @@
       "originalTitle": "Agencies reduce regulatory burden for community banks, increase eligibility for 18-month exam cycle",
       "originalSummary": "Agencies reduce regulatory burden for community banks, increase eligibility for 18-month exam cycle",
       "publishedAt": "2026-09-10T20:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "fc619b4b450e22ad2dca",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2073,7 +3780,7 @@
       "originalTitle": "United States on track for record crude oil production in 2026",
       "originalSummary": "We forecast U.S. crude oil production will average 13.8 million barrels per day (b/d) in 2026, surpassing the previous record of 13.7 million b/d set in 2025, in our latest Short-Term Energy Outlook (STEO).",
       "publishedAt": "2026-09-10T14:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "05e35b69f3ff5df4e9ca",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2106,6 +3813,48 @@
       "contentFingerprint": "72cd7d25df0897a2cf19da39b1f0fabf808ded5484f5605a8eac58d47f7cdff6"
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cy9znljypnjo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Air traffic chaos and compensation: 'Shutdown cost us more than £1,000'",
+      "originalSummary": "Flight disruption has ruined holidays and left passengers sleeping on airport floors - so what are their rights?",
+      "publishedAt": "2026-09-10T13:34:17.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "4492595be817d7761aa8",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|airtrafficchaosa|2026-09-10",
+      "detailStatus": "brief",
+      "facts": [
+        "Flight disruption has ruined holidays and left passengers sleeping on airport floors - so what are their rights?"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "25341e58410411b45698d7f4c6e9babf1a490c51ae8a7272d2bc90213eddd100"
+    },
+    {
       "sourceId": "ecb",
       "sourceName": "European Central Bank",
       "sourceTier": "official",
@@ -2114,7 +3863,7 @@
       "originalLanguage": "en",
       "originalTitle": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
       "publishedAt": "2026-09-10T13:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "afdd082f1ec2e77c1fc1",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2154,7 +3903,7 @@
       "originalLanguage": "en",
       "originalTitle": "Monetary policy decisions",
       "publishedAt": "2026-09-10T12:15:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "8f451338176525105482",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2195,7 +3944,7 @@
       "originalTitle": "Ukraine: Drone attacks on Chornobyl are ‘gambling with the safety of millions of people’",
       "originalSummary": "A drone strike on the protective structure at the Chornobyl Nuclear Power Plant could have endangered the safety of millions of people, UN Development Programme (UNDP) Administrator Alexander De Croo told reporters via video link from Kyiv on Thursday.",
       "publishedAt": "2026-09-10T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "35e7d8c4cefa02c7b95e",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2237,7 +3986,7 @@
       "originalTitle": "UN climate chief warns political division is undermining fight against ‘economic security emergency’",
       "originalSummary": "The head of the UN&#039;s climate body&nbsp;has warned that treating global warming as a partisan issue is dangerously out of step with reality, as he set out a stark account of the economic toll climate change is already inflicting on Europe.",
       "publishedAt": "2026-09-10T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "8fe511e481aed02c935e",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2279,7 +4028,7 @@
       "originalTitle": "‘An assault on humanity itself’: Guterres pays tribute to 9/11 victims, survivors and first responders",
       "originalSummary": "Twenty-five years ago, the heinous terrorist attacks of 11 September 2001 against the United States claimed thousands of lives and represented “an assault on humanity itself”, the UN chief said on Thursday.",
       "publishedAt": "2026-09-10T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "b9ca1f9c1f2cabaa27a6",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2321,7 +4070,7 @@
       "originalTitle": "Security Council LIVE: Fresh attacks prompt emergency meeting on Yemen",
       "originalSummary": "On the heels of reported Houthi attacks on Saudi Arabia on Tuesday and the capture of another key port by the militants on Yemen’s Red Sea coast – including the seizure of eight UN vehicles from a key aid hub there – the Security Council is meeting on Thursday at 3pm in New York to discuss the latest developments.",
       "publishedAt": "2026-09-10T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "d8193fc2e5fe4c8dc29e",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2363,7 +4112,7 @@
       "originalTitle": "Human cost of violence in South Sudan ‘continues to grow’",
       "originalSummary": "Independent human rights investigators voiced deep concern over growing risks to both civilians and South Sudan’s political transition following their latest fact-finding mission to the world’s youngest nation – their 14th in a decade.&nbsp;",
       "publishedAt": "2026-09-10T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "35e8a6664a3cd5355317",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2404,7 +4153,7 @@
       "originalLanguage": "en",
       "originalTitle": "Basic Figures on Fails (Aug.)",
       "publishedAt": "2026-09-10T07:30:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "7c123fa9dbd2b6e5b7e9",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2443,7 +4192,7 @@
       "originalLanguage": "en",
       "originalTitle": "Speech by Board Member MASU in Fukui (Economic Activity, Prices, and Monetary Policy in Japan)",
       "publishedAt": "2026-09-10T01:30:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "056568b38b6d9a5817e6",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2482,7 +4231,7 @@
       "originalLanguage": "en",
       "originalTitle": "Regular Derivatives Market Statistics in Japan",
       "publishedAt": "2026-09-09T23:50:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "bdde72af24e3113e004d",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2513,6 +4262,48 @@
       "contentFingerprint": "4e1b61baf178322692ea981f69cef91d4ecc906e1e7715a354a5d58efbc13acb"
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c74edv9887eo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Why some experts increasingly fear AI will take over",
+      "originalSummary": "AI agents went on an uncontrolled hacking spree, leaving some in the industry worried",
+      "publishedAt": "2026-09-09T23:17:33.000Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
+      "id": "1e5324b34bccb27bc326",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|whysomeexpertsin|2026-09-09",
+      "detailStatus": "brief",
+      "facts": [
+        "AI agents went on an uncontrolled hacking spree, leaving some in the industry worried"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "contentFingerprint": "1ff534f156f5a1c8578b4cd3b6b3836ba820580a01fca991de5c69dad4996c9c"
+    },
+    {
       "sourceId": "ecb",
       "sourceName": "European Central Bank",
       "sourceTier": "official",
@@ -2521,7 +4312,7 @@
       "originalLanguage": "en",
       "originalTitle": "Christine Lagarde: The choice facing Europeans",
       "publishedAt": "2026-09-09T17:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "ad7bb5208add6fada55b",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2562,7 +4353,7 @@
       "originalTitle": "New England natural gas prices have been trading near record discounts to Henry Hub",
       "originalSummary": "Low-cost Appalachian and Canadian natural gas supplies coupled with lower-than-usual regional consumption have pushed down natural gas prices at a major New England pricing hub in recent months to trade at a discount to the widely cited U.S. benchmark, Henry Hub.",
       "publishedAt": "2026-09-09T14:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "45804775bf0b09a05976",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2604,7 +4395,7 @@
       "originalTitle": "‘The water comes up to our knees’: Climate hazards shut millions of children out of school in 2025",
       "originalSummary": "When the creek beside Taudibura Garo&#039;s school in Papua New Guinea floods, the water doesn&#039;t stop at the gate. It rises through the pit toilets – making the school unsafe – sending the 16-year-old and her classmates home without being able to finish.",
       "publishedAt": "2026-09-09T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "f973cc6de57a60016528",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2646,7 +4437,7 @@
       "originalTitle": "Flood-ravaged Nepal calls for climate justice",
       "originalSummary": "Nepal’s call for financial compensation following recent deadly floods underlines the need to help countries that contribute the least to climate change – but are increasingly grappling with its most lethal consequences, the top UN official in the country said on Wednesday.",
       "publishedAt": "2026-09-09T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "e2364ca11691acb48c4a",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2688,7 +4479,7 @@
       "originalTitle": "Plight of Afghans going ‘from bad to worse’, but the world is looking away: Türk",
       "originalSummary": "Since the Taliban returned to power in 2021, the plight of Afghans has only deteriorated, with millions impoverished while authorities violate basic human rights daily.&nbsp;",
       "publishedAt": "2026-09-09T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "fe6b1b243c2cbdb14d98",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2730,7 +4521,7 @@
       "originalTitle": "UN hails Libya election deal as Security Council urges Libyans to seize the moment",
       "originalSummary": "The UN Security Council has welcomed a breakthrough agreement between Libya&#039;s rival political blocs, calling it \"an important step\" towards the country&#039;s first national elections in over a decade – while pressing all sides to move quickly from paper to practice.",
       "publishedAt": "2026-09-09T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "39a3e470d372e683e1f0",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2772,7 +4563,7 @@
       "originalTitle": "Guterres urges leaders to invest in peace as conflicts deepen",
       "originalSummary": "The UN Secretary-General appealed on Wednesday for world leaders to invest in peace as violence, division and conflict exacerbate suffering worldwide.&nbsp;",
       "publishedAt": "2026-09-09T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "fetchedAt": "2026-09-15T07:27:01.597Z",
       "id": "3dd822b7dbad3ff9a3b5",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2803,1030 +4594,6 @@
       "expectations": [],
       "inferences": [],
       "contentFingerprint": "b9d13dac3438b06420e7dfccbc1c4c757ad76ec8f24d2c99518cfe718499bcfc"
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168300",
-      "originalLanguage": "en",
-      "originalTitle": "Record number of attacks on education, global fund warns",
-      "originalSummary": "While September traditionally marks the start of the school year across the northern hemisphere, a staggering 93 million children are not in class at all amid an unprecedented number of attacks on learning, education experts warned on Wednesday.",
-      "publishedAt": "2026-09-09T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "30a63db7f93116700e1d",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|recordnumberofat|2026-09-09",
-      "detailStatus": "brief",
-      "facts": [
-        "While September traditionally marks the start of the school year across the northern hemisphere, a staggering 93 million children are not in class at all amid an unprecedented number of attacks on learning, education experts warned on Wednesday."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "14a93809f4fef190285c5352055e619a7dd2e11554b3549aef3d65709fefaa35"
-    },
-    {
-      "sourceId": "nbs-cn",
-      "sourceName": "国家统计局",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-      "canonicalUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260909_1965263.html",
-      "originalLanguage": "zh",
-      "originalTitle": "2026年8月份居民消费价格同比上涨0.8%",
-      "originalSummary": "2026年8月份，全国居民消费价格同比上涨0.8%。其中，城市上涨0.8%，农村上涨0.7%；食品价格下降1.4%，非食品价格上涨1.2%；消费品价格上涨0.8%，服务价格上涨0.8%。1—8月平均，全国居民消费价格比上年同期上涨0.9%。 8月份，全国居民消费价格环比上涨0.4%。其中，城市上涨0.4%，农村上涨0.4%；食品价格上涨0.4...",
-      "publishedAt": "2026-09-09T01:30:02.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "d4d56ace5be6ec504979",
-      "verificationStatus": "official",
-      "titleZh": "2026年8月份居民消费价格同比上涨0.8%",
-      "summaryZh": "2026年8月份，全国居民消费价格同比上涨0.8%。其中，城市上涨0.8%，农村上涨0.7%；食品价格下降1.4%，非食品价格上涨1.2%；消费品价格上涨0.8%，服务价格上涨0.8%。1—8月平均，全国居民消费价格比上年同期上涨0.9%。 8月份，全国居民消费价格环比上涨0.4%。其中，城市上涨0.4%，农村上涨0.4%；食品价格上涨0.4...",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "通胀"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "宏观"
-      ],
-      "eventTypes": [
-        "经济数据"
-      ],
-      "impactChannels": [
-        "通胀"
-      ],
-      "regions": [
-        "中国",
-        "A股相关",
-        "港股相关"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "经济数据|2026年8月份居民消费价格同比|2026-09-09",
-      "detailStatus": "professional",
-      "facts": [
-        "2026年8月份，全国居民消费价格同比上涨0.8%。其中，城市上涨0.8%，农村上涨0.7%；食品价格下降1.4%，非食品价格上涨1.2%；消费品价格上涨0.8%，服务价格上涨0.8%。1—8月平均，全国居民消费价格比上年同期上涨0.9%。 8月份，全国居民消费价格环比上涨0.4%。其中，城市上涨0.4%，农村上涨0.4%；食品价格上涨0.4..."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "nbs-cn",
-      "sourceName": "国家统计局",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-      "canonicalUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260909_1965262.html",
-      "originalLanguage": "zh",
-      "originalTitle": "2026年8月份工业生产者出厂价格同比上涨3.8% 环比上涨0.4%",
-      "originalSummary": "2026年8月份，全国工业生产者出厂价格同比上涨3.8%，环比上涨0.4%。工业生产者购进价格同比上涨5.8%，环比上涨0.3%。1—8月平均，工业生产者出厂价格比上年同期上涨2.0%，工业生产者购进价格上涨3.2%。 一、工业生产者价格同比变动情况 8月份，工业生产者出厂价格中，生产资料价格同比上涨5.0%，影响...",
-      "publishedAt": "2026-09-09T01:30:01.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "530d3c9c3239fe39adc1",
-      "verificationStatus": "official",
-      "titleZh": "2026年8月份工业生产者出厂价格同比上涨3.8% 环比上涨0.4%",
-      "summaryZh": "2026年8月份，全国工业生产者出厂价格同比上涨3.8%，环比上涨0.4%。工业生产者购进价格同比上涨5.8%，环比上涨0.3%。1—8月平均，工业生产者出厂价格比上年同期上涨2.0%，工业生产者购进价格上涨3.2%。 一、工业生产者价格同比变动情况 8月份，工业生产者出厂价格中，生产资料价格同比上涨5.0%，影响...",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "中国",
-        "A股相关",
-        "港股相关"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|2026年8月份工业生产者出厂价|2026-09-09",
-      "detailStatus": "brief",
-      "facts": [
-        "2026年8月份，全国工业生产者出厂价格同比上涨3.8%，环比上涨0.4%。工业生产者购进价格同比上涨5.8%，环比上涨0.3%。1—8月平均，工业生产者出厂价格比上年同期上涨2.0%，工业生产者购进价格上涨3.2%。 一、工业生产者价格同比变动情况 8月份，工业生产者出厂价格中，生产资料价格同比上涨5.0%，影响..."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/about/organization/notice/index.htm",
-      "originalLanguage": "en",
-      "originalTitle": "Warning against Scams Using the Bank of Japan's Name",
-      "publishedAt": "2026-09-09T01:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "126c95fce790b5b654db",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|warningagainstsc|2026-09-09",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "12c2810dcb6ea637eaae94e5a592edc38d204af85a717424ea04a23e67caef19"
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/statistics/money/ms/ms2608.pdf",
-      "originalLanguage": "en",
-      "originalTitle": "Money Stock (Aug.)",
-      "publishedAt": "2026-09-08T23:50:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "68f5ba62020245e94e68",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|moneystockaug|2026-09-08",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "0bdd3181c9c6dced213675498480a070b3abde3e3d94e96ce4b64043c0128b1a"
-    },
-    {
-      "sourceId": "ecb",
-      "sourceName": "European Central Bank",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
-      "canonicalUrl": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260908~3652aa828f.en.html",
-      "originalLanguage": "en",
-      "originalTitle": "Frank Elderson: Fireside chat",
-      "publishedAt": "2026-09-08T15:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "d81416530e4d5520f7be",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "欧洲",
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|frankeldersonfir|2026-09-08",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "b6af3cd31b4c3c0f54eccf90db9b00306cecd6ffe0fbfc94e332b6a4dcdc421f"
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168297",
-      "originalLanguage": "en",
-      "originalTitle": "Ships and seafarers increasingly caught in the crossfire of unrelated wars",
-      "originalSummary": "The global shipping industry is facing a \"genuinely unprecedented\" convergence of maritime crises, with vessels and seafarers increasingly used as “leverage” in conflicts that have nothing to do with them.",
-      "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "1edcbe6e16f5961593c3",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|shipsandseafarer|2026-09-08",
-      "detailStatus": "brief",
-      "facts": [
-        "The global shipping industry is facing a \"genuinely unprecedented\" convergence of maritime crises, with vessels and seafarers increasingly used as “leverage” in conflicts that have nothing to do with them."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "d67725d13d1a1d78d2564e66e88ecf08a46fc5714311f76034411e9f2d4d5a0e"
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168298",
-      "originalLanguage": "en",
-      "originalTitle": "UN chief demands Israeli withdrawal from Lebanon amid Nabatieh escalation",
-      "originalSummary": "The Secretary-General has condemned mounting civilian casualties in southern Lebanon and called on Israel to withdraw its forces from Lebanese territory, as fighting intensifies in and around Nabatieh.",
-      "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "44470c54a1cabea468ca",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|unchiefdemandsis|2026-09-08",
-      "detailStatus": "brief",
-      "facts": [
-        "The Secretary-General has condemned mounting civilian casualties in southern Lebanon and called on Israel to withdraw its forces from Lebanese territory, as fighting intensifies in and around Nabatieh."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "7e770235d3a1386d74d3fe0edc5cfbd9c6e9214607827966f93dc7e10f609f8f"
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168296",
-      "originalLanguage": "en",
-      "originalTitle": "AI datacentres pose growing threat to electricity systems worldwide",
-      "originalSummary": "Use of data-intensive technologies – in particular artificial intelligence (AI) data centres – is growing faster than electricity infrastructure can handle, the UN’s economic commission for Europe has warned, raising concerns about the future reliability and resilience of energy systems worldwide.&nbsp;",
-      "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "e131f3669fdb4bfcc265",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|aidatacentrespos|2026-09-08",
-      "detailStatus": "brief",
-      "facts": [
-        "Use of data-intensive technologies – in particular artificial intelligence (AI) data centres – is growing faster than electricity infrastructure can handle, the UN’s economic commission for Europe has warned, raising concerns about the future reliability and resilience of energy systems worldwide.&nbsp;"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "d9b48baf8b5f663a61662e821d18a1a9c5b40ecf1982d754d84158b48e2082b7"
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168295",
-      "originalLanguage": "en",
-      "originalTitle": "Ebola response in eastern DR Congo must include food assistance, WFP says",
-      "originalSummary": "As Ebola sweeps across the eastern Democratic Republic of the Congo (DRC), ensuring families meet their basic food needs is crucial to halt the spread of the deadly disease.",
-      "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "da8ff2b25c4a0099b3aa",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ebolaresponseine|2026-09-08",
-      "detailStatus": "brief",
-      "facts": [
-        "As Ebola sweeps across the eastern Democratic Republic of the Congo (DRC), ensuring families meet their basic food needs is crucial to halt the spread of the deadly disease."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "51f19f763010e41eb5930cee7f50adc47a23deeda243382eeb8df590ff0cdf58"
-    },
-    {
-      "sourceId": "bis-press",
-      "sourceName": "Bank for International Settlements",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.bis.org/doclist/all_pressrels.rss",
-      "canonicalUrl": "https://www.bis.org/media-releases/20260908-global-standard-setting-bodies-publish-toolkit-cyber-resilience-fmis-and-discussion-paper-fmis",
-      "originalLanguage": "en",
-      "originalTitle": "Global standard-setting bodies publish a toolkit for cyber resilience at FMIs and a discussion paper on FMIs’ reliance on third-party service providers",
-      "originalSummary": "CPMI-IOSCO are seeking input from stakeholders on a cyber resilience toolkit for financial market infrastructures (FMIs) and on risks to FMIs from third-party service providers. The Cyber resilience toolkit: practical considerations for FMIs supports FMIs in strengthening their cyber resilience frameworks. The discussion paper FMIs’ reliance on third-party service providers: challenges and risks explores the increased reliance of FMIs on third-party service providers.",
-      "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "a2c9b5740d1a0b3cc190",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|globalstandardse|2026-09-08",
-      "detailStatus": "brief",
-      "facts": [
-        "CPMI-IOSCO are seeking input from stakeholders on a cyber resilience toolkit for financial market infrastructures (FMIs) and on risks to FMIs from third-party service providers. The Cyber resilience toolkit: practical considerations for FMIs supports FMIs in strengthening their cyber resilience frameworks. The discussion paper FMIs’ reliance on third-party service providers: challenges and risks explores the increased reliance of FMIs on third-party service providers."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "3e8bfdf246d72bee65ed9cb11337e397d1b732fed49ea5d141fbd14985db1619"
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/statistics/dl/depo/kashi/kasi2608.pdf",
-      "originalLanguage": "en",
-      "originalTitle": "Principal Figures of Financial Institutions (Aug.)",
-      "publishedAt": "2026-09-07T23:50:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "9924f3aea4835d2f9878",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|principalfigures|2026-09-07",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "490575643f835facd3862aa0c4c50d8ca0af89e35b8d46198e94ca939b4a59d2"
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/statistics/market/short/call/call.xlsx",
-      "originalLanguage": "en",
-      "originalTitle": "Amounts Outstanding in the Call Money Market (Aug.)",
-      "publishedAt": "2026-09-07T06:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "b96c6e9117e72e317a57",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|amountsoutstandi|2026-09-07",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "619491705d00f3db62d63a389cea7222680c31e86d9690396c2c7afc02070e73"
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/research/research_data/cai/index.htm",
-      "originalLanguage": "en",
-      "originalTitle": "Consumption Activity Index",
-      "publishedAt": "2026-09-07T05:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "15796c0ee7645d46a216",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|consumptionactiv|2026-09-07",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "1000f0e10b04835ef89220b6f5c16e36af361fdeca7262bd1cebeab53437a31e"
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/statistics/boj/other/mbt/mbt2608.pdf",
-      "originalLanguage": "en",
-      "originalTitle": "Monetary Base and the Bank of Japan's Transactions (Aug.)",
-      "publishedAt": "2026-09-06T23:50:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "484ea200723117ec6573",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|monetarybaseandt|2026-09-06",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "bd48044b617a96ea4f1bd606bf2a949d4aafec02900d9b6a60b90fd0d6f87e9c"
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/statistics/boj/other/tseifu/release/2026/seifu2608.pdf",
-      "originalLanguage": "en",
-      "originalTitle": "Bank of Japan's Transactions with the Government (Aug.)",
-      "publishedAt": "2026-09-06T23:50:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "c469e0e0c394881bafdb",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|bankofjapanstran|2026-09-06",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "73eb54917c9b52914641b4e106a02a570653b49ca821e512ec92597bc255f85d"
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/statistics/boj/fm/ope/m_release/2026/ope2608.xlsx",
-      "originalLanguage": "en",
-      "originalTitle": "Market Operations by the Bank of Japan (Aug.)",
-      "publishedAt": "2026-09-06T23:50:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "f4a70c375ed2eb79ded2",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|marketoperations|2026-09-06",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "eb00196297cd7a66aaaa8c141aea35c23e70e60cb3166c7a618b153dc7cdada3"
-    },
-    {
-      "sourceId": "fed",
-      "sourceName": "Federal Reserve",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.federalreserve.gov/feeds/press_all.xml",
-      "canonicalUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260904a.htm",
-      "originalLanguage": "en",
-      "originalTitle": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
-      "originalSummary": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
-      "publishedAt": "2026-09-04T15:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "ec4169ab988222bdfc18",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "宏观"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "美国",
-        "全球",
-        "美股相关"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|federalreservebo|2026-09-04",
-      "detailStatus": "professional",
-      "facts": [
-        "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "446e34c7ff40bbc55e701dacbede7f389ea5d654195763434c02160b592fd95f"
-    },
-    {
-      "sourceId": "eia-energy",
-      "sourceName": "U.S. Energy Information Administration",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.eia.gov/rss/todayinenergy.xml",
-      "canonicalUrl": "https://www.eia.gov/todayinenergy/detail.php?id=68104",
-      "originalLanguage": "en",
-      "originalTitle": "Elevated crack spreads and crude oil prices contribute to higher prices at the pump",
-      "originalSummary": "What are crack spreads and why are they elevated? Crack spreads are indicators of the profitability of refining crude oil into petroleum products such as gasoline and diesel. One common crack spread is calculated by subtracting the spot market price of a gallon of crude oil from the wholesale price of a gallon of refined product. Since May, the gasoline crack spread in New York Harbor has averaged about $1 per gallon (gal) higher than in 2025, when the crack spread peaked around 60 cents/gal. Gasoline crack spreads are elevated primarily because of tight gasoline supplies globally.",
-      "publishedAt": "2026-09-04T14:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "568fb9e073487c63fbbe",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "盈利"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "公司"
-      ],
-      "eventTypes": [
-        "公司经营"
-      ],
-      "impactChannels": [
-        "盈利"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "公司经营|elevatedcrackspr|2026-09-04",
-      "detailStatus": "professional",
-      "facts": [
-        "What are crack spreads and why are they elevated? Crack spreads are indicators of the profitability of refining crude oil into petroleum products such as gasoline and diesel. One common crack spread is calculated by subtracting the spot market price of a gallon of crude oil from the wholesale price of a gallon of refined product. Since May, the gasoline crack spread in New York Harbor has averaged about $1 per gallon (gal) higher than in 2025, when the crack spread peaked around 60 cents/gal. Gasoline crack spreads are elevated primarily because of tight gasoline supplies globally."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "9b641f3dd4348408c8db00c64345938883e36bde773d6df0e1704751581ceeeb"
-    },
-    {
-      "sourceId": "ecb",
-      "sourceName": "European Central Bank",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
-      "canonicalUrl": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260904~7b9257099b.en.pdf",
-      "originalLanguage": "en",
-      "originalTitle": "Philip R. Lane: Diversity at the European Central Bank",
-      "publishedAt": "2026-09-04T09:10:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "3a48dfa2cbf6f8e13a17",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "欧洲",
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|philiprlanediver|2026-09-04",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "83587fa82ed672a512d86767c5722008ba1ce1eb14df586d528e3ebeda35de05"
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/research/brp/fsr/fsrb260904.htm",
-      "originalLanguage": "en",
-      "originalTitle": "Financial Results of Japan's Banks for Fiscal 2025",
-      "publishedAt": "2026-09-04T07:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "3aff5cf473f676b386a5",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|financialresults|2026-09-04",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "1e999ee8f827df4c1a4792ea2fec056a7290738c834cb2add1fbc194c70787e4"
-    },
-    {
-      "sourceId": "nbs-cn",
-      "sourceName": "国家统计局",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-      "canonicalUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260903_1965182.html",
-      "originalLanguage": "zh",
-      "originalTitle": "2026年8月下旬流通领域重要生产资料市场价格变动情况",
-      "originalSummary": "中国统计信息服务中心 卓创资讯 据对全国流通领域9大类50种重要生产资料市场价格的监测显示，2026年8月下旬与8月中旬相比，34种产品价格上涨，14种下降，2种持平。 2026年8月下旬流通领域重要生产资料市场价格变动情况 产品名称单位本期价格（元）比上期价格涨跌（元）涨跌幅（%）一、黑色金属 螺纹钢（...",
-      "publishedAt": "2026-09-04T01:30:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "4dd0dd2f663fd0f98618",
-      "verificationStatus": "official",
-      "titleZh": "2026年8月下旬流通领域重要生产资料市场价格变动情况",
-      "summaryZh": "中国统计信息服务中心 卓创资讯 据对全国流通领域9大类50种重要生产资料市场价格的监测显示，2026年8月下旬与8月中旬相比，34种产品价格上涨，14种下降，2种持平。 2026年8月下旬流通领域重要生产资料市场价格变动情况 产品名称单位本期价格（元）比上期价格涨跌（元）涨跌幅（%）一、黑色金属 螺纹钢（...",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "中国",
-        "A股相关",
-        "港股相关"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|2026年8月下旬流通领域重要生|2026-09-04",
-      "detailStatus": "brief",
-      "facts": [
-        "中国统计信息服务中心 卓创资讯 据对全国流通领域9大类50种重要生产资料市场价格的监测显示，2026年8月下旬与8月中旬相比，34种产品价格上涨，14种下降，2种持平。 2026年8月下旬流通领域重要生产资料市场价格变动情况 产品名称单位本期价格（元）比上期价格涨跌（元）涨跌幅（%）一、黑色金属 螺纹钢（..."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "eia-energy",
-      "sourceName": "U.S. Energy Information Administration",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.eia.gov/rss/todayinenergy.xml",
-      "canonicalUrl": "https://www.eia.gov/todayinenergy/detail.php?id=68084",
-      "originalLanguage": "en",
-      "originalTitle": "Weekly average load in ERCOT continues near record high",
-      "originalSummary": "Sustained high temperatures have contributed to persistently high electricity demand in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization for most of the state.",
-      "publishedAt": "2026-09-03T14:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "456936b2209c44ca9e1a",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|weeklyaverageloa|2026-09-03",
-      "detailStatus": "brief",
-      "facts": [
-        "Sustained high temperatures have contributed to persistently high electricity demand in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization for most of the state."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "d94dbd8c95f375c1c75ee796548e3f7350edbd239468642924c869aa6a10b741"
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/paym/market/mkt260903a.pdf",
-      "originalLanguage": "en",
-      "originalTitle": "Notice of the \"Meeting on Market Operations\"",
-      "publishedAt": "2026-09-03T02:00:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "9aa531a529edd35a09dc",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|noticeofthemeeti|2026-09-03",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "36892b2f70dcd06e5e663cf587cbca218aad9ba582d62bdc31552a2fd01d5c56"
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/statistics/boj/fm/juqp/juqp2609.xlsx",
-      "originalLanguage": "en",
-      "originalTitle": "Sources of Changes in Current Account Balances (Projections for Sept.)",
-      "publishedAt": "2026-09-02T23:50:00.000Z",
-      "fetchedAt": "2026-09-15T07:11:51.290Z",
-      "id": "ff1531088d5a73e8fb45",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|sourcesofchanges|2026-09-02",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "contentFingerprint": "18f06f623a9e69afda8306d0d5bf130f00c6c27f5f262b69b6e47c759765428e"
     }
   ],
   "sourceHealth": [
@@ -3864,16 +4631,14 @@
     {
       "id": "bbc-world",
       "name": "BBC News · 世界",
-      "status": "error",
-      "itemCount": 0,
-      "error": "fetch failed"
+      "status": "ok",
+      "itemCount": 33
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
-      "status": "error",
-      "itemCount": 0,
-      "error": "fetch failed"
+      "status": "ok",
+      "itemCount": 50
     },
     {
       "id": "bis-press",
