@@ -32,9 +32,10 @@ describe('site update orchestration', () => {
     await expect(readFile(join(dataDir, 'site-snapshot.json'))).rejects.toThrow();
   });
 
-  it('deploy workflow has a single push-based deployment path', async () => {
+  it('deploys successful automated data updates as well as code pushes', async () => {
     const workflow = await readFile('.github/workflows/deploy-pages.yml', 'utf8');
-    expect(workflow).not.toContain('workflow_run:');
+    expect(workflow).toContain('workflow_run:');
+    expect(workflow).toContain("github.event.workflow_run.conclusion == 'success'");
     expect(workflow).toContain('push:');
   });
 

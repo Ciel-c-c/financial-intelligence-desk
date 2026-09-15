@@ -253,5 +253,6 @@ export function buildSnapshot({ attemptedAt, sourceResults, previous }) {
   if (!successful.length) return { ...(previous ?? { schemaVersion: 2, events: [] }), attemptedAt, status: 'source_error', sourceHealth };
   const events = clusterEvents(successful.flatMap(result => result.items)).map(toEvent).filter(event => event.relevance.level !== 'low').slice(0, 12);
   if (!events.length) return { ...(previous ?? { schemaVersion: 2, events: [] }), attemptedAt, status:'source_error', sourceHealth };
-  return { schemaVersion: 2, attemptedAt, lastSuccessfulAt: attemptedAt, status: failed.length ? 'delayed' : 'fresh', sourceHealth, events };
+  const hasRecentEvent = events.some(event => Date.parse(attemptedAt) - Date.parse(event.latestSourceAt) <= 24 * 3600_000);
+  return { schemaVersion: 2, attemptedAt, lastSuccessfulAt: attemptedAt, status: failed.length || !hasRecentEvent ? 'delayed' : 'fresh', sourceHealth, events };
 }

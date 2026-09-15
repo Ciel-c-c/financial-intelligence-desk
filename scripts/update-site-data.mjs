@@ -60,7 +60,7 @@ async function runDefaultDatasets({ now, dataDir, dryRun }) {
     ...Object.values(market?.groups ?? {}).flat().slice(0, 2).map(item => `${item.name}：${item.value}${item.unit ? ` ${item.unit}` : ''}`),
   ];
   const existingBrief = await readJson(join(dataDir, 'daily-brief.json'));
-  const brief = !shouldGenerateBrief(now) && existingBrief ? existingBrief : buildDailyBrief({
+  const brief = !shouldGenerateBrief(now) && existingBrief?.status !== 'unavailable' && existingBrief ? existingBrief : buildDailyBrief({
     edition: briefEdition(now), generatedAt: now,
     snapshots: {
       market: { version: versionOf(market), dataAsOf: market?.dataAsOf },

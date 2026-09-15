@@ -10,6 +10,10 @@ import {
 const fetchedAt = '2026-09-11T03:00:00.000Z';
 
 describe('global situation ingestion', () => {
+  it('does not label a five-day-old event fresh after fetching it today', () => {
+    const result = buildSnapshot({ attemptedAt: '2026-09-15T04:00:00Z', sourceResults: [{ id: 'un', name: 'UN News', ok: true, items: [{ headline: 'Shipping disruption near key oil route raises supply concerns', summary: 'Oil supply concerns', source: 'UN News', sourceUrl: 'https://example.test/oil', publishedAt: '2026-09-10T13:00:00Z', fetchedAt: '2026-09-15T04:00:00Z' }] }] });
+    expect(result.status).toBe('delayed');
+  });
   it('parses RSS and Atom into the same source item contract', () => {
     const rss = `<?xml version="1.0"?><rss><channel><item><title>Fed keeps policy rate unchanged</title><link>https://example.test/fed</link><description><![CDATA[The Committee maintained its target range.]]></description><pubDate>Thu, 10 Sep 2026 18:00:00 GMT</pubDate></item></channel></rss>`;
     const atom = `<?xml version="1.0"?><feed><entry><title>ECB publishes monetary policy decision</title><link href="https://example.test/ecb"/><summary>Rates remain unchanged.</summary><updated>2026-09-10T12:00:00Z</updated></entry></feed>`;
