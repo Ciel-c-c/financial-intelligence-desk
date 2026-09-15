@@ -11,7 +11,7 @@ afterEach(async()=>Promise.all(folders.splice(0).map(path=>rm(path,{recursive:tr
 
 describe('automated snapshot pipeline contracts',()=>{
   it('normalizes well-formed source data and rejects malformed records',()=>{
-    expect(normalizeSourceItem({ headline:'  Rate   decision ', sourceUrl:'https://example.test/a', publishedAt:'bad' },{name:'Central bank',url:'https://example.test'},'2026-09-11T00:00:00Z')).toMatchObject({headline:'Rate decision',publishedAt:'2026-09-11T00:00:00Z'});
+    expect(normalizeSourceItem({ headline:'  Rate   decision ', sourceUrl:'https://example.test/a', publishedAt:'bad' },{name:'Central bank',url:'https://example.test'},'2026-09-11T00:00:00Z')).toBeUndefined();
     expect(normalizeSourceItem({headline:'',sourceUrl:'javascript:bad'},{},'2026-09-11T00:00:00Z')).toBeUndefined();
   });
 

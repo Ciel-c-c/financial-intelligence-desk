@@ -60,6 +60,7 @@ async function runDefaultDatasets({ now, dataDir, dryRun }) {
     ...Object.values(market?.groups ?? {}).flat().slice(0, 2).map(item => `${item.name}：${item.value}${item.unit ? ` ${item.unit}` : ''}`),
   ];
   const existingBrief = await readJson(join(dataDir, 'daily-brief.json'));
+  const currentStories = (news?.latest ?? []).filter(item => Date.parse(now) - Date.parse(item.publishedAt) >= 0 && Date.parse(now) - Date.parse(item.publishedAt) <= 24 * 3600_000).slice(0,8).map(item => ({ id:item.id, title:item.titleZh ?? item.originalTitle, publishedAt:item.publishedAt, sourceName:item.sourceName, sourceUrl:item.canonicalUrl }));
   const brief = !shouldGenerateBrief(now) && existingBrief?.stories?.length && existingBrief.snapshotVersions?.news === versionOf(news) ? existingBrief : buildDailyBrief({
     edition: briefEdition(now), generatedAt: now,
     snapshots: {
@@ -69,7 +70,7 @@ async function runDefaultDatasets({ now, dataDir, dryRun }) {
       situation: { version: versionOf(snapshots['global-situation']), dataAsOf: latest(snapshots['global-situation']?.events, 'latestSourceAt') },
     },
     facts,
-    stories: (news?.latest ?? []).filter(item => Date.parse(now) - Date.parse(item.publishedAt) <= 24 * 3600_000).slice(0,8).map(item => ({ id:item.id, title:item.titleZh ?? item.originalTitle, publishedAt:item.publishedAt, sourceName:item.sourceName, sourceUrl:item.canonicalUrl })),
+    stories: currentStories.length ? currentStories : existingBrief?.stories ?? [],
     watchItems: [],
     invalidationConditions: [],
   });

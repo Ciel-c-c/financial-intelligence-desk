@@ -80,17 +80,18 @@ export function parseFeed(xml, source, fetchedAt = new Date().toISOString()) {
     summary: tag(block, ['description','summary','content']),
     source: source.name,
     sourceUrl: linkFrom(block) || source.url,
-    publishedAt: toIso(tag(block, ['pubDate','published','updated','dc:date']), fetchedAt),
+    publishedAt: toIso(tag(block, ['pubDate','published','updated','dc:date']), undefined),
     fetchedAt,
-  })).filter(item => item.headline && /^https?:\/\//.test(item.sourceUrl));
+  })).filter(item => item.headline && item.publishedAt && /^https?:\/\//.test(item.sourceUrl));
 }
 
 export function normalizeSourceItem(value, source, fetchedAt = new Date().toISOString()) {
   if (!value || typeof value !== 'object') return undefined;
   const headline = String(value.headline ?? '').replace(/\s+/g, ' ').trim();
   const sourceUrl = String(value.sourceUrl ?? source?.url ?? '').trim();
-  if (!headline || !/^https?:\/\//.test(sourceUrl)) return undefined;
-  return { headline, summary:String(value.summary ?? '').replace(/\s+/g, ' ').trim(), source:String(value.source ?? source?.name ?? 'Official source'), sourceUrl, publishedAt:toIso(value.publishedAt, fetchedAt), fetchedAt };
+  const publishedAt = toIso(value.publishedAt, undefined);
+  if (!headline || !publishedAt || !/^https?:\/\//.test(sourceUrl)) return undefined;
+  return { headline, summary:String(value.summary ?? '').replace(/\s+/g, ' ').trim(), source:String(value.source ?? source?.name ?? 'Official source'), sourceUrl, publishedAt, fetchedAt };
 }
 
 export function scoreMarketRelevance(criteria) {
@@ -270,7 +271,8 @@ export function buildSnapshot({ attemptedAt, sourceResults, previous }) {
   const failed = sourceResults.filter(result => !result.ok);
   const sourceHealth = sourceResults.map(result => ({ id: result.id, name: result.name, status: result.ok ? 'ok' : 'error', itemCount: result.items.length, error: result.error }));
   if (!successful.length) return { ...(previous ?? { schemaVersion: 2, events: [] }), attemptedAt, status: 'source_error', sourceHealth };
-  const events = clusterEvents(successful.flatMap(result => result.items)).map(toEvent).filter(event => event.relevance.level !== 'low').slice(0, 12);
+  const generated = clusterEvents(successful.flatMap(result => result.items)).map(toEvent).filter(event => event.relevance.level !== 'low');
+  const events = [...generated, ...(previous?.events ?? [])].filter((event,index,list) => list.findIndex(candidate => candidate.id === event.id) === index).sort((a,b) => Date.parse(b.latestSourceAt ?? b.publishedAt)-Date.parse(a.latestSourceAt ?? a.publishedAt)).slice(0,24);
   if (!events.length) return { ...(previous ?? { schemaVersion: 2, events: [] }), attemptedAt, status:'source_error', sourceHealth };
   const hasRecentEvent = events.some(event => Date.parse(attemptedAt) - Date.parse(event.latestSourceAt) <= 24 * 3600_000);
   return { schemaVersion: 2, attemptedAt, lastSuccessfulAt: attemptedAt, status: failed.length || !hasRecentEvent ? 'delayed' : 'fresh', sourceHealth, events };

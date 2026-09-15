@@ -1,9 +1,15 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-15T06:02:35.621Z",
-  "lastSuccessfulAt": "2026-09-15T06:02:35.621Z",
+  "attemptedAt": "2026-09-15T07:11:51.290Z",
+  "lastSuccessfulAt": "2026-09-15T07:11:51.290Z",
   "status": "delayed",
   "sourceHealth": [
+    {
+      "id": "nbs-cn",
+      "name": "国家统计局",
+      "status": "ok",
+      "itemCount": 50
+    },
     {
       "id": "fed",
       "name": "Federal Reserve",
@@ -20,16 +26,232 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 30
+      "itemCount": 42
     },
     {
       "id": "un",
       "name": "UN News",
       "status": "ok",
       "itemCount": 30
+    },
+    {
+      "id": "bbc-world",
+      "name": "BBC News · 世界",
+      "status": "error",
+      "itemCount": 0,
+      "error": "fetch failed"
+    },
+    {
+      "id": "bbc-business",
+      "name": "BBC News · 财经",
+      "status": "error",
+      "itemCount": 0,
+      "error": "fetch failed"
+    },
+    {
+      "id": "bis-press",
+      "name": "Bank for International Settlements",
+      "status": "ok",
+      "itemCount": 10
+    },
+    {
+      "id": "eia-energy",
+      "name": "U.S. Energy Information Administration",
+      "status": "ok",
+      "itemCount": 15
     }
   ],
   "events": [
+    {
+      "id": "9440017b8208",
+      "headline": "United States on track for record crude oil production in 2026",
+      "sourceHeadline": "United States on track for record crude oil production in 2026",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "We forecast U.S. crude oil production will average 13.8 million barrels per day (b/d) in 2026, surpassing the previous record of 13.7 million b/d set in 2025, in our latest Short-Term Energy Outlook (STEO).",
+      "publishedAt": "2026-09-10T14:00:00.000Z",
+      "firstPublishedAt": "2026-09-10T14:00:00.000Z",
+      "latestSourceAt": "2026-09-10T14:00:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "energySupply",
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "energySupply",
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "riskAppetite"
+      ],
+      "fact": [
+        "We forecast U.S. crude oil production will average 13.8 million barrels per day (b/d) in 2026, surpassing the previous record of 13.7 million b/d set in 2025, in our latest Short-Term Energy Outlook (STEO)."
+      ],
+      "factSummary": "We forecast U.S. crude oil production will average 13.8 million barrels per day (b/d) in 2026, surpassing the previous record of 13.7 million b/d set in 2025, in our latest Short-Term Energy Outlook (STEO).",
+      "marketView": [
+        "本条来源报告：United States on track for record crude oil production in 2026。以下为条件性机制参考，不是已核实的市场结论。",
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "watchConditions": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=68125",
+          "publishedAt": "2026-09-10T14:00:00.000Z"
+        }
+      ]
+    },
     {
       "id": "07c10e382b04",
       "headline": "欧洲央行公布货币政策声明与问答",
@@ -40,7 +262,7 @@
       "publishedAt": "2026-09-10T13:00:00.000Z",
       "firstPublishedAt": "2026-09-10T13:00:00.000Z",
       "latestSourceAt": "2026-09-10T13:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:02:35.621Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -210,7 +432,7 @@
       "publishedAt": "2026-09-10T12:15:00.000Z",
       "firstPublishedAt": "2026-09-10T12:15:00.000Z",
       "latestSourceAt": "2026-09-10T12:15:00.000Z",
-      "fetchedAt": "2026-09-15T06:02:35.621Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -384,7 +606,7 @@
       "publishedAt": "2026-09-10T12:00:00.000Z",
       "firstPublishedAt": "2026-09-10T12:00:00.000Z",
       "latestSourceAt": "2026-09-10T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:02:35.621Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -546,7 +768,7 @@
       "publishedAt": "2026-09-10T01:30:00.000Z",
       "firstPublishedAt": "2026-09-10T01:30:00.000Z",
       "latestSourceAt": "2026-09-10T01:30:00.000Z",
-      "fetchedAt": "2026-09-15T06:02:35.621Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
       "region": "japan",
       "countries": [
         "JP"
@@ -701,7 +923,7 @@
       "sources": [
         {
           "name": "Bank of Japan",
-          "url": "http://www.boj.or.jp/en/about/press/koen_2026/ko260910a.htm",
+          "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko260910a.htm",
           "publishedAt": "2026-09-10T01:30:00.000Z"
         }
       ]
@@ -716,7 +938,7 @@
       "publishedAt": "2026-09-09T12:00:00.000Z",
       "firstPublishedAt": "2026-09-09T12:00:00.000Z",
       "latestSourceAt": "2026-09-09T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:02:35.621Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -862,7 +1084,7 @@
       "publishedAt": "2026-09-08T12:00:00.000Z",
       "firstPublishedAt": "2026-09-08T12:00:00.000Z",
       "latestSourceAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:02:35.621Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1024,7 +1246,7 @@
       "publishedAt": "2026-09-08T12:00:00.000Z",
       "firstPublishedAt": "2026-09-08T12:00:00.000Z",
       "latestSourceAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:02:35.621Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1171,6 +1393,352 @@
       ]
     },
     {
+      "id": "4026630a57ac",
+      "headline": "Elevated crack spreads and crude oil prices contribute to higher prices at the pump",
+      "sourceHeadline": "Elevated crack spreads and crude oil prices contribute to higher prices at the pump",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "What are crack spreads and why are they elevated? Crack spreads are indicators of the profitability of refining crude oil into petroleum products such as gasoline and diesel. One common crack spread is calculated by subtracting the spot market price of a gallon of crude oil from the wholesale price of a gallon of refined product. Since May, the gasoline crack spread in New York Harbor has averaged about $1 per gallon (gal) higher than in 2025, when the crack spread peaked around 60 cents/gal. Gasoline crack spreads are elevated primarily because of tight gasoline supplies globally.",
+      "publishedAt": "2026-09-04T14:00:00.000Z",
+      "firstPublishedAt": "2026-09-04T14:00:00.000Z",
+      "latestSourceAt": "2026-09-04T14:00:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "energySupply",
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "energySupply",
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "riskAppetite"
+      ],
+      "fact": [
+        "What are crack spreads and why are they elevated? Crack spreads are indicators of the profitability of refining crude oil into petroleum products such as gasoline and diesel. One common crack spread is calculated by subtracting the spot market price of a gallon of crude oil from the wholesale price of a gallon of refined product. Since May, the gasoline crack spread in New York Harbor has averaged about $1 per gallon (gal) higher than in 2025, when the crack spread peaked around 60 cents/gal. Gasoline crack spreads are elevated primarily because of tight gasoline supplies globally."
+      ],
+      "factSummary": "What are crack spreads and why are they elevated? Crack spreads are indicators of the profitability of refining crude oil into petroleum products such as gasoline and diesel. One common crack spread is calculated by subtracting the spot market price of a gallon of crude oil from the wholesale price of a gallon of refined product. Since May, the gasoline crack spread in New York Harbor has averaged about $1 per gallon (gal) higher than in 2025, when the crack spread peaked around 60 cents/gal. Gasoline crack spreads are elevated primarily because of tight gasoline supplies globally.",
+      "marketView": [
+        "本条来源报告：Elevated crack spreads and crude oil prices contribute to higher prices at the pump。以下为条件性机制参考，不是已核实的市场结论。",
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "watchConditions": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=68104",
+          "publishedAt": "2026-09-04T14:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "a432a71c0257",
+      "headline": "Weekly average load in ERCOT continues near record high",
+      "sourceHeadline": "Weekly average load in ERCOT continues near record high",
+      "oneLine": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "oneSentenceExplanation": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "summary": "Sustained high temperatures have contributed to persistently high electricity demand in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization for most of the state.",
+      "publishedAt": "2026-09-03T14:00:00.000Z",
+      "firstPublishedAt": "2026-09-03T14:00:00.000Z",
+      "latestSourceAt": "2026-09-03T14:00:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "medium",
+        "score": 3,
+        "criteria": [
+          "energySupply",
+          "growth",
+          "earnings"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 3,
+      "relevanceReasons": [
+        "energySupply",
+        "growth",
+        "earnings"
+      ],
+      "fact": [
+        "Sustained high temperatures have contributed to persistently high electricity demand in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization for most of the state."
+      ],
+      "factSummary": "Sustained high temperatures have contributed to persistently high electricity demand in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization for most of the state.",
+      "marketView": [
+        "本条来源报告：Weekly average load in ERCOT continues near record high。以下为条件性机制参考，不是已核实的市场结论。",
+        "新增用电需要电源、电网和接入容量同时跟上。需求增长不等于电价必涨，也不等于所有能源企业受益。",
+        "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，企业供电成本可能变化。这是一种有条件的路径。"
+      ],
+      "simpleExample": "新增园区需要更多电。如果现有容量够用，需求增加未必推高账单；容量不足则需要先扩建。",
+      "professionalConcept": "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "电网设备企业",
+          "explanation": "扩容可能形成订单，但要看招标、交付与利润率。"
+        },
+        {
+          "name": "数据中心企业",
+          "explanation": "供电影响项目回报，长协和自备电源可能抵消影响。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "watchConditions": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=68084",
+          "publishedAt": "2026-09-03T14:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "a20646c0f1f3",
       "headline": "欧洲央行讨论家庭预期、行为与货币政策",
       "sourceHeadline": "Boris Vujčić: Listening to households: expectations, behaviour and monetary policy",
@@ -1180,7 +1748,7 @@
       "publishedAt": "2026-09-01T16:00:00.000Z",
       "firstPublishedAt": "2026-09-01T16:00:00.000Z",
       "latestSourceAt": "2026-09-01T16:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:02:35.621Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1341,6 +1909,1396 @@
       ]
     },
     {
+      "id": "eb1c5f301306",
+      "headline": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
+      "sourceHeadline": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "U.S. liquefied natural gas (LNG) exports averaged 17.4 billion cubic feet per day (Bcf/d) in the first six months of the year, 23% more than the same period in 2025, according to our Natural Gas Monthly. In our latest Short-Term Energy Outlook, we estimate U.S. LNG exports will average 17.3 Bcf/d in the second half of 2026 (2H26) before rising to 18.7 Bcf/d in 1H27.",
+      "publishedAt": "2026-09-01T14:00:00.000Z",
+      "firstPublishedAt": "2026-09-01T14:00:00.000Z",
+      "latestSourceAt": "2026-09-01T14:00:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "energySupply",
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "energySupply",
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "riskAppetite"
+      ],
+      "fact": [
+        "U.S. liquefied natural gas (LNG) exports averaged 17.4 billion cubic feet per day (Bcf/d) in the first six months of the year, 23% more than the same period in 2025, according to our Natural Gas Monthly. In our latest Short-Term Energy Outlook, we estimate U.S. LNG exports will average 17.3 Bcf/d in the second half of 2026 (2H26) before rising to 18.7 Bcf/d in 1H27."
+      ],
+      "factSummary": "U.S. liquefied natural gas (LNG) exports averaged 17.4 billion cubic feet per day (Bcf/d) in the first six months of the year, 23% more than the same period in 2025, according to our Natural Gas Monthly. In our latest Short-Term Energy Outlook, we estimate U.S. LNG exports will average 17.3 Bcf/d in the second half of 2026 (2H26) before rising to 18.7 Bcf/d in 1H27.",
+      "marketView": [
+        "本条来源报告：U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity。以下为条件性机制参考，不是已核实的市场结论。",
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "watchConditions": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=68064",
+          "publishedAt": "2026-09-01T14:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bc6e48ed98ea",
+      "headline": "日本公布贷款与贴现合同平均利率",
+      "sourceHeadline": "Average Contract Interest Rates on Loans and Discounts (July)",
+      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "oneSentenceExplanation": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "summary": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "publishedAt": "2026-08-30T23:50:00.000Z",
+      "firstPublishedAt": "2026-08-30T23:50:00.000Z",
+      "latestSourceAt": "2026-08-30T23:50:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "japan",
+      "countries": [
+        "JP"
+      ],
+      "topic": "monetary-policy",
+      "eventType": "monetary-policy",
+      "relevance": {
+        "level": "medium",
+        "score": 4,
+        "criteria": [
+          "inflation",
+          "growth",
+          "centralBank",
+          "capitalFlows"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 4,
+      "relevanceReasons": [
+        "inflation",
+        "growth",
+        "centralBank",
+        "capitalFlows"
+      ],
+      "fact": [
+        "官方来源发布：Average Contract Interest Rates on Loans and Discounts (July)"
+      ],
+      "factSummary": "官方来源发布：Average Contract Interest Rates on Loans and Discounts (July)",
+      "marketView": [
+        "本条来源报告：日本公布贷款与贴现合同平均利率。以下为条件性机制参考，不是已核实的市场结论。",
+        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
+        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
+      ],
+      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
+      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "国债收益率",
+          "explanation": "它最直接反映政策、通胀和期限补偿。"
+        },
+        {
+          "name": "美元",
+          "explanation": "相对利率会改变持有不同货币的吸引力。"
+        },
+        {
+          "name": "Nasdaq",
+          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
+        },
+        {
+          "name": "银行股",
+          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "relatedKnowledgePoints": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "conditionsThatChangeView": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "watchConditions": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "Bank of Japan",
+          "url": "https://www.boj.or.jp/en/statistics/dl/loan/yaku/yaku2607.pdf",
+          "publishedAt": "2026-08-30T23:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "69afc7be3856",
+      "headline": "Eight petroleum liquids pipeline projects have been completed since the start of 2025",
+      "sourceHeadline": "Eight petroleum liquids pipeline projects have been completed since the start of 2025",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "In the 2026 release of our Liquids Pipeline Projects Database, we tracked the completion of 8 liquid fuels pipeline projects since the start of 2025, and an additional 14 new projects have been announced.",
+      "publishedAt": "2026-08-26T14:00:00.000Z",
+      "firstPublishedAt": "2026-08-26T14:00:00.000Z",
+      "latestSourceAt": "2026-08-26T14:00:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "medium",
+        "score": 3,
+        "criteria": [
+          "energySupply",
+          "growth",
+          "earnings"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 3,
+      "relevanceReasons": [
+        "energySupply",
+        "growth",
+        "earnings"
+      ],
+      "fact": [
+        "In the 2026 release of our Liquids Pipeline Projects Database, we tracked the completion of 8 liquid fuels pipeline projects since the start of 2025, and an additional 14 new projects have been announced."
+      ],
+      "factSummary": "In the 2026 release of our Liquids Pipeline Projects Database, we tracked the completion of 8 liquid fuels pipeline projects since the start of 2025, and an additional 14 new projects have been announced.",
+      "marketView": [
+        "本条来源报告：Eight petroleum liquids pipeline projects have been completed since the start of 2025。以下为条件性机制参考，不是已核实的市场结论。",
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "watchConditions": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=68024",
+          "publishedAt": "2026-08-26T14:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "ef980e1ca0e8",
+      "headline": "Longer wells boost Permian crude oil and natural gas production",
+      "sourceHeadline": "Longer wells boost Permian crude oil and natural gas production",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "Well operators in the Permian region of western Texas and eastern New Mexico are getting more oil and gas out of the ground by drilling longer, horizontal wells and increasingly incorporating so-called super-lateral wells that exceed 15,000 feet.",
+      "publishedAt": "2026-08-19T14:00:00.000Z",
+      "firstPublishedAt": "2026-08-19T14:00:00.000Z",
+      "latestSourceAt": "2026-08-19T14:00:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "energySupply",
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "energySupply",
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Well operators in the Permian region of western Texas and eastern New Mexico are getting more oil and gas out of the ground by drilling longer, horizontal wells and increasingly incorporating so-called super-lateral wells that exceed 15,000 feet."
+      ],
+      "factSummary": "Well operators in the Permian region of western Texas and eastern New Mexico are getting more oil and gas out of the ground by drilling longer, horizontal wells and increasingly incorporating so-called super-lateral wells that exceed 15,000 feet.",
+      "marketView": [
+        "本条来源报告：Longer wells boost Permian crude oil and natural gas production。以下为条件性机制参考，不是已核实的市场结论。",
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "watchConditions": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=67984",
+          "publishedAt": "2026-08-19T14:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "eb555ed57b93",
+      "headline": "Waterborne shipments from the U.S. Gulf Coast increased in April and May",
+      "sourceHeadline": "Waterborne shipments from the U.S. Gulf Coast increased in April and May",
+      "oneLine": "本条涉及航线与交付风险；是否影响能源价格，需要另查实际供应。",
+      "oneSentenceExplanation": "本条涉及航线与交付风险；是否影响能源价格，需要另查实际供应。",
+      "summary": "Waterborne shipments of crude oil and petroleum products from the U.S. Gulf Coast (PADD 3) to the West Coast (PADD 5) more than quadrupled year-on-year in April and May following a waiver that permitted a broader group of ships to travel between U.S. ports. Shipments from the U.S. Gulf Coast to the East Coast (PADD 1) also increased.",
+      "publishedAt": "2026-08-17T14:00:00.000Z",
+      "firstPublishedAt": "2026-08-17T14:00:00.000Z",
+      "latestSourceAt": "2026-08-17T14:00:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "energySupply",
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "energySupply",
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Waterborne shipments of crude oil and petroleum products from the U.S. Gulf Coast (PADD 3) to the West Coast (PADD 5) more than quadrupled year-on-year in April and May following a waiver that permitted a broader group of ships to travel between U.S. ports. Shipments from the U.S. Gulf Coast to the East Coast (PADD 1) also increased."
+      ],
+      "factSummary": "Waterborne shipments of crude oil and petroleum products from the U.S. Gulf Coast (PADD 3) to the West Coast (PADD 5) more than quadrupled year-on-year in April and May following a waiver that permitted a broader group of ships to travel between U.S. ports. Shipments from the U.S. Gulf Coast to the East Coast (PADD 1) also increased.",
+      "marketView": [
+        "本条来源报告：Waterborne shipments from the U.S. Gulf Coast increased in April and May。以下为条件性机制参考，不是已核实的市场结论。",
+        "航运受阻不等于石油供给减少。先核实航线、货物和港口，再判断是否绕行以及谁承担成本。",
+        "条件性机制参考：绕行、保险费与交付周期可能改变贸易成本，不是已观察到的价格反应。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，交付与企业利润可能受压。这是一种有条件的路径。"
+      ],
+      "simpleExample": "一批货原本十天送到，如果实际绕行，可能多付运费、多占用库存资金。没有使用受影响航线的企业，未必受影响。",
+      "professionalConcept": "条件性机制参考：绕行、保险费与交付周期可能改变贸易成本，不是已观察到的价格反应。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "航线安全风险",
+          "beginnerExplanation": "来源报告航运风险，需核实范围。",
+          "condition": "存在实际航线暴露",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "船舶可能绕行",
+          "beginnerExplanation": "路线更长，交付可能延迟。",
+          "condition": "船公司实际改变航线",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "运费与保险成本可能增加",
+          "beginnerExplanation": "航程和保险风险可能增加账单。",
+          "condition": "运力和保险安排无法抵消",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "交付与企业利润可能受压",
+          "beginnerExplanation": "进口商可能增加库存或承担成本。",
+          "condition": "成本无法完全转嫁",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "航线安全风险",
+          "beginnerExplanation": "来源报告航运风险，需核实范围。",
+          "condition": "存在实际航线暴露",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "船舶可能绕行",
+          "beginnerExplanation": "路线更长，交付可能延迟。",
+          "condition": "船公司实际改变航线",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "运费与保险成本可能增加",
+          "beginnerExplanation": "航程和保险风险可能增加账单。",
+          "condition": "运力和保险安排无法抵消",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "交付与企业利润可能受压",
+          "beginnerExplanation": "进口商可能增加库存或承担成本。",
+          "condition": "成本无法完全转嫁",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "航运企业",
+          "explanation": "航程和运费影响收入，但燃料、保险和运营成本也可能增加。"
+        },
+        {
+          "name": "进口企业",
+          "explanation": "运输延迟可能增加库存占款，本地供应和固定合同可能减弱影响。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "船舶没有实际绕行",
+        "航线恢复安全",
+        "货物使用其他路线",
+        "运力充足或合同锁定费用"
+      ],
+      "watchConditions": [
+        "船舶没有实际绕行",
+        "航线恢复安全",
+        "货物使用其他路线",
+        "运力充足或合同锁定费用"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=67964",
+          "publishedAt": "2026-08-17T14:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "1eaeb1f5eeb9",
+      "headline": "United States on track for record natural gas production in 2026",
+      "sourceHeadline": "United States on track for record natural gas production in 2026",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "We forecast U.S. marketed natural gas production will average 122.5 billion cubic feet per day (Bcf/d) in 2026, surpassing the previous record of 118.5 Bcf/d set in 2025, in our August 2026 Short-Term Energy Outlook (STEO).",
+      "publishedAt": "2026-08-12T14:00:00.000Z",
+      "firstPublishedAt": "2026-08-12T14:00:00.000Z",
+      "latestSourceAt": "2026-08-12T14:00:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "medium",
+        "score": 3,
+        "criteria": [
+          "energySupply",
+          "growth",
+          "earnings"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 3,
+      "relevanceReasons": [
+        "energySupply",
+        "growth",
+        "earnings"
+      ],
+      "fact": [
+        "We forecast U.S. marketed natural gas production will average 122.5 billion cubic feet per day (Bcf/d) in 2026, surpassing the previous record of 118.5 Bcf/d set in 2025, in our August 2026 Short-Term Energy Outlook (STEO)."
+      ],
+      "factSummary": "We forecast U.S. marketed natural gas production will average 122.5 billion cubic feet per day (Bcf/d) in 2026, surpassing the previous record of 118.5 Bcf/d set in 2025, in our August 2026 Short-Term Energy Outlook (STEO).",
+      "marketView": [
+        "本条来源报告：United States on track for record natural gas production in 2026。以下为条件性机制参考，不是已核实的市场结论。",
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "watchConditions": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=67944",
+          "publishedAt": "2026-08-12T14:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "432a0fb949f6",
+      "headline": "Duration of power outages in Puerto Rico not caused by major events increased 19% in 2025",
+      "sourceHeadline": "Duration of power outages in Puerto Rico not caused by major events increased 19% in 2025",
+      "oneLine": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "oneSentenceExplanation": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "summary": "In 2025, customers in Puerto Rico experienced an average of 36 hours of power interruptions that were not caused by major events such as hurricanes, 19% more than in 2024. On average, between 2021 and 2025, Puerto Rican customers experience 29 hours of power loss each year. By comparison, electricity customers in the mainland United States generally experience about two hours of electricity interruptions per year without major events.",
+      "publishedAt": "2026-08-10T14:00:00.000Z",
+      "firstPublishedAt": "2026-08-10T14:00:00.000Z",
+      "latestSourceAt": "2026-08-10T14:00:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "medium",
+        "score": 3,
+        "criteria": [
+          "energySupply",
+          "growth",
+          "earnings"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 3,
+      "relevanceReasons": [
+        "energySupply",
+        "growth",
+        "earnings"
+      ],
+      "fact": [
+        "In 2025, customers in Puerto Rico experienced an average of 36 hours of power interruptions that were not caused by major events such as hurricanes, 19% more than in 2024. On average, between 2021 and 2025, Puerto Rican customers experience 29 hours of power loss each year. By comparison, electricity customers in the mainland United States generally experience about two hours of electricity interruptions per year without major events."
+      ],
+      "factSummary": "In 2025, customers in Puerto Rico experienced an average of 36 hours of power interruptions that were not caused by major events such as hurricanes, 19% more than in 2024. On average, between 2021 and 2025, Puerto Rican customers experience 29 hours of power loss each year. By comparison, electricity customers in the mainland United States generally experience about two hours of electricity interruptions per year without major events.",
+      "marketView": [
+        "本条来源报告：Duration of power outages in Puerto Rico not caused by major events increased 19% in 2025。以下为条件性机制参考，不是已核实的市场结论。",
+        "新增用电需要电源、电网和接入容量同时跟上。需求增长不等于电价必涨，也不等于所有能源企业受益。",
+        "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，企业供电成本可能变化。这是一种有条件的路径。"
+      ],
+      "simpleExample": "新增园区需要更多电。如果现有容量够用，需求增加未必推高账单；容量不足则需要先扩建。",
+      "professionalConcept": "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "电网设备企业",
+          "explanation": "扩容可能形成订单，但要看招标、交付与利润率。"
+        },
+        {
+          "name": "数据中心企业",
+          "explanation": "供电影响项目回报，长协和自备电源可能抵消影响。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "watchConditions": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=67926",
+          "publishedAt": "2026-08-10T14:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "579e21fe86e8",
+      "headline": "The U.S.-Canada natural gas and electricity trade value rose in 2025",
+      "sourceHeadline": "The U.S.-Canada natural gas and electricity trade value rose in 2025",
+      "oneLine": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "oneSentenceExplanation": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "summary": "Although the total value of energy trade between the United States and Canada fell by 11% in 2025 to an estimated $137 billion, according to data from the U.S. Census Bureau, the trade value of natural gas and electricity between the two countries increased slightly primarily because of increased natural gas prices and trade volume.",
+      "publishedAt": "2026-08-05T14:00:00.000Z",
+      "firstPublishedAt": "2026-08-05T14:00:00.000Z",
+      "latestSourceAt": "2026-08-05T14:00:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "medium",
+        "score": 3,
+        "criteria": [
+          "energySupply",
+          "growth",
+          "earnings"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 3,
+      "relevanceReasons": [
+        "energySupply",
+        "growth",
+        "earnings"
+      ],
+      "fact": [
+        "Although the total value of energy trade between the United States and Canada fell by 11% in 2025 to an estimated $137 billion, according to data from the U.S. Census Bureau, the trade value of natural gas and electricity between the two countries increased slightly primarily because of increased natural gas prices and trade volume."
+      ],
+      "factSummary": "Although the total value of energy trade between the United States and Canada fell by 11% in 2025 to an estimated $137 billion, according to data from the U.S. Census Bureau, the trade value of natural gas and electricity between the two countries increased slightly primarily because of increased natural gas prices and trade volume.",
+      "marketView": [
+        "本条来源报告：The U.S.-Canada natural gas and electricity trade value rose in 2025。以下为条件性机制参考，不是已核实的市场结论。",
+        "新增用电需要电源、电网和接入容量同时跟上。需求增长不等于电价必涨，也不等于所有能源企业受益。",
+        "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，企业供电成本可能变化。这是一种有条件的路径。"
+      ],
+      "simpleExample": "新增园区需要更多电。如果现有容量够用，需求增加未必推高账单；容量不足则需要先扩建。",
+      "professionalConcept": "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "电网设备企业",
+          "explanation": "扩容可能形成订单，但要看招标、交付与利润率。"
+        },
+        {
+          "name": "数据中心企业",
+          "explanation": "供电影响项目回报，长协和自备电源可能抵消影响。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "watchConditions": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=",
+          "publishedAt": "2026-08-05T14:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "e0169e55d181",
       "headline": "美联储发布最新 FOMC 声明",
       "sourceHeadline": "Federal Reserve issues FOMC statement",
@@ -1350,7 +3308,7 @@
       "publishedAt": "2026-07-29T18:00:00.000Z",
       "firstPublishedAt": "2026-07-29T18:00:00.000Z",
       "latestSourceAt": "2026-07-29T18:00:00.000Z",
-      "fetchedAt": "2026-09-15T06:02:35.621Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1511,6 +3469,174 @@
           "name": "Federal Reserve",
           "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
           "publishedAt": "2026-07-29T18:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "45aeec6a9b66",
+      "headline": "Global economic pressure points call for policy discipline: BIS",
+      "sourceHeadline": "Global economic pressure points call for policy discipline: BIS",
+      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "oneSentenceExplanation": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "summary": "The sustainability of the AI boom, financial vulnerabilities and strained public finances are among pressure points facing the global economy, along with the return of inflation.",
+      "publishedAt": "2026-06-28T00:00:00.000Z",
+      "firstPublishedAt": "2026-06-28T00:00:00.000Z",
+      "latestSourceAt": "2026-06-28T00:00:00.000Z",
+      "fetchedAt": "2026-09-15T07:11:51.290Z",
+      "region": "global",
+      "countries": [],
+      "topic": "monetary-policy",
+      "eventType": "monetary-policy",
+      "relevance": {
+        "level": "medium",
+        "score": 4,
+        "criteria": [
+          "inflation",
+          "growth",
+          "centralBank",
+          "capitalFlows"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 4,
+      "relevanceReasons": [
+        "inflation",
+        "growth",
+        "centralBank",
+        "capitalFlows"
+      ],
+      "fact": [
+        "The sustainability of the AI boom, financial vulnerabilities and strained public finances are among pressure points facing the global economy, along with the return of inflation."
+      ],
+      "factSummary": "The sustainability of the AI boom, financial vulnerabilities and strained public finances are among pressure points facing the global economy, along with the return of inflation.",
+      "marketView": [
+        "本条来源报告：Global economic pressure points call for policy discipline: BIS。以下为条件性机制参考，不是已核实的市场结论。",
+        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
+        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
+      ],
+      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
+      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "国债收益率",
+          "explanation": "它最直接反映政策、通胀和期限补偿。"
+        },
+        {
+          "name": "美元",
+          "explanation": "相对利率会改变持有不同货币的吸引力。"
+        },
+        {
+          "name": "Nasdaq",
+          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
+        },
+        {
+          "name": "银行股",
+          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "relatedKnowledgePoints": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "conditionsThatChangeView": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "watchConditions": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "Bank for International Settlements",
+          "url": "https://www.bis.org/media-releases/20260628-global-economic-pressure-points-call-policy-discipline-bis",
+          "publishedAt": "2026-06-28T00:00:00.000Z"
         }
       ]
     }

@@ -1,31 +1,32 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-15T06:02:35.621Z",
-  "lastSuccessfulAt": "2026-09-15T06:02:35.621Z",
-  "status": "fresh",
+  "attemptedAt": "2026-09-15T07:11:51.290Z",
+  "lastSuccessfulAt": "2026-09-15T07:11:51.290Z",
+  "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-15T06:02:35.621Z"
+      "lastSuccessfulAt": "2026-09-15T07:11:51.290Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-15T06:02:35.621Z"
+      "lastSuccessfulAt": "2026-09-15T07:11:51.290Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-15T06:02:35.621Z"
-    },
-    {
-      "id": "news-feed",
-      "status": "fresh",
-      "lastSuccessfulAt": "2026-09-15T06:02:35.621Z"
+      "lastSuccessfulAt": "2026-09-15T07:11:51.290Z"
     }
   ],
   "sourceHealth": [
+    {
+      "id": "nbs-cn",
+      "name": "国家统计局",
+      "status": "ok",
+      "itemCount": 50
+    },
     {
       "id": "fed",
       "name": "Federal Reserve",
@@ -42,7 +43,7 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 30
+      "itemCount": 42
     },
     {
       "id": "un",
@@ -51,34 +52,30 @@
       "itemCount": 30
     },
     {
-      "id": "news-nbs-cn",
-      "name": "国家统计局（新闻）",
-      "status": "ok",
-      "itemCount": 50
+      "id": "bbc-world",
+      "name": "BBC News · 世界",
+      "status": "error",
+      "itemCount": 0,
+      "error": "fetch failed"
     },
     {
-      "id": "news-fed",
-      "name": "Federal Reserve（新闻）",
-      "status": "ok",
-      "itemCount": 20
+      "id": "bbc-business",
+      "name": "BBC News · 财经",
+      "status": "error",
+      "itemCount": 0,
+      "error": "fetch failed"
     },
     {
-      "id": "news-ecb",
-      "name": "European Central Bank（新闻）",
+      "id": "bis-press",
+      "name": "Bank for International Settlements",
+      "status": "ok",
+      "itemCount": 10
+    },
+    {
+      "id": "eia-energy",
+      "name": "U.S. Energy Information Administration",
       "status": "ok",
       "itemCount": 15
-    },
-    {
-      "id": "news-boj",
-      "name": "Bank of Japan（新闻）",
-      "status": "ok",
-      "itemCount": 43
-    },
-    {
-      "id": "news-un",
-      "name": "UN News（新闻）",
-      "status": "ok",
-      "itemCount": 30
     }
   ]
 }

@@ -28,7 +28,7 @@ describe('Today page', () => {
     expect(screen.getByText('中国居民消费价格公布')).toBeInTheDocument();
   });
 
-  it('shows live and continuing news separately with update status',async()=>{render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);expect(await screen.findByRole('heading',{name:'正在发生'})).toBeInTheDocument();expect(screen.getByRole('heading',{name:'持续影响'})).toBeInTheDocument();expect(screen.getByText(/最近成功更新/)).toBeInTheDocument();expect(screen.getByText('政策仍在传导')).toBeInTheDocument();});
+  it('separates current news from explicitly dated background reports',async()=>{render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);expect(await screen.findByRole('heading',{name:'正在发生'})).toBeInTheDocument();expect(screen.getByRole('heading',{name:'此前报道 / 背景参考'})).toBeInTheDocument();expect(screen.getByText(/最近成功更新/)).toBeInTheDocument();expect(screen.getByText('政策仍在传导')).toBeInTheDocument();});
 
   it('exposes dashboard navigation and keeps data state visible without hover', () => {
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);

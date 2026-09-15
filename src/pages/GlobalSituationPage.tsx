@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { PreviousGlobalEvents } from '../components/PreviousGlobalEvents';
+import { isRecentNews } from '../data/newsDates';
 import { FreshnessBanner } from '../components/FreshnessBanner';
 import { MarketRelevance } from '../components/MarketRelevance';
 import { SituationMap, regionLabel } from '../components/SituationMap';
@@ -14,7 +16,7 @@ const themeNames: Record<string,{ title:string; plain:string }> = {
 
 export function GlobalSituationPage() {
   const snapshot = useGlobalSituation();
-  const events = snapshot.events.filter(event => Date.now() - Date.parse(event.latestSourceAt ?? event.publishedAt) <= 24 * 3600_000);
+  const events = snapshot.events.filter(event => isRecentNews(event.latestSourceAt ?? event.publishedAt));
   const featured = [...events].sort((a,b) => b.relevance.score - a.relevance.score)[0];
   const themes = Object.entries(themeNames).map(([id,value]) => ({...value,count:events.filter(event => event.eventType === id).length})).filter(theme => theme.count > 0);
   const watchItems = events.flatMap(event => event.watchConditions ?? event.conditionsThatChangeView ?? []).filter((item,index,list) => list.indexOf(item) === index).slice(0,5);
@@ -35,5 +37,6 @@ export function GlobalSituationPage() {
       <section className="trading-themes"><p className="eyebrow">WHAT MARKETS ARE TRADING</p><h2>市场正在交易什么</h2><div>{themes.map(theme => <article key={theme.title}><span>{String(theme.count).padStart(2,'0')}</span><h3>{theme.title} {theme.count > 1 ? '↑' : '→'}</h3><p>{theme.plain}</p></article>)}</div><p className="condition-note">这些是市场正在关注的变量，不是资产涨跌预测。每个判断都要继续检查事件是否持续、是否已被定价。</p></section>
       <section className="next-watch"><p className="eyebrow">NEXT CATALYSTS</p><h2>接下来关注什么</h2>{watchItems.length ? <ul>{watchItems.map(item => <li key={item}><span>{item}</span></li>)}</ul> : <p className="empty-state">当前快照没有足够证据列出新的观察条件。</p>}</section>
     </div>
+    <PreviousGlobalEvents events={snapshot.events.filter(event => !isRecentNews(event.latestSourceAt ?? event.publishedAt))} open={!events.length}/>
   </main>;
 }

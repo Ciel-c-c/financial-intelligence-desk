@@ -10,6 +10,9 @@ import {
 const fetchedAt = '2026-09-11T03:00:00.000Z';
 
 describe('global situation ingestion', () => {
+  it('rejects an undated RSS story instead of assigning the fetch date', () => {
+    expect(parseFeed('<rss><item><title>Shipping risks rise</title><link>https://example.test/a</link></item></rss', {name:'UN News',url:'https://example.test/feed'}, fetchedAt)).toHaveLength(0);
+  });
   it('explains shipping disruption without asserting an oil supply shock', () => {
     const result = buildSnapshot({ attemptedAt: fetchedAt, sourceResults: [{ id:'un', name:'UN News', ok:true, items:[{ headline:'Red Sea ships face attacks and shipping disruption', summary:'Ships reroute around the affected route.', source:'UN News', sourceUrl:'https://example.test/shipping', publishedAt:fetchedAt, fetchedAt }] }] });
     expect(result.events[0].causalChain.map(node => node.title).join(' ')).toContain('绕行');

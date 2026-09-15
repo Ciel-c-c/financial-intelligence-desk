@@ -2,13 +2,10 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { buildSnapshot, parseFeed } from './global-situation-core.mjs';
+import { newsSources } from './news/source-registry.mjs';
+import { fetchNewsSource } from './news/fetch-news-sources.mjs';
 
-export const sources = [
-  { id:'fed', name:'Federal Reserve', url:'https://www.federalreserve.gov/feeds/press_all.xml' },
-  { id:'ecb', name:'European Central Bank', url:'https://www.ecb.europa.eu/rss/press.html' },
-  { id:'boj', name:'Bank of Japan', url:'https://www.boj.or.jp/en/rss/whatsnew.xml' },
-  { id:'un', name:'UN News', url:'https://news.un.org/feed/subscribe/en/news/all/rss.xml' },
-];
+export const sources = newsSources.filter(source => source.enabled).map(source => ({ ...source, url:source.feedUrl }));
 
 function argument(name, fallback) {
   const position = process.argv.indexOf(`--${name}`);
@@ -21,6 +18,10 @@ async function readSnapshot(path) {
 }
 
 export async function fetchSource(source, fetchedAt) {
+  if (source.feedUrl) {
+    const result = await fetchNewsSource(source, fetchedAt);
+    return { ...result, items:result.items.map(item => ({ headline:item.originalTitle, summary:item.originalSummary ?? '', source:item.sourceName, sourceUrl:item.canonicalUrl, publishedAt:item.publishedAt, fetchedAt:item.fetchedAt })) };
+  }
   try {
     const response = await fetch(source.url, { headers:{ 'user-agent':'Financial-Lens-Snapshot/1.0 (+https://github.com/Ciel-c-c/financial-intelligence-desk)', accept:'application/rss+xml, application/atom+xml, application/xml, text/xml' }, signal:AbortSignal.timeout(15_000) });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
