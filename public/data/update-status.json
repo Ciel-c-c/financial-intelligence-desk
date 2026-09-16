@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-16T20:07:39.234Z",
-  "lastSuccessfulAt": "2026-09-16T20:07:39.234Z",
+  "attemptedAt": "2026-09-16T22:55:49.936Z",
+  "lastSuccessfulAt": "2026-09-16T22:55:49.936Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-16T20:07:39.234Z"
+      "lastSuccessfulAt": "2026-09-16T22:55:49.936Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-16T20:07:39.234Z"
+      "lastSuccessfulAt": "2026-09-16T22:55:49.936Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-16T20:07:39.234Z"
+      "lastSuccessfulAt": "2026-09-16T22:55:49.936Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-16T20:07:39.234Z"
+      "lastSuccessfulAt": "2026-09-16T22:55:49.936Z"
     }
   ],
   "sourceHealth": [
@@ -42,8 +42,9 @@
     {
       "id": "fed",
       "name": "Federal Reserve",
-      "status": "ok",
-      "itemCount": 20
+      "status": "error",
+      "itemCount": 0,
+      "error": "HTTP 404"
     },
     {
       "id": "ecb",
@@ -67,13 +68,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 25
+      "itemCount": 27
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 49
     },
     {
       "id": "bis-press",
@@ -103,8 +104,9 @@
     {
       "id": "news-fed",
       "name": "Federal Reserve（新闻）",
-      "status": "ok",
-      "itemCount": 20
+      "status": "error",
+      "itemCount": 0,
+      "error": "HTTP 404"
     },
     {
       "id": "news-ecb",
@@ -128,13 +130,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 25
+      "itemCount": 27
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 49
     },
     {
       "id": "news-bis-press",
