@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-17T07:38:42.893Z",
-  "lastSuccessfulAt": "2026-09-17T07:38:42.893Z",
+  "attemptedAt": "2026-09-17T10:06:16.342Z",
+  "lastSuccessfulAt": "2026-09-17T10:06:16.342Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T07:38:42.893Z"
+      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-17T07:38:42.893Z"
+      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T07:38:42.893Z"
+      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T07:38:42.893Z"
+      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z"
     }
   ],
   "sourceHealth": [
@@ -67,7 +67,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 28
+      "itemCount": 33
     },
     {
       "id": "bbc-business",
@@ -121,14 +121,15 @@
     {
       "id": "news-un",
       "name": "UN News（新闻）",
-      "status": "ok",
-      "itemCount": 30
+      "status": "error",
+      "itemCount": 0,
+      "error": "fetch failed"
     },
     {
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 28
+      "itemCount": 33
     },
     {
       "id": "news-bbc-business",
@@ -147,6 +148,13 @@
       "name": "U.S. Energy Information Administration（新闻）",
       "status": "ok",
       "itemCount": 16
+    },
+    {
+      "id": "news-cerebras-editorial",
+      "name": "Cerebras 完整正文解读（新闻）",
+      "status": "error",
+      "itemCount": 0,
+      "error": "HTTP 402"
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
