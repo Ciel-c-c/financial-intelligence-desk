@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-17T14:19:58.737Z",
-  "lastSuccessfulAt": "2026-09-17T14:19:58.737Z",
+  "attemptedAt": "2026-09-17T14:24:24.201Z",
+  "lastSuccessfulAt": "2026-09-17T14:24:24.201Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:19:58.737Z"
+      "lastSuccessfulAt": "2026-09-17T14:24:24.201Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-17T14:19:58.737Z"
+      "lastSuccessfulAt": "2026-09-17T14:24:24.201Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:19:58.737Z"
+      "lastSuccessfulAt": "2026-09-17T14:24:24.201Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:19:58.737Z"
+      "lastSuccessfulAt": "2026-09-17T14:24:24.201Z"
     }
   ],
   "sourceHealth": [
@@ -103,8 +103,9 @@
     {
       "id": "news-fed",
       "name": "Federal Reserve（新闻）",
-      "status": "ok",
-      "itemCount": 20
+      "status": "error",
+      "itemCount": 0,
+      "error": "HTTP 404"
     },
     {
       "id": "news-ecb",
@@ -147,6 +148,20 @@
       "name": "U.S. Energy Information Administration（新闻）",
       "status": "ok",
       "itemCount": 16
+    },
+    {
+      "id": "news-groq-editorial",
+      "name": "Groq 完整正文解读（新闻）",
+      "status": "ok",
+      "itemCount": 0,
+      "attempted": 4,
+      "rejected": 4,
+      "failures": 0,
+      "rejectionReasons": {
+        "facts": 2,
+        "market-expectation-evidence": 1,
+        "so-what": 1
+      }
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
