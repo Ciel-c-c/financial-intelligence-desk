@@ -87,6 +87,17 @@ it('stops retrying an unchanged rejected body after three total attempts',async(
  expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.attempted).toBe(0);
  expect(result.latest[0].analysisAttempt.count).toBe(3);
 });
+it('identifies a rejected language field without exposing its model content',async()=>{
+ const output=response();output.soWhat.marketBet=['Orders can grow?'];
+ const result=await run(output,200,true,'groq');
+ expect(result.latest[0].analysisAttempt.rejection).toEqual({stage:'analysis',category:'language',fields:['soWhat.marketBet']});
+ expect(JSON.stringify(result.latest[0].analysisAttempt)).not.toContain('Orders can grow?');
+});
+it('identifies missing literal evidence without exposing the rejected quote',async()=>{
+ const output=response();output.facts[0].evidence='并不存在的引用内容';
+ const result=await run(output,200,true,'groq');
+ expect(result.latest[0].analysisAttempt.rejection).toEqual({stage:'evidence',category:'facts',fields:['facts[0].quote']});
+});
 it('does not describe an all-rejected analysis run as successful',async()=>{
  const output=response();output.facts[0].evidence='公司宣布降息四次';
  const result=await run(output,200,true,'groq');
