@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-17T12:38:11.063Z",
-  "lastSuccessfulAt": "2026-09-17T12:38:11.063Z",
+  "attemptedAt": "2026-09-17T13:26:44.473Z",
+  "lastSuccessfulAt": "2026-09-17T13:26:44.473Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -15,7 +15,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "fed",
@@ -74,10 +74,10 @@
       "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "summary": "Left-wing opposition parties led by Magdalena Andersson look set to form the next government.",
-      "publishedAt": "2026-09-17T12:30:01.000Z",
-      "firstPublishedAt": "2026-09-17T12:30:01.000Z",
-      "latestSourceAt": "2026-09-17T12:30:01.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "publishedAt": "2026-09-17T12:41:05.000Z",
+      "firstPublishedAt": "2026-09-17T12:41:05.000Z",
+      "latestSourceAt": "2026-09-17T12:41:05.000Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -209,177 +209,7 @@
         {
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/cxr50l3d762po?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-17T12:30:01.000Z"
-        }
-      ]
-    },
-    {
-      "id": "0ef89d71603b",
-      "headline": "What's happening to UK interest rates and what does it mean for mortgages?",
-      "sourceHeadline": "What's happening to UK interest rates and what does it mean for mortgages?",
-      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
-      "oneSentenceExplanation": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
-      "summary": "The interest rate set by the Bank of England affects mortgage, loan and savings rates for millions.",
-      "publishedAt": "2026-09-17T11:59:02.000Z",
-      "firstPublishedAt": "2026-09-17T11:59:02.000Z",
-      "latestSourceAt": "2026-09-17T11:59:02.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
-      "region": "europe",
-      "countries": [
-        "EU"
-      ],
-      "topic": "monetary-policy",
-      "eventType": "monetary-policy",
-      "relevance": {
-        "level": "medium",
-        "score": 4,
-        "criteria": [
-          "inflation",
-          "growth",
-          "centralBank",
-          "capitalFlows"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 4,
-      "relevanceReasons": [
-        "inflation",
-        "growth",
-        "centralBank",
-        "capitalFlows"
-      ],
-      "fact": [
-        "The interest rate set by the Bank of England affects mortgage, loan and savings rates for millions."
-      ],
-      "factSummary": "The interest rate set by the Bank of England affects mortgage, loan and savings rates for millions.",
-      "marketView": [
-        "本条来源报告：What's happening to UK interest rates and what does it mean for mortgages?。以下为条件性机制参考，不是已核实的市场结论。",
-        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
-        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
-      ],
-      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
-      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "央行信号变化",
-          "beginnerExplanation": "投资者调整未来利率预期。",
-          "condition": "后续数据没有推翻该信号",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "债券收益率可能变化",
-          "beginnerExplanation": "新利率预期进入债券价格。",
-          "condition": "信用和期限溢价没有反向抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "融资成本可能变化",
-          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
-          "condition": "政策能传导到实体融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "股票估值可能重算",
-          "beginnerExplanation": "远期现金流对贴现率敏感。",
-          "condition": "盈利预期没有同时大幅变化",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "央行信号变化",
-          "beginnerExplanation": "投资者调整未来利率预期。",
-          "condition": "后续数据没有推翻该信号",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "债券收益率可能变化",
-          "beginnerExplanation": "新利率预期进入债券价格。",
-          "condition": "信用和期限溢价没有反向抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "融资成本可能变化",
-          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
-          "condition": "政策能传导到实体融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "股票估值可能重算",
-          "beginnerExplanation": "远期现金流对贴现率敏感。",
-          "condition": "盈利预期没有同时大幅变化",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "国债收益率",
-          "explanation": "它最直接反映政策、通胀和期限补偿。"
-        },
-        {
-          "name": "美元",
-          "explanation": "相对利率会改变持有不同货币的吸引力。"
-        },
-        {
-          "name": "Nasdaq",
-          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
-        },
-        {
-          "name": "银行股",
-          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "interest-rate",
-        "bonds",
-        "cpi",
-        "valuation",
-        "exchange-rate"
-      ],
-      "relatedKnowledgePoints": [
-        "interest-rate",
-        "bonds",
-        "cpi",
-        "valuation",
-        "exchange-rate"
-      ],
-      "conditionsThatChangeView": [
-        "通胀数据明显转向",
-        "就业或增长意外走弱",
-        "央行官员给出不同信号",
-        "金融压力让银行收紧贷款",
-        "市场已经提前充分定价"
-      ],
-      "watchConditions": [
-        "通胀数据明显转向",
-        "就业或增长意外走弱",
-        "央行官员给出不同信号",
-        "金融压力让银行收紧贷款",
-        "市场已经提前充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/c3dky111m40o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-17T11:59:02.000Z"
+          "publishedAt": "2026-09-17T12:41:05.000Z"
         }
       ]
     },
@@ -390,10 +220,10 @@
       "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
       "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
       "summary": "Rates are held for the sixth time in a row but the Bank says they are likely to rise if high energy prices continue.",
-      "publishedAt": "2026-09-17T11:50:24.000Z",
-      "firstPublishedAt": "2026-09-17T11:50:24.000Z",
-      "latestSourceAt": "2026-09-17T11:50:24.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "publishedAt": "2026-09-17T12:39:08.000Z",
+      "firstPublishedAt": "2026-09-17T12:39:08.000Z",
+      "latestSourceAt": "2026-09-17T12:39:08.000Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -559,7 +389,177 @@
         {
           "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-17T11:50:24.000Z"
+          "publishedAt": "2026-09-17T12:39:08.000Z"
+        }
+      ]
+    },
+    {
+      "id": "0ef89d71603b",
+      "headline": "What's happening to UK interest rates and what does it mean for mortgages?",
+      "sourceHeadline": "What's happening to UK interest rates and what does it mean for mortgages?",
+      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "oneSentenceExplanation": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "summary": "The interest rate set by the Bank of England affects mortgage, loan and savings rates for millions.",
+      "publishedAt": "2026-09-17T11:59:02.000Z",
+      "firstPublishedAt": "2026-09-17T11:59:02.000Z",
+      "latestSourceAt": "2026-09-17T11:59:02.000Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "region": "europe",
+      "countries": [
+        "EU"
+      ],
+      "topic": "monetary-policy",
+      "eventType": "monetary-policy",
+      "relevance": {
+        "level": "medium",
+        "score": 4,
+        "criteria": [
+          "inflation",
+          "growth",
+          "centralBank",
+          "capitalFlows"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 4,
+      "relevanceReasons": [
+        "inflation",
+        "growth",
+        "centralBank",
+        "capitalFlows"
+      ],
+      "fact": [
+        "The interest rate set by the Bank of England affects mortgage, loan and savings rates for millions."
+      ],
+      "factSummary": "The interest rate set by the Bank of England affects mortgage, loan and savings rates for millions.",
+      "marketView": [
+        "本条来源报告：What's happening to UK interest rates and what does it mean for mortgages?。以下为条件性机制参考，不是已核实的市场结论。",
+        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
+        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
+      ],
+      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
+      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "国债收益率",
+          "explanation": "它最直接反映政策、通胀和期限补偿。"
+        },
+        {
+          "name": "美元",
+          "explanation": "相对利率会改变持有不同货币的吸引力。"
+        },
+        {
+          "name": "Nasdaq",
+          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
+        },
+        {
+          "name": "银行股",
+          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "relatedKnowledgePoints": [
+        "interest-rate",
+        "bonds",
+        "cpi",
+        "valuation",
+        "exchange-rate"
+      ],
+      "conditionsThatChangeView": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "watchConditions": [
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/c3dky111m40o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-17T11:59:02.000Z"
         }
       ]
     },
@@ -573,7 +573,7 @@
       "publishedAt": "2026-09-17T08:07:29.000Z",
       "firstPublishedAt": "2026-09-17T08:07:29.000Z",
       "latestSourceAt": "2026-09-17T08:07:29.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1051,7 +1051,7 @@
       "publishedAt": "2026-09-17T05:33:29.000Z",
       "firstPublishedAt": "2026-09-17T05:33:29.000Z",
       "latestSourceAt": "2026-09-17T05:33:29.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1241,7 +1241,7 @@
       "publishedAt": "2026-09-17T05:00:36.000Z",
       "firstPublishedAt": "2026-09-17T05:00:36.000Z",
       "latestSourceAt": "2026-09-17T05:00:36.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1389,7 +1389,7 @@
       "publishedAt": "2026-09-17T00:40:17.000Z",
       "firstPublishedAt": "2026-09-17T00:40:17.000Z",
       "latestSourceAt": "2026-09-17T00:40:17.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "global",
       "countries": [],
       "topic": "monetary-policy",
@@ -1561,7 +1561,7 @@
       "publishedAt": "2026-09-17T00:38:50.000Z",
       "firstPublishedAt": "2026-09-17T00:38:50.000Z",
       "latestSourceAt": "2026-09-17T00:38:50.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1731,7 +1731,7 @@
       "publishedAt": "2026-09-16T22:26:10.000Z",
       "firstPublishedAt": "2026-09-16T22:26:10.000Z",
       "latestSourceAt": "2026-09-16T22:26:10.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2075,7 +2075,7 @@
       "publishedAt": "2026-09-16T21:24:24.000Z",
       "firstPublishedAt": "2026-09-16T21:24:24.000Z",
       "latestSourceAt": "2026-09-16T21:24:24.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -2255,7 +2255,7 @@
       "publishedAt": "2026-09-16T19:12:48.000Z",
       "firstPublishedAt": "2026-09-16T19:12:48.000Z",
       "latestSourceAt": "2026-09-16T19:12:48.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2403,7 +2403,7 @@
       "publishedAt": "2026-09-16T18:00:00.000Z",
       "firstPublishedAt": "2026-09-16T18:00:00.000Z",
       "latestSourceAt": "2026-09-16T18:00:00.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2577,7 +2577,7 @@
       "publishedAt": "2026-09-16T18:00:00.000Z",
       "firstPublishedAt": "2026-09-16T18:00:00.000Z",
       "latestSourceAt": "2026-09-16T18:00:00.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2747,7 +2747,7 @@
       "publishedAt": "2026-09-16T14:52:38.000Z",
       "firstPublishedAt": "2026-09-16T14:52:38.000Z",
       "latestSourceAt": "2026-09-16T14:52:38.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -2897,7 +2897,7 @@
       "publishedAt": "2026-09-16T14:50:26.000Z",
       "firstPublishedAt": "2026-09-16T14:50:26.000Z",
       "latestSourceAt": "2026-09-16T14:50:26.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3043,7 +3043,7 @@
       "publishedAt": "2026-09-16T14:30:51.000Z",
       "firstPublishedAt": "2026-09-16T14:30:51.000Z",
       "latestSourceAt": "2026-09-16T14:30:51.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -3231,7 +3231,7 @@
       "publishedAt": "2026-09-16T14:21:37.000Z",
       "firstPublishedAt": "2026-09-16T14:21:37.000Z",
       "latestSourceAt": "2026-09-16T14:21:37.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -3527,7 +3527,7 @@
       "publishedAt": "2026-09-16T12:00:00.000Z",
       "firstPublishedAt": "2026-09-16T12:00:00.000Z",
       "latestSourceAt": "2026-09-16T12:00:00.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -3689,7 +3689,7 @@
       "publishedAt": "2026-09-16T12:00:00.000Z",
       "firstPublishedAt": "2026-09-16T12:00:00.000Z",
       "latestSourceAt": "2026-09-16T12:00:00.000Z",
-      "fetchedAt": "2026-09-17T12:38:11.063Z",
+      "fetchedAt": "2026-09-17T13:26:44.473Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
