@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-17T10:06:16.342Z",
-  "lastSuccessfulAt": "2026-09-17T10:06:16.342Z",
+  "attemptedAt": "2026-09-17T12:38:11.063Z",
+  "lastSuccessfulAt": "2026-09-17T12:38:11.063Z",
   "status": "partial",
   "datasets": [
     {
       "id": "news-feed",
       "status": "partial",
       "freshness": "delayed",
-      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z",
-      "dataAsOf": "2026-09-17T10:00:14.000Z",
-      "nextExpectedAt": "2026-09-17T11:06:16.342Z",
+      "lastSuccessfulAt": "2026-09-17T12:38:11.063Z",
+      "dataAsOf": "2026-09-17T12:30:01.000Z",
+      "nextExpectedAt": "2026-09-17T13:38:11.063Z",
       "fallbackReason": "部分新闻来源暂时异常，已发布其余可靠来源。"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "freshness": "close",
-      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z",
+      "freshness": "delayed",
+      "lastSuccessfulAt": "2026-09-17T12:38:11.063Z",
       "dataAsOf": "2026-09-16T00:00:00.000Z",
-      "nextExpectedAt": "2026-09-17T11:06:16.342Z"
+      "nextExpectedAt": "2026-09-17T13:38:11.063Z"
     },
     {
       "id": "sector-performance",
@@ -34,17 +34,17 @@
       "id": "global-situation",
       "status": "partial",
       "freshness": "delayed",
-      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z",
-      "dataAsOf": "2026-09-17T08:07:29.000Z",
-      "nextExpectedAt": "2026-09-17T11:06:16.342Z"
+      "lastSuccessfulAt": "2026-09-17T12:38:11.063Z",
+      "dataAsOf": "2026-09-17T12:30:01.000Z",
+      "nextExpectedAt": "2026-09-17T13:38:11.063Z"
     },
     {
       "id": "daily-brief",
       "status": "fresh",
       "freshness": "delayed",
-      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z",
-      "dataAsOf": "2026-09-17T10:00:14.000Z",
-      "nextExpectedAt": "2026-09-17T22:06:16.342Z"
+      "lastSuccessfulAt": "2026-09-17T12:38:11.063Z",
+      "dataAsOf": "2026-09-17T12:30:01.000Z",
+      "nextExpectedAt": "2026-09-18T00:38:11.063Z"
     }
   ]
 }

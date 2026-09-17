@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-17T10:06:16.342Z",
-  "lastSuccessfulAt": "2026-09-17T10:06:16.342Z",
+  "attemptedAt": "2026-09-17T12:38:11.063Z",
+  "lastSuccessfulAt": "2026-09-17T12:38:11.063Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z"
+      "lastSuccessfulAt": "2026-09-17T12:38:11.063Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z"
+      "lastSuccessfulAt": "2026-09-17T12:38:11.063Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z"
+      "lastSuccessfulAt": "2026-09-17T12:38:11.063Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T10:06:16.342Z"
+      "lastSuccessfulAt": "2026-09-17T12:38:11.063Z"
     }
   ],
   "sourceHealth": [
@@ -67,13 +67,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 33
+      "itemCount": 35
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 49
     },
     {
       "id": "bis-press",
@@ -121,21 +121,20 @@
     {
       "id": "news-un",
       "name": "UN News（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "fetch failed"
+      "status": "ok",
+      "itemCount": 30
     },
     {
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 33
+      "itemCount": 35
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 49
     },
     {
       "id": "news-bis-press",
@@ -148,13 +147,6 @@
       "name": "U.S. Energy Information Administration（新闻）",
       "status": "ok",
       "itemCount": 16
-    },
-    {
-      "id": "news-cerebras-editorial",
-      "name": "Cerebras 完整正文解读（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "HTTP 402"
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
