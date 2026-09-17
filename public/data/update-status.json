@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-17T13:44:50.646Z",
-  "lastSuccessfulAt": "2026-09-17T13:44:50.646Z",
+  "attemptedAt": "2026-09-17T13:53:02.958Z",
+  "lastSuccessfulAt": "2026-09-17T13:53:02.958Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T13:44:50.646Z"
+      "lastSuccessfulAt": "2026-09-17T13:53:02.958Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-17T13:44:50.646Z"
+      "lastSuccessfulAt": "2026-09-17T13:53:02.958Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T13:44:50.646Z"
+      "lastSuccessfulAt": "2026-09-17T13:53:02.958Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T13:44:50.646Z"
+      "lastSuccessfulAt": "2026-09-17T13:53:02.958Z"
     }
   ],
   "sourceHealth": [
@@ -156,7 +156,11 @@
       "error": "HTTP 429",
       "attempted": 4,
       "rejected": 4,
-      "failures": 1
+      "failures": 1,
+      "rejectionReasons": {
+        "classification": 3,
+        "required-fields": 1
+      }
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
