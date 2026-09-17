@@ -27,15 +27,18 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
   const clustered=clusterNewsItems(normalized),state={attempted:0,generated:0,rejected:0,failures:0,stopped:false};
   const enriched=[...reviewedNews];
   const prior=[...(previous?.latest??[]),...(previous?.continuing??[]),...(previous?.retainedDetails??[])];
-  for(const raw of clustered.sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt))){
+  const previousAttempt=record=>prior.find(old=>old.canonicalUrl===record.canonicalUrl&&old.analysisAttempt?.sourceBodyHash===record.article?.sha256)?.analysisAttempt;
+  for(const raw of clustered.sort((a,b)=>(previousAttempt(a)?.count??0)-(previousAttempt(b)?.count??0)||Date.parse(b.publishedAt)-Date.parse(a.publishedAt))){
    let record=reviewChineseArticle(raw);
+   const attempt=previousAttempt(record);
+   if(attempt) record={...record,analysisAttempt:attempt};
    const cached=record.article?.status==='complete'&&record.article.sha256?prior.find(old=>old.editorial&&old.canonicalUrl===record.canonicalUrl&&old.originalTitle===record.originalTitle&&old.publishedAt===record.publishedAt&&old.editorial.sourceBodyHash===record.article.sha256):undefined;
    if(!record.editorial&&cached) record={...record,...(cached.editorial.language==='en'?{titleEn:cached.titleEn,summaryEn:cached.summaryEn}:{titleZh:cached.titleZh,summaryZh:cached.summaryZh}),translationStatus:cached.translationStatus,detailStatus:cached.detailStatus,editorial:cached.editorial};
    const age=Date.parse(now)-Date.parse(record.publishedAt);
    if(age>=0&&age<=86400_000) record=await analyzeWithCerebras(record,enrichmentOptions,state);
    enriched.push(toPublicEvidence(record));
   }
-  if(enrichmentOptions.apiKey) sourceHealth.push({id:enrichmentOptions.provider==='groq'?'groq-editorial':'cerebras-editorial',name:enrichmentOptions.provider==='groq'?'Groq 完整正文解读':'Cerebras 完整正文解读',status:state.stopped||state.failures?'error':'ok',itemCount:state.generated,...(state.reason?{error:state.reason}:{}),attempted:state.attempted,rejected:state.rejected,failures:state.failures,rejectionReasons:state.rejectionReasons??{}});
+  if(enrichmentOptions.apiKey) sourceHealth.push({id:enrichmentOptions.provider==='groq'?'groq-editorial':'cerebras-editorial',name:enrichmentOptions.provider==='groq'?'Groq 完整正文解读':'Cerebras 完整正文解读',status:state.stopped||state.failures||(state.attempted>0&&state.generated===0)?'error':'ok',itemCount:state.generated,...(state.reason?{error:state.reason}:{}),attempted:state.attempted,rejected:state.rejected,failures:state.failures,stages:state.stages??{evidence:0,analysis:0,audit:0},rejectionReasons:state.rejectionReasons??{}});
   const {latest,continuing}=selectNewsWindows(enriched,now);
   const activeIds=new Set([...latest,...continuing].map(item=>item.id)); const retainedDetails=[...enriched,...(previous?.latest??[]),...(previous?.continuing??[]),...(previous?.retainedDetails??[])].filter(item=>!activeIds.has(item.id)&&Number.isFinite(Date.parse(item.publishedAt))&&Date.parse(item.publishedAt)<=Date.parse(now)).filter((item,index,array)=>array.findIndex(candidate=>candidate.id===item.id)===index).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,60);
   const status=sourceResults.some(result=>!result.ok)?'delayed':'fresh'; return {schemaVersion:1,attemptedAt:now,lastSuccessfulAt:now,nextExpectedAt:new Date(Date.parse(now)+3600_000).toISOString(),status,latest,continuing,retainedDetails,sourceHealth,...(status==='delayed'?{message:'部分新闻来源暂时异常，已发布其余可靠来源。'}:{})};
