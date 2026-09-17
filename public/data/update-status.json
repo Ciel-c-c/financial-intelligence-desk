@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-17T14:55:59.118Z",
-  "lastSuccessfulAt": "2026-09-17T14:55:59.118Z",
+  "attemptedAt": "2026-09-17T15:16:15.193Z",
+  "lastSuccessfulAt": "2026-09-17T15:16:15.193Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:55:59.118Z"
+      "lastSuccessfulAt": "2026-09-17T15:16:15.193Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-17T14:55:59.118Z"
+      "lastSuccessfulAt": "2026-09-17T15:16:15.193Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:55:59.118Z"
+      "lastSuccessfulAt": "2026-09-17T15:16:15.193Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:55:59.118Z"
+      "lastSuccessfulAt": "2026-09-17T15:16:15.193Z"
     }
   ],
   "sourceHealth": [
@@ -98,7 +98,7 @@
       "name": "国家统计局（新闻）",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "news-fed",
@@ -163,7 +163,7 @@
       },
       "rejectionReasons": {
         "facts": 1,
-        "language": 1
+        "professional-sections": 1
       }
     }
   ],
