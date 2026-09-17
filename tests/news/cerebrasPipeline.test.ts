@@ -54,6 +54,14 @@ it('keeps a valid editorial while discarding unsupported optional classification
  expect(result.latest[0].eventTypes).toEqual(['公司经营']);
  expect(result.latest[0].regions).toEqual(['全球']);
 });
+it('rejects numerical forecasts hidden outside the facts section',async()=>{
+ const output=response();output.soWhat.marketBet=['加息概率可能升至70%。'];
+ expect((await run(output,200,true,'groq')).latest[0].editorial).toBeUndefined();
+});
+it('rejects a claimed prior market consensus without source expectation evidence',async()=>{
+ const output=response();output.soWhat.expectationGap='市场原本预期本季度结束，实际进展落后。';
+ expect((await run(output,200,true,'groq')).latest[0].editorial).toBeUndefined();
+});
 it('withholds a structurally valid analysis when the separate audit rejects it',async()=>{
  expect((await run(response(),200,false)).latest[0].editorial).toBeUndefined();
 });
