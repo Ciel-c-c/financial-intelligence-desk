@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-17T14:24:24.201Z",
-  "lastSuccessfulAt": "2026-09-17T14:24:24.201Z",
+  "attemptedAt": "2026-09-17T14:55:59.118Z",
+  "lastSuccessfulAt": "2026-09-17T14:55:59.118Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:24:24.201Z"
+      "lastSuccessfulAt": "2026-09-17T14:55:59.118Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-17T14:24:24.201Z"
+      "lastSuccessfulAt": "2026-09-17T14:55:59.118Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:24:24.201Z"
+      "lastSuccessfulAt": "2026-09-17T14:55:59.118Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:24:24.201Z"
+      "lastSuccessfulAt": "2026-09-17T14:55:59.118Z"
     }
   ],
   "sourceHealth": [
@@ -103,9 +103,8 @@
     {
       "id": "news-fed",
       "name": "Federal Reserve（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "HTTP 404"
+      "status": "ok",
+      "itemCount": 20
     },
     {
       "id": "news-ecb",
@@ -152,15 +151,19 @@
     {
       "id": "news-groq-editorial",
       "name": "Groq 完整正文解读（新闻）",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 4,
-      "rejected": 4,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
+      "stages": {
+        "evidence": 1,
+        "analysis": 0,
+        "audit": 0
+      },
       "rejectionReasons": {
-        "facts": 2,
-        "market-expectation-evidence": 1,
-        "so-what": 1
+        "facts": 1,
+        "language": 1
       }
     }
   ],
