@@ -44,6 +44,7 @@ jobs:
       - name: Fetch, normalize, aggregate and validate snapshots
         run: npm run update:data
         env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NEWS_TRANSLATION_API_URL: ${{ secrets.NEWS_TRANSLATION_API_URL }}
           NEWS_TRANSLATION_API_KEY: ${{ secrets.NEWS_TRANSLATION_API_KEY }}
           NEWS_TRANSLATION_MODEL: ${{ secrets.NEWS_TRANSLATION_MODEL }}
