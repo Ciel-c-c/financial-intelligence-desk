@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-17T14:00:42.307Z",
-  "lastSuccessfulAt": "2026-09-17T14:00:42.307Z",
+  "attemptedAt": "2026-09-17T14:19:58.737Z",
+  "lastSuccessfulAt": "2026-09-17T14:19:58.737Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:00:42.307Z"
+      "lastSuccessfulAt": "2026-09-17T14:19:58.737Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-17T14:00:42.307Z"
+      "lastSuccessfulAt": "2026-09-17T14:19:58.737Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:00:42.307Z"
+      "lastSuccessfulAt": "2026-09-17T14:19:58.737Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T14:00:42.307Z"
+      "lastSuccessfulAt": "2026-09-17T14:19:58.737Z"
     }
   ],
   "sourceHealth": [
@@ -37,7 +37,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -147,18 +147,6 @@
       "name": "U.S. Energy Information Administration（新闻）",
       "status": "ok",
       "itemCount": 16
-    },
-    {
-      "id": "news-groq-editorial",
-      "name": "Groq 完整正文解读（新闻）",
-      "status": "ok",
-      "itemCount": 3,
-      "attempted": 4,
-      "rejected": 1,
-      "failures": 0,
-      "rejectionReasons": {
-        "facts": 1
-      }
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-17T14:00:42.307Z",
-  "lastSuccessfulAt": "2026-09-17T14:00:42.307Z",
+  "attemptedAt": "2026-09-17T14:19:58.737Z",
+  "lastSuccessfulAt": "2026-09-17T14:19:58.737Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -15,7 +15,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -68,6 +68,188 @@
   ],
   "events": [
     {
+      "id": "9642379024d8",
+      "headline": "Interest rates held but Bank signals rise if energy prices stay high",
+      "sourceHeadline": "Interest rates held but Bank signals rise if energy prices stay high",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "Rates are held for the sixth time in a row but the Bank of England says high energy prices make a future rise more likely.",
+      "publishedAt": "2026-09-17T14:05:38.000Z",
+      "firstPublishedAt": "2026-09-17T14:05:38.000Z",
+      "latestSourceAt": "2026-09-17T14:05:38.000Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
+      "region": "europe",
+      "countries": [
+        "EU"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "medium",
+        "score": 3,
+        "criteria": [
+          "energySupply",
+          "growth",
+          "earnings"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 3,
+      "relevanceReasons": [
+        "energySupply",
+        "growth",
+        "earnings"
+      ],
+      "fact": [
+        "Rates are held for the sixth time in a row but the Bank of England says high energy prices make a future rise more likely."
+      ],
+      "factSummary": "Rates are held for the sixth time in a row but the Bank of England says high energy prices make a future rise more likely.",
+      "marketView": [
+        "本条来源报告：Interest rates held but Bank signals rise if energy prices stay high。以下为条件性机制参考，不是已核实的市场结论。",
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "watchConditions": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-17T14:05:38.000Z"
+        }
+      ]
+    },
+    {
       "id": "e92c66c0f5ec",
       "headline": "Klopp wants to 'reclaim' flag amid German elections",
       "sourceHeadline": "Klopp wants to 'reclaim' flag amid German elections",
@@ -77,7 +259,7 @@
       "publishedAt": "2026-09-17T13:02:40.000Z",
       "firstPublishedAt": "2026-09-17T13:02:40.000Z",
       "latestSourceAt": "2026-09-17T13:02:40.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -223,7 +405,7 @@
       "publishedAt": "2026-09-17T12:41:05.000Z",
       "firstPublishedAt": "2026-09-17T12:41:05.000Z",
       "latestSourceAt": "2026-09-17T12:41:05.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -549,7 +731,7 @@
       "publishedAt": "2026-09-17T11:59:02.000Z",
       "firstPublishedAt": "2026-09-17T11:59:02.000Z",
       "latestSourceAt": "2026-09-17T11:59:02.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -719,7 +901,7 @@
       "publishedAt": "2026-09-17T08:07:29.000Z",
       "firstPublishedAt": "2026-09-17T08:07:29.000Z",
       "latestSourceAt": "2026-09-17T08:07:29.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1197,7 +1379,7 @@
       "publishedAt": "2026-09-17T05:33:29.000Z",
       "firstPublishedAt": "2026-09-17T05:33:29.000Z",
       "latestSourceAt": "2026-09-17T05:33:29.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1387,7 +1569,7 @@
       "publishedAt": "2026-09-17T05:00:36.000Z",
       "firstPublishedAt": "2026-09-17T05:00:36.000Z",
       "latestSourceAt": "2026-09-17T05:00:36.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1535,7 +1717,7 @@
       "publishedAt": "2026-09-17T00:40:17.000Z",
       "firstPublishedAt": "2026-09-17T00:40:17.000Z",
       "latestSourceAt": "2026-09-17T00:40:17.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "global",
       "countries": [],
       "topic": "monetary-policy",
@@ -1707,7 +1889,7 @@
       "publishedAt": "2026-09-17T00:38:50.000Z",
       "firstPublishedAt": "2026-09-17T00:38:50.000Z",
       "latestSourceAt": "2026-09-17T00:38:50.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1877,7 +2059,7 @@
       "publishedAt": "2026-09-16T22:26:10.000Z",
       "firstPublishedAt": "2026-09-16T22:26:10.000Z",
       "latestSourceAt": "2026-09-16T22:26:10.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2221,7 +2403,7 @@
       "publishedAt": "2026-09-16T21:24:24.000Z",
       "firstPublishedAt": "2026-09-16T21:24:24.000Z",
       "latestSourceAt": "2026-09-16T21:24:24.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -2401,7 +2583,7 @@
       "publishedAt": "2026-09-16T19:12:48.000Z",
       "firstPublishedAt": "2026-09-16T19:12:48.000Z",
       "latestSourceAt": "2026-09-16T19:12:48.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2549,7 +2731,7 @@
       "publishedAt": "2026-09-16T18:00:00.000Z",
       "firstPublishedAt": "2026-09-16T18:00:00.000Z",
       "latestSourceAt": "2026-09-16T18:00:00.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2723,7 +2905,7 @@
       "publishedAt": "2026-09-16T18:00:00.000Z",
       "firstPublishedAt": "2026-09-16T18:00:00.000Z",
       "latestSourceAt": "2026-09-16T18:00:00.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2893,7 +3075,7 @@
       "publishedAt": "2026-09-16T14:52:38.000Z",
       "firstPublishedAt": "2026-09-16T14:52:38.000Z",
       "latestSourceAt": "2026-09-16T14:52:38.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -3043,7 +3225,7 @@
       "publishedAt": "2026-09-16T14:50:26.000Z",
       "firstPublishedAt": "2026-09-16T14:50:26.000Z",
       "latestSourceAt": "2026-09-16T14:50:26.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3189,7 +3371,7 @@
       "publishedAt": "2026-09-16T14:30:51.000Z",
       "firstPublishedAt": "2026-09-16T14:30:51.000Z",
       "latestSourceAt": "2026-09-16T14:30:51.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -3377,7 +3559,7 @@
       "publishedAt": "2026-09-16T14:21:37.000Z",
       "firstPublishedAt": "2026-09-16T14:21:37.000Z",
       "latestSourceAt": "2026-09-16T14:21:37.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -3673,7 +3855,7 @@
       "publishedAt": "2026-09-16T12:00:00.000Z",
       "firstPublishedAt": "2026-09-16T12:00:00.000Z",
       "latestSourceAt": "2026-09-16T12:00:00.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
+      "fetchedAt": "2026-09-17T14:19:58.737Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -3821,152 +4003,6 @@
         {
           "name": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168352",
-          "publishedAt": "2026-09-16T12:00:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "1bb5482bc10c",
-      "headline": "The world comes to New York: What’s at stake at UN General Assembly high-level week",
-      "sourceHeadline": "The world comes to New York: What’s at stake at UN General Assembly high-level week",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Each September, New York becomes the centre of global diplomacy as presidents, prime ministers, ministers and diplomats from around the world gather at United Nations Headquarters.",
-      "publishedAt": "2026-09-16T12:00:00.000Z",
-      "firstPublishedAt": "2026-09-16T12:00:00.000Z",
-      "latestSourceAt": "2026-09-16T12:00:00.000Z",
-      "fetchedAt": "2026-09-17T14:00:42.307Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Each September, New York becomes the centre of global diplomacy as presidents, prime ministers, ministers and diplomats from around the world gather at United Nations Headquarters."
-      ],
-      "factSummary": "Each September, New York becomes the centre of global diplomacy as presidents, prime ministers, ministers and diplomats from around the world gather at United Nations Headquarters.",
-      "marketView": [
-        "本条来源报告：The world comes to New York: What’s at stake at UN General Assembly high-level week。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168344",
           "publishedAt": "2026-09-16T12:00:00.000Z"
         }
       ]
