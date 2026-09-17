@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-17T13:26:44.473Z",
-  "lastSuccessfulAt": "2026-09-17T13:26:44.473Z",
+  "attemptedAt": "2026-09-17T13:44:50.646Z",
+  "lastSuccessfulAt": "2026-09-17T13:44:50.646Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -15,7 +15,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -45,7 +45,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 35
+      "itemCount": 36
     },
     {
       "id": "bbc-business",
@@ -68,6 +68,152 @@
   ],
   "events": [
     {
+      "id": "e92c66c0f5ec",
+      "headline": "Klopp wants to 'reclaim' flag amid German elections",
+      "sourceHeadline": "Klopp wants to 'reclaim' flag amid German elections",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "New Germany coach Jurgen Klopp says his team can help ensure \"national pride is not entrusted to the wrong people\" after a recent far-right election victory.",
+      "publishedAt": "2026-09-17T13:02:40.000Z",
+      "firstPublishedAt": "2026-09-17T13:02:40.000Z",
+      "latestSourceAt": "2026-09-17T13:02:40.000Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "New Germany coach Jurgen Klopp says his team can help ensure \"national pride is not entrusted to the wrong people\" after a recent far-right election victory."
+      ],
+      "factSummary": "New Germany coach Jurgen Klopp says his team can help ensure \"national pride is not entrusted to the wrong people\" after a recent far-right election victory.",
+      "marketView": [
+        "本条来源报告：Klopp wants to 'reclaim' flag amid German elections。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cmwyzk6xkrd0o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-17T13:02:40.000Z"
+        }
+      ]
+    },
+    {
       "id": "9d09febfe6dd",
       "headline": "Swedish PM Kristersson resigns after election loss",
       "sourceHeadline": "Swedish PM Kristersson resigns after election loss",
@@ -77,7 +223,7 @@
       "publishedAt": "2026-09-17T12:41:05.000Z",
       "firstPublishedAt": "2026-09-17T12:41:05.000Z",
       "latestSourceAt": "2026-09-17T12:41:05.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -223,7 +369,7 @@
       "publishedAt": "2026-09-17T12:39:08.000Z",
       "firstPublishedAt": "2026-09-17T12:39:08.000Z",
       "latestSourceAt": "2026-09-17T12:39:08.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -403,7 +549,7 @@
       "publishedAt": "2026-09-17T11:59:02.000Z",
       "firstPublishedAt": "2026-09-17T11:59:02.000Z",
       "latestSourceAt": "2026-09-17T11:59:02.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -573,7 +719,7 @@
       "publishedAt": "2026-09-17T08:07:29.000Z",
       "firstPublishedAt": "2026-09-17T08:07:29.000Z",
       "latestSourceAt": "2026-09-17T08:07:29.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1051,7 +1197,7 @@
       "publishedAt": "2026-09-17T05:33:29.000Z",
       "firstPublishedAt": "2026-09-17T05:33:29.000Z",
       "latestSourceAt": "2026-09-17T05:33:29.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1241,7 +1387,7 @@
       "publishedAt": "2026-09-17T05:00:36.000Z",
       "firstPublishedAt": "2026-09-17T05:00:36.000Z",
       "latestSourceAt": "2026-09-17T05:00:36.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1389,7 +1535,7 @@
       "publishedAt": "2026-09-17T00:40:17.000Z",
       "firstPublishedAt": "2026-09-17T00:40:17.000Z",
       "latestSourceAt": "2026-09-17T00:40:17.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "global",
       "countries": [],
       "topic": "monetary-policy",
@@ -1561,7 +1707,7 @@
       "publishedAt": "2026-09-17T00:38:50.000Z",
       "firstPublishedAt": "2026-09-17T00:38:50.000Z",
       "latestSourceAt": "2026-09-17T00:38:50.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1731,7 +1877,7 @@
       "publishedAt": "2026-09-16T22:26:10.000Z",
       "firstPublishedAt": "2026-09-16T22:26:10.000Z",
       "latestSourceAt": "2026-09-16T22:26:10.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2075,7 +2221,7 @@
       "publishedAt": "2026-09-16T21:24:24.000Z",
       "firstPublishedAt": "2026-09-16T21:24:24.000Z",
       "latestSourceAt": "2026-09-16T21:24:24.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -2255,7 +2401,7 @@
       "publishedAt": "2026-09-16T19:12:48.000Z",
       "firstPublishedAt": "2026-09-16T19:12:48.000Z",
       "latestSourceAt": "2026-09-16T19:12:48.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2403,7 +2549,7 @@
       "publishedAt": "2026-09-16T18:00:00.000Z",
       "firstPublishedAt": "2026-09-16T18:00:00.000Z",
       "latestSourceAt": "2026-09-16T18:00:00.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2577,7 +2723,7 @@
       "publishedAt": "2026-09-16T18:00:00.000Z",
       "firstPublishedAt": "2026-09-16T18:00:00.000Z",
       "latestSourceAt": "2026-09-16T18:00:00.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2747,7 +2893,7 @@
       "publishedAt": "2026-09-16T14:52:38.000Z",
       "firstPublishedAt": "2026-09-16T14:52:38.000Z",
       "latestSourceAt": "2026-09-16T14:52:38.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -2897,7 +3043,7 @@
       "publishedAt": "2026-09-16T14:50:26.000Z",
       "firstPublishedAt": "2026-09-16T14:50:26.000Z",
       "latestSourceAt": "2026-09-16T14:50:26.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3043,7 +3189,7 @@
       "publishedAt": "2026-09-16T14:30:51.000Z",
       "firstPublishedAt": "2026-09-16T14:30:51.000Z",
       "latestSourceAt": "2026-09-16T14:30:51.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -3231,7 +3377,7 @@
       "publishedAt": "2026-09-16T14:21:37.000Z",
       "firstPublishedAt": "2026-09-16T14:21:37.000Z",
       "latestSourceAt": "2026-09-16T14:21:37.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -3527,7 +3673,7 @@
       "publishedAt": "2026-09-16T12:00:00.000Z",
       "firstPublishedAt": "2026-09-16T12:00:00.000Z",
       "latestSourceAt": "2026-09-16T12:00:00.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -3689,7 +3835,7 @@
       "publishedAt": "2026-09-16T12:00:00.000Z",
       "firstPublishedAt": "2026-09-16T12:00:00.000Z",
       "latestSourceAt": "2026-09-16T12:00:00.000Z",
-      "fetchedAt": "2026-09-17T13:26:44.473Z",
+      "fetchedAt": "2026-09-17T13:44:50.646Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3822,152 +3968,6 @@
           "name": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168344",
           "publishedAt": "2026-09-16T12:00:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "9d6abc9f4da0",
-      "headline": "South African president vows justice as more women's bodies found near Johannesburg",
-      "sourceHeadline": "South African president vows justice as more women's bodies found near Johannesburg",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Police have not linked the deaths to a serial killer but are investigating this possibility.",
-      "publishedAt": "2026-09-16T10:44:02.000Z",
-      "firstPublishedAt": "2026-09-16T10:44:02.000Z",
-      "latestSourceAt": "2026-09-16T10:44:02.000Z",
-      "fetchedAt": "2026-09-16T16:54:14.084Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Police have not linked the deaths to a serial killer but are investigating this possibility."
-      ],
-      "factSummary": "Police have not linked the deaths to a serial killer but are investigating this possibility.",
-      "marketView": [
-        "本条来源报告：South African president vows justice as more women's bodies found near Johannesburg。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/crgqde1nex2vo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-16T10:44:02.000Z"
         }
       ]
     }
