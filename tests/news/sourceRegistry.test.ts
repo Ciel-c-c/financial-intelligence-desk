@@ -4,7 +4,7 @@ import { newsSources, validateRegisteredSource } from '../../scripts/news/source
 describe('verified news source registry', () => {
   it('contains unique, current, official sources across required regions', () => {
     expect(new Set(newsSources.map(source => source.id)).size).toBe(newsSources.length);
-    expect(newsSources.every(source => validateRegisteredSource(source, '2026-09-15T00:00:00Z'))).toBe(true);
+    expect(newsSources.every(source => validateRegisteredSource(source, '2026-09-17T00:00:00Z'))).toBe(true);
     for (const region of ['中国', '美国', '欧洲', '全球']) expect(newsSources.some(source => source.regions.includes(region))).toBe(true);
   });
   it('rejects unsafe, stale, and mismatched source definitions', () => {

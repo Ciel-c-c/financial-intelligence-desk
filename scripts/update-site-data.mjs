@@ -13,7 +13,7 @@ export function selectBriefNews(news,now){
   return age>=0&&age<=86400_000&&article?.status==='complete'&&/^[a-f0-9]{64}$/.test(article.sha256)
    &&review?.sourceBodyHash===article.sha256&&review.originalTitle===record.originalTitle
    &&item?.id===record.id&&item.publishedAt===record.publishedAt&&item.sourceUrl===record.canonicalUrl&&article.sourceUrl===record.canonicalUrl
-   &&item.title===record.titleZh&&item.summary===record.summaryZh
+   &&(review.language==='en'?item.title===record.titleEn&&item.summary===record.summaryEn:item.title===record.titleZh&&item.summary===record.summaryZh)
    &&[item.facts,item.consensus,item.inference,item.risks,item.causalChain,review.watchItems].every(section=>Array.isArray(section)&&section.length>0);
  }).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,8);
 }
@@ -71,7 +71,7 @@ async function runDefaultDatasets({ now, dataDir, dryRun }) {
     ...Object.values(market?.groups ?? {}).flat().slice(0, 2).map(item => `${item.name}：${item.value}${item.unit ? ` ${item.unit}` : ''}`),
   ];
   const existingBrief = await readJson(join(dataDir, 'daily-brief.json'));
-  const currentStories = reviewedNews.map(item => ({ id:item.id, title:item.titleZh, publishedAt:item.publishedAt, sourceName:item.sourceName, sourceUrl:item.canonicalUrl }));
+  const currentStories = reviewedNews.map(item => ({ id:item.id, title:item.editorial.item.title, publishedAt:item.publishedAt, sourceName:item.sourceName, sourceUrl:item.canonicalUrl }));
   const brief = !shouldGenerateBrief(now) && existingBrief?.stories?.length && existingBrief.snapshotVersions?.news === versionOf(news) ? existingBrief : buildDailyBrief({
     edition: briefEdition(now), generatedAt: now,
     snapshots: {

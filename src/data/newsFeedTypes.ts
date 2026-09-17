@@ -1,4 +1,6 @@
 export type NewsSourceTier = 'official' | 'verified';
+export interface ReviewedEditorial { language?: 'zh' | 'en' }
+export interface LiveNewsItem { titleEn?:string; summaryEn?:string }
 export type VerificationStatus = 'official' | 'verified' | 'cross-checked';
 export type AnalysisLevel = '宏观' | '行业' | '公司';
 export type EventType = '货币政策' | '财政政策' | '监管' | '贸易' | '经济数据' | '公司经营' | '地缘风险';

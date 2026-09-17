@@ -19,6 +19,7 @@ export const articleSources=[
 
 // Identity verified; ingestion endpoints still need separate validation.
 export const pendingNewsSources = [
+  {id:'ths',name:'同花顺财经',tier:'verified',publisherDomains:['news.10jqka.com.cn'],feedUrl:'https://news.10jqka.com.cn/today_list/index.shtml',homepageUrl:'https://news.10jqka.com.cn/',regions:['中国','全球'],defaultLanguage:'zh',enabled:false,verifiedAt:'2026-09-17',parser:'ths-index',verificationUrl:'https://news.10jqka.com.cn/today_list/index.shtml',usagePolicy:'original-analysis-and-source-link-no-full-reprint',contentScope:'body-read-no-reprint',articlePolicy:{pathPrefix:'/',bodyFormat:'ths-body',publicFullText:false},reason:'公开页面及正文结构已验证；当前 Node 抓取返回 HTTP 200 空正文，生产自动采集未通过，不绕过访问限制。'},
   { id:'rba', name:'Reserve Bank of Australia', homepageUrl:'https://www.rba.gov.au/', verificationUrl:'https://www.rba.gov.au/rss/', usageTermsUrl:'https://www.rba.gov.au/copyright/', enabled:false, verifiedAt:'2026-09-15', reason:'官方新闻稿 RSS 在本次访问中返回 403，不绕过访问限制。' },
   { id:'xinhua', name:'新华社', homepageUrl:'https://www.news.cn/', verificationUrl:'https://english.news.cn/rss/', enabled:false, verifiedAt:'2026-09-15', reason:'RSS 目录存在；当前有效免费接口及公开展示许可尚未完成验证。' },
   { id:'afp', name:'法新社', homepageUrl:'https://www.afp.com/', enabled:false, verifiedAt:'2026-09-15', reason:'未验证可免费公开展示的订阅接口；不使用付费供稿或第三方转载冒充原始来源。' },
@@ -34,6 +35,6 @@ export function validateRegisteredSource(source, now = new Date().toISOString())
     return typeof source.id === 'string' && typeof source.name === 'string' && ['official','verified'].includes(source.tier)
       && source.enabled === true && urls.every(url => url.protocol === 'https:') && Array.isArray(source.publisherDomains) && source.publisherDomains.length > 0
       && matchesDomain(urls[0].hostname, source.feedDomains ?? source.publisherDomains) && matchesDomain(urls[1].hostname, source.publisherDomains)
-      && Array.isArray(source.regions) && source.regions.length > 0 && ['rss','atom','html-index'].includes(source.parser) && age >= 0 && age <= 90 * 86400_000;
+      && Array.isArray(source.regions) && source.regions.length > 0 && ['rss','atom','html-index','ths-index'].includes(source.parser) && age >= 0 && age <= 90 * 86400_000;
   } catch { return false; }
 }

@@ -1,8 +1,10 @@
 import { createHash } from 'node:crypto';
+import {thsAttribution} from './ths-articles.mjs';
+import {readHtmlResponse} from './html-response.mjs';
 export const articleHash=text=>createHash('sha256').update(text).digest('hex');
 // Reading for analysis is not permission to republish a publisher's full text.
 export function toPublicEvidence(item){
- if(!['cnfin-body','yicai-body'].includes(item.article?.reader)) return item;
+ if(!['cnfin-body','yicai-body','ths-body'].includes(item.article?.reader)) return item;
  const {text,...evidence}=item.article;
  return {...item,article:evidence};
 }
@@ -24,7 +26,7 @@ export function extractChineseArticle(html,expectedTitle){
  return text.length>=100?text:undefined;
 }
 export async function fetchFullArticle(item,source,checkedAt,fetchImpl=fetch,onConfirmedFailure=()=>{}){
-  if(!((source.articlePolicy?.bodyFormat==='ecb-section'&&source.id==='ecb')||(source.articlePolicy?.bodyFormat==='cnfin-body'&&source.id==='cnfin')||(source.articlePolicy?.bodyFormat==='yicai-body'&&source.id==='yicai'))) return undefined;
+  if(!((source.articlePolicy?.bodyFormat==='ecb-section'&&source.id==='ecb')||(source.articlePolicy?.bodyFormat==='cnfin-body'&&source.id==='cnfin')||(source.articlePolicy?.bodyFormat==='yicai-body'&&source.id==='yicai')||(source.articlePolicy?.bodyFormat==='ths-body'&&source.id==='ths'))) return undefined;
   try{
     const url=new URL(item.canonicalUrl);
     if(url.protocol!=='https:'||!source.publisherDomains.some(domain=>url.hostname===domain||url.hostname.endsWith(`.${domain}`))||!url.pathname.replace(/\/{2,}/g,'/').startsWith(source.articlePolicy.pathPrefix)) return undefined;
@@ -32,15 +34,23 @@ export async function fetchFullArticle(item,source,checkedAt,fetchImpl=fetch,onC
     const response=await fetchImpl(url.toString(),{redirect:'error',signal:AbortSignal.timeout(15000),headers:{'user-agent':'Financial-Lens-News/1.0'}});
     if(!response.ok){if([404,410].includes(response.status)) onConfirmedFailure('withdrawn');return undefined;}
     if(response.url&&new URL(response.url).hostname!==url.hostname){onConfirmedFailure('publisher-mismatch');return undefined;}
-    const html=await response.text();
-    const text=source.id==='yicai'?extractYicaiArticle(html,item.originalTitle):source.id==='cnfin'?extractChineseArticle(html,item.originalTitle):extractOfficialArticle(html,item.originalTitle);
+    const html=await readHtmlResponse(response);
+    const attribution=source.id==='ths'?thsAttribution(html):undefined;
+    if(source.id==='ths'&&(!attribution||url.hostname!=='news.10jqka.com.cn'||!/^\/\d{8}\/c\d+\.shtml$/.test(url.pathname))) return undefined;
+    const text=source.id==='ths'?extractThsArticle(html,item.originalTitle):source.id==='yicai'?extractYicaiArticle(html,item.originalTitle):source.id==='cnfin'?extractChineseArticle(html,item.originalTitle):extractOfficialArticle(html,item.originalTitle);
     if(!text){onConfirmedFailure('body-mismatch');return undefined;}
-    return {status:'complete',text,characterCount:text.length,reader:source.articlePolicy.bodyFormat,sha256:articleHash(text),sourceUrl:item.canonicalUrl,checkedAt};
+    return {status:'complete',text,characterCount:text.length,reader:source.articlePolicy.bodyFormat,sha256:articleHash(text),sourceUrl:item.canonicalUrl,checkedAt,...attribution};
   }catch{return undefined;}
 }
 function extractYicaiArticle(html,expectedTitle){
  if(decode(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1]??'')!==expectedTitle) return undefined;
  const section=html.match(/<div\b[^>]*id=["']multi-text["'][^>]*>([\s\S]*?)<\/div>\s*<div\b[^>]*id=["']jb_report["']/i)?.[1];
+ if(!section||[...section.matchAll(/<p\b/g)].length<2) return undefined;
+ const text=decode(section);return text.length>=100?text:undefined;
+}
+function extractThsArticle(html,expectedTitle){
+ if(decode(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1]??'')!==expectedTitle) return undefined;
+ const section=html.match(/<div\b[^>]*class=["']news-content-parsed["'][^>]*>([\s\S]*?)<\/div>\s*<\/div>\s*<\/div>\s*<span\b[^>]*>免责声明：/i)?.[1];
  if(!section||[...section.matchAll(/<p\b/g)].length<2) return undefined;
  const text=decode(section);return text.length>=100?text:undefined;
 }
