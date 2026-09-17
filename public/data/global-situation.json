@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-17T15:16:15.193Z",
-  "lastSuccessfulAt": "2026-09-17T15:16:15.193Z",
+  "attemptedAt": "2026-09-17T18:13:10.678Z",
+  "lastSuccessfulAt": "2026-09-17T18:13:10.678Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -45,7 +45,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 36
+      "itemCount": 39
     },
     {
       "id": "bbc-business",
@@ -68,6 +68,160 @@
   ],
   "events": [
     {
+      "id": "ec1210a4cb41",
+      "headline": "Mixed feelings from consumers as electricity discount to be given to NI households",
+      "sourceHeadline": "Mixed feelings from consumers as electricity discount to be given to NI households",
+      "oneLine": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "oneSentenceExplanation": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "summary": "The one-off £63 reduction in electricity bills will be applied from next month.",
+      "publishedAt": "2026-09-17T17:00:01.000Z",
+      "firstPublishedAt": "2026-09-17T17:00:01.000Z",
+      "latestSourceAt": "2026-09-17T17:00:01.000Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
+      "region": "middle-east",
+      "countries": [],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "medium",
+        "score": 3,
+        "criteria": [
+          "energySupply",
+          "growth",
+          "earnings"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 3,
+      "relevanceReasons": [
+        "energySupply",
+        "growth",
+        "earnings"
+      ],
+      "fact": [
+        "The one-off £63 reduction in electricity bills will be applied from next month."
+      ],
+      "factSummary": "The one-off £63 reduction in electricity bills will be applied from next month.",
+      "marketView": [
+        "本条来源报告：Mixed feelings from consumers as electricity discount to be given to NI households。以下为条件性机制参考，不是已核实的市场结论。",
+        "新增用电需要电源、电网和接入容量同时跟上。需求增长不等于电价必涨，也不等于所有能源企业受益。",
+        "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，企业供电成本可能变化。这是一种有条件的路径。"
+      ],
+      "simpleExample": "新增园区需要更多电。如果现有容量够用，需求增加未必推高账单；容量不足则需要先扩建。",
+      "professionalConcept": "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "电网设备企业",
+          "explanation": "扩容可能形成订单，但要看招标、交付与利润率。"
+        },
+        {
+          "name": "数据中心企业",
+          "explanation": "供电影响项目回报，长协和自备电源可能抵消影响。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "watchConditions": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cjvgy5yqvpy2o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-17T17:00:01.000Z"
+        }
+      ]
+    },
+    {
       "id": "9642379024d8",
       "headline": "Interest rates held but Bank signals rise if energy prices stay high",
       "sourceHeadline": "Interest rates held but Bank signals rise if energy prices stay high",
@@ -77,7 +231,7 @@
       "publishedAt": "2026-09-17T14:05:38.000Z",
       "firstPublishedAt": "2026-09-17T14:05:38.000Z",
       "latestSourceAt": "2026-09-17T14:05:38.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -259,7 +413,7 @@
       "publishedAt": "2026-09-17T13:02:40.000Z",
       "firstPublishedAt": "2026-09-17T13:02:40.000Z",
       "latestSourceAt": "2026-09-17T13:02:40.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -405,7 +559,7 @@
       "publishedAt": "2026-09-17T12:41:05.000Z",
       "firstPublishedAt": "2026-09-17T12:41:05.000Z",
       "latestSourceAt": "2026-09-17T12:41:05.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -722,6 +876,152 @@
       ]
     },
     {
+      "id": "e1e723274e70",
+      "headline": "Canada welcomes EU proposal to become 'associate member'",
+      "sourceHeadline": "Canada welcomes EU proposal to become 'associate member'",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "Canadian Prime Minister Mark Carney said a Canada-EU alliance would create a \"beacon for other democracies\".",
+      "publishedAt": "2026-09-17T12:27:18.000Z",
+      "firstPublishedAt": "2026-09-17T12:27:18.000Z",
+      "latestSourceAt": "2026-09-17T12:27:18.000Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Canadian Prime Minister Mark Carney said a Canada-EU alliance would create a \"beacon for other democracies\"."
+      ],
+      "factSummary": "Canadian Prime Minister Mark Carney said a Canada-EU alliance would create a \"beacon for other democracies\".",
+      "marketView": [
+        "本条来源报告：Canada welcomes EU proposal to become 'associate member'。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-17T12:27:18.000Z"
+        }
+      ]
+    },
+    {
       "id": "0ef89d71603b",
       "headline": "What's happening to UK interest rates and what does it mean for mortgages?",
       "sourceHeadline": "What's happening to UK interest rates and what does it mean for mortgages?",
@@ -731,7 +1031,7 @@
       "publishedAt": "2026-09-17T11:59:02.000Z",
       "firstPublishedAt": "2026-09-17T11:59:02.000Z",
       "latestSourceAt": "2026-09-17T11:59:02.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1379,7 +1679,7 @@
       "publishedAt": "2026-09-17T05:33:29.000Z",
       "firstPublishedAt": "2026-09-17T05:33:29.000Z",
       "latestSourceAt": "2026-09-17T05:33:29.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1569,7 +1869,7 @@
       "publishedAt": "2026-09-17T05:00:36.000Z",
       "firstPublishedAt": "2026-09-17T05:00:36.000Z",
       "latestSourceAt": "2026-09-17T05:00:36.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1717,7 +2017,7 @@
       "publishedAt": "2026-09-17T00:40:17.000Z",
       "firstPublishedAt": "2026-09-17T00:40:17.000Z",
       "latestSourceAt": "2026-09-17T00:40:17.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "global",
       "countries": [],
       "topic": "monetary-policy",
@@ -1889,7 +2189,7 @@
       "publishedAt": "2026-09-17T00:38:50.000Z",
       "firstPublishedAt": "2026-09-17T00:38:50.000Z",
       "latestSourceAt": "2026-09-17T00:38:50.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2059,7 +2359,7 @@
       "publishedAt": "2026-09-16T22:26:10.000Z",
       "firstPublishedAt": "2026-09-16T22:26:10.000Z",
       "latestSourceAt": "2026-09-16T22:26:10.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2403,7 +2703,7 @@
       "publishedAt": "2026-09-16T21:24:24.000Z",
       "firstPublishedAt": "2026-09-16T21:24:24.000Z",
       "latestSourceAt": "2026-09-16T21:24:24.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -2583,7 +2883,7 @@
       "publishedAt": "2026-09-16T19:12:48.000Z",
       "firstPublishedAt": "2026-09-16T19:12:48.000Z",
       "latestSourceAt": "2026-09-16T19:12:48.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2731,7 +3031,7 @@
       "publishedAt": "2026-09-16T18:00:00.000Z",
       "firstPublishedAt": "2026-09-16T18:00:00.000Z",
       "latestSourceAt": "2026-09-16T18:00:00.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2905,7 +3205,7 @@
       "publishedAt": "2026-09-16T18:00:00.000Z",
       "firstPublishedAt": "2026-09-16T18:00:00.000Z",
       "latestSourceAt": "2026-09-16T18:00:00.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -3075,7 +3375,7 @@
       "publishedAt": "2026-09-16T14:52:38.000Z",
       "firstPublishedAt": "2026-09-16T14:52:38.000Z",
       "latestSourceAt": "2026-09-16T14:52:38.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -3225,7 +3525,7 @@
       "publishedAt": "2026-09-16T14:50:26.000Z",
       "firstPublishedAt": "2026-09-16T14:50:26.000Z",
       "latestSourceAt": "2026-09-16T14:50:26.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3371,7 +3671,7 @@
       "publishedAt": "2026-09-16T14:30:51.000Z",
       "firstPublishedAt": "2026-09-16T14:30:51.000Z",
       "latestSourceAt": "2026-09-16T14:30:51.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -3559,7 +3859,7 @@
       "publishedAt": "2026-09-16T14:21:37.000Z",
       "firstPublishedAt": "2026-09-16T14:21:37.000Z",
       "latestSourceAt": "2026-09-16T14:21:37.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
+      "fetchedAt": "2026-09-17T18:13:10.678Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -3696,314 +3996,6 @@
           "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/cqr7dj1e34z9o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-16T14:21:37.000Z"
-        }
-      ]
-    },
-    {
-      "id": "74f4526c0b31",
-      "headline": "EU chief backs plan for Canada to become 'associate member'",
-      "sourceHeadline": "EU chief backs plan for Canada to become 'associate member'",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Canada is seeking closer ties with EU after a breakdown in relations with the US and its president Donald Trump.",
-      "publishedAt": "2026-09-16T12:36:51.000Z",
-      "firstPublishedAt": "2026-09-16T12:36:51.000Z",
-      "latestSourceAt": "2026-09-16T12:36:51.000Z",
-      "fetchedAt": "2026-09-16T22:55:49.936Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Canada is seeking closer ties with EU after a breakdown in relations with the US and its president Donald Trump."
-      ],
-      "factSummary": "Canada is seeking closer ties with EU after a breakdown in relations with the US and its president Donald Trump.",
-      "marketView": [
-        "本条来源报告：EU chief backs plan for Canada to become 'associate member'。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-16T12:36:51.000Z"
-        }
-      ]
-    },
-    {
-      "id": "f870747cc571",
-      "headline": "World News in Brief: Shipping alert from IMO, democracy vanishing in Nicaragua, alert over political ‘denialism’",
-      "sourceHeadline": "World News in Brief: Shipping alert from IMO, democracy vanishing in Nicaragua, alert over political ‘denialism’",
-      "oneLine": "本条涉及航线与交付风险；是否影响能源价格，需要另查实际供应。",
-      "oneSentenceExplanation": "本条涉及航线与交付风险；是否影响能源价格，需要另查实际供应。",
-      "summary": "Amid a rising number of attacks on shipping in key waterways in the Middle East linked to the US-Iran war, the head of UN maritime agency, Mr. Arsenio Dominguez, has insisted that the conflict is not a “pretext” to target “innocent seafarers”.",
-      "publishedAt": "2026-09-16T12:00:00.000Z",
-      "firstPublishedAt": "2026-09-16T12:00:00.000Z",
-      "latestSourceAt": "2026-09-16T12:00:00.000Z",
-      "fetchedAt": "2026-09-17T15:16:15.193Z",
-      "region": "middle-east",
-      "countries": [],
-      "topic": "energy-security",
-      "eventType": "energy-security",
-      "relevance": {
-        "level": "high",
-        "score": 7,
-        "criteria": [
-          "energySupply",
-          "trade",
-          "supplyChain",
-          "inflation",
-          "growth",
-          "earnings",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "high",
-      "marketRelevanceScore": 7,
-      "relevanceReasons": [
-        "energySupply",
-        "trade",
-        "supplyChain",
-        "inflation",
-        "growth",
-        "earnings",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Amid a rising number of attacks on shipping in key waterways in the Middle East linked to the US-Iran war, the head of UN maritime agency, Mr. Arsenio Dominguez, has insisted that the conflict is not a “pretext” to target “innocent seafarers”."
-      ],
-      "factSummary": "Amid a rising number of attacks on shipping in key waterways in the Middle East linked to the US-Iran war, the head of UN maritime agency, Mr. Arsenio Dominguez, has insisted that the conflict is not a “pretext” to target “innocent seafarers”.",
-      "marketView": [
-        "本条来源报告：World News in Brief: Shipping alert from IMO, democracy vanishing in Nicaragua, alert over political ‘denialism’。以下为条件性机制参考，不是已核实的市场结论。",
-        "航运受阻不等于石油供给减少。先核实航线、货物和港口，再判断是否绕行以及谁承担成本。",
-        "条件性机制参考：绕行、保险费与交付周期可能改变贸易成本，不是已观察到的价格反应。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，交付与企业利润可能受压。这是一种有条件的路径。"
-      ],
-      "simpleExample": "一批货原本十天送到，如果实际绕行，可能多付运费、多占用库存资金。没有使用受影响航线的企业，未必受影响。",
-      "professionalConcept": "条件性机制参考：绕行、保险费与交付周期可能改变贸易成本，不是已观察到的价格反应。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "航线安全风险",
-          "beginnerExplanation": "来源报告航运风险，需核实范围。",
-          "condition": "存在实际航线暴露",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "船舶可能绕行",
-          "beginnerExplanation": "路线更长，交付可能延迟。",
-          "condition": "船公司实际改变航线",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "运费与保险成本可能增加",
-          "beginnerExplanation": "航程和保险风险可能增加账单。",
-          "condition": "运力和保险安排无法抵消",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "交付与企业利润可能受压",
-          "beginnerExplanation": "进口商可能增加库存或承担成本。",
-          "condition": "成本无法完全转嫁",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "航线安全风险",
-          "beginnerExplanation": "来源报告航运风险，需核实范围。",
-          "condition": "存在实际航线暴露",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "船舶可能绕行",
-          "beginnerExplanation": "路线更长，交付可能延迟。",
-          "condition": "船公司实际改变航线",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "运费与保险成本可能增加",
-          "beginnerExplanation": "航程和保险风险可能增加账单。",
-          "condition": "运力和保险安排无法抵消",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "交付与企业利润可能受压",
-          "beginnerExplanation": "进口商可能增加库存或承担成本。",
-          "condition": "成本无法完全转嫁",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "航运企业",
-          "explanation": "航程和运费影响收入，但燃料、保险和运营成本也可能增加。"
-        },
-        {
-          "name": "进口企业",
-          "explanation": "运输延迟可能增加库存占款，本地供应和固定合同可能减弱影响。"
-        }
-      ],
-      "relatedIndustries": [
-        "能源",
-        "航空",
-        "航运",
-        "化工"
-      ],
-      "knowledgeIds": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "relatedKnowledgePoints": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "conditionsThatChangeView": [
-        "船舶没有实际绕行",
-        "航线恢复安全",
-        "货物使用其他路线",
-        "运力充足或合同锁定费用"
-      ],
-      "watchConditions": [
-        "船舶没有实际绕行",
-        "航线恢复安全",
-        "货物使用其他路线",
-        "运力充足或合同锁定费用"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168352",
-          "publishedAt": "2026-09-16T12:00:00.000Z"
         }
       ]
     }

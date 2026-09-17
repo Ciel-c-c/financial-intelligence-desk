@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-17T15:16:15.193Z",
-  "lastSuccessfulAt": "2026-09-17T15:16:15.193Z",
+  "attemptedAt": "2026-09-17T18:13:10.678Z",
+  "lastSuccessfulAt": "2026-09-17T18:13:10.678Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T15:16:15.193Z"
+      "lastSuccessfulAt": "2026-09-17T18:13:10.678Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-17T15:16:15.193Z"
+      "lastSuccessfulAt": "2026-09-17T18:13:10.678Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T15:16:15.193Z"
+      "lastSuccessfulAt": "2026-09-17T18:13:10.678Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T15:16:15.193Z"
+      "lastSuccessfulAt": "2026-09-17T18:13:10.678Z"
     }
   ],
   "sourceHealth": [
@@ -67,7 +67,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 36
+      "itemCount": 39
     },
     {
       "id": "bbc-business",
@@ -98,7 +98,7 @@
       "name": "国家统计局（新闻）",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "news-fed",
@@ -128,7 +128,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 36
+      "itemCount": 39
     },
     {
       "id": "news-bbc-business",
@@ -157,13 +157,12 @@
       "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 1,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 1,
-        "professional-sections": 1
+        "facts": 2
       }
     }
   ],
