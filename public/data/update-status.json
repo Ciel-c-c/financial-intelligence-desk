@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-17T13:53:02.958Z",
-  "lastSuccessfulAt": "2026-09-17T13:53:02.958Z",
+  "attemptedAt": "2026-09-17T14:00:42.307Z",
+  "lastSuccessfulAt": "2026-09-17T14:00:42.307Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T13:53:02.958Z"
+      "lastSuccessfulAt": "2026-09-17T14:00:42.307Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-17T13:53:02.958Z"
+      "lastSuccessfulAt": "2026-09-17T14:00:42.307Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T13:53:02.958Z"
+      "lastSuccessfulAt": "2026-09-17T14:00:42.307Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-17T13:53:02.958Z"
+      "lastSuccessfulAt": "2026-09-17T14:00:42.307Z"
     }
   ],
   "sourceHealth": [
@@ -37,7 +37,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "fed",
@@ -151,15 +151,13 @@
     {
       "id": "news-groq-editorial",
       "name": "Groq 完整正文解读（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "HTTP 429",
+      "status": "ok",
+      "itemCount": 3,
       "attempted": 4,
-      "rejected": 4,
-      "failures": 1,
+      "rejected": 1,
+      "failures": 0,
       "rejectionReasons": {
-        "classification": 3,
-        "required-fields": 1
+        "facts": 1
       }
     }
   ],
