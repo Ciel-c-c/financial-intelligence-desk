@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-18T11:13:16.470Z",
-  "lastSuccessfulAt": "2026-09-18T11:13:16.470Z",
+  "attemptedAt": "2026-09-18T14:59:27.845Z",
+  "lastSuccessfulAt": "2026-09-18T14:59:27.845Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-18T11:13:16.470Z"
+      "lastSuccessfulAt": "2026-09-18T14:59:27.845Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-18T11:13:16.470Z"
+      "lastSuccessfulAt": "2026-09-18T14:59:27.845Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-18T11:13:16.470Z"
+      "lastSuccessfulAt": "2026-09-18T14:59:27.845Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-18T11:13:16.470Z"
+      "lastSuccessfulAt": "2026-09-18T14:59:27.845Z"
     }
   ],
   "sourceHealth": [
@@ -67,7 +67,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 28
+      "itemCount": 29
     },
     {
       "id": "bbc-business",
@@ -85,7 +85,7 @@
       "id": "eia-energy",
       "name": "U.S. Energy Information Administration",
       "status": "ok",
-      "itemCount": 16
+      "itemCount": 17
     },
     {
       "id": "news-cnfin",
@@ -128,7 +128,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 28
+      "itemCount": 29
     },
     {
       "id": "news-bbc-business",
@@ -146,7 +146,7 @@
       "id": "news-eia-energy",
       "name": "U.S. Energy Information Administration（新闻）",
       "status": "ok",
-      "itemCount": 16
+      "itemCount": 17
     },
     {
       "id": "news-groq-editorial",
@@ -157,12 +157,13 @@
       "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 2
+        "facts": 1,
+        "language": 1
       }
     }
   ],
