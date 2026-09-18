@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-18T14:59:27.845Z",
-  "lastSuccessfulAt": "2026-09-18T14:59:27.845Z",
+  "attemptedAt": "2026-09-18T18:28:14.004Z",
+  "lastSuccessfulAt": "2026-09-18T18:28:14.004Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -45,7 +45,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 29
+      "itemCount": 27
     },
     {
       "id": "bbc-business",
@@ -74,10 +74,10 @@
       "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "summary": "The French president says he has tasked the government with protecting critical infrastructure and defence industry sites.",
-      "publishedAt": "2026-09-18T14:42:01.000Z",
-      "firstPublishedAt": "2026-09-18T14:42:01.000Z",
-      "latestSourceAt": "2026-09-18T14:42:01.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
+      "publishedAt": "2026-09-18T18:04:38.000Z",
+      "firstPublishedAt": "2026-09-18T18:04:38.000Z",
+      "latestSourceAt": "2026-09-18T18:04:38.000Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -211,7 +211,195 @@
         {
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-18T14:42:01.000Z"
+          "publishedAt": "2026-09-18T18:04:38.000Z"
+        }
+      ]
+    },
+    {
+      "id": "810addbb4d81",
+      "headline": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to US-Iran war",
+      "sourceHeadline": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to US-Iran war",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
+      "publishedAt": "2026-09-18T17:57:30.000Z",
+      "firstPublishedAt": "2026-09-18T17:57:30.000Z",
+      "latestSourceAt": "2026-09-18T17:57:30.000Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
+      "region": "middle-east",
+      "countries": [],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "energySupply",
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "energySupply",
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross."
+      ],
+      "factSummary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
+      "marketView": [
+        "本条来源报告：'We simply don't know' - JP Morgan struggling to forecast oil prices due to US-Iran war。以下为条件性机制参考，不是已核实的市场结论。",
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "watchConditions": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-18T17:57:30.000Z"
         }
       ]
     },
@@ -225,7 +413,7 @@
       "publishedAt": "2026-09-18T14:00:00.000Z",
       "firstPublishedAt": "2026-09-18T14:00:00.000Z",
       "latestSourceAt": "2026-09-18T14:00:00.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -415,7 +603,7 @@
       "publishedAt": "2026-09-18T12:12:59.000Z",
       "firstPublishedAt": "2026-09-18T12:12:59.000Z",
       "latestSourceAt": "2026-09-18T12:12:59.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -569,7 +757,7 @@
       "publishedAt": "2026-09-18T07:14:57.000Z",
       "firstPublishedAt": "2026-09-18T07:14:57.000Z",
       "latestSourceAt": "2026-09-18T07:14:57.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
       "region": "japan",
       "countries": [
         "JP"
@@ -751,7 +939,7 @@
       "publishedAt": "2026-09-17T23:24:07.000Z",
       "firstPublishedAt": "2026-09-17T23:24:07.000Z",
       "latestSourceAt": "2026-09-17T23:24:07.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1085,7 +1273,7 @@
       "publishedAt": "2026-09-17T17:00:01.000Z",
       "firstPublishedAt": "2026-09-17T17:00:01.000Z",
       "latestSourceAt": "2026-09-17T17:00:01.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1239,7 +1427,7 @@
       "publishedAt": "2026-09-17T14:05:38.000Z",
       "firstPublishedAt": "2026-09-17T14:05:38.000Z",
       "latestSourceAt": "2026-09-17T14:05:38.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1893,7 +2081,7 @@
       "publishedAt": "2026-09-17T12:27:18.000Z",
       "firstPublishedAt": "2026-09-17T12:27:18.000Z",
       "latestSourceAt": "2026-09-17T12:27:18.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2877,7 +3065,7 @@
       "publishedAt": "2026-09-17T05:00:36.000Z",
       "firstPublishedAt": "2026-09-17T05:00:36.000Z",
       "latestSourceAt": "2026-09-17T05:00:36.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -3025,7 +3213,7 @@
       "publishedAt": "2026-09-17T00:40:17.000Z",
       "firstPublishedAt": "2026-09-17T00:40:17.000Z",
       "latestSourceAt": "2026-09-17T00:40:17.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
       "region": "global",
       "countries": [],
       "topic": "monetary-policy",
@@ -3711,7 +3899,7 @@
       "publishedAt": "2026-09-16T21:24:24.000Z",
       "firstPublishedAt": "2026-09-16T21:24:24.000Z",
       "latestSourceAt": "2026-09-16T21:24:24.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -3878,154 +4066,6 @@
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/videos/c9dr7e1lr265o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-16T21:24:24.000Z"
-        }
-      ]
-    },
-    {
-      "id": "cf9f83cfe742",
-      "headline": "Trump chief of staff Susie Wiles announces she's cancer-free",
-      "sourceHeadline": "Trump chief of staff Susie Wiles announces she's cancer-free",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "The 69-year-old White House chief of staff is a powerful figure and particularly close to the US president.",
-      "publishedAt": "2026-09-16T19:12:48.000Z",
-      "firstPublishedAt": "2026-09-16T19:12:48.000Z",
-      "latestSourceAt": "2026-09-16T19:12:48.000Z",
-      "fetchedAt": "2026-09-18T05:54:56.006Z",
-      "region": "united-states",
-      "countries": [
-        "US"
-      ],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "The 69-year-old White House chief of staff is a powerful figure and particularly close to the US president."
-      ],
-      "factSummary": "The 69-year-old White House chief of staff is a powerful figure and particularly close to the US president.",
-      "marketView": [
-        "本条来源报告：Trump chief of staff Susie Wiles announces she's cancer-free。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/c6j9xrx80ekro?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-16T19:12:48.000Z"
         }
       ]
     }
