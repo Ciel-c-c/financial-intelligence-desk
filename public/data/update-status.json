@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-18T05:54:56.006Z",
-  "lastSuccessfulAt": "2026-09-18T05:54:56.006Z",
+  "attemptedAt": "2026-09-18T11:13:16.470Z",
+  "lastSuccessfulAt": "2026-09-18T11:13:16.470Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-18T05:54:56.006Z"
+      "lastSuccessfulAt": "2026-09-18T11:13:16.470Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-18T05:54:56.006Z"
+      "lastSuccessfulAt": "2026-09-18T11:13:16.470Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-18T05:54:56.006Z"
+      "lastSuccessfulAt": "2026-09-18T11:13:16.470Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-18T05:54:56.006Z"
+      "lastSuccessfulAt": "2026-09-18T11:13:16.470Z"
     }
   ],
   "sourceHealth": [
@@ -55,7 +55,7 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 46
+      "itemCount": 44
     },
     {
       "id": "un",
@@ -67,7 +67,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 41
+      "itemCount": 28
     },
     {
       "id": "bbc-business",
@@ -116,7 +116,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 46
+      "itemCount": 44
     },
     {
       "id": "news-un",
@@ -128,7 +128,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 41
+      "itemCount": 28
     },
     {
       "id": "news-bbc-business",
@@ -157,13 +157,12 @@
       "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 1,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "so-what": 1,
-        "facts": 1
+        "facts": 2
       }
     }
   ],
