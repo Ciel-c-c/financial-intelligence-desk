@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-19T05:52:33.047Z",
-  "lastSuccessfulAt": "2026-09-19T05:52:33.047Z",
-  "nextExpectedAt": "2026-09-19T06:52:33.047Z",
+  "attemptedAt": "2026-09-19T10:57:52.689Z",
+  "lastSuccessfulAt": "2026-09-19T10:57:52.689Z",
+  "nextExpectedAt": "2026-09-19T11:57:52.689Z",
   "status": "delayed",
   "latest": [
     {
@@ -15,7 +15,7 @@
       "originalTitle": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
       "originalSummary": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
       "publishedAt": "2026-09-18T15:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "fc5acb83c34ebff7568c",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -55,6 +55,253 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6j9x4387lzxo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Millions without power as Cuba hit by latest major blackout",
+      "originalSummary": "Widespread power outages have become increasingly common due to fuel shortages made worse by a US blockade.",
+      "publishedAt": "2026-09-19T10:27:37.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "62861f56d8c43695cd67",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|millionswithoutp|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [
+        "Widespread power outages have become increasingly common due to fuel shortages made worse by a US blockade."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472167_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472167_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "新华财经晚报：商务部新闻发言人就中美经贸磋商有关问题答记者问",
+      "publishedAt": "2026-09-19T09:59:12.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 2330,
+        "reader": "cnfin-body",
+        "sha256": "09c0afe16b8049ea97b26e7538f017e55497c437bcc62b30b65e4e9235b9e996",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472167_1.html",
+        "checkedAt": "2026-09-19T10:57:52.689Z"
+      },
+      "id": "91889e930da90e467c61",
+      "verificationStatus": "verified",
+      "titleZh": "新华财经晚报：商务部新闻发言人就中美经贸磋商有关问题答记者问",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|新华财经晚报商务部新闻发言人就中|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "09c0afe16b8049ea97b26e7538f017e55497c437bcc62b30b65e4e9235b9e996",
+        "count": 1,
+        "lastAttemptAt": "2026-09-19T10:57:52.689Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[1].numbers"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqwyzdnk442lo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Deadly shark attack prompts rare kill order in Western Australia",
+      "originalSummary": "Police boats and helicopters are patrolling Perth's beaches as authorities continue their search for the swimmer's body, and the shark that attacked him.",
+      "publishedAt": "2026-09-19T09:19:12.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "6a7660546ddd25df8cdf",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|deadlysharkattac|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [
+        "Police boats and helicopters are patrolling Perth's beaches as authorities continue their search for the swimmer's body, and the shark that attacked him."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472152_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472152_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "铁路12306持续识别遏制恶意抢票行为 维护公平售票环境",
+      "publishedAt": "2026-09-19T09:08:06.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 582,
+        "reader": "cnfin-body",
+        "sha256": "d7efc601479a178ac9dcc03511eb539d1093c87d9ebb169155b766888aa547be",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472152_1.html",
+        "checkedAt": "2026-09-19T10:57:52.689Z"
+      },
+      "id": "eb51af9dce71fb450c36",
+      "verificationStatus": "verified",
+      "titleZh": "铁路12306持续识别遏制恶意抢票行为 维护公平售票环境",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|铁路12306持续识别遏制恶意抢|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "d7efc601479a178ac9dcc03511eb539d1093c87d9ebb169155b766888aa547be",
+        "count": 1,
+        "lastAttemptAt": "2026-09-19T10:57:52.689Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "background[0].numbers"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472132_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472132_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "北京依法对四家在线酒店旅游预订平台企业立案调查",
+      "publishedAt": "2026-09-19T07:35:45.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 561,
+        "reader": "cnfin-body",
+        "sha256": "b7d0be2cd96b6968d7b845bcfc3508375ef0b4ce5914b9b852095d2a50eaf8f3",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472132_1.html",
+        "checkedAt": "2026-09-19T10:57:52.689Z"
+      },
+      "id": "b547f207fb352be9f708",
+      "verificationStatus": "verified",
+      "titleZh": "北京依法对四家在线酒店旅游预订平台企业立案调查",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|北京依法对四家在线酒店旅游预订平|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
       "sourceTier": "verified",
@@ -63,14 +310,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【中经社信号】车企竞逐人形机器人新赛道",
       "publishedAt": "2026-09-19T05:40:20.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "article": {
         "status": "complete",
         "characterCount": 1138,
         "reader": "cnfin-body",
         "sha256": "b4940fdcd6ec43f5792565b4c3740db895b3f23521d16f67120c13c1d788521c",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472126_1.html",
-        "checkedAt": "2026-09-19T05:52:33.047Z"
+        "checkedAt": "2026-09-19T10:57:52.689Z"
       },
       "id": "1bf04db1ed153fc33fb8",
       "verificationStatus": "verified",
@@ -123,7 +370,7 @@
       "originalTitle": "Trump says he is banning CNN and Politico from White House",
       "originalSummary": "The US president has had a tense and fiery relationship with the US media throughout his political career.",
       "publishedAt": "2026-09-19T05:36:36.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "a86a1176df3201c3330a",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -164,7 +411,7 @@
       "originalTitle": "What goes into diesel prices?",
       "originalSummary": "The price of distillate fuel oil, often sold as diesel, is driven by the price of crude oil, retail margins, distribution costs, taxes, and crack spreads, the indicator we use for refining margins. Tight global supplies of distillate fuel oil and elevated crude oil prices have driven prices higher in recent months.",
       "publishedAt": "2026-09-18T14:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "dc09bd33197ddea24301",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -204,14 +451,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【环球财经】国债收益率升高加剧法国财政脆弱性",
       "publishedAt": "2026-09-19T04:41:57.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "article": {
         "status": "complete",
         "characterCount": 1072,
         "reader": "cnfin-body",
         "sha256": "b2b576526ed10c25d7f2daeef81f19c1c0a71d5b624acee1102721099c209534",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472118_1.html",
-        "checkedAt": "2026-09-19T05:52:33.047Z"
+        "checkedAt": "2026-09-19T10:57:52.689Z"
       },
       "id": "69766064b63481d6b4ff",
       "verificationStatus": "verified",
@@ -263,14 +510,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【环球财经】德国政府拟多措并举缓解高油价压力",
       "publishedAt": "2026-09-19T04:37:18.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "article": {
         "status": "complete",
         "characterCount": 605,
         "reader": "cnfin-body",
         "sha256": "c1390278176e75148df18e48226baf11630bb8bb7f40b4d751affcdaadedae9c",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472111_1.html",
-        "checkedAt": "2026-09-19T05:52:33.047Z"
+        "checkedAt": "2026-09-19T10:57:52.689Z"
       },
       "id": "4770ffa44b4f2b1522e3",
       "verificationStatus": "verified",
@@ -311,7 +558,7 @@
       "originalTitle": "Google's Gemini AI hacked three companies in security test",
       "originalSummary": "The AI model accessed the internet and guessed credentials to three websites, a Google official told the BBC.",
       "publishedAt": "2026-09-19T04:27:11.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "d9f946c3e335d90d8b05",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -352,7 +599,7 @@
       "originalTitle": "Saudi Arabia issues first air raid alerts for Riyadh since Houthis escalated attacks",
       "originalSummary": "Residents later received the all-clear after explosions were reported in the capital.",
       "publishedAt": "2026-09-19T04:20:47.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "da446ae1942ee9d5f9e2",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -392,14 +639,14 @@
       "originalLanguage": "zh",
       "originalTitle": "今年前8个月全国铁路发送旅客33.2亿人次",
       "publishedAt": "2026-09-19T03:03:28.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "article": {
         "status": "complete",
         "characterCount": 404,
         "reader": "cnfin-body",
         "sha256": "cd0546228a104f8a501f5a7373404ba99fb0a509f96961fa444b9f2bdad25d33",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472081_1.html",
-        "checkedAt": "2026-09-19T05:52:33.047Z"
+        "checkedAt": "2026-09-19T10:57:52.689Z"
       },
       "id": "f0f0c88e3ecef32a41e3",
       "verificationStatus": "verified",
@@ -440,7 +687,7 @@
       "originalTitle": "‘Violence will only defer a problem’: UN Assembly President on trust, AI and lessons from the Rohingya crisis",
       "originalSummary": "Khalilur Rahman took the gavel as President of the UN&nbsp;General Assembly&#039;s 81st session amid what he calls a crisis of confidence in the organization he has served – in one capacity or another – for 35 years.&nbsp;",
       "publishedAt": "2026-09-18T12:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "e2d0e6b7a350ce4c7dd7",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -481,7 +728,7 @@
       "originalTitle": "Security Council LIVE: UN peacekeeping under pressure",
       "originalSummary": "UN peacekeepers have increasingly been sent into places where there is no peace to keep – under resourced, outgunned and exposed to violence they are not equipped to counter. The Security Council meets this afternoon in New York to confront that problem, with Secretary-General António Guterres briefing ambassadors on how to close the gap.",
       "publishedAt": "2026-09-18T12:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "ea62417b4bfb7d925f44",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -522,7 +769,7 @@
       "originalTitle": "Sexual violence against civilians and POW’s in Ukraine widespread and ‘abhorrent’",
       "originalSummary": "Over 1,000 cases of sexual violence against civilians and prisoners of war (POWs) in Ukraine have been documented from the start of Russia’s invasion to the end of July this year.",
       "publishedAt": "2026-09-18T12:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "1219a51140299256573c",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -563,7 +810,7 @@
       "originalTitle": "Less than 4 years from development goals deadline, progress shows what’s possible",
       "originalSummary": "For Benin, making progress on the UN’s Sustainable Development Goals (SDGs) has meant finding new ways to finance development.",
       "publishedAt": "2026-09-18T12:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "f24184edea8e202e9637",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -604,7 +851,7 @@
       "originalTitle": "Women and girls pay high price in DR Congo Ebola outbreak",
       "originalSummary": "The deadly Ebola outbreak in the Democratic Republic of the Congo (DRC) has taken a disproportionate toll on women and girls, many of whom are on the frontlines caring for patients as well as their own families despite the high risk of infection.",
       "publishedAt": "2026-09-18T12:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "17cd57b7119bb8f08a32",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -645,7 +892,7 @@
       "originalTitle": "Haiti: Child malnutrition crisis worsens amid escalating violence",
       "originalSummary": "Haiti is facing a worsening child malnutrition crisis, with an estimated 253,725 children aged 6 to 59 months projected to suffer from acute malnutrition between June 2026 and May 2027, new UN-backed analysis has revealed.&nbsp;&nbsp;&nbsp;",
       "publishedAt": "2026-09-18T12:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "2c4d7cac7303acc03d32",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -686,7 +933,7 @@
       "originalTitle": "Nepal floods: ‘Apocalyptic’ destruction signals wider climate threat across Himalayas",
       "originalSummary": "The catastrophic flooding that swept away entire villages in northern Nepal could occur again in the country or elsewhere in the Himalayas due to climate change.",
       "publishedAt": "2026-09-18T12:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "23a36bbbaf824a0fa31e",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -727,7 +974,7 @@
       "originalTitle": "Yemen’s humanitarian crisis growing by the hour amid spike in displacement",
       "originalSummary": "People displaced by the renewed fighting in Yemen have described fleeing for their lives amid shelling and gunfire, aid agencies reported on Friday, while highlighting the dramatic increase in humanitarian needs in the country and in Djibouti, where thousands have sought shelter.",
       "publishedAt": "2026-09-18T12:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "67e2bba4176a9c6fe684",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -767,14 +1014,14 @@
       "originalLanguage": "zh",
       "originalTitle": "商务部新闻发言人就中美经贸磋商有关问题答记者问",
       "publishedAt": "2026-09-19T01:53:45.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "article": {
         "status": "complete",
         "characterCount": 149,
         "reader": "cnfin-body",
         "sha256": "81606d9dc97da34251d505b531dbd2de6271897d61509ee552979a78803ef7f0",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472078_1.html",
-        "checkedAt": "2026-09-19T05:52:33.047Z"
+        "checkedAt": "2026-09-19T10:57:52.689Z"
       },
       "id": "3a998869c21932087d3c",
       "verificationStatus": "verified",
@@ -815,7 +1062,7 @@
       "originalTitle": "Warren Buffett steps down after six decades at Berkshire - 'Father Time always wins'",
       "originalSummary": "Since taking control in 1965, Buffett grew a struggling textile mill into a global conglomerate.",
       "publishedAt": "2026-09-18T17:15:02.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "f665c67acfa95c755d34",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -862,7 +1109,7 @@
       "originalTitle": "Ryanair boss Michael O'Leary apologises over 'high-fare rapists' remarks",
       "originalSummary": "O'Leary described his choice of language as \"careless\" and said \"it won't happen again\".",
       "publishedAt": "2026-09-18T17:10:58.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "12b39faae1be1e180893",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -908,14 +1155,14 @@
       "originalLanguage": "zh",
       "originalTitle": "我国力争到2030年三大主粮实现更高水平机械化",
       "publishedAt": "2026-09-19T00:53:40.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "article": {
         "status": "complete",
         "characterCount": 706,
         "reader": "cnfin-body",
         "sha256": "cdb5feb6b3350652fe1224c0736d9cc1d5632a8f90fd31fcc92a3877aeb3ca8d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472067_1.html",
-        "checkedAt": "2026-09-19T05:52:33.047Z"
+        "checkedAt": "2026-09-19T10:57:52.689Z"
       },
       "id": "4ab947283160c859ed1c",
       "verificationStatus": "verified",
@@ -955,14 +1202,14 @@
       "originalLanguage": "zh",
       "originalTitle": "财经聚焦｜十部门出台规划，更好保障百姓“药箱”",
       "publishedAt": "2026-09-19T00:52:47.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "article": {
         "status": "complete",
         "characterCount": 1960,
         "reader": "cnfin-body",
         "sha256": "ffa99ad278ed5453ed5fcb3e78dc5fe391089e6034f129ccfe064175b0f77a9d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472065_1.html",
-        "checkedAt": "2026-09-19T05:52:33.047Z"
+        "checkedAt": "2026-09-19T10:57:52.689Z"
       },
       "id": "8da11642a222902f1838",
       "verificationStatus": "verified",
@@ -1002,14 +1249,14 @@
       "originalLanguage": "zh",
       "originalTitle": "新华财经早报：9月19日",
       "publishedAt": "2026-09-19T00:42:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "article": {
         "status": "complete",
         "characterCount": 3643,
         "reader": "cnfin-body",
         "sha256": "3c2ae0096f9937209a212056daf9cc980dee2eae1d52b2d944d5efd27d150ecf",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260919/4472060_1.html",
-        "checkedAt": "2026-09-19T05:52:33.047Z"
+        "checkedAt": "2026-09-19T10:57:52.689Z"
       },
       "id": "56f77cbb9a319b8e0487",
       "verificationStatus": "verified",
@@ -1050,7 +1297,7 @@
       "originalTitle": "Kerry Kennedy: 'It would be a tragedy' if Kennedy Center is demolished",
       "originalSummary": "The BBC’s Caitríona Perry spoke to the late president's niece, as protesters gathered at the venue to condemn demolition threats.",
       "publishedAt": "2026-09-19T00:03:53.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "b9ba02293a77f4f66872",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1091,7 +1338,7 @@
       "originalTitle": "I found love at an Irish matchmaking festival - and I want others to do the same",
       "originalSummary": "Mary Timby flew to Ireland on a whim last year and met her boyfriend at a matchmaking festival.",
       "publishedAt": "2026-09-18T23:18:02.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "0eaf55aea0730b49505a",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1132,7 +1379,7 @@
       "originalTitle": "Tata Sons: India's corporate crown braces for upheaval amid boardroom revolt",
       "originalSummary": "The Tata boardroom battle has intensified over a re-appointment of its chairman and a diktat to go public.",
       "publishedAt": "2026-09-18T23:07:16.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "4dcec40cc406d081a693",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1173,7 +1420,7 @@
       "originalTitle": "Grim discoveries of murdered women spark fear in South Africa",
       "originalSummary": "Dineo Motapane is one of nine recent victims whose deaths have left a nation traumatised over the level of violence against women.",
       "publishedAt": "2026-09-18T23:04:41.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "4618c045c5172d3135ec",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1214,7 +1461,7 @@
       "originalTitle": "A four-minute warning isn't enough: Russia's new relentless missile tactics exhaust Kyiv residents",
       "originalSummary": "Increasingly frequent and ferocious attacks on the Ukrainian capital have left many on edge.",
       "publishedAt": "2026-09-18T23:03:38.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "59f218901ff8745d3ee3",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1246,54 +1493,6 @@
       "inferences": []
     },
     {
-      "sourceId": "ecb",
-      "sourceName": "European Central Bank",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
-      "canonicalUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260918~295b3ab978.en.html",
-      "originalLanguage": "en",
-      "originalTitle": "ECB Consumer Expectations Survey results – August 2026",
-      "publishedAt": "2026-09-18T08:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "article": {
-        "status": "complete",
-        "text": "18 September 2026 Compared with July 2026: median consumer perceptions of inflation over the past 12 months were unchanged, while median expectations for inflation increased across all horizons; expectations for nominal income growth over the next 12 months were unchanged, as were expectations for spending growth over the next 12 months; expectations for economic growth over the next 12 months were unchanged, while the expected unemployment rate in 12 months’ time decreased; expectations for growth in the price of homes over the next 12 months were unchanged, as were expectations for mortgage interest rates in 12 months’ time. Inflation In August the median rate of perceived inflation over the previous 12 months was 3.5%, the same as in July. Median expectations for inflation over the next 12 months increased to 3.0% from 2.9% in July, while median expectations for inflation three years ahead increased to 2.9% from 2.7% in July and median expectations for inflation five years ahead increased to 2.5% from 2.4% in July. Uncertainty about expectations for inflation over the next 12 months decreased, but remained higher than the level prevailing before the start of the conflict in the Middle East. Respondents in the bottom income quintile continued to report higher inflation perceptions and expectations, on average, than those in the top quintile. Younger respondents (aged 18-34) continued to report lower inflation perceptions and expectations than older respondents (aged 35-54 and 55-70). Inflation results Income and consumption Consumers’ expectations for nominal income growth over the next 12 months were unchanged at 1.0%. As in previous months, expectations were on average higher in the bottom income quintile (1.7%) than in the top quintile (0.7%). Perceived nominal spending growth over the previous 12 months increased in August to 5.2% from 5.1% in July, while expected nominal spending growth over the next 12 months remained unchanged at 3.6%. Income and consumption results Economic growth and labour market Expectations for economic growth over the next 12 months were unchanged at -1.2% in August. Expectations for the unemployment rate 12 months ahead decreased to 11.0% from 11.2% in July. As observed in previous months, households in the bottom income quintile expected the highest unemployment rate 12 months ahead (13.4%), while households in the top income quintile expected the lowest rate (9.4%). Consumers continued to expect the future unemployment rate to be only slightly higher than the perceived current unemployment rate (10.5%), suggesting a broadly stable labour market outlook. Economic growth and labour market results Housing and credit access Consumers expected the price of their home to increase by 3.4% over the next 12 months, unchanged from June. As in previous months, expectations for home price growth over the next 12 months remained on average higher in the lowest income quintile (4.0%) than in the highest income quintile (3.2%). Expectations for mortgage interest rates in 12 months’ time were also unchanged from July, at 4.9%. As in previous months, households in the top income quintile expected the lowest mortgage interest rates 12 months ahead (4.4%), while those in the bottom quintile expected the highest rates (5.7%). The net percentage of households reporting a tightening (relative to those reporting an easing) of access to credit over the previous 12 months declined compared with July, as did the net percentage of households expecting tighter credit conditions over the next 12 months (relative to those expecting an easing). Housing and credit access results The release of the Consumer Expectations Survey (CES) results for September is scheduled for 23 October 2026. For media queries, please contact: Benoit Deeg , tel.: +49 172 1683704. Notes The fieldwork for the latest CES wave was carried out between 6 and 24 August 2026. The main aggregate results for individual countries and the euro area are published on the ECB Data Portal and on the ECB’s website every month. Unless otherwise indicated, the statistics presented in this press release refer to the 2% winsorised mean. For further details, see ECB Consumer Expectations Survey – guide to the computation of aggregate statistics . The CES is a monthly online survey of, currently, around 19,000 adult consumers (i.e. aged 18 or over) from 11 euro area countries: Belgium, Germany, Ireland, Greece, Spain, France, Italy, the Netherlands, Austria, Portugal and Finland. The results are used for policy analysis and complement other data sources used by the ECB. Further information about the survey and the data collected is available on the CES web page . Detailed information can also be found in the following two publications: Bańkowska, K. et al., “ ECB Consumer Expectations Survey: an overview and first evaluation ”, Occasional Paper Series , No 287, ECB, Frankfurt am Main, December 2021; and Georgarakos, D. and Kenny, G., “ Household spending and fiscal support during the COVID-19 pandemic: Insights from a new consumer survey ”, Journal of Monetary Economics , Vol. 129, Supplement, July 2022, pp. S1-S14. The survey results do not represent the views of the ECB’s decision-making bodies or staff.",
-        "characterCount": 5262,
-        "reader": "ecb-section",
-        "sha256": "014c534b8acb81249a8f3ddff0740059931565bb60c481fb484fc663d06ec6af",
-        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260918~295b3ab978.en.html",
-        "checkedAt": "2026-09-19T05:52:33.047Z"
-      },
-      "id": "9861e439fc2040e1083a",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "宏观"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "欧洲",
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|ecbconsumerexpec|2026-09-18",
-      "detailStatus": "professional",
-      "facts": [],
-      "expectations": [],
-      "inferences": []
-    },
-    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -1303,7 +1502,7 @@
       "originalTitle": "US and Denmark reach deal over Greenland after Trump annexation threats",
       "originalSummary": "Trump says the agreement will give the US \"permanent control over security, and all other needs, in Greenland\", though specifics have not been confirmed by Danish officials.",
       "publishedAt": "2026-09-18T22:58:55.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "c9ebf969823b81b4719b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1344,7 +1543,7 @@
       "originalTitle": "Trump signs sweeping Russia sanctions bill",
       "originalSummary": "The bill is named after the late Senator Lindsey Graham, a staunch advocate of aid for Ukraine.",
       "publishedAt": "2026-09-18T22:05:47.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "688d70dd93a829c2185d",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1376,45 +1575,6 @@
       "inferences": []
     },
     {
-      "sourceId": "ecb",
-      "sourceName": "European Central Bank",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
-      "canonicalUrl": "https://www.ecb.europa.eu/press/inter/date/2026/html/ecb.in260918~33f023fe26.en.html",
-      "originalLanguage": "en",
-      "originalTitle": "Boris Vujčić: Interview with Reuters",
-      "publishedAt": "2026-09-18T06:00:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "5daeb4af31472db6602a",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "欧洲",
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|borisvujiintervi|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": []
-    },
-    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -1424,7 +1584,7 @@
       "originalTitle": "Watch: Trump says ban on some news outlets is 'because they're fake news'",
       "originalSummary": "The US president on Friday announced he is \"immediately\" banning CNN, MS NOW and Politico from the White House.",
       "publishedAt": "2026-09-18T20:35:03.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "38af0617e14157eb2091",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1465,7 +1625,7 @@
       "originalTitle": "At least 21 killed after vehicle loaded with explosives rams Pakistan mosque",
       "originalSummary": "A four-year-old child is among those killed in the attack, during which gunmen also opened fire on a police facility.",
       "publishedAt": "2026-09-18T20:17:50.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "0b4f3a2052ce40c8215b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1506,7 +1666,7 @@
       "originalTitle": "Is the Kennedy Center losing 'hundreds of millions of dollars'?",
       "originalSummary": "Records in 2024 show the venue had a surplus of millions of dollars once contributions and grants had been factored in.",
       "publishedAt": "2026-09-18T18:56:17.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "a987dfe502c935ba8dd8",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1547,7 +1707,7 @@
       "originalTitle": "Russian hybrid attacks against Europe intensifying, says Macron",
       "originalSummary": "The French president says he has tasked the government with protecting critical infrastructure and defence industry sites.",
       "publishedAt": "2026-09-18T18:04:38.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "f663651b5e65b4655302",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1588,7 +1748,7 @@
       "originalTitle": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to Trump's war with Iran",
       "originalSummary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
       "publishedAt": "2026-09-18T17:57:30.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "571a9ab985ff78ee0456",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1629,7 +1789,7 @@
       "originalTitle": "North Korean anthem played for South Korea at Asian Games",
       "originalSummary": "Organisers have apologised for playing the North Korean national anthem for the South Korean men's hockey team at the Asian Games in Japan.",
       "publishedAt": "2026-09-18T17:18:09.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "220f4ee5b85732e7b128",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1670,7 +1830,7 @@
       "originalTitle": "Flight chaos caused by 'millisecond' software defect, report says",
       "originalSummary": "The failure led to more than 2,000 flights being cancelled and hundreds of thousands of passengers affected.",
       "publishedAt": "2026-09-18T15:48:58.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "071f16de7b1ad0be67bd",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1711,7 +1871,7 @@
       "originalTitle": "Dozens of suspected illegal miners die in Nigerian custody",
       "originalSummary": "Authorities linked the deaths to disease, but this has been disputed by intelligence reports and relatives of the accused.",
       "publishedAt": "2026-09-18T15:47:28.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "835d78727b479d75a873",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1751,14 +1911,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【财经分析】德国数字经济每年创造近5000亿欧元增加值 数字化深入传统产业释放新动能",
       "publishedAt": "2026-09-18T13:59:08.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "article": {
         "status": "complete",
         "characterCount": 2595,
         "reader": "cnfin-body",
         "sha256": "f4b8680b99a30d53abb9293620a26fa1254315047be736f372731be828a5803e",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260918/4472053_1.html",
-        "checkedAt": "2026-09-19T05:52:33.047Z"
+        "checkedAt": "2026-09-19T10:57:52.689Z"
       },
       "id": "0406714d120abbcc8085",
       "verificationStatus": "verified",
@@ -1811,7 +1971,7 @@
       "originalTitle": "Dragon Deborah opens with a terrible negotiation tactic",
       "originalSummary": "Deborah Meaden makes a bold opening move in response to a pitch.",
       "publishedAt": "2026-09-18T13:49:43.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "a50494b646f26be8d576",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1851,15 +2011,7 @@
       "originalLanguage": "zh",
       "originalTitle": "商务部新闻发言人就媒体称欧盟希中国自愿限制混动汽车对欧出口答记者问",
       "publishedAt": "2026-09-18T13:45:39.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 175,
-        "reader": "cnfin-body",
-        "sha256": "6175d02f681dce052bbb55d4397a02d89b8c6e3dde7896f1f5e5b1001ab893af",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260918/4472045_1.html",
-        "checkedAt": "2026-09-19T05:52:33.047Z"
-      },
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "298d861a8b7f54c214f6",
       "verificationStatus": "verified",
       "titleZh": "商务部新闻发言人就媒体称欧盟希中国自愿限制混动汽车对欧出口答记者问",
@@ -1887,19 +2039,426 @@
       "detailStatus": "brief",
       "facts": [],
       "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "6175d02f681dce052bbb55d4397a02d89b8c6e3dde7896f1f5e5b1001ab893af",
-        "count": 1,
-        "lastAttemptAt": "2026-09-18T14:59:27.845Z",
-        "rejection": {
-          "stage": "analysis",
-          "category": "language",
-          "fields": [
-            "soWhat.expectationGap"
-          ]
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw1mvjyv937eo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "'Insufficient funds' to pay Brewdog creditors after takeover deal",
+      "originalSummary": "Administrators say about £489,000 was owed for staff wages and holiday pay and £2.4m was owed to HMRC for unpaid VAT.",
+      "publishedAt": "2026-09-18T13:19:34.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "9bf5aec51f27d3144c6e",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|insufficientfund|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "Administrators say about £489,000 was owed for staff wages and holiday pay and £2.4m was owed to HMRC for unpaid VAT."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cklyjzv4nl7wo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "British Steel plan lacks credibility, MPs say",
+      "originalSummary": "A committee report says the government has not set out how British Steel will become profitable.",
+      "publishedAt": "2026-09-18T12:47:15.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "a418d62d1142833735d8",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "盈利"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "公司"
+      ],
+      "eventTypes": [
+        "公司经营"
+      ],
+      "impactChannels": [
+        "盈利"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "公司经营|britishsteelplan|2026-09-18",
+      "detailStatus": "professional",
+      "facts": [
+        "A committee report says the government has not set out how British Steel will become profitable."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmeq8v8e3ql7o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Ronaldo named in first Portugal squad since World Cup - at age of 41",
+      "originalSummary": "Cristiano Ronaldo is named in the first squad selected by new Portugal coach Jorge Jesus for their upcoming Nations League games.",
+      "publishedAt": "2026-09-18T12:45:25.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "7bf58e6d5af55ebc6810",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ronaldonamedinfi|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "Cristiano Ronaldo is named in the first squad selected by new Portugal coach Jorge Jesus for their upcoming Nations League games."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c94gm0mxmy65o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Economy minister accuses SoS of 'mischief making' in social media exchange",
+      "originalSummary": "Dr Caoimhe Archibald posted on X about a new one-off electricity bill reduction, which Sir Chris Bryant reposted saying the UK government funded it.",
+      "publishedAt": "2026-09-18T12:12:59.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "7a650ad8cbb8077e4b4d",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "汇率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "汇率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|economyministera|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "Dr Caoimhe Archibald posted on X about a new one-off electricity bill reduction, which Sir Chris Bryant reposted saying the UK government funded it."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6vgy80ge1z7o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Shots heard as police start moving migrants from Ceuta beaches",
+      "originalSummary": "Police reportedly fired into the air on Friday morning as they struggled to contain crowds jostling to secure a place at the tented site.",
+      "publishedAt": "2026-09-18T11:59:42.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "d3ae893cc3feb3d2bf3d",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|shotsheardaspoli|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "Police reportedly fired into the air on Friday morning as they struggled to contain crowds jostling to secure a place at the tented site."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Lindsay Clancy holdout juror says he had no doubt she deliberately killed her children",
+      "originalSummary": "It is the first time the juror, who refused to side with the others and acquit Clancy, has spoken publicly about his decision.",
+      "publishedAt": "2026-09-18T11:49:46.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "ca246ddca659f06c0601",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|lindsayclancyhol|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "It is the first time the juror, who refused to side with the others and acquit Clancy, has spoken publicly about his decision."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6x2z4dlzyr0o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Three dead and eight injured in Philippines school shooting",
+      "originalSummary": "The gunman is among the dead in what is the third school shooting in the country since June.",
+      "publishedAt": "2026-09-18T11:01:46.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "1e624471b2bdcdbe0775",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|threedeadandeigh|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "The gunman is among the dead in what is the third school shooting in the country since June."
+      ],
+      "expectations": [],
+      "inferences": []
+    }
+  ],
+  "continuing": [],
+  "retainedDetails": [
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to Trump's war with Iran",
+      "originalSummary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
+      "publishedAt": "2026-09-18T17:57:30.000Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
+      "id": "0ede7262014792656e94",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-18T17:57:30.000Z"
         }
-      }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|wesimplydontknow|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to US-Iran war",
+      "originalSummary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
+      "publishedAt": "2026-09-18T17:57:30.000Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
+      "id": "fe3ee80d0903440ec3e3",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|wesimplydontknow|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm1j4kj57k08o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Ryanair boss Michael O'Leary apologises over 'high-fare rapists' remarks",
+      "originalSummary": "O'Leary described his choice of language as \"careless\" and said \"it won't happen again\".",
+      "publishedAt": "2026-09-18T17:10:58.000Z",
+      "fetchedAt": "2026-09-18T18:28:14.004Z",
+      "id": "2e5f45b5a75c0444a816",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ryanairbossmicha|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "O'Leary described his choice of language as \"careless\" and said \"it won't happen again\"."
+      ],
+      "expectations": [],
+      "inferences": []
     },
     {
       "sourceId": "cnfin",
@@ -2055,593 +2614,6 @@
       "clusterId": "监管|巴菲特卸任伯克希尔董事长|2026-09-18",
       "detailStatus": "brief",
       "facts": [],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw1mvjyv937eo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'Insufficient funds' to pay Brewdog creditors after takeover deal",
-      "originalSummary": "Administrators say about £489,000 was owed for staff wages and holiday pay and £2.4m was owed to HMRC for unpaid VAT.",
-      "publishedAt": "2026-09-18T13:19:34.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "9bf5aec51f27d3144c6e",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|insufficientfund|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Administrators say about £489,000 was owed for staff wages and holiday pay and £2.4m was owed to HMRC for unpaid VAT."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cklyjzv4nl7wo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "British Steel plan lacks credibility, MPs say",
-      "originalSummary": "A committee report says the government has not set out how British Steel will become profitable.",
-      "publishedAt": "2026-09-18T12:47:15.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "a418d62d1142833735d8",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "盈利"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "公司"
-      ],
-      "eventTypes": [
-        "公司经营"
-      ],
-      "impactChannels": [
-        "盈利"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "公司经营|britishsteelplan|2026-09-18",
-      "detailStatus": "professional",
-      "facts": [
-        "A committee report says the government has not set out how British Steel will become profitable."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmeq8v8e3ql7o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Ronaldo named in first Portugal squad since World Cup - at age of 41",
-      "originalSummary": "Cristiano Ronaldo is named in the first squad selected by new Portugal coach Jorge Jesus for their upcoming Nations League games.",
-      "publishedAt": "2026-09-18T12:45:25.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "7bf58e6d5af55ebc6810",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ronaldonamedinfi|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Cristiano Ronaldo is named in the first squad selected by new Portugal coach Jorge Jesus for their upcoming Nations League games."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c94gm0mxmy65o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Economy minister accuses SoS of 'mischief making' in social media exchange",
-      "originalSummary": "Dr Caoimhe Archibald posted on X about a new one-off electricity bill reduction, which Sir Chris Bryant reposted saying the UK government funded it.",
-      "publishedAt": "2026-09-18T12:12:59.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "7a650ad8cbb8077e4b4d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "汇率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "汇率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|economyministera|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Dr Caoimhe Archibald posted on X about a new one-off electricity bill reduction, which Sir Chris Bryant reposted saying the UK government funded it."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6vgy80ge1z7o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Shots heard as police start moving migrants from Ceuta beaches",
-      "originalSummary": "Police reportedly fired into the air on Friday morning as they struggled to contain crowds jostling to secure a place at the tented site.",
-      "publishedAt": "2026-09-18T11:59:42.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "d3ae893cc3feb3d2bf3d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|shotsheardaspoli|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Police reportedly fired into the air on Friday morning as they struggled to contain crowds jostling to secure a place at the tented site."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Lindsay Clancy holdout juror says he had no doubt she deliberately killed her children",
-      "originalSummary": "It is the first time the juror, who refused to side with the others and acquit Clancy, has spoken publicly about his decision.",
-      "publishedAt": "2026-09-18T11:49:46.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "ca246ddca659f06c0601",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|lindsayclancyhol|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "It is the first time the juror, who refused to side with the others and acquit Clancy, has spoken publicly about his decision."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6x2z4dlzyr0o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Three dead and eight injured in Philippines school shooting",
-      "originalSummary": "The gunman is among the dead in what is the third school shooting in the country since June.",
-      "publishedAt": "2026-09-18T11:01:46.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "1e624471b2bdcdbe0775",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|threedeadandeigh|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The gunman is among the dead in what is the third school shooting in the country since June."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvj64w204y58o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "We bought our £242,000 home without a deposit - here's how",
-      "originalSummary": "The share of UK mortgages with smaller deposits is the highest it's been since 2008. The BBC spoke to borrowers about how they manage the risks.",
-      "publishedAt": "2026-09-18T10:43:03.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "a8de65dde59022641135",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|weboughtour24200|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The share of UK mortgages with smaller deposits is the highest it's been since 2008. The BBC spoke to borrowers about how they manage the risks."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cqy0z3w9r17lo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Former shoplifter ran 'steal-to-order' Whatsapp group",
-      "originalSummary": "Keeley Knowles ran a Whatsapp group with about 200 people asking her to steal specific designer items.",
-      "publishedAt": "2026-09-18T10:10:42.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "a1983a5ed168cde51084",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|formershoplifter|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Keeley Knowles ran a Whatsapp group with about 200 people asking her to steal specific designer items."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqn74jeek06no?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Japan raises interest rate to new 31-year high to curb rising prices",
-      "originalSummary": "Central banks around the world have hiked rates as high energy prices are pushing up inflation.",
-      "publishedAt": "2026-09-18T07:14:57.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "cec6a8b5558ef610ee42",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "通胀",
-        "利率"
-      ],
-      "causalSignals": [
-        "通胀→利率预期"
-      ],
-      "analysisLevels": [
-        "宏观"
-      ],
-      "eventTypes": [
-        "经济数据"
-      ],
-      "impactChannels": [
-        "通胀",
-        "利率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "经济数据|japanraisesinter|2026-09-18",
-      "detailStatus": "professional",
-      "facts": [
-        "Central banks around the world have hiked rates as high energy prices are pushing up inflation."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr6240ej07ejo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Healey to ask EU finance ministers to let UK into Made in Europe scheme",
-      "originalSummary": "The chancellor wants the Made in Europe programme to deepen ties with the UK \"rather than erecting new barriers\".",
-      "publishedAt": "2026-09-18T06:52:47.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "34ebb394fadfe9d95d98",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|healeytoaskeufin|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The chancellor wants the Made in Europe programme to deepen ties with the UK \"rather than erecting new barriers\"."
-      ],
-      "expectations": [],
-      "inferences": []
-    }
-  ],
-  "continuing": [],
-  "retainedDetails": [
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to Trump's war with Iran",
-      "originalSummary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
-      "publishedAt": "2026-09-18T17:57:30.000Z",
-      "fetchedAt": "2026-09-19T00:20:27.517Z",
-      "id": "0ede7262014792656e94",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-18T17:57:30.000Z"
-        }
-      ],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|wesimplydontknow|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to US-Iran war",
-      "originalSummary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
-      "publishedAt": "2026-09-18T17:57:30.000Z",
-      "fetchedAt": "2026-09-18T18:28:14.004Z",
-      "id": "fe3ee80d0903440ec3e3",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|wesimplydontknow|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm1j4kj57k08o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Ryanair boss Michael O'Leary apologises over 'high-fare rapists' remarks",
-      "originalSummary": "O'Leary described his choice of language as \"careless\" and said \"it won't happen again\".",
-      "publishedAt": "2026-09-18T17:10:58.000Z",
-      "fetchedAt": "2026-09-18T18:28:14.004Z",
-      "id": "2e5f45b5a75c0444a816",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ryanairbossmicha|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "O'Leary described his choice of language as \"careless\" and said \"it won't happen again\"."
-      ],
       "expectations": [],
       "inferences": []
     },
@@ -2952,6 +2924,47 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvj64w204y58o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "We bought our £242,000 home without a deposit - here's how",
+      "originalSummary": "The share of UK mortgages with smaller deposits is the highest it's been since 2008. The BBC spoke to borrowers about how they manage the risks.",
+      "publishedAt": "2026-09-18T10:43:03.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "a8de65dde59022641135",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|weboughtour24200|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "The share of UK mortgages with smaller deposits is the highest it's been since 2008. The BBC spoke to borrowers about how they manage the risks."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -3050,6 +3063,47 @@
           ]
         }
       }
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cqy0z3w9r17lo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Former shoplifter ran 'steal-to-order' Whatsapp group",
+      "originalSummary": "Keeley Knowles ran a Whatsapp group with about 200 people asking her to steal specific designer items.",
+      "publishedAt": "2026-09-18T10:10:42.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "a1983a5ed168cde51084",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|formershoplifter|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "Keeley Knowles ran a Whatsapp group with about 200 people asking her to steal specific designer items."
+      ],
+      "expectations": [],
+      "inferences": []
     },
     {
       "sourceId": "cnfin",
@@ -3239,6 +3293,54 @@
       "continuingImpactScore": 40,
       "clusterId": "监管|英媒超强厄尔尼诺形成中亚洲多国加|2026-09-18",
       "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "ecb",
+      "sourceName": "European Central Bank",
+      "sourceTier": "official",
+      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
+      "canonicalUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260918~295b3ab978.en.html",
+      "originalLanguage": "en",
+      "originalTitle": "ECB Consumer Expectations Survey results – August 2026",
+      "publishedAt": "2026-09-18T08:00:00.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "article": {
+        "status": "complete",
+        "text": "18 September 2026 Compared with July 2026: median consumer perceptions of inflation over the past 12 months were unchanged, while median expectations for inflation increased across all horizons; expectations for nominal income growth over the next 12 months were unchanged, as were expectations for spending growth over the next 12 months; expectations for economic growth over the next 12 months were unchanged, while the expected unemployment rate in 12 months’ time decreased; expectations for growth in the price of homes over the next 12 months were unchanged, as were expectations for mortgage interest rates in 12 months’ time. Inflation In August the median rate of perceived inflation over the previous 12 months was 3.5%, the same as in July. Median expectations for inflation over the next 12 months increased to 3.0% from 2.9% in July, while median expectations for inflation three years ahead increased to 2.9% from 2.7% in July and median expectations for inflation five years ahead increased to 2.5% from 2.4% in July. Uncertainty about expectations for inflation over the next 12 months decreased, but remained higher than the level prevailing before the start of the conflict in the Middle East. Respondents in the bottom income quintile continued to report higher inflation perceptions and expectations, on average, than those in the top quintile. Younger respondents (aged 18-34) continued to report lower inflation perceptions and expectations than older respondents (aged 35-54 and 55-70). Inflation results Income and consumption Consumers’ expectations for nominal income growth over the next 12 months were unchanged at 1.0%. As in previous months, expectations were on average higher in the bottom income quintile (1.7%) than in the top quintile (0.7%). Perceived nominal spending growth over the previous 12 months increased in August to 5.2% from 5.1% in July, while expected nominal spending growth over the next 12 months remained unchanged at 3.6%. Income and consumption results Economic growth and labour market Expectations for economic growth over the next 12 months were unchanged at -1.2% in August. Expectations for the unemployment rate 12 months ahead decreased to 11.0% from 11.2% in July. As observed in previous months, households in the bottom income quintile expected the highest unemployment rate 12 months ahead (13.4%), while households in the top income quintile expected the lowest rate (9.4%). Consumers continued to expect the future unemployment rate to be only slightly higher than the perceived current unemployment rate (10.5%), suggesting a broadly stable labour market outlook. Economic growth and labour market results Housing and credit access Consumers expected the price of their home to increase by 3.4% over the next 12 months, unchanged from June. As in previous months, expectations for home price growth over the next 12 months remained on average higher in the lowest income quintile (4.0%) than in the highest income quintile (3.2%). Expectations for mortgage interest rates in 12 months’ time were also unchanged from July, at 4.9%. As in previous months, households in the top income quintile expected the lowest mortgage interest rates 12 months ahead (4.4%), while those in the bottom quintile expected the highest rates (5.7%). The net percentage of households reporting a tightening (relative to those reporting an easing) of access to credit over the previous 12 months declined compared with July, as did the net percentage of households expecting tighter credit conditions over the next 12 months (relative to those expecting an easing). Housing and credit access results The release of the Consumer Expectations Survey (CES) results for September is scheduled for 23 October 2026. For media queries, please contact: Benoit Deeg , tel.: +49 172 1683704. Notes The fieldwork for the latest CES wave was carried out between 6 and 24 August 2026. The main aggregate results for individual countries and the euro area are published on the ECB Data Portal and on the ECB’s website every month. Unless otherwise indicated, the statistics presented in this press release refer to the 2% winsorised mean. For further details, see ECB Consumer Expectations Survey – guide to the computation of aggregate statistics . The CES is a monthly online survey of, currently, around 19,000 adult consumers (i.e. aged 18 or over) from 11 euro area countries: Belgium, Germany, Ireland, Greece, Spain, France, Italy, the Netherlands, Austria, Portugal and Finland. The results are used for policy analysis and complement other data sources used by the ECB. Further information about the survey and the data collected is available on the CES web page . Detailed information can also be found in the following two publications: Bańkowska, K. et al., “ ECB Consumer Expectations Survey: an overview and first evaluation ”, Occasional Paper Series , No 287, ECB, Frankfurt am Main, December 2021; and Georgarakos, D. and Kenny, G., “ Household spending and fiscal support during the COVID-19 pandemic: Insights from a new consumer survey ”, Journal of Monetary Economics , Vol. 129, Supplement, July 2022, pp. S1-S14. The survey results do not represent the views of the ECB’s decision-making bodies or staff.",
+        "characterCount": 5262,
+        "reader": "ecb-section",
+        "sha256": "014c534b8acb81249a8f3ddff0740059931565bb60c481fb484fc663d06ec6af",
+        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260918~295b3ab978.en.html",
+        "checkedAt": "2026-09-19T10:57:52.689Z"
+      },
+      "id": "9861e439fc2040e1083a",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "欧洲",
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|ecbconsumerexpec|2026-09-18",
+      "detailStatus": "professional",
       "facts": [],
       "expectations": [],
       "inferences": []
@@ -3479,6 +3581,51 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqn74jeek06no?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Japan raises interest rate to new 31-year high to curb rising prices",
+      "originalSummary": "Central banks around the world have hiked rates as high energy prices are pushing up inflation.",
+      "publishedAt": "2026-09-18T07:14:57.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "cec6a8b5558ef610ee42",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "通胀",
+        "利率"
+      ],
+      "causalSignals": [
+        "通胀→利率预期"
+      ],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "经济数据"
+      ],
+      "impactChannels": [
+        "通胀",
+        "利率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "经济数据|japanraisesinter|2026-09-18",
+      "detailStatus": "professional",
+      "facts": [
+        "Central banks around the world have hiked rates as high energy prices are pushing up inflation."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -3577,6 +3724,47 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr6240ej07ejo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Healey to ask EU finance ministers to let UK into Made in Europe scheme",
+      "originalSummary": "The chancellor wants the Made in Europe programme to deepen ties with the UK \"rather than erecting new barriers\".",
+      "publishedAt": "2026-09-18T06:52:47.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "34ebb394fadfe9d95d98",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|healeytoaskeufin|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [
+        "The chancellor wants the Made in Europe programme to deepen ties with the UK \"rather than erecting new barriers\"."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
       "sourceTier": "verified",
@@ -3624,6 +3812,45 @@
       "inferences": []
     },
     {
+      "sourceId": "ecb",
+      "sourceName": "European Central Bank",
+      "sourceTier": "official",
+      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
+      "canonicalUrl": "https://www.ecb.europa.eu/press/inter/date/2026/html/ecb.in260918~33f023fe26.en.html",
+      "originalLanguage": "en",
+      "originalTitle": "Boris Vujčić: Interview with Reuters",
+      "publishedAt": "2026-09-18T06:00:00.000Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
+      "id": "5daeb4af31472db6602a",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "欧洲",
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|borisvujiintervi|2026-09-18",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-business",
       "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
@@ -3633,7 +3860,7 @@
       "originalTitle": "Thames Water rescue deal should be rejected - MPs",
       "originalSummary": "A report on the future of Thames Water, urging the government to take action, has been published.",
       "publishedAt": "2026-09-18T05:16:57.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "9173e573aad96e1d5dee",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3674,7 +3901,7 @@
       "originalTitle": "'I would tip up to 30% at a restaurant'",
       "originalSummary": "New Yorkers and Londoners share what they usually tip in a restaurant - and whether tipping culture has gotten out of hand.",
       "publishedAt": "2026-09-18T05:13:49.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "c17ea597ed23dc5b2f7e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3715,7 +3942,7 @@
       "originalTitle": "Councils to share £5m in 'emergency food aid' as living costs rise",
       "originalSummary": "The money from the Welsh government will amount to around £200,000 to every council.",
       "publishedAt": "2026-09-18T05:02:56.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "3921927e3de50b0bba06",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3853,7 +4080,7 @@
       "originalLanguage": "en",
       "originalTitle": "Change in the Guideline for Money Market Operations",
       "publishedAt": "2026-09-18T03:40:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "35ced19b74392ab2124f",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -3938,7 +4165,7 @@
       "originalLanguage": "en",
       "originalTitle": "Amendment to \"Principal Terms and Conditions of Complementary Deposit Facility\"",
       "publishedAt": "2026-09-18T03:30:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "83200dcc9ff88acb0aab",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -4076,7 +4303,7 @@
       "originalLanguage": "en",
       "originalTitle": "(Reference) Change in the Guideline for Money Market Operations (September 2026 MPM)",
       "publishedAt": "2026-09-18T02:54:00.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "c37194089ef0dac7fcdf",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -4256,7 +4483,7 @@
       "originalTitle": "Why US plan to sell F-35 warplanes to Saudi Arabia is controversial",
       "originalSummary": "Saudi Arabia has lobbied the US for years to buy F35s, the world's most advanced fighter jet.",
       "publishedAt": "2026-09-18T01:31:43.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "fed0f9006c5f0c2a4882",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4297,7 +4524,7 @@
       "originalTitle": "Canadians dream of Europe as Carney floats longshot plan for living and working in EU",
       "originalSummary": "Torontonians are excited by the possibility of moving to the EU, even if it is unlikely anytime soon.",
       "publishedAt": "2026-09-18T01:23:10.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "2202037f28baa55760de",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4657,7 +4884,7 @@
       "originalTitle": "This Olympic river has 500 crocodiles in it - but that's not the main concern",
       "originalSummary": "Queensland's Fitzroy River has been selected for the 2032 Games, despite concerns over the course - and its inhabitants.",
       "publishedAt": "2026-09-17T23:29:17.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "e19772620f2a0662f9c5",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4780,7 +5007,7 @@
       "originalTitle": "Early Bowie music available to stream for first time",
       "originalSummary": "Previously unheard material from the start of the artist's career has been released for the first time.",
       "publishedAt": "2026-09-17T23:01:03.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
+      "fetchedAt": "2026-09-19T10:57:52.689Z",
       "id": "8b2a3d466d73641d69cf",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4851,375 +5078,6 @@
       ],
       "expectations": [],
       "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c79g0j3d4q9o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "The virtual worlds where robots are trained",
-      "originalSummary": "Training systems that allow robots to negotiate the real world are getting more sophisticated.",
-      "publishedAt": "2026-09-17T23:00:47.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "2d60c9d8a77f1d966222",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|thevirtualworlds|2026-09-17",
-      "detailStatus": "brief",
-      "facts": [
-        "Training systems that allow robots to negotiate the real world are getting more sophisticated."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr6240ej07ejo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Healey to ask EU finance ministers to let UK into industry scheme",
-      "originalSummary": "The chancellor wants the Made in Europe programme to deepen ties with the UK \"rather than erecting new barriers\".",
-      "publishedAt": "2026-09-17T22:07:01.000Z",
-      "fetchedAt": "2026-09-18T05:54:56.006Z",
-      "id": "501968f9fb9f4d12976a",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|healeytoaskeufin|2026-09-17",
-      "detailStatus": "brief",
-      "facts": [
-        "The chancellor wants the Made in Europe programme to deepen ties with the UK \"rather than erecting new barriers\"."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6n8m72r13ngo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "US to allow Iran delegation to attend UN meetings in New York as war passes half-year mark",
-      "originalSummary": "The BBC understands Iranian President Masoud Pezeshkian and Foreign Minister Abbas Araghchi are among the delegates allowed to enter the US.",
-      "publishedAt": "2026-09-17T21:41:19.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
-      "id": "75c820b993e02516167d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ustoallowirandel|2026-09-17",
-      "detailStatus": "brief",
-      "facts": [
-        "The BBC understands Iranian President Masoud Pezeshkian and Foreign Minister Abbas Araghchi are among the delegates allowed to enter the US."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "UN experts say grounds to believe US committed war crimes in Iran strikes",
-      "originalSummary": "The US has not acknowledged carrying out February's deadly strikes on a primary school in Minab and a sports complex in Lamerd.",
-      "publishedAt": "2026-09-17T20:34:30.000Z",
-      "fetchedAt": "2026-09-18T14:59:27.845Z",
-      "id": "4998edf7b61a10c6479f",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|unexpertssaygrou|2026-09-17",
-      "detailStatus": "brief",
-      "facts": [
-        "The US has not acknowledged carrying out February's deadly strikes on a primary school in Minab and a sports complex in Lamerd."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx980qj57r89o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Canadians welcome closer ties with Europe as tensions simmer with US",
-      "originalSummary": "Toronto residents tell the BBC they are excited by the possibility of working and studying in the EU.",
-      "publishedAt": "2026-09-17T19:59:54.000Z",
-      "fetchedAt": "2026-09-18T00:18:01.081Z",
-      "id": "e2b716ecf560ceaaa99f",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|canadianswelcome|2026-09-17",
-      "detailStatus": "brief",
-      "facts": [
-        "Toronto residents tell the BBC they are excited by the possibility of working and studying in the EU."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx980qj57r89o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Why Canadians are ready for closer ties with Europe",
-      "originalSummary": "People the BBC spoke to are excited by the prospect of working and studying in the EU, a suggestion Carney made this week.",
-      "publishedAt": "2026-09-17T19:59:54.000Z",
-      "fetchedAt": "2026-09-17T21:22:53.899Z",
-      "id": "8dcac65e5b558b10db5d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|whycanadiansarer|2026-09-17",
-      "detailStatus": "brief",
-      "facts": [
-        "People the BBC spoke to are excited by the prospect of working and studying in the EU, a suggestion Carney made this week."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9j3d2rr6g24o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Wife of US scholar jailed in China asks Trump to raise arrest at Xi meeting",
-      "originalSummary": "Sylvia Zin is among the family members of people imprisoned in China who are seeking Trump's help when he hosts the country's leader next week.",
-      "publishedAt": "2026-09-17T17:08:00.000Z",
-      "fetchedAt": "2026-09-18T11:13:16.470Z",
-      "id": "bc9da138749b1e8f88d4",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|wifeofusscholarj|2026-09-17",
-      "detailStatus": "brief",
-      "facts": [
-        "Sylvia Zin is among the family members of people imprisoned in China who are seeking Trump's help when he hosts the country's leader next week."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cjvgy5yqvpy2o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Mixed feelings from consumers as electricity discount to be given to NI households",
-      "originalSummary": "The one-off £63 reduction in electricity bills will be applied from next month.",
-      "publishedAt": "2026-09-17T17:00:01.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "fa627aba6954bf1b1409",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|mixedfeelingsfro|2026-09-17",
-      "detailStatus": "brief",
-      "facts": [
-        "The one-off £63 reduction in electricity bills will be applied from next month."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crlyqg1ekj4po?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Warm words on Canada's EU 'associate membership' but no guarantees",
-      "originalSummary": "There is no certainty that the idea will ever get off the ground, let alone become a blueprint for other countries, writes the BBC's Katya Adler.",
-      "publishedAt": "2026-09-17T16:59:43.000Z",
-      "fetchedAt": "2026-09-19T05:52:33.047Z",
-      "id": "29a709d3e89de11ac96e",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|warmwordsoncanad|2026-09-17",
-      "detailStatus": "brief",
-      "facts": [
-        "There is no certainty that the idea will ever get off the ground, let alone become a blueprint for other countries, writes the BBC's Katya Adler."
-      ],
-      "expectations": [],
-      "inferences": []
     }
   ],
   "sourceHealth": [
@@ -5264,7 +5122,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 27
+      "itemCount": 29
     },
     {
       "id": "bbc-business",
