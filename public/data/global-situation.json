@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-18T21:40:48.937Z",
-  "lastSuccessfulAt": "2026-09-18T21:40:48.937Z",
+  "attemptedAt": "2026-09-19T00:20:27.517Z",
+  "lastSuccessfulAt": "2026-09-19T00:20:27.517Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -45,7 +45,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 25
+      "itemCount": 26
     },
     {
       "id": "bbc-business",
@@ -74,10 +74,10 @@
       "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "summary": "The US president has had a tense and fiery relationship with the US media throughout his political career.",
-      "publishedAt": "2026-09-18T21:34:51.000Z",
-      "firstPublishedAt": "2026-09-18T21:34:51.000Z",
-      "latestSourceAt": "2026-09-18T21:34:51.000Z",
-      "fetchedAt": "2026-09-18T21:40:48.937Z",
+      "publishedAt": "2026-09-18T23:26:48.000Z",
+      "firstPublishedAt": "2026-09-18T23:26:48.000Z",
+      "latestSourceAt": "2026-09-18T23:26:48.000Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -211,7 +211,155 @@
         {
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-18T21:34:51.000Z"
+          "publishedAt": "2026-09-18T23:26:48.000Z"
+        }
+      ]
+    },
+    {
+      "id": "748e8ad6a3b2",
+      "headline": "Watch: Trump says ban on some news outlets is 'because they're fake news'",
+      "sourceHeadline": "Watch: Trump says ban on some news outlets is 'because they're fake news'",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "The US president on Friday announced he is \"immediately\" banning CNN, MS NOW and Politico from the White House.",
+      "publishedAt": "2026-09-18T20:35:03.000Z",
+      "firstPublishedAt": "2026-09-18T20:35:03.000Z",
+      "latestSourceAt": "2026-09-18T20:35:03.000Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The US president on Friday announced he is \"immediately\" banning CNN, MS NOW and Politico from the White House."
+      ],
+      "factSummary": "The US president on Friday announced he is \"immediately\" banning CNN, MS NOW and Politico from the White House.",
+      "marketView": [
+        "本条来源报告：Watch: Trump says ban on some news outlets is 'because they're fake news'。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/videos/cm93e7p1wkndo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-18T20:35:03.000Z"
         }
       ]
     },
@@ -225,7 +373,7 @@
       "publishedAt": "2026-09-18T18:04:38.000Z",
       "firstPublishedAt": "2026-09-18T18:04:38.000Z",
       "latestSourceAt": "2026-09-18T18:04:38.000Z",
-      "fetchedAt": "2026-09-18T21:40:48.937Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -373,7 +521,7 @@
       "publishedAt": "2026-09-18T17:57:30.000Z",
       "firstPublishedAt": "2026-09-18T17:57:30.000Z",
       "latestSourceAt": "2026-09-18T17:57:30.000Z",
-      "fetchedAt": "2026-09-18T21:40:48.937Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -749,7 +897,7 @@
       "publishedAt": "2026-09-18T14:00:00.000Z",
       "firstPublishedAt": "2026-09-18T14:00:00.000Z",
       "latestSourceAt": "2026-09-18T14:00:00.000Z",
-      "fetchedAt": "2026-09-18T21:40:48.937Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -939,7 +1087,7 @@
       "publishedAt": "2026-09-18T12:12:59.000Z",
       "firstPublishedAt": "2026-09-18T12:12:59.000Z",
       "latestSourceAt": "2026-09-18T12:12:59.000Z",
-      "fetchedAt": "2026-09-18T21:40:48.937Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1084,6 +1232,152 @@
       ]
     },
     {
+      "id": "ddb7face0f1c",
+      "headline": "‘Violence will only defer a problem’: UN Assembly President on trust, AI and lessons from the Rohingya crisis",
+      "sourceHeadline": "‘Violence will only defer a problem’: UN Assembly President on trust, AI and lessons from the Rohingya crisis",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "Khalilur Rahman took the gavel as President of the UN&nbsp;General Assembly&#039;s 81st session amid what he calls a crisis of confidence in the organization he has served – in one capacity or another – for 35 years.&nbsp;",
+      "publishedAt": "2026-09-18T12:00:00.000Z",
+      "firstPublishedAt": "2026-09-18T12:00:00.000Z",
+      "latestSourceAt": "2026-09-18T12:00:00.000Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Khalilur Rahman took the gavel as President of the UN&nbsp;General Assembly&#039;s 81st session amid what he calls a crisis of confidence in the organization he has served – in one capacity or another – for 35 years.&nbsp;"
+      ],
+      "factSummary": "Khalilur Rahman took the gavel as President of the UN&nbsp;General Assembly&#039;s 81st session amid what he calls a crisis of confidence in the organization he has served – in one capacity or another – for 35 years.&nbsp;",
+      "marketView": [
+        "本条来源报告：‘Violence will only defer a problem’: UN Assembly President on trust, AI and lessons from the Rohingya crisis。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168375",
+          "publishedAt": "2026-09-18T12:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "8bf24960145a",
       "headline": "Japan raises interest rate to new 31-year high to curb rising prices",
       "sourceHeadline": "Japan raises interest rate to new 31-year high to curb rising prices",
@@ -1093,7 +1387,7 @@
       "publishedAt": "2026-09-18T07:14:57.000Z",
       "firstPublishedAt": "2026-09-18T07:14:57.000Z",
       "latestSourceAt": "2026-09-18T07:14:57.000Z",
-      "fetchedAt": "2026-09-18T21:40:48.937Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
       "region": "japan",
       "countries": [
         "JP"
@@ -1275,7 +1569,7 @@
       "publishedAt": "2026-09-17T23:24:07.000Z",
       "firstPublishedAt": "2026-09-17T23:24:07.000Z",
       "latestSourceAt": "2026-09-17T23:24:07.000Z",
-      "fetchedAt": "2026-09-18T21:40:48.937Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1609,7 +1903,7 @@
       "publishedAt": "2026-09-17T17:00:01.000Z",
       "firstPublishedAt": "2026-09-17T17:00:01.000Z",
       "latestSourceAt": "2026-09-17T17:00:01.000Z",
-      "fetchedAt": "2026-09-18T21:40:48.937Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1763,7 +2057,7 @@
       "publishedAt": "2026-09-17T14:05:38.000Z",
       "firstPublishedAt": "2026-09-17T14:05:38.000Z",
       "latestSourceAt": "2026-09-17T14:05:38.000Z",
-      "fetchedAt": "2026-09-18T21:40:48.937Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -3549,7 +3843,7 @@
       "publishedAt": "2026-09-17T00:40:17.000Z",
       "firstPublishedAt": "2026-09-17T00:40:17.000Z",
       "latestSourceAt": "2026-09-17T00:40:17.000Z",
-      "fetchedAt": "2026-09-18T21:40:48.937Z",
+      "fetchedAt": "2026-09-19T00:20:27.517Z",
       "region": "global",
       "countries": [],
       "topic": "monetary-policy",
@@ -3708,346 +4002,6 @@
           "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-17T00:40:17.000Z"
-        }
-      ]
-    },
-    {
-      "id": "8da29768ce5d",
-      "headline": "Why Trump's hand-picked Fed chair defied him by raising interest rates",
-      "sourceHeadline": "Why Trump's hand-picked Fed chair defied him by raising interest rates",
-      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
-      "oneSentenceExplanation": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
-      "summary": "The 0.25% increase comes despite fierce opposition from the US president, who has called for rates to be cut.",
-      "publishedAt": "2026-09-17T00:38:50.000Z",
-      "firstPublishedAt": "2026-09-17T00:38:50.000Z",
-      "latestSourceAt": "2026-09-17T00:38:50.000Z",
-      "fetchedAt": "2026-09-18T11:13:16.470Z",
-      "region": "united-states",
-      "countries": [
-        "US"
-      ],
-      "topic": "monetary-policy",
-      "eventType": "monetary-policy",
-      "relevance": {
-        "level": "medium",
-        "score": 4,
-        "criteria": [
-          "inflation",
-          "growth",
-          "centralBank",
-          "capitalFlows"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 4,
-      "relevanceReasons": [
-        "inflation",
-        "growth",
-        "centralBank",
-        "capitalFlows"
-      ],
-      "fact": [
-        "The 0.25% increase comes despite fierce opposition from the US president, who has called for rates to be cut."
-      ],
-      "factSummary": "The 0.25% increase comes despite fierce opposition from the US president, who has called for rates to be cut.",
-      "marketView": [
-        "本条来源报告：Why Trump's hand-picked Fed chair defied him by raising interest rates。以下为条件性机制参考，不是已核实的市场结论。",
-        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
-        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
-      ],
-      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
-      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "央行信号变化",
-          "beginnerExplanation": "投资者调整未来利率预期。",
-          "condition": "后续数据没有推翻该信号",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "债券收益率可能变化",
-          "beginnerExplanation": "新利率预期进入债券价格。",
-          "condition": "信用和期限溢价没有反向抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "融资成本可能变化",
-          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
-          "condition": "政策能传导到实体融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "股票估值可能重算",
-          "beginnerExplanation": "远期现金流对贴现率敏感。",
-          "condition": "盈利预期没有同时大幅变化",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "央行信号变化",
-          "beginnerExplanation": "投资者调整未来利率预期。",
-          "condition": "后续数据没有推翻该信号",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "债券收益率可能变化",
-          "beginnerExplanation": "新利率预期进入债券价格。",
-          "condition": "信用和期限溢价没有反向抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "融资成本可能变化",
-          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
-          "condition": "政策能传导到实体融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "股票估值可能重算",
-          "beginnerExplanation": "远期现金流对贴现率敏感。",
-          "condition": "盈利预期没有同时大幅变化",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "国债收益率",
-          "explanation": "它最直接反映政策、通胀和期限补偿。"
-        },
-        {
-          "name": "美元",
-          "explanation": "相对利率会改变持有不同货币的吸引力。"
-        },
-        {
-          "name": "Nasdaq",
-          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
-        },
-        {
-          "name": "银行股",
-          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "interest-rate",
-        "bonds",
-        "cpi",
-        "valuation",
-        "exchange-rate"
-      ],
-      "relatedKnowledgePoints": [
-        "interest-rate",
-        "bonds",
-        "cpi",
-        "valuation",
-        "exchange-rate"
-      ],
-      "conditionsThatChangeView": [
-        "通胀数据明显转向",
-        "就业或增长意外走弱",
-        "央行官员给出不同信号",
-        "金融压力让银行收紧贷款",
-        "市场已经提前充分定价"
-      ],
-      "watchConditions": [
-        "通胀数据明显转向",
-        "就业或增长意外走弱",
-        "央行官员给出不同信号",
-        "金融压力让银行收紧贷款",
-        "市场已经提前充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/videos/c54g7wg1l3d3o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-17T00:38:50.000Z"
-        }
-      ]
-    },
-    {
-      "id": "7793862fea48",
-      "headline": "Watch: How will higher interest rates impact US consumers?",
-      "sourceHeadline": "Watch: How will higher interest rates impact US consumers?",
-      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
-      "oneSentenceExplanation": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
-      "summary": "The BBC's Samira Hussain looks at the factors considered in the increase by the Federal Reserve and what it could mean for the US economy.",
-      "publishedAt": "2026-09-16T22:26:10.000Z",
-      "firstPublishedAt": "2026-09-16T22:26:10.000Z",
-      "latestSourceAt": "2026-09-16T22:26:10.000Z",
-      "fetchedAt": "2026-09-17T21:22:53.899Z",
-      "region": "united-states",
-      "countries": [
-        "US"
-      ],
-      "topic": "monetary-policy",
-      "eventType": "monetary-policy",
-      "relevance": {
-        "level": "medium",
-        "score": 4,
-        "criteria": [
-          "inflation",
-          "growth",
-          "centralBank",
-          "capitalFlows"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 4,
-      "relevanceReasons": [
-        "inflation",
-        "growth",
-        "centralBank",
-        "capitalFlows"
-      ],
-      "fact": [
-        "The BBC's Samira Hussain looks at the factors considered in the increase by the Federal Reserve and what it could mean for the US economy."
-      ],
-      "factSummary": "The BBC's Samira Hussain looks at the factors considered in the increase by the Federal Reserve and what it could mean for the US economy.",
-      "marketView": [
-        "本条来源报告：Watch: How will higher interest rates impact US consumers?。以下为条件性机制参考，不是已核实的市场结论。",
-        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
-        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
-      ],
-      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
-      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "央行信号变化",
-          "beginnerExplanation": "投资者调整未来利率预期。",
-          "condition": "后续数据没有推翻该信号",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "债券收益率可能变化",
-          "beginnerExplanation": "新利率预期进入债券价格。",
-          "condition": "信用和期限溢价没有反向抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "融资成本可能变化",
-          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
-          "condition": "政策能传导到实体融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "股票估值可能重算",
-          "beginnerExplanation": "远期现金流对贴现率敏感。",
-          "condition": "盈利预期没有同时大幅变化",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "央行信号变化",
-          "beginnerExplanation": "投资者调整未来利率预期。",
-          "condition": "后续数据没有推翻该信号",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "债券收益率可能变化",
-          "beginnerExplanation": "新利率预期进入债券价格。",
-          "condition": "信用和期限溢价没有反向抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "融资成本可能变化",
-          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
-          "condition": "政策能传导到实体融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "股票估值可能重算",
-          "beginnerExplanation": "远期现金流对贴现率敏感。",
-          "condition": "盈利预期没有同时大幅变化",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "国债收益率",
-          "explanation": "它最直接反映政策、通胀和期限补偿。"
-        },
-        {
-          "name": "美元",
-          "explanation": "相对利率会改变持有不同货币的吸引力。"
-        },
-        {
-          "name": "Nasdaq",
-          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
-        },
-        {
-          "name": "银行股",
-          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "interest-rate",
-        "bonds",
-        "cpi",
-        "valuation",
-        "exchange-rate"
-      ],
-      "relatedKnowledgePoints": [
-        "interest-rate",
-        "bonds",
-        "cpi",
-        "valuation",
-        "exchange-rate"
-      ],
-      "conditionsThatChangeView": [
-        "通胀数据明显转向",
-        "就业或增长意外走弱",
-        "央行官员给出不同信号",
-        "金融压力让银行收紧贷款",
-        "市场已经提前充分定价"
-      ],
-      "watchConditions": [
-        "通胀数据明显转向",
-        "就业或增长意外走弱",
-        "央行官员给出不同信号",
-        "金融压力让银行收紧贷款",
-        "市场已经提前充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/videos/cmx2zw08dvk9o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-16T22:26:10.000Z"
         }
       ]
     }
