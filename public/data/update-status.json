@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-21T00:16:09.326Z",
-  "lastSuccessfulAt": "2026-09-21T00:16:09.326Z",
+  "attemptedAt": "2026-09-21T05:02:28.966Z",
+  "lastSuccessfulAt": "2026-09-21T05:02:28.966Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-21T00:16:09.326Z"
+      "lastSuccessfulAt": "2026-09-21T05:02:28.966Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-21T00:16:09.326Z"
+      "lastSuccessfulAt": "2026-09-21T05:02:28.966Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-21T00:16:09.326Z"
+      "lastSuccessfulAt": "2026-09-21T05:02:28.966Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-21T00:16:09.326Z"
+      "lastSuccessfulAt": "2026-09-21T05:02:28.966Z"
     }
   ],
   "sourceHealth": [
@@ -155,15 +155,14 @@
       "itemCount": 0,
       "attempted": 2,
       "rejected": 2,
-      "failures": 0,
+      "failures": 1,
       "stages": {
-        "evidence": 1,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 1,
-        "so-what": 1
+        "facts": 2
       }
     }
   ],
