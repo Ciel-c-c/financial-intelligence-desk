@@ -1,10 +1,57 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-20T21:33:02.771Z",
-  "lastSuccessfulAt": "2026-09-20T21:33:02.771Z",
-  "nextExpectedAt": "2026-09-20T22:33:02.771Z",
+  "attemptedAt": "2026-09-21T00:16:09.326Z",
+  "lastSuccessfulAt": "2026-09-21T00:16:09.326Z",
+  "nextExpectedAt": "2026-09-21T01:16:09.326Z",
   "status": "delayed",
   "latest": [
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crq5x74yv6dxo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Will you get £13,000 a year when you stop working? Here's how to check",
+      "originalSummary": "How to find out how much state pension you're likely to receive - and what you can do about it now.",
+      "publishedAt": "2026-09-20T23:02:45.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "id": "13ca2418401c32e9a2e8",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/crq5x74yv6dxo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-20T23:02:45.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|willyouget13000a|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [
+        "How to find out how much state pension you're likely to receive - and what you can do about it now."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
     {
       "sourceId": "un",
       "sourceName": "UN News",
@@ -15,7 +62,7 @@
       "originalTitle": "The right to development: Why equity, not charity, is a human right",
       "originalSummary": "Compare two children born in the same year: one in a country with functioning schools, social services, fair elections and a dynamic economy and the other in a nation devastated by poverty, conflict, climate change or corruption.",
       "publishedAt": "2026-09-20T12:00:00.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "3a7408e9aca29d9fd216",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -47,6 +94,343 @@
       "inferences": []
     },
     {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472634_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472634_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "国际金融市场早知道：9月21日",
+      "publishedAt": "2026-09-20T23:46:48.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1546,
+        "reader": "cnfin-body",
+        "sha256": "d3758807f2a81b86173f917eb6d4993aa80d7d72bd19eb92fdb3bb5e65f1541b",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472634_1.html",
+        "checkedAt": "2026-09-21T00:16:09.326Z"
+      },
+      "id": "31b61bdef162f28d2477",
+      "verificationStatus": "verified",
+      "titleZh": "国际金融市场早知道：9月21日",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|国际金融市场早知道9月21日|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "d3758807f2a81b86173f917eb6d4993aa80d7d72bd19eb92fdb3bb5e65f1541b",
+        "count": 1,
+        "lastAttemptAt": "2026-09-21T00:16:09.326Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[4].quote"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472628_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472628_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【读财报】上市券商经纪业务透视：上半年手续费净收入增逾五成 国泰海通、中信证券逼近百亿",
+      "publishedAt": "2026-09-20T23:41:46.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1702,
+        "reader": "cnfin-body",
+        "sha256": "e3d21192b2dcfec41f7001cdfc0544c71a9cd989c66308dfdd1a37cb26036ec0",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472628_1.html",
+        "checkedAt": "2026-09-21T00:16:09.326Z"
+      },
+      "id": "339627bb4bbef204729e",
+      "verificationStatus": "verified",
+      "titleZh": "【读财报】上市券商经纪业务透视：上半年手续费净收入增逾五成 国泰海通、中信证券逼近百亿",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|读财报上市券商经纪业务透视上半年|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "e3d21192b2dcfec41f7001cdfc0544c71a9cd989c66308dfdd1a37cb26036ec0",
+        "count": 1,
+        "lastAttemptAt": "2026-09-21T00:16:09.326Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "so-what",
+          "fields": []
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472626_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472626_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【环球财经】IMF总裁：世界经济面临多重风险",
+      "publishedAt": "2026-09-20T23:38:32.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 589,
+        "reader": "cnfin-body",
+        "sha256": "6af67022b9371acfc1fdf5441ac20bae136db08ab9c649069138d8f93f5dce13",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472626_1.html",
+        "checkedAt": "2026-09-21T00:16:09.326Z"
+      },
+      "id": "463bec048acbfbd083cd",
+      "verificationStatus": "verified",
+      "titleZh": "【环球财经】IMF总裁：世界经济面临多重风险",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|环球财经imf总裁世界经济面临多|2026-09-20",
+      "detailStatus": "professional",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472617_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472617_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "新华财经早报：9月21日",
+      "publishedAt": "2026-09-20T23:32:57.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 4218,
+        "reader": "cnfin-body",
+        "sha256": "6c4e7d9f66d1a5ce07cd5f2e04aaa8350cc8134b877f584d906bdf150966b2fc",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472617_1.html",
+        "checkedAt": "2026-09-21T00:16:09.326Z"
+      },
+      "id": "e0bfb59a2cbfd08d73c2",
+      "verificationStatus": "verified",
+      "titleZh": "新华财经早报：9月21日",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|新华财经早报9月21日|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472607_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472607_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "在2026世界制造业大会看产业“智”变",
+      "publishedAt": "2026-09-20T23:31:33.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 2413,
+        "reader": "cnfin-body",
+        "sha256": "c85bab4336d7de2ccc29684af35b9b93e191264692ff0b2e069db7a08081bbb4",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472607_1.html",
+        "checkedAt": "2026-09-21T00:16:09.326Z"
+      },
+      "id": "399eab6704633ea7dfb3",
+      "verificationStatus": "verified",
+      "titleZh": "在2026世界制造业大会看产业“智”变",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|在2026世界制造业大会看产业智|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c20veglyjp8o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "What food items should you stock up on in case of an emergency?",
+      "originalSummary": "Extreme weather may be changing the way we need to shop, with the UK government urging people to stock up on canned goods.",
+      "publishedAt": "2026-09-20T23:02:27.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "id": "db19f62901b11d697f42",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|whatfooditemssho|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [
+        "Extreme weather may be changing the way we need to shop, with the UK government urging people to stock up on canned goods."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472568_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4472568_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "中美经贸磋商在美国纽约开始举行",
+      "publishedAt": "2026-09-20T22:25:05.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "id": "e220c94bc149b37bd4ff",
+      "verificationStatus": "verified",
+      "titleZh": "中美经贸磋商在美国纽约开始举行",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|中美经贸磋商在美国纽约开始举行|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -56,7 +440,7 @@
       "originalTitle": "Man, 82, dies after beach fight with 76-year-old over sunlounger in Greece",
       "originalSummary": "One eyewitness said the scene was so chaotic that screaming could be heard from the other end of the beach.",
       "publishedAt": "2026-09-20T21:17:22.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "10bf9959472a97fe7842",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -97,7 +481,7 @@
       "originalTitle": "German Chancellor Merz calls state election a 'disaster' for his party but vows to stay on",
       "originalSummary": "Exit polls show damaging losses for Merz's centre-right CDU party in the states of Berlin and Mecklenburg-Vorpommern.",
       "publishedAt": "2026-09-20T20:21:40.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "267643b63e924c93e25a",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -138,7 +522,7 @@
       "originalTitle": "Sister of Pakistan's ex-PM Imran Khan arrested",
       "originalSummary": "Aleema Khanum is accused of mobilising her brother’s supporters ahead of country-wide protests.",
       "publishedAt": "2026-09-20T19:04:11.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "6b502977b07bd0139c14",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -179,7 +563,7 @@
       "originalTitle": "Trump says triumphal arch will be military complex with drones and snipers",
       "originalSummary": "Trump said the updated plans were at the request of the US military and for national security purposes.",
       "publishedAt": "2026-09-20T16:36:43.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "64600062d9eea29f47ce",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -220,7 +604,7 @@
       "originalTitle": "Ed Davey calls for immediate 10p cut to fuel duty",
       "originalSummary": "Sir Ed blamed Donald Trump's war with Iran for damaging the UK economy and pushing fuel prices up.",
       "publishedAt": "2026-09-20T14:42:42.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "969075dfe7eb2da75ba5",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -261,7 +645,7 @@
       "originalTitle": "Lib Dems vow to end 'computer says no' economy to boost growth",
       "originalSummary": "Deputy leader Daisy Cooper also proposes a Growth and Defence Partnership with the EU in a speech to her party conference.",
       "publishedAt": "2026-09-20T14:05:15.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "875455daa4cbd8b5e911",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -301,14 +685,14 @@
       "originalLanguage": "zh",
       "originalTitle": "聚焦重点领域完善市场监管体系——国新办发布会聚焦“十五五”时期市场监管工作",
       "publishedAt": "2026-09-20T13:24:48.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "article": {
         "status": "complete",
         "characterCount": 1861,
         "reader": "cnfin-body",
         "sha256": "cc272c1292279160399f7e8a5053d50cba45aeb6abafb636cf6965516825c217",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472537_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
+        "checkedAt": "2026-09-21T00:16:09.326Z"
       },
       "id": "da428b89b48b10e891a0",
       "verificationStatus": "verified",
@@ -360,14 +744,14 @@
       "originalLanguage": "zh",
       "originalTitle": "伊朗议长：美方履约前霍尔木兹海峡不会重开",
       "publishedAt": "2026-09-20T12:52:06.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "article": {
         "status": "complete",
         "characterCount": 330,
         "reader": "cnfin-body",
         "sha256": "4f2dda99df9fed398f9d258c2da79fd59366649a00e3bd35276dc99e2761cecd",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472525_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
+        "checkedAt": "2026-09-21T00:16:09.326Z"
       },
       "id": "84f126d334fb72a5e4a3",
       "verificationStatus": "verified",
@@ -419,14 +803,14 @@
       "originalLanguage": "zh",
       "originalTitle": "货币市场日报：9月20日",
       "publishedAt": "2026-09-20T11:48:38.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "article": {
         "status": "complete",
         "characterCount": 1052,
         "reader": "cnfin-body",
         "sha256": "39a0a0ae8a908941fa8bfb3e6a39428dc0839d4c4a2ce50613a027ed7febd99d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472507_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
+        "checkedAt": "2026-09-21T00:16:09.326Z"
       },
       "id": "d7ed03b40f2754669cc8",
       "verificationStatus": "verified",
@@ -479,7 +863,7 @@
       "originalTitle": "Billionaire Man United owner loses moral high ground after tax exile, Labour chair says",
       "originalSummary": "The billionaire businessman told the BBC he has lost confidence in the UK due to a combination of high taxes and high immigration.",
       "publishedAt": "2026-09-20T11:22:21.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "1cf0fbb085035f1b7fa4",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -519,14 +903,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【财经分析】脑机接口投融资“爆发” 资本从“看概念”转向“看落地”",
       "publishedAt": "2026-09-20T11:14:10.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "article": {
         "status": "complete",
         "characterCount": 2463,
         "reader": "cnfin-body",
         "sha256": "e1efe6515b07fa5409b6250a8c15e7ea56f895cc4c4018dc186e4a69963880fc",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472498_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
+        "checkedAt": "2026-09-21T00:16:09.326Z"
       },
       "id": "e9812367070499d5353d",
       "verificationStatus": "verified",
@@ -579,7 +963,7 @@
       "originalTitle": "Largest attack on Moscow sees Ukraine fire hundreds of drones, mayor says",
       "originalSummary": "Moscow's mayor says 450 drones were downed during the overnight barrage, in which two people died.",
       "publishedAt": "2026-09-20T10:45:39.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "33241919c71cc08bd64e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -620,7 +1004,7 @@
       "originalTitle": "Chiltern Railways renationalised after 30 years",
       "originalSummary": "It joins Great British Railways as part of government plans to save money and improve services.",
       "publishedAt": "2026-09-20T10:45:39.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "7ddd7b68ea1a1eac032d",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -660,14 +1044,14 @@
       "originalLanguage": "zh",
       "originalTitle": "新华财经晚报：1—8月全社会用电量累计71730亿千瓦时 同比增长4.3%",
       "publishedAt": "2026-09-20T09:33:53.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "article": {
         "status": "complete",
         "characterCount": 1808,
         "reader": "cnfin-body",
         "sha256": "69f7ef27c3fb5a2ccd26678d1b1c440bf9033232716ec5fc238a45f80507de44",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472471_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
+        "checkedAt": "2026-09-21T00:16:09.326Z"
       },
       "id": "58deb64ee916e1468146",
       "verificationStatus": "verified",
@@ -720,7 +1104,7 @@
       "originalTitle": "Family shares hidden cost of cancer care",
       "originalSummary": "Maya, 13, from Hythe in Kent, was diagnosed with neuroblastoma when she was three.",
       "publishedAt": "2026-09-20T09:25:34.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "f197913a992a73ce0213",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -760,14 +1144,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【新华解读】住房公积金新政施行 服务全生命周期住房消费",
       "publishedAt": "2026-09-20T08:01:23.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "article": {
         "status": "complete",
         "characterCount": 1625,
         "reader": "cnfin-body",
         "sha256": "0c9acceb5c0a040b63ff51e83aded750b97a56f2c0bdc3a76be40ab74dd4cfdb",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472403_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
+        "checkedAt": "2026-09-21T00:16:09.326Z"
       },
       "id": "136c71e8b36c3c63800b",
       "verificationStatus": "verified",
@@ -819,15 +1203,7 @@
       "originalLanguage": "zh",
       "originalTitle": "【“财”访一线】带你认识仓库“新同事”：一小时可拣配600箱饮料",
       "publishedAt": "2026-09-20T07:35:21.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 489,
-        "reader": "cnfin-body",
-        "sha256": "b5abcd73dd72fe66c18855e8e12218e2055d8646529908a70adc88c46b3f11df",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472377_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
-      },
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "d920d86f4c88e855cb3b",
       "verificationStatus": "verified",
       "titleZh": "【“财”访一线】带你认识仓库“新同事”：一小时可拣配600箱饮料",
@@ -855,218 +1231,6 @@
       "detailStatus": "brief",
       "facts": [],
       "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "b5abcd73dd72fe66c18855e8e12218e2055d8646529908a70adc88c46b3f11df",
-        "count": 1,
-        "lastAttemptAt": "2026-09-20T21:33:02.771Z",
-        "rejection": {
-          "stage": "analysis",
-          "category": "language",
-          "fields": [
-            "soWhat.expectationGap"
-          ]
-        }
-      }
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472359_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472359_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "体育赛事流量，何以转化成消费和发展增量",
-      "publishedAt": "2026-09-20T07:04:58.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 2364,
-        "reader": "cnfin-body",
-        "sha256": "12df7a8cc080ddf1ee9879d9be6d462f03e9c342dc3f36e119938df45d92b5f8",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472359_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
-      },
-      "id": "fae63eec66863eaa9ec3",
-      "verificationStatus": "verified",
-      "titleZh": "体育赛事流量，何以转化成消费和发展增量",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|体育赛事流量何以转化成消费和发展|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "12df7a8cc080ddf1ee9879d9be6d462f03e9c342dc3f36e119938df45d92b5f8",
-        "count": 1,
-        "lastAttemptAt": "2026-09-20T21:33:02.771Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[1].numbers"
-          ]
-        }
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Not all AI workers think the tech could kill everyone",
-      "originalSummary": "In text exchanges and conversations, multiple people who have worked for leading companies are sceptical of the warnings.",
-      "publishedAt": "2026-09-19T23:01:57.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "feb1d222fa3d4f4b4628",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-19T23:01:57.000Z"
-        }
-      ],
-      "keyTerms": [
-        "汇率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "汇率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|notallaiworkerst|2026-09-19",
-      "detailStatus": "brief",
-      "facts": [
-        "In text exchanges and conversations, multiple people who have worked for leading companies are sceptical of the warnings."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472354_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472354_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "伊议长：伊朗条件得到满足前霍尔木兹海峡将保持关闭",
-      "publishedAt": "2026-09-20T06:54:07.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 172,
-        "reader": "cnfin-body",
-        "sha256": "b15771db33cb951fa5ab6d76f865d54986ec8f09e1b88c8b633ad8dfc1c4cc77",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472354_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
-      },
-      "id": "a29bcef63a946de957a6",
-      "verificationStatus": "verified",
-      "titleZh": "伊议长：伊朗条件得到满足前霍尔木兹海峡将保持关闭",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|伊议长伊朗条件得到满足前霍尔木兹|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472324_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472324_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "宁德时代江西锂矿 采矿项目环评重启",
-      "publishedAt": "2026-09-20T06:17:49.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 1165,
-        "reader": "cnfin-body",
-        "sha256": "5356262eae157fc26a690c3eccffc5852d10821f6d9ced1b0bd4a90995306c84",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472324_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
-      },
-      "id": "3eaedf3a158d3f0caced",
-      "verificationStatus": "verified",
-      "titleZh": "宁德时代江西锂矿 采矿项目环评重启",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|宁德时代江西锂矿采矿项目环评重启|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
       "inferences": []
     },
     {
@@ -1079,7 +1243,7 @@
       "originalTitle": "Families missing out on NHS money for healthy food",
       "originalSummary": "Figures show as few as 64% of eligible families are claiming NHS money to buy milk, fruit and veg.",
       "publishedAt": "2026-09-20T06:12:13.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "bdfbd8ba2925d4894e88",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1120,7 +1284,7 @@
       "originalTitle": "Watch: Fans react as Ed Sheeran speaks out over Macklemore controversy at show",
       "originalSummary": "Ed Sheeran told the crowd he had made mistakes after Macklemore was dropped from his tour for making pro-Palestinian remarks.",
       "publishedAt": "2026-09-20T05:01:47.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "102a200beecc9e354dcf",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1161,7 +1325,7 @@
       "originalTitle": "Ed Sheeran admits 'mistakes' at first show since Macklemore controversy",
       "originalSummary": "The singer spoke about Israel and Gaza after Macklemore was dropped from his tour for making pro-Palestinian remarks on stage.",
       "publishedAt": "2026-09-20T04:49:11.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "2eb29abf6329c59da4fb",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1193,65 +1357,6 @@
       "inferences": []
     },
     {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472309_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472309_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "市场监管总局：让市场有进有出 用组合拳整治“内卷式”竞争",
-      "publishedAt": "2026-09-20T03:18:23.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 1900,
-        "reader": "cnfin-body",
-        "sha256": "69cc6053809fad6b76a325c418e7ac7406100df1ecf399504e2e0d4fe797539e",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472309_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
-      },
-      "id": "a66af2739d4009bb41f3",
-      "verificationStatus": "verified",
-      "titleZh": "市场监管总局：让市场有进有出 用组合拳整治“内卷式”竞争",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|市场监管总局让市场有进有出用组合|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "69cc6053809fad6b76a325c418e7ac7406100df1ecf399504e2e0d4fe797539e",
-        "count": 1,
-        "lastAttemptAt": "2026-09-20T06:15:27.965Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[1].quote"
-          ]
-        }
-      }
-    },
-    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -1261,7 +1366,7 @@
       "originalTitle": "Watch: Concertgoers and pro-Palestinian activists arrive at Ed Sheeran concert",
       "originalSummary": "Some Ed Sheeran fans say they are excited to enjoy music and are not there for politics after Macklemore was dropped from the tour for making pro-Palestinian comments.",
       "publishedAt": "2026-09-20T02:45:43.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "be9638dcae298eb4c416",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1288,350 +1393,6 @@
       "detailStatus": "brief",
       "facts": [
         "Some Ed Sheeran fans say they are excited to enjoy music and are not there for politics after Macklemore was dropped from the tour for making pro-Palestinian comments."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472277_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472277_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "【中经社信号】国产医疗机器人商业化换挡提速",
-      "publishedAt": "2026-09-20T02:26:37.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 2422,
-        "reader": "cnfin-body",
-        "sha256": "0e9db1e72fcc8c9381b7b27f08ae9dfa03b85b5d74a2686f4cbdd6b3b554fb3f",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472277_1.html",
-        "checkedAt": "2026-09-20T21:33:02.771Z"
-      },
-      "id": "bf5595ec513d6aca2c3c",
-      "verificationStatus": "verified",
-      "titleZh": "【中经社信号】国产医疗机器人商业化换挡提速",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|中经社信号国产医疗机器人商业化换|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "0e9db1e72fcc8c9381b7b27f08ae9dfa03b85b5d74a2686f4cbdd6b3b554fb3f",
-        "count": 1,
-        "lastAttemptAt": "2026-09-20T06:15:27.965Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[3].quote"
-          ]
-        }
-      }
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472248_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472248_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "【高端访谈】2027年目标是高阶智驾芯片市场全国第一——访地平线创始人兼CEO余凯",
-      "publishedAt": "2026-09-20T01:23:43.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "e08e73835c37bbe42adb",
-      "verificationStatus": "verified",
-      "titleZh": "【高端访谈】2027年目标是高阶智驾芯片市场全国第一——访地平线创始人兼CEO余凯",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|高端访谈2027年目标是高阶智驾|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Houthis say they targeted Saudi capital with ballistic missiles",
-      "originalSummary": "A reported strike on a fuel depot at Riyadh airport caused delays on Saturday, as Saudi Arabia says it shot down a ballistic missile aimed at the capital.",
-      "publishedAt": "2026-09-19T23:49:26.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "acd3d295a011b4af6f0e",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|houthissaytheyta|2026-09-19",
-      "detailStatus": "brief",
-      "facts": [
-        "A reported strike on a fuel depot at Riyadh airport caused delays on Saturday, as Saudi Arabia says it shot down a ballistic missile aimed at the capital."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvgy1q2k2z0o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Cultural treasures are being destroyed worldwide - so why is no-one being punished?",
-      "originalSummary": "A cauldron of conflicts is bubbling across the world, with cultural monuments being destroyed. These people are fighting against it.",
-      "publishedAt": "2026-09-19T23:18:18.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "7ec1375ec0e9e985922d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|culturaltreasure|2026-09-19",
-      "detailStatus": "brief",
-      "facts": [
-        "A cauldron of conflicts is bubbling across the world, with cultural monuments being destroyed. These people are fighting against it."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw62m6z7m7zjo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Mum's viral barefoot race sparks debate over India's education crisis",
-      "originalSummary": "The 47-year-old ran - and won - a 3km race where she hoped to win enough prize money to buy study books for her daughter.",
-      "publishedAt": "2026-09-19T23:18:06.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "27e6e83362a90050c6c0",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|mumsviralbarefoo|2026-09-19",
-      "detailStatus": "brief",
-      "facts": [
-        "The 47-year-old ran - and won - a 3km race where she hoped to win enough prize money to buy study books for her daughter."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx1l6762jeq4o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'I don't even know if my parents are alive' - the war heroes jailed 25 years ago",
-      "originalSummary": "The children of key politicians jailed 25 years ago without a trace in Eritrea want answers.",
-      "publishedAt": "2026-09-19T23:01:45.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "e94e48e3f3ce956c3d76",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|idontevenknowifm|2026-09-19",
-      "detailStatus": "brief",
-      "facts": [
-        "The children of key politicians jailed 25 years ago without a trace in Eritrea want answers."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cg4d9vly636o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Our head teacher was an abuser. We joined forces to get justice - now we're married",
-      "originalSummary": "Students spent years collecting evidence against their Indonesian principal, before falling in love.",
-      "publishedAt": "2026-09-19T23:01:38.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "e3618c825880e7695d2a",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ourheadteacherwa|2026-09-19",
-      "detailStatus": "brief",
-      "facts": [
-        "Students spent years collecting evidence against their Indonesian principal, before falling in love."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
-      "originalSummary": "Denmark and the US have reached an agreement after months of threats from Donald Trump to annex the territory.",
-      "publishedAt": "2026-09-19T23:00:27.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "04a05d846dd4458de22b",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|natowelcomesgree|2026-09-19",
-      "detailStatus": "brief",
-      "facts": [
-        "Denmark and the US have reached an agreement after months of threats from Donald Trump to annex the territory."
       ],
       "expectations": [],
       "inferences": []
@@ -1763,6 +1524,159 @@
       "inferences": []
     },
     {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472359_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472359_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "体育赛事流量，何以转化成消费和发展增量",
+      "publishedAt": "2026-09-20T07:04:58.000Z",
+      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 2364,
+        "reader": "cnfin-body",
+        "sha256": "12df7a8cc080ddf1ee9879d9be6d462f03e9c342dc3f36e119938df45d92b5f8",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472359_1.html",
+        "checkedAt": "2026-09-20T21:33:02.771Z"
+      },
+      "id": "fae63eec66863eaa9ec3",
+      "verificationStatus": "verified",
+      "titleZh": "体育赛事流量，何以转化成消费和发展增量",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|体育赛事流量何以转化成消费和发展|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "12df7a8cc080ddf1ee9879d9be6d462f03e9c342dc3f36e119938df45d92b5f8",
+        "count": 1,
+        "lastAttemptAt": "2026-09-20T21:33:02.771Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[1].numbers"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472354_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472354_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "伊议长：伊朗条件得到满足前霍尔木兹海峡将保持关闭",
+      "publishedAt": "2026-09-20T06:54:07.000Z",
+      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 172,
+        "reader": "cnfin-body",
+        "sha256": "b15771db33cb951fa5ab6d76f865d54986ec8f09e1b88c8b633ad8dfc1c4cc77",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472354_1.html",
+        "checkedAt": "2026-09-20T21:33:02.771Z"
+      },
+      "id": "a29bcef63a946de957a6",
+      "verificationStatus": "verified",
+      "titleZh": "伊议长：伊朗条件得到满足前霍尔木兹海峡将保持关闭",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|伊议长伊朗条件得到满足前霍尔木兹|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472324_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472324_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "宁德时代江西锂矿 采矿项目环评重启",
+      "publishedAt": "2026-09-20T06:17:49.000Z",
+      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1165,
+        "reader": "cnfin-body",
+        "sha256": "5356262eae157fc26a690c3eccffc5852d10821f6d9ced1b0bd4a90995306c84",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472324_1.html",
+        "checkedAt": "2026-09-20T21:33:02.771Z"
+      },
+      "id": "3eaedf3a158d3f0caced",
+      "verificationStatus": "verified",
+      "titleZh": "宁德时代江西锂矿 采矿项目环评重启",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|宁德时代江西锂矿采矿项目环评重启|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -1882,6 +1796,163 @@
       "facts": [
         "The mega-star spoke about Israel and Gaza at his first concert since rapper Macklemore was removed from his tour."
       ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472309_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472309_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "市场监管总局：让市场有进有出 用组合拳整治“内卷式”竞争",
+      "publishedAt": "2026-09-20T03:18:23.000Z",
+      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1900,
+        "reader": "cnfin-body",
+        "sha256": "69cc6053809fad6b76a325c418e7ac7406100df1ecf399504e2e0d4fe797539e",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472309_1.html",
+        "checkedAt": "2026-09-20T21:33:02.771Z"
+      },
+      "id": "a66af2739d4009bb41f3",
+      "verificationStatus": "verified",
+      "titleZh": "市场监管总局：让市场有进有出 用组合拳整治“内卷式”竞争",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|市场监管总局让市场有进有出用组合|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "69cc6053809fad6b76a325c418e7ac7406100df1ecf399504e2e0d4fe797539e",
+        "count": 1,
+        "lastAttemptAt": "2026-09-20T06:15:27.965Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[1].quote"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472277_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472277_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【中经社信号】国产医疗机器人商业化换挡提速",
+      "publishedAt": "2026-09-20T02:26:37.000Z",
+      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 2422,
+        "reader": "cnfin-body",
+        "sha256": "0e9db1e72fcc8c9381b7b27f08ae9dfa03b85b5d74a2686f4cbdd6b3b554fb3f",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472277_1.html",
+        "checkedAt": "2026-09-20T21:33:02.771Z"
+      },
+      "id": "bf5595ec513d6aca2c3c",
+      "verificationStatus": "verified",
+      "titleZh": "【中经社信号】国产医疗机器人商业化换挡提速",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|中经社信号国产医疗机器人商业化换|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "0e9db1e72fcc8c9381b7b27f08ae9dfa03b85b5d74a2686f4cbdd6b3b554fb3f",
+        "count": 1,
+        "lastAttemptAt": "2026-09-20T06:15:27.965Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[3].quote"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472248_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472248_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【高端访谈】2027年目标是高阶智驾芯片市场全国第一——访地平线创始人兼CEO余凯",
+      "publishedAt": "2026-09-20T01:23:43.000Z",
+      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "id": "e08e73835c37bbe42adb",
+      "verificationStatus": "verified",
+      "titleZh": "【高端访谈】2027年目标是高阶智驾芯片市场全国第一——访地平线创始人兼CEO余凯",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|高端访谈2027年目标是高阶智驾|2026-09-20",
+      "detailStatus": "brief",
+      "facts": [],
       "expectations": [],
       "inferences": []
     },
@@ -2084,6 +2155,47 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Houthis say they targeted Saudi capital with ballistic missiles",
+      "originalSummary": "A reported strike on a fuel depot at Riyadh airport caused delays on Saturday, as Saudi Arabia says it shot down a ballistic missile aimed at the capital.",
+      "publishedAt": "2026-09-19T23:49:26.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "id": "acd3d295a011b4af6f0e",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|houthissaytheyta|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [
+        "A reported strike on a fuel depot at Riyadh airport caused delays on Saturday, as Saudi Arabia says it shot down a ballistic missile aimed at the capital."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
       "sourceTier": "verified",
@@ -2184,6 +2296,47 @@
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvgy1q2k2z0o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
+      "originalTitle": "Cultural treasures are being destroyed worldwide - so why is no-one being punished?",
+      "originalSummary": "A cauldron of conflicts is bubbling across the world, with cultural monuments being destroyed. These people are fighting against it.",
+      "publishedAt": "2026-09-19T23:18:18.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "id": "7ec1375ec0e9e985922d",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|culturaltreasure|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [
+        "A cauldron of conflicts is bubbling across the world, with cultural monuments being destroyed. These people are fighting against it."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvgy1q2k2z0o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
       "originalTitle": "Cultural treasures are being destroyed by war, and people want justice",
       "originalSummary": "A cauldron of conflicts is bubbling across the world, with cultural monuments being destroyed. These people are fighting against it.",
       "publishedAt": "2026-09-19T23:18:18.000Z",
@@ -2223,12 +2376,223 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw62m6z7m7zjo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Mum's viral barefoot race sparks debate over India's education crisis",
+      "originalSummary": "The 47-year-old ran - and won - a 3km race where she hoped to win enough prize money to buy study books for her daughter.",
+      "publishedAt": "2026-09-19T23:18:06.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "id": "27e6e83362a90050c6c0",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|mumsviralbarefoo|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [
+        "The 47-year-old ran - and won - a 3km race where she hoped to win enough prize money to buy study books for her daughter."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Not all AI workers think the tech could kill everyone",
+      "originalSummary": "In text exchanges and conversations, multiple people who have worked for leading companies are sceptical of the warnings.",
+      "publishedAt": "2026-09-19T23:01:57.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "id": "feb1d222fa3d4f4b4628",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-19T23:01:57.000Z"
+        }
+      ],
+      "keyTerms": [
+        "汇率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "汇率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|notallaiworkerst|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [
+        "In text exchanges and conversations, multiple people who have worked for leading companies are sceptical of the warnings."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx1l6762jeq4o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "'I don't even know if my parents are alive' - the war heroes jailed 25 years ago",
+      "originalSummary": "The children of key politicians jailed 25 years ago without a trace in Eritrea want answers.",
+      "publishedAt": "2026-09-19T23:01:45.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "id": "e94e48e3f3ce956c3d76",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|idontevenknowifm|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [
+        "The children of key politicians jailed 25 years ago without a trace in Eritrea want answers."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cg4d9vly636o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Our head teacher was an abuser. We joined forces to get justice - now we're married",
+      "originalSummary": "Students spent years collecting evidence against their Indonesian principal, before falling in love.",
+      "publishedAt": "2026-09-19T23:01:38.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "id": "e3618c825880e7695d2a",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ourheadteacherwa|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [
+        "Students spent years collecting evidence against their Indonesian principal, before falling in love."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
+      "originalSummary": "Denmark and the US have reached an agreement after months of threats from Donald Trump to annex the territory.",
+      "publishedAt": "2026-09-19T23:00:27.000Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
+      "id": "04a05d846dd4458de22b",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|natowelcomesgree|2026-09-19",
+      "detailStatus": "brief",
+      "facts": [
+        "Denmark and the US have reached an agreement after months of threats from Donald Trump to annex the territory."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqlykr2vrv04o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "Trump says US will form 'AI Force' and appoint an artificial intelligence tsar",
       "originalSummary": "The president said his administration \"will not in any way hinder or stifle the growth\" amid amid warnings about the emergent technology.",
       "publishedAt": "2026-09-19T21:01:56.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "7bab4c4d9983feb569ee",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2269,7 +2633,7 @@
       "originalTitle": "Journalists denied White House access after Trump banned some media outlets",
       "originalSummary": "CNN, MS NOW and Politico reporters' White House press badges were confiscated, the outlets reported.",
       "publishedAt": "2026-09-19T19:13:49.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "f79d657f23a915935242",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2310,7 +2674,7 @@
       "originalTitle": "Trump escalates media fight after week of setbacks",
       "originalSummary": "An embattled Trump has injected his fight with the news media with new acrimony, writes the BBC's Anthony Zurcher.",
       "publishedAt": "2026-09-19T17:23:37.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "b0e5298e15321a1e07f2",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2351,7 +2715,7 @@
       "originalTitle": "Converse pulls 'deeply upsetting' advert after backlash",
       "originalSummary": "Social media users say an image from the brand's Instagram account resembled a KKK hood and hanging.",
       "publishedAt": "2026-09-19T14:05:01.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "ff9766357969847bef66",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2392,7 +2756,7 @@
       "originalTitle": "Google's Gemini AI hacked three companies in security test",
       "originalSummary": "The AI model accessed the internet and guessed credentials to three websites, a Google official told the BBC.",
       "publishedAt": "2026-09-19T13:39:32.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "d9f946c3e335d90d8b05",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -2439,7 +2803,7 @@
       "originalTitle": "The race to build a pandemic-proof world",
       "originalSummary": "Six years after COVID-19 killed millions, battered health systems, disrupted lives and brought the global economy to a virtual standstill, the world is still grappling with how we can prepare better for the next pandemic.",
       "publishedAt": "2026-09-19T12:00:00.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "20a2dd8f172e79c30ee5",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2478,9 +2842,9 @@
       "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168361",
       "originalLanguage": "en",
       "originalTitle": "Why the UN General Assembly still matters",
-      "originalSummary": "More than eight decades on, the UN General Assembly remains the place where the UN’s 193 Member States come together to debate the defining challenges of the day, from war and peace – to development, climate change and human rights.",
+      "originalSummary": "More than eight decades on from its founding, the UN General Assembly remains the place where the UN’s 193 Member States come together to debate the defining challenges of the day, from war and peace – to development, climate change and human rights.",
       "publishedAt": "2026-09-19T12:00:00.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "50ec6bef98c6ac1abc19",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2506,7 +2870,7 @@
       "clusterId": "监管|whytheungenerala|2026-09-19",
       "detailStatus": "brief",
       "facts": [
-        "More than eight decades on, the UN General Assembly remains the place where the UN’s 193 Member States come together to debate the defining challenges of the day, from war and peace – to development, climate change and human rights."
+        "More than eight decades on from its founding, the UN General Assembly remains the place where the UN’s 193 Member States come together to debate the defining challenges of the day, from war and peace – to development, climate change and human rights."
       ],
       "expectations": [],
       "inferences": []
@@ -2521,7 +2885,7 @@
       "originalTitle": "'Enough is enough': Women protest after string of murders near Johannesburg",
       "originalSummary": "The police have since set up a task team to investigate the murders and have urged women in the Kempton Park area to avoid walking or running alone \"particularly in isolated areas\".",
       "publishedAt": "2026-09-19T11:50:50.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "946df8ba9ed850816c0a",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2562,7 +2926,7 @@
       "originalTitle": "Shark attack prompts rare kill order in Western Australia as victim named",
       "originalSummary": "Greg O'Neill \"loved the ocean\", his family say, as police boats and helicopters patrol Perth's beaches in search of his body and the shark that attacked him.",
       "publishedAt": "2026-09-19T11:50:22.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "3d77ec07e2936372b2eb",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2644,7 +3008,7 @@
       "originalTitle": "Millions without power as Cuba hit by latest major blackout",
       "originalSummary": "Widespread power outages have become increasingly common due to fuel shortages made worse by a US blockade.",
       "publishedAt": "2026-09-19T10:27:37.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "62861f56d8c43695cd67",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3497,7 +3861,7 @@
       "originalTitle": "Tata Sons: India's corporate crown braces for upheaval amid boardroom revolt",
       "originalSummary": "The Tata boardroom battle has intensified over a re-appointment of its chairman and a diktat to go public.",
       "publishedAt": "2026-09-18T23:07:16.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "4dcec40cc406d081a693",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3538,7 +3902,7 @@
       "originalTitle": "Billionaire Man United owner says he has lost confidence in the UK",
       "originalSummary": "Ineos founder Sir Jim Ratcliffe tells the BBC he thinks the country is \"on the slide\" and calls for more investment in the North Sea.",
       "publishedAt": "2026-09-18T23:06:16.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "b949bfd1471e8a95cd2c",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3579,7 +3943,7 @@
       "originalTitle": "Grim discoveries of murdered women spark fear in South Africa",
       "originalSummary": "Dineo Motapane is one of nine recent victims whose deaths have left a nation traumatised over the level of violence against women.",
       "publishedAt": "2026-09-18T23:04:41.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "4618c045c5172d3135ec",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3661,7 +4025,7 @@
       "originalTitle": "Trump signs sweeping Russia sanctions bill",
       "originalSummary": "The bill is named after the late Senator Lindsey Graham, a staunch advocate of aid for Ukraine.",
       "publishedAt": "2026-09-18T22:05:47.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
+      "fetchedAt": "2026-09-21T00:16:09.326Z",
       "id": "688d70dd93a829c2185d",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3773,565 +4137,6 @@
       ],
       "expectations": [],
       "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cqy4zw4xr717o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Is the Kennedy Center losing 'hundreds of millions of dollars'?",
-      "originalSummary": "Records in 2024 show the venue had a surplus of millions of dollars once contributions and grants had been factored in.",
-      "publishedAt": "2026-09-18T18:56:17.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "a987dfe502c935ba8dd8",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|isthekennedycent|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Records in 2024 show the venue had a surplus of millions of dollars once contributions and grants had been factored in."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Russian hybrid attacks against Europe intensifying, says Macron",
-      "originalSummary": "The French president says he has tasked the government with protecting critical infrastructure and defence industry sites.",
-      "publishedAt": "2026-09-18T18:04:38.000Z",
-      "fetchedAt": "2026-09-19T23:03:28.532Z",
-      "id": "f663651b5e65b4655302",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|russianhybridatt|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The French president says he has tasked the government with protecting critical infrastructure and defence industry sites."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to Trump's war with Iran",
-      "originalSummary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
-      "publishedAt": "2026-09-18T17:57:30.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "571a9ab985ff78ee0456",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|wesimplydontknow|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to Trump's war with Iran",
-      "originalSummary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
-      "publishedAt": "2026-09-18T17:57:30.000Z",
-      "fetchedAt": "2026-09-19T00:20:27.517Z",
-      "id": "0ede7262014792656e94",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-18T17:57:30.000Z"
-        }
-      ],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|wesimplydontknow|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to US-Iran war",
-      "originalSummary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
-      "publishedAt": "2026-09-18T17:57:30.000Z",
-      "fetchedAt": "2026-09-18T18:28:14.004Z",
-      "id": "fe3ee80d0903440ec3e3",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|wesimplydontknow|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/hockey/articles/cmx2zg85gq03o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "North Korean anthem played for South Korea at Asian Games",
-      "originalSummary": "Organisers have apologised for playing the North Korean national anthem for the South Korean men's hockey team at the Asian Games in Japan.",
-      "publishedAt": "2026-09-18T17:18:09.000Z",
-      "fetchedAt": "2026-09-19T18:00:45.468Z",
-      "id": "220f4ee5b85732e7b128",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|northkoreananthe|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Organisers have apologised for playing the North Korean national anthem for the South Korean men's hockey team at the Asian Games in Japan."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvj64dl1w6yno?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Warren Buffett steps down after six decades at Berkshire - 'Father Time always wins'",
-      "originalSummary": "Since taking control in 1965, Buffett grew a struggling textile mill into a global conglomerate.",
-      "publishedAt": "2026-09-18T17:15:02.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "65e425197b9df4d3caa0",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|warrenbuffettste|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Since taking control in 1965, Buffett grew a struggling textile mill into a global conglomerate."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvj64dl1w6yno?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Warren Buffett steps down after six decades at Berkshire - 'Father Time always wins'",
-      "originalSummary": "Since taking control in 1965, Buffett grew a struggling textile mill into a global conglomerate.",
-      "publishedAt": "2026-09-18T17:15:02.000Z",
-      "fetchedAt": "2026-09-19T18:00:45.468Z",
-      "id": "f665c67acfa95c755d34",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cvj64dl1w6yno?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-18T17:15:02.000Z"
-        }
-      ],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|warrenbuffettste|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Since taking control in 1965, Buffett grew a struggling textile mill into a global conglomerate."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm1j4kj57k08o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Ryanair boss Michael O'Leary apologises over 'high-fare rapists' remarks",
-      "originalSummary": "O'Leary described his choice of language as \"careless\" and said \"it won't happen again\".",
-      "publishedAt": "2026-09-18T17:10:58.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "2e5f45b5a75c0444a816",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ryanairbossmicha|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "O'Leary described his choice of language as \"careless\" and said \"it won't happen again\"."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm1j4kj57k08o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Ryanair boss Michael O'Leary apologises over 'high-fare rapists' remarks",
-      "originalSummary": "O'Leary described his choice of language as \"careless\" and said \"it won't happen again\".",
-      "publishedAt": "2026-09-18T17:10:58.000Z",
-      "fetchedAt": "2026-09-19T23:03:28.532Z",
-      "id": "12b39faae1be1e180893",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cm1j4kj57k08o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-18T17:10:58.000Z"
-        }
-      ],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ryanairbossmicha|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "O'Leary described his choice of language as \"careless\" and said \"it won't happen again\"."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw0kl1571lpmo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Flight chaos caused by 'millisecond' software defect, report says",
-      "originalSummary": "The failure led to more than 2,000 flights being cancelled and hundreds of thousands of passengers affected.",
-      "publishedAt": "2026-09-18T15:48:58.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "071f16de7b1ad0be67bd",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|flightchaoscause|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The failure led to more than 2,000 flights being cancelled and hundreds of thousands of passengers affected."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw980qp2n3p4o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Dozens of suspected illegal miners die in Nigerian custody",
-      "originalSummary": "Authorities linked the deaths to disease, but this has been disputed by intelligence reports and relatives of the accused.",
-      "publishedAt": "2026-09-18T15:47:28.000Z",
-      "fetchedAt": "2026-09-19T18:00:45.468Z",
-      "id": "835d78727b479d75a873",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|dozensofsuspecte|2026-09-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Authorities linked the deaths to disease, but this has been disputed by intelligence reports and relatives of the accused."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "fed",
-      "sourceName": "Federal Reserve",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.federalreserve.gov/feeds/press_all.xml",
-      "canonicalUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm",
-      "originalLanguage": "en",
-      "originalTitle": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
-      "originalSummary": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
-      "publishedAt": "2026-09-18T15:00:00.000Z",
-      "fetchedAt": "2026-09-20T21:33:02.771Z",
-      "id": "fc5acb83c34ebff7568c",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "Federal Reserve",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm",
-          "publishedAt": "2026-09-18T15:00:00.000Z"
-        }
-      ],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "宏观"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "美国",
-        "全球",
-        "美股相关"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|federalreservebo|2026-09-18",
-      "detailStatus": "professional",
-      "facts": [
-        "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula"
-      ],
-      "expectations": [],
-      "inferences": []
     }
   ],
   "sourceHealth": [
@@ -4410,8 +4215,8 @@
         "audit": 0
       },
       "rejectionReasons": {
-        "language": 1,
-        "facts": 1
+        "facts": 1,
+        "so-what": 1
       }
     }
   ],
