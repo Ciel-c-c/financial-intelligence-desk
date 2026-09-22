@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-22T00:06:26.872Z",
-  "lastSuccessfulAt": "2026-09-22T00:06:26.872Z",
-  "nextExpectedAt": "2026-09-22T01:06:26.872Z",
+  "attemptedAt": "2026-09-22T04:54:30.890Z",
+  "lastSuccessfulAt": "2026-09-22T04:54:30.890Z",
+  "nextExpectedAt": "2026-09-22T05:54:30.890Z",
   "status": "delayed",
   "latest": [
     {
@@ -15,7 +15,7 @@
       "originalTitle": "I'd rather pay thousands on a holiday: Meet the pensioners spending the kids' inheritance",
       "originalSummary": "The phenomenon sees retirees spend all their money on enjoying life to the full.",
       "publishedAt": "2026-09-21T23:01:26.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "e9b27f0654aa36ab61e1",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -62,7 +62,7 @@
       "originalTitle": "Vet prescription fees capped under rule changes",
       "originalSummary": "Vets must also tell clients if cheaper medicine is available online as part of the rule updates which surgeries have the coming months to bring in.",
       "publishedAt": "2026-09-21T23:01:18.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "f7d60ff4a35b9e34880a",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -107,9 +107,9 @@
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqp80p78mxx5o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "Airlines criticise air traffic control as second glitch causes more disruption in UK",
-      "originalSummary": "Prime Minister Andy Burnham said further issues today \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it.",
+      "originalSummary": "Prime Minister Andy Burnham said further issues \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it.",
       "publishedAt": "2026-09-21T20:21:18.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "0cacf30a63290583969c",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -141,8 +141,106 @@
       "clusterId": "监管|airlinescriticis|2026-09-21",
       "detailStatus": "brief",
       "facts": [
-        "Prime Minister Andy Burnham said further issues today \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it."
+        "Prime Minister Andy Burnham said further issues \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it."
       ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473380_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473380_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "午评：沪指涨0.22% AI应用股领涨 航运股领跌",
+      "publishedAt": "2026-09-22T03:45:22.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1573,
+        "reader": "cnfin-body",
+        "sha256": "3c4d3b648d73ce72dd83a55e69f4fd7862cba09abda34264085b134aba1fbdd1",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473380_1.html",
+        "checkedAt": "2026-09-22T04:54:30.890Z"
+      },
+      "id": "294d913aa720c644fce5",
+      "verificationStatus": "verified",
+      "titleZh": "午评：沪指涨0.22% AI应用股领涨 航运股领跌",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|午评沪指涨022ai应用股领涨航|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "3c4d3b648d73ce72dd83a55e69f4fd7862cba09abda34264085b134aba1fbdd1",
+        "count": 1,
+        "lastAttemptAt": "2026-09-22T04:54:30.890Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[3].quote"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473369_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473369_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【自然资源部：预计到2030年我国海洋生物医药产业增加值将突破1300亿元】自然资源部党组书记、国家自然资源总督察刘国洪22日在国新办新闻发布会上表示，全球上市的海洋药物品类中，我国自主研发的占到30%左右；预计到2030年，我国海洋生物医药产业增加值将突破1300亿元，较2025年增长三成。",
+      "publishedAt": "2026-09-22T03:17:02.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "2ab496c015757db57446",
+      "verificationStatus": "verified",
+      "titleZh": "【自然资源部：预计到2030年我国海洋生物医药产业增加值将突破1300亿元】自然资源部党组书记、国家自然资源总督察刘国洪22日在国新办新闻发布会上表示，全球上市的海洋药物品类中，我国自主研发的占到30%左右；预计到2030年，我国海洋生物医药产业增加值将突破1300亿元，较2025年增长三成。",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|自然资源部预计到2030年我国海|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [],
       "expectations": [],
       "inferences": []
     },
@@ -156,7 +254,7 @@
       "originalTitle": "UN condemns attempted Houthi strike on Riyadh as Yemen displacement surges past 130,000",
       "originalSummary": "The UN has condemned continued cross‑border attacks by Houthi forces against Saudi Arabia, including an attempted strike on the capital Riyadh, as fighting inside Yemen drives one of the country’s fastest displacement surges in years.",
       "publishedAt": "2026-09-21T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "e7842c7925fb2349f39c",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -197,7 +295,7 @@
       "originalTitle": "‘Nowhere is safe’: UN experts detail Ukraine war’s toll and Russia’s reach beyond its borders",
       "originalSummary": "UN Human Rights Council-appointed experts on Monday laid out a grim picture of the human cost of Russia’s invasion of Ukraine, with a spotlight on civilians facing a third wartime winter as well as the intimidation of Russians who have fled abroad.",
       "publishedAt": "2026-09-21T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "377425ad2380514a9190",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -238,7 +336,7 @@
       "originalTitle": "‘We are not powerless’: UN chief urges world leaders to invest in peace",
       "originalSummary": "In a world facing rising conflicts, violence and divisions that are causing great suffering for millions of people, the UN chief on Monday called on world leaders and citizens to invest more in peace.",
       "publishedAt": "2026-09-21T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "4990573391a42c8b9082",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -279,7 +377,7 @@
       "originalTitle": "Why climate action now comes down to speed, finance and cooperation",
       "originalSummary": "Temporarily exceeding the 1.5°C global warming goal set in Paris is widely considered inevitable. The challenge now is to keep that overshoot as small and short as possible by cutting emissions faster, unlocking finance and strengthening international cooperation.",
       "publishedAt": "2026-09-21T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "5d7aaf3f08bf981e3e20",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -320,7 +418,7 @@
       "originalTitle": "Ebola vaccine trial begins in DR Congo",
       "originalSummary": "An Ebola vaccine trial is underway in the Democratic Republic of the Congo (DRC), involving frontline health workers and others involved in the response.",
       "publishedAt": "2026-09-21T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "0e287dd1842aa0ab8a1f",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -361,7 +459,7 @@
       "originalTitle": "UN panel calls for stronger safeguards as AI agents advance",
       "originalSummary": "The world&#039;s first scientific body on Artificial Intelligence called on Monday for AI safeguards to be adapted as current firewalls are “unravelling”.&nbsp;",
       "publishedAt": "2026-09-21T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "861962826fee8e606ef2",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -393,6 +491,286 @@
       "inferences": []
     },
     {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473344_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473344_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "国内首条跨海市域铁路通车运营",
+      "publishedAt": "2026-09-22T02:35:10.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 240,
+        "reader": "cnfin-body",
+        "sha256": "13a91e40567960599d3586e7cdf936a12a42a765aa5d0bca7179a3f57d48a6ff",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473344_1.html",
+        "checkedAt": "2026-09-22T04:54:30.890Z"
+      },
+      "id": "277b1f9d18b3d6dbcdc1",
+      "verificationStatus": "verified",
+      "titleZh": "国内首条跨海市域铁路通车运营",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|国内首条跨海市域铁路通车运营|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "13a91e40567960599d3586e7cdf936a12a42a765aa5d0bca7179a3f57d48a6ff",
+        "count": 1,
+        "lastAttemptAt": "2026-09-22T04:54:30.890Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[3].quote"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473340_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473340_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【国家发展改革委：推动北斗产业规模在5年内超过1万亿元】国家发展改革委政策研究室副主任、委新闻发言人李超9月22日在国家发展改革委9月份新闻发布会上说，推动北斗产业规模在5年内超过1万亿元，实现北斗规模应用的市场化、产业化和国际化新突破。",
+      "publishedAt": "2026-09-22T02:20:39.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "5e55de01a17962a61d39",
+      "verificationStatus": "verified",
+      "titleZh": "【国家发展改革委：推动北斗产业规模在5年内超过1万亿元】国家发展改革委政策研究室副主任、委新闻发言人李超9月22日在国家发展改革委9月份新闻发布会上说，推动北斗产业规模在5年内超过1万亿元，实现北斗规模应用的市场化、产业化和国际化新突破。",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|国家发展改革委推动北斗产业规模在|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473318_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473318_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "中秋、国庆假期单日最高通关量将突破240万人次",
+      "publishedAt": "2026-09-22T02:04:21.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 527,
+        "reader": "cnfin-body",
+        "sha256": "e210a88a1c94b39c801194b2ecfe103a9f23ecce595b8335a3f48700e2b0f28d",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473318_1.html",
+        "checkedAt": "2026-09-22T04:54:30.890Z"
+      },
+      "id": "40d9ffbdeb02cf84d8fe",
+      "verificationStatus": "verified",
+      "titleZh": "中秋、国庆假期单日最高通关量将突破240万人次",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|中秋国庆假期单日最高通关量将突破|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473314_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473314_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "2026年全国国庆文化和旅游消费月启动",
+      "publishedAt": "2026-09-22T01:58:00.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 335,
+        "reader": "cnfin-body",
+        "sha256": "f3734f61a5470540e73811e5d44c88fc5cfb1b3828da30113c6d7f617912a894",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473314_1.html",
+        "checkedAt": "2026-09-22T04:54:30.890Z"
+      },
+      "id": "02a35e78418fe7a7d954",
+      "verificationStatus": "verified",
+      "titleZh": "2026年全国国庆文化和旅游消费月启动",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|2026年全国国庆文化和旅游消费|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473311_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473311_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "“2026中国民营企业500强”发布",
+      "publishedAt": "2026-09-22T01:51:30.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 338,
+        "reader": "cnfin-body",
+        "sha256": "c15a7b2e2af712d99f5cd98d78a6edc51aade4e5b1db93427268f1e558bb4926",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473311_1.html",
+        "checkedAt": "2026-09-22T04:54:30.890Z"
+      },
+      "id": "d299c9ed10a34462d472",
+      "verificationStatus": "verified",
+      "titleZh": "“2026中国民营企业500强”发布",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|2026中国民营企业500强发布|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckvgyzzgvv4wo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Flights at major US airports delayed after cable cut by construction workers",
+      "originalSummary": "The cable had been repaired and airports are resuming normal operations, the US transportation secretary says.",
+      "publishedAt": "2026-09-22T01:36:54.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "a861aabb1b8ee9753f88",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|flightsatmajorus|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "The cable had been repaired and airports are resuming normal operations, the US transportation secretary says."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "ecb",
       "sourceName": "European Central Bank",
       "sourceTier": "official",
@@ -401,7 +779,7 @@
       "originalLanguage": "en",
       "originalTitle": "Eurosystem brings central bank money to tokenised finance",
       "publishedAt": "2026-09-21T10:00:00.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "article": {
         "status": "complete",
         "text": "21 September 2026 Pontes enables wholesale tokenised asset transactions to be settled in central bank money Launch marks first step in implementing the Eurosystem's strategy for tokenised finance Banks and market infrastructures to join in a gradual approach The Eurosystem today launched Pontes, a solution that enables wholesale transactions in tokenised assets to be settled in central bank money. Pontes is the first initiative under the Eurosystem’s strategic programme to make central bank money fit for a tokenised future and to support the development of this rapidly evolving financial ecosystem. “The Eurosystem is working to enable a more integrated, innovative and resilient European financial market in the digital age,” said Christine Lagarde, president of the ECB. “We will continue to make progress in close collaboration with the market.” Tokenisation is the process of issuing or representing assets in the form of digital “tokens”, typically recorded on distributed ledger technology (DLT) networks. For wholesale financial markets, this technology has the potential to make transactions faster and more efficient by bundling multiple steps of an asset’s lifecycle – from issuance and trading to settlement, custody and servicing – and by enabling automation and the development of innovative solutions through smart contracts. Pontes builds on the outcome of the Eurosystem’s 2024 tests using DLT for central bank money settlement , during which stakeholders from the public and private sectors indicated that access to a risk-free settlement asset was crucial for the wider adoption of this new technology. Pontes will initially offer a core set of services, to be expanded over time in line with market needs and technological developments. Enhanced features and longer operating hours will be introduced gradually, with full implementation expected by 2028. “Pontes brings the stability and trust of central bank money to the European tokenised finance ecosystem,” said Piero Cipollone, member of the ECB’s Executive Board. “It will give an important advantage to help it scale.” The market is already showing significant interest in Pontes. An initial group of market participants and DLT operators [ 1 ] has completed onboarding and is ready to start using Pontes immediately. Additional participants are committed to connecting to Pontes in the coming months. This engagement demonstrates confidence in the potential of this innovation to put Europe at the forefront of the transformation of financial services. The Eurosystem will support this transformation and continue to enhance Pontes in line with evolving market needs. The development of an integrated ecosystem for DLT-based financial services continues under Appia , involving experimentation and analytical work by the Eurosystem, Danmarks Nationalbank and stakeholders from the public and private sectors, with the goal of delivering a blueprint by 2028. Learn more about Pontes and the Eurosystem’s initiatives in tokenised finance by visiting the ECB’s website . For media queries, please contact Alessandro Speciale , tel.: +49 172 1670791.",
@@ -409,7 +787,7 @@
         "reader": "ecb-section",
         "sha256": "8279fb1013327d23f3df5581f5b31ff48ea60b03c5ea38945e70ccc7e8c88f8c",
         "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260921~e754847a7b.en.html",
-        "checkedAt": "2026-09-22T00:06:26.872Z"
+        "checkedAt": "2026-09-22T04:54:30.890Z"
       },
       "id": "0db0159806344f9b7a6d",
       "verificationStatus": "official",
@@ -449,7 +827,7 @@
       "originalLanguage": "en",
       "originalTitle": "ECB to invest part of own funds in tokenised securities, with settlement via Pontes",
       "publishedAt": "2026-09-21T10:00:00.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "article": {
         "status": "complete",
         "text": "21 September 2026 ECB has launched preparatory work to gain practical experience with investments in tokenised securities and distributed ledger technology (DLT) Transactions to be settled in central bank money in Pontes, the Eurosystem's settlement solution for DLT transactions Initial investments to focus on euro-denominated euro area public sector and European supranational securities The European Central Bank (ECB) has launched preparatory work to invest a small portion of its own funds in tokenised securities. This will enable the ECB to gain practical experience as an investor and build institutional expertise in the use of distributed ledger technology (DLT) in financial markets. The own funds portfolio is a non-monetary policy portfolio that provides the ECB with income to help fund operating expenses, excluding those related to the delivery of its supervisory tasks. This step will also support the Eurosystem’s strategy to make central bank money fit for the digital age. Key elements of this strategy are Pontes, the Eurosystem’s solution for settling tokenised assets in central bank money, which was launched today , and the Appia initiative, which will deliver a blueprint for a tokenised financial ecosystem in Europe. Tokenised financial markets continue to evolve, alongside the development of new DLT-based market infrastructures. By investing directly, the ECB will gain first-hand experience across the full investment lifecycle, including trade execution, settlement, systems and portfolio management activities. The purchases will be settled in central bank money via Pontes. Initial investments will focus on euro-denominated securities issued by euro area central governments, regional governments, agencies and European supranational institutions. Once the preparatory work has been completed, the ECB’s Executive Board will determine the operational details and timing of the investments, taking into account developments in tokenised issuances and the broader tokenised financial ecosystem in Europe. Learn more about Pontes and the Eurosystem’s initiatives in tokenised finance by visiting the ECB’s website . For media queries, please contact Lena-Sophie Demuth tel.: +49 162 2952316.",
@@ -457,7 +835,7 @@
         "reader": "ecb-section",
         "sha256": "54a9fc05decb2da219ae542798dac812301083fcc419119fa8650692f051db3c",
         "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260921_1~5a011ecbea.en.html",
-        "checkedAt": "2026-09-22T00:06:26.872Z"
+        "checkedAt": "2026-09-22T04:54:30.890Z"
       },
       "id": "5906a9e4ff2a04f35edd",
       "verificationStatus": "official",
@@ -501,6 +879,235 @@
       }
     },
     {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473278_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473278_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "近40家公司预告三季度业绩 AI产业链高景气度持续兑现",
+      "publishedAt": "2026-09-22T00:55:29.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1732,
+        "reader": "cnfin-body",
+        "sha256": "30517b13edc786935088cab099f6efb843ad7a89014a29bd0838e8ed89936bc6",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473278_1.html",
+        "checkedAt": "2026-09-22T04:54:30.890Z"
+      },
+      "id": "d53c7ac74fe5f0741821",
+      "verificationStatus": "verified",
+      "titleZh": "近40家公司预告三季度业绩 AI产业链高景气度持续兑现",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "盈利"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "公司"
+      ],
+      "eventTypes": [
+        "公司经营"
+      ],
+      "impactChannels": [
+        "盈利"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "公司经营|近40家公司预告三季度业绩ai产|2026-09-22",
+      "detailStatus": "professional",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473251_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473251_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "养老理财扩围在即 逾千亿市场迎“新玩家”",
+      "publishedAt": "2026-09-22T00:25:36.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1774,
+        "reader": "cnfin-body",
+        "sha256": "378e130b6e3452752f2c462285207e37afe111ca9eea45aec4911c341756d748",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473251_1.html",
+        "checkedAt": "2026-09-22T04:54:30.890Z"
+      },
+      "id": "c41a9d9d896c1b453a80",
+      "verificationStatus": "verified",
+      "titleZh": "养老理财扩围在即 逾千亿市场迎“新玩家”",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|养老理财扩围在即逾千亿市场迎新玩|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473247_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473247_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "升破6.70元后 四季度人民币汇率或偏强运行双向波动",
+      "publishedAt": "2026-09-22T00:25:02.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1461,
+        "reader": "cnfin-body",
+        "sha256": "36e0432a5bcfc57afc602dbbdf98bd86910262572178f34ff6050bdae8f49d57",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473247_1.html",
+        "checkedAt": "2026-09-22T04:54:30.890Z"
+      },
+      "id": "b98853ee11d5b46dcddb",
+      "verificationStatus": "verified",
+      "titleZh": "升破6.70元后 四季度人民币汇率或偏强运行双向波动",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "汇率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "汇率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|升破670元后四季度人民币汇率或|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473244_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473244_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【五大信披媒体精华摘要】9月22日",
+      "publishedAt": "2026-09-22T00:23:59.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 3584,
+        "reader": "cnfin-body",
+        "sha256": "755845435473042f93f8dd4c91f3eb17bfeeb020e0e40dadfadf9cdaeb6e9853",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473244_1.html",
+        "checkedAt": "2026-09-22T04:54:30.890Z"
+      },
+      "id": "dbafb263ac92d751de06",
+      "verificationStatus": "verified",
+      "titleZh": "【五大信披媒体精华摘要】9月22日",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|五大信披媒体精华摘要9月22日|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "CNN, MS NOW and Politico file lawsuit against Trump's White House ban",
+      "originalSummary": "Major US networks later suspended White House TV coverage of Trump as he headed to New York for a UN summit.",
+      "publishedAt": "2026-09-22T00:16:06.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "581fe67f31f6a8666c45",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|cnnmsnowandpolit|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "Major US networks later suspended White House TV coverage of Trump as he headed to New York for a UN summit."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-business",
       "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
@@ -510,7 +1117,7 @@
       "originalTitle": "I couldn't cook when I left home – but these easy £2.50 recipes became my go-to",
       "originalSummary": "Former culinary-challenged students share four low cost meals they think everyone can master.",
       "publishedAt": "2026-09-21T23:41:20.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "36633594790d8be57169",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -550,14 +1157,14 @@
       "originalLanguage": "zh",
       "originalTitle": "美联储内部对“经济阵痛”必要性存分歧 渐进紧缩或成政策主基调",
       "publishedAt": "2026-09-21T23:39:43.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "article": {
         "status": "complete",
         "characterCount": 1797,
         "reader": "cnfin-body",
         "sha256": "5c71652adca682d24202f3c37cfa9c0806d827a1fd68aa22438aa4ee6b0c03a9",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473234_1.html",
-        "checkedAt": "2026-09-22T00:06:26.872Z"
+        "checkedAt": "2026-09-22T04:54:30.890Z"
       },
       "id": "da3a0c296219e813cb5e",
       "verificationStatus": "verified",
@@ -609,15 +1216,7 @@
       "originalLanguage": "zh",
       "originalTitle": "新华财经早报：9月22日",
       "publishedAt": "2026-09-21T23:39:21.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 3806,
-        "reader": "cnfin-body",
-        "sha256": "0fef541ed30cce833e4cd33cff62bc084aed40b7cd8884b29d627bb1008156db",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473231_1.html",
-        "checkedAt": "2026-09-22T00:06:26.872Z"
-      },
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "e47d855248920170a7d4",
       "verificationStatus": "verified",
       "titleZh": "新华财经早报：9月22日",
@@ -645,32 +1244,20 @@
       "detailStatus": "brief",
       "facts": [],
       "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "0fef541ed30cce833e4cd33cff62bc084aed40b7cd8884b29d627bb1008156db",
-        "count": 1,
-        "lastAttemptAt": "2026-09-22T00:06:26.872Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[1].quote"
-          ]
-        }
-      }
+      "inferences": []
     },
     {
       "sourceId": "bbc-business",
       "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckvgyzzgvv4wo?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm4gjr1qepr8o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Flights at major US airports delayed after cable cut by construction workers",
-      "originalSummary": "The cable had been repaired and airports are resuming normal operations, the US transportation secretary says.",
-      "publishedAt": "2026-09-21T23:25:28.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "a861aabb1b8ee9753f88",
+      "originalTitle": "Paramount settles lawsuit with US states, clearing way for $110bn merger with Warner Bros",
+      "originalSummary": "The deal includes an agreement to produce 30 films a year, or Paramount will be forced to sell off parts of its company.",
+      "publishedAt": "2026-09-21T21:34:32.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "bec2ca89329733257d02",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -692,14 +1279,1019 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|flightsatmajorus|2026-09-21",
+      "clusterId": "监管|paramountsettles|2026-09-21",
       "detailStatus": "brief",
       "facts": [
-        "The cable had been repaired and airports are resuming normal operations, the US transportation secretary says."
+        "The deal includes an agreement to produce 30 films a year, or Paramount will be forced to sell off parts of its company."
       ],
       "expectations": [],
       "inferences": []
     },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Millions urged to evacuate as powerful Typhoon Dujuan hits Japan",
+      "originalSummary": "The country's meteorological agency had warned of an \"imminent threat to life,\" but this has now been downgraded.",
+      "publishedAt": "2026-09-21T20:26:41.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "48e0f08bb6c6183d1cef",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|millionsurgedtoe|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "The country's meteorological agency had warned of an \"imminent threat to life,\" but this has now been downgraded."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmdx0pqrv72wo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Death of Cindy Crawford's son Presley Gerber being investigated as suspected overdose",
+      "originalSummary": "His family asked for privacy during a \"very difficult and painful time\" following the model's death.",
+      "publishedAt": "2026-09-21T19:01:36.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "e747a5babd9e2c56259c",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|deathofcindycraw|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "His family asked for privacy during a \"very difficult and painful time\" following the model's death."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9qxnyengdjo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "What are my rights if my flight is cancelled or delayed?",
+      "originalSummary": "Flights are affected again owing to air traffic control problems, so what are your rights if you're affected?",
+      "publishedAt": "2026-09-21T10:28:17.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "aa4d2b4673052bbeeeab",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/c9qxnyengdjo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-21T10:28:17.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|whataremyrightsi|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Flights are affected again owing to air traffic control problems, so what are your rights if you're affected?"
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr2092216nywo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "First UK charges brought over 1994 Rwanda genocide",
+      "originalSummary": "Dr Vincent Brown, formerly Dr Vincent Bajinya, 65, will appear at Westminster Magistrates’ Court on Tuesday charged with seven offences.",
+      "publishedAt": "2026-09-21T17:48:23.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "88d70ecd4134e85c3d28",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|firstukchargesbr|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Dr Vincent Brown, formerly Dr Vincent Bajinya, 65, will appear at Westminster Magistrates’ Court on Tuesday charged with seven offences."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c617j2x01epjo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Two charged with woman's murder as South Africa police investigate eight other body finds",
+      "originalSummary": "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg.",
+      "publishedAt": "2026-09-21T17:06:16.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "5a3f2bacd3c3f54392df",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|twochargedwithwo|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckp84pj8zpngo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Seven Ethiopian rebel groups form new alliance",
+      "originalSummary": "The groups have been active in Ethiopia's most populous regions for years and now say they will work together.",
+      "publishedAt": "2026-09-21T17:02:47.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "15cd2f4a2db670c25418",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|sevenethiopianre|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "The groups have been active in Ethiopia's most populous regions for years and now say they will work together."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqm27p8enwmko?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Merz vows to keep coalition together for Germany's 'democratic future'",
+      "originalSummary": "The chancellor has come under increasing pressure after resounding state election defeats, but says the results \"go far beyond my own person\"",
+      "publishedAt": "2026-09-21T16:54:56.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "7c809496547489f3e432",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|merzvowstokeepco|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "The chancellor has come under increasing pressure after resounding state election defeats, but says the results \"go far beyond my own person\""
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cm0j3224p6j8o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Watch: Timelapse shows typhoon barrelling towards Japan",
+      "originalSummary": "The typhoon is passing Japan's eastern coast, bringing major disruption and heavy rainfall in its wake.",
+      "publishedAt": "2026-09-21T16:52:12.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "bf5abca58cf89b08d4a5",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|watchtimelapsesh|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "The typhoon is passing Japan's eastern coast, bringing major disruption and heavy rainfall in its wake."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crq5x74yv6dxo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Will you get £13,000 a year when you stop working? Here's how to check",
+      "originalSummary": "How to find out how much state pension you're likely to receive - and what you can do about it now.",
+      "publishedAt": "2026-09-21T08:49:45.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "13ca2418401c32e9a2e8",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/crq5x74yv6dxo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-21T08:49:45.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|willyouget13000a|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "How to find out how much state pension you're likely to receive - and what you can do about it now."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmde0pp22r5go?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Repeated air traffic control failures leave us in worrying territory",
+      "originalSummary": "The question is whether all of these incidents were isolated and unavoidable, or whether they point to something more systemic.",
+      "publishedAt": "2026-09-21T16:39:01.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "d60a3112b5f6072447db",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|repeatedairtraff|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "The question is whether all of these incidents were isolated and unavoidable, or whether they point to something more systemic."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmzxz2pe5vd0o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "London Fashion Week 2026: The five trends we'll see in spring",
+      "originalSummary": "As London Fashion Week comes to a close, here are the biggest trends for your wardrobe.",
+      "publishedAt": "2026-09-21T16:23:25.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "defd46e520037f9a07b0",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|londonfashionwee|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "As London Fashion Week comes to a close, here are the biggest trends for your wardrobe."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c3qjkpgengn7o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Xhaka under investigation over Covid-19 certificate",
+      "originalSummary": "Switzerland captain Granit Xhaka is being investigated over an issue with his Covid-19 vaccination certificate.",
+      "publishedAt": "2026-09-21T15:24:51.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "be795f102daa29ccb8b3",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|xhakaunderinvest|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Switzerland captain Granit Xhaka is being investigated over an issue with his Covid-19 vaccination certificate."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw4gm7l742dmo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Yemenis flee across Red Sea as Houthis and Saudi-backed forces escalate war",
+      "originalSummary": "The BBC's Frank Gardner speaks to some of those who have fled the war by crossing the Red Sea to Djibouti.",
+      "publishedAt": "2026-09-21T14:14:16.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "c17beb094aac3fcccd0d",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|yemenisfleeacros|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "The BBC's Frank Gardner speaks to some of those who have fled the war by crossing the Red Sea to Djibouti."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c8vgyzn2d31yo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "US and China discuss AI safety plan ahead of Trump-Xi summit",
+      "originalSummary": "Top US and Chinese officials held talks in New York on Sunday ahead of a Trump-Xi summit this week.",
+      "publishedAt": "2026-09-21T05:50:56.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "8a95752d3e35f46831ec",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/c8vgyzn2d31yo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-21T05:50:56.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|usandchinadiscus|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Top US and Chinese officials held talks in New York on Sunday ahead of a Trump-Xi summit this week."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6vgyz1n0v1xo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Merz's political crisis threatens Germany's obsession with stability",
+      "originalSummary": "Political shifts in Germany are being watched closely in Europe and beyond, Katya Adler writes.",
+      "publishedAt": "2026-09-21T13:30:45.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "76a2da4985640113a1e1",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|merzspoliticalcr|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Political shifts in Germany are being watched closely in Europe and beyond, Katya Adler writes."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck1e52v16ngxo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Google hit with €403m fine by Irish data watchdog over GDPR violations",
+      "originalSummary": "The penalty follows an inquiry launched into the tech giant six years ago, following complaints from several European consumer rights organisations.",
+      "publishedAt": "2026-09-21T12:30:54.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "c75492579d924f58610b",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "经济数据"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "经济数据|googlehitwith403|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "The penalty follows an inquiry launched into the tech giant six years ago, following complaints from several European consumer rights organisations."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck5ye7v88qy7o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "US strikes on alleged drug boats could be crimes against humanity, says UN",
+      "originalSummary": "A report says the attacks, of which there have been at least 68, were not self-defence.",
+      "publishedAt": "2026-09-21T12:08:56.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "68418439fc3f67edf0af",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|usstrikesonalleg|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "A report says the attacks, of which there have been at least 68, were not self-defence."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmd68px5qqddo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Tories pledge to bring back tax-free shopping for tourists",
+      "originalSummary": "The party says scrapping the scheme in 2021 left the UK less competitive than European destinations.",
+      "publishedAt": "2026-09-21T10:37:23.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "066c58e94d314b9331e9",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|toriespledgetobr|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "The party says scrapping the scheme in 2021 left the UK less competitive than European destinations."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c6z0z2nne11vo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Inside Djibouti refugee camp for thousands fleeing Houthi advance in Yemen",
+      "originalSummary": "Fighting on Yemen's west coast has prompted thousands of people to flee by boat across the Bab al-Mandab Strait.",
+      "publishedAt": "2026-09-21T10:00:31.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "92f8414626a20b84ef92",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|insidedjiboutire|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Fighting on Yemen's west coast has prompted thousands of people to flee by boat across the Bab al-Mandab Strait."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmx2z10zk736o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Sydney policeman allegedly disguised himself as Uber Eats rider before murders",
+      "originalSummary": "Beaumont Lamarre-Condon has pleaded not guilty to the 2024 murder of his ex-partner and his new boyfriend.",
+      "publishedAt": "2026-09-21T07:20:27.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "ae22e58e866744955332",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|sydneypolicemana|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Beaumont Lamarre-Condon has pleaded not guilty to the 2024 murder of his ex-partner and his new boyfriend."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cjp30pq0rx6ro?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "'No surprises' as results emerge in Russian parliamentary election",
+      "originalSummary": "Preliminary results suggest that Kremlin-backed United Russia is on course to retain its constitutional majority.",
+      "publishedAt": "2026-09-21T06:58:30.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "0b73e5e4eaab62eaad3f",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|nosurprisesasres|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Preliminary results suggest that Kremlin-backed United Russia is on course to retain its constitutional majority."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cq70d74g4d8go?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "'Far from their best' to 'a joy to watch' - ranking Premier League teams' start to season",
+      "originalSummary": "Five matches into the league season, which teams in the Premier League have impressed so far and who have disappointed?",
+      "publishedAt": "2026-09-21T06:51:48.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "07f774a3e8589fd74aea",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|farfromtheirbest|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Five matches into the league season, which teams in the Premier League have impressed so far and who have disappointed?"
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr5ye7p13jg7o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Nvidia boss rejects AI extinction fears as 'doomsday narratives'",
+      "originalSummary": "Jensen Huang's comments come after warnings from AI researchers that the technology could lead to human extinction.",
+      "publishedAt": "2026-09-21T06:25:43.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "a4fc135cfbbc64d0129a",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|nvidiabossreject|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Jensen Huang's comments come after warnings from AI researchers that the technology could lead to human extinction."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq5yme200n8go?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Lindsay Clancy's ex-husband says he forgave her so he would not be 'eaten up inside forever'",
+      "originalSummary": "Patrick Clancy gives his first interview since his wife's mistrial over the killing of their three young children.",
+      "publishedAt": "2026-09-21T05:52:57.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "7353a2bacbec58b0ba01",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|lindsayclancysex|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Patrick Clancy gives his first interview since his wife's mistrial over the killing of their three young children."
+      ],
+      "expectations": [],
+      "inferences": []
+    }
+  ],
+  "continuing": [],
+  "retainedDetails": [
     {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
@@ -842,47 +2434,6 @@
       "inferences": []
     },
     {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "CNN, MS NOW and Politico file lawsuit against Trump's White House ban",
-      "originalSummary": "Major US networks later suspended White House TV coverage of Trump as he heads to New York for the UN summit.",
-      "publishedAt": "2026-09-21T22:48:33.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "581fe67f31f6a8666c45",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|cnnmsnowandpolit|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Major US networks later suspended White House TV coverage of Trump as he heads to New York for the UN summit."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
       "sourceTier": "verified",
@@ -936,11 +2487,11 @@
       "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm4gjr1qepr8o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Paramount settles lawsuit with US states, clearing way for $110bn merger with Warner Bros",
+      "originalTitle": "Paramount settles lawsuit with US states, helping clear way for $110bn merger with Warner Bros",
       "originalSummary": "The deal includes an agreement to produce 30 films a year, or Paramount will be forced to sell off parts of its company.",
-      "publishedAt": "2026-09-21T21:34:32.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "bec2ca89329733257d02",
+      "publishedAt": "2026-09-21T20:43:26.000Z",
+      "fetchedAt": "2026-09-21T21:03:50.319Z",
+      "id": "332483accde089c156e2",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -975,13 +2526,13 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Millions urged to evacuate as powerful Typhoon Dujuan hits Japan",
-      "originalSummary": "The country's meteorological agency had warned of an \"imminent threat to life,\" but this has now been downgraded.",
-      "publishedAt": "2026-09-21T20:26:41.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "48e0f08bb6c6183d1cef",
+      "originalTitle": "CNN, MS NOW and Politico to file lawsuit against Trump's White House ban",
+      "originalSummary": "Major US networks later suspended White House TV coverage of Trump as he heads to New York for the UN summit.",
+      "publishedAt": "2026-09-21T15:58:53.000Z",
+      "fetchedAt": "2026-09-21T21:03:50.319Z",
+      "id": "9164c99cd9848f7d1023",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -1003,514 +2554,10 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|millionsurgedtoe|2026-09-21",
+      "clusterId": "监管|cnnmsnowandpolit|2026-09-21",
       "detailStatus": "brief",
       "facts": [
-        "The country's meteorological agency had warned of an \"imminent threat to life,\" but this has now been downgraded."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmdx0pqrv72wo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Death of Cindy Crawford's son Presley Gerber being investigated as suspected overdose",
-      "originalSummary": "His family asked for privacy during a \"very difficult and painful time\" following the model's death.",
-      "publishedAt": "2026-09-21T19:01:36.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "e747a5babd9e2c56259c",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|deathofcindycraw|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "His family asked for privacy during a \"very difficult and painful time\" following the model's death."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9qxnyengdjo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "What are my rights if my flight is cancelled or delayed?",
-      "originalSummary": "Flights are affected again owing to air traffic control problems, so what are your rights if you're affected?",
-      "publishedAt": "2026-09-21T10:28:17.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "aa4d2b4673052bbeeeab",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/c9qxnyengdjo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-21T10:28:17.000Z"
-        }
-      ],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|whataremyrightsi|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Flights are affected again owing to air traffic control problems, so what are your rights if you're affected?"
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr2092216nywo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "First UK charges brought over 1994 Rwanda genocide",
-      "originalSummary": "Dr Vincent Brown, formerly Dr Vincent Bajinya, 65, will appear at Westminster Magistrates’ Court on Tuesday charged with seven offences.",
-      "publishedAt": "2026-09-21T17:48:23.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "88d70ecd4134e85c3d28",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|firstukchargesbr|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Dr Vincent Brown, formerly Dr Vincent Bajinya, 65, will appear at Westminster Magistrates’ Court on Tuesday charged with seven offences."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c617j2x01epjo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Two charged with woman's murder as South Africa police investigate eight other body finds",
-      "originalSummary": "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg.",
-      "publishedAt": "2026-09-21T17:06:16.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "5a3f2bacd3c3f54392df",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|twochargedwithwo|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckp84pj8zpngo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Seven Ethiopian rebel groups form new alliance",
-      "originalSummary": "The groups have been active in Ethiopia's most populous regions for years and now say they will work together.",
-      "publishedAt": "2026-09-21T17:02:47.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "15cd2f4a2db670c25418",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|sevenethiopianre|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "The groups have been active in Ethiopia's most populous regions for years and now say they will work together."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqm27p8enwmko?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Merz vows to keep coalition together for Germany's 'democratic future'",
-      "originalSummary": "The chancellor has come under increasing pressure after resounding state election defeats, but says the results \"go far beyond my own person\"",
-      "publishedAt": "2026-09-21T16:54:56.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "7c809496547489f3e432",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|merzvowstokeepco|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "The chancellor has come under increasing pressure after resounding state election defeats, but says the results \"go far beyond my own person\""
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cm0j3224p6j8o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Watch: Timelapse shows typhoon barrelling towards Japan",
-      "originalSummary": "The typhoon is passing Japan's eastern coast, bringing major disruption and heavy rainfall in its wake.",
-      "publishedAt": "2026-09-21T16:52:12.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "bf5abca58cf89b08d4a5",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|watchtimelapsesh|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "The typhoon is passing Japan's eastern coast, bringing major disruption and heavy rainfall in its wake."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crq5x74yv6dxo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Will you get £13,000 a year when you stop working? Here's how to check",
-      "originalSummary": "How to find out how much state pension you're likely to receive - and what you can do about it now.",
-      "publishedAt": "2026-09-21T08:49:45.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "13ca2418401c32e9a2e8",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/crq5x74yv6dxo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-21T08:49:45.000Z"
-        }
-      ],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|willyouget13000a|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "How to find out how much state pension you're likely to receive - and what you can do about it now."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmde0pp22r5go?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Repeated air traffic control failures leave us in worrying territory",
-      "originalSummary": "The question is whether all of these incidents were isolated and unavoidable, or whether they point to something more systemic.",
-      "publishedAt": "2026-09-21T16:39:01.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "d60a3112b5f6072447db",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|repeatedairtraff|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "The question is whether all of these incidents were isolated and unavoidable, or whether they point to something more systemic."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmzxz2pe5vd0o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "London Fashion Week 2026: The five trends we'll see in spring",
-      "originalSummary": "As London Fashion Week comes to a close, here are the biggest trends for your wardrobe.",
-      "publishedAt": "2026-09-21T16:23:25.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "defd46e520037f9a07b0",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|londonfashionwee|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "As London Fashion Week comes to a close, here are the biggest trends for your wardrobe."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c3qjkpgengn7o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Xhaka under investigation over Covid-19 certificate",
-      "originalSummary": "Switzerland captain Granit Xhaka is being investigated over an issue with his Covid-19 vaccination certificate.",
-      "publishedAt": "2026-09-21T15:24:51.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "be795f102daa29ccb8b3",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|xhakaunderinvest|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Switzerland captain Granit Xhaka is being investigated over an issue with his Covid-19 vaccination certificate."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw4gm7l742dmo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Yemenis flee across Red Sea as Houthis and Saudi-backed forces escalate war",
-      "originalSummary": "The BBC's Frank Gardner speaks to some of those who have fled the war by crossing the Red Sea to Djibouti.",
-      "publishedAt": "2026-09-21T14:14:16.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "c17beb094aac3fcccd0d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|yemenisfleeacros|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "The BBC's Frank Gardner speaks to some of those who have fled the war by crossing the Red Sea to Djibouti."
+        "Major US networks later suspended White House TV coverage of Trump as he heads to New York for the UN summit."
       ],
       "expectations": [],
       "inferences": []
@@ -1573,94 +2620,6 @@
           ]
         }
       }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c8vgyzn2d31yo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "US and China discuss AI safety plan ahead of Trump-Xi summit",
-      "originalSummary": "Top US and Chinese officials held talks in New York on Sunday ahead of a Trump-Xi summit this week.",
-      "publishedAt": "2026-09-21T05:50:56.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "8a95752d3e35f46831ec",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/c8vgyzn2d31yo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-21T05:50:56.000Z"
-        }
-      ],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|usandchinadiscus|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Top US and Chinese officials held talks in New York on Sunday ahead of a Trump-Xi summit this week."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6vgyz1n0v1xo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Merz's political crisis threatens Germany's obsession with stability",
-      "originalSummary": "Political shifts in Germany are being watched closely in Europe and beyond, Katya Adler writes.",
-      "publishedAt": "2026-09-21T13:30:45.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "76a2da4985640113a1e1",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|merzspoliticalcr|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Political shifts in Germany are being watched closely in Europe and beyond, Katya Adler writes."
-      ],
-      "expectations": [],
-      "inferences": []
     },
     {
       "sourceId": "cnfin",
@@ -1781,13 +2740,13 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck1e52v16ngxo?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c617j2x01epjo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Google hit with €403m fine by Irish data watchdog over GDPR violations",
-      "originalSummary": "The penalty follows an inquiry launched into the tech giant six years ago, following complaints from several European consumer rights organisations.",
-      "publishedAt": "2026-09-21T12:30:54.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "c75492579d924f58610b",
+      "originalTitle": "Three held over woman's murder as South Africa police investigate eight other body finds",
+      "originalSummary": "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg.",
+      "publishedAt": "2026-09-21T12:22:00.000Z",
+      "fetchedAt": "2026-09-21T17:02:54.595Z",
+      "id": "8f56b4b71fbac9231c74",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -1799,7 +2758,7 @@
         "行业"
       ],
       "eventTypes": [
-        "经济数据"
+        "监管"
       ],
       "impactChannels": [
         "供需"
@@ -1809,10 +2768,10 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "经济数据|googlehitwith403|2026-09-21",
+      "clusterId": "监管|threeheldoverwom|2026-09-21",
       "detailStatus": "brief",
       "facts": [
-        "The penalty follows an inquiry launched into the tech giant six years ago, following complaints from several European consumer rights organisations."
+        "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg."
       ],
       "expectations": [],
       "inferences": []
@@ -1877,47 +2836,6 @@
       }
     },
     {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck5ye7v88qy7o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "US strikes on alleged drug boats could be crimes against humanity, says UN",
-      "originalSummary": "A report says the attacks, of which there have been at least 68, were not self-defence.",
-      "publishedAt": "2026-09-21T12:08:56.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "68418439fc3f67edf0af",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|usstrikesonalleg|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "A report says the attacks, of which there have been at least 68, were not self-defence."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
       "sourceTier": "verified",
@@ -1965,26 +2883,20 @@
       "inferences": []
     },
     {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmed7p06epxjo?at_medium=RSS&at_campaign=rss",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cme30e8zyvjno?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "UK should 'team up' with Canada in new Europe alliance, Canadian minister tells BBC",
-      "originalSummary": "It comes after European Commission President proposed \"opening the door\" for Canada to become an associate member of the EU.",
-      "publishedAt": "2026-09-21T04:00:38.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "7c78e457a2468e012637",
-      "verificationStatus": "cross-checked",
+      "originalTitle": "Families missing out on NHS money for healthy food",
+      "originalSummary": "Figures show as little as 64% of eligible families are claiming NHS money for milk, fruit and veg",
+      "publishedAt": "2026-09-21T11:43:21.000Z",
+      "fetchedAt": "2026-09-21T21:03:50.319Z",
+      "id": "bdfbd8ba2925d4894e88",
+      "verificationStatus": "verified",
       "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cmed7p06epxjo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-21T04:00:38.000Z"
-        }
-      ],
+      "relatedSources": [],
       "keyTerms": [
         "供需"
       ],
@@ -2003,10 +2915,10 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|ukshouldteamupwi|2026-09-21",
+      "clusterId": "监管|familiesmissingo|2026-09-21",
       "detailStatus": "brief",
       "facts": [
-        "It comes after European Commission President proposed \"opening the door\" for Canada to become an associate member of the EU."
+        "Figures show as little as 64% of eligible families are claiming NHS money for milk, fruit and veg"
       ],
       "expectations": [],
       "inferences": []
@@ -2059,17 +2971,17 @@
       "inferences": []
     },
     {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmd68px5qqddo?at_medium=RSS&at_campaign=rss",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c617j2x01epjo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Tories pledge to bring back tax-free shopping for tourists",
-      "originalSummary": "The party says scrapping the scheme in 2021 left the UK less competitive than European destinations.",
-      "publishedAt": "2026-09-21T10:37:23.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "066c58e94d314b9331e9",
+      "originalTitle": "Three arrested in South Africa over one of nine women's bodies found",
+      "originalSummary": "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg.",
+      "publishedAt": "2026-09-21T10:35:01.000Z",
+      "fetchedAt": "2026-09-21T10:42:55.841Z",
+      "id": "ed781cd6bc9bd24361aa",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -2091,10 +3003,10 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|toriespledgetobr|2026-09-21",
+      "clusterId": "监管|threearrestedins|2026-09-21",
       "detailStatus": "brief",
       "facts": [
-        "The party says scrapping the scheme in 2021 left the UK less competitive than European destinations."
+        "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg."
       ],
       "expectations": [],
       "inferences": []
@@ -2135,501 +3047,6 @@
       "clusterId": "监管|每日机构分析9月21日|2026-09-21",
       "detailStatus": "brief",
       "facts": [],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c6z0z2nne11vo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Inside Djibouti refugee camp for thousands fleeing Houthi advance in Yemen",
-      "originalSummary": "Fighting on Yemen's west coast has prompted thousands of people to flee by boat across the Bab al-Mandab Strait.",
-      "publishedAt": "2026-09-21T10:00:31.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "92f8414626a20b84ef92",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|insidedjiboutire|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Fighting on Yemen's west coast has prompted thousands of people to flee by boat across the Bab al-Mandab Strait."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmx2z10zk736o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Sydney policeman allegedly disguised himself as Uber Eats rider before murders",
-      "originalSummary": "Beaumont Lamarre-Condon has pleaded not guilty to the 2024 murder of his ex-partner and his new boyfriend.",
-      "publishedAt": "2026-09-21T07:20:27.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "ae22e58e866744955332",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|sydneypolicemana|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Beaumont Lamarre-Condon has pleaded not guilty to the 2024 murder of his ex-partner and his new boyfriend."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cjp30pq0rx6ro?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'No surprises' as results emerge in Russian parliamentary election",
-      "originalSummary": "Preliminary results suggest that Kremlin-backed United Russia is on course to retain its constitutional majority.",
-      "publishedAt": "2026-09-21T06:58:30.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "0b73e5e4eaab62eaad3f",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|nosurprisesasres|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Preliminary results suggest that Kremlin-backed United Russia is on course to retain its constitutional majority."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cq70d74g4d8go?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'Far from their best' to 'a joy to watch' - ranking Premier League teams' start to season",
-      "originalSummary": "Five matches into the league season, which teams in the Premier League have impressed so far and who have disappointed?",
-      "publishedAt": "2026-09-21T06:51:48.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "07f774a3e8589fd74aea",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|farfromtheirbest|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Five matches into the league season, which teams in the Premier League have impressed so far and who have disappointed?"
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr5ye7p13jg7o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Nvidia boss rejects AI extinction fears as 'doomsday narratives'",
-      "originalSummary": "Jensen Huang's comments come after warnings from AI researchers that the technology could lead to human extinction.",
-      "publishedAt": "2026-09-21T06:25:43.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "a4fc135cfbbc64d0129a",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|nvidiabossreject|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Jensen Huang's comments come after warnings from AI researchers that the technology could lead to human extinction."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq5yme200n8go?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Lindsay Clancy's ex-husband says he forgave her so he would not be 'eaten up inside forever'",
-      "originalSummary": "Patrick Clancy gives his first interview since his wife's mistrial over the killing of their three young children.",
-      "publishedAt": "2026-09-21T05:52:57.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "7353a2bacbec58b0ba01",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|lindsayclancysex|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Patrick Clancy gives his first interview since his wife's mistrial over the killing of their three young children."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cq0lr24x3ep1o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Watch: Dramatic moment a cargo ship crashes into another vessel",
-      "originalSummary": "Verified footage appears to show a cargo ship colliding with a fishing boat near Singapore, with investigators still working to establish exactly when and how the crash happened.",
-      "publishedAt": "2026-09-21T02:27:52.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "adc3e6d758ccae187837",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|watchdramaticmom|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Verified footage appears to show a cargo ship colliding with a fishing boat near Singapore, with investigators still working to establish exactly when and how the crash happened."
-      ],
-      "expectations": [],
-      "inferences": []
-    }
-  ],
-  "continuing": [],
-  "retainedDetails": [
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm4gjr1qepr8o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Paramount settles lawsuit with US states, helping clear way for $110bn merger with Warner Bros",
-      "originalSummary": "The deal includes an agreement to produce 30 films a year, or Paramount will be forced to sell off parts of its company.",
-      "publishedAt": "2026-09-21T20:43:26.000Z",
-      "fetchedAt": "2026-09-21T21:03:50.319Z",
-      "id": "332483accde089c156e2",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|paramountsettles|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "The deal includes an agreement to produce 30 films a year, or Paramount will be forced to sell off parts of its company."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "CNN, MS NOW and Politico to file lawsuit against Trump's White House ban",
-      "originalSummary": "Major US networks later suspended White House TV coverage of Trump as he heads to New York for the UN summit.",
-      "publishedAt": "2026-09-21T15:58:53.000Z",
-      "fetchedAt": "2026-09-21T21:03:50.319Z",
-      "id": "9164c99cd9848f7d1023",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|cnnmsnowandpolit|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Major US networks later suspended White House TV coverage of Trump as he heads to New York for the UN summit."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c617j2x01epjo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Three held over woman's murder as South Africa police investigate eight other body finds",
-      "originalSummary": "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg.",
-      "publishedAt": "2026-09-21T12:22:00.000Z",
-      "fetchedAt": "2026-09-21T17:02:54.595Z",
-      "id": "8f56b4b71fbac9231c74",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|threeheldoverwom|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cme30e8zyvjno?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Families missing out on NHS money for healthy food",
-      "originalSummary": "Figures show as little as 64% of eligible families are claiming NHS money for milk, fruit and veg",
-      "publishedAt": "2026-09-21T11:43:21.000Z",
-      "fetchedAt": "2026-09-21T21:03:50.319Z",
-      "id": "bdfbd8ba2925d4894e88",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|familiesmissingo|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Figures show as little as 64% of eligible families are claiming NHS money for milk, fruit and veg"
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c617j2x01epjo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Three arrested in South Africa over one of nine women's bodies found",
-      "originalSummary": "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg.",
-      "publishedAt": "2026-09-21T10:35:01.000Z",
-      "fetchedAt": "2026-09-21T10:42:55.841Z",
-      "id": "ed781cd6bc9bd24361aa",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|threearrestedins|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg."
-      ],
       "expectations": [],
       "inferences": []
     },
@@ -3379,6 +3796,53 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmed7p06epxjo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "UK should 'team up' with Canada in new Europe alliance, Canadian minister tells BBC",
+      "originalSummary": "It comes after European Commission President proposed \"opening the door\" for Canada to become an associate member of the EU.",
+      "publishedAt": "2026-09-21T04:00:38.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "7c78e457a2468e012637",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cmed7p06epxjo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-21T04:00:38.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ukshouldteamupwi|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "It comes after European Commission President proposed \"opening the door\" for Canada to become an associate member of the EU."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-business",
       "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
@@ -3477,6 +3941,47 @@
           ]
         }
       }
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cq0lr24x3ep1o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Watch: Dramatic moment a cargo ship crashes into another vessel",
+      "originalSummary": "Verified footage appears to show a cargo ship colliding with a fishing boat near Singapore, with investigators still working to establish exactly when and how the crash happened.",
+      "publishedAt": "2026-09-21T02:27:52.000Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
+      "id": "adc3e6d758ccae187837",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|watchdramaticmom|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Verified footage appears to show a cargo ship colliding with a fishing boat near Singapore, with investigators still working to establish exactly when and how the crash happened."
+      ],
+      "expectations": [],
+      "inferences": []
     },
     {
       "sourceId": "cnfin",
@@ -3829,7 +4334,7 @@
       "originalTitle": "Russia's elections had few surprises - but how the Kremlin uses the results will be crucial",
       "originalSummary": "Vladimir Putin will likely use the result to claim most Russians back the so-called special military operation in Ukraine, writes the BBC's Steve Rosenberg.",
       "publishedAt": "2026-09-21T00:05:11.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "ad74b835321dc6c0f07c",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4119,7 +4624,7 @@
       "originalTitle": "Jailed teacher convicted of sexual abuse secretly released early in Indonesia, BBC finds",
       "originalSummary": "Undercover footage recorded by the BBC reveals he has been released after serving less than half his sentence.",
       "publishedAt": "2026-09-20T23:12:31.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "4ca2fd8fe56a0d422d3c",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4242,7 +4747,7 @@
       "originalTitle": "Workers came across human remains – and unearthed a mass grave of 572 people",
       "originalSummary": "Workers in northern Sri Lanka accidentally uncovered the country's largest mass grave – and reopened wounds from its civil war.",
       "publishedAt": "2026-09-20T22:28:15.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "bb99df934be29d28a3ea",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4363,7 +4868,7 @@
       "originalTitle": "Sister of Pakistan's ex-PM Imran Khan arrested",
       "originalSummary": "Aleema Khanum is accused of mobilising her brother’s supporters ahead of country-wide protests.",
       "publishedAt": "2026-09-20T19:04:11.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "6b502977b07bd0139c14",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4404,7 +4909,7 @@
       "originalTitle": "Burnham hails Greenland deal ahead of expected first Trump meeting",
       "originalSummary": "While Burnham praised the agreement, Lib Dem leader Ed Davey called it a \"pretend\" victory for Trump.",
       "publishedAt": "2026-09-20T17:25:49.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "08cd31152fac07d1fbbf",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4445,7 +4950,7 @@
       "originalTitle": "Trump says triumphal arch will be military complex with drones and snipers",
       "originalSummary": "Trump said the updated plans were at the request of the US military and for national security purposes.",
       "publishedAt": "2026-09-20T16:36:43.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "64600062d9eea29f47ce",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4486,7 +4991,7 @@
       "originalTitle": "Ed Davey calls for immediate 10p cut to fuel duty",
       "originalSummary": "Sir Ed blamed Donald Trump's war with Iran for damaging the UK economy and pushing fuel prices up.",
       "publishedAt": "2026-09-20T14:42:42.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
+      "fetchedAt": "2026-09-22T04:54:30.890Z",
       "id": "969075dfe7eb2da75ba5",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4513,629 +5018,6 @@
       "detailStatus": "brief",
       "facts": [
         "Sir Ed blamed Donald Trump's war with Iran for damaging the UK economy and pushing fuel prices up."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqrk31k7pprlo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Lib Dems vow to end 'computer says no' economy to boost growth",
-      "originalSummary": "Deputy leader Daisy Cooper also proposes a Growth and Defence Partnership with the EU in a speech to her party conference.",
-      "publishedAt": "2026-09-20T14:05:15.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "875455daa4cbd8b5e911",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|libdemsvowtoendc|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [
-        "Deputy leader Daisy Cooper also proposes a Growth and Defence Partnership with the EU in a speech to her party conference."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqdj4pez00dzo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Trump says his planned triumphal arch will double as a military complex to store ammunition",
-      "originalSummary": "Trump said the updated plans were at the request of the US military and for national security purposes.",
-      "publishedAt": "2026-09-20T13:50:51.000Z",
-      "fetchedAt": "2026-09-20T16:05:07.013Z",
-      "id": "8bfe9d04ee9c0fdac044",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|trumpsayshisplan|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [
-        "Trump said the updated plans were at the request of the US military and for national security purposes."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472537_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472537_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "聚焦重点领域完善市场监管体系——国新办发布会聚焦“十五五”时期市场监管工作",
-      "publishedAt": "2026-09-20T13:24:48.000Z",
-      "fetchedAt": "2026-09-21T00:16:09.326Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 1861,
-        "reader": "cnfin-body",
-        "sha256": "cc272c1292279160399f7e8a5053d50cba45aeb6abafb636cf6965516825c217",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472537_1.html",
-        "checkedAt": "2026-09-21T00:16:09.326Z"
-      },
-      "id": "da428b89b48b10e891a0",
-      "verificationStatus": "verified",
-      "titleZh": "聚焦重点领域完善市场监管体系——国新办发布会聚焦“十五五”时期市场监管工作",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|聚焦重点领域完善市场监管体系国新|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "cc272c1292279160399f7e8a5053d50cba45aeb6abafb636cf6965516825c217",
-        "count": 1,
-        "lastAttemptAt": "2026-09-20T16:05:07.013Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[3].quote"
-          ]
-        }
-      }
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472525_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472525_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "伊朗议长：美方履约前霍尔木兹海峡不会重开",
-      "publishedAt": "2026-09-20T12:52:06.000Z",
-      "fetchedAt": "2026-09-21T00:16:09.326Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 330,
-        "reader": "cnfin-body",
-        "sha256": "4f2dda99df9fed398f9d258c2da79fd59366649a00e3bd35276dc99e2761cecd",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472525_1.html",
-        "checkedAt": "2026-09-21T00:16:09.326Z"
-      },
-      "id": "84f126d334fb72a5e4a3",
-      "verificationStatus": "verified",
-      "titleZh": "伊朗议长：美方履约前霍尔木兹海峡不会重开",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|伊朗议长美方履约前霍尔木兹海峡不|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "4f2dda99df9fed398f9d258c2da79fd59366649a00e3bd35276dc99e2761cecd",
-        "count": 1,
-        "lastAttemptAt": "2026-09-20T16:05:07.013Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[0].quote"
-          ]
-        }
-      }
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168367",
-      "originalLanguage": "en",
-      "originalTitle": "The right to development: Why equity, not charity, is a human right",
-      "originalSummary": "Compare two children born in the same year: one in a country with functioning schools, social services, fair elections and a dynamic economy and the other in a nation devastated by poverty, conflict, climate change or corruption.",
-      "publishedAt": "2026-09-20T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "3a7408e9aca29d9fd216",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|therighttodevelo|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [
-        "Compare two children born in the same year: one in a country with functioning schools, social services, fair elections and a dynamic economy and the other in a nation devastated by poverty, conflict, climate change or corruption."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472507_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472507_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "货币市场日报：9月20日",
-      "publishedAt": "2026-09-20T11:48:38.000Z",
-      "fetchedAt": "2026-09-21T00:16:09.326Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 1052,
-        "reader": "cnfin-body",
-        "sha256": "39a0a0ae8a908941fa8bfb3e6a39428dc0839d4c4a2ce50613a027ed7febd99d",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472507_1.html",
-        "checkedAt": "2026-09-21T00:16:09.326Z"
-      },
-      "id": "d7ed03b40f2754669cc8",
-      "verificationStatus": "verified",
-      "titleZh": "货币市场日报：9月20日",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|货币市场日报9月20日|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "39a0a0ae8a908941fa8bfb3e6a39428dc0839d4c4a2ce50613a027ed7febd99d",
-        "count": 1,
-        "lastAttemptAt": "2026-09-20T18:46:58.673Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[1].numbers"
-          ]
-        }
-      }
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm0rexrwjj1vo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Billionaire Man United owner loses moral high ground after tax exile, Labour chair says",
-      "originalSummary": "The billionaire businessman told the BBC he has lost confidence in the UK due to a combination of high taxes and high immigration.",
-      "publishedAt": "2026-09-20T11:22:21.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "1cf0fbb085035f1b7fa4",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|billionairemanun|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [
-        "The billionaire businessman told the BBC he has lost confidence in the UK due to a combination of high taxes and high immigration."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472498_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472498_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "【财经分析】脑机接口投融资“爆发” 资本从“看概念”转向“看落地”",
-      "publishedAt": "2026-09-20T11:14:10.000Z",
-      "fetchedAt": "2026-09-21T00:16:09.326Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 2463,
-        "reader": "cnfin-body",
-        "sha256": "e1efe6515b07fa5409b6250a8c15e7ea56f895cc4c4018dc186e4a69963880fc",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472498_1.html",
-        "checkedAt": "2026-09-21T00:16:09.326Z"
-      },
-      "id": "e9812367070499d5353d",
-      "verificationStatus": "verified",
-      "titleZh": "【财经分析】脑机接口投融资“爆发” 资本从“看概念”转向“看落地”",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|财经分析脑机接口投融资爆发资本从|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "e1efe6515b07fa5409b6250a8c15e7ea56f895cc4c4018dc186e4a69963880fc",
-        "count": 1,
-        "lastAttemptAt": "2026-09-20T11:28:46.060Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[1].quote"
-          ]
-        }
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Largest attack on Moscow sees Ukraine fire hundreds of drones, mayor says",
-      "originalSummary": "Moscow's mayor says 450 drones were downed during the overnight barrage, in which two people died.",
-      "publishedAt": "2026-09-20T10:45:39.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "33241919c71cc08bd64e",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|largestattackonm|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [
-        "Moscow's mayor says 450 drones were downed during the overnight barrage, in which two people died."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c68xk701d975o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Chiltern Railways renationalised after 30 years",
-      "originalSummary": "It joins Great British Railways as part of government plans to save money and improve services.",
-      "publishedAt": "2026-09-20T10:45:39.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "id": "7ddd7b68ea1a1eac032d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|chilternrailways|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [
-        "It joins Great British Railways as part of government plans to save money and improve services."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'Massive' drone attack on Moscow region sees Ukraine hit oil refinery",
-      "originalSummary": "Moscow's mayor says 450 drones were downed during the \"unprecedented attack\", in which two people died.",
-      "publishedAt": "2026-09-20T10:45:39.000Z",
-      "fetchedAt": "2026-09-20T11:28:46.060Z",
-      "id": "5b0bce06e4720b1a1487",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|massivedroneatta|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [
-        "Moscow's mayor says 450 drones were downed during the \"unprecedented attack\", in which two people died."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472471_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472471_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "新华财经晚报：1—8月全社会用电量累计71730亿千瓦时 同比增长4.3%",
-      "publishedAt": "2026-09-20T09:33:53.000Z",
-      "fetchedAt": "2026-09-21T00:16:09.326Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 1808,
-        "reader": "cnfin-body",
-        "sha256": "69f7ef27c3fb5a2ccd26678d1b1c440bf9033232716ec5fc238a45f80507de44",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260920/4472471_1.html",
-        "checkedAt": "2026-09-21T00:16:09.326Z"
-      },
-      "id": "58deb64ee916e1468146",
-      "verificationStatus": "verified",
-      "titleZh": "新华财经晚报：1—8月全社会用电量累计71730亿千瓦时 同比增长4.3%",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|新华财经晚报18月全社会用电量累|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "69f7ef27c3fb5a2ccd26678d1b1c440bf9033232716ec5fc238a45f80507de44",
-        "count": 1,
-        "lastAttemptAt": "2026-09-20T11:28:46.060Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[2].quote"
-          ]
-        }
-      }
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c8qlwg07p906o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Family shares hidden cost of cancer care",
-      "originalSummary": "Maya, 13, from Hythe in Kent, was diagnosed with neuroblastoma when she was three.",
-      "publishedAt": "2026-09-20T09:25:34.000Z",
-      "fetchedAt": "2026-09-21T21:03:50.319Z",
-      "id": "f197913a992a73ce0213",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|familyshareshidd|2026-09-20",
-      "detailStatus": "brief",
-      "facts": [
-        "Maya, 13, from Hythe in Kent, was diagnosed with neuroblastoma when she was three."
       ],
       "expectations": [],
       "inferences": []
