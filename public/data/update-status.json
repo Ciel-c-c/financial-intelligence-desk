@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-22T14:52:54.265Z",
-  "lastSuccessfulAt": "2026-09-22T14:52:54.265Z",
+  "attemptedAt": "2026-09-22T18:54:10.333Z",
+  "lastSuccessfulAt": "2026-09-22T18:54:10.333Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-22T14:52:54.265Z"
+      "lastSuccessfulAt": "2026-09-22T18:54:10.333Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-22T14:52:54.265Z"
+      "lastSuccessfulAt": "2026-09-22T18:54:10.333Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-22T14:52:54.265Z"
+      "lastSuccessfulAt": "2026-09-22T18:54:10.333Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-22T14:52:54.265Z"
+      "lastSuccessfulAt": "2026-09-22T18:54:10.333Z"
     }
   ],
   "sourceHealth": [
@@ -67,7 +67,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 25
+      "itemCount": 22
     },
     {
       "id": "bbc-business",
@@ -128,7 +128,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 25
+      "itemCount": 22
     },
     {
       "id": "news-bbc-business",
@@ -155,15 +155,14 @@
       "itemCount": 0,
       "attempted": 2,
       "rejected": 2,
-      "failures": 1,
+      "failures": 0,
       "stages": {
-        "evidence": 1,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 1,
-        "language": 1
+        "facts": 2
       }
     }
   ],
