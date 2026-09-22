@@ -1,10 +1,53 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-22T18:54:10.333Z",
-  "lastSuccessfulAt": "2026-09-22T18:54:10.333Z",
-  "nextExpectedAt": "2026-09-22T19:54:10.333Z",
+  "attemptedAt": "2026-09-22T22:08:34.240Z",
+  "lastSuccessfulAt": "2026-09-22T22:08:34.240Z",
+  "nextExpectedAt": "2026-09-22T23:08:34.240Z",
   "status": "delayed",
   "latest": [
+    {
+      "sourceId": "fed",
+      "sourceName": "Federal Reserve",
+      "sourceTier": "official",
+      "sourceUrl": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "canonicalUrl": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260922a.htm",
+      "originalLanguage": "en",
+      "originalTitle": "Federal Reserve Board announces approval of application by BancFirst Corporation",
+      "originalSummary": "Federal Reserve Board announces approval of application by BancFirst Corporation",
+      "publishedAt": "2026-09-22T20:30:00.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "3768aa89d348e0a01223",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "美国",
+        "全球",
+        "美股相关"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|federalreservebo|2026-09-22",
+      "detailStatus": "professional",
+      "facts": [
+        "Federal Reserve Board announces approval of application by BancFirst Corporation"
+      ],
+      "expectations": [],
+      "inferences": []
+    },
     {
       "sourceId": "eia-energy",
       "sourceName": "U.S. Energy Information Administration",
@@ -15,7 +58,7 @@
       "originalTitle": "Public companies produce most U.S. crude oil and natural gas",
       "originalSummary": "Publicly traded companies represent a tiny share of the total number of companies producing crude oil and natural gas in the United States, but they make up a large share of U.S. production. In 2025, publicly traded companies accounted for just 2% of about 12,000 oil and natural gas producers but produced 68% of the crude oil and natural gas in the Lower 48 states.",
       "publishedAt": "2026-09-22T14:00:00.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "58d56bcd82f2a00a96cf",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -51,12 +94,94 @@
       "sourceName": "UN News",
       "sourceTier": "official",
       "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168400",
+      "originalLanguage": "en",
+      "originalTitle": "Qatar: Absence of a regional collective security system is fuelling crisis in the Gulf",
+      "originalSummary": "The crisis in the Gulf should come as a surprise to no one, the Emir of Qatar, Sheikh Tamim bin Hamad Al Thani said on Tuesday, describing it as the cumulative result of years of delay, crisis management through temporary fixes, and unrealistic policies.",
+      "publishedAt": "2026-09-22T12:00:00.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "383169d5f72a345de380",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|qatarabsenceofar|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "The crisis in the Gulf should come as a surprise to no one, the Emir of Qatar, Sheikh Tamim bin Hamad Al Thani said on Tuesday, describing it as the cumulative result of years of delay, crisis management through temporary fixes, and unrealistic policies."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168399",
+      "originalLanguage": "en",
+      "originalTitle": "UN rendered unable to fulfil its mission, Turkish President laments before world leaders",
+      "originalSummary": "The United Nations continues to be weakened, and those who have tied their hopes to the world body – from Palestine to Sudan – have been disappointed, Türkiye’s President said, while adding that his country is committed to restoring confidence in the Organization.",
+      "publishedAt": "2026-09-22T12:00:00.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "93d8e90ec12e7bd6a42a",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|unrenderedunable|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "The United Nations continues to be weakened, and those who have tied their hopes to the world body – from Palestine to Sudan – have been disappointed, Türkiye’s President said, while adding that his country is committed to restoring confidence in the Organization."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168397",
       "originalLanguage": "en",
       "originalTitle": "Trump defends military action against Iran, Venezuela, and calls for rebrand of AI",
       "originalSummary": "US President Donald Trump used his address to the UN General Assembly on Tuesday to defend recent military action against Iran, urging countries to maintain economic pressure on Tehran – and declaring that he now faces a choice between making a deal, or taking far more drastic steps.",
       "publishedAt": "2026-09-22T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "2798c47f2f93821acd87",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -97,7 +222,7 @@
       "originalTitle": "Diplomacy is the way to address global challenges, Brazil tells General Assembly",
       "originalSummary": "Brazilian President Luiz Inácio Lula da Silva told the General Assembly on Tuesday that the UN needs to become a “temple of peace” once again, as it confronts one of the most critical periods in its 80-year history.",
       "publishedAt": "2026-09-22T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "251e248f15f13463d8ca",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -135,11 +260,11 @@
       "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168394",
       "originalLanguage": "en",
-      "originalTitle": "Time to accept ‘hard truths’ so trust can be rebuilt: General Assembly president",
+      "originalTitle": "Time to accept ‘hard truths’ so trust can be rebuilt: General Assembly President",
       "originalSummary": "The UN’s survival for 80 years is not, by itself, proof of success, and now, the institution must confront painful truths if it hopes to rebuild public trust, said Khalilur Rahman, president of the General Assembly’s 81st session on Tuesday.",
       "publishedAt": "2026-09-22T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
-      "id": "8a769d99f1de3d808e1d",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "edc712dca47245153d66",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -179,7 +304,7 @@
       "originalTitle": "Guterres: ‘Cracks have become canyons’ as world faces four tests of power",
       "originalSummary": "Humanity faces four defining “tests of power” – around war or peace, inequality, climate change and AI – that will determine whether the world moves towards a new era of cooperation or deeper division, the UN chief warned the General Assembly on Tuesday.",
       "publishedAt": "2026-09-22T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "a75f30608d8e3cde178f",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -220,7 +345,7 @@
       "originalTitle": "Millions of children return to schools that still can’t provide clean water or a working toilet",
       "originalSummary": "A new academic year is underway in many countries across the world, yet millions of children still attend schools where the water is unsafe to drink, toilets are unusable and there is nowhere to properly wash their hands.&nbsp;&nbsp;",
       "publishedAt": "2026-09-22T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "8649d474365345cd3aaa",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -261,7 +386,7 @@
       "originalTitle": "Displacement on the rise in Yemen as fighting continues",
       "originalSummary": "As hostilities worsen in Yemen, more people have been fleeing their homes, further intensifying the humanitarian crisis within the region, the UN Refugee Agency (UNHCR) warned on Tuesday.",
       "publishedAt": "2026-09-22T12:00:00.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "e6b51e8e5f7861848063",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -293,6 +418,252 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c52e0ywl9pr7o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Trump threatens to 'annihilate' Iran in UN speech as officials meet on sidelines",
+      "originalSummary": "In his speech, the US president pondered whether a peace deal would be agreed or whether he would have to take extreme action against Iran.",
+      "publishedAt": "2026-09-22T21:50:31.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "8ce3c6068ddbb9969b26",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|trumpthreatensto|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "In his speech, the US president pondered whether a peace deal would be agreed or whether he would have to take extreme action against Iran."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "US to build two military bases in Greenland under new deal with Denmark",
+      "originalSummary": "The defence deal signed at the UN General Assembly also re-affirms Denmark's sovereignty over its semi-autonomous Arctic territory.",
+      "publishedAt": "2026-09-22T21:36:55.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "82e4713b6b03b52761f7",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ustobuildtwomili|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "The defence deal signed at the UN General Assembly also re-affirms Denmark's sovereignty over its semi-autonomous Arctic territory."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cv2dwylkl7weo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "New EU industry rules would damage UK, warns Burnham",
+      "originalSummary": "The prime minister met the European Commission President during his visit to the United Nations General Assembly.",
+      "publishedAt": "2026-09-22T21:18:40.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "a184fa1b02b266de4e9a",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|neweuindustryrul|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "The prime minister met the European Commission President during his visit to the United Nations General Assembly."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr6241825757o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "US judge blocks deportation of DoorDash driver shot by ICE",
+      "originalSummary": "The delivery driver was transferred from a hospital to a detention centre after the shooting on Sunday.",
+      "publishedAt": "2026-09-22T21:09:25.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "a7946f6768f1c30fba10",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|usjudgeblocksdep|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "The delivery driver was transferred from a hospital to a detention centre after the shooting on Sunday."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c8r4v7n6py97o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "How Ceuta, football and Israel are shaping Morocco's election",
+      "originalSummary": "Young voters are being courted with football slogans, promises of jobs and anti-Israel rallying calls.",
+      "publishedAt": "2026-09-22T20:59:00.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "de6dc7adddcbc874157b",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|howceutafootball|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "Young voters are being courted with football slogans, promises of jobs and anti-Israel rallying calls."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmkg7560epw0o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Trump says he would back ban on diesel exports",
+      "originalSummary": "Republicans lawmakers have put pressure on the president to curb exports as diesel prices soar to record highs in the US.",
+      "publishedAt": "2026-09-22T20:41:13.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "22170fdc8966ec1a4292",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|trumpsayshewould|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "Republicans lawmakers have put pressure on the president to curb exports as diesel prices soar to record highs in the US."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "ecb",
       "sourceName": "European Central Bank",
       "sourceTier": "official",
@@ -301,7 +672,7 @@
       "originalLanguage": "en",
       "originalTitle": "Philip R. Lane: Interview with Le Temps",
       "publishedAt": "2026-09-22T05:00:00.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "e54e8e4b070174cca341",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -336,13 +707,13 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqy7z275yx65o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "US to build two military bases in Greenland under new deal with Denmark",
-      "originalSummary": "The defence deal signed at the UN General Assembly also re-affirms Denmark's sovereignty over its semi-autonomous Arctic territory.",
-      "publishedAt": "2026-09-22T18:43:29.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
-      "id": "82e4713b6b03b52761f7",
+      "originalTitle": "Sri Lanka court convicts 15 men over deadly Easter Sunday bombings",
+      "originalSummary": "Three churches and three luxury hotels were targeted in the 2019 attacks which killed 270.",
+      "publishedAt": "2026-09-22T19:47:44.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "7f825e24a3712124a616",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -364,10 +735,10 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|ustobuildtwomili|2026-09-22",
+      "clusterId": "监管|srilankacourtcon|2026-09-22",
       "detailStatus": "brief",
       "facts": [
-        "The defence deal signed at the UN General Assembly also re-affirms Denmark's sovereignty over its semi-autonomous Arctic territory."
+        "Three churches and three luxury hotels were targeted in the 2019 attacks which killed 270."
       ],
       "expectations": [],
       "inferences": []
@@ -377,13 +748,13 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c3y0z25v0zjwo?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c8dx5dy5rzz2o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Texas ICE shooting leaves Venezuelan DoorDash driver with bullet in his back, says lawyer",
-      "originalSummary": "The delivery driver was transferred from a hospital to a detention centre, his lawyer tells US media.",
-      "publishedAt": "2026-09-22T17:17:01.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
-      "id": "bbaa30b3fb23549d1501",
+      "originalTitle": "What is the White House pool and why is it in a row with Trump?",
+      "originalSummary": "The White House press pool is at the centre of a major row between President Donald Trump and TV networks. What is it?",
+      "publishedAt": "2026-09-22T19:25:16.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "3f63d856d1bb928eb0d0",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -405,10 +776,92 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|texasiceshooting|2026-09-22",
+      "clusterId": "监管|whatisthewhiteho|2026-09-22",
       "detailStatus": "brief",
       "facts": [
-        "The delivery driver was transferred from a hospital to a detention centre, his lawyer tells US media."
+        "The White House press pool is at the centre of a major row between President Donald Trump and TV networks. What is it?"
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cxly57mv4767o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Burnham 'gets it' says Trump, as the two leaders meet for first time",
+      "originalSummary": "Donald Trump says he can do business with Andy Burnham at their first face-to-face meeting in New York, but criticises the \"terrible\" Chagos deal.",
+      "publishedAt": "2026-09-22T19:15:57.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "9cae036a46c99badef17",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|burnhamgetsitsay|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "Donald Trump says he can do business with Andy Burnham at their first face-to-face meeting in New York, but criticises the \"terrible\" Chagos deal."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6dj4k98107do?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Ukraine anger as EU removes Russian oligarchs from sanctions list",
+      "originalSummary": "Alisher Usmanov and Mikhail Fridman both have close ties to President Putin, and Kyiv said the move sent Moscow the wrong signals.",
+      "publishedAt": "2026-09-22T19:06:06.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "3245eeb43b6571d436bf",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ukraineangeraseu|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "Alisher Usmanov and Mikhail Fridman both have close ties to President Putin, and Kyiv said the move sent Moscow the wrong signals."
       ],
       "expectations": [],
       "inferences": []
@@ -423,7 +876,7 @@
       "originalTitle": "Cyclist who dressed as man to avoid Taliban wins silver medal",
       "originalSummary": "Afghan cyclist Fariba Hashimi wins silver in the women's road race at the Asian Games, having fled oppression in her home country to pursue a sporting dream.",
       "publishedAt": "2026-09-22T16:57:55.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "e7718ad1c70f0511a471",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -464,7 +917,7 @@
       "originalTitle": "Top South African policeman charged with sexual offences",
       "originalSummary": "Shadrack Sibiya, who has made no comment, is alleged to have groomed a 16-year-old and raped an 18-year-old.",
       "publishedAt": "2026-09-22T16:54:41.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "661ff772e2a9bb67914f",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -505,7 +958,7 @@
       "originalTitle": "Davey promises tax cuts for millions if UK rejoins EU single market",
       "originalSummary": "The Lib Dem leader vows to raise tax thresholds if he becomes PM, in a speech to his party conference.",
       "publishedAt": "2026-09-22T16:50:29.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "6260b97c8b9af8639fc4",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -546,7 +999,7 @@
       "originalTitle": "'We screwed up': Doordash admits underpaying New York workers",
       "originalSummary": "The food delivery giant will pay a $131.5m settlement following a city probe into wage violations.",
       "publishedAt": "2026-09-22T16:50:24.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "223287a87fc981b2d880",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -587,7 +1040,7 @@
       "originalTitle": "'I have never felt heat like that' - a survivor on watching 33 cellmates die in Nigeria",
       "originalSummary": "The BBC goes inside the prison where prisoners were trapped in stifling, cramped conditions.",
       "publishedAt": "2026-09-22T16:42:23.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "14229095155eb42f334f",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -628,7 +1081,7 @@
       "originalTitle": "Sir Jim Ratcliffe suspends production at key UK plants blaming high gas prices",
       "originalSummary": "Ineos said natural gas in the UK is twelve times more expensive than in the US.",
       "publishedAt": "2026-09-22T15:43:14.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "4b44301a77d8d5a372e1",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -669,7 +1122,7 @@
       "originalTitle": "Vet prescription fees capped under rule changes",
       "originalSummary": "Vets must also tell clients if cheaper medicine is available online as part of the rule updates which surgeries have the coming months to bring in.",
       "publishedAt": "2026-09-22T07:39:35.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "f7d60ff4a35b9e34880a",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -716,7 +1169,7 @@
       "originalTitle": "Autopsy shows Hayden Panettiere died from a drug overdose",
       "originalSummary": "The death of the child star - who had fentanyl, Xanax, a muscle relaxant and antipsychotic medication in her system - was ruled an accident.",
       "publishedAt": "2026-09-22T15:17:37.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "4d1b5cce4c57f50da067",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -752,53 +1205,12 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvj64gz74ky4o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Call of Duty's Activision to make next Halo game as Xbox cuts more jobs",
-      "originalSummary": "The news comes as part of a \"reset\" announced by Xbox in July, with 3,600 planned job losses overall.",
-      "publishedAt": "2026-09-22T14:51:39.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
-      "id": "9745a421980515ea4d79",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|callofdutysactiv|2026-09-22",
-      "detailStatus": "brief",
-      "facts": [
-        "The news comes as part of a \"reset\" announced by Xbox in July, with 3,600 planned job losses overall."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/ckz7z5w7ey2jo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "Neutral venues and no 'away' fans - how Israel v Republic of Ireland became so contentious",
       "originalSummary": "BBC Sport explores the backdrop to the Republic of Ireland's matches against Israel, amid fraught tensions between the nations.",
       "publishedAt": "2026-09-22T14:23:39.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "4848ac2e79648cd43701",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -839,7 +1251,7 @@
       "originalTitle": "Veteran BBC Africa correspondent Mark Doyle dies aged 67",
       "originalSummary": "Doyle was best known for reporting on African conflicts in the 1990s and 2000s, notably in Rwanda and Sierra Leone.",
       "publishedAt": "2026-09-22T14:16:42.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "e08a06186a442b3d43a3",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -875,53 +1287,12 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqy7z275yx65o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Sri Lanka court convicts 15 men over deadly Easter Sunday bombings",
-      "originalSummary": "Three churches and three luxury hotels were targeted in the 2019 attacks which killed 270.",
-      "publishedAt": "2026-09-22T14:03:20.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
-      "id": "7f825e24a3712124a616",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|srilankacourtcon|2026-09-22",
-      "detailStatus": "brief",
-      "facts": [
-        "Three churches and three luxury hotels were targeted in the 2019 attacks which killed 270."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm4gvyw80dp2o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "Lindsay Clancy's lawyer asks judge to investigate juror and check his phone",
       "originalSummary": "The attorney wants the court to look at the juror's mobile phone use and answers on questionnaires.",
       "publishedAt": "2026-09-22T13:58:42.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "022cf4bfd1548f1517dd",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -961,14 +1332,14 @@
       "originalLanguage": "zh",
       "originalTitle": "守红线、保发展、惠民生——国新办发布会聚焦“十五五”时期自然资源保护利用",
       "publishedAt": "2026-09-22T13:52:14.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 1708,
         "reader": "cnfin-body",
         "sha256": "32b47fca972634402b8ce3fa5a1ac9ff3bdeef6f784a197b31ad82bbdcab4b10",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473761_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "25e74bdd24797865f7ed",
       "verificationStatus": "verified",
@@ -1020,14 +1391,14 @@
       "originalLanguage": "zh",
       "originalTitle": "国际柴油价格缘何狂飙",
       "publishedAt": "2026-09-22T13:51:09.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 1774,
         "reader": "cnfin-body",
         "sha256": "550d2fad613ee6cb536dacacb8533d74403550fe17109518a53b20b840b701c1",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473758_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "bb5bce80b7dd2a8e2e5c",
       "verificationStatus": "verified",
@@ -1079,14 +1450,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【新华解读】锚定30万亿、设备数字化率超63% 轻工纺织“十五五”产业跃升主线明确",
       "publishedAt": "2026-09-22T13:50:57.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 2314,
         "reader": "cnfin-body",
         "sha256": "dadbf44dc35b3749cc8391c4bb23289ea122f5b59cba4e8a5b0766d008b78cc2",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473755_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "4f8b3a67a0d671219425",
       "verificationStatus": "verified",
@@ -1139,7 +1510,7 @@
       "originalTitle": "Lithuania ready to 'fight back' but has evacuation plans in face of Russia threats, PM tells BBC",
       "originalSummary": "Sinkevičius told BBC Newsnight Lithuanians feel \"constantly threatened\" by Moscow, but the nation was prepared to \"fight back\" if attacked.",
       "publishedAt": "2026-09-22T13:49:22.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "42aa9cde0f39f21ea0af",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1179,14 +1550,14 @@
       "originalLanguage": "zh",
       "originalTitle": "5连板后收到监管工作函，内蒙新华称股价“击鼓传花”效应明显",
       "publishedAt": "2026-09-22T13:41:45.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 940,
         "reader": "cnfin-body",
         "sha256": "b4d5269bf62dc66fb8f7afd4bdc60c53b8636a4236cb35559f24f17b0ca83ad9",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473745_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "d812afc15f465dc3671f",
       "verificationStatus": "verified",
@@ -1238,14 +1609,14 @@
       "originalLanguage": "zh",
       "originalTitle": "腾讯控股、阿里巴巴重磅发布 机构预估1.6万亿元潜在利好",
       "publishedAt": "2026-09-22T13:41:36.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 1487,
         "reader": "cnfin-body",
         "sha256": "c038827541ff2a993466535c9af66a061504bccde2c558a7d72282b001755fe9",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473743_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "842dac3c78758227a78c",
       "verificationStatus": "verified",
@@ -1274,7 +1645,19 @@
       "detailStatus": "brief",
       "facts": [],
       "expectations": [],
-      "inferences": []
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "c038827541ff2a993466535c9af66a061504bccde2c558a7d72282b001755fe9",
+        "count": 1,
+        "lastAttemptAt": "2026-09-22T22:08:34.240Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[1].quote"
+          ]
+        }
+      }
     },
     {
       "sourceId": "cnfin",
@@ -1285,14 +1668,14 @@
       "originalLanguage": "zh",
       "originalTitle": "生态环境部：推动固体废物和新污染物治理取得新成效",
       "publishedAt": "2026-09-22T13:40:52.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 1899,
         "reader": "cnfin-body",
         "sha256": "67090f5d18fae637b2800e12f966fdb44ea41eab68459c37001f940f04e363ac",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473741_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "3c41f15484f0f511ffd8",
       "verificationStatus": "verified",
@@ -1321,7 +1704,19 @@
       "detailStatus": "brief",
       "facts": [],
       "expectations": [],
-      "inferences": []
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "67090f5d18fae637b2800e12f966fdb44ea41eab68459c37001f940f04e363ac",
+        "count": 1,
+        "lastAttemptAt": "2026-09-22T22:08:34.240Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "language",
+          "fields": [
+            "soWhat.expectationGap"
+          ]
+        }
+      }
     },
     {
       "sourceId": "cnfin",
@@ -1332,14 +1727,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【新华解读】自贸离岸债制度“再落一子” 登记托管结算等全链条规范护航市场扩容",
       "publishedAt": "2026-09-22T13:39:10.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 1964,
         "reader": "cnfin-body",
         "sha256": "ab8061a2128340776adf8aac32f60ca74e926a3b3e9939d9946764dcfd428e21",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473738_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "46931382fa6fe9597041",
       "verificationStatus": "verified",
@@ -1380,7 +1775,7 @@
       "originalTitle": "Iran must stop arming Houthis in Yemen, G7 says ahead of UN General Assembly",
       "originalSummary": "The G7 also condemns \"in the strongest terms\" Houthi attacks on Saudi Arabia, saying that the escalation in fighting in Yemen jeopardises global energy security.",
       "publishedAt": "2026-09-22T13:39:09.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "3fb18040786f23d5d79d",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1420,14 +1815,14 @@
       "originalLanguage": "zh",
       "originalTitle": "中金公司9月23日复牌 732.19万股异议股份完成申报",
       "publishedAt": "2026-09-22T13:19:16.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 1390,
         "reader": "cnfin-body",
         "sha256": "cc5e16ac3bd78113f92d1dd1c22fc7d10215bbd8bd1a297ce878e991f609108a",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473719_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "52382d5dc650a95c7d1f",
       "verificationStatus": "verified",
@@ -1459,47 +1854,6 @@
       "inferences": []
     },
     {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cv2dwylkl7weo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "New EU industry rules would damage UK, warns Burnham",
-      "originalSummary": "The prime minister says he will raise his concerns when he meets the European Commission President later.",
-      "publishedAt": "2026-09-22T13:10:23.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
-      "id": "a184fa1b02b266de4e9a",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|neweuindustryrul|2026-09-22",
-      "detailStatus": "brief",
-      "facts": [
-        "The prime minister says he will raise his concerns when he meets the European Commission President later."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -1509,7 +1863,7 @@
       "originalTitle": "Why is the Bab al-Mandab Strait so important?",
       "originalSummary": "The BBC's Frank Gardner explains why the narrow waterway is key to oil transportation and the world economy.",
       "publishedAt": "2026-09-22T12:57:59.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "df1ead9a00e9cc7eb13f",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1550,7 +1904,7 @@
       "originalTitle": "Developing El Niño becomes strongest on record weeks before expected peak",
       "originalSummary": "Scientists say the developing El Niño is now the strongest on record with weather impacts already being felt around the world.",
       "publishedAt": "2026-09-22T12:54:14.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "7801ab02db96befa32b1",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1590,14 +1944,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【新华解读】琴澳联动“债”添新翼——澳门债券市场高质量发展扶持办法3.0的政策深意与市场回响",
       "publishedAt": "2026-09-22T12:50:58.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 2345,
         "reader": "cnfin-body",
         "sha256": "89455cbc68d9559d3a2b63682a9f11048892ee40deeaefe25192fa3120e8dc96",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473702_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "a7f7720824dedee193e0",
       "verificationStatus": "verified",
@@ -1629,47 +1983,6 @@
       "inferences": []
     },
     {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c8dx5dy5rzz2o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "What is the White House pool and why is it in a row with Trump?",
-      "originalSummary": "The White House press pool is at the centre of a major row between President Donald Trump and TV networks. What is it?",
-      "publishedAt": "2026-09-22T12:26:31.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
-      "id": "3f63d856d1bb928eb0d0",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|whatisthewhiteho|2026-09-22",
-      "detailStatus": "brief",
-      "facts": [
-        "The White House press pool is at the centre of a major row between President Donald Trump and TV networks. What is it?"
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
       "sourceTier": "verified",
@@ -1678,14 +1991,14 @@
       "originalLanguage": "zh",
       "originalTitle": "货币市场日报：9月22日",
       "publishedAt": "2026-09-22T12:21:37.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 1454,
         "reader": "cnfin-body",
         "sha256": "c71d126adb5a6af73034c88f5b0b2c525f6dc3095f70c267d48856e596cd9743",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473681_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "271ada83a6753a222926",
       "verificationStatus": "verified",
@@ -1725,14 +2038,14 @@
       "originalLanguage": "zh",
       "originalTitle": "每日机构分析：9月22日",
       "publishedAt": "2026-09-22T11:57:33.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 1451,
         "reader": "cnfin-body",
         "sha256": "a48abb5e3b857308c4ea199df2a2efeab80000d736216efc8ee6b12414bf0896",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473671_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "ce0b82bf62129c4a2487",
       "verificationStatus": "verified",
@@ -1772,14 +2085,14 @@
       "originalLanguage": "zh",
       "originalTitle": "李强在上海调研时强调 加快培育壮大新兴产业和未来产业 持续做大做强先进制造业",
       "publishedAt": "2026-09-22T11:43:10.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "article": {
         "status": "complete",
         "characterCount": 942,
         "reader": "cnfin-body",
         "sha256": "92b56963e1e9aef8a2c26c6ea6a6bd41d6f65ee3186e62510376b86e0848ba1e",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260922/4473652_1.html",
-        "checkedAt": "2026-09-22T18:54:10.333Z"
+        "checkedAt": "2026-09-22T22:08:34.240Z"
       },
       "id": "9134b42bb3ee8ddc9721",
       "verificationStatus": "verified",
@@ -1819,7 +2132,7 @@
       "originalLanguage": "zh",
       "originalTitle": "鼓励民间资本参与重点项目 推动北斗规模应用——国家发展改革委解析近期经济热点",
       "publishedAt": "2026-09-22T11:40:40.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "0d0e86bb1e63586d85db",
       "verificationStatus": "verified",
       "titleZh": "鼓励民间资本参与重点项目 推动北斗规模应用——国家发展改革委解析近期经济热点",
@@ -1859,7 +2172,7 @@
       "originalTitle": "Paramount settles lawsuit with US states, clearing way for $110bn merger with Warner Bros",
       "originalSummary": "The deal includes an agreement to produce 30 films a year, or Paramount will be forced to sell off parts of its company.",
       "publishedAt": "2026-09-22T11:24:48.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "bec2ca89329733257d02",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1900,7 +2213,7 @@
       "originalTitle": "Are vet bills about to get cheaper?",
       "originalSummary": "Written prescription fees from vets will be capped at £21 as part of a raft of changes that practices will be legally required to bring in over the coming months.",
       "publishedAt": "2026-09-22T10:57:42.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "c21ecdd2ab91c59c9d76",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1941,7 +2254,7 @@
       "originalTitle": "Eleven injured in shooting outside Turkish school",
       "originalSummary": "Footage appears to show a male in the area carrying a firearm, while officials say the attacker has been captured.",
       "publishedAt": "2026-09-22T10:42:47.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "d8ae113e43d5da04587b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1982,7 +2295,7 @@
       "originalTitle": "Spain battles climate change on several fronts",
       "originalSummary": "A summer of wildfires and heatwaves underlines the threats to the country's economy.",
       "publishedAt": "2026-09-22T09:11:48.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "51498abf8b2157676f3b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2023,7 +2336,7 @@
       "originalTitle": "Unexpected UK borrowing surge adds to pre-Budget pressure on chancellor",
       "originalSummary": "Borrowing was higher than expected in August as inflation piles pressure on the government ahead of the Budget.",
       "publishedAt": "2026-09-22T08:52:12.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "07eb933fda77abdcfb73",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2064,7 +2377,7 @@
       "originalTitle": "'Nightmare' for taxi drivers as fuel prices soar",
       "originalSummary": "Volunteer blood bike charity Freewheelers workers said they are also facing tough choices.",
       "publishedAt": "2026-09-22T08:33:49.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "c717da3a23c8ac1bab19",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2100,13 +2413,13 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqevwpmvpekeo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Four dead after powerful Typhoon Dujuan lashes Japan",
-      "originalSummary": "The storm pulled away from Japan after bringing heavy rains and strong winds to Tokyo and surrounding areas.",
-      "publishedAt": "2026-09-22T05:58:35.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
-      "id": "ea79eb538d7bcb9d73b9",
+      "originalTitle": "Burnham expects to find 'common ground' with Trump in first meeting",
+      "originalSummary": "In New York, the prime minister will also deliver a speech to the UN General Assembly expected to be focused on AI.",
+      "publishedAt": "2026-09-22T06:03:22.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "7d023d62a573ca1e69b7",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -2128,10 +2441,10 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|fourdeadafterpow|2026-09-22",
+      "clusterId": "监管|burnhamexpectsto|2026-09-22",
       "detailStatus": "brief",
       "facts": [
-        "The storm pulled away from Japan after bringing heavy rains and strong winds to Tokyo and surrounding areas."
+        "In New York, the prime minister will also deliver a speech to the UN General Assembly expected to be focused on AI."
       ],
       "expectations": [],
       "inferences": []
@@ -2146,7 +2459,7 @@
       "originalTitle": "Rising fuel prices 'cost tow truck business £10k'",
       "originalSummary": "A business says fuel duty will need to be cut by 30p to 50p per litre to help.",
       "publishedAt": "2026-09-22T05:24:01.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "3a6e24599d5b3e80426f",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2187,7 +2500,7 @@
       "originalTitle": "Soaring fuel costs hit small businesses",
       "originalSummary": "It comes as fuel prices reach their highest since 2022, driven by conflict in the Middle East.",
       "publishedAt": "2026-09-22T05:05:41.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "82ec513f95b45039bb99",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2228,7 +2541,7 @@
       "originalTitle": "Winter support planned for vulnerable residents",
       "originalSummary": "People could be eligible for awards of between £150 to £250, depending on their circumstances.",
       "publishedAt": "2026-09-22T05:04:56.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "a178e0125b3a3c05754f",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2269,7 +2582,7 @@
       "originalTitle": "What to expect as world leaders descend on New York - and who won't be there",
       "originalSummary": "The BBC’s Sarah Smith outlines which world leaders Trump is set to meet and the key topics expected on the agenda.",
       "publishedAt": "2026-09-22T04:05:58.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "25d5ef7b89cb55aa97d4",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2310,7 +2623,7 @@
       "originalTitle": "Canadian province sues OpenAI over Tumbler Ridge school shooting",
       "originalSummary": "British Columbia has accused the company of failing to report the shooter's troubling interactions with ChatGPT to law enforcement.",
       "publishedAt": "2026-09-22T01:44:17.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "4fc1754683e6d433e243",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2351,7 +2664,7 @@
       "originalTitle": "Flights at major US airports delayed after cable cut by construction workers",
       "originalSummary": "The cable had been repaired and airports are resuming normal operations, the US transportation secretary says.",
       "publishedAt": "2026-09-22T01:36:54.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "a861aabb1b8ee9753f88",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2392,7 +2705,7 @@
       "originalTitle": "Why a Bollywood celebrity manager's 2020 death case has been reopened",
       "originalSummary": "Disha Salian's father insists her death was not suicide or an accident, but that she was gang-raped and murdered.",
       "publishedAt": "2026-09-21T23:32:04.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "1cc21a444184b893e76b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2433,7 +2746,7 @@
       "originalTitle": "I'd rather pay thousands on a holiday: Meet the pensioners spending the kids' inheritance",
       "originalSummary": "The phenomenon sees retirees spend all their money on enjoying life to the full.",
       "publishedAt": "2026-09-21T23:01:26.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "e9b27f0654aa36ab61e1",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2463,19 +2776,22 @@
       ],
       "expectations": [],
       "inferences": []
-    },
+    }
+  ],
+  "continuing": [],
+  "retainedDetails": [
     {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqp80p78mxx5o?at_medium=RSS&at_campaign=rss",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c3y0z25v0zjwo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Airlines criticise air traffic control as second glitch causes more disruption",
-      "originalSummary": "Prime Minister Andy Burnham said further issues \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it.",
-      "publishedAt": "2026-09-21T20:21:18.000Z",
+      "originalTitle": "Texas ICE shooting leaves Venezuelan DoorDash driver with bullet in his back, says lawyer",
+      "originalSummary": "The delivery driver was transferred from a hospital to a detention centre, his lawyer tells US media.",
+      "publishedAt": "2026-09-22T17:17:01.000Z",
       "fetchedAt": "2026-09-22T18:54:10.333Z",
-      "id": "eb6ead5414284342af9a",
+      "id": "bbaa30b3fb23549d1501",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -2497,17 +2813,55 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|airlinescriticis|2026-09-21",
+      "clusterId": "监管|texasiceshooting|2026-09-22",
       "detailStatus": "brief",
       "facts": [
-        "Prime Minister Andy Burnham said further issues \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it."
+        "The delivery driver was transferred from a hospital to a detention centre, his lawyer tells US media."
       ],
       "expectations": [],
       "inferences": []
-    }
-  ],
-  "continuing": [],
-  "retainedDetails": [
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvj64gz74ky4o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Call of Duty's Activision to make next Halo game as Xbox cuts more jobs",
+      "originalSummary": "The news comes as part of a \"reset\" announced by Xbox in July, with 3,600 planned job losses overall.",
+      "publishedAt": "2026-09-22T14:51:39.000Z",
+      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "id": "9745a421980515ea4d79",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|callofdutysactiv|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "The news comes as part of a \"reset\" announced by Xbox in July, with 3,600 planned job losses overall."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
     {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
@@ -2586,6 +2940,47 @@
       "detailStatus": "brief",
       "facts": [
         "Doyle was best known for reporting on African conflicts in the 1990s and 2000s, notably in Rwanda and Sierra Leone."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168394",
+      "originalLanguage": "en",
+      "originalTitle": "Time to accept ‘hard truths’ so trust can be rebuilt: General Assembly president",
+      "originalSummary": "The UN’s survival for 80 years is not, by itself, proof of success, and now, the institution must confront painful truths if it hopes to rebuild public trust, said Khalilur Rahman, president of the General Assembly’s 81st session on Tuesday.",
+      "publishedAt": "2026-09-22T12:00:00.000Z",
+      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "id": "8a769d99f1de3d808e1d",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|timetoaccepthard|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "The UN’s survival for 80 years is not, by itself, proof of success, and now, the institution must confront painful truths if it hopes to rebuild public trust, said Khalilur Rahman, president of the General Assembly’s 81st session on Tuesday."
       ],
       "expectations": [],
       "inferences": []
@@ -3219,6 +3614,47 @@
       "clusterId": "监管|轻工纺织产业发展十五五规划发布|2026-09-22",
       "detailStatus": "brief",
       "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Four dead after powerful Typhoon Dujuan lashes Japan",
+      "originalSummary": "The storm pulled away from Japan after bringing heavy rains and strong winds to Tokyo and surrounding areas.",
+      "publishedAt": "2026-09-22T05:58:35.000Z",
+      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "id": "ea79eb538d7bcb9d73b9",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|fourdeadafterpow|2026-09-22",
+      "detailStatus": "brief",
+      "facts": [
+        "The storm pulled away from Japan after bringing heavy rains and strong winds to Tokyo and surrounding areas."
+      ],
       "expectations": [],
       "inferences": []
     },
@@ -4366,6 +4802,47 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqp80p78mxx5o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Airlines criticise air traffic control as second glitch causes more disruption",
+      "originalSummary": "Prime Minister Andy Burnham said further issues \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it.",
+      "publishedAt": "2026-09-21T20:21:18.000Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
+      "id": "eb6ead5414284342af9a",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|airlinescriticis|2026-09-21",
+      "detailStatus": "brief",
+      "facts": [
+        "Prime Minister Andy Burnham said further issues \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -4668,7 +5145,7 @@
       "originalTitle": "Watch: Timelapse shows typhoon barrelling towards Japan",
       "originalSummary": "The typhoon is passing Japan's eastern coast, bringing major disruption and heavy rainfall in its wake.",
       "publishedAt": "2026-09-21T16:52:12.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "bf5abca58cf89b08d4a5",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4709,7 +5186,7 @@
       "originalTitle": "Repeated air traffic control failures leave us in worrying territory",
       "originalSummary": "The question is whether all of these incidents were isolated and unavoidable, or whether they point to something more systemic.",
       "publishedAt": "2026-09-21T16:39:01.000Z",
-      "fetchedAt": "2026-09-22T18:54:10.333Z",
+      "fetchedAt": "2026-09-22T22:08:34.240Z",
       "id": "d60a3112b5f6072447db",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4962,243 +5439,6 @@
           ]
         }
       }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6vgyz1n0v1xo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Merz's political crisis threatens Germany's obsession with stability",
-      "originalSummary": "Political shifts in Germany are being watched closely in Europe and beyond, Katya Adler writes.",
-      "publishedAt": "2026-09-21T13:30:45.000Z",
-      "fetchedAt": "2026-09-22T14:52:54.265Z",
-      "id": "76a2da4985640113a1e1",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|merzspoliticalcr|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "Political shifts in Germany are being watched closely in Europe and beyond, Katya Adler writes."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4473137_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4473137_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "胡塞武装与沙特冲突升级 美国能置身事外吗",
-      "publishedAt": "2026-09-21T13:30:18.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 1778,
-        "reader": "cnfin-body",
-        "sha256": "d67c0bc2475044f3485c6f0a2d712a60ed70f054abfd3a51d2cca1315ede9393",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4473137_1.html",
-        "checkedAt": "2026-09-22T00:06:26.872Z"
-      },
-      "id": "885247a7ce10f2cd4714",
-      "verificationStatus": "verified",
-      "titleZh": "胡塞武装与沙特冲突升级 美国能置身事外吗",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|胡塞武装与沙特冲突升级美国能置身|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "d67c0bc2475044f3485c6f0a2d712a60ed70f054abfd3a51d2cca1315ede9393",
-        "count": 1,
-        "lastAttemptAt": "2026-09-21T17:02:54.595Z",
-        "rejection": {
-          "stage": "analysis",
-          "category": "so-what",
-          "fields": []
-        }
-      }
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4473117_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4473117_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "守住管好“大国粮仓”——国新办发布会聚焦粮食流通领域“十五五”工作重点",
-      "publishedAt": "2026-09-21T12:59:32.000Z",
-      "fetchedAt": "2026-09-22T00:06:26.872Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 1385,
-        "reader": "cnfin-body",
-        "sha256": "5515608e8f19c1a4299caa34ad7239133220e1d61e41cc4dcdc2ea9ea5c90cda",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260921/4473117_1.html",
-        "checkedAt": "2026-09-22T00:06:26.872Z"
-      },
-      "id": "569c7395bce26c503ba0",
-      "verificationStatus": "verified",
-      "titleZh": "守住管好“大国粮仓”——国新办发布会聚焦粮食流通领域“十五五”工作重点",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|守住管好大国粮仓国新办发布会聚焦|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "5515608e8f19c1a4299caa34ad7239133220e1d61e41cc4dcdc2ea9ea5c90cda",
-        "count": 1,
-        "lastAttemptAt": "2026-09-21T21:03:50.319Z",
-        "rejection": {
-          "stage": "analysis",
-          "category": "numbers",
-          "fields": []
-        }
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck1e52v16ngxo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Google hit with €403m fine by Irish data watchdog over GDPR violations",
-      "originalSummary": "The penalty follows an inquiry launched into the tech giant six years ago, following complaints from several European consumer rights organisations.",
-      "publishedAt": "2026-09-21T12:30:54.000Z",
-      "fetchedAt": "2026-09-22T09:56:56.568Z",
-      "id": "c75492579d924f58610b",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "经济数据"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "经济数据|googlehitwith403|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "The penalty follows an inquiry launched into the tech giant six years ago, following complaints from several European consumer rights organisations."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c617j2x01epjo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Three held over woman's murder as South Africa police investigate eight other body finds",
-      "originalSummary": "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg.",
-      "publishedAt": "2026-09-21T12:22:00.000Z",
-      "fetchedAt": "2026-09-21T17:02:54.595Z",
-      "id": "8f56b4b71fbac9231c74",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|threeheldoverwom|2026-09-21",
-      "detailStatus": "brief",
-      "facts": [
-        "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg."
-      ],
-      "expectations": [],
-      "inferences": []
     }
   ],
   "sourceHealth": [
@@ -5243,7 +5483,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 22
+      "itemCount": 24
     },
     {
       "id": "bbc-business",
@@ -5272,12 +5512,13 @@
       "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 2
+        "facts": 1,
+        "language": 1
       }
     }
   ],
