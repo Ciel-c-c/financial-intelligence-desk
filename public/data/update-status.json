@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-23T11:34:56.178Z",
-  "lastSuccessfulAt": "2026-09-23T11:34:56.178Z",
+  "attemptedAt": "2026-09-23T16:57:27.338Z",
+  "lastSuccessfulAt": "2026-09-23T16:57:27.338Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-23T11:34:56.178Z"
+      "lastSuccessfulAt": "2026-09-23T16:57:27.338Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-23T11:34:56.178Z"
+      "lastSuccessfulAt": "2026-09-23T16:57:27.338Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-23T11:34:56.178Z"
+      "lastSuccessfulAt": "2026-09-23T16:57:27.338Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-23T11:34:56.178Z"
+      "lastSuccessfulAt": "2026-09-23T16:57:27.338Z"
     }
   ],
   "sourceHealth": [
@@ -67,7 +67,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 27
+      "itemCount": 28
     },
     {
       "id": "bbc-business",
@@ -103,8 +103,9 @@
     {
       "id": "news-fed",
       "name": "Federal Reserve（新闻）",
-      "status": "ok",
-      "itemCount": 20
+      "status": "error",
+      "itemCount": 0,
+      "error": "HTTP 404"
     },
     {
       "id": "news-ecb",
@@ -128,7 +129,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 27
+      "itemCount": 28
     },
     {
       "id": "news-bbc-business",
