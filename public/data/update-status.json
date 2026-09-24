@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-24T10:00:25.639Z",
-  "lastSuccessfulAt": "2026-09-24T10:00:25.639Z",
+  "attemptedAt": "2026-09-24T15:05:35.546Z",
+  "lastSuccessfulAt": "2026-09-24T15:05:35.546Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-24T10:00:25.639Z"
+      "lastSuccessfulAt": "2026-09-24T15:05:35.546Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-24T10:00:25.639Z"
+      "lastSuccessfulAt": "2026-09-24T15:05:35.546Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-24T10:00:25.639Z"
+      "lastSuccessfulAt": "2026-09-24T15:05:35.546Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-24T10:00:25.639Z"
+      "lastSuccessfulAt": "2026-09-24T15:05:35.546Z"
     }
   ],
   "sourceHealth": [
@@ -37,7 +37,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -67,13 +67,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 23
+      "itemCount": 27
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 47
     },
     {
       "id": "bis-press",
@@ -128,13 +128,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 23
+      "itemCount": 27
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 47
     },
     {
       "id": "news-bis-press",
@@ -155,15 +155,14 @@
       "itemCount": 0,
       "attempted": 2,
       "rejected": 2,
-      "failures": 0,
+      "failures": 1,
       "stages": {
-        "evidence": 1,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 1,
-        "language": 1
+        "facts": 2
       }
     }
   ],

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-24T10:00:25.639Z",
-  "lastSuccessfulAt": "2026-09-24T10:00:25.639Z",
+  "attemptedAt": "2026-09-24T15:05:35.546Z",
+  "lastSuccessfulAt": "2026-09-24T15:05:35.546Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -15,7 +15,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -45,13 +45,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 23
+      "itemCount": 27
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 47
     },
     {
       "id": "bis-press",
@@ -67,6 +67,298 @@
     }
   ],
   "events": [
+    {
+      "id": "e8b1c4dfe37e",
+      "headline": "‘Peace remains only a promise’ for millions in eastern DR Congo, General Assembly hears",
+      "sourceHeadline": "‘Peace remains only a promise’ for millions in eastern DR Congo, General Assembly hears",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "The Prime Minister of the Democratic Republic of the Congo (DRC) cautioned against growing global demand for “blood-stained minerals” in the rush to net-zero, in her speech to the UN General Assembly.",
+      "publishedAt": "2026-09-24T12:00:00.000Z",
+      "firstPublishedAt": "2026-09-24T12:00:00.000Z",
+      "latestSourceAt": "2026-09-24T12:00:00.000Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The Prime Minister of the Democratic Republic of the Congo (DRC) cautioned against growing global demand for “blood-stained minerals” in the rush to net-zero, in her speech to the UN General Assembly."
+      ],
+      "factSummary": "The Prime Minister of the Democratic Republic of the Congo (DRC) cautioned against growing global demand for “blood-stained minerals” in the rush to net-zero, in her speech to the UN General Assembly.",
+      "marketView": [
+        "本条来源报告：‘Peace remains only a promise’ for millions in eastern DR Congo, General Assembly hears。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168422",
+          "publishedAt": "2026-09-24T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "1944f38496b2",
+      "headline": "Why India's Election Commission is in the eye of a storm - again",
+      "sourceHeadline": "Why India's Election Commission is in the eye of a storm - again",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "India's polling monitor is facing yet another crisis of credibility with fresh allegations against its chief.",
+      "publishedAt": "2026-09-24T08:26:19.000Z",
+      "firstPublishedAt": "2026-09-24T08:26:19.000Z",
+      "latestSourceAt": "2026-09-24T08:26:19.000Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "India's polling monitor is facing yet another crisis of credibility with fresh allegations against its chief."
+      ],
+      "factSummary": "India's polling monitor is facing yet another crisis of credibility with fresh allegations against its chief.",
+      "marketView": [
+        "本条来源报告：Why India's Election Commission is in the eye of a storm - again。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cqkgw68yjg29o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-24T08:26:19.000Z"
+        }
+      ]
+    },
     {
       "id": "ddc49576e693",
       "headline": "Trump offers warm welcome as China's Xi arrives for US visit",
@@ -229,7 +521,7 @@
       "publishedAt": "2026-09-23T23:12:22.000Z",
       "firstPublishedAt": "2026-09-23T23:12:22.000Z",
       "latestSourceAt": "2026-09-23T23:12:22.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -559,7 +851,7 @@
       "publishedAt": "2026-09-23T18:15:31.000Z",
       "firstPublishedAt": "2026-09-23T18:15:31.000Z",
       "latestSourceAt": "2026-09-23T18:15:31.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "middle-east",
       "countries": [],
       "topic": "political-transition",
@@ -705,7 +997,7 @@
       "publishedAt": "2026-09-23T16:42:47.000Z",
       "firstPublishedAt": "2026-09-23T16:42:47.000Z",
       "latestSourceAt": "2026-09-23T16:42:47.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1003,7 +1295,7 @@
       "publishedAt": "2026-09-23T13:50:25.000Z",
       "firstPublishedAt": "2026-09-23T13:50:25.000Z",
       "latestSourceAt": "2026-09-23T13:50:25.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1191,7 +1483,7 @@
       "publishedAt": "2026-09-23T12:00:00.000Z",
       "firstPublishedAt": "2026-09-23T12:00:00.000Z",
       "latestSourceAt": "2026-09-23T12:00:00.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1337,7 +1629,7 @@
       "publishedAt": "2026-09-23T12:00:00.000Z",
       "firstPublishedAt": "2026-09-23T12:00:00.000Z",
       "latestSourceAt": "2026-09-23T12:00:00.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1483,7 +1775,7 @@
       "publishedAt": "2026-09-23T12:00:00.000Z",
       "firstPublishedAt": "2026-09-23T12:00:00.000Z",
       "latestSourceAt": "2026-09-23T12:00:00.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1631,7 +1923,7 @@
       "publishedAt": "2026-09-23T12:00:00.000Z",
       "firstPublishedAt": "2026-09-23T12:00:00.000Z",
       "latestSourceAt": "2026-09-23T12:00:00.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1777,7 +2069,7 @@
       "publishedAt": "2026-09-23T12:00:00.000Z",
       "firstPublishedAt": "2026-09-23T12:00:00.000Z",
       "latestSourceAt": "2026-09-23T12:00:00.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "middle-east",
       "countries": [],
       "topic": "political-transition",
@@ -1923,7 +2215,7 @@
       "publishedAt": "2026-09-23T12:00:00.000Z",
       "firstPublishedAt": "2026-09-23T12:00:00.000Z",
       "latestSourceAt": "2026-09-23T12:00:00.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2069,7 +2361,7 @@
       "publishedAt": "2026-09-23T12:00:00.000Z",
       "firstPublishedAt": "2026-09-23T12:00:00.000Z",
       "latestSourceAt": "2026-09-23T12:00:00.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -2659,7 +2951,7 @@
       "publishedAt": "2026-09-23T03:20:30.000Z",
       "firstPublishedAt": "2026-09-23T03:20:30.000Z",
       "latestSourceAt": "2026-09-23T03:20:30.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
+      "fetchedAt": "2026-09-24T15:05:35.546Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3378,300 +3670,6 @@
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/c52e0ywl9pr7o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-22T21:50:31.000Z"
-        }
-      ]
-    },
-    {
-      "id": "b627b9588d69",
-      "headline": "New EU industry rules would damage UK, warns Burnham",
-      "sourceHeadline": "New EU industry rules would damage UK, warns Burnham",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "The prime minister met the European Commission President during his visit to the United Nations General Assembly.",
-      "publishedAt": "2026-09-22T21:18:40.000Z",
-      "firstPublishedAt": "2026-09-22T21:18:40.000Z",
-      "latestSourceAt": "2026-09-22T21:18:40.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
-      "region": "europe",
-      "countries": [
-        "EU"
-      ],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "The prime minister met the European Commission President during his visit to the United Nations General Assembly."
-      ],
-      "factSummary": "The prime minister met the European Commission President during his visit to the United Nations General Assembly.",
-      "marketView": [
-        "本条来源报告：New EU industry rules would damage UK, warns Burnham。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cv2dwylkl7weo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-22T21:18:40.000Z"
-        }
-      ]
-    },
-    {
-      "id": "6894059991bd",
-      "headline": "How Ceuta, football and Israel are shaping Morocco's election",
-      "sourceHeadline": "How Ceuta, football and Israel are shaping Morocco's election",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Young voters are being courted with football slogans, promises of jobs and anti-Israel rallying calls.",
-      "publishedAt": "2026-09-22T20:59:00.000Z",
-      "firstPublishedAt": "2026-09-22T20:59:00.000Z",
-      "latestSourceAt": "2026-09-22T20:59:00.000Z",
-      "fetchedAt": "2026-09-24T10:00:25.639Z",
-      "region": "middle-east",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Young voters are being courted with football slogans, promises of jobs and anti-Israel rallying calls."
-      ],
-      "factSummary": "Young voters are being courted with football slogans, promises of jobs and anti-Israel rallying calls.",
-      "marketView": [
-        "本条来源报告：How Ceuta, football and Israel are shaping Morocco's election。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/c8r4v7n6py97o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-22T20:59:00.000Z"
         }
       ]
     }
