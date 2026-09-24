@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-24T04:49:19.620Z",
-  "lastSuccessfulAt": "2026-09-24T04:49:19.620Z",
+  "attemptedAt": "2026-09-24T10:00:25.639Z",
+  "lastSuccessfulAt": "2026-09-24T10:00:25.639Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-24T04:49:19.620Z"
+      "lastSuccessfulAt": "2026-09-24T10:00:25.639Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-24T04:49:19.620Z"
+      "lastSuccessfulAt": "2026-09-24T10:00:25.639Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-24T04:49:19.620Z"
+      "lastSuccessfulAt": "2026-09-24T10:00:25.639Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-24T04:49:19.620Z"
+      "lastSuccessfulAt": "2026-09-24T10:00:25.639Z"
     }
   ],
   "sourceHealth": [
@@ -37,7 +37,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "fed",
@@ -55,7 +55,7 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 44
+      "itemCount": 43
     },
     {
       "id": "un",
@@ -67,13 +67,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 22
+      "itemCount": 23
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 48
     },
     {
       "id": "bis-press",
@@ -116,7 +116,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 44
+      "itemCount": 43
     },
     {
       "id": "news-un",
@@ -128,13 +128,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 22
+      "itemCount": 23
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 48
     },
     {
       "id": "news-bis-press",
@@ -155,14 +155,15 @@
       "itemCount": 0,
       "attempted": 2,
       "rejected": 2,
-      "failures": 2,
+      "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 2
+        "facts": 1,
+        "language": 1
       }
     }
   ],
