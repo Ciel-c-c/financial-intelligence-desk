@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-25T07:48:39.540Z",
-  "lastSuccessfulAt": "2026-09-25T07:48:39.540Z",
+  "attemptedAt": "2026-09-25T13:46:23.132Z",
+  "lastSuccessfulAt": "2026-09-25T13:46:23.132Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-25T07:48:39.540Z"
+      "lastSuccessfulAt": "2026-09-25T13:46:23.132Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-25T07:48:39.540Z"
+      "lastSuccessfulAt": "2026-09-25T13:46:23.132Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-25T07:48:39.540Z"
+      "lastSuccessfulAt": "2026-09-25T13:46:23.132Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-25T07:48:39.540Z"
+      "lastSuccessfulAt": "2026-09-25T13:46:23.132Z"
     }
   ],
   "sourceHealth": [
@@ -37,7 +37,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -55,7 +55,7 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 45
+      "itemCount": 46
     },
     {
       "id": "un",
@@ -67,13 +67,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 37
+      "itemCount": 32
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 49
+      "itemCount": 50
     },
     {
       "id": "bis-press",
@@ -85,7 +85,7 @@
       "id": "eia-energy",
       "name": "U.S. Energy Information Administration",
       "status": "ok",
-      "itemCount": 18
+      "itemCount": 19
     },
     {
       "id": "news-cnfin",
@@ -116,7 +116,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 45
+      "itemCount": 46
     },
     {
       "id": "news-un",
@@ -128,13 +128,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 37
+      "itemCount": 32
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 49
+      "itemCount": 50
     },
     {
       "id": "news-bis-press",
@@ -146,7 +146,7 @@
       "id": "news-eia-energy",
       "name": "U.S. Energy Information Administration（新闻）",
       "status": "ok",
-      "itemCount": 18
+      "itemCount": 19
     },
     {
       "id": "news-groq-editorial",
