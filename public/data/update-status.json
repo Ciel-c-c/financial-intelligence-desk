@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-25T01:29:40.946Z",
-  "lastSuccessfulAt": "2026-09-25T01:29:40.946Z",
+  "attemptedAt": "2026-09-25T07:48:39.540Z",
+  "lastSuccessfulAt": "2026-09-25T07:48:39.540Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-25T01:29:40.946Z"
+      "lastSuccessfulAt": "2026-09-25T07:48:39.540Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-25T01:29:40.946Z"
+      "lastSuccessfulAt": "2026-09-25T07:48:39.540Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-25T01:29:40.946Z"
+      "lastSuccessfulAt": "2026-09-25T07:48:39.540Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-25T01:29:40.946Z"
+      "lastSuccessfulAt": "2026-09-25T07:48:39.540Z"
     }
   ],
   "sourceHealth": [
@@ -37,7 +37,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "fed",
@@ -55,7 +55,7 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 44
+      "itemCount": 45
     },
     {
       "id": "un",
@@ -67,7 +67,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 35
+      "itemCount": 37
     },
     {
       "id": "bbc-business",
@@ -116,7 +116,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 44
+      "itemCount": 45
     },
     {
       "id": "news-un",
@@ -128,7 +128,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 35
+      "itemCount": 37
     },
     {
       "id": "news-bbc-business",
@@ -157,13 +157,12 @@
       "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 1,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "market-expectation-evidence": 1,
-        "facts": 1
+        "facts": 2
       }
     }
   ],
