@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-26T01:33:02.840Z",
-  "lastSuccessfulAt": "2026-09-26T01:33:02.840Z",
+  "attemptedAt": "2026-09-26T07:40:13.388Z",
+  "lastSuccessfulAt": "2026-09-26T07:40:13.388Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -45,7 +45,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 33
+      "itemCount": 35
     },
     {
       "id": "bbc-business",
@@ -68,16 +68,164 @@
   ],
   "events": [
     {
+      "id": "7908a1e5ef2c",
+      "headline": "White House bars CNN from travelling with Trump on Air Force One",
+      "sourceHeadline": "White House bars CNN from travelling with Trump on Air Force One",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "CNN was scheduled to fly with US President Donald Trump for his trip to Tennessee on Saturday.",
+      "publishedAt": "2026-09-26T05:09:09.000Z",
+      "firstPublishedAt": "2026-09-26T05:09:09.000Z",
+      "latestSourceAt": "2026-09-26T05:09:09.000Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "CNN was scheduled to fly with US President Donald Trump for his trip to Tennessee on Saturday."
+      ],
+      "factSummary": "CNN was scheduled to fly with US President Donald Trump for his trip to Tennessee on Saturday.",
+      "marketView": [
+        "本条来源报告：White House bars CNN from travelling with Trump on Air Force One。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cxq633770y16o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-26T05:09:09.000Z"
+        }
+      ]
+    },
+    {
       "id": "12b350262707",
       "headline": "Iran offers US deal to reopen Strait of Hormuz in seven days",
       "sourceHeadline": "Iran offers US deal to reopen Strait of Hormuz in seven days",
       "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
       "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
-      "summary": "Asked about the Iranian offer, a US official told the BBC \"constructive discussions\" were taking place through mediators.",
-      "publishedAt": "2026-09-25T23:38:48.000Z",
-      "firstPublishedAt": "2026-09-25T23:38:48.000Z",
-      "latestSourceAt": "2026-09-25T23:38:48.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "summary": "Asked about the Iranian proposal, a US official told the BBC \"constructive discussions\" were taking place through mediators.",
+      "publishedAt": "2026-09-26T05:03:09.000Z",
+      "firstPublishedAt": "2026-09-26T05:03:09.000Z",
+      "latestSourceAt": "2026-09-26T05:03:09.000Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -107,9 +255,9 @@
         "riskAppetite"
       ],
       "fact": [
-        "Asked about the Iranian offer, a US official told the BBC \"constructive discussions\" were taking place through mediators."
+        "Asked about the Iranian proposal, a US official told the BBC \"constructive discussions\" were taking place through mediators."
       ],
-      "factSummary": "Asked about the Iranian offer, a US official told the BBC \"constructive discussions\" were taking place through mediators.",
+      "factSummary": "Asked about the Iranian proposal, a US official told the BBC \"constructive discussions\" were taking place through mediators.",
       "marketView": [
         "本条来源报告：Iran offers US deal to reopen Strait of Hormuz in seven days。以下为条件性机制参考，不是已核实的市场结论。",
         "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
@@ -251,7 +399,7 @@
         {
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-25T23:38:48.000Z"
+          "publishedAt": "2026-09-26T05:03:09.000Z"
         }
       ]
     },
@@ -265,7 +413,7 @@
       "publishedAt": "2026-09-25T20:47:49.000Z",
       "firstPublishedAt": "2026-09-25T20:47:49.000Z",
       "latestSourceAt": "2026-09-25T20:47:49.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -413,7 +561,7 @@
       "publishedAt": "2026-09-25T18:43:45.000Z",
       "firstPublishedAt": "2026-09-25T18:43:45.000Z",
       "latestSourceAt": "2026-09-25T18:43:45.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "monetary-policy",
@@ -581,7 +729,7 @@
       "publishedAt": "2026-09-25T14:24:19.000Z",
       "firstPublishedAt": "2026-09-25T14:24:19.000Z",
       "latestSourceAt": "2026-09-25T14:24:19.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -761,7 +909,7 @@
       "publishedAt": "2026-09-25T14:00:00.000Z",
       "firstPublishedAt": "2026-09-25T14:00:00.000Z",
       "latestSourceAt": "2026-09-25T14:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -917,7 +1065,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1063,7 +1211,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1209,7 +1357,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1355,7 +1503,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1501,7 +1649,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1647,7 +1795,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1793,7 +1941,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2267,7 +2415,7 @@
       "publishedAt": "2026-09-25T05:54:07.000Z",
       "firstPublishedAt": "2026-09-25T05:54:07.000Z",
       "latestSourceAt": "2026-09-25T05:54:07.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "trade-policy",
@@ -2439,7 +2587,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2585,7 +2733,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2731,7 +2879,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "middle-east",
       "countries": [],
       "topic": "political-transition",
@@ -2877,7 +3025,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "middle-east",
       "countries": [],
       "topic": "political-transition",
@@ -3023,7 +3171,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3467,7 +3615,7 @@
       "publishedAt": "2026-09-23T23:12:22.000Z",
       "firstPublishedAt": "2026-09-23T23:12:22.000Z",
       "latestSourceAt": "2026-09-23T23:12:22.000Z",
-      "fetchedAt": "2026-09-26T01:33:02.840Z",
+      "fetchedAt": "2026-09-26T07:40:13.388Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -3616,174 +3764,6 @@
           "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/cmx2zxv6936zo?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-23T23:12:22.000Z"
-        }
-      ]
-    },
-    {
-      "id": "0094f7a59068",
-      "headline": "'Proteinflation': Meet the people paying up to £100 for a bag of protein",
-      "sourceHeadline": "'Proteinflation': Meet the people paying up to £100 for a bag of protein",
-      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
-      "oneSentenceExplanation": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
-      "summary": "Consumers are feeling the squeeze from the rising price of protein.",
-      "publishedAt": "2026-09-23T23:12:01.000Z",
-      "firstPublishedAt": "2026-09-23T23:12:01.000Z",
-      "latestSourceAt": "2026-09-23T23:12:01.000Z",
-      "fetchedAt": "2026-09-24T04:49:19.620Z",
-      "region": "global",
-      "countries": [],
-      "topic": "monetary-policy",
-      "eventType": "monetary-policy",
-      "relevance": {
-        "level": "medium",
-        "score": 4,
-        "criteria": [
-          "inflation",
-          "growth",
-          "centralBank",
-          "capitalFlows"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 4,
-      "relevanceReasons": [
-        "inflation",
-        "growth",
-        "centralBank",
-        "capitalFlows"
-      ],
-      "fact": [
-        "Consumers are feeling the squeeze from the rising price of protein."
-      ],
-      "factSummary": "Consumers are feeling the squeeze from the rising price of protein.",
-      "marketView": [
-        "本条来源报告：'Proteinflation': Meet the people paying up to £100 for a bag of protein。以下为条件性机制参考，不是已核实的市场结论。",
-        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
-        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
-      ],
-      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
-      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "央行信号变化",
-          "beginnerExplanation": "投资者调整未来利率预期。",
-          "condition": "后续数据没有推翻该信号",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "债券收益率可能变化",
-          "beginnerExplanation": "新利率预期进入债券价格。",
-          "condition": "信用和期限溢价没有反向抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "融资成本可能变化",
-          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
-          "condition": "政策能传导到实体融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "股票估值可能重算",
-          "beginnerExplanation": "远期现金流对贴现率敏感。",
-          "condition": "盈利预期没有同时大幅变化",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "央行信号变化",
-          "beginnerExplanation": "投资者调整未来利率预期。",
-          "condition": "后续数据没有推翻该信号",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "债券收益率可能变化",
-          "beginnerExplanation": "新利率预期进入债券价格。",
-          "condition": "信用和期限溢价没有反向抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "融资成本可能变化",
-          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
-          "condition": "政策能传导到实体融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "股票估值可能重算",
-          "beginnerExplanation": "远期现金流对贴现率敏感。",
-          "condition": "盈利预期没有同时大幅变化",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "国债收益率",
-          "explanation": "它最直接反映政策、通胀和期限补偿。"
-        },
-        {
-          "name": "美元",
-          "explanation": "相对利率会改变持有不同货币的吸引力。"
-        },
-        {
-          "name": "Nasdaq",
-          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
-        },
-        {
-          "name": "银行股",
-          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "interest-rate",
-        "bonds",
-        "cpi",
-        "valuation",
-        "exchange-rate"
-      ],
-      "relatedKnowledgePoints": [
-        "interest-rate",
-        "bonds",
-        "cpi",
-        "valuation",
-        "exchange-rate"
-      ],
-      "conditionsThatChangeView": [
-        "通胀数据明显转向",
-        "就业或增长意外走弱",
-        "央行官员给出不同信号",
-        "金融压力让银行收紧贷款",
-        "市场已经提前充分定价"
-      ],
-      "watchConditions": [
-        "通胀数据明显转向",
-        "就业或增长意外走弱",
-        "央行官员给出不同信号",
-        "金融压力让银行收紧贷款",
-        "市场已经提前充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cm93e2gz8y41o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-23T23:12:01.000Z"
         }
       ]
     }
