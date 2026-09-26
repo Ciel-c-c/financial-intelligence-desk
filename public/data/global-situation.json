@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-26T07:40:13.388Z",
-  "lastSuccessfulAt": "2026-09-26T07:40:13.388Z",
+  "attemptedAt": "2026-09-26T13:04:42.497Z",
+  "lastSuccessfulAt": "2026-09-26T13:04:42.497Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -45,7 +45,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 35
+      "itemCount": 24
     },
     {
       "id": "bbc-business",
@@ -77,7 +77,7 @@
       "publishedAt": "2026-09-26T05:09:09.000Z",
       "firstPublishedAt": "2026-09-26T05:09:09.000Z",
       "latestSourceAt": "2026-09-26T05:09:09.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -225,7 +225,7 @@
       "publishedAt": "2026-09-26T05:03:09.000Z",
       "firstPublishedAt": "2026-09-26T05:03:09.000Z",
       "latestSourceAt": "2026-09-26T05:03:09.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -404,6 +404,152 @@
       ]
     },
     {
+      "id": "ec992b10f992",
+      "headline": "Brazil's Lula bans online gambling ahead of presidential election",
+      "sourceHeadline": "Brazil's Lula bans online gambling ahead of presidential election",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "Lula, who is currently in a tight presidential race against Flávio Bolsonaro, said the industry was a \"cancer\" that he must \"remove\".",
+      "publishedAt": "2026-09-26T03:22:17.000Z",
+      "firstPublishedAt": "2026-09-26T03:22:17.000Z",
+      "latestSourceAt": "2026-09-26T03:22:17.000Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Lula, who is currently in a tight presidential race against Flávio Bolsonaro, said the industry was a \"cancer\" that he must \"remove\"."
+      ],
+      "factSummary": "Lula, who is currently in a tight presidential race against Flávio Bolsonaro, said the industry was a \"cancer\" that he must \"remove\".",
+      "marketView": [
+        "本条来源报告：Brazil's Lula bans online gambling ahead of presidential election。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/c914ddj21rzlo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-26T03:22:17.000Z"
+        }
+      ]
+    },
+    {
       "id": "863ba901cb4f",
       "headline": "Russia targeting 'ordinary life' with attacks on Ukraine's data centres, Zelensky says",
       "sourceHeadline": "Russia targeting 'ordinary life' with attacks on Ukraine's data centres, Zelensky says",
@@ -413,7 +559,7 @@
       "publishedAt": "2026-09-25T20:47:49.000Z",
       "firstPublishedAt": "2026-09-25T20:47:49.000Z",
       "latestSourceAt": "2026-09-25T20:47:49.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -561,7 +707,7 @@
       "publishedAt": "2026-09-25T18:43:45.000Z",
       "firstPublishedAt": "2026-09-25T18:43:45.000Z",
       "latestSourceAt": "2026-09-25T18:43:45.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "monetary-policy",
@@ -729,7 +875,7 @@
       "publishedAt": "2026-09-25T14:24:19.000Z",
       "firstPublishedAt": "2026-09-25T14:24:19.000Z",
       "latestSourceAt": "2026-09-25T14:24:19.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -893,7 +1039,7 @@
       "marketReaction": [],
       "sources": [
         {
-          "name": "BBC News · 世界",
+          "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/c6z9z7lv41wgo?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-25T14:24:19.000Z"
         }
@@ -909,7 +1055,7 @@
       "publishedAt": "2026-09-25T14:00:00.000Z",
       "firstPublishedAt": "2026-09-25T14:00:00.000Z",
       "latestSourceAt": "2026-09-25T14:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1065,7 +1211,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1211,7 +1357,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1357,7 +1503,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1503,7 +1649,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1649,7 +1795,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1795,7 +1941,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1941,7 +2087,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2415,7 +2561,7 @@
       "publishedAt": "2026-09-25T05:54:07.000Z",
       "firstPublishedAt": "2026-09-25T05:54:07.000Z",
       "latestSourceAt": "2026-09-25T05:54:07.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "trade-policy",
@@ -2587,7 +2733,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2733,7 +2879,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2879,7 +3025,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "middle-east",
       "countries": [],
       "topic": "political-transition",
@@ -3025,7 +3171,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "middle-east",
       "countries": [],
       "topic": "political-transition",
@@ -3171,7 +3317,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
+      "fetchedAt": "2026-09-26T13:04:42.497Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3602,168 +3748,6 @@
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/cqgmrk7187lzo?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-24T03:52:21.000Z"
-        }
-      ]
-    },
-    {
-      "id": "b72859b69afe",
-      "headline": "How the oil capital of the US welcomed a solar power boom",
-      "sourceHeadline": "How the oil capital of the US welcomed a solar power boom",
-      "oneLine": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
-      "oneSentenceExplanation": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
-      "summary": "Texas is now the country's biggest producer of solar-farmed electricity.",
-      "publishedAt": "2026-09-23T23:12:22.000Z",
-      "firstPublishedAt": "2026-09-23T23:12:22.000Z",
-      "latestSourceAt": "2026-09-23T23:12:22.000Z",
-      "fetchedAt": "2026-09-26T07:40:13.388Z",
-      "region": "middle-east",
-      "countries": [],
-      "topic": "energy-security",
-      "eventType": "energy-security",
-      "relevance": {
-        "level": "high",
-        "score": 7,
-        "criteria": [
-          "energySupply",
-          "trade",
-          "supplyChain",
-          "inflation",
-          "growth",
-          "earnings",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "high",
-      "marketRelevanceScore": 7,
-      "relevanceReasons": [
-        "energySupply",
-        "trade",
-        "supplyChain",
-        "inflation",
-        "growth",
-        "earnings",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Texas is now the country's biggest producer of solar-farmed electricity."
-      ],
-      "factSummary": "Texas is now the country's biggest producer of solar-farmed electricity.",
-      "marketView": [
-        "本条来源报告：How the oil capital of the US welcomed a solar power boom。以下为条件性机制参考，不是已核实的市场结论。",
-        "新增用电需要电源、电网和接入容量同时跟上。需求增长不等于电价必涨，也不等于所有能源企业受益。",
-        "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，企业供电成本可能变化。这是一种有条件的路径。"
-      ],
-      "simpleExample": "新增园区需要更多电。如果现有容量够用，需求增加未必推高账单；容量不足则需要先扩建。",
-      "professionalConcept": "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "电力需求可能增加",
-          "beginnerExplanation": "新设施运行会消耗电力。",
-          "condition": "项目实际投运",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "电源与电网容量受考验",
-          "beginnerExplanation": "高峰负荷可能接近上限。",
-          "condition": "备用容量不足",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "扩容投资可能增加",
-          "beginnerExplanation": "发电和输配电需要建设周期。",
-          "condition": "获得许可与融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "企业供电成本可能变化",
-          "beginnerExplanation": "电价或接入费用可能传入成本。",
-          "condition": "当地定价规则允许传导",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "电力需求可能增加",
-          "beginnerExplanation": "新设施运行会消耗电力。",
-          "condition": "项目实际投运",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "电源与电网容量受考验",
-          "beginnerExplanation": "高峰负荷可能接近上限。",
-          "condition": "备用容量不足",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "扩容投资可能增加",
-          "beginnerExplanation": "发电和输配电需要建设周期。",
-          "condition": "获得许可与融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "企业供电成本可能变化",
-          "beginnerExplanation": "电价或接入费用可能传入成本。",
-          "condition": "当地定价规则允许传导",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "电网设备企业",
-          "explanation": "扩容可能形成订单，但要看招标、交付与利润率。"
-        },
-        {
-          "name": "数据中心企业",
-          "explanation": "供电影响项目回报，长协和自备电源可能抵消影响。"
-        }
-      ],
-      "relatedIndustries": [
-        "能源",
-        "航空",
-        "航运",
-        "化工"
-      ],
-      "knowledgeIds": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "relatedKnowledgePoints": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "conditionsThatChangeView": [
-        "项目延期",
-        "现有容量充足",
-        "效率提升抵消用电增长",
-        "电价受监管或合同锁定"
-      ],
-      "watchConditions": [
-        "项目延期",
-        "现有容量充足",
-        "效率提升抵消用电增长",
-        "电价受监管或合同锁定"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cmx2zxv6936zo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-23T23:12:22.000Z"
         }
       ]
     }
