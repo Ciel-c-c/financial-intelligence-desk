@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-26T19:51:23.002Z",
-  "lastSuccessfulAt": "2026-09-26T19:51:23.002Z",
+  "attemptedAt": "2026-09-26T22:49:16.719Z",
+  "lastSuccessfulAt": "2026-09-26T22:49:16.719Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -45,7 +45,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 26
+      "itemCount": 27
     },
     {
       "id": "bbc-business",
@@ -68,6 +68,194 @@
   ],
   "events": [
     {
+      "id": "dffbf8c41d02",
+      "headline": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
+      "sourceHeadline": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "Iran's foreign minister acknowledges Trump's comments, but adds that Tehran is waiting for the \"definitive views\" of mediators.",
+      "publishedAt": "2026-09-26T22:15:59.000Z",
+      "firstPublishedAt": "2026-09-26T22:15:59.000Z",
+      "latestSourceAt": "2026-09-26T22:15:59.000Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
+      "region": "middle-east",
+      "countries": [],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "energySupply",
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "energySupply",
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Iran's foreign minister acknowledges Trump's comments, but adds that Tehran is waiting for the \"definitive views\" of mediators."
+      ],
+      "factSummary": "Iran's foreign minister acknowledges Trump's comments, but adds that Tehran is waiting for the \"definitive views\" of mediators.",
+      "marketView": [
+        "本条来源报告：Trump rejects Iran deal to reopen Strait of Hormuz in seven days。以下为条件性机制参考，不是已核实的市场结论。",
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "watchConditions": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-26T22:15:59.000Z"
+        }
+      ]
+    },
+    {
       "id": "236a6c415bdc",
       "headline": "Pope praises young people's 'energy and commitment' at huge open-air Mass in Paris",
       "sourceHeadline": "Pope praises young people's 'energy and commitment' at huge open-air Mass in Paris",
@@ -77,7 +265,7 @@
       "publishedAt": "2026-09-26T19:48:06.000Z",
       "firstPublishedAt": "2026-09-26T19:48:06.000Z",
       "latestSourceAt": "2026-09-26T19:48:06.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -257,7 +445,7 @@
       "publishedAt": "2026-09-26T19:16:14.000Z",
       "firstPublishedAt": "2026-09-26T19:16:14.000Z",
       "latestSourceAt": "2026-09-26T19:16:14.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -392,194 +580,6 @@
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/cxq633770y16o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-26T19:16:14.000Z"
-        }
-      ]
-    },
-    {
-      "id": "dffbf8c41d02",
-      "headline": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
-      "sourceHeadline": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
-      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
-      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
-      "summary": "The US president says Tehran had only put forward the proposal because it is losing the war.",
-      "publishedAt": "2026-09-26T18:17:12.000Z",
-      "firstPublishedAt": "2026-09-26T18:17:12.000Z",
-      "latestSourceAt": "2026-09-26T18:17:12.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
-      "region": "middle-east",
-      "countries": [],
-      "topic": "energy-security",
-      "eventType": "energy-security",
-      "relevance": {
-        "level": "high",
-        "score": 7,
-        "criteria": [
-          "energySupply",
-          "trade",
-          "supplyChain",
-          "inflation",
-          "growth",
-          "earnings",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "high",
-      "marketRelevanceScore": 7,
-      "relevanceReasons": [
-        "energySupply",
-        "trade",
-        "supplyChain",
-        "inflation",
-        "growth",
-        "earnings",
-        "riskAppetite"
-      ],
-      "fact": [
-        "The US president says Tehran had only put forward the proposal because it is losing the war."
-      ],
-      "factSummary": "The US president says Tehran had only put forward the proposal because it is losing the war.",
-      "marketView": [
-        "本条来源报告：Trump rejects Iran deal to reopen Strait of Hormuz in seven days。以下为条件性机制参考，不是已核实的市场结论。",
-        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
-        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
-      ],
-      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
-      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "运输或供应风险上升",
-          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
-          "condition": "风险持续且替代路线有限",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "原油与运费可能上涨",
-          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
-          "condition": "库存和备用产能不足以抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "企业成本可能增加",
-          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
-          "condition": "企业无法完全用效率或合同锁价吸收",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "通胀压力可能升高",
-          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
-          "condition": "需求仍能承受提价",
-          "uncertain": true
-        },
-        {
-          "id": "5",
-          "title": "降息空间可能缩小",
-          "beginnerExplanation": "央行会担心价格压力扩散。",
-          "condition": "通胀持续而增长尚未明显崩弱",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "运输或供应风险上升",
-          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
-          "condition": "风险持续且替代路线有限",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "原油与运费可能上涨",
-          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
-          "condition": "库存和备用产能不足以抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "企业成本可能增加",
-          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
-          "condition": "企业无法完全用效率或合同锁价吸收",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "通胀压力可能升高",
-          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
-          "condition": "需求仍能承受提价",
-          "uncertain": true
-        },
-        {
-          "id": "5",
-          "title": "降息空间可能缩小",
-          "beginnerExplanation": "央行会担心价格压力扩散。",
-          "condition": "通胀持续而增长尚未明显崩弱",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "原油",
-          "explanation": "供应中断概率直接影响每桶油的边际价格。"
-        },
-        {
-          "name": "黄金",
-          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
-        },
-        {
-          "name": "航空股",
-          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
-        },
-        {
-          "name": "能源股",
-          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
-        }
-      ],
-      "relatedIndustries": [
-        "能源",
-        "航空",
-        "航运",
-        "化工"
-      ],
-      "knowledgeIds": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "relatedKnowledgePoints": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "conditionsThatChangeView": [
-        "停火或紧张局势缓和",
-        "关键航线恢复正常",
-        "OPEC 或其他产油国增产",
-        "释放战略石油储备",
-        "全球需求明显下降",
-        "实际供应未受影响"
-      ],
-      "watchConditions": [
-        "停火或紧张局势缓和",
-        "关键航线恢复正常",
-        "OPEC 或其他产油国增产",
-        "释放战略石油储备",
-        "全球需求明显下降",
-        "实际供应未受影响"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-26T18:17:12.000Z"
         }
       ]
     },
@@ -773,7 +773,7 @@
       "publishedAt": "2026-09-26T15:46:40.000Z",
       "firstPublishedAt": "2026-09-26T15:46:40.000Z",
       "latestSourceAt": "2026-09-26T15:46:40.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -910,6 +910,168 @@
       ]
     },
     {
+      "id": "6bbfb4b4e478",
+      "headline": "Saudi Arabia warns Gulf security inseparable from global stability amid regional tensions",
+      "sourceHeadline": "Saudi Arabia warns Gulf security inseparable from global stability amid regional tensions",
+      "oneLine": "本条涉及航线与交付风险；是否影响能源价格，需要另查实际供应。",
+      "oneSentenceExplanation": "本条涉及航线与交付风险；是否影响能源价格，需要另查实际供应。",
+      "summary": "Saudi Arabia’s Foreign Minister warned on Saturday that escalating threats across the Middle East risked international peace, energy security and global trade, calling for stronger international cooperation to protect Gulf States and vital shipping routes.",
+      "publishedAt": "2026-09-26T12:00:00.000Z",
+      "firstPublishedAt": "2026-09-26T12:00:00.000Z",
+      "latestSourceAt": "2026-09-26T12:00:00.000Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
+      "region": "middle-east",
+      "countries": [],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "energySupply",
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "energySupply",
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Saudi Arabia’s Foreign Minister warned on Saturday that escalating threats across the Middle East risked international peace, energy security and global trade, calling for stronger international cooperation to protect Gulf States and vital shipping routes."
+      ],
+      "factSummary": "Saudi Arabia’s Foreign Minister warned on Saturday that escalating threats across the Middle East risked international peace, energy security and global trade, calling for stronger international cooperation to protect Gulf States and vital shipping routes.",
+      "marketView": [
+        "本条来源报告：Saudi Arabia warns Gulf security inseparable from global stability amid regional tensions。以下为条件性机制参考，不是已核实的市场结论。",
+        "航运受阻不等于石油供给减少。先核实航线、货物和港口，再判断是否绕行以及谁承担成本。",
+        "条件性机制参考：绕行、保险费与交付周期可能改变贸易成本，不是已观察到的价格反应。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，交付与企业利润可能受压。这是一种有条件的路径。"
+      ],
+      "simpleExample": "一批货原本十天送到，如果实际绕行，可能多付运费、多占用库存资金。没有使用受影响航线的企业，未必受影响。",
+      "professionalConcept": "条件性机制参考：绕行、保险费与交付周期可能改变贸易成本，不是已观察到的价格反应。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "航线安全风险",
+          "beginnerExplanation": "来源报告航运风险，需核实范围。",
+          "condition": "存在实际航线暴露",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "船舶可能绕行",
+          "beginnerExplanation": "路线更长，交付可能延迟。",
+          "condition": "船公司实际改变航线",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "运费与保险成本可能增加",
+          "beginnerExplanation": "航程和保险风险可能增加账单。",
+          "condition": "运力和保险安排无法抵消",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "交付与企业利润可能受压",
+          "beginnerExplanation": "进口商可能增加库存或承担成本。",
+          "condition": "成本无法完全转嫁",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "航线安全风险",
+          "beginnerExplanation": "来源报告航运风险，需核实范围。",
+          "condition": "存在实际航线暴露",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "船舶可能绕行",
+          "beginnerExplanation": "路线更长，交付可能延迟。",
+          "condition": "船公司实际改变航线",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "运费与保险成本可能增加",
+          "beginnerExplanation": "航程和保险风险可能增加账单。",
+          "condition": "运力和保险安排无法抵消",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "交付与企业利润可能受压",
+          "beginnerExplanation": "进口商可能增加库存或承担成本。",
+          "condition": "成本无法完全转嫁",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "航运企业",
+          "explanation": "航程和运费影响收入，但燃料、保险和运营成本也可能增加。"
+        },
+        {
+          "name": "进口企业",
+          "explanation": "运输延迟可能增加库存占款，本地供应和固定合同可能减弱影响。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "船舶没有实际绕行",
+        "航线恢复安全",
+        "货物使用其他路线",
+        "运力充足或合同锁定费用"
+      ],
+      "watchConditions": [
+        "船舶没有实际绕行",
+        "航线恢复安全",
+        "货物使用其他路线",
+        "运力充足或合同锁定费用"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168459",
+          "publishedAt": "2026-09-26T12:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "d042601584ec",
       "headline": "‘Safeguard the postwar order,’ China tells UN General Assembly",
       "sourceHeadline": "‘Safeguard the postwar order,’ China tells UN General Assembly",
@@ -919,7 +1081,7 @@
       "publishedAt": "2026-09-26T12:00:00.000Z",
       "firstPublishedAt": "2026-09-26T12:00:00.000Z",
       "latestSourceAt": "2026-09-26T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "china",
       "countries": [
         "CN"
@@ -1255,7 +1417,7 @@
       "publishedAt": "2026-09-25T20:47:49.000Z",
       "firstPublishedAt": "2026-09-25T20:47:49.000Z",
       "latestSourceAt": "2026-09-25T20:47:49.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1403,7 +1565,7 @@
       "publishedAt": "2026-09-25T18:43:45.000Z",
       "firstPublishedAt": "2026-09-25T18:43:45.000Z",
       "latestSourceAt": "2026-09-25T18:43:45.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "global",
       "countries": [],
       "topic": "monetary-policy",
@@ -1571,7 +1733,7 @@
       "publishedAt": "2026-09-25T14:24:19.000Z",
       "firstPublishedAt": "2026-09-25T14:24:19.000Z",
       "latestSourceAt": "2026-09-25T14:24:19.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1751,7 +1913,7 @@
       "publishedAt": "2026-09-25T14:00:00.000Z",
       "firstPublishedAt": "2026-09-25T14:00:00.000Z",
       "latestSourceAt": "2026-09-25T14:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1907,7 +2069,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2053,7 +2215,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2199,7 +2361,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2345,7 +2507,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2491,7 +2653,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2637,7 +2799,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2783,7 +2945,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3429,7 +3591,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3575,7 +3737,7 @@
       "publishedAt": "2026-09-24T12:00:00.000Z",
       "firstPublishedAt": "2026-09-24T12:00:00.000Z",
       "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
+      "fetchedAt": "2026-09-26T22:49:16.719Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3707,152 +3869,6 @@
         {
           "name": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168432",
-          "publishedAt": "2026-09-24T12:00:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "87ea532fc25d",
-      "headline": "Israeli leader at UN: ‘We’re going to win. We have no other choice’",
-      "sourceHeadline": "Israeli leader at UN: ‘We’re going to win. We have no other choice’",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Prime Minister Benjamin Netanyahu used his address to the UN General Assembly to defend Israel’s strikes against Iran as a matter of national survival and described the violence in the West Bank as the work of a few “juvenile delinquents” and rejected accusations of genocide in Gaza as “the greatest lie of the century.”",
-      "publishedAt": "2026-09-24T12:00:00.000Z",
-      "firstPublishedAt": "2026-09-24T12:00:00.000Z",
-      "latestSourceAt": "2026-09-24T12:00:00.000Z",
-      "fetchedAt": "2026-09-26T19:51:23.002Z",
-      "region": "middle-east",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Prime Minister Benjamin Netanyahu used his address to the UN General Assembly to defend Israel’s strikes against Iran as a matter of national survival and described the violence in the West Bank as the work of a few “juvenile delinquents” and rejected accusations of genocide in Gaza as “the greatest lie of the century.”"
-      ],
-      "factSummary": "Prime Minister Benjamin Netanyahu used his address to the UN General Assembly to defend Israel’s strikes against Iran as a matter of national survival and described the violence in the West Bank as the work of a few “juvenile delinquents” and rejected accusations of genocide in Gaza as “the greatest lie of the century.”",
-      "marketView": [
-        "本条来源报告：Israeli leader at UN: ‘We’re going to win. We have no other choice’。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168431",
           "publishedAt": "2026-09-24T12:00:00.000Z"
         }
       ]
