@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-27T13:57:49.848Z",
-  "lastSuccessfulAt": "2026-09-27T13:57:49.848Z",
+  "attemptedAt": "2026-09-27T18:23:30.621Z",
+  "lastSuccessfulAt": "2026-09-27T18:23:30.621Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -45,7 +45,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 28
+      "itemCount": 25
     },
     {
       "id": "bbc-business",
@@ -68,6 +68,302 @@
   ],
   "events": [
     {
+      "id": "c56e792b1941",
+      "headline": "Switzerland rejects stricter interpretation of its neutrality",
+      "sourceHeadline": "Switzerland rejects stricter interpretation of its neutrality",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "The initiative would have prevented the nation from imposing sanctions unless approved by the UN.",
+      "publishedAt": "2026-09-27T16:02:17.000Z",
+      "firstPublishedAt": "2026-09-27T16:02:17.000Z",
+      "latestSourceAt": "2026-09-27T16:02:17.000Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
+      "region": "global",
+      "countries": [],
+      "topic": "geopolitical-conflict",
+      "eventType": "geopolitical-conflict",
+      "relevance": {
+        "level": "high",
+        "score": 6,
+        "criteria": [
+          "trade",
+          "supplyChain",
+          "growth",
+          "fiscalPolicy",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 6,
+      "relevanceReasons": [
+        "trade",
+        "supplyChain",
+        "growth",
+        "fiscalPolicy",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The initiative would have prevented the nation from imposing sanctions unless approved by the UN."
+      ],
+      "factSummary": "The initiative would have prevented the nation from imposing sanctions unless approved by the UN.",
+      "marketView": [
+        "本条来源报告：Switzerland rejects stricter interpretation of its neutrality。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cm750plvwy9vo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-27T16:02:17.000Z"
+        }
+      ]
+    },
+    {
+      "id": "e396f6a5a6d6",
+      "headline": "Venezuela releases dozens of political prisoners as election calls grow",
+      "sourceHeadline": "Venezuela releases dozens of political prisoners as election calls grow",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "A slew of dissidents being released from long-term detention comes days after the nation's interim leader met the US president.",
+      "publishedAt": "2026-09-27T15:56:25.000Z",
+      "firstPublishedAt": "2026-09-27T15:56:25.000Z",
+      "latestSourceAt": "2026-09-27T15:56:25.000Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "A slew of dissidents being released from long-term detention comes days after the nation's interim leader met the US president."
+      ],
+      "factSummary": "A slew of dissidents being released from long-term detention comes days after the nation's interim leader met the US president.",
+      "marketView": [
+        "本条来源报告：Venezuela releases dozens of political prisoners as election calls grow。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/c620lrw2xr12o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-27T15:56:25.000Z"
+        }
+      ]
+    },
+    {
       "id": "a0c4bfb742bd",
       "headline": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal",
       "sourceHeadline": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal",
@@ -77,7 +373,7 @@
       "publishedAt": "2026-09-27T07:44:11.000Z",
       "firstPublishedAt": "2026-09-27T07:44:11.000Z",
       "latestSourceAt": "2026-09-27T07:44:11.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "middle-east",
       "countries": [],
       "topic": "political-transition",
@@ -1069,7 +1365,7 @@
       "publishedAt": "2026-09-26T15:46:40.000Z",
       "firstPublishedAt": "2026-09-26T15:46:40.000Z",
       "latestSourceAt": "2026-09-26T15:46:40.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1215,7 +1511,7 @@
       "publishedAt": "2026-09-26T12:00:00.000Z",
       "firstPublishedAt": "2026-09-26T12:00:00.000Z",
       "latestSourceAt": "2026-09-26T12:00:00.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1377,7 +1673,7 @@
       "publishedAt": "2026-09-26T12:00:00.000Z",
       "firstPublishedAt": "2026-09-26T12:00:00.000Z",
       "latestSourceAt": "2026-09-26T12:00:00.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "china",
       "countries": [
         "CN"
@@ -1861,7 +2157,7 @@
       "publishedAt": "2026-09-25T18:43:45.000Z",
       "firstPublishedAt": "2026-09-25T18:43:45.000Z",
       "latestSourceAt": "2026-09-25T18:43:45.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "global",
       "countries": [],
       "topic": "monetary-policy",
@@ -2029,7 +2325,7 @@
       "publishedAt": "2026-09-25T14:24:19.000Z",
       "firstPublishedAt": "2026-09-25T14:24:19.000Z",
       "latestSourceAt": "2026-09-25T14:24:19.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -2209,7 +2505,7 @@
       "publishedAt": "2026-09-25T14:00:00.000Z",
       "firstPublishedAt": "2026-09-25T14:00:00.000Z",
       "latestSourceAt": "2026-09-25T14:00:00.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2365,7 +2661,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2511,7 +2807,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2657,7 +2953,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2803,7 +3099,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2949,7 +3245,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3095,7 +3391,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3241,7 +3537,7 @@
       "publishedAt": "2026-09-25T12:00:00.000Z",
       "firstPublishedAt": "2026-09-25T12:00:00.000Z",
       "latestSourceAt": "2026-09-25T12:00:00.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
+      "fetchedAt": "2026-09-27T18:23:30.621Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3554,326 +3850,6 @@
           "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/c6z9z7lv41wgo?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-25T06:48:07.000Z"
-        }
-      ]
-    },
-    {
-      "id": "77bdc2676d51",
-      "headline": "US and China must act as responsible powers together, Xi says as Trump toasts friendship at state dinner",
-      "sourceHeadline": "US and China must act as responsible powers together, Xi says as Trump toasts friendship at state dinner",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Trump said he and Xi had \"never gotten along better\" as he hosted the Chinese president at the lavish White House event.",
-      "publishedAt": "2026-09-25T06:40:18.000Z",
-      "firstPublishedAt": "2026-09-25T06:40:18.000Z",
-      "latestSourceAt": "2026-09-25T06:40:18.000Z",
-      "fetchedAt": "2026-09-25T07:48:39.540Z",
-      "region": "united-states",
-      "countries": [
-        "US"
-      ],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Trump said he and Xi had \"never gotten along better\" as he hosted the Chinese president at the lavish White House event."
-      ],
-      "factSummary": "Trump said he and Xi had \"never gotten along better\" as he hosted the Chinese president at the lavish White House event.",
-      "marketView": [
-        "本条来源报告：US and China must act as responsible powers together, Xi says as Trump toasts friendship at state dinner。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/cxq63dqp93n1o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-25T06:40:18.000Z"
-        }
-      ]
-    },
-    {
-      "id": "6ba35d9d172f",
-      "headline": "Pomp and toasts: Day 2 of Trump and Xi in DC",
-      "sourceHeadline": "Pomp and toasts: Day 2 of Trump and Xi in DC",
-      "oneLine": "跨境买卖的规则或成本在变化，企业需要重新算供应链和利润。",
-      "oneSentenceExplanation": "跨境买卖的规则或成本在变化，企业需要重新算供应链和利润。",
-      "summary": "Xi’s first visit to Washington in a decade was a display of pomp and pageantry, with Trump offering his guest a two-month truce on the brewing tariff war.",
-      "publishedAt": "2026-09-25T05:54:07.000Z",
-      "firstPublishedAt": "2026-09-25T05:54:07.000Z",
-      "latestSourceAt": "2026-09-25T05:54:07.000Z",
-      "fetchedAt": "2026-09-26T13:04:42.497Z",
-      "region": "global",
-      "countries": [],
-      "topic": "trade-policy",
-      "eventType": "trade-policy",
-      "relevance": {
-        "level": "high",
-        "score": 7,
-        "criteria": [
-          "trade",
-          "supplyChain",
-          "inflation",
-          "growth",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "high",
-      "marketRelevanceScore": 7,
-      "relevanceReasons": [
-        "trade",
-        "supplyChain",
-        "inflation",
-        "growth",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Xi’s first visit to Washington in a decade was a display of pomp and pageantry, with Trump offering his guest a two-month truce on the brewing tariff war."
-      ],
-      "factSummary": "Xi’s first visit to Washington in a decade was a display of pomp and pageantry, with Trump offering his guest a two-month truce on the brewing tariff war.",
-      "marketView": [
-        "本条来源报告：Pomp and toasts: Day 2 of Trump and Xi in DC。以下为条件性机制参考，不是已核实的市场结论。",
-        "关税和出口限制会让某些零件更贵、更难买，企业要在涨价、少赚或换供应商之间选择。",
-        "专业一点说，贸易壁垒会改变成本转嫁、比较优势和供应链配置。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，投资地点可能改变。这是一种有条件的路径。"
-      ],
-      "simpleExample": "一家玩具店用 80 元进口玩具，卖 100 元。若边境成本增加 10 元，它只能提价、少赚 10 元，或寻找新工厂。",
-      "professionalConcept": "专业一点说，贸易壁垒会改变成本转嫁、比较优势和供应链配置。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "贸易规则收紧",
-          "beginnerExplanation": "进口或出口的手续、税费或许可增加。",
-          "condition": "措施真正生效且执行",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "跨境成本可能上升",
-          "beginnerExplanation": "企业需要缴费、绕行或更换供应商。",
-          "condition": "没有及时获得豁免或替代",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "物价与利润重新分配",
-          "beginnerExplanation": "消费者、进口商和出口商分担成本。",
-          "condition": "需求弹性与议价能力不同",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "投资地点可能改变",
-          "beginnerExplanation": "企业评估把产能移到更安全的市场。",
-          "condition": "政策预计持续足够久",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "贸易规则收紧",
-          "beginnerExplanation": "进口或出口的手续、税费或许可增加。",
-          "condition": "措施真正生效且执行",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "跨境成本可能上升",
-          "beginnerExplanation": "企业需要缴费、绕行或更换供应商。",
-          "condition": "没有及时获得豁免或替代",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "物价与利润重新分配",
-          "beginnerExplanation": "消费者、进口商和出口商分担成本。",
-          "condition": "需求弹性与议价能力不同",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "投资地点可能改变",
-          "beginnerExplanation": "企业评估把产能移到更安全的市场。",
-          "condition": "政策预计持续足够久",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "半导体股",
-          "explanation": "出口许可与设备限制会影响订单和扩产。"
-        },
-        {
-          "name": "工业股",
-          "explanation": "零部件成本和海外需求会改变利润。"
-        },
-        {
-          "name": "美元与人民币",
-          "explanation": "贸易流和资本避险会影响货币需求。"
-        },
-        {
-          "name": "航运股",
-          "explanation": "提前出货、绕行和贸易量变化都会影响运价。"
-        }
-      ],
-      "relatedIndustries": [
-        "半导体",
-        "工业制造",
-        "零售",
-        "航运"
-      ],
-      "knowledgeIds": [
-        "trade",
-        "elasticity",
-        "exchange-rate",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "trade",
-        "elasticity",
-        "exchange-rate",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "豁免范围扩大",
-        "谈判达成协议",
-        "汇率抵消部分成本",
-        "企业找到替代供应",
-        "需求下降导致企业无法提价"
-      ],
-      "watchConditions": [
-        "豁免范围扩大",
-        "谈判达成协议",
-        "汇率抵消部分成本",
-        "企业找到替代供应",
-        "需求下降导致企业无法提价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/videos/c9lykxx5zp70o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-25T05:54:07.000Z"
         }
       ]
     }
