@@ -1,10 +1,57 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-28T15:27:00.968Z",
-  "lastSuccessfulAt": "2026-09-28T15:27:00.968Z",
-  "nextExpectedAt": "2026-09-28T16:27:00.968Z",
+  "attemptedAt": "2026-09-28T21:59:53.365Z",
+  "lastSuccessfulAt": "2026-09-28T21:59:53.365Z",
+  "nextExpectedAt": "2026-09-28T22:59:53.365Z",
   "status": "delayed",
   "latest": [
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Why UK diesel prices have hit an all-time high",
+      "originalSummary": "The average price of a litre of diesel at the pump stands at 198.32p, according to the RAC motoring body.",
+      "publishedAt": "2026-09-28T20:43:52.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "f6bbb4e5c8a794894106",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-28T20:43:52.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|whyukdieselprice|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "The average price of a litre of diesel at the pump stands at 198.32p, according to the RAC motoring body."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
     {
       "sourceId": "ecb",
       "sourceName": "European Central Bank",
@@ -14,7 +61,7 @@
       "originalLanguage": "en",
       "originalTitle": "Christine Lagarde: Hearing of the Committee on Economic and Monetary Affairs of the European Parliament",
       "publishedAt": "2026-09-28T13:30:00.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "df8c2e408e54dc6ebf3e",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -45,26 +92,266 @@
       "inferences": []
     },
     {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168474",
       "originalLanguage": "en",
-      "originalTitle": "Why UK diesel prices have hit an all-time high",
-      "originalSummary": "The average price of a litre of diesel at the pump stands at 198.32p, according to the RAC motoring body.",
-      "publishedAt": "2026-09-28T11:50:18.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "f6bbb4e5c8a794894106",
-      "verificationStatus": "cross-checked",
+      "originalTitle": "Sudan tells UN: No imposed solutions to country’s conflict",
+      "originalSummary": "Sudan’s Foreign Minister addressed the UN General Assembly on Monday in place of de facto head of state General Abdel Fattah al-Burhan, whose visa application was rejected by Washington.",
+      "publishedAt": "2026-09-28T12:00:00.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "3c0e53603815cfb17233",
+      "verificationStatus": "official",
       "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-28T11:50:18.000Z"
-        }
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
       ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|sudantellsunnoim|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Sudan’s Foreign Minister addressed the UN General Assembly on Monday in place of de facto head of state General Abdel Fattah al-Burhan, whose visa application was rejected by Washington."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168473",
+      "originalLanguage": "en",
+      "originalTitle": "From energy crisis to energy transition: How renewables are reshaping energy security",
+      "originalSummary": "The continuing conflict in the Middle East is disrupting global energy markets and pushing up fuel prices, with knock-on effects far beyond the region.",
+      "publishedAt": "2026-09-28T12:00:00.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "7238a7818d76f7cae84d",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|fromenergycrisis|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "The continuing conflict in the Middle East is disrupting global energy markets and pushing up fuel prices, with knock-on effects far beyond the region."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168467",
+      "originalLanguage": "en",
+      "originalTitle": "World News in Brief: Refugee funding, US migration policy triggers ‘cascade’ of rights violations, world forests report, restorative justice in Colombia",
+      "originalSummary": "Support for water and sanitation at the biggest camp in the world for Syrian refugees is under threat from a lack of funding – combined with the impact of climate change – the UN Children’s Fund, UNICEF, said on Monday.",
+      "publishedAt": "2026-09-28T12:00:00.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "4e838516c10d33f4b683",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|worldnewsinbrief|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Support for water and sanitation at the biggest camp in the world for Syrian refugees is under threat from a lack of funding – combined with the impact of climate change – the UN Children’s Fund, UNICEF, said on Monday."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168464",
+      "originalLanguage": "en",
+      "originalTitle": "Security Council LIVE: Ambassadors meet as West Bank tensions rise, Gaza plan stalls",
+      "originalSummary": "The Security Council met Monday morning with prospects for peace in the Middle East under strain on two fronts. In the West Bank, settler violence and settlement expansion are raising fears for a two-State solution. In Gaza, a year-old peace plan has stalled while civilian suffering continues. The meeting comes as the plan’s remaining phases, including Hamas’ disarmament and Israel’s full withdrawal, remain unimplemented, and as the illegality of settlements under international law remains a key point of contention.",
+      "publishedAt": "2026-09-28T12:00:00.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "860db195c97dda12eebd",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|securitycouncill|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "The Security Council met Monday morning with prospects for peace in the Middle East under strain on two fronts. In the West Bank, settler violence and settlement expansion are raising fears for a two-State solution. In Gaza, a year-old peace plan has stalled while civilian suffering continues. The meeting comes as the plan’s remaining phases, including Hamas’ disarmament and Israel’s full withdrawal, remain unimplemented, and as the illegality of settlements under international law remains a key point of contention."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168463",
+      "originalLanguage": "en",
+      "originalTitle": "LIVE: World leaders take stock of global fight against racism",
+      "originalSummary": "World leaders are meeting in the General Assembly to assess how far the world has come in combating racism and how far it still has to go. The Durban Declaration and Programme of Action, the most comprehensive framework of its kind, seeks to acknowledge historical injustices, dismantle inequalities and build societies grounded in dignity, equality and justice for all.",
+      "publishedAt": "2026-09-28T12:00:00.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "b0fff4f144b7e45e680b",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|liveworldleaders|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "World leaders are meeting in the General Assembly to assess how far the world has come in combating racism and how far it still has to go. The Durban Declaration and Programme of Action, the most comprehensive framework of its kind, seeks to acknowledge historical injustices, dismantle inequalities and build societies grounded in dignity, equality and justice for all."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/09/1168465",
+      "originalLanguage": "en",
+      "originalTitle": "DR Congo Ebola emergency: Calls grow for urgent humanitarian access",
+      "originalSummary": "Aid teams&nbsp;trying to keep deadly Ebola disease from spreading in the Democratic Republic of the Congo (DRC) are increasingly concerned about ongoing fighting and violence that has forced thousands of people to flee a displacement camp in the vast, resource-rich east of the country.",
+      "publishedAt": "2026-09-28T12:00:00.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "2e5511cab7b2483c77e6",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|drcongoebolaemer|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Aid teams&nbsp;trying to keep deadly Ebola disease from spreading in the Democratic Republic of the Congo (DRC) are increasingly concerned about ongoing fighting and violence that has forced thousands of people to flee a displacement camp in the vast, resource-rich east of the country."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmqxvnn49rg2o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "French PM warns against escalation of school protests after 164 arrested",
+      "originalSummary": "Students are protesting over issues such as overcrowded classes, but the prime minister has condemned reports of violence.",
+      "publishedAt": "2026-09-28T21:46:53.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "9d348cbb540e952658d8",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
       "keyTerms": [
         "供需"
       ],
@@ -83,10 +370,584 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|whyukdieselprice|2026-09-28",
+      "clusterId": "监管|frenchpmwarnsaga|2026-09-28",
       "detailStatus": "brief",
       "facts": [
-        "The average price of a litre of diesel at the pump stands at 198.32p, according to the RAC motoring body."
+        "Students are protesting over issues such as overcrowded classes, but the prime minister has condemned reports of violence."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6n4k987k981o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "UK diesel price hits all-time high, the RAC says",
+      "originalSummary": "The US-Israel war with Iran has caused fuel prices to soar due to disruption of global oil supplies.",
+      "publishedAt": "2026-09-28T20:42:56.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "d7efbca1a830f8196dbb",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ukdieselpricehit|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "The US-Israel war with Iran has caused fuel prices to soar due to disruption of global oil supplies."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmx2z3vgy5xwo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "UK tries to stop Trump's diesel export ban",
+      "originalSummary": "John Healey said the government is in talks with the US over Donald Trump's threat to stop exports.",
+      "publishedAt": "2026-09-28T20:39:31.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "03b299a1196323e4c0f5",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|uktriestostoptru|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "John Healey said the government is in talks with the US over Donald Trump's threat to stop exports."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c8zxzlqwzw0eo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Stand-up comic released after being convicted of insulting Erdoğan",
+      "originalSummary": "Turkish comedian Deniz Göktaş also faces a travel ban but has been released due to time served.",
+      "publishedAt": "2026-09-28T20:23:12.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "faecd187a57dd8af063b",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|standupcomicrele|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Turkish comedian Deniz Göktaş also faces a travel ban but has been released due to time served."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c61wxyzr4rwyo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Stuck between superpowers: How Australia navigates the China-US rivalry",
+      "originalSummary": "Australia is increasingly concerned about China's military might - but Beijing is also its biggest trade partner.",
+      "publishedAt": "2026-09-28T18:37:15.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "7ef06bd16af35ac8a37c",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|stuckbetweensupe|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Australia is increasingly concerned about China's military might - but Beijing is also its biggest trade partner."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cky9z3r00l9eo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "What a US diesel export ban could mean for you",
+      "originalSummary": "The threatened proposal aims to protect US consumers from rising costs, but it could trigger major economic waves if it were to happen.",
+      "publishedAt": "2026-09-28T18:18:30.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "f843e879b756d9e3bf65",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|whatausdieselexp|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "The threatened proposal aims to protect US consumers from rising costs, but it could trigger major economic waves if it were to happen."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c5wyzrm0n74ro?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "US prosecutors reopen case of alleged gang rape at Cornell University",
+      "originalSummary": "It comes after the woman filed a civil lawsuit alleging she was drugged and raped at a fraternity house in 2024.",
+      "publishedAt": "2026-09-28T18:11:07.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "29491c3d94f46131feaf",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|usprosecutorsreo|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "It comes after the woman filed a civil lawsuit alleging she was drugged and raped at a fraternity house in 2024."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c3x2zw18ge59o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Best thing we can offer young people is a job, not benefits, says chancellor",
+      "originalSummary": "John Healey's speech comes ahead of next month's Budget, as he faces pressure to bring down government borrowing costs.",
+      "publishedAt": "2026-09-28T18:07:25.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "32e51ec1c6fdccb5efd3",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|bestthingwecanof|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "John Healey's speech comes ahead of next month's Budget, as he faces pressure to bring down government borrowing costs."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6dj4vkwg8j0o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Aldi boss says some of rivals' loyalty discounts 'dupe' customers",
+      "originalSummary": "Aldi is the only major supermarket chain that doesn't operate a loyalty scheme, which are hugely popular and used by millions of shoppers.",
+      "publishedAt": "2026-09-28T17:45:52.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "e2b02c175d728fe434cc",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|aldibosssayssome|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Aldi is the only major supermarket chain that doesn't operate a loyalty scheme, which are hugely popular and used by millions of shoppers."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6m27dprvzv7o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Twelve women have been killed in one part of South Africa since July. Here's what we know so far",
+      "originalSummary": "South African President Cyril Ramaphosa says the murders are a \"stain on our national conscience\".",
+      "publishedAt": "2026-09-28T17:26:21.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "04d08c7ef6838b21d1c2",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|twelvewomenhaveb|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "South African President Cyril Ramaphosa says the murders are a \"stain on our national conscience\"."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crn45ed1kqqgo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Iran court upholds lashes sentence for singer who performed without hijab",
+      "originalSummary": "Parastoo Ahmadi was convicted of \"offending public decency\" after singing while wearing a sleeveless dress during a livestreamed concert.",
+      "publishedAt": "2026-09-28T17:15:00.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "345e7ac953ea669dc682",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|irancourtupholds|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Parastoo Ahmadi was convicted of \"offending public decency\" after singing while wearing a sleeveless dress during a livestreamed concert."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "What is the Budget and what could be in it?",
+      "originalSummary": "Chancellor John Healey will set out his plans for UK taxes in October.",
+      "publishedAt": "2026-09-28T17:14:16.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "cc06deceaa9f8fc9bd7c",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|whatisthebudgeta|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Chancellor John Healey will set out his plans for UK taxes in October."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cqj9xkdyrvgzo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "People escape historic Kyiv building hit by Russian drone",
+      "originalSummary": "The BBC's Paul Adams reports from the scene of the strike on Ukraine's National Academy of Sciences.",
+      "publishedAt": "2026-09-28T17:04:14.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "4c8a828c5f1616be7e37",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|peopleescapehist|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "The BBC's Paul Adams reports from the scene of the strike on Ukraine's National Academy of Sciences."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvj64jg5prpgo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "UK needs plan in case of 'unprecedented' AI job losses, says minister",
+      "originalSummary": "Kanishka Narayan says one of his top priorities is to have a plan in place if job losses are as bad as some fear.",
+      "publishedAt": "2026-09-28T16:47:53.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "776b39bd8f36c3acfa01",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ukneedsplanincas|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Kanishka Narayan says one of his top priorities is to have a plan in place if job losses are as bad as some fear."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6e30x757nx4o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Remains of dozens of suspected kidnap victims found in Nigerian forests",
+      "originalSummary": "Investigations are ongoing to establish the identities of at least 28 people whose remains were recovered by police.",
+      "publishedAt": "2026-09-28T16:25:00.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "53979028790db891baeb",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|remainsofdozenso|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Investigations are ongoing to establish the identities of at least 28 people whose remains were recovered by police."
       ],
       "expectations": [],
       "inferences": []
@@ -101,7 +962,7 @@
       "originalTitle": "You need £17,000 for a first home - here's how to save it",
       "originalSummary": "Here are four ways you can put money aside to save enough for a deposit on your first home.",
       "publishedAt": "2026-09-28T08:21:54.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "5731c2949d30361c6038",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -139,17 +1000,17 @@
       "inferences": []
     },
     {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c3x2zw18ge59o?at_medium=RSS&at_campaign=rss",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cm70lpg5z45go?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Best thing we can offer young people is a job, not benefits, says chancellor",
-      "originalSummary": "John Healey's speech comes ahead of next month's Budget, as he faces pressure to bring down government borrowing costs.",
-      "publishedAt": "2026-09-28T15:08:50.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "32e51ec1c6fdccb5efd3",
+      "originalTitle": "Women protest in the streets of Delhi after string of sexual assaults",
+      "originalSummary": "BBC correspondent Azadeh Moshiri reports from Delhi, where hundreds of women are protesting.",
+      "publishedAt": "2026-09-28T16:15:57.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "4f5a735c37a2121cc985",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -171,10 +1032,133 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|bestthingwecanof|2026-09-28",
+      "clusterId": "监管|womenprotestinth|2026-09-28",
       "detailStatus": "brief",
       "facts": [
-        "John Healey's speech comes ahead of next month's Budget, as he faces pressure to bring down government borrowing costs."
+        "BBC correspondent Azadeh Moshiri reports from Delhi, where hundreds of women are protesting."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Four bodies found after avalanche hits Himalayan climbing group",
+      "originalSummary": "Rescuers are still looking for 12 Nepalese cook staff who were preparing for climbers to ascend the Himlung Himal peak.",
+      "publishedAt": "2026-09-28T16:13:44.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "b07b77243c33026fb194",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|fourbodiesfounda|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Rescuers are still looking for 12 Nepalese cook staff who were preparing for climbers to ascend the Himlung Himal peak."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq8r6z2gjzd1o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Nigerian attempts to break world record by dancing non-stop for seven days",
+      "originalSummary": "Crowds have gathered in Lagos to watch Ben Dancer, who says he will carry on dancing until Tuesday morning.",
+      "publishedAt": "2026-09-28T15:39:19.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "b2986392fa428f388bd0",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|nigerianattempts|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Crowds have gathered in Lagos to watch Ben Dancer, who says he will carry on dancing until Tuesday morning."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c8ly40xx0dr0o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Seoul summons Ukraine envoy over North Korean prisoner-of-war row",
+      "originalSummary": "Last week Zelensky revealed Ukraine had sent two captured North Koreans to South Korea - which Seoul says was meant to be a secret.",
+      "publishedAt": "2026-09-28T14:57:31.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "8131b8acf21118a25cbe",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|seoulsummonsukra|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "Last week Zelensky revealed Ukraine had sent two captured North Koreans to South Korea - which Seoul says was meant to be a secret."
       ],
       "expectations": [],
       "inferences": []
@@ -188,7 +1172,7 @@
       "originalLanguage": "en",
       "originalTitle": "Minutes of the Monetary Policy Meeting on July 30 and 31, 2026",
       "publishedAt": "2026-09-27T23:50:00.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "79132270df913ca52a47",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -226,7 +1210,7 @@
       "originalLanguage": "en",
       "originalTitle": "Services Producer Price Index (Aug.)",
       "publishedAt": "2026-09-27T23:50:00.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "fbfe82ac556e48c0a9c0",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -260,53 +1244,12 @@
       "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "What is the Budget and what could be in it?",
-      "originalSummary": "Chancellor John Healey will set out his plans for UK taxes in October.",
-      "publishedAt": "2026-09-28T14:29:49.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "cc06deceaa9f8fc9bd7c",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|whatisthebudgeta|2026-09-28",
-      "detailStatus": "brief",
-      "facts": [
-        "Chancellor John Healey will set out his plans for UK taxes in October."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cdd29v8mp9jo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "What will the energy cap changes mean for my bills?",
       "originalSummary": "The regulator Ofgem says the price cap increases by 4% in October for millions of households.",
       "publishedAt": "2026-09-28T14:20:12.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "e88ac946fc28ba4a6674",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -338,6 +1281,47 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c6ge4lp442npo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Watch: From launch to fiery splashdown, SpaceX's Starship completes orbit test",
+      "originalSummary": "A thunderous lift off, rapid satellite deployments and a fiery ending. That's how SpaceX's 14th launch of its Starship rocket panned out today.",
+      "publishedAt": "2026-09-28T13:59:06.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "47f7d25bcc5447671699",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|watchfromlauncht|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "A thunderous lift off, rapid satellite deployments and a fiery ending. That's how SpaceX's 14th launch of its Starship rocket panned out today."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
       "sourceTier": "verified",
@@ -346,14 +1330,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【新华解读】新型电池产业谋定“十五五” 全固态、长寿命方向迎利好",
       "publishedAt": "2026-09-28T13:42:51.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "article": {
         "status": "complete",
         "characterCount": 2280,
         "reader": "cnfin-body",
         "sha256": "bade535e365c1c752eac3cc50fab4aba5447bee173574db77bfcad4a0abdd1b2",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260928/4475824_1.html",
-        "checkedAt": "2026-09-28T15:27:00.968Z"
+        "checkedAt": "2026-09-28T21:59:53.365Z"
       },
       "id": "84742b2060ef02605c65",
       "verificationStatus": "verified",
@@ -406,7 +1390,7 @@
       "originalTitle": "Four ways to keep your energy bills down",
       "originalSummary": "Household energy bills are due to rise again in October but there are ways to keep a lid on your expenditure.",
       "publishedAt": "2026-09-28T13:07:08.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "3a841de1413bd908f7c4",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -446,14 +1430,14 @@
       "originalLanguage": "zh",
       "originalTitle": "股价盘前拉升涨2%，英伟达将股票回购授权增加1500亿美元",
       "publishedAt": "2026-09-28T13:05:08.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "article": {
         "status": "complete",
         "characterCount": 518,
         "reader": "cnfin-body",
         "sha256": "7a8c263436047251a87214ead77e66587c583c2e73fd0ab9f25b6878fa8b92aa",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260928/4475804_1.html",
-        "checkedAt": "2026-09-28T15:27:00.968Z"
+        "checkedAt": "2026-09-28T21:59:53.365Z"
       },
       "id": "91e3a0decd65d3c91860",
       "verificationStatus": "verified",
@@ -504,7 +1488,7 @@
       "originalTitle": "Avanti West Coast services to be nationalised from March",
       "originalSummary": "The move is part of a plan to improve rail infrastructure, cut train delays and improve experiences for passengers.",
       "publishedAt": "2026-09-28T12:52:56.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "45d6dbaf10097d8cfccf",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -545,7 +1529,7 @@
       "originalTitle": "Plan for controversial Sydney data centre scrapped after push-back",
       "originalSummary": "Goodman Group, the property giant behind the Project Mars data centre, says the decision is due to changes to the \"policy and regulatory environment\".",
       "publishedAt": "2026-09-28T12:47:09.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "2fdb61afbace4f290ade",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -585,14 +1569,14 @@
       "originalLanguage": "zh",
       "originalTitle": "我国将绘制完成新一代全火星地质图",
       "publishedAt": "2026-09-28T12:34:38.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "article": {
         "status": "complete",
         "characterCount": 339,
         "reader": "cnfin-body",
         "sha256": "6ea6a92e0c153793a90e59120887ac71e6a05b0adeaa3fd9b73346592ce65920",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260928/4475787_1.html",
-        "checkedAt": "2026-09-28T15:27:00.968Z"
+        "checkedAt": "2026-09-28T21:59:53.365Z"
       },
       "id": "cb5b1ce2f910e77930ec",
       "verificationStatus": "verified",
@@ -621,7 +1605,19 @@
       "detailStatus": "brief",
       "facts": [],
       "expectations": [],
-      "inferences": []
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "6ea6a92e0c153793a90e59120887ac71e6a05b0adeaa3fd9b73346592ce65920",
+        "count": 1,
+        "lastAttemptAt": "2026-09-28T21:59:53.365Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "language",
+          "fields": [
+            "soWhat.expectationGap"
+          ]
+        }
+      }
     },
     {
       "sourceId": "cnfin",
@@ -632,14 +1628,14 @@
       "originalLanguage": "zh",
       "originalTitle": "李强主持召开国务院常务会议",
       "publishedAt": "2026-09-28T12:31:08.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "article": {
         "status": "complete",
         "characterCount": 879,
         "reader": "cnfin-body",
         "sha256": "085d126ee5d951877cb51db9fc35d6bac062840bc90e330b731ad5110a6cd467",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260928/4475783_1.html",
-        "checkedAt": "2026-09-28T15:27:00.968Z"
+        "checkedAt": "2026-09-28T21:59:53.365Z"
       },
       "id": "93470848a5b7b3d1d080",
       "verificationStatus": "verified",
@@ -668,7 +1664,19 @@
       "detailStatus": "brief",
       "facts": [],
       "expectations": [],
-      "inferences": []
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "085d126ee5d951877cb51db9fc35d6bac062840bc90e330b731ad5110a6cd467",
+        "count": 1,
+        "lastAttemptAt": "2026-09-28T21:59:53.365Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "language",
+          "fields": [
+            "soWhat.expectationGap"
+          ]
+        }
+      }
     },
     {
       "sourceId": "cnfin",
@@ -679,14 +1687,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【高端访谈】创造价值激发活力 推动城市更新高质量发展——专访中国城市规划设计研究院副院长郑德高",
       "publishedAt": "2026-09-28T12:20:02.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "article": {
         "status": "complete",
         "characterCount": 1632,
         "reader": "cnfin-body",
         "sha256": "db94aaa9e402b86ef248059ff88b6f151dcc479348832f5d9fae1f24fd7791dc",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260928/4475774_1.html",
-        "checkedAt": "2026-09-28T15:27:00.968Z"
+        "checkedAt": "2026-09-28T21:59:53.365Z"
       },
       "id": "b7aa86a458e9c13f23a3",
       "verificationStatus": "verified",
@@ -726,14 +1734,14 @@
       "originalLanguage": "zh",
       "originalTitle": "李强在全国安全生产视频会议上强调 抓实抓细安全生产各项工作 坚决防范遏制重特大事故发生",
       "publishedAt": "2026-09-28T12:17:38.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "article": {
         "status": "complete",
         "characterCount": 1024,
         "reader": "cnfin-body",
         "sha256": "0fc8443809a3482397cbc8f0e84efef9b4bb18bb33fbce0fe9de2d749653a125",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260928/4475772_1.html",
-        "checkedAt": "2026-09-28T15:27:00.968Z"
+        "checkedAt": "2026-09-28T21:59:53.365Z"
       },
       "id": "79ea33baf2a50d45933f",
       "verificationStatus": "verified",
@@ -773,14 +1781,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【新华解读】个人养老金基金“纳新”：“固收+”入列 产品谱系再添关键拼图",
       "publishedAt": "2026-09-28T12:11:39.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "article": {
         "status": "complete",
         "characterCount": 2903,
         "reader": "cnfin-body",
         "sha256": "5c00c3674d7c076e03136744720e69a7e79d208a9f466b719f719fed8ecab168",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260928/4475760_1.html",
-        "checkedAt": "2026-09-28T15:27:00.968Z"
+        "checkedAt": "2026-09-28T21:59:53.365Z"
       },
       "id": "34ec9fff35d02b0fa87a",
       "verificationStatus": "verified",
@@ -820,14 +1828,14 @@
       "originalLanguage": "zh",
       "originalTitle": "货币市场日报：9月28日",
       "publishedAt": "2026-09-28T11:39:30.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "article": {
         "status": "complete",
         "characterCount": 1792,
         "reader": "cnfin-body",
         "sha256": "3aac5201f29c5a191a18fe4996c3e42ac9c3117e47ee8b5c5e11a759aa3fe861",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260928/4475733_1.html",
-        "checkedAt": "2026-09-28T15:27:00.968Z"
+        "checkedAt": "2026-09-28T21:59:53.365Z"
       },
       "id": "b34fff2ae16a94035213",
       "verificationStatus": "verified",
@@ -867,7 +1875,7 @@
       "originalLanguage": "zh",
       "originalTitle": "每日机构分析：9月28日",
       "publishedAt": "2026-09-28T11:27:08.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "e66d89b6c0a1281b5a2e",
       "verificationStatus": "verified",
       "titleZh": "每日机构分析：9月28日",
@@ -907,7 +1915,7 @@
       "originalTitle": "Apple ordered to pay $5.7bn after losing vibration tech patent suit",
       "originalSummary": "Audio firm Taction Technology claimed Apple infringed its patents for tech used to power device vibrations.",
       "publishedAt": "2026-09-28T11:16:08.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "38f9908f2f70231b3518",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -948,7 +1956,7 @@
       "originalTitle": "Mexico's Pacific coast braces for Hurricane Polo",
       "originalSummary": "The category-three storm is approaching the state of Baja California Sur, on Mexico's northern Pacific coast.",
       "publishedAt": "2026-09-28T11:05:49.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "64355988146162524612",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -988,14 +1996,14 @@
       "originalLanguage": "zh",
       "originalTitle": "加强预售管理、有序实施现房销售，上海出台商品住房销售制度改革地方实施意见",
       "publishedAt": "2026-09-28T11:03:44.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "article": {
         "status": "complete",
         "characterCount": 735,
         "reader": "cnfin-body",
         "sha256": "eac2fea30f2963ff88e5dbdbefab6118564e135ee70fa5d392624c09775722ad",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260928/4475711_1.html",
-        "checkedAt": "2026-09-28T15:27:00.968Z"
+        "checkedAt": "2026-09-28T21:59:53.365Z"
       },
       "id": "0c7b13df446d7bfbf4c7",
       "verificationStatus": "verified",
@@ -1035,14 +2043,14 @@
       "originalLanguage": "zh",
       "originalTitle": "国务院国资委：“十五五”时期将把加强基础研究作为中央企业科技创新的中心任务",
       "publishedAt": "2026-09-28T11:02:20.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "article": {
         "status": "complete",
         "characterCount": 1003,
         "reader": "cnfin-body",
         "sha256": "7c2b7fe19e0706c5ddd3ac8670759d9617459e3e96dc392a421f29775e407ae1",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260928/4475705_1.html",
-        "checkedAt": "2026-09-28T15:27:00.968Z"
+        "checkedAt": "2026-09-28T21:59:53.365Z"
       },
       "id": "eb8d64b7be412b13cb8a",
       "verificationStatus": "verified",
@@ -1083,7 +2091,7 @@
       "originalTitle": "Tourism tax needs to be more flexible in Wales, warns expert",
       "originalSummary": "Anglesey, Conwy and Gwynedd councils have all put a pause on introducing the nightly tourist tax.",
       "publishedAt": "2026-09-28T10:49:31.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "c064d01d6bc6315b3f2f",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1123,14 +2131,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【金融街发布】中国人民银行等八部门联合印发《关于金融支持服务业扩能提质的指导意见》",
       "publishedAt": "2026-09-28T10:17:28.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "article": {
         "status": "complete",
         "characterCount": 538,
         "reader": "cnfin-body",
         "sha256": "12a053c6a3e6f0c40b8be0c0b794814b00ff083b9ee559dc59ad2393ea1be94e",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20260928/4475682_1.html",
-        "checkedAt": "2026-09-28T15:27:00.968Z"
+        "checkedAt": "2026-09-28T21:59:53.365Z"
       },
       "id": "57ed93378b18c1be0bc3",
       "verificationStatus": "verified",
@@ -1170,7 +2178,7 @@
       "originalLanguage": "zh",
       "originalTitle": "商品日报（9月28日）：碳酸锂、白银跌超5% 生猪创近半年新低",
       "publishedAt": "2026-09-28T10:08:26.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "9d0497074748e2e2cbb8",
       "verificationStatus": "verified",
       "titleZh": "商品日报（9月28日）：碳酸锂、白银跌超5% 生猪创近半年新低",
@@ -1205,53 +2213,12 @@
       "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6n4k987k981o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "UK diesel price hits all-time high, the RAC says",
-      "originalSummary": "The US-Israel war with Iran has caused fuel prices to soar due to disruption of global oil supplies.",
-      "publishedAt": "2026-09-28T10:00:18.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "d7efbca1a830f8196dbb",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ukdieselpricehit|2026-09-28",
-      "detailStatus": "brief",
-      "facts": [
-        "The US-Israel war with Iran has caused fuel prices to soar due to disruption of global oil supplies."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq07ly2232pzo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "Childminder facing 'severe financial burden' as heating oil costs rise",
       "originalSummary": "The war in Iran is having a practical impact on people across the island as energy prices continue to climb.",
       "publishedAt": "2026-09-28T09:01:12.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "e48ce7981961ce2d51b5",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1292,7 +2259,7 @@
       "originalTitle": "Trump-Xi summit: What wasn't said might matter the most",
       "originalSummary": "The most revealing thing about the summit in Washington may be what the two leaders did not say - and what we still don't know.",
       "publishedAt": "2026-09-28T07:52:23.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "e8309a7fe8e29cf55e27",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1333,7 +2300,7 @@
       "originalTitle": "Why the PM could finally drop the triple lock pension pledge",
       "originalSummary": "Andy Burnham said that he would make tough decisions to fund a new national care service.",
       "publishedAt": "2026-09-28T07:38:21.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "74d931b4634beda2686e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1365,53 +2332,6 @@
       "inferences": []
     },
     {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "One dead as nor'easter storm pummels New York and New Jersey",
-      "originalSummary": "Tens of millions of people from Maine to Virginia found themselves in the path of the powerful weather system.",
-      "publishedAt": "2026-09-27T23:37:26.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "53e66b8380623909fed8",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-27T23:37:26.000Z"
-        }
-      ],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|onedeadasnoreast|2026-09-27",
-      "detailStatus": "brief",
-      "facts": [
-        "Tens of millions of people from Maine to Virginia found themselves in the path of the powerful weather system."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
       "sourceId": "bbc-business",
       "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
@@ -1421,7 +2341,7 @@
       "originalTitle": "My hometown shows that high streets have to change or die",
       "originalSummary": "Aberdeen is launching an ambitious bid to revive its struggling centre. Could it offer lessons for other high streets?",
       "publishedAt": "2026-09-27T23:05:53.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "109238211a7fc562cbef",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -1463,53 +2383,12 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Two mass shootings in South Africa leave 28 dead",
-      "originalSummary": "The two attacks hours apart come as the country struggles to stop high levels of gang-related armed violence.",
-      "publishedAt": "2026-09-28T06:46:03.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "184cd8aba468bf8741f4",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|twomassshootings|2026-09-28",
-      "detailStatus": "brief",
-      "facts": [
-        "The two attacks hours apart come as the country struggles to stop high levels of gang-related armed violence."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/videos/ckvgy6j4594yo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "Watch: Madonna and Taylor Swift win big at the MTV VMAs",
       "originalSummary": "Taylor Swift, Madonna, and LISA were among the big winners at the MTV Video Music Awards (VMAs) on Sunday evening in downtown Los Angeles.",
       "publishedAt": "2026-09-28T06:22:52.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "794cf4f4387b0460eac0",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1550,7 +2429,7 @@
       "originalTitle": "How much is in your savings account?",
       "originalSummary": "From £65 to $60,000 - we talk savings with people in East London's Brick Lane.",
       "publishedAt": "2026-09-28T05:22:50.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "e96732df6ac10e205b41",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1591,7 +2470,7 @@
       "originalTitle": "Taylor Swift and Charli XCX among stars to light up VMAs red carpet",
       "originalSummary": "Celebrities posed for the cameras ahead of the 2026 MTV Video Music Awards in Los Angeles.",
       "publishedAt": "2026-09-28T01:16:18.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "700ba83ffaea7aab8f92",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1627,13 +2506,13 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cmg497x0p4x3o?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Shipwreck uncovered on Nantucket island during nor'easter storm",
-      "originalSummary": "The so-called nor'easter storm has washed up what may be a shipwreck from the 19th century in Massachusetts, local media says.",
-      "publishedAt": "2026-09-28T00:52:49.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "4cc0eee4a1635284afba",
+      "originalTitle": "One dead as nor'easter storm pummels New York and New Jersey",
+      "originalSummary": "Tens of millions of people from Maine to Virginia found themselves in the path of the powerful weather system.",
+      "publishedAt": "2026-09-27T23:37:26.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "53e66b8380623909fed8",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -1655,10 +2534,10 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|shipwreckuncover|2026-09-28",
+      "clusterId": "监管|onedeadasnoreast|2026-09-27",
       "detailStatus": "brief",
       "facts": [
-        "The so-called nor'easter storm has washed up what may be a shipwreck from the 19th century in Massachusetts, local media says."
+        "Tens of millions of people from Maine to Virginia found themselves in the path of the powerful weather system."
       ],
       "expectations": [],
       "inferences": []
@@ -1673,7 +2552,7 @@
       "originalTitle": "News media must stay relevant or 'society will struggle', says World News Day organiser",
       "originalSummary": "World News Day aims to highlight the role of news providers in investigating and explaining important events.",
       "publishedAt": "2026-09-27T23:27:22.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "8e0dddde08bf33d066fb",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1714,7 +2593,7 @@
       "originalTitle": "Why some Indian civil servants become heroes for doing their jobs",
       "originalSummary": "In a system often marked by red tape and exhausting delays, officers seen to be following the rules get adulation.",
       "publishedAt": "2026-09-27T23:01:37.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "57dfef0f344d6de809ad",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1744,382 +2623,51 @@
       ],
       "expectations": [],
       "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw98005ndz7no?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Inside Yemen's front-line city as Houthis battle for control",
-      "originalSummary": "In rare access to Yemen's conflict zone the BBC travels to the front line with pro-government soldiers.",
-      "publishedAt": "2026-09-27T21:16:31.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "8fe414ffc1aa487bb49c",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|insideyemensfron|2026-09-27",
-      "detailStatus": "brief",
-      "facts": [
-        "In rare access to Yemen's conflict zone the BBC travels to the front line with pro-government soldiers."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/crp3kgjygnkeo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Watch: BBC reports from the front-line of an escalating war in Yemen",
-      "originalSummary": "In rare access to Yemen's conflict zone the BBC travels to the front line with pro-government soldiers.",
-      "publishedAt": "2026-09-27T21:00:06.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "59f473b029ba099ad6bf",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|watchbbcreportsf|2026-09-27",
-      "detailStatus": "brief",
-      "facts": [
-        "In rare access to Yemen's conflict zone the BBC travels to the front line with pro-government soldiers."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Embattled Serbian president resigns, paving way for early elections",
-      "originalSummary": "Aleksandar Vučić's administration has been dogged by prolonged protests over allegations of corruption.",
-      "publishedAt": "2026-09-27T20:04:21.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "af7cb79964960c257f9b",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|embattledserbian|2026-09-27",
-      "detailStatus": "brief",
-      "facts": [
-        "Aleksandar Vučić's administration has been dogged by prolonged protests over allegations of corruption."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm5y5nj8ejj8o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Pope says 'scourge' of abuse must be rooted out as he visits Lourdes",
-      "originalSummary": "Pope Leo spoke to bishops before leading a service attended by thousands of worshippers in France.",
-      "publishedAt": "2026-09-27T19:47:21.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "27728b419ee925ad84c2",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|popesaysscourgeo|2026-09-27",
-      "detailStatus": "brief",
-      "facts": [
-        "Pope Leo spoke to bishops before leading a service attended by thousands of worshippers in France."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Two bodies found after avalanche hits Himalayan climbing group",
-      "originalSummary": "Rescuers are looking for at least 10 Nepalese people who were preparing to take climbers up the Himlung Himal peak.",
-      "publishedAt": "2026-09-27T17:05:26.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "0b922f12ca1864275826",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|twobodiesfoundaf|2026-09-27",
-      "detailStatus": "brief",
-      "facts": [
-        "Rescuers are looking for at least 10 Nepalese people who were preparing to take climbers up the Himlung Himal peak."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c3ew9e5lg01vo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Woman charged with stealing from patients and staff at hospitals across Ontario",
-      "originalSummary": "The 34-year-old is under investigation for incidents that began in February 2024 up until as recently as last month.",
-      "publishedAt": "2026-09-27T16:35:41.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "2971391d2bd33146ff4c",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|womanchargedwith|2026-09-27",
-      "detailStatus": "brief",
-      "facts": [
-        "The 34-year-old is under investigation for incidents that began in February 2024 up until as recently as last month."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm750plvwy9vo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Switzerland rejects stricter interpretation of its neutrality",
-      "originalSummary": "The initiative would have prevented the nation from imposing sanctions unless approved by the UN.",
-      "publishedAt": "2026-09-27T16:02:17.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "cb19be57334008124709",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|switzerlandrejec|2026-09-27",
-      "detailStatus": "brief",
-      "facts": [
-        "The initiative would have prevented the nation from imposing sanctions unless approved by the UN."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c620lrw2xr12o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Venezuela releases dozens of political prisoners as election calls grow",
-      "originalSummary": "A slew of dissidents being released from long-term detention comes days after the nation's interim leader met the US president.",
-      "publishedAt": "2026-09-27T15:56:25.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "3c945e40b90cff533f9b",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|venezuelarelease|2026-09-27",
-      "detailStatus": "brief",
-      "facts": [
-        "A slew of dissidents being released from long-term detention comes days after the nation's interim leader met the US president."
-      ],
-      "expectations": [],
-      "inferences": []
     }
   ],
-  "continuing": [
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c65y55j2dxepo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Save or Overpay? What to do with your mortgage if interest rates rise",
-      "originalSummary": "Save or Overpay? What to do with your mortgage if interest rates rise",
-      "publishedAt": "2026-09-25T18:43:45.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "5ccd3578f6f124eae551",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [
-        "利率→住房融资"
-      ],
-      "analysisLevels": [
-        "宏观"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|saveoroverpaywha|2026-09-25",
-      "detailStatus": "professional",
-      "facts": [
-        "Save or Overpay? What to do with your mortgage if interest rates rise"
-      ],
-      "expectations": [],
-      "inferences": []
-    }
-  ],
+  "continuing": [],
   "retainedDetails": [
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Two mass shootings in South Africa leave 28 dead",
+      "originalSummary": "The two attacks hours apart come as the country struggles to stop high levels of gang-related armed violence.",
+      "publishedAt": "2026-09-28T06:46:03.000Z",
+      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "id": "184cd8aba468bf8741f4",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|twomassshootings|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "The two attacks hours apart come as the country struggles to stop high levels of gang-related armed violence."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
     {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
@@ -2806,6 +3354,47 @@
       "clusterId": "监管|商务部美大司负责人解读第八轮中美|2026-09-28",
       "detailStatus": "brief",
       "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cmg497x0p4x3o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Shipwreck uncovered on Nantucket island during nor'easter storm",
+      "originalSummary": "The so-called nor'easter storm has washed up what may be a shipwreck from the 19th century in Massachusetts, local media says.",
+      "publishedAt": "2026-09-28T00:52:49.000Z",
+      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "id": "4cc0eee4a1635284afba",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|shipwreckuncover|2026-09-28",
+      "detailStatus": "brief",
+      "facts": [
+        "The so-called nor'easter storm has washed up what may be a shipwreck from the 19th century in Massachusetts, local media says."
+      ],
       "expectations": [],
       "inferences": []
     },
@@ -3603,6 +4192,88 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw98005ndz7no?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Inside Yemen's front-line city as Houthis battle for control",
+      "originalSummary": "In rare access to Yemen's conflict zone the BBC travels to the front line with pro-government soldiers.",
+      "publishedAt": "2026-09-27T21:16:31.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "8fe414ffc1aa487bb49c",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|insideyemensfron|2026-09-27",
+      "detailStatus": "brief",
+      "facts": [
+        "In rare access to Yemen's conflict zone the BBC travels to the front line with pro-government soldiers."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/crp3kgjygnkeo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Watch: BBC reports from the front-line of an escalating war in Yemen",
+      "originalSummary": "In rare access to Yemen's conflict zone the BBC travels to the front line with pro-government soldiers.",
+      "publishedAt": "2026-09-27T21:00:06.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "59f473b029ba099ad6bf",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|watchbbcreportsf|2026-09-27",
+      "detailStatus": "brief",
+      "facts": [
+        "In rare access to Yemen's conflict zone the BBC travels to the front line with pro-government soldiers."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/videos/cm0e30lpngxpo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "Watch: The ups and downs of SpaceX's 13 Starship test flights",
@@ -3635,6 +4306,252 @@
       "detailStatus": "brief",
       "facts": [
         "The BBC's Ricky Boleto looks how previous SpaceX test flights went."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Embattled Serbian president resigns, paving way for early elections",
+      "originalSummary": "Aleksandar Vučić's administration has been dogged by prolonged protests over allegations of corruption.",
+      "publishedAt": "2026-09-27T20:04:21.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "af7cb79964960c257f9b",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|embattledserbian|2026-09-27",
+      "detailStatus": "brief",
+      "facts": [
+        "Aleksandar Vučić's administration has been dogged by prolonged protests over allegations of corruption."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm5y5nj8ejj8o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Pope says 'scourge' of abuse must be rooted out as he visits Lourdes",
+      "originalSummary": "Pope Leo spoke to bishops before leading a service attended by thousands of worshippers in France.",
+      "publishedAt": "2026-09-27T19:47:21.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "27728b419ee925ad84c2",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|popesaysscourgeo|2026-09-27",
+      "detailStatus": "brief",
+      "facts": [
+        "Pope Leo spoke to bishops before leading a service attended by thousands of worshippers in France."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Two bodies found after avalanche hits Himalayan climbing group",
+      "originalSummary": "Rescuers are looking for at least 10 Nepalese people who were preparing to take climbers up the Himlung Himal peak.",
+      "publishedAt": "2026-09-27T17:05:26.000Z",
+      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "id": "0b922f12ca1864275826",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|twobodiesfoundaf|2026-09-27",
+      "detailStatus": "brief",
+      "facts": [
+        "Rescuers are looking for at least 10 Nepalese people who were preparing to take climbers up the Himlung Himal peak."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c3ew9e5lg01vo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Woman charged with stealing from patients and staff at hospitals across Ontario",
+      "originalSummary": "The 34-year-old is under investigation for incidents that began in February 2024 up until as recently as last month.",
+      "publishedAt": "2026-09-27T16:35:41.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "2971391d2bd33146ff4c",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|womanchargedwith|2026-09-27",
+      "detailStatus": "brief",
+      "facts": [
+        "The 34-year-old is under investigation for incidents that began in February 2024 up until as recently as last month."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm750plvwy9vo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Switzerland rejects stricter interpretation of its neutrality",
+      "originalSummary": "The initiative would have prevented the nation from imposing sanctions unless approved by the UN.",
+      "publishedAt": "2026-09-27T16:02:17.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "cb19be57334008124709",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|switzerlandrejec|2026-09-27",
+      "detailStatus": "brief",
+      "facts": [
+        "The initiative would have prevented the nation from imposing sanctions unless approved by the UN."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c620lrw2xr12o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Venezuela releases dozens of political prisoners as election calls grow",
+      "originalSummary": "A slew of dissidents being released from long-term detention comes days after the nation's interim leader met the US president.",
+      "publishedAt": "2026-09-27T15:56:25.000Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
+      "id": "3c945e40b90cff533f9b",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|venezuelarelease|2026-09-27",
+      "detailStatus": "brief",
+      "facts": [
+        "A slew of dissidents being released from long-term detention comes days after the nation's interim leader met the US president."
       ],
       "expectations": [],
       "inferences": []
@@ -3731,7 +4648,7 @@
       "originalTitle": "The Takeaway: UN General Assembly debate Day 5",
       "originalSummary": "From artificial intelligence to migration, some of the forces reshaping the twenty-first century took centre stage at the UN General Assembly on Saturday. Leaders wrestled with a common dilemma: how to harness profound technological and social change without allowing it to deepen the divisions already separating countries and communities. This edition of The Takeaway distils key points from Day 5 of the annual high-level debate.",
       "publishedAt": "2026-09-27T12:00:00.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "0f44e6cf6a5379afe0ef",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -3854,7 +4771,7 @@
       "originalTitle": "Andy Burnham refuses to back third runway at Heathrow",
       "originalSummary": "Andy Burnham said he would wait for the results of a consultation on a scheme estimated to cost £33bn",
       "publishedAt": "2026-09-27T11:22:32.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "4a56e01a39246aa9bdc1",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3954,7 +4871,7 @@
       "originalTitle": "Before BTS and Blackpink, there was Big Bang: Now the Kings of K-pop are back",
       "originalSummary": "Big Bang played London's Tottenham Hotspur Stadium, marking a long-awaited return for the group that helped build the blueprint for modern K-pop.",
       "publishedAt": "2026-09-27T08:51:23.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "2b9ea3ca8c3fa23f2282",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4095,7 +5012,7 @@
       "originalTitle": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal",
       "originalSummary": "The foreign minister says Tehran is waiting for an official rejection of a deal, despite the US President's comments.",
       "publishedAt": "2026-09-27T07:44:11.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "1a63c9296d3b0400d354",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4259,7 +5176,7 @@
       "originalTitle": "Four killed in helicopter crash near Montreal",
       "originalSummary": "The victims of the crash have not yet been identified, Quebec provincial police told the BBC.",
       "publishedAt": "2026-09-27T02:43:10.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
+      "fetchedAt": "2026-09-28T21:59:53.365Z",
       "id": "9bfcf72192714bee8e8f",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4407,416 +5324,6 @@
           ]
         }
       }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6pwl9g9ne1lo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Killer Christa Pike to be executed within days - but her defence say she's a victim too",
-      "originalSummary": "Lawyers for Pike, who killed a fellow student in 1995, say she should get clemency and would not be sentenced to death if the crime happened today.",
-      "publishedAt": "2026-09-26T23:04:08.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "7fd433a4c3ace6f18982",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|killerchristapik|2026-09-26",
-      "detailStatus": "brief",
-      "facts": [
-        "Lawyers for Pike, who killed a fellow student in 1995, say she should get clemency and would not be sentenced to death if the crime happened today."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6pwl9g9ne1lo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Killer Christa Pike is to be executed within days but her defence say she's a victim too",
-      "originalSummary": "Lawyers for Pike, who killed a fellow student in 1995, say she should get clemency and would not be sentenced to death if the crime happened today.",
-      "publishedAt": "2026-09-26T23:04:08.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
-      "id": "368b39ff4aaaad7413f0",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|killerchristapik|2026-09-26",
-      "detailStatus": "brief",
-      "facts": [
-        "Lawyers for Pike, who killed a fellow student in 1995, say she should get clemency and would not be sentenced to death if the crime happened today."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6pwl9g9ne1lo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Christa Pike to be first woman executed in Tennessee in 200 years - but her defence say she's a victim too",
-      "originalSummary": "Lawyers for Pike, who killed a fellow student in 1995, say she should get clemency and would not be sentenced to death if the crime happened today.",
-      "publishedAt": "2026-09-26T23:04:08.000Z",
-      "fetchedAt": "2026-09-27T08:09:04.744Z",
-      "id": "292f74d60f1c8b1c35b4",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|christapiketobef|2026-09-26",
-      "detailStatus": "brief",
-      "facts": [
-        "Lawyers for Pike, who killed a fellow student in 1995, say she should get clemency and would not be sentenced to death if the crime happened today."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cklye5e40531o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Faisal Islam: The two big decisions the chancellor must make",
-      "originalSummary": "He must consider the longevity of Iran war economic pressures and how to sustain modest optimism, writes the BBC's Faisal Islam.",
-      "publishedAt": "2026-09-26T23:00:42.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "78e9d8427b3998133933",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|faisalislamthetw|2026-09-26",
-      "detailStatus": "brief",
-      "facts": [
-        "He must consider the longevity of Iran war economic pressures and how to sustain modest optimism, writes the BBC's Faisal Islam."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cklye5e40531o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Faisal Islam: The two big calls the chancellor has to make ahead of the Budget",
-      "originalSummary": "He must consider the longevity of Iran war economic pressures and how to sustain modest optimism, writes the BBC's Faisal Islam.",
-      "publishedAt": "2026-09-26T23:00:42.000Z",
-      "fetchedAt": "2026-09-27T08:09:04.744Z",
-      "id": "92923085119a5b750bfc",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|faisalislamthetw|2026-09-26",
-      "detailStatus": "brief",
-      "facts": [
-        "He must consider the longevity of Iran war economic pressures and how to sustain modest optimism, writes the BBC's Faisal Islam."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
-      "originalSummary": "Iran's foreign minister acknowledges Trump's comments, but adds that Tehran is waiting for the \"definitive views\" of mediators.",
-      "publishedAt": "2026-09-26T22:15:59.000Z",
-      "fetchedAt": "2026-09-27T01:26:27.123Z",
-      "id": "fe955a7c6faf9d4fee8a",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|trumprejectsiran|2026-09-26",
-      "detailStatus": "brief",
-      "facts": [
-        "Iran's foreign minister acknowledges Trump's comments, but adds that Tehran is waiting for the \"definitive views\" of mediators."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq70dgdndr46o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Young people in China are fangirling over a professor who gets their anxiety",
-      "originalSummary": "China's economy and tech have developed at breakneck speed, but there is plenty worrying its Gen Z.",
-      "publishedAt": "2026-09-26T22:02:18.000Z",
-      "fetchedAt": "2026-09-28T15:27:00.968Z",
-      "id": "691947650714feca067b",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|youngpeopleinchi|2026-09-26",
-      "detailStatus": "brief",
-      "facts": [
-        "China's economy and tech have developed at breakneck speed, but there is plenty worrying its Gen Z."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cme8xx55eryno?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Are claims of a white genocide in South Africa real?",
-      "originalSummary": "Thousands of white crosses have been displayed in Washington by an Afrikaner lobby group But South Africa's new ambassador Roelf Meyer says there is not a genocide.",
-      "publishedAt": "2026-09-26T21:20:17.000Z",
-      "fetchedAt": "2026-09-28T00:45:30.007Z",
-      "id": "f2648d42e64f3ec2757b",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|areclaimsofawhit|2026-09-26",
-      "detailStatus": "brief",
-      "facts": [
-        "Thousands of white crosses have been displayed in Washington by an Afrikaner lobby group But South Africa's new ambassador Roelf Meyer says there is not a genocide."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq4gmmdl52rgo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Mother of woman found hanging in tree shocked as police say body was staged",
-      "originalSummary": "Christy Spivey tells the BBC she only has more questions now police think Tasia Fortune's body was put in the tree after her death.",
-      "publishedAt": "2026-09-26T21:13:13.000Z",
-      "fetchedAt": "2026-09-28T06:52:48.640Z",
-      "id": "3fe92bea51ee3767ccd5",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|motherofwomanfou|2026-09-26",
-      "detailStatus": "brief",
-      "facts": [
-        "Christy Spivey tells the BBC she only has more questions now police think Tasia Fortune's body was put in the tree after her death."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/ckddvv5dn4eyo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Republic of Ireland to wear black armbands for Israel game",
-      "originalSummary": "Republic of Ireland players intend to wear black armbands \"in recognition of all lives lost in the [Gaza] conflict\" for match against Israel.",
-      "publishedAt": "2026-09-26T19:59:00.000Z",
-      "fetchedAt": "2026-09-27T13:57:49.848Z",
-      "id": "12fe1de9cf87809eb9a9",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|republicofirelan|2026-09-26",
-      "detailStatus": "brief",
-      "facts": [
-        "Republic of Ireland players intend to wear black armbands \"in recognition of all lives lost in the [Gaza] conflict\" for match against Israel."
-      ],
-      "expectations": [],
-      "inferences": []
     }
   ],
   "sourceHealth": [
@@ -4861,13 +5368,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 26
+      "itemCount": 35
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 47
+      "itemCount": 50
     },
     {
       "id": "bis-press",
@@ -4890,13 +5397,12 @@
       "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 1,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 1,
-        "professional-sections": 1
+        "language": 2
       }
     }
   ],
