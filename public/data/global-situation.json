@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-09-30T13:42:18.612Z",
-  "lastSuccessfulAt": "2026-09-30T13:42:18.612Z",
+  "attemptedAt": "2026-09-30T19:18:58.751Z",
+  "lastSuccessfulAt": "2026-09-30T19:18:58.751Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -45,7 +45,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 28
+      "itemCount": 30
     },
     {
       "id": "bbc-business",
@@ -68,158 +68,172 @@
   ],
   "events": [
     {
-      "id": "7d890b051d29",
-      "headline": "U.S. electricity use for electric vehicles increasing at a slower pace in 2026",
-      "sourceHeadline": "U.S. electricity use for electric vehicles increasing at a slower pace in 2026",
-      "oneLine": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
-      "oneSentenceExplanation": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
-      "summary": "We estimate light-duty electric vehicles in the United States consumed 8% more electricity during the first six months of 2026 than in the last half of 2025 (2H25) in our Monthly Energy Review, down from the 13-24% growth seen in six-month periods in recent years. The slowing electric vehicle electricity consumption growth followed a decline in sales after U.S. federal tax credits expired in September 2025. Overall, U.S. light-duty electric vehicle electricity use has more than doubled since 1H23, totaling nearly 14 billion kilowatthours in 1H26.",
-      "publishedAt": "2026-09-30T14:00:00.000Z",
-      "firstPublishedAt": "2026-09-30T14:00:00.000Z",
-      "latestSourceAt": "2026-09-30T14:00:00.000Z",
-      "fetchedAt": "2026-09-30T13:42:18.612Z",
-      "region": "united-states",
+      "id": "7bdf474bd75b",
+      "headline": "Isabel Schnabel: Monetary policy in a world of overlapping shocks",
+      "sourceHeadline": "Isabel Schnabel: Monetary policy in a world of overlapping shocks",
+      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "oneSentenceExplanation": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "summary": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
+      "publishedAt": "2026-09-30T15:45:00.000Z",
+      "firstPublishedAt": "2026-09-30T15:45:00.000Z",
+      "latestSourceAt": "2026-09-30T15:45:00.000Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
+      "region": "europe",
       "countries": [
-        "US"
+        "EU"
       ],
-      "topic": "energy-security",
-      "eventType": "energy-security",
+      "topic": "monetary-policy",
+      "eventType": "monetary-policy",
       "relevance": {
         "level": "medium",
-        "score": 3,
+        "score": 4,
         "criteria": [
-          "energySupply",
+          "inflation",
           "growth",
-          "earnings"
+          "centralBank",
+          "capitalFlows"
         ]
       },
       "marketRelevance": "medium",
-      "marketRelevanceScore": 3,
+      "marketRelevanceScore": 4,
       "relevanceReasons": [
-        "energySupply",
+        "inflation",
         "growth",
-        "earnings"
+        "centralBank",
+        "capitalFlows"
       ],
       "fact": [
-        "We estimate light-duty electric vehicles in the United States consumed 8% more electricity during the first six months of 2026 than in the last half of 2025 (2H25) in our Monthly Energy Review, down from the 13-24% growth seen in six-month periods in recent years. The slowing electric vehicle electricity consumption growth followed a decline in sales after U.S. federal tax credits expired in September 2025. Overall, U.S. light-duty electric vehicle electricity use has more than doubled since 1H23, totaling nearly 14 billion kilowatthours in 1H26."
+        "官方来源发布：Isabel Schnabel: Monetary policy in a world of overlapping shocks"
       ],
-      "factSummary": "We estimate light-duty electric vehicles in the United States consumed 8% more electricity during the first six months of 2026 than in the last half of 2025 (2H25) in our Monthly Energy Review, down from the 13-24% growth seen in six-month periods in recent years. The slowing electric vehicle electricity consumption growth followed a decline in sales after U.S. federal tax credits expired in September 2025. Overall, U.S. light-duty electric vehicle electricity use has more than doubled since 1H23, totaling nearly 14 billion kilowatthours in 1H26.",
+      "factSummary": "官方来源发布：Isabel Schnabel: Monetary policy in a world of overlapping shocks",
       "marketView": [
-        "本条来源报告：U.S. electricity use for electric vehicles increasing at a slower pace in 2026。以下为条件性机制参考，不是已核实的市场结论。",
-        "新增用电需要电源、电网和接入容量同时跟上。需求增长不等于电价必涨，也不等于所有能源企业受益。",
-        "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。"
+        "本条来源报告：Isabel Schnabel: Monetary policy in a world of overlapping shocks。以下为条件性机制参考，不是已核实的市场结论。",
+        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
+        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
       ],
       "scenarios": [
-        "如果相关影响继续，企业供电成本可能变化。这是一种有条件的路径。"
+        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
       ],
-      "simpleExample": "新增园区需要更多电。如果现有容量够用，需求增加未必推高账单；容量不足则需要先扩建。",
-      "professionalConcept": "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。",
+      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
+      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
       "causalChain": [
         {
           "id": "1",
-          "title": "电力需求可能增加",
-          "beginnerExplanation": "新设施运行会消耗电力。",
-          "condition": "项目实际投运",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
           "uncertain": false
         },
         {
           "id": "2",
-          "title": "电源与电网容量受考验",
-          "beginnerExplanation": "高峰负荷可能接近上限。",
-          "condition": "备用容量不足",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
           "uncertain": true
         },
         {
           "id": "3",
-          "title": "扩容投资可能增加",
-          "beginnerExplanation": "发电和输配电需要建设周期。",
-          "condition": "获得许可与融资",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
           "uncertain": true
         },
         {
           "id": "4",
-          "title": "企业供电成本可能变化",
-          "beginnerExplanation": "电价或接入费用可能传入成本。",
-          "condition": "当地定价规则允许传导",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
           "uncertain": true
         }
       ],
       "impactChain": [
         {
           "id": "1",
-          "title": "电力需求可能增加",
-          "beginnerExplanation": "新设施运行会消耗电力。",
-          "condition": "项目实际投运",
+          "title": "央行信号变化",
+          "beginnerExplanation": "投资者调整未来利率预期。",
+          "condition": "后续数据没有推翻该信号",
           "uncertain": false
         },
         {
           "id": "2",
-          "title": "电源与电网容量受考验",
-          "beginnerExplanation": "高峰负荷可能接近上限。",
-          "condition": "备用容量不足",
+          "title": "债券收益率可能变化",
+          "beginnerExplanation": "新利率预期进入债券价格。",
+          "condition": "信用和期限溢价没有反向抵消",
           "uncertain": true
         },
         {
           "id": "3",
-          "title": "扩容投资可能增加",
-          "beginnerExplanation": "发电和输配电需要建设周期。",
-          "condition": "获得许可与融资",
+          "title": "融资成本可能变化",
+          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
+          "condition": "政策能传导到实体融资",
           "uncertain": true
         },
         {
           "id": "4",
-          "title": "企业供电成本可能变化",
-          "beginnerExplanation": "电价或接入费用可能传入成本。",
-          "condition": "当地定价规则允许传导",
+          "title": "股票估值可能重算",
+          "beginnerExplanation": "远期现金流对贴现率敏感。",
+          "condition": "盈利预期没有同时大幅变化",
           "uncertain": true
         }
       ],
       "relatedAssets": [
         {
-          "name": "电网设备企业",
-          "explanation": "扩容可能形成订单，但要看招标、交付与利润率。"
+          "name": "国债收益率",
+          "explanation": "它最直接反映政策、通胀和期限补偿。"
         },
         {
-          "name": "数据中心企业",
-          "explanation": "供电影响项目回报，长协和自备电源可能抵消影响。"
+          "name": "美元",
+          "explanation": "相对利率会改变持有不同货币的吸引力。"
+        },
+        {
+          "name": "Nasdaq",
+          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
+        },
+        {
+          "name": "银行股",
+          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
         }
       ],
       "relatedIndustries": [
-        "能源",
-        "航空",
-        "航运",
-        "化工"
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
       ],
       "knowledgeIds": [
-        "geopolitics",
-        "supply-demand",
+        "interest-rate",
+        "bonds",
         "cpi",
-        "trade"
+        "valuation",
+        "exchange-rate"
       ],
       "relatedKnowledgePoints": [
-        "geopolitics",
-        "supply-demand",
+        "interest-rate",
+        "bonds",
         "cpi",
-        "trade"
+        "valuation",
+        "exchange-rate"
       ],
       "conditionsThatChangeView": [
-        "项目延期",
-        "现有容量充足",
-        "效率提升抵消用电增长",
-        "电价受监管或合同锁定"
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
       ],
       "watchConditions": [
-        "项目延期",
-        "现有容量充足",
-        "效率提升抵消用电增长",
-        "电价受监管或合同锁定"
+        "通胀数据明显转向",
+        "就业或增长意外走弱",
+        "央行官员给出不同信号",
+        "金融压力让银行收紧贷款",
+        "市场已经提前充分定价"
       ],
       "marketReaction": [],
       "sources": [
         {
-          "name": "U.S. Energy Information Administration",
-          "url": "https://www.eia.gov/todayinenergy/detail.php?id=68224",
-          "publishedAt": "2026-09-30T14:00:00.000Z"
+          "name": "European Central Bank",
+          "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260930_1~7c6c120482.en.html",
+          "publishedAt": "2026-09-30T15:45:00.000Z"
         }
       ]
     },
@@ -230,10 +244,10 @@
       "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
       "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
       "summary": "In total 11 regions of the country were attacked overnight, with residential buildings and railways also targeted, the Ukrainian PM says.",
-      "publishedAt": "2026-09-30T12:42:34.000Z",
-      "firstPublishedAt": "2026-09-30T12:42:34.000Z",
-      "latestSourceAt": "2026-09-30T12:42:34.000Z",
-      "fetchedAt": "2026-09-30T13:42:18.612Z",
+      "publishedAt": "2026-09-30T14:53:02.000Z",
+      "firstPublishedAt": "2026-09-30T14:53:02.000Z",
+      "latestSourceAt": "2026-09-30T14:53:02.000Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -409,7 +423,317 @@
         {
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/ckjw5jx2l393o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-30T12:42:34.000Z"
+          "publishedAt": "2026-09-30T14:53:02.000Z"
+        }
+      ]
+    },
+    {
+      "id": "2379a622f726",
+      "headline": "Household energy bills forecast to see biggest rise in four years",
+      "sourceHeadline": "Household energy bills forecast to see biggest rise in four years",
+      "oneLine": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "oneSentenceExplanation": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "summary": "A typical household faces an annual gas and electricity bill of £1,999 from January, based on a key forecast.",
+      "publishedAt": "2026-09-30T14:36:45.000Z",
+      "firstPublishedAt": "2026-09-30T14:36:45.000Z",
+      "latestSourceAt": "2026-09-30T14:36:45.000Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
+      "region": "middle-east",
+      "countries": [],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "medium",
+        "score": 3,
+        "criteria": [
+          "energySupply",
+          "growth",
+          "earnings"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 3,
+      "relevanceReasons": [
+        "energySupply",
+        "growth",
+        "earnings"
+      ],
+      "fact": [
+        "A typical household faces an annual gas and electricity bill of £1,999 from January, based on a key forecast."
+      ],
+      "factSummary": "A typical household faces an annual gas and electricity bill of £1,999 from January, based on a key forecast.",
+      "marketView": [
+        "本条来源报告：Household energy bills forecast to see biggest rise in four years。以下为条件性机制参考，不是已核实的市场结论。",
+        "新增用电需要电源、电网和接入容量同时跟上。需求增长不等于电价必涨，也不等于所有能源企业受益。",
+        "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，企业供电成本可能变化。这是一种有条件的路径。"
+      ],
+      "simpleExample": "新增园区需要更多电。如果现有容量够用，需求增加未必推高账单；容量不足则需要先扩建。",
+      "professionalConcept": "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "电网设备企业",
+          "explanation": "扩容可能形成订单，但要看招标、交付与利润率。"
+        },
+        {
+          "name": "数据中心企业",
+          "explanation": "供电影响项目回报，长协和自备电源可能抵消影响。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "watchConditions": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cwz0zvj4m1myo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-09-30T14:36:45.000Z"
+        }
+      ]
+    },
+    {
+      "id": "7d890b051d29",
+      "headline": "U.S. electricity use for electric vehicles increasing at a slower pace in 2026",
+      "sourceHeadline": "U.S. electricity use for electric vehicles increasing at a slower pace in 2026",
+      "oneLine": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "oneSentenceExplanation": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
+      "summary": "We estimate light-duty electric vehicles in the United States consumed 8% more electricity during the first six months of 2026 than in the last half of 2025 (2H25) in our Monthly Energy Review, down from the 13-24% growth seen in six-month periods in recent years. The slowing electric vehicle electricity consumption growth followed a decline in sales after U.S. federal tax credits expired in September 2025. Overall, U.S. light-duty electric vehicle electricity use has more than doubled since 1H23, totaling nearly 14 billion kilowatthours in 1H26.",
+      "publishedAt": "2026-09-30T14:00:00.000Z",
+      "firstPublishedAt": "2026-09-30T14:00:00.000Z",
+      "latestSourceAt": "2026-09-30T14:00:00.000Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "medium",
+        "score": 3,
+        "criteria": [
+          "energySupply",
+          "growth",
+          "earnings"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 3,
+      "relevanceReasons": [
+        "energySupply",
+        "growth",
+        "earnings"
+      ],
+      "fact": [
+        "We estimate light-duty electric vehicles in the United States consumed 8% more electricity during the first six months of 2026 than in the last half of 2025 (2H25) in our Monthly Energy Review, down from the 13-24% growth seen in six-month periods in recent years. The slowing electric vehicle electricity consumption growth followed a decline in sales after U.S. federal tax credits expired in September 2025. Overall, U.S. light-duty electric vehicle electricity use has more than doubled since 1H23, totaling nearly 14 billion kilowatthours in 1H26."
+      ],
+      "factSummary": "We estimate light-duty electric vehicles in the United States consumed 8% more electricity during the first six months of 2026 than in the last half of 2025 (2H25) in our Monthly Energy Review, down from the 13-24% growth seen in six-month periods in recent years. The slowing electric vehicle electricity consumption growth followed a decline in sales after U.S. federal tax credits expired in September 2025. Overall, U.S. light-duty electric vehicle electricity use has more than doubled since 1H23, totaling nearly 14 billion kilowatthours in 1H26.",
+      "marketView": [
+        "本条来源报告：U.S. electricity use for electric vehicles increasing at a slower pace in 2026。以下为条件性机制参考，不是已核实的市场结论。",
+        "新增用电需要电源、电网和接入容量同时跟上。需求增长不等于电价必涨，也不等于所有能源企业受益。",
+        "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，企业供电成本可能变化。这是一种有条件的路径。"
+      ],
+      "simpleExample": "新增园区需要更多电。如果现有容量够用，需求增加未必推高账单；容量不足则需要先扩建。",
+      "professionalConcept": "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "电力需求可能增加",
+          "beginnerExplanation": "新设施运行会消耗电力。",
+          "condition": "项目实际投运",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "电源与电网容量受考验",
+          "beginnerExplanation": "高峰负荷可能接近上限。",
+          "condition": "备用容量不足",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "扩容投资可能增加",
+          "beginnerExplanation": "发电和输配电需要建设周期。",
+          "condition": "获得许可与融资",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "企业供电成本可能变化",
+          "beginnerExplanation": "电价或接入费用可能传入成本。",
+          "condition": "当地定价规则允许传导",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "电网设备企业",
+          "explanation": "扩容可能形成订单，但要看招标、交付与利润率。"
+        },
+        {
+          "name": "数据中心企业",
+          "explanation": "供电影响项目回报，长协和自备电源可能抵消影响。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "watchConditions": [
+        "项目延期",
+        "现有容量充足",
+        "效率提升抵消用电增长",
+        "电价受监管或合同锁定"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=68224",
+          "publishedAt": "2026-09-30T14:00:00.000Z"
         }
       ]
     },
@@ -423,7 +747,7 @@
       "publishedAt": "2026-09-30T11:36:23.000Z",
       "firstPublishedAt": "2026-09-30T11:36:23.000Z",
       "latestSourceAt": "2026-09-30T11:36:23.000Z",
-      "fetchedAt": "2026-09-30T13:42:18.612Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -569,7 +893,7 @@
       "publishedAt": "2026-09-30T11:25:12.000Z",
       "firstPublishedAt": "2026-09-30T11:25:12.000Z",
       "latestSourceAt": "2026-09-30T11:25:12.000Z",
-      "fetchedAt": "2026-09-30T13:42:18.612Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -744,160 +1068,6 @@
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/cmkg8dpwy25po?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-30T11:25:12.000Z"
-        }
-      ]
-    },
-    {
-      "id": "2379a622f726",
-      "headline": "Household energy bills forecast to see biggest rise in four years",
-      "sourceHeadline": "Household energy bills forecast to see biggest rise in four years",
-      "oneLine": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
-      "oneSentenceExplanation": "本条涉及电力需求与系统承载能力，不是石油供应中断。",
-      "summary": "A typical household faces an annual gas and electricity bill of £1,999 from January, based on a key forecast.",
-      "publishedAt": "2026-09-30T10:47:49.000Z",
-      "firstPublishedAt": "2026-09-30T10:47:49.000Z",
-      "latestSourceAt": "2026-09-30T10:47:49.000Z",
-      "fetchedAt": "2026-09-30T13:42:18.612Z",
-      "region": "middle-east",
-      "countries": [],
-      "topic": "energy-security",
-      "eventType": "energy-security",
-      "relevance": {
-        "level": "medium",
-        "score": 3,
-        "criteria": [
-          "energySupply",
-          "growth",
-          "earnings"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 3,
-      "relevanceReasons": [
-        "energySupply",
-        "growth",
-        "earnings"
-      ],
-      "fact": [
-        "A typical household faces an annual gas and electricity bill of £1,999 from January, based on a key forecast."
-      ],
-      "factSummary": "A typical household faces an annual gas and electricity bill of £1,999 from January, based on a key forecast.",
-      "marketView": [
-        "本条来源报告：Household energy bills forecast to see biggest rise in four years。以下为条件性机制参考，不是已核实的市场结论。",
-        "新增用电需要电源、电网和接入容量同时跟上。需求增长不等于电价必涨，也不等于所有能源企业受益。",
-        "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，企业供电成本可能变化。这是一种有条件的路径。"
-      ],
-      "simpleExample": "新增园区需要更多电。如果现有容量够用，需求增加未必推高账单；容量不足则需要先扩建。",
-      "professionalConcept": "条件性机制参考：容量约束与投资周期可能影响供需和成本，需核实当地电价机制与项目规模。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "电力需求可能增加",
-          "beginnerExplanation": "新设施运行会消耗电力。",
-          "condition": "项目实际投运",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "电源与电网容量受考验",
-          "beginnerExplanation": "高峰负荷可能接近上限。",
-          "condition": "备用容量不足",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "扩容投资可能增加",
-          "beginnerExplanation": "发电和输配电需要建设周期。",
-          "condition": "获得许可与融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "企业供电成本可能变化",
-          "beginnerExplanation": "电价或接入费用可能传入成本。",
-          "condition": "当地定价规则允许传导",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "电力需求可能增加",
-          "beginnerExplanation": "新设施运行会消耗电力。",
-          "condition": "项目实际投运",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "电源与电网容量受考验",
-          "beginnerExplanation": "高峰负荷可能接近上限。",
-          "condition": "备用容量不足",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "扩容投资可能增加",
-          "beginnerExplanation": "发电和输配电需要建设周期。",
-          "condition": "获得许可与融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "企业供电成本可能变化",
-          "beginnerExplanation": "电价或接入费用可能传入成本。",
-          "condition": "当地定价规则允许传导",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "电网设备企业",
-          "explanation": "扩容可能形成订单，但要看招标、交付与利润率。"
-        },
-        {
-          "name": "数据中心企业",
-          "explanation": "供电影响项目回报，长协和自备电源可能抵消影响。"
-        }
-      ],
-      "relatedIndustries": [
-        "能源",
-        "航空",
-        "航运",
-        "化工"
-      ],
-      "knowledgeIds": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "relatedKnowledgePoints": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "conditionsThatChangeView": [
-        "项目延期",
-        "现有容量充足",
-        "效率提升抵消用电增长",
-        "电价受监管或合同锁定"
-      ],
-      "watchConditions": [
-        "项目延期",
-        "现有容量充足",
-        "效率提升抵消用电增长",
-        "电价受监管或合同锁定"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cwz0zvj4m1myo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-30T10:47:49.000Z"
         }
       ]
     },
@@ -1245,7 +1415,7 @@
       "publishedAt": "2026-09-30T05:08:19.000Z",
       "firstPublishedAt": "2026-09-30T05:08:19.000Z",
       "latestSourceAt": "2026-09-30T05:08:19.000Z",
-      "fetchedAt": "2026-09-30T13:42:18.612Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1873,7 +2043,7 @@
       "publishedAt": "2026-09-29T17:09:46.000Z",
       "firstPublishedAt": "2026-09-29T17:09:46.000Z",
       "latestSourceAt": "2026-09-29T17:09:46.000Z",
-      "fetchedAt": "2026-09-30T13:42:18.612Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
       "region": "global",
       "countries": [],
       "topic": "monetary-policy",
@@ -2333,7 +2503,7 @@
       "publishedAt": "2026-09-29T15:14:39.000Z",
       "firstPublishedAt": "2026-09-29T15:14:39.000Z",
       "latestSourceAt": "2026-09-29T15:14:39.000Z",
-      "fetchedAt": "2026-09-30T13:42:18.612Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -2487,7 +2657,7 @@
       "publishedAt": "2026-09-29T13:38:06.000Z",
       "firstPublishedAt": "2026-09-29T13:38:06.000Z",
       "latestSourceAt": "2026-09-29T13:38:06.000Z",
-      "fetchedAt": "2026-09-30T13:42:18.612Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
       "region": "global",
       "countries": [],
       "topic": "geopolitical-conflict",
@@ -2783,7 +2953,7 @@
       "publishedAt": "2026-09-29T12:00:00.000Z",
       "firstPublishedAt": "2026-09-29T12:00:00.000Z",
       "latestSourceAt": "2026-09-29T12:00:00.000Z",
-      "fetchedAt": "2026-09-30T13:42:18.612Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
       "region": "global",
       "countries": [],
       "topic": "geopolitical-conflict",
@@ -3083,7 +3253,7 @@
       "publishedAt": "2026-09-29T08:00:00.000Z",
       "firstPublishedAt": "2026-09-29T08:00:00.000Z",
       "latestSourceAt": "2026-09-29T08:00:00.000Z",
-      "fetchedAt": "2026-09-30T13:42:18.612Z",
+      "fetchedAt": "2026-09-30T19:18:58.751Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -3694,194 +3864,6 @@
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/cm1j43y146d2o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-29T04:10:33.000Z"
-        }
-      ]
-    },
-    {
-      "id": "e8615da473a1",
-      "headline": "Argentina threatens legal action against UK over Falkland Islands oil exploration",
-      "sourceHeadline": "Argentina threatens legal action against UK over Falkland Islands oil exploration",
-      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
-      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
-      "summary": "President Javier Milei set a two-week deadline for the Sea Lion oilfield project to be scrapped.",
-      "publishedAt": "2026-09-29T03:50:40.000Z",
-      "firstPublishedAt": "2026-09-29T03:50:40.000Z",
-      "latestSourceAt": "2026-09-29T03:50:40.000Z",
-      "fetchedAt": "2026-09-30T00:26:41.566Z",
-      "region": "middle-east",
-      "countries": [],
-      "topic": "energy-security",
-      "eventType": "energy-security",
-      "relevance": {
-        "level": "high",
-        "score": 7,
-        "criteria": [
-          "energySupply",
-          "trade",
-          "supplyChain",
-          "inflation",
-          "growth",
-          "earnings",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "high",
-      "marketRelevanceScore": 7,
-      "relevanceReasons": [
-        "energySupply",
-        "trade",
-        "supplyChain",
-        "inflation",
-        "growth",
-        "earnings",
-        "riskAppetite"
-      ],
-      "fact": [
-        "President Javier Milei set a two-week deadline for the Sea Lion oilfield project to be scrapped."
-      ],
-      "factSummary": "President Javier Milei set a two-week deadline for the Sea Lion oilfield project to be scrapped.",
-      "marketView": [
-        "本条来源报告：Argentina threatens legal action against UK over Falkland Islands oil exploration。以下为条件性机制参考，不是已核实的市场结论。",
-        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
-        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
-      ],
-      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
-      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "运输或供应风险上升",
-          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
-          "condition": "风险持续且替代路线有限",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "原油与运费可能上涨",
-          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
-          "condition": "库存和备用产能不足以抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "企业成本可能增加",
-          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
-          "condition": "企业无法完全用效率或合同锁价吸收",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "通胀压力可能升高",
-          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
-          "condition": "需求仍能承受提价",
-          "uncertain": true
-        },
-        {
-          "id": "5",
-          "title": "降息空间可能缩小",
-          "beginnerExplanation": "央行会担心价格压力扩散。",
-          "condition": "通胀持续而增长尚未明显崩弱",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "运输或供应风险上升",
-          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
-          "condition": "风险持续且替代路线有限",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "原油与运费可能上涨",
-          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
-          "condition": "库存和备用产能不足以抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "企业成本可能增加",
-          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
-          "condition": "企业无法完全用效率或合同锁价吸收",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "通胀压力可能升高",
-          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
-          "condition": "需求仍能承受提价",
-          "uncertain": true
-        },
-        {
-          "id": "5",
-          "title": "降息空间可能缩小",
-          "beginnerExplanation": "央行会担心价格压力扩散。",
-          "condition": "通胀持续而增长尚未明显崩弱",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "原油",
-          "explanation": "供应中断概率直接影响每桶油的边际价格。"
-        },
-        {
-          "name": "黄金",
-          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
-        },
-        {
-          "name": "航空股",
-          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
-        },
-        {
-          "name": "能源股",
-          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
-        }
-      ],
-      "relatedIndustries": [
-        "能源",
-        "航空",
-        "航运",
-        "化工"
-      ],
-      "knowledgeIds": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "relatedKnowledgePoints": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "conditionsThatChangeView": [
-        "停火或紧张局势缓和",
-        "关键航线恢复正常",
-        "OPEC 或其他产油国增产",
-        "释放战略石油储备",
-        "全球需求明显下降",
-        "实际供应未受影响"
-      ],
-      "watchConditions": [
-        "停火或紧张局势缓和",
-        "关键航线恢复正常",
-        "OPEC 或其他产油国增产",
-        "释放战略石油储备",
-        "全球需求明显下降",
-        "实际供应未受影响"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/cq5yj1835y1wo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-29T03:50:40.000Z"
         }
       ]
     }
