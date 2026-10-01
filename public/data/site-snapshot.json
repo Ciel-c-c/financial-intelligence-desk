@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-01T13:12:41.596Z",
-  "lastSuccessfulAt": "2026-10-01T13:12:41.596Z",
+  "attemptedAt": "2026-10-01T18:53:17.992Z",
+  "lastSuccessfulAt": "2026-10-01T18:53:17.992Z",
   "status": "partial",
   "datasets": [
     {
       "id": "news-feed",
       "status": "partial",
       "freshness": "delayed",
-      "lastSuccessfulAt": "2026-10-01T13:12:41.596Z",
-      "dataAsOf": "2026-10-01T13:02:10.000Z",
-      "nextExpectedAt": "2026-10-01T14:12:41.596Z",
+      "lastSuccessfulAt": "2026-10-01T18:53:17.992Z",
+      "dataAsOf": "2026-10-01T18:51:56.000Z",
+      "nextExpectedAt": "2026-10-01T19:53:17.992Z",
       "fallbackReason": "部分新闻来源暂时异常，已发布其余可靠来源。"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "freshness": "delayed",
-      "lastSuccessfulAt": "2026-10-01T13:12:41.596Z",
-      "dataAsOf": "2026-09-30T00:00:00.000Z",
-      "nextExpectedAt": "2026-10-01T14:12:41.596Z"
+      "freshness": "close",
+      "lastSuccessfulAt": "2026-10-01T18:53:17.992Z",
+      "dataAsOf": "2026-10-01T00:00:00.000Z",
+      "nextExpectedAt": "2026-10-01T19:53:17.992Z"
     },
     {
       "id": "sector-performance",
@@ -34,17 +34,17 @@
       "id": "global-situation",
       "status": "partial",
       "freshness": "delayed",
-      "lastSuccessfulAt": "2026-10-01T13:12:41.596Z",
-      "dataAsOf": "2026-10-01T13:02:10.000Z",
-      "nextExpectedAt": "2026-10-01T14:12:41.596Z"
+      "lastSuccessfulAt": "2026-10-01T18:53:17.992Z",
+      "dataAsOf": "2026-10-01T18:48:46.000Z",
+      "nextExpectedAt": "2026-10-01T19:53:17.992Z"
     },
     {
       "id": "daily-brief",
       "status": "fresh",
       "freshness": "delayed",
-      "lastSuccessfulAt": "2026-10-01T13:12:41.596Z",
-      "dataAsOf": "2026-10-01T13:02:10.000Z",
-      "nextExpectedAt": "2026-10-02T01:12:41.596Z"
+      "lastSuccessfulAt": "2026-10-01T18:53:17.992Z",
+      "dataAsOf": "2026-10-01T18:51:56.000Z",
+      "nextExpectedAt": "2026-10-02T06:53:17.992Z"
     }
   ]
 }
