@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-09-30T23:48:20.973Z",
-  "lastSuccessfulAt": "2026-09-30T23:48:20.973Z",
+  "attemptedAt": "2026-10-01T05:51:53.037Z",
+  "lastSuccessfulAt": "2026-10-01T05:51:53.037Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-30T23:48:20.973Z"
+      "lastSuccessfulAt": "2026-10-01T05:51:53.037Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-09-30T23:48:20.973Z"
+      "lastSuccessfulAt": "2026-10-01T05:51:53.037Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-30T23:48:20.973Z"
+      "lastSuccessfulAt": "2026-10-01T05:51:53.037Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-09-30T23:48:20.973Z"
+      "lastSuccessfulAt": "2026-10-01T05:51:53.037Z"
     }
   ],
   "sourceHealth": [
@@ -55,7 +55,7 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 49
+      "itemCount": 50
     },
     {
       "id": "un",
@@ -67,13 +67,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 31
+      "itemCount": 32
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 38
+      "itemCount": 39
     },
     {
       "id": "bis-press",
@@ -116,7 +116,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 49
+      "itemCount": 50
     },
     {
       "id": "news-un",
@@ -128,13 +128,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 31
+      "itemCount": 32
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 38
+      "itemCount": 39
     },
     {
       "id": "news-bis-press",
@@ -158,12 +158,12 @@
       "failures": 0,
       "stages": {
         "evidence": 1,
-        "analysis": 0,
+        "analysis": 1,
         "audit": 0
       },
       "rejectionReasons": {
-        "professional-sections": 1,
-        "facts": 1
+        "facts": 1,
+        "audit": 1
       }
     }
   ],
