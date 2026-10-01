@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-10-01T18:53:17.992Z",
-  "lastSuccessfulAt": "2026-10-01T18:53:17.992Z",
+  "attemptedAt": "2026-10-01T23:11:50.923Z",
+  "lastSuccessfulAt": "2026-10-01T23:11:50.923Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -51,7 +51,7 @@
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 46
+      "itemCount": 49
     },
     {
       "id": "bis-press",
@@ -68,16 +68,164 @@
   ],
   "events": [
     {
+      "id": "b4f2cb67f512",
+      "headline": "US says Europe should ready fuel supplies as Trump threatens diesel ban",
+      "sourceHeadline": "US says Europe should ready fuel supplies as Trump threatens diesel ban",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections.",
+      "publishedAt": "2026-10-01T22:21:16.000Z",
+      "firstPublishedAt": "2026-10-01T22:21:16.000Z",
+      "latestSourceAt": "2026-10-01T22:21:16.000Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
+      "region": "europe",
+      "countries": [
+        "EU"
+      ],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections."
+      ],
+      "factSummary": "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections.",
+      "marketView": [
+        "本条来源报告：US says Europe should ready fuel supplies as Trump threatens diesel ban。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-01T22:21:16.000Z"
+        }
+      ]
+    },
+    {
       "id": "08800cceb1de",
       "headline": "Netanyahu says Flydubai attacker had 'Islamist radical indoctrination'",
       "sourceHeadline": "Netanyahu says Flydubai attacker had 'Islamist radical indoctrination'",
       "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "summary": "Israel's prime minister says the pilot who tried to take over the Flydubai plane clearly intended to \"down the plane\".",
-      "publishedAt": "2026-10-01T18:48:46.000Z",
-      "firstPublishedAt": "2026-10-01T18:48:46.000Z",
-      "latestSourceAt": "2026-10-01T18:48:46.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "publishedAt": "2026-10-01T19:59:24.000Z",
+      "firstPublishedAt": "2026-10-01T19:59:24.000Z",
+      "latestSourceAt": "2026-10-01T19:59:24.000Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "middle-east",
       "countries": [],
       "topic": "political-transition",
@@ -209,7 +357,7 @@
         {
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/crje8edqyej9o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-01T18:48:46.000Z"
+          "publishedAt": "2026-10-01T19:59:24.000Z"
         }
       ]
     },
@@ -223,7 +371,7 @@
       "publishedAt": "2026-10-01T18:38:22.000Z",
       "firstPublishedAt": "2026-10-01T18:38:22.000Z",
       "latestSourceAt": "2026-10-01T18:38:22.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -411,7 +559,7 @@
       "publishedAt": "2026-10-01T18:21:22.000Z",
       "firstPublishedAt": "2026-10-01T18:21:22.000Z",
       "latestSourceAt": "2026-10-01T18:21:22.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -846,6 +994,158 @@
       ]
     },
     {
+      "id": "92971473d44b",
+      "headline": "UN Member States weigh latest Security Council veto, this time on Iran",
+      "sourceHeadline": "UN Member States weigh latest Security Council veto, this time on Iran",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "The General Assembly met on Thursday to examine the Security Council’s latest veto, cast by China and Russia over a United States-backed sanctions panel of experts on Iran nuclear facilities.",
+      "publishedAt": "2026-10-01T12:00:00.000Z",
+      "firstPublishedAt": "2026-10-01T12:00:00.000Z",
+      "latestSourceAt": "2026-10-01T12:00:00.000Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "geopolitical-conflict",
+      "eventType": "geopolitical-conflict",
+      "relevance": {
+        "level": "high",
+        "score": 6,
+        "criteria": [
+          "trade",
+          "supplyChain",
+          "growth",
+          "fiscalPolicy",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 6,
+      "relevanceReasons": [
+        "trade",
+        "supplyChain",
+        "growth",
+        "fiscalPolicy",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The General Assembly met on Thursday to examine the Security Council’s latest veto, cast by China and Russia over a United States-backed sanctions panel of experts on Iran nuclear facilities."
+      ],
+      "factSummary": "The General Assembly met on Thursday to examine the Security Council’s latest veto, cast by China and Russia over a United States-backed sanctions panel of experts on Iran nuclear facilities.",
+      "marketView": [
+        "本条来源报告：UN Member States weigh latest Security Council veto, this time on Iran。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168505",
+          "publishedAt": "2026-10-01T12:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "6b6550aa184f",
       "headline": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
       "sourceHeadline": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
@@ -855,7 +1155,7 @@
       "publishedAt": "2026-10-01T11:37:46.000Z",
       "firstPublishedAt": "2026-10-01T11:37:46.000Z",
       "latestSourceAt": "2026-10-01T11:37:46.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1001,7 +1301,7 @@
       "publishedAt": "2026-10-01T07:57:07.000Z",
       "firstPublishedAt": "2026-10-01T07:57:07.000Z",
       "latestSourceAt": "2026-10-01T07:57:07.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1181,7 +1481,7 @@
       "publishedAt": "2026-10-01T07:08:22.000Z",
       "firstPublishedAt": "2026-10-01T07:08:22.000Z",
       "latestSourceAt": "2026-10-01T07:08:22.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1361,7 +1661,7 @@
       "publishedAt": "2026-10-01T07:04:27.000Z",
       "firstPublishedAt": "2026-10-01T07:04:27.000Z",
       "latestSourceAt": "2026-10-01T07:04:27.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1549,7 +1849,7 @@
       "publishedAt": "2026-09-30T23:50:00.000Z",
       "firstPublishedAt": "2026-09-30T23:50:00.000Z",
       "latestSourceAt": "2026-09-30T23:50:00.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "japan",
       "countries": [
         "JP"
@@ -1719,7 +2019,7 @@
       "publishedAt": "2026-09-30T23:10:06.000Z",
       "firstPublishedAt": "2026-09-30T23:10:06.000Z",
       "latestSourceAt": "2026-09-30T23:10:06.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -2195,7 +2495,7 @@
       "publishedAt": "2026-09-30T15:45:00.000Z",
       "firstPublishedAt": "2026-09-30T15:45:00.000Z",
       "latestSourceAt": "2026-09-30T15:45:00.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -2555,7 +2855,7 @@
       "publishedAt": "2026-09-30T14:36:45.000Z",
       "firstPublishedAt": "2026-09-30T14:36:45.000Z",
       "latestSourceAt": "2026-09-30T14:36:45.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -2709,7 +3009,7 @@
       "publishedAt": "2026-09-30T14:00:00.000Z",
       "firstPublishedAt": "2026-09-30T14:00:00.000Z",
       "latestSourceAt": "2026-09-30T14:00:00.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -3011,7 +3311,7 @@
       "publishedAt": "2026-09-30T10:29:13.000Z",
       "firstPublishedAt": "2026-09-30T10:29:13.000Z",
       "latestSourceAt": "2026-09-30T10:29:13.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
+      "fetchedAt": "2026-10-01T23:11:50.923Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3666,300 +3966,6 @@
           "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/crd68d96zeq8o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-09-30T05:08:19.000Z"
-        }
-      ]
-    },
-    {
-      "id": "fc7185c34a88",
-      "headline": "Trump rules out joint US-China venture to develop AI",
-      "sourceHeadline": "Trump rules out joint US-China venture to develop AI",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "The US president continues to push back on calls to establish guardrails around artificial intelligence, arguing it will stifle growth.",
-      "publishedAt": "2026-09-29T21:45:01.000Z",
-      "firstPublishedAt": "2026-09-29T21:45:01.000Z",
-      "latestSourceAt": "2026-09-29T21:45:01.000Z",
-      "fetchedAt": "2026-09-30T00:26:41.566Z",
-      "region": "china",
-      "countries": [
-        "CN"
-      ],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "The US president continues to push back on calls to establish guardrails around artificial intelligence, arguing it will stifle growth."
-      ],
-      "factSummary": "The US president continues to push back on calls to establish guardrails around artificial intelligence, arguing it will stifle growth.",
-      "marketView": [
-        "本条来源报告：Trump rules out joint US-China venture to develop AI。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/cwly5lmvy38qo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-29T21:45:01.000Z"
-        }
-      ]
-    },
-    {
-      "id": "60aa6e826089",
-      "headline": "The journalist who became king in Uganda",
-      "sourceHeadline": "The journalist who became king in Uganda",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Edward Rukidi Nyabongo I has been crowned king of Tooro in a ceremony attended by Uganda's President Museveni.",
-      "publishedAt": "2026-09-29T19:35:19.000Z",
-      "firstPublishedAt": "2026-09-29T19:35:19.000Z",
-      "latestSourceAt": "2026-09-29T19:35:19.000Z",
-      "fetchedAt": "2026-09-30T06:42:21.210Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Edward Rukidi Nyabongo I has been crowned king of Tooro in a ceremony attended by Uganda's President Museveni."
-      ],
-      "factSummary": "Edward Rukidi Nyabongo I has been crowned king of Tooro in a ceremony attended by Uganda's President Museveni.",
-      "marketView": [
-        "本条来源报告：The journalist who became king in Uganda。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/videos/cry4z9jw3wvlo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-09-29T19:35:19.000Z"
         }
       ]
     }
