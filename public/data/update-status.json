@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-02T08:34:54.278Z",
-  "lastSuccessfulAt": "2026-10-02T08:34:54.278Z",
+  "attemptedAt": "2026-10-02T15:48:17.891Z",
+  "lastSuccessfulAt": "2026-10-02T15:48:17.891Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-02T08:34:54.278Z"
+      "lastSuccessfulAt": "2026-10-02T15:48:17.891Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-02T08:34:54.278Z"
+      "lastSuccessfulAt": "2026-10-02T15:48:17.891Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-02T08:34:54.278Z"
+      "lastSuccessfulAt": "2026-10-02T15:48:17.891Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-02T08:34:54.278Z"
+      "lastSuccessfulAt": "2026-10-02T15:48:17.891Z"
     }
   ],
   "sourceHealth": [
@@ -85,7 +85,7 @@
       "id": "eia-energy",
       "name": "U.S. Energy Information Administration",
       "status": "ok",
-      "itemCount": 20
+      "itemCount": 22
     },
     {
       "id": "news-cnfin",
@@ -146,7 +146,7 @@
       "id": "news-eia-energy",
       "name": "U.S. Energy Information Administration（新闻）",
       "status": "ok",
-      "itemCount": 20
+      "itemCount": 22
     },
     {
       "id": "news-groq-editorial",
@@ -157,13 +157,12 @@
       "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 1,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "numbers": 1,
-        "facts": 1
+        "facts": 2
       }
     }
   ],
