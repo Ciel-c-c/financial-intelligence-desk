@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-03T19:57:30.048Z",
-  "lastSuccessfulAt": "2026-10-03T19:57:30.048Z",
+  "attemptedAt": "2026-10-03T23:03:08.559Z",
+  "lastSuccessfulAt": "2026-10-03T23:03:08.559Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-03T19:57:30.048Z"
+      "lastSuccessfulAt": "2026-10-03T23:03:08.559Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-03T19:57:30.048Z"
+      "lastSuccessfulAt": "2026-10-03T23:03:08.559Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-03T19:57:30.048Z"
+      "lastSuccessfulAt": "2026-10-03T23:03:08.559Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-03T19:57:30.048Z"
+      "lastSuccessfulAt": "2026-10-03T23:03:08.559Z"
     }
   ],
   "sourceHealth": [
@@ -103,8 +103,9 @@
     {
       "id": "news-fed",
       "name": "Federal Reserve（新闻）",
-      "status": "ok",
-      "itemCount": 20
+      "status": "error",
+      "itemCount": 0,
+      "error": "HTTP 404"
     },
     {
       "id": "news-ecb",
@@ -157,13 +158,12 @@
       "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 1,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "language": 1,
-        "facts": 1
+        "facts": 2
       }
     }
   ],
