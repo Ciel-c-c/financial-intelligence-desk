@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-03T06:32:08.977Z",
-  "lastSuccessfulAt": "2026-10-03T06:32:08.977Z",
-  "nextExpectedAt": "2026-10-03T07:32:08.977Z",
+  "attemptedAt": "2026-10-03T12:33:18.565Z",
+  "lastSuccessfulAt": "2026-10-03T12:33:18.565Z",
+  "nextExpectedAt": "2026-10-03T13:33:18.565Z",
   "status": "delayed",
   "latest": [
     {
@@ -15,7 +15,7 @@
       "originalTitle": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
       "originalSummary": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
       "publishedAt": "2026-10-02T20:45:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "6fc26d211911d1e3d1e1",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -60,6 +60,53 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq0ld88kzxw8o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Suppliers pile pressure on government over energy bills",
+      "originalSummary": "Immediate action is needed to help households struggling with bills this winter, says trade body Energy UK.",
+      "publishedAt": "2026-10-03T08:58:44.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "c76ceff230e65bcbd50d",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cq0ld88kzxw8o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-03T08:58:44.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|supplierspilepre|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [
+        "Immediate action is needed to help households struggling with bills this winter, says trade body Energy UK."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -69,7 +116,7 @@
       "originalTitle": "G7 to release millions of barrels of oil and diesel after Trump threat",
       "originalSummary": "The co-ordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports.",
       "publishedAt": "2026-10-03T04:38:31.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "c02a8f5c1ef57a86f64e",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -111,13 +158,13 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c83vqxzdg1yko?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cmgj9vz2zxelo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Russia strikes second major bridge in Kyiv, mayor says",
-      "originalSummary": "The attack on Northern Bridge comes after repeat attacks on another major bridge in recent days.",
-      "publishedAt": "2026-10-03T06:27:15.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "ef6daf0dd951213ca82a",
+      "originalTitle": "Will Spain's housing crisis lead to a snap election?",
+      "originalSummary": "The BBC's Guy Hedgecoe is in Madrid, where a series of marches have been scheduled, after Spain's Congress rejected measures aimed at tackling the country's housing crisis.",
+      "publishedAt": "2026-10-03T12:26:30.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "80bd9a9bc1d28637df84",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -139,10 +186,515 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|russiastrikessec|2026-10-03",
+      "clusterId": "监管|willspainshousin|2026-10-03",
       "detailStatus": "brief",
       "facts": [
-        "The attack on Northern Bridge comes after repeat attacks on another major bridge in recent days."
+        "The BBC's Guy Hedgecoe is in Madrid, where a series of marches have been scheduled, after Spain's Congress rejected measures aimed at tackling the country's housing crisis."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm2kej47095no?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Protesters across Spain demand action over housing crisis",
+      "originalSummary": "More than 50 protests are planned to take place on Saturday after the government failed to get emergency legislation through parliament.",
+      "publishedAt": "2026-10-03T12:16:15.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "fe99b60db02dd6143d2f",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|protestersacross|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [
+        "More than 50 protests are planned to take place on Saturday after the government failed to get emergency legislation through parliament."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c83vqxzdg1yko?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Russia hits second major bridge in Ukraine's capital Kyiv",
+      "originalSummary": "The strike on the Pivnichnyi (Northern) Bridge comes after repeat attacks on another major bridge in Ukraine's capital.",
+      "publishedAt": "2026-10-03T11:48:41.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "ab0bcf7ef3067c01e275",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|russiahitssecond|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [
+        "The strike on the Pivnichnyi (Northern) Bridge comes after repeat attacks on another major bridge in Ukraine's capital."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c61wv7lgex13o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Flydubai co-pilot attacked captain with axe, UAE official says",
+      "originalSummary": "The man accused of trying to take over the Israel-bound jet is named as Hamam al-Hammami by several media outlets.",
+      "publishedAt": "2026-10-03T11:20:21.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "c4c8e13848d72a1b8147",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|flydubaicopilota|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [
+        "The man accused of trying to take over the Israel-bound jet is named as Hamam al-Hammami by several media outlets."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6d095ygggv1o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "UK-Iranian dual national bailed after RAF Fairford incident arrest",
+      "originalSummary": "The 25-year-old man was arrested in the London borough of Westminster on Thursday.",
+      "publishedAt": "2026-10-03T10:58:51.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "888dd70fa85ead6234c9",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ukiraniandualnat|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [
+        "The 25-year-old man was arrested in the London borough of Westminster on Thursday."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477315_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477315_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "新华财经晚报：铁路部门优化老年人购票优惠措施",
+      "publishedAt": "2026-10-03T10:28:28.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1480,
+        "reader": "cnfin-body",
+        "sha256": "0ed373ef82fa4bf322ff6cd6ad600177f075c27563b94ef7822e7b936119be07",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477315_1.html",
+        "checkedAt": "2026-10-03T12:33:18.565Z"
+      },
+      "id": "1b2b1d395fc97ad40c68",
+      "verificationStatus": "verified",
+      "titleZh": "新华财经晚报：铁路部门优化老年人购票优惠措施",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|新华财经晚报铁路部门优化老年人购|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "0ed373ef82fa4bf322ff6cd6ad600177f075c27563b94ef7822e7b936119be07",
+        "count": 1,
+        "lastAttemptAt": "2026-10-03T12:33:18.565Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[4].numbers"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477304_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477304_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【财经分析】从能源涨价到股债承压 欧洲经济面临新一轮冲击",
+      "publishedAt": "2026-10-03T09:31:50.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 2587,
+        "reader": "cnfin-body",
+        "sha256": "4d81e28ef2bdfad2024306ffc65c8979d46f3d586bbf3a9c8175e754369c8749",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477304_1.html",
+        "checkedAt": "2026-10-03T12:33:18.565Z"
+      },
+      "id": "337c5b452b611c414094",
+      "verificationStatus": "verified",
+      "titleZh": "【财经分析】从能源涨价到股债承压 欧洲经济面临新一轮冲击",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|财经分析从能源涨价到股债承压欧洲|2026-10-03",
+      "detailStatus": "professional",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "4d81e28ef2bdfad2024306ffc65c8979d46f3d586bbf3a9c8175e754369c8749",
+        "count": 1,
+        "lastAttemptAt": "2026-10-03T12:33:18.565Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[1].numbers"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477297_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477297_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【财经分析】法国缘何成为欧洲债市动荡关注焦点",
+      "publishedAt": "2026-10-03T08:54:55.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1526,
+        "reader": "cnfin-body",
+        "sha256": "c3423ecd183eea6f4c268eda1da23c260706bed6e87103e5e4107433c312e38e",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477297_1.html",
+        "checkedAt": "2026-10-03T12:33:18.565Z"
+      },
+      "id": "cfb7005b039208b63f26",
+      "verificationStatus": "verified",
+      "titleZh": "【财经分析】法国缘何成为欧洲债市动荡关注焦点",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|财经分析法国缘何成为欧洲债市动荡|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/golf/articles/cmy0rn425k4xo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Kim wins Asian Games gold to secure military exemption",
+      "originalSummary": "Golfer Tom Kim wins gold at the Asian Games to secure an exemption from mandatory service in South Korea's military.",
+      "publishedAt": "2026-10-03T08:51:14.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "110b0764cd75c769afdf",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|kimwinsasiangame|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [
+        "Golfer Tom Kim wins gold at the Asian Games to secure an exemption from mandatory service in South Korea's military."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477294_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477294_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "开创智能网联新能源汽车全球产业合作新局面这样发力",
+      "publishedAt": "2026-10-03T08:50:17.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 689,
+        "reader": "cnfin-body",
+        "sha256": "54dbdaddc3c378f8f1c8554329feb1d3554d1643f324232684659f1a57e5765e",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477294_1.html",
+        "checkedAt": "2026-10-03T12:33:18.565Z"
+      },
+      "id": "3fcdff51fb205624c79f",
+      "verificationStatus": "verified",
+      "titleZh": "开创智能网联新能源汽车全球产业合作新局面这样发力",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|开创智能网联新能源汽车全球产业合|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477290_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477290_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "全国服务业扩能提质推进有力、态势向好",
+      "publishedAt": "2026-10-03T07:31:57.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 506,
+        "reader": "cnfin-body",
+        "sha256": "eb5ff7d6b67bce89446cc6149664aefb38ebe87c99faa21260f7093b6a4f79da",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477290_1.html",
+        "checkedAt": "2026-10-03T12:33:18.565Z"
+      },
+      "id": "d082f555acc9374f1966",
+      "verificationStatus": "verified",
+      "titleZh": "全国服务业扩能提质推进有力、态势向好",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|全国服务业扩能提质推进有力态势向|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/ckq5x5de46ppo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Joker persona helps Cong 'feel the fear' in opponents",
+      "originalSummary": "Wang Cong dismisses critics who say she she is not deserving of facing Natalia Silva for the flyweight world title at UFC 332 on Saturday.",
+      "publishedAt": "2026-10-03T07:07:09.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "78f89b8b574d4e2f206f",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|jokerpersonahelp|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [
+        "Wang Cong dismisses critics who say she she is not deserving of facing Natalia Silva for the flyweight world title at UFC 332 on Saturday."
       ],
       "expectations": [],
       "inferences": []
@@ -156,14 +708,14 @@
       "originalLanguage": "zh",
       "originalTitle": "特朗普称对伊朗下一步行动“进展顺利”",
       "publishedAt": "2026-10-03T06:21:19.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "article": {
         "status": "complete",
         "characterCount": 522,
         "reader": "cnfin-body",
         "sha256": "3ef9c37164fd7bbcf23dd7cdd580bc273b4d39f8267511843b35eec58b7e9195",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477279_1.html",
-        "checkedAt": "2026-10-03T06:32:08.977Z"
+        "checkedAt": "2026-10-03T12:33:18.565Z"
       },
       "id": "3c1ac556f80805e3a0a3",
       "verificationStatus": "verified",
@@ -216,7 +768,7 @@
       "originalTitle": "New baby bank 'open to everybody'",
       "originalSummary": "The facility offers essential items for free, including clothes for babies and small children.",
       "publishedAt": "2026-10-03T06:08:05.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "aa4ee59fd9b3154ba5ce",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -257,7 +809,7 @@
       "originalTitle": "Rising energy costs add to cost of living for Northern Ireland's consumers",
       "originalSummary": "Households across Northern Ireland face increasing pressure on the cost of living as energy price hikes have come into effect.",
       "publishedAt": "2026-10-03T05:27:43.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "486191cca78a05b9a071",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -298,7 +850,7 @@
       "originalTitle": "U.S. natural gas production reached a record high in July 2026",
       "originalSummary": "U.S. natural gas production hit an all-time high in July 2026, driven primarily by increased output in the Permian Basin, according to our latest Natural Gas Monthly.",
       "publishedAt": "2026-10-02T14:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "3d6ebd7bbc01730feb9c",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -338,7 +890,7 @@
       "originalLanguage": "en",
       "originalTitle": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "820662b2a41d7178ed3c",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -369,47 +921,6 @@
       "inferences": []
     },
     {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq0ld88kzxw8o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Suppliers pile pressure on government over energy bills",
-      "originalSummary": "Immediate action is needed to help households struggling with bills this winter, says trade body Energy UK.",
-      "publishedAt": "2026-10-03T03:47:32.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "c76ceff230e65bcbd50d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|supplierspilepre|2026-10-03",
-      "detailStatus": "brief",
-      "facts": [
-        "Immediate action is needed to help households struggling with bills this winter, says trade body Energy UK."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
       "sourceTier": "verified",
@@ -418,14 +929,14 @@
       "originalLanguage": "zh",
       "originalTitle": "商务部：对原产于欧盟的进口对硝基甲苯发起反倾销立案调查",
       "publishedAt": "2026-10-03T03:09:12.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "article": {
         "status": "complete",
         "characterCount": 385,
         "reader": "cnfin-body",
         "sha256": "9e88f4a15aca583eecfb64d2b1fbb28de671aa93f8db6dd48416d3fbd3ae6e7f",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477265_1.html",
-        "checkedAt": "2026-10-03T06:32:08.977Z"
+        "checkedAt": "2026-10-03T12:33:18.565Z"
       },
       "id": "b6ea167e841277637d65",
       "verificationStatus": "verified",
@@ -469,334 +980,6 @@
       }
     },
     {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168516",
-      "originalLanguage": "en",
-      "originalTitle": "‘Money alone won’t get us there’: UN steps up aid for 12 forgotten crises",
-      "originalSummary": "Getting aid to people in the world’s most neglected emergencies takes more than money. It takes open roads, open borders and leaders willing to help it reach those in dire need.",
-      "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "0da4a606429fba162ee6",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|moneyalonewontge|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "Getting aid to people in the world’s most neglected emergencies takes more than money. It takes open roads, open borders and leaders willing to help it reach those in dire need."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168515",
-      "originalLanguage": "en",
-      "originalTitle": "Global life expectancy bounces back to near pre-pandemic levels, WHO says",
-      "originalSummary": "People around the world are living longer again, with global life expectancy almost fully recovered from the disruption of the COVID-19 pandemic, the World Health Organization (WHO) said on Friday.",
-      "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "58194fb41efd2bc608ae",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|globallifeexpect|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "People around the world are living longer again, with global life expectancy almost fully recovered from the disruption of the COVID-19 pandemic, the World Health Organization (WHO) said on Friday."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168513",
-      "originalLanguage": "en",
-      "originalTitle": "Ukraine war ‘a human rights catastrophe’ that must end, says Türk",
-      "originalSummary": "The war in Ukraine is a human rights catastrophe that is “growing and intensifying by the week” and threatening an even greater disaster across the region, UN High Commissioner for Human Rights Volker Türk said on Friday.",
-      "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "1a766a4e5a14e63ebd7c",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ukrainewarahuman|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "The war in Ukraine is a human rights catastrophe that is “growing and intensifying by the week” and threatening an even greater disaster across the region, UN High Commissioner for Human Rights Volker Türk said on Friday."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168512",
-      "originalLanguage": "en",
-      "originalTitle": "Collective action needed to tackle global information crisis, UN-led dialogue hears",
-      "originalSummary": "Governments, UN entities, civil society, media, academia and the private sector have called for stronger cooperation and practical action to respond to a rapidly changing global information landscape.",
-      "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "e4537c35ed7dcfaff232",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|collectiveaction|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "Governments, UN entities, civil society, media, academia and the private sector have called for stronger cooperation and practical action to respond to a rapidly changing global information landscape."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168511",
-      "originalLanguage": "en",
-      "originalTitle": "World News in Brief: Cycle of violence continues in Haiti, seafarer deaths off Somalia, food insecurity in the Middle East",
-      "originalSummary": "Haitians remain in the grip of lethal gang violence as it continues to “adapt and expand”, the UN’s top rights official, Volker Türk, said on Friday.",
-      "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "bad8cfd1100647a9185f",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|worldnewsinbrief|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "Haitians remain in the grip of lethal gang violence as it continues to “adapt and expand”, the UN’s top rights official, Volker Türk, said on Friday."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168509",
-      "originalLanguage": "en",
-      "originalTitle": "Escalating fighting in Yemen deepens food security crisis",
-      "originalSummary": "Renewed conflict in Yemen has triggered a surge in hunger that could have consequences in the wider region and beyond, the World Food Programme (WFP) warned on Friday.&nbsp;",
-      "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "bbc4002dfc9a492df475",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|escalatingfighti|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "Renewed conflict in Yemen has triggered a surge in hunger that could have consequences in the wider region and beyond, the World Food Programme (WFP) warned on Friday.&nbsp;"
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168508",
-      "originalLanguage": "en",
-      "originalTitle": "Gaza: WHO appeals for massive aid influx ahead of winter",
-      "originalSummary": "Repeated delays in bringing lifesaving medicines, prosthetics and more from Israel into Gaza risk having devastating consequences on Palestinians who urgently need them in the war-torn enclave, the UN World Health Organization (WHO) said on Friday.&nbsp;",
-      "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "f7e195ebabc0d60d75c2",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|gazawhoappealsfo|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "Repeated delays in bringing lifesaving medicines, prosthetics and more from Israel into Gaza risk having devastating consequences on Palestinians who urgently need them in the war-torn enclave, the UN World Health Organization (WHO) said on Friday.&nbsp;"
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168506",
-      "originalLanguage": "en",
-      "originalTitle": "‘I have not lost my dreams’: Refugee education funding cuts threaten millions",
-      "originalSummary": "A teenage girl who fled war-torn Sudan for neighbouring Egypt and hopes to pursue a technology degree is an example of why countries must ensure that young refugees can continue to learn.",
-      "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "3349ba79c767ae898bea",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ihavenotlostmydr|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "A teenage girl who fled war-torn Sudan for neighbouring Egypt and hopes to pursue a technology degree is an example of why countries must ensure that young refugees can continue to learn."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
       "sourceTier": "verified",
@@ -805,14 +988,14 @@
       "originalLanguage": "zh",
       "originalTitle": "铁路部门优化老年人购票优惠措施",
       "publishedAt": "2026-10-03T02:51:20.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "article": {
         "status": "complete",
         "characterCount": 540,
         "reader": "cnfin-body",
         "sha256": "35856d2b63ef80fb0ccb6a5436708828fd279e4bf8ebce77c1a60cfb3ff7bd19",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477261_1.html",
-        "checkedAt": "2026-10-03T06:32:08.977Z"
+        "checkedAt": "2026-10-03T12:33:18.565Z"
       },
       "id": "c00e4f834e2049e40ffe",
       "verificationStatus": "verified",
@@ -844,17 +1027,18 @@
       "inferences": []
     },
     {
-      "sourceId": "ecb",
-      "sourceName": "European Central Bank",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
-      "canonicalUrl": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html",
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c3y0zx822wlzo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
-      "publishedAt": "2026-10-02T11:30:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "30e8d7cf24332127e113",
-      "verificationStatus": "official",
+      "originalTitle": "EV drivers love their cars, but some passengers feel sick - this could be why",
+      "originalSummary": "Research shows there are several reasons people might experience motion sickness in electric vehicles.",
+      "publishedAt": "2026-10-03T02:36:19.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "365c05e27bc540c14982",
+      "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
       "keyTerms": [
@@ -871,14 +1055,15 @@
         "供需"
       ],
       "regions": [
-        "欧洲",
         "全球"
       ],
-      "importanceScore": 70,
+      "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|borisvujiresilie|2026-10-02",
+      "clusterId": "监管|evdriverslovethe|2026-10-03",
       "detailStatus": "brief",
-      "facts": [],
+      "facts": [
+        "Research shows there are several reasons people might experience motion sickness in electric vehicles."
+      ],
       "expectations": [],
       "inferences": []
     },
@@ -892,7 +1077,7 @@
       "originalTitle": "Cornell frat house rape accuser 'under siege' online, says lawyer",
       "originalSummary": "A lawyer for Jane Doe says she is \"not doing well\" amid attempts to uncover her identity.",
       "publishedAt": "2026-10-03T02:23:07.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "683b5ef9e0b50fc2aa47",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -932,7 +1117,7 @@
       "originalLanguage": "zh",
       "originalTitle": "特朗普：与伊朗的战事将“很快结束”",
       "publishedAt": "2026-10-03T01:29:44.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "49d3be098396d10f05c0",
       "verificationStatus": "verified",
       "titleZh": "特朗普：与伊朗的战事将“很快结束”",
@@ -971,14 +1156,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【环球财经】七国集团将释放1亿桶战略石油储备 初期集中释放柴油",
       "publishedAt": "2026-10-03T01:12:12.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "article": {
         "status": "complete",
         "characterCount": 366,
         "reader": "cnfin-body",
         "sha256": "86d96b0a2f0b0bd2677967a9a25719c39d1628b2c084e5cedd2521015f5aec54",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477238_1.html",
-        "checkedAt": "2026-10-03T06:32:08.977Z"
+        "checkedAt": "2026-10-03T12:33:18.565Z"
       },
       "id": "c7c29e2f22f6421486b8",
       "verificationStatus": "verified",
@@ -1018,14 +1203,14 @@
       "originalLanguage": "zh",
       "originalTitle": "新华财经早报：10月3日",
       "publishedAt": "2026-10-03T00:56:56.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "article": {
         "status": "complete",
         "characterCount": 2159,
         "reader": "cnfin-body",
         "sha256": "2b061aa62b266b2141566b6d8ee141176b428aedc9d2a5c17fbf653b3ab5d18e",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477232_1.html",
-        "checkedAt": "2026-10-03T06:32:08.977Z"
+        "checkedAt": "2026-10-03T12:33:18.565Z"
       },
       "id": "76e058709943ec4b1eed",
       "verificationStatus": "verified",
@@ -1066,7 +1251,7 @@
       "originalTitle": "The South African men trying to end violence against women: 'Every man needs to play a part'",
       "originalSummary": "The discovery of 12 women's bodies near Johannesburg has again highlighted South Africa's problem with violence against women.",
       "publishedAt": "2026-10-02T23:56:21.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "84a1cc75dd0a38917f2c",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1107,7 +1292,7 @@
       "originalTitle": "Could El Niño mean there are no Atlantic hurricanes this year?",
       "originalSummary": "For the first time in three decades there has not been a single Atlantic hurricane in September, normally the most active month.",
       "publishedAt": "2026-10-02T23:37:13.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "68cc648d7f231c21e1d9",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1148,7 +1333,7 @@
       "originalTitle": "Women given shorts at Oktoberfest to prevent upskirting",
       "originalSummary": "The step at the Munich festival comes after thousands of voyeuristic videos emerged on social media.",
       "publishedAt": "2026-10-02T23:16:03.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "9886b2d9a1a45a9c618f",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1189,7 +1374,7 @@
       "originalTitle": "US road rage killer's sentence quashed because AI video of victim was shown in court",
       "originalSummary": "The Arizona appeals court ruled that airing an AI message from the dead victim \"crossed that line\".",
       "publishedAt": "2026-10-02T23:06:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "2d0330990aa3b4e65590",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1221,82 +1406,6 @@
       "inferences": []
     },
     {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei260930.xlsx",
-      "originalLanguage": "en",
-      "originalTitle": "Japanese Government Bonds Held by the Bank of Japan",
-      "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "3ddd4bde9bf0940c2959",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|japanesegovernme|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "boj",
-      "sourceName": "Bank of Japan",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
-      "canonicalUrl": "https://www.boj.or.jp/en/statistics/boj/other/col/col2609.xlsx",
-      "originalLanguage": "en",
-      "originalTitle": "Collateral Accepted by the Bank of Japan (End of Sept.)",
-      "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "d5f8b8bf89bf728cc2dc",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|collateralaccept|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": []
-    },
-    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -1306,7 +1415,7 @@
       "originalTitle": "The vanishing world of India's street magicians",
       "originalSummary": "India's street performers are struggling to survive as audiences shrink and public spaces become harder to access.",
       "publishedAt": "2026-10-02T22:59:05.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "3d04b8d421243fc3cba4",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1347,7 +1456,7 @@
       "originalTitle": "Why UK diesel prices have breached the £2 per litre mark",
       "originalSummary": "The average price of a litre of diesel at the pump stands at an all-time high of 200.01p, according to the RAC motoring body.",
       "publishedAt": "2026-10-02T13:38:22.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "0656048d6811746ccb0a",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -1394,7 +1503,7 @@
       "originalTitle": "Riot police clash with students as education protests rage in France",
       "originalSummary": "About 735 schools have faced disruption as violent protests over standards and lack of teachers continue.",
       "publishedAt": "2026-10-02T21:13:27.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "d3ff37a37825e7de250e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1435,7 +1544,7 @@
       "originalTitle": "Hawaii's iconic 550-year-old Hōlei Sea Arch collapses",
       "originalSummary": "The lava rock formation protruding from the rocky cliffs of Volcanoes National Park crumbled some time last weekend.",
       "publishedAt": "2026-10-02T21:00:41.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "352e426434a92033d61e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1476,7 +1585,7 @@
       "originalTitle": "Newly released video shows Luigi Mangione’s arrest",
       "originalSummary": "The bodycam footage also shows a police officer finding a gun in Mangione's backpack, days after the killing of UnitedHealthcare CEO Brian Thompson.",
       "publishedAt": "2026-10-02T20:37:34.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "1457970fe2715ce710c9",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1517,7 +1626,7 @@
       "originalTitle": "US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say",
       "originalSummary": "As of Thursday night, Pike remained critically ill and is being treated at a hospital in Nashville, Tennessee.",
       "publishedAt": "2026-10-02T20:32:07.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "e478af96e36a04161cef",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1558,7 +1667,7 @@
       "originalTitle": "How widely used is the death penalty in the US?",
       "originalSummary": "The death penalty is back in the news after Christa Pike survived two lethal injection attempts in Tennessee - but how widely used is it in the US?",
       "publishedAt": "2026-10-02T19:56:28.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "826979d647ab00c3b729",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1599,7 +1708,7 @@
       "originalTitle": "Watch: Why has UK diesel price hit an all time high?",
       "originalSummary": "Diesel has now hit an average of £2 a litre in the UK, the RAC motoring group says, with petrol prices also rising.",
       "publishedAt": "2026-10-02T16:58:30.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "d0f8862d27c25867267c",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1635,59 +1744,12 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6y9z9r4ejzwo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "OpenAI fires workers for 'mishandling sensitive information'",
-      "originalSummary": "The former employees were investigated for sharing data with an outside AI evaluation group.",
-      "publishedAt": "2026-10-02T08:20:32.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "bd7f6ab5f21704cc55be",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/c6y9z9r4ejzwo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-02T08:20:32.000Z"
-        }
-      ],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|openaifiresworke|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "The former employees were investigated for sharing data with an outside AI evaluation group."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
       "originalSummary": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region.",
       "publishedAt": "2026-10-02T16:08:25.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "845197b8782625c4d39b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1728,7 +1790,7 @@
       "originalTitle": "UK diesel prices top £2 a litre for first time, RAC says",
       "originalSummary": "The rise in global oil prices has been pushing up the pump prices of petrol and diesel in the UK.",
       "publishedAt": "2026-10-02T15:50:05.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "d00c06cb8dcedeabe8ca",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1764,53 +1826,12 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c623dlk4y75mo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Spanish PM Sánchez loses key housing crisis vote after eviction of woman, 87",
-      "originalSummary": "The defeat raises pressure on Sánchez to call a snap election, after a series of scandals affecting his party and allies.",
-      "publishedAt": "2026-10-02T15:30:12.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "b8a24799b03e0775ddf3",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|spanishpmsnchezl|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "The defeat raises pressure on Sánchez to call a snap election, after a series of scandals affecting his party and allies."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/videos/cr5ynddn318eo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "Watch: Why students in France are protesting",
       "originalSummary": "Demonstrations started in the French capital, then spread across the country in the days that followed.",
       "publishedAt": "2026-10-02T15:02:15.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "f11d43e68ed15d0687b1",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1851,7 +1872,7 @@
       "originalTitle": "US jobs market sees sharp slowdown ahead of midterm elections",
       "originalSummary": "Unemployment rose slightly as American employers paused hiring with midterm elections just a month away.",
       "publishedAt": "2026-10-02T14:30:48.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "22f01b773f942343de61",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1892,7 +1913,7 @@
       "originalTitle": "I've seen nearly 500 executions - but never one like Christa Pike's",
       "originalSummary": "Texas reporter Michael Graczyk has seen botched executions in his time, but not one in which an inmate survived.",
       "publishedAt": "2026-10-02T14:01:09.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "74c4d25d47633a971d3e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1933,7 +1954,7 @@
       "originalTitle": "School protests send shivers down French government's spine",
       "originalSummary": "A movement that started nearly two weeks ago has spread, and in France young people on the streets spells trouble, writes Hugh Schofield.",
       "publishedAt": "2026-10-02T12:43:02.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "d25c411675a3912e6107",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1963,408 +1984,51 @@
       ],
       "expectations": [],
       "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmwyzye21463o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "No more cereal at the end of the aisle? New rules in Scotland's supermarkets",
-      "originalSummary": "Restrictions are being put on products with high sugar, fat and salt content, but the meal deal lives on.",
-      "publishedAt": "2026-10-02T10:47:07.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "8b7dcf35403be6179c0c",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|nomorecerealatth|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "Restrictions are being put on products with high sugar, fat and salt content, but the meal deal lives on."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477220_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477220_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "新华财经晚报：国家发展改革委民营局向民营企业公开推介投资项目",
-      "publishedAt": "2026-10-02T09:48:59.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 2288,
-        "reader": "cnfin-body",
-        "sha256": "7b7acbf5f1ddd272ed5d6cc89969c88b2a728b5f22f24c87fe955fb59d56cc41",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477220_1.html",
-        "checkedAt": "2026-10-03T06:32:08.977Z"
-      },
-      "id": "12994b22fe05e6114876",
-      "verificationStatus": "verified",
-      "titleZh": "新华财经晚报：国家发展改革委民营局向民营企业公开推介投资项目",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|新华财经晚报国家发展改革委民营局|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "7b7acbf5f1ddd272ed5d6cc89969c88b2a728b5f22f24c87fe955fb59d56cc41",
-        "count": 1,
-        "lastAttemptAt": "2026-10-02T15:48:17.891Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[1].numbers"
-          ]
-        }
-      }
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477211_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477211_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "国庆假期首日高速公路充电量同比增长60.4%",
-      "publishedAt": "2026-10-02T09:15:35.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 190,
-        "reader": "cnfin-body",
-        "sha256": "e774bcfe93eac2ea34f6b7c6efc88e2a58fedce60f3985e8de66fe0631137359",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477211_1.html",
-        "checkedAt": "2026-10-03T06:32:08.977Z"
-      },
-      "id": "1d90e0c9a5d816a9afce",
-      "verificationStatus": "verified",
-      "titleZh": "国庆假期首日高速公路充电量同比增长60.4%",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|国庆假期首日高速公路充电量同比增|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "e774bcfe93eac2ea34f6b7c6efc88e2a58fedce60f3985e8de66fe0631137359",
-        "count": 1,
-        "lastAttemptAt": "2026-10-02T15:48:17.891Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "background[0].numbers"
-          ]
-        }
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c639m98gde00o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'I was not going to let others die' - pilot of Flydubai flight describes cockpit attack by co-pilot",
-      "originalSummary": "Capt Smit Machchhar tells Indian Prime Minister Narendra Modi he opened the cockpit door to let others in during the attack.",
-      "publishedAt": "2026-10-02T09:08:06.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "b0634e0a21c4201945aa",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|iwasnotgoingtole|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "Capt Smit Machchhar tells Indian Prime Minister Narendra Modi he opened the cockpit door to let others in during the attack."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "US pressures Europe to release diesel reserves as Trump threatens export ban",
-      "originalSummary": "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections.",
-      "publishedAt": "2026-10-02T08:54:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "381a1c9151805b9aeca4",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|uspressureseurop|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c914d43y7xn4o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Watch: Emotional pilot recounts moment of Flydubai attack",
-      "originalSummary": "He has been hailed a hero for opening the cockpit door, allowing passengers to overpower his co-pilot.",
-      "publishedAt": "2026-10-02T08:46:37.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "56931a7afec819192975",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|watchemotionalpi|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "He has been hailed a hero for opening the cockpit door, allowing passengers to overpower his co-pilot."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477203_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477203_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "超2500万人次 铁路旅客发送量创单日新高",
-      "publishedAt": "2026-10-02T08:16:28.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 491,
-        "reader": "cnfin-body",
-        "sha256": "3f38454e1a53759df3c8b71fa5c913c1ad375e336d095617a2051e73c825f006",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477203_1.html",
-        "checkedAt": "2026-10-03T06:32:08.977Z"
-      },
-      "id": "f4dffd1bf7e0fb6305c2",
-      "verificationStatus": "verified",
-      "titleZh": "超2500万人次 铁路旅客发送量创单日新高",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|超2500万人次铁路旅客发送量创|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "3f38454e1a53759df3c8b71fa5c913c1ad375e336d095617a2051e73c825f006",
-        "count": 1,
-        "lastAttemptAt": "2026-10-02T08:34:54.278Z",
-        "rejection": {
-          "stage": "analysis",
-          "category": "numbers",
-          "fields": []
-        }
-      }
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477200_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477200_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "欧洲债市剧震背后的三重压力",
-      "publishedAt": "2026-10-02T07:04:57.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 1463,
-        "reader": "cnfin-body",
-        "sha256": "48ac2569a1d61d320433e0371c92db313e17df52e9cb3ec7a91e94192ec4bce1",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477200_1.html",
-        "checkedAt": "2026-10-03T06:32:08.977Z"
-      },
-      "id": "81b592ac6b5cf10a296a",
-      "verificationStatus": "verified",
-      "titleZh": "欧洲债市剧震背后的三重压力",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|欧洲债市剧震背后的三重压力|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "48ac2569a1d61d320433e0371c92db313e17df52e9cb3ec7a91e94192ec4bce1",
-        "count": 1,
-        "lastAttemptAt": "2026-10-02T08:34:54.278Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[1].quote"
-          ]
-        }
-      }
     }
   ],
   "continuing": [],
   "retainedDetails": [
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c83vqxzdg1yko?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Russia strikes second major bridge in Kyiv, mayor says",
+      "originalSummary": "The attack on Northern Bridge comes after repeat attacks on another major bridge in recent days.",
+      "publishedAt": "2026-10-03T06:27:15.000Z",
+      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "id": "ef6daf0dd951213ca82a",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|russiastrikessec|2026-10-03",
+      "detailStatus": "brief",
+      "facts": [
+        "The attack on Northern Bridge comes after repeat attacks on another major bridge in recent days."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
     {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
@@ -2589,6 +2253,47 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c623dlk4y75mo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Spanish PM Sánchez loses key housing crisis vote after eviction of woman, 87",
+      "originalSummary": "The defeat raises pressure on Sánchez to call a snap election, after a series of scandals affecting his party and allies.",
+      "publishedAt": "2026-10-02T15:30:12.000Z",
+      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "id": "b8a24799b03e0775ddf3",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|spanishpmsnchezl|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "The defeat raises pressure on Sánchez to call a snap election, after a series of scandals affecting his party and allies."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6wyv44y4ywjo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "Intensified Russian strikes are tearing Kyiv apart, warns mayor",
@@ -2751,6 +2456,334 @@
       "inferences": []
     },
     {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168516",
+      "originalLanguage": "en",
+      "originalTitle": "‘Money alone won’t get us there’: UN steps up aid for 12 forgotten crises",
+      "originalSummary": "Getting aid to people in the world’s most neglected emergencies takes more than money. It takes open roads, open borders and leaders willing to help it reach those in dire need.",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "0da4a606429fba162ee6",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|moneyalonewontge|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "Getting aid to people in the world’s most neglected emergencies takes more than money. It takes open roads, open borders and leaders willing to help it reach those in dire need."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168515",
+      "originalLanguage": "en",
+      "originalTitle": "Global life expectancy bounces back to near pre-pandemic levels, WHO says",
+      "originalSummary": "People around the world are living longer again, with global life expectancy almost fully recovered from the disruption of the COVID-19 pandemic, the World Health Organization (WHO) said on Friday.",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "58194fb41efd2bc608ae",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|globallifeexpect|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "People around the world are living longer again, with global life expectancy almost fully recovered from the disruption of the COVID-19 pandemic, the World Health Organization (WHO) said on Friday."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168513",
+      "originalLanguage": "en",
+      "originalTitle": "Ukraine war ‘a human rights catastrophe’ that must end, says Türk",
+      "originalSummary": "The war in Ukraine is a human rights catastrophe that is “growing and intensifying by the week” and threatening an even greater disaster across the region, UN High Commissioner for Human Rights Volker Türk said on Friday.",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "1a766a4e5a14e63ebd7c",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ukrainewarahuman|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "The war in Ukraine is a human rights catastrophe that is “growing and intensifying by the week” and threatening an even greater disaster across the region, UN High Commissioner for Human Rights Volker Türk said on Friday."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168512",
+      "originalLanguage": "en",
+      "originalTitle": "Collective action needed to tackle global information crisis, UN-led dialogue hears",
+      "originalSummary": "Governments, UN entities, civil society, media, academia and the private sector have called for stronger cooperation and practical action to respond to a rapidly changing global information landscape.",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "e4537c35ed7dcfaff232",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|collectiveaction|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "Governments, UN entities, civil society, media, academia and the private sector have called for stronger cooperation and practical action to respond to a rapidly changing global information landscape."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168511",
+      "originalLanguage": "en",
+      "originalTitle": "World News in Brief: Cycle of violence continues in Haiti, seafarer deaths off Somalia, food insecurity in the Middle East",
+      "originalSummary": "Haitians remain in the grip of lethal gang violence as it continues to “adapt and expand”, the UN’s top rights official, Volker Türk, said on Friday.",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "bad8cfd1100647a9185f",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|worldnewsinbrief|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "Haitians remain in the grip of lethal gang violence as it continues to “adapt and expand”, the UN’s top rights official, Volker Türk, said on Friday."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168509",
+      "originalLanguage": "en",
+      "originalTitle": "Escalating fighting in Yemen deepens food security crisis",
+      "originalSummary": "Renewed conflict in Yemen has triggered a surge in hunger that could have consequences in the wider region and beyond, the World Food Programme (WFP) warned on Friday.&nbsp;",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "bbc4002dfc9a492df475",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|escalatingfighti|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "Renewed conflict in Yemen has triggered a surge in hunger that could have consequences in the wider region and beyond, the World Food Programme (WFP) warned on Friday.&nbsp;"
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168508",
+      "originalLanguage": "en",
+      "originalTitle": "Gaza: WHO appeals for massive aid influx ahead of winter",
+      "originalSummary": "Repeated delays in bringing lifesaving medicines, prosthetics and more from Israel into Gaza risk having devastating consequences on Palestinians who urgently need them in the war-torn enclave, the UN World Health Organization (WHO) said on Friday.&nbsp;",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "f7e195ebabc0d60d75c2",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|gazawhoappealsfo|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "Repeated delays in bringing lifesaving medicines, prosthetics and more from Israel into Gaza risk having devastating consequences on Palestinians who urgently need them in the war-torn enclave, the UN World Health Organization (WHO) said on Friday.&nbsp;"
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168506",
+      "originalLanguage": "en",
+      "originalTitle": "‘I have not lost my dreams’: Refugee education funding cuts threaten millions",
+      "originalSummary": "A teenage girl who fled war-torn Sudan for neighbouring Egypt and hopes to pursue a technology degree is an example of why countries must ensure that young refugees can continue to learn.",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "3349ba79c767ae898bea",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ihavenotlostmydr|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "A teenage girl who fled war-torn Sudan for neighbouring Egypt and hopes to pursue a technology degree is an example of why countries must ensure that young refugees can continue to learn."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -2833,6 +2866,45 @@
       "inferences": []
     },
     {
+      "sourceId": "ecb",
+      "sourceName": "European Central Bank",
+      "sourceTier": "official",
+      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
+      "canonicalUrl": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html",
+      "originalLanguage": "en",
+      "originalTitle": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
+      "publishedAt": "2026-10-02T11:30:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "30e8d7cf24332127e113",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "欧洲",
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|borisvujiresilie|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-business",
       "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
@@ -2869,6 +2941,47 @@
       "detailStatus": "brief",
       "facts": [
         "The RAC says diesel price rises are showing no signs of slowing, \"heaping more misery\" onto drivers."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmwyzye21463o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "No more cereal at the end of the aisle? New rules in Scotland's supermarkets",
+      "originalSummary": "Restrictions are being put on products with high sugar, fat and salt content, but the meal deal lives on.",
+      "publishedAt": "2026-10-02T10:47:07.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "8b7dcf35403be6179c0c",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|nomorecerealatth|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "Restrictions are being put on products with high sugar, fat and salt content, but the meal deal lives on."
       ],
       "expectations": [],
       "inferences": []
@@ -2915,6 +3028,227 @@
       "inferences": []
     },
     {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477220_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477220_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "新华财经晚报：国家发展改革委民营局向民营企业公开推介投资项目",
+      "publishedAt": "2026-10-02T09:48:59.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 2288,
+        "reader": "cnfin-body",
+        "sha256": "7b7acbf5f1ddd272ed5d6cc89969c88b2a728b5f22f24c87fe955fb59d56cc41",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477220_1.html",
+        "checkedAt": "2026-10-03T12:33:18.565Z"
+      },
+      "id": "12994b22fe05e6114876",
+      "verificationStatus": "verified",
+      "titleZh": "新华财经晚报：国家发展改革委民营局向民营企业公开推介投资项目",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|新华财经晚报国家发展改革委民营局|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "7b7acbf5f1ddd272ed5d6cc89969c88b2a728b5f22f24c87fe955fb59d56cc41",
+        "count": 1,
+        "lastAttemptAt": "2026-10-02T15:48:17.891Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[1].numbers"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477211_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477211_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "国庆假期首日高速公路充电量同比增长60.4%",
+      "publishedAt": "2026-10-02T09:15:35.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "1d90e0c9a5d816a9afce",
+      "verificationStatus": "verified",
+      "titleZh": "国庆假期首日高速公路充电量同比增长60.4%",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|国庆假期首日高速公路充电量同比增|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c639m98gde00o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "'I was not going to let others die' - pilot of Flydubai flight describes cockpit attack by co-pilot",
+      "originalSummary": "Capt Smit Machchhar tells Indian Prime Minister Narendra Modi he opened the cockpit door to let others in during the attack.",
+      "publishedAt": "2026-10-02T09:08:06.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "b0634e0a21c4201945aa",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|iwasnotgoingtole|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "Capt Smit Machchhar tells Indian Prime Minister Narendra Modi he opened the cockpit door to let others in during the attack."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "US pressures Europe to release diesel reserves as Trump threatens export ban",
+      "originalSummary": "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections.",
+      "publishedAt": "2026-10-02T08:54:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "381a1c9151805b9aeca4",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|uspressureseurop|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c914d43y7xn4o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Watch: Emotional pilot recounts moment of Flydubai attack",
+      "originalSummary": "He has been hailed a hero for opening the cockpit door, allowing passengers to overpower his co-pilot.",
+      "publishedAt": "2026-10-02T08:46:37.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "56931a7afec819192975",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|watchemotionalpi|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "He has been hailed a hero for opening the cockpit door, allowing passengers to overpower his co-pilot."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "bbc-business",
       "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
@@ -2951,6 +3285,53 @@
       "detailStatus": "brief",
       "facts": [
         "The minimum price of alcohol (MUP) in Wales has risen by 30%."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6y9z9r4ejzwo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "OpenAI fires workers for 'mishandling sensitive information'",
+      "originalSummary": "The former employees were investigated for sharing data with an outside AI evaluation group.",
+      "publishedAt": "2026-10-02T08:20:32.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "bd7f6ab5f21704cc55be",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/c6y9z9r4ejzwo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-02T08:20:32.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|openaifiresworke|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [
+        "The former employees were investigated for sharing data with an outside AI evaluation group."
       ],
       "expectations": [],
       "inferences": []
@@ -3003,6 +3384,198 @@
       "inferences": []
     },
     {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477203_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477203_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "超2500万人次 铁路旅客发送量创单日新高",
+      "publishedAt": "2026-10-02T08:16:28.000Z",
+      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 491,
+        "reader": "cnfin-body",
+        "sha256": "3f38454e1a53759df3c8b71fa5c913c1ad375e336d095617a2051e73c825f006",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477203_1.html",
+        "checkedAt": "2026-10-03T06:32:08.977Z"
+      },
+      "id": "f4dffd1bf7e0fb6305c2",
+      "verificationStatus": "verified",
+      "titleZh": "超2500万人次 铁路旅客发送量创单日新高",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|超2500万人次铁路旅客发送量创|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "3f38454e1a53759df3c8b71fa5c913c1ad375e336d095617a2051e73c825f006",
+        "count": 1,
+        "lastAttemptAt": "2026-10-02T08:34:54.278Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": []
+        }
+      }
+    },
+    {
+      "sourceId": "boj",
+      "sourceName": "Bank of Japan",
+      "sourceTier": "official",
+      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
+      "canonicalUrl": "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei260930.xlsx",
+      "originalLanguage": "en",
+      "originalTitle": "Japanese Government Bonds Held by the Bank of Japan",
+      "publishedAt": "2026-10-02T08:00:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "3ddd4bde9bf0940c2959",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|japanesegovernme|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "boj",
+      "sourceName": "Bank of Japan",
+      "sourceTier": "official",
+      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
+      "canonicalUrl": "https://www.boj.or.jp/en/statistics/boj/other/col/col2609.xlsx",
+      "originalLanguage": "en",
+      "originalTitle": "Collateral Accepted by the Bank of Japan (End of Sept.)",
+      "publishedAt": "2026-10-02T08:00:00.000Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
+      "id": "d5f8b8bf89bf728cc2dc",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|collateralaccept|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477200_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477200_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "欧洲债市剧震背后的三重压力",
+      "publishedAt": "2026-10-02T07:04:57.000Z",
+      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1463,
+        "reader": "cnfin-body",
+        "sha256": "48ac2569a1d61d320433e0371c92db313e17df52e9cb3ec7a91e94192ec4bce1",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261002/4477200_1.html",
+        "checkedAt": "2026-10-03T06:32:08.977Z"
+      },
+      "id": "81b592ac6b5cf10a296a",
+      "verificationStatus": "verified",
+      "titleZh": "欧洲债市剧震背后的三重压力",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|欧洲债市剧震背后的三重压力|2026-10-02",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "48ac2569a1d61d320433e0371c92db313e17df52e9cb3ec7a91e94192ec4bce1",
+        "count": 1,
+        "lastAttemptAt": "2026-10-02T08:34:54.278Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[1].quote"
+          ]
+        }
+      }
+    },
+    {
       "sourceId": "bbc-business",
       "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
@@ -3053,7 +3626,7 @@
       "originalTitle": "Japan's first mayor to take maternity leave lands on TIME100 Next list",
       "originalSummary": "Shoko Kawata's maternity leave drew mixed reactions in Japan, a country struggling to lift birth rates.",
       "publishedAt": "2026-10-02T05:53:51.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "9c99fa0ae745279cd420",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3135,7 +3708,7 @@
       "originalTitle": "Australia says platforms like Steam and Roblox have 'significant' child safety gaps",
       "originalSummary": "Fortnite and Minecraft also told to 'lift their game' by online safety regulator.",
       "publishedAt": "2026-10-02T04:21:31.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "d3565a94ad1fb73b84fc",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3437,7 +4010,7 @@
       "originalTitle": "Seoul warns 'further action' if Ukraine does not apologise over prisoner-of-war row",
       "originalSummary": "President Lee Jae Myung also accused Kyiv of \"attempting to provoke a war on the Korean Peninsula\".",
       "publishedAt": "2026-10-02T03:09:13.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "12c6e3a2b91ff408aac0",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4055,7 +4628,7 @@
       "originalLanguage": "en",
       "originalTitle": "Average Contract Interest Rates on Loans and Discounts (Aug.)",
       "publishedAt": "2026-10-01T23:50:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "db1fbc0bb3de321a3de1",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -4093,7 +4666,7 @@
       "originalLanguage": "en",
       "originalTitle": "Monetary Base (Sept.)",
       "publishedAt": "2026-10-01T23:50:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "07c03de10d5921c24750",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -4131,7 +4704,7 @@
       "originalLanguage": "en",
       "originalTitle": "Tankan (Sept.): Comprehensive Data Set",
       "publishedAt": "2026-10-01T23:50:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "966479b08ac99ce7c62c",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -4211,7 +4784,7 @@
       "originalTitle": "Crypto thieves attack man in home and threaten to kill pregnant wife's baby in 'horrific' robbery",
       "originalSummary": "The man was beaten with hammers until he transferred hundreds of thousands of pounds of cryptocurrency.",
       "publishedAt": "2026-10-01T23:45:06.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "a56d5b0b8d281442c0a5",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4252,7 +4825,7 @@
       "originalTitle": "Spain and China are cosying up - to the anger of many in the EU",
       "originalSummary": "Amid global tumult, the two countries' alliance is not the only unlikely pairing.",
       "publishedAt": "2026-10-01T23:42:33.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "903344f41ab99a5f0a93",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4293,7 +4866,7 @@
       "originalTitle": "What's gone wrong at Nike? How the world's sportswear giant lost its mojo",
       "originalSummary": "Several self-inflicted mistakes have cost the biggest sportswear brand on the planet in recent years.",
       "publishedAt": "2026-10-01T23:32:59.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
+      "fetchedAt": "2026-10-03T12:33:18.565Z",
       "id": "1c73e21b61811b0c8f0c",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4370,912 +4943,6 @@
       ],
       "expectations": [],
       "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c68xk0ndqz8jo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'It could cost me £10k but I need the money now': Why Gen Z are opting out of pensions",
-      "originalSummary": "A growing number of people are opting out of these schemes due to cost-of-living pressures.",
-      "publishedAt": "2026-10-01T23:00:06.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "247cd9d7ecace1408242",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|itcouldcostme10k|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "A growing number of people are opting out of these schemes due to cost-of-living pressures."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckrerylrlg9vo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "The wealthy Cuban Americans ready and waiting for Havana to fall",
-      "originalSummary": "Cuban exiles in Florida are increasingly hopeful that regime change in Cuba is now on the horizon.",
-      "publishedAt": "2026-10-01T23:00:05.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "df455e4ef7e39cf7f8af",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/ckrerylrlg9vo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-01T23:00:05.000Z"
-        }
-      ],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|thewealthycubana|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "Cuban exiles in Florida are increasingly hopeful that regime change in Cuba is now on the horizon."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckrerylrlg9vo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "The wealthy Cuban Americans ready and waiting for Havana to fall",
-      "originalSummary": "Cuban exiles in Florida are increasingly hopeful that regime change in Cuba is now on the horizon.",
-      "publishedAt": "2026-10-01T23:00:05.000Z",
-      "fetchedAt": "2026-10-02T02:15:04.265Z",
-      "id": "82bb2037d52eee24cd62",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|thewealthycubana|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "Cuban exiles in Florida are increasingly hopeful that regime change in Cuba is now on the horizon."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Christa Pike in critical condition after surviving two lethal injections, lawyer says",
-      "originalSummary": "Pike’s lawyers have asked for her death sentence to be commuted following the botched execution.",
-      "publishedAt": "2026-10-01T22:28:45.000Z",
-      "fetchedAt": "2026-10-02T08:34:54.278Z",
-      "id": "f17d2bd488f52405e530",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|christapikeincri|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "Pike’s lawyers have asked for her death sentence to be commuted following the botched execution."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c6rr4r704en4o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Why are these endangered moths swarming Australia's east coast?",
-      "originalSummary": "The sudden influx of Bogong moths has caused a stir in cities like Sydney and Canberra, with people filming them infiltrating their homes and cars.",
-      "publishedAt": "2026-10-01T22:26:05.000Z",
-      "fetchedAt": "2026-10-03T00:29:40.740Z",
-      "id": "62bdbe8e9e946e879428",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|whyaretheseendan|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "The sudden influx of Bogong moths has caused a stir in cities like Sydney and Canberra, with people filming them infiltrating their homes and cars."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "US says Europe should ready fuel supplies as Trump threatens diesel ban",
-      "originalSummary": "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections.",
-      "publishedAt": "2026-10-01T22:21:16.000Z",
-      "fetchedAt": "2026-10-02T02:15:04.265Z",
-      "id": "27ebdc35db29dbc5e60a",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ussayseuropeshou|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwly7y5gvxlmo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Renee Good: Family of US woman killed by ICE agent sues Trump officials",
-      "originalSummary": "Lawyers for Good's family say US officials created \"an unprecedented environment for state sponsored violence\" in Minneapolis.",
-      "publishedAt": "2026-10-01T20:30:47.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "8a4b9eac1002fc932a32",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|reneegoodfamilyo|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "Lawyers for Good's family say US officials created \"an unprecedented environment for state sponsored violence\" in Minneapolis."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cwe8e82jgm8po?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "What we know about Christa Pike’s condition after failed execution",
-      "originalSummary": "The BBC’s Ione Wells reports from outside the Tennessee hospital where Pike is said to have arrived Wednesday night after surviving two lethal injection attempts.",
-      "publishedAt": "2026-10-01T20:09:34.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "3364293551a5f2421f87",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|whatweknowaboutc|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "The BBC’s Ione Wells reports from outside the Tennessee hospital where Pike is said to have arrived Wednesday night after surviving two lethal injection attempts."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crje8edqyej9o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Netanyahu says Flydubai attacker had 'Islamist radical indoctrination'",
-      "originalSummary": "Israel's prime minister says the pilot who tried to take over the Flydubai plane clearly intended to \"down the plane\".",
-      "publishedAt": "2026-10-01T19:59:24.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "0a08c7b04ae82b29ed3c",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|netanyahusaysfly|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "Israel's prime minister says the pilot who tried to take over the Flydubai plane clearly intended to \"down the plane\"."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqg7k7v499jjo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Putin warns West that Russia is ready to use every weapon to protect Kaliningrad",
-      "originalSummary": "The Russian leader insists Moscow is \"not threatening anyone\" and is merely responding to statements by Western leaders.",
-      "publishedAt": "2026-10-01T19:38:30.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "ecf2a7756ea5031e6c7e",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|putinwarnswestth|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "The Russian leader insists Moscow is \"not threatening anyone\" and is merely responding to statements by Western leaders."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6d080d1e3l4o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Fires break out at French schools as students protest nationwide",
-      "originalSummary": "The French government holds a crisis meeting as demonstrations grow and become violent in places.",
-      "publishedAt": "2026-10-01T19:19:00.000Z",
-      "fetchedAt": "2026-10-02T08:34:54.278Z",
-      "id": "216890470daad8f9c946",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|firesbreakoutatf|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "The French government holds a crisis meeting as demonstrations grow and become violent in places."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Christa Pike is alive and receiving 'life-saving care' in hospital, her lawyers say",
-      "originalSummary": "Pike had been on death row since she was convicted in 1996 for the murder of Colleen Slemmer.",
-      "publishedAt": "2026-10-01T18:51:56.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
-      "id": "ad564aa8f67d6c2f0035",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|christapikeisali|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "Pike had been on death row since she was convicted in 1996 for the murder of Colleen Slemmer."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmrl6lz454lgo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "PM warned Rosebank oil field could breach West Bank sanctions",
-      "originalSummary": "Campaigners and Green Party leader Zack Polanski raise concerns about Rosebank's ties to an Israeli firm.",
-      "publishedAt": "2026-10-01T18:38:22.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "6791eef018d8d128b806",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|pmwarnedrosebank|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "Campaigners and Green Party leader Zack Polanski raise concerns about Rosebank's ties to an Israeli firm."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cjkg7g93y5yno?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "HMRC urged to scrutinise tax implications of Man City case",
-      "originalSummary": "The Treasury Committee, which is responsible for overseeing HMRC, has urged the body to scrutinise tax implications of the Manchester City verdict.",
-      "publishedAt": "2026-10-01T18:21:22.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "e038398e114b107a5a9b",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|hmrcurgedtoscrut|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "The Treasury Committee, which is responsible for overseeing HMRC, has urged the body to scrutinise tax implications of the Manchester City verdict."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck24j46424veo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Thames Water apologises after £145,000 customer billing mistake",
-      "originalSummary": "The firm has apologised to the family.",
-      "publishedAt": "2026-10-01T18:09:16.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "fe94d1e35fdad5025ed9",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|thameswaterapolo|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "The firm has apologised to the family."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "UK in talks with EU partners to release strategic fuel reserves if needed, BBC understands",
-      "originalSummary": "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US.",
-      "publishedAt": "2026-10-01T17:27:37.000Z",
-      "fetchedAt": "2026-10-01T18:53:17.992Z",
-      "id": "424711007bfc0e645a58",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|ukintalkswitheup|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c93429dg425o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Travelodge failed sex assault victim 'at every stage'",
-      "originalSummary": "Room intrusions were still being reported at one-in-10 Travelodge hotels this summer, a review finds.",
-      "publishedAt": "2026-10-01T16:40:03.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "c20ee49d50c65bd348ca",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|travelodgefailed|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "Room intrusions were still being reported at one-in-10 Travelodge hotels this summer, a review finds."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c5rm9mdperemo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "SpaceX launches crew to ISS",
-      "originalSummary": "The Falcon 9 rocket blasted off from Cape Canaveral with two Americans, a Russian and a Canadian who will spend up to six months aboard the International Space Station.",
-      "publishedAt": "2026-10-01T16:32:17.000Z",
-      "fetchedAt": "2026-10-02T08:34:54.278Z",
-      "id": "5855b59383f8d386cfd6",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|spacexlaunchescr|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "The Falcon 9 rocket blasted off from Cape Canaveral with two Americans, a Russian and a Canadian who will spend up to six months aboard the International Space Station."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmge4exg44v5o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Algeria introduces death penalty for arsonists after deadly wildfires",
-      "originalSummary": "It is estimated more than 200 people have died in blazes in the north-east of the country over the summer.",
-      "publishedAt": "2026-10-01T16:31:35.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "00014172205dcad70e7d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|algeriaintroduce|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "It is estimated more than 200 people have died in blazes in the north-east of the country over the summer."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw1l6lq41gm6o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'We must keep going' says charity hit by fuel prices",
-      "originalSummary": "Both petrol and diesel prices have risen by a third or more in just the past seven months.",
-      "publishedAt": "2026-10-01T16:12:12.000Z",
-      "fetchedAt": "2026-10-02T08:34:54.278Z",
-      "id": "d6e411b4d3e3f89b18bf",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|wemustkeepgoings|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "Both petrol and diesel prices have risen by a third or more in just the past seven months."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "ecb",
-      "sourceName": "European Central Bank",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
-      "canonicalUrl": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261001_1~a0be67193b.en.pdf",
-      "originalLanguage": "en",
-      "originalTitle": "Isabel Schnabel: Central banks on-chain",
-      "publishedAt": "2026-10-01T15:30:00.000Z",
-      "fetchedAt": "2026-10-03T06:32:08.977Z",
-      "id": "63d1c1773d8855e5bd4e",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "欧洲",
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|isabelschnabelce|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cmy5z5qx19pwo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Is it time to ditch premium bonds?",
-      "originalSummary": "Martin Lewis says though they are the UK's most popular form of savings, not everybody benefits from them. Martin explains who premium bonds are best for, and who they aren’t so good for.",
-      "publishedAt": "2026-10-01T15:28:18.000Z",
-      "fetchedAt": "2026-10-02T08:34:54.278Z",
-      "id": "2e1abc0a844801d05fdd",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|isittimetoditchp|2026-10-01",
-      "detailStatus": "brief",
-      "facts": [
-        "Martin Lewis says though they are the UK's most popular form of savings, not everybody benefits from them. Martin explains who premium bonds are best for, and who they aren’t so good for."
-      ],
-      "expectations": [],
-      "inferences": []
     }
   ],
   "sourceHealth": [
@@ -5320,7 +4987,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 37
+      "itemCount": 42
     },
     {
       "id": "bbc-business",
@@ -5349,13 +5016,12 @@
       "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 1,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 1,
-        "language": 1
+        "facts": 2
       }
     }
   ],
