@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-10-04T09:46:29.229Z",
-  "lastSuccessfulAt": "2026-10-04T09:46:29.229Z",
+  "attemptedAt": "2026-10-04T15:21:53.918Z",
+  "lastSuccessfulAt": "2026-10-04T15:21:53.918Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -20,8 +20,9 @@
     {
       "id": "fed",
       "name": "Federal Reserve",
-      "status": "ok",
-      "itemCount": 20
+      "status": "error",
+      "itemCount": 0,
+      "error": "HTTP 404"
     },
     {
       "id": "ecb",
@@ -45,7 +46,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 21
+      "itemCount": 20
     },
     {
       "id": "bbc-business",
@@ -68,16 +69,162 @@
   ],
   "events": [
     {
+      "id": "f455e8e89325",
+      "headline": "Yemen announces military campaign to reclaim land from Iran-backed Houthis",
+      "sourceHeadline": "Yemen announces military campaign to reclaim land from Iran-backed Houthis",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition.",
+      "publishedAt": "2026-10-04T14:24:56.000Z",
+      "firstPublishedAt": "2026-10-04T14:24:56.000Z",
+      "latestSourceAt": "2026-10-04T14:24:56.000Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
+      "region": "middle-east",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition."
+      ],
+      "factSummary": "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition.",
+      "marketView": [
+        "本条来源报告：Yemen announces military campaign to reclaim land from Iran-backed Houthis。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-04T14:24:56.000Z"
+        }
+      ]
+    },
+    {
       "id": "7facde93318d",
       "headline": "What to know about Brazil's election pitting Lula against Flávio Bolsonaro",
       "sourceHeadline": "What to know about Brazil's election pitting Lula against Flávio Bolsonaro",
       "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "summary": "Polls suggest the election will be a closely run contest between the left-wing incumbent and his right-wing rival.",
-      "publishedAt": "2026-10-04T04:53:29.000Z",
-      "firstPublishedAt": "2026-10-04T04:53:29.000Z",
-      "latestSourceAt": "2026-10-04T04:53:29.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "publishedAt": "2026-10-04T11:03:20.000Z",
+      "firstPublishedAt": "2026-10-04T11:03:20.000Z",
+      "latestSourceAt": "2026-10-04T11:03:20.000Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -209,7 +356,7 @@
         {
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/c6wyz0r2n0djo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-04T04:53:29.000Z"
+          "publishedAt": "2026-10-04T11:03:20.000Z"
         }
       ]
     },
@@ -223,7 +370,7 @@
       "publishedAt": "2026-10-04T03:42:15.000Z",
       "firstPublishedAt": "2026-10-04T03:42:15.000Z",
       "latestSourceAt": "2026-10-04T03:42:15.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -369,7 +516,7 @@
       "publishedAt": "2026-10-04T00:11:25.000Z",
       "firstPublishedAt": "2026-10-04T00:11:25.000Z",
       "latestSourceAt": "2026-10-04T00:11:25.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -515,7 +662,7 @@
       "publishedAt": "2026-10-03T23:30:06.000Z",
       "firstPublishedAt": "2026-10-03T23:30:06.000Z",
       "latestSourceAt": "2026-10-03T23:30:06.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -661,7 +808,7 @@
       "publishedAt": "2026-10-03T13:52:13.000Z",
       "firstPublishedAt": "2026-10-03T13:52:13.000Z",
       "latestSourceAt": "2026-10-03T13:52:13.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -809,7 +956,7 @@
       "publishedAt": "2026-10-03T12:26:30.000Z",
       "firstPublishedAt": "2026-10-03T12:26:30.000Z",
       "latestSourceAt": "2026-10-03T12:26:30.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1101,7 +1248,7 @@
       "publishedAt": "2026-10-03T08:58:44.000Z",
       "firstPublishedAt": "2026-10-03T08:58:44.000Z",
       "latestSourceAt": "2026-10-03T08:58:44.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1281,7 +1428,7 @@
       "publishedAt": "2026-10-03T05:27:43.000Z",
       "firstPublishedAt": "2026-10-03T05:27:43.000Z",
       "latestSourceAt": "2026-10-03T05:27:43.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1461,7 +1608,7 @@
       "publishedAt": "2026-10-03T04:38:31.000Z",
       "firstPublishedAt": "2026-10-03T04:38:31.000Z",
       "latestSourceAt": "2026-10-03T04:38:31.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1633,7 +1780,7 @@
       "marketReaction": [],
       "sources": [
         {
-          "name": "BBC News · 世界",
+          "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-10-03T04:38:31.000Z"
         }
@@ -1837,7 +1984,7 @@
       "publishedAt": "2026-10-02T15:50:05.000Z",
       "firstPublishedAt": "2026-10-02T15:50:05.000Z",
       "latestSourceAt": "2026-10-02T15:50:05.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -2171,7 +2318,7 @@
       "publishedAt": "2026-10-02T14:30:48.000Z",
       "firstPublishedAt": "2026-10-02T14:30:48.000Z",
       "latestSourceAt": "2026-10-02T14:30:48.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2319,7 +2466,7 @@
       "publishedAt": "2026-10-02T13:00:00.000Z",
       "firstPublishedAt": "2026-10-02T13:00:00.000Z",
       "latestSourceAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -2635,7 +2782,7 @@
       "publishedAt": "2026-10-02T08:54:00.000Z",
       "firstPublishedAt": "2026-10-02T08:54:00.000Z",
       "latestSourceAt": "2026-10-02T08:54:00.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -2931,7 +3078,7 @@
       "publishedAt": "2026-10-01T23:50:00.000Z",
       "firstPublishedAt": "2026-10-01T23:50:00.000Z",
       "latestSourceAt": "2026-10-01T23:50:00.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "japan",
       "countries": [
         "JP"
@@ -3541,7 +3688,7 @@
       "publishedAt": "2026-10-01T18:38:22.000Z",
       "firstPublishedAt": "2026-10-01T18:38:22.000Z",
       "latestSourceAt": "2026-10-01T18:38:22.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -3716,158 +3863,6 @@
           "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/cmrl6lz454lgo?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-10-01T18:38:22.000Z"
-        }
-      ]
-    },
-    {
-      "id": "de93fae4beea",
-      "headline": "HMRC urged to scrutinise tax implications of Man City case",
-      "sourceHeadline": "HMRC urged to scrutinise tax implications of Man City case",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "The Treasury Committee, which is responsible for overseeing HMRC, has urged the body to scrutinise tax implications of the Manchester City verdict.",
-      "publishedAt": "2026-10-01T18:21:22.000Z",
-      "firstPublishedAt": "2026-10-01T18:21:22.000Z",
-      "latestSourceAt": "2026-10-01T18:21:22.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
-      "region": "united-states",
-      "countries": [
-        "US"
-      ],
-      "topic": "fiscal-policy",
-      "eventType": "fiscal-policy",
-      "relevance": {
-        "level": "high",
-        "score": 6,
-        "criteria": [
-          "inflation",
-          "growth",
-          "centralBank",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows"
-        ]
-      },
-      "marketRelevance": "high",
-      "marketRelevanceScore": 6,
-      "relevanceReasons": [
-        "inflation",
-        "growth",
-        "centralBank",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows"
-      ],
-      "fact": [
-        "The Treasury Committee, which is responsible for overseeing HMRC, has urged the body to scrutinise tax implications of the Manchester City verdict."
-      ],
-      "factSummary": "The Treasury Committee, which is responsible for overseeing HMRC, has urged the body to scrutinise tax implications of the Manchester City verdict.",
-      "marketView": [
-        "本条来源报告：HMRC urged to scrutinise tax implications of Man City case。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "fiscal-multiplier",
-        "public-debt",
-        "bonds",
-        "cpi"
-      ],
-      "relatedKnowledgePoints": [
-        "fiscal-multiplier",
-        "public-debt",
-        "bonds",
-        "cpi"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cjkg7g93y5yno?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-01T18:21:22.000Z"
         }
       ]
     }
