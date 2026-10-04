@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-03T23:03:08.559Z",
-  "lastSuccessfulAt": "2026-10-03T23:03:08.559Z",
+  "attemptedAt": "2026-10-04T02:38:19.755Z",
+  "lastSuccessfulAt": "2026-10-04T02:38:19.755Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-03T23:03:08.559Z"
+      "lastSuccessfulAt": "2026-10-04T02:38:19.755Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-03T23:03:08.559Z"
+      "lastSuccessfulAt": "2026-10-04T02:38:19.755Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-03T23:03:08.559Z"
+      "lastSuccessfulAt": "2026-10-04T02:38:19.755Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-03T23:03:08.559Z"
+      "lastSuccessfulAt": "2026-10-04T02:38:19.755Z"
     }
   ],
   "sourceHealth": [
@@ -55,7 +55,7 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 49
     },
     {
       "id": "un",
@@ -103,9 +103,8 @@
     {
       "id": "news-fed",
       "name": "Federal Reserve（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "HTTP 404"
+      "status": "ok",
+      "itemCount": 20
     },
     {
       "id": "news-ecb",
@@ -117,7 +116,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 49
     },
     {
       "id": "news-un",
@@ -158,12 +157,13 @@
       "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 2
+        "facts": 1,
+        "language": 1
       }
     }
   ],
