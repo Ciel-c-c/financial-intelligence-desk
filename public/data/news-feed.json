@@ -1,10 +1,87 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-05T02:00:08.595Z",
-  "lastSuccessfulAt": "2026-10-05T02:00:08.595Z",
-  "nextExpectedAt": "2026-10-05T03:00:08.595Z",
+  "attemptedAt": "2026-10-05T09:02:53.784Z",
+  "lastSuccessfulAt": "2026-10-05T09:02:53.784Z",
+  "nextExpectedAt": "2026-10-05T10:02:53.784Z",
   "status": "delayed",
   "latest": [
+    {
+      "sourceId": "ecb",
+      "sourceName": "European Central Bank",
+      "sourceTier": "official",
+      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
+      "canonicalUrl": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261005~1d8d998ef4.en.html",
+      "originalLanguage": "en",
+      "originalTitle": "Philip R. Lane: Diagnostic Challenges for ECB Monetary Policy",
+      "publishedAt": "2026-10-05T08:00:00.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "61af533189e97a6e1182",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "欧洲",
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|philiprlanediagn|2026-10-05",
+      "detailStatus": "professional",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "boj",
+      "sourceName": "Bank of Japan",
+      "sourceTier": "official",
+      "sourceUrl": "https://www.boj.or.jp/en/rss/whatsnew.xml",
+      "canonicalUrl": "https://www.boj.or.jp/en/research/research_data/gap/index.htm",
+      "originalLanguage": "en",
+      "originalTitle": "Output Gap, Potential Growth Rate, and Labor Market Indicators",
+      "publishedAt": "2026-10-05T05:00:00.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "08075917ed20945e79df",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|outputgappotenti|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
     {
       "sourceId": "boj",
       "sourceName": "Bank of Japan",
@@ -14,7 +91,7 @@
       "originalLanguage": "en",
       "originalTitle": "Opening Remarks by Deputy Governor UCHIDA at the ECONDAT 2026 Fall Meeting (AI, Big Data, and Monetary Policy)",
       "publishedAt": "2026-10-05T00:20:00.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "e97e27dadec9c05fd288",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -52,7 +129,7 @@
       "originalLanguage": "en",
       "originalTitle": "8th Conference on Nontraditional Data, Machine Learning, and Natural Language Processing in Macroeconomics (ECONDAT 2026 Fall Meeting)",
       "publishedAt": "2026-10-05T00:20:00.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "c3a8af785c928f603467",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -90,7 +167,7 @@
       "originalLanguage": "en",
       "originalTitle": "Sources of Changes in Current Account Balances (Projections for Oct.)",
       "publishedAt": "2026-10-04T23:50:00.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "164f553e98c8bb3d235d",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -120,6 +197,337 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqj6jenp26zyo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Trump unveils 'Super Intelligence Force' to oversee AI policy",
+      "originalSummary": "The president named his national intelligence chief as the taskforce's head as worries over AI grow.",
+      "publishedAt": "2026-10-05T06:15:29.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "89f764bf2a9a81909bfc",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cqj6jenp26zyo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-05T06:15:29.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|trumpunveilssupe|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "The president named his national intelligence chief as the taskforce's head as worries over AI grow."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c8r4yxpry5e9o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Average five-year mortgage rate hits 6% for first time in three years",
+      "originalSummary": "The cost of a new fixed-rate mortgage has been rising in recent weeks as lenders face higher costs.",
+      "publishedAt": "2026-10-05T09:02:21.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "c2724f8c7b7db6c83ebb",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "利率"
+      ],
+      "causalSignals": [
+        "利率→住房融资"
+      ],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
+      "impactChannels": [
+        "利率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 70,
+      "clusterId": "货币政策|averagefiveyearm|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "The cost of a new fixed-rate mortgage has been rising in recent weeks as lenders face higher costs."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvze4g06526ro?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "BT agrees rescue deal to buy broadband operator TalkTalk",
+      "originalSummary": "The takeover still needs to be approved by the regulator, but would give certainty to TalkTalk's millions of customers",
+      "publishedAt": "2026-10-05T08:31:39.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "db8bfdf13346d1c5d9f6",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|btagreesrescuede|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "The takeover still needs to be approved by the regulator, but would give certainty to TalkTalk's millions of customers"
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqm249v07j4xo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Ethiopian rebel forces withdraw from Tigray regional capital",
+      "originalSummary": "Two residents in Mekelle tell the BBC pro-government forces have taken control of the city.",
+      "publishedAt": "2026-10-05T08:29:12.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "90e536ba0bb742c6ea16",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|ethiopianrebelfo|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "Two residents in Mekelle tell the BBC pro-government forces have taken control of the city."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmwyve191dlko?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "US air force removes all bombers from British military base RAF Fairford",
+      "originalSummary": "No reason has been given for the withdrawal, but it follows a major incident last week when police were alerted to \"suspicious vehicles\" near the airbase.",
+      "publishedAt": "2026-10-05T08:28:37.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "d7d2a000df9e4b513a88",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|usairforceremove|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "No reason has been given for the withdrawal, but it follows a major incident last week when police were alerted to \"suspicious vehicles\" near the airbase."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477468_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477468_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【财经分析】巴西总统选举选情为何胶着",
+      "publishedAt": "2026-10-05T07:39:34.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1575,
+        "reader": "cnfin-body",
+        "sha256": "673c3a311e316ab51d933a6ac9e5ffb3d28efe6572899d06c4c925c84242994e",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477468_1.html",
+        "checkedAt": "2026-10-05T09:02:53.784Z"
+      },
+      "id": "e601d4c7a7c92816db20",
+      "verificationStatus": "verified",
+      "titleZh": "【财经分析】巴西总统选举选情为何胶着",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|财经分析巴西总统选举选情为何胶着|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "673c3a311e316ab51d933a6ac9e5ffb3d28efe6572899d06c4c925c84242994e",
+        "count": 1,
+        "lastAttemptAt": "2026-10-05T09:02:53.784Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[0].numbers"
+          ]
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477464_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477464_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【环球财经】法国财政担忧加剧 欧元跌至17个月低点",
+      "publishedAt": "2026-10-05T07:38:43.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 377,
+        "reader": "cnfin-body",
+        "sha256": "5d1df17f239fc993f50ce1675db40297bf8427f0a3397f292ee7b968dcea1e6d",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477464_1.html",
+        "checkedAt": "2026-10-05T09:02:53.784Z"
+      },
+      "id": "564525d5bd6d511139d4",
+      "verificationStatus": "verified",
+      "titleZh": "【环球财经】法国财政担忧加剧 欧元跌至17个月低点",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|环球财经法国财政担忧加剧欧元跌至|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "analysisAttempt": {
+        "sourceBodyHash": "5d1df17f239fc993f50ce1675db40297bf8427f0a3397f292ee7b968dcea1e6d",
+        "count": 1,
+        "lastAttemptAt": "2026-10-05T09:02:53.784Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "language",
+          "fields": [
+            "soWhat.expectationGap"
+          ]
+        }
+      }
+    },
+    {
       "sourceId": "bbc-business",
       "sourceName": "BBC News · 财经",
       "sourceTier": "verified",
@@ -129,7 +537,7 @@
       "originalTitle": "The job interview question you don't have to answer",
       "originalSummary": "Experts explain what you should do if you are asked for your current salary during a job interview.",
       "publishedAt": "2026-10-04T23:22:07.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "c30a5abd70fb15936d95",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -167,6 +575,346 @@
       "inferences": []
     },
     {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cr4glg9p4188o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "How much is your salary?",
+      "originalSummary": "And would you reveal it in a job interview?",
+      "publishedAt": "2026-10-05T05:33:59.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "8e4e2d9e74f102a2e531",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|howmuchisyoursal|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "And would you reveal it in a job interview?"
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmkg79z04w4zo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Supporters of jailed ex-PM Imran Khan march to Pakistan capital",
+      "originalSummary": "Thousands have taken to the streets after talks between authorities and Khan's party ended in deadlock.",
+      "publishedAt": "2026-10-05T05:28:46.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "3af04584a726f94d79af",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|supportersofjail|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "Thousands have taken to the streets after talks between authorities and Khan's party ended in deadlock."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477441_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477441_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【财经分析】全球柴油价格缘何持续上涨",
+      "publishedAt": "2026-10-05T05:25:46.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1777,
+        "reader": "cnfin-body",
+        "sha256": "6aa53df83e08c2df52d3af8565b974f82cc6616333cfdefa9904bf26b5419cd5",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477441_1.html",
+        "checkedAt": "2026-10-05T09:02:53.784Z"
+      },
+      "id": "5c15fd0463824f0c7275",
+      "verificationStatus": "verified",
+      "titleZh": "【财经分析】全球柴油价格缘何持续上涨",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|财经分析全球柴油价格缘何持续上涨|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cwp9g54v9xjlo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Watch: How Brazil's dramatic election unfolded",
+      "originalSummary": "Millions of Brazilians took to the polls on Sunday for the first round of the country's presidential elections.",
+      "publishedAt": "2026-10-05T04:51:24.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "a3bdd199f8a03bafc5f9",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|watchhowbrazilsd|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "Millions of Brazilians took to the polls on Sunday for the first round of the country's presidential elections."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwkg5n7lm3y5o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "France closes up to 500 schools Monday over student protests",
+      "originalSummary": "Lessons will be \"totally or partly suspended\" in some high schools after clashes between riot police and student protesters, France's education minister says.",
+      "publishedAt": "2026-10-05T04:49:14.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "0de477503bcb44947736",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|franceclosesupto|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "Lessons will be \"totally or partly suspended\" in some high schools after clashes between riot police and student protesters, France's education minister says."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmze4g8r6nr9o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "All six passengers presumed dead after plane went missing off US coast",
+      "originalSummary": "The aircraft lost communication with flight controllers after significantly dropping in altitude, according to flight data.",
+      "publishedAt": "2026-10-05T04:00:35.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "40457ace578c0595fa5e",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|allsixpassengers|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "The aircraft lost communication with flight controllers after significantly dropping in altitude, according to flight data."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477433_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477433_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "解码流动中国的活力与韧性——2026年国庆假期半程观察",
+      "publishedAt": "2026-10-05T03:17:17.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 3675,
+        "reader": "cnfin-body",
+        "sha256": "2c901b81940608c8792a6886c49f19dd6ee33051f7f7c80feb2dc4e54dee3a9c",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477433_1.html",
+        "checkedAt": "2026-10-05T09:02:53.784Z"
+      },
+      "id": "200418fca994d8eddd1d",
+      "verificationStatus": "verified",
+      "titleZh": "解码流动中国的活力与韧性——2026年国庆假期半程观察",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|解码流动中国的活力与韧性2026|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Right-wing Flávio Bolsonaro wins first round of Brazil election",
+      "originalSummary": "With neither candidate getting more than 50% of the vote, the election will go to a run-off on 25 October.",
+      "publishedAt": "2026-10-05T03:16:16.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "fede62b442ae06c97622",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|rightwingflviobo|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "With neither candidate getting more than 50% of the vote, the election will go to a run-off on 25 October."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
       "sourceId": "un",
       "sourceName": "UN News",
       "sourceTier": "official",
@@ -176,7 +924,7 @@
       "originalTitle": "Beyond the Moon: Space Week around the world",
       "originalSummary": "Right after the Soviet Union launched Sputnik in 1957, UNOOSA, the UN Office for Outer Space Affairs, was established and has since been monitoring developments across more than 77 successful lunar missions and other journeys while also taking a lead role in the annual World Space Week, which runs from 4 to 10 October.",
       "publishedAt": "2026-10-04T12:00:00.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "bbf8828ed5b95bb4e227",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -217,7 +965,7 @@
       "originalTitle": "‘He felt heard’: How a film brought a UN report to life in Xochimilco",
       "originalSummary": "A documentary drawn from United Nations University research was screened at the COP30 climate conference and film festivals across Europe. Its most important journey, though, was the one back to the Mexico City canals where it was filmed.",
       "publishedAt": "2026-10-04T12:00:00.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "d3a31d10695ab08f3aa8",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -257,14 +1005,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【财经分析】9月中国大宗商品价格指数创四年半新高 能源、化工价格指数大幅走高",
       "publishedAt": "2026-10-05T01:55:15.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "article": {
         "status": "complete",
         "characterCount": 1728,
         "reader": "cnfin-body",
         "sha256": "3ae765e4bf5519731f8b0a0f5efe3705967bb7c5064d297553ea4bf7be09a7b4",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477423_1.html",
-        "checkedAt": "2026-10-05T02:00:08.595Z"
+        "checkedAt": "2026-10-05T09:02:53.784Z"
       },
       "id": "cf94acc6784ab55d63db",
       "verificationStatus": "verified",
@@ -317,7 +1065,7 @@
       "originalTitle": "How India became dangerously addicted to Chinese imports",
       "originalSummary": "India’s toy shops provide an unlikely barometer by which to measure its economic relationship with China.",
       "publishedAt": "2026-10-05T01:42:11.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "5da7bf352f7613768d23",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -349,47 +1097,6 @@
       "inferences": []
     },
     {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqj6jenp26zyo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Trump announces 'Super Intelligence Force' to oversee AI policy",
-      "originalSummary": "The president named his national intelligence chief will head the taskforce as worries over the technology grow.",
-      "publishedAt": "2026-10-05T01:33:08.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "id": "3428341cca7cdc100a54",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|trumpannouncessu|2026-10-05",
-      "detailStatus": "brief",
-      "facts": [
-        "The president named his national intelligence chief will head the taskforce as worries over the technology grow."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
       "sourceTier": "verified",
@@ -398,7 +1105,7 @@
       "originalLanguage": "zh",
       "originalTitle": "胡塞武装称对沙特阿美设施发动袭击",
       "publishedAt": "2026-10-05T00:51:57.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "d472f23483b978ed90cd",
       "verificationStatus": "verified",
       "titleZh": "胡塞武装称对沙特阿美设施发动袭击",
@@ -437,14 +1144,14 @@
       "originalLanguage": "zh",
       "originalTitle": "国庆假期过半消费市场平稳有序",
       "publishedAt": "2026-10-05T00:51:56.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "article": {
         "status": "complete",
         "characterCount": 370,
         "reader": "cnfin-body",
         "sha256": "ca42474c97a7b00c217e19811f23b936a6e2c9ba241253cedb1a787476ad2b35",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477413_1.html",
-        "checkedAt": "2026-10-05T02:00:08.595Z"
+        "checkedAt": "2026-10-05T09:02:53.784Z"
       },
       "id": "5019b776653aae991535",
       "verificationStatus": "verified",
@@ -496,14 +1203,14 @@
       "originalLanguage": "zh",
       "originalTitle": "胡塞武装称沙特24小时内发动百次空袭和导弹袭击",
       "publishedAt": "2026-10-05T00:33:32.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "article": {
         "status": "complete",
         "characterCount": 317,
         "reader": "cnfin-body",
         "sha256": "cc08921bd7eedeed32b5c9c1933924016aa12d8dce35250fb28a18d520e2611e",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477403_1.html",
-        "checkedAt": "2026-10-05T02:00:08.595Z"
+        "checkedAt": "2026-10-05T09:02:53.784Z"
       },
       "id": "db5863ec8f9163706b5c",
       "verificationStatus": "verified",
@@ -543,14 +1250,14 @@
       "originalLanguage": "zh",
       "originalTitle": "德国承诺向乌克兰再提供10亿欧元军援",
       "publishedAt": "2026-10-05T00:33:31.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "article": {
         "status": "complete",
         "characterCount": 310,
         "reader": "cnfin-body",
         "sha256": "c29018bb1f25a440e56c2af8addf429e9a7abb0532ac92c93e963ea9f00ae29f",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477406_1.html",
-        "checkedAt": "2026-10-05T02:00:08.595Z"
+        "checkedAt": "2026-10-05T09:02:53.784Z"
       },
       "id": "2dc0dfa2b740050b2750",
       "verificationStatus": "verified",
@@ -590,14 +1297,14 @@
       "originalLanguage": "zh",
       "originalTitle": "伊朗外长：敌方军事行动将遭到“更具毁灭性”回击",
       "publishedAt": "2026-10-05T00:33:30.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "article": {
         "status": "complete",
         "characterCount": 324,
         "reader": "cnfin-body",
         "sha256": "2c056521500ab15e818ed74a768e6355ad32b8f7ba294229d4cea85325017e74",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477399_1.html",
-        "checkedAt": "2026-10-05T02:00:08.595Z"
+        "checkedAt": "2026-10-05T09:02:53.784Z"
       },
       "id": "6ef5f44cdba07578b6d2",
       "verificationStatus": "verified",
@@ -637,14 +1344,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【环球财经】“欧佩克+”主要产油国决定11月维持产量不变",
       "publishedAt": "2026-10-05T00:32:16.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "article": {
         "status": "complete",
         "characterCount": 335,
         "reader": "cnfin-body",
         "sha256": "b4313f87f0d4740eaca357db57cdc09383aba899b8dbe10df602fe907d6f788f",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477396_1.html",
-        "checkedAt": "2026-10-05T02:00:08.595Z"
+        "checkedAt": "2026-10-05T09:02:53.784Z"
       },
       "id": "bde870a163f3a53f5982",
       "verificationStatus": "verified",
@@ -684,14 +1391,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【环球财经】特朗普宣布组建“超级智能工作组”",
       "publishedAt": "2026-10-05T00:31:38.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "article": {
         "status": "complete",
         "characterCount": 390,
         "reader": "cnfin-body",
         "sha256": "f574404385a2f1aa066da09dec80fddf5617b3fd68761c4b710cf2e047d67056",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477393_1.html",
-        "checkedAt": "2026-10-05T02:00:08.595Z"
+        "checkedAt": "2026-10-05T09:02:53.784Z"
       },
       "id": "545b871d51a22ad0b14b",
       "verificationStatus": "verified",
@@ -731,15 +1438,7 @@
       "originalLanguage": "zh",
       "originalTitle": "新华财经早报：10月5日",
       "publishedAt": "2026-10-05T00:28:59.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 2923,
-        "reader": "cnfin-body",
-        "sha256": "af1e9b30df0cc1e7419ae5d845a2f64463bca97c320f9354055d1c9cc46cf6e4",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261005/4477382_1.html",
-        "checkedAt": "2026-10-05T02:00:08.595Z"
-      },
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "48eccd5be31155af2052",
       "verificationStatus": "verified",
       "titleZh": "新华财经早报：10月5日",
@@ -766,6 +1465,296 @@
       "clusterId": "监管|新华财经早报10月5日|2026-10-05",
       "detailStatus": "brief",
       "facts": [],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmy4z93n9n1zo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Forced to call him 'Dad': Trial over sexual abuse in disabled care home shocks South Korea",
+      "originalSummary": "The BBC spoke to one of three residents at a care home who were sexually assaulted by a staff member.",
+      "publishedAt": "2026-10-04T22:11:33.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "33cb7ffff5e9db126006",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|forcedtocallhimd|2026-10-04",
+      "detailStatus": "brief",
+      "facts": [
+        "The BBC spoke to one of three residents at a care home who were sexually assaulted by a staff member."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9e8lvm6nrr3o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Indian police accused of sexually harassing journalists at protest",
+      "originalSummary": "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls.",
+      "publishedAt": "2026-10-04T17:01:19.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "f8fc6e19ee7a5574aa5a",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|indianpoliceaccu|2026-10-04",
+      "detailStatus": "brief",
+      "facts": [
+        "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Yemen's government announces all-out war to reclaim land from Houthis",
+      "originalSummary": "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition.",
+      "publishedAt": "2026-10-04T16:51:30.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "5b5f4408dfb83b281967",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "汇率"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "汇率"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|yemensgovernment|2026-10-04",
+      "detailStatus": "brief",
+      "facts": [
+        "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckgelynyg7d3o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Christa Pike's prognosis still unclear after failed execution, lawyer says",
+      "originalSummary": "Pike's lawyer says doctors are still trying to clear two lethal doses of pentobarbital from her body.",
+      "publishedAt": "2026-10-04T16:24:48.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "41006c999c5f5d1e7371",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|christapikesprog|2026-10-04",
+      "detailStatus": "brief",
+      "facts": [
+        "Pike's lawyer says doctors are still trying to clear two lethal doses of pentobarbital from her body."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cmglwkyl9djyo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Watch: What we know about Russian strikes on Kyiv bridges",
+      "originalSummary": "BBC Ukraine correspondent Dan Johnson is near Kyiv's Northern Bridge, which has been hit for the second day in a row.",
+      "publishedAt": "2026-10-04T14:25:32.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "7aeb7f62361ece77df37",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|watchwhatweknowa|2026-10-04",
+      "detailStatus": "brief",
+      "facts": [
+        "BBC Ukraine correspondent Dan Johnson is near Kyiv's Northern Bridge, which has been hit for the second day in a row."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckreyjzzzywqo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Kyiv bridge hit in further Russian drone attack as German chancellor makes surprise visit",
+      "originalSummary": "Footage shows a drone hitting the Pivnichyi (Northern) Bridge as vehicles move across it, creating a large fireball.",
+      "publishedAt": "2026-10-04T12:09:04.000Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
+      "id": "f122232ae652e23a35e0",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|kyivbridgehitinf|2026-10-04",
+      "detailStatus": "brief",
+      "facts": [
+        "Footage shows a drone hitting the Pivnichyi (Northern) Bridge as vehicles move across it, creating a large fireball."
+      ],
+      "expectations": [],
+      "inferences": []
+    }
+  ],
+  "continuing": [],
+  "retainedDetails": [
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqj6jenp26zyo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Trump announces 'Super Intelligence Force' to oversee AI policy",
+      "originalSummary": "The president named his national intelligence chief will head the taskforce as worries over the technology grow.",
+      "publishedAt": "2026-10-05T01:33:08.000Z",
+      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "id": "3428341cca7cdc100a54",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|trumpannouncessu|2026-10-05",
+      "detailStatus": "brief",
+      "facts": [
+        "The president named his national intelligence chief will head the taskforce as worries over the technology grow."
+      ],
       "expectations": [],
       "inferences": []
     },
@@ -856,6 +1845,47 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Polls close in Brazil as Lula and Flávio Bolsonaro remain neck and neck",
+      "originalSummary": "If no candidate gets more than 50% of the vote, the election will go to a run-off on 25 October.",
+      "publishedAt": "2026-10-04T21:11:49.000Z",
+      "fetchedAt": "2026-10-04T23:08:48.164Z",
+      "id": "91eb19656c58acc2723d",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|pollscloseinbraz|2026-10-04",
+      "detailStatus": "brief",
+      "facts": [
+        "If no candidate gets more than 50% of the vote, the election will go to a run-off on 25 October."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6wyz0r2n0djo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "What to know about Brazil's election as Lula and Flávio Bolsonaro face off",
@@ -899,11 +1929,11 @@
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9e8lvm6nrr3o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Indian police accused of sexually harassing journalists at protest",
+      "originalTitle": "Indian police accused of sexual harassment against journalists at protest",
       "originalSummary": "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls.",
       "publishedAt": "2026-10-04T17:01:19.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "id": "f8fc6e19ee7a5574aa5a",
+      "fetchedAt": "2026-10-04T19:36:55.194Z",
+      "id": "8669b477064ac2618dc4",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -929,88 +1959,6 @@
       "detailStatus": "brief",
       "facts": [
         "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Yemen's government announces all-out war to reclaim land from Houthis",
-      "originalSummary": "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition.",
-      "publishedAt": "2026-10-04T16:51:30.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "id": "5b5f4408dfb83b281967",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "汇率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "汇率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|yemensgovernment|2026-10-04",
-      "detailStatus": "brief",
-      "facts": [
-        "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckgelynyg7d3o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Christa Pike's prognosis still unclear after failed execution, lawyer says",
-      "originalSummary": "Pike's lawyer says doctors are still trying to clear two lethal doses of pentobarbital from her body.",
-      "publishedAt": "2026-10-04T16:24:48.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "id": "41006c999c5f5d1e7371",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|christapikesprog|2026-10-04",
-      "detailStatus": "brief",
-      "facts": [
-        "Pike's lawyer says doctors are still trying to clear two lethal doses of pentobarbital from her body."
       ],
       "expectations": [],
       "inferences": []
@@ -1061,18 +2009,18 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cmglwkyl9djyo?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Watch: What we know about Russian strikes on Kyiv bridges",
-      "originalSummary": "BBC Ukraine correspondent Dan Johnson is near Kyiv's Northern Bridge, which has been hit for the second day in a row.",
-      "publishedAt": "2026-10-04T14:25:32.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "id": "7aeb7f62361ece77df37",
+      "originalTitle": "Yemen announces military campaign to reclaim land from Iran-backed Houthis",
+      "originalSummary": "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition.",
+      "publishedAt": "2026-10-04T14:24:56.000Z",
+      "fetchedAt": "2026-10-04T15:21:53.918Z",
+      "id": "6da23456bd2c34a769ff",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
       "keyTerms": [
-        "供需"
+        "汇率"
       ],
       "causalSignals": [],
       "analysisLevels": [
@@ -1082,17 +2030,17 @@
         "监管"
       ],
       "impactChannels": [
-        "供需"
+        "汇率"
       ],
       "regions": [
         "全球"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|watchwhatweknowa|2026-10-04",
+      "clusterId": "监管|yemenannouncesmi|2026-10-04",
       "detailStatus": "brief",
       "facts": [
-        "BBC Ukraine correspondent Dan Johnson is near Kyiv's Northern Bridge, which has been hit for the second day in a row."
+        "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition."
       ],
       "expectations": [],
       "inferences": []
@@ -1102,13 +2050,13 @@
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
       "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqm249v07j4xo?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6wyz0r2n0djo?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
-      "originalTitle": "Ethiopian rebel forces withdraw from Tigray regional capital",
-      "originalSummary": "Two residents in Mekelle tell the BBC pro-government forces have taken control of the city.",
-      "publishedAt": "2026-10-04T13:33:05.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "id": "90e536ba0bb742c6ea16",
+      "originalTitle": "What to know about Brazil's election pitting Lula against Flávio Bolsonaro",
+      "originalSummary": "Polls suggest the election will be a closely run contest between the left-wing incumbent and his right-wing rival.",
+      "publishedAt": "2026-10-04T11:03:20.000Z",
+      "fetchedAt": "2026-10-04T19:36:55.194Z",
+      "id": "b99fa6cf1bbad0e4011e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
       "relatedSources": [],
@@ -1130,51 +2078,10 @@
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
-      "clusterId": "监管|ethiopianrebelfo|2026-10-04",
+      "clusterId": "监管|whattoknowaboutb|2026-10-04",
       "detailStatus": "brief",
       "facts": [
-        "Two residents in Mekelle tell the BBC pro-government forces have taken control of the city."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckreyjzzzywqo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Kyiv bridge hit in further Russian drone attack as German chancellor makes surprise visit",
-      "originalSummary": "Footage shows a drone hitting the Pivnichyi (Northern) Bridge as vehicles move across it, creating a large fireball.",
-      "publishedAt": "2026-10-04T12:09:04.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "id": "f122232ae652e23a35e0",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|kyivbridgehitinf|2026-10-04",
-      "detailStatus": "brief",
-      "facts": [
-        "Footage shows a drone hitting the Pivnichyi (Northern) Bridge as vehicles move across it, creating a large fireball."
+        "Polls suggest the election will be a closely run contest between the left-wing incumbent and his right-wing rival."
       ],
       "expectations": [],
       "inferences": []
@@ -1446,7 +2353,7 @@
       "originalTitle": "Rare tornado whips through small Australian town",
       "originalSummary": "The twister was caught on camera in Ulladulla, New South Wales, damaging property and downing trees.",
       "publishedAt": "2026-10-04T04:15:36.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "3616b8d05339281daa71",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1473,214 +2380,6 @@
       "detailStatus": "brief",
       "facts": [
         "The twister was caught on camera in Ulladulla, New South Wales, damaging property and downing trees."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm2kej47095no?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'Anger in the streets': Tens of thousands protest in Spain over housing crisis",
-      "originalSummary": "More than 50 protests took place on Saturday after the government failed to get emergency legislation through parliament.",
-      "publishedAt": "2026-10-04T03:42:15.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "id": "68b600d711bc0e5f8ea6",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|angerinthestreet|2026-10-04",
-      "detailStatus": "brief",
-      "facts": [
-        "More than 50 protests took place on Saturday after the government failed to get emergency legislation through parliament."
-      ],
-      "expectations": [],
-      "inferences": []
-    }
-  ],
-  "continuing": [],
-  "retainedDetails": [
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Polls close in Brazil as Lula and Flávio Bolsonaro remain neck and neck",
-      "originalSummary": "If no candidate gets more than 50% of the vote, the election will go to a run-off on 25 October.",
-      "publishedAt": "2026-10-04T21:11:49.000Z",
-      "fetchedAt": "2026-10-04T23:08:48.164Z",
-      "id": "91eb19656c58acc2723d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|pollscloseinbraz|2026-10-04",
-      "detailStatus": "brief",
-      "facts": [
-        "If no candidate gets more than 50% of the vote, the election will go to a run-off on 25 October."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9e8lvm6nrr3o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Indian police accused of sexual harassment against journalists at protest",
-      "originalSummary": "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls.",
-      "publishedAt": "2026-10-04T17:01:19.000Z",
-      "fetchedAt": "2026-10-04T19:36:55.194Z",
-      "id": "8669b477064ac2618dc4",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|indianpoliceaccu|2026-10-04",
-      "detailStatus": "brief",
-      "facts": [
-        "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Yemen announces military campaign to reclaim land from Iran-backed Houthis",
-      "originalSummary": "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition.",
-      "publishedAt": "2026-10-04T14:24:56.000Z",
-      "fetchedAt": "2026-10-04T15:21:53.918Z",
-      "id": "6da23456bd2c34a769ff",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "汇率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "汇率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|yemenannouncesmi|2026-10-04",
-      "detailStatus": "brief",
-      "facts": [
-        "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6wyz0r2n0djo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "What to know about Brazil's election pitting Lula against Flávio Bolsonaro",
-      "originalSummary": "Polls suggest the election will be a closely run contest between the left-wing incumbent and his right-wing rival.",
-      "publishedAt": "2026-10-04T11:03:20.000Z",
-      "fetchedAt": "2026-10-04T19:36:55.194Z",
-      "id": "b99fa6cf1bbad0e4011e",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|whattoknowaboutb|2026-10-04",
-      "detailStatus": "brief",
-      "facts": [
-        "Polls suggest the election will be a closely run contest between the left-wing incumbent and his right-wing rival."
       ],
       "expectations": [],
       "inferences": []
@@ -1722,6 +2421,47 @@
       "detailStatus": "brief",
       "facts": [
         "The aircraft lost communication with flight controllers after significantly dropping in altitude, according to flight data."
+      ],
+      "expectations": [],
+      "inferences": []
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm2kej47095no?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "'Anger in the streets': Tens of thousands protest in Spain over housing crisis",
+      "originalSummary": "More than 50 protests took place on Saturday after the government failed to get emergency legislation through parliament.",
+      "publishedAt": "2026-10-04T03:42:15.000Z",
+      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "id": "68b600d711bc0e5f8ea6",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|angerinthestreet|2026-10-04",
+      "detailStatus": "brief",
+      "facts": [
+        "More than 50 protests took place on Saturday after the government failed to get emergency legislation through parliament."
       ],
       "expectations": [],
       "inferences": []
@@ -2170,7 +2910,7 @@
       "originalTitle": "Why pastors may not be seen - or heard - preaching on Ghana's buses for much longer",
       "originalSummary": "Ghana is a predominantly Christian country where preaching on public transport is widespread.",
       "publishedAt": "2026-10-03T23:37:46.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "a30945a7a92d77ef43e7",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2211,7 +2951,7 @@
       "originalTitle": "Why Canada is wargaming a (long shot) US invasion",
       "originalSummary": "Prime Minister Mark Carney has said the military is running scenarios in the unlikely case the US invades Canada.",
       "publishedAt": "2026-10-03T23:30:06.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "d3f9e2a696aefc1df167",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2539,7 +3279,7 @@
       "originalTitle": "Why has Brazil accused the US of election interference?",
       "originalSummary": "The Latin American country will vote for its next president, as Lula da Silva and Bolsonaro clash over sovereignty, security and ties with Washington.",
       "publishedAt": "2026-10-03T13:52:13.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "d96c91897c513957f2c5",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2580,7 +3320,7 @@
       "originalTitle": "Will Spain's housing crisis lead to a snap election?",
       "originalSummary": "The BBC's Guy Hedgecoe is in Madrid, where a series of marches have been scheduled, after Spain's Congress rejected measures aimed at tackling the country's housing crisis.",
       "publishedAt": "2026-10-03T12:26:30.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "80bd9a9bc1d28637df84",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2662,7 +3402,7 @@
       "originalTitle": "Rotting food waste emits 5 times more greenhouse gases than planes",
       "originalSummary": "Rotting food waste is causing up to 10 per cent of total global greenhouse gas emissions – five times more than the entire aviation sector, the UN’s environment agency warned this week.",
       "publishedAt": "2026-10-03T12:00:00.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "15905e66b81c7626dbd1",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2703,7 +3443,7 @@
       "originalTitle": "Uganda’s UN-supported wildlife forensics lab turns ivory seizures into convictions",
       "originalSummary": "The package originated in Entebbe, Uganda, bound for Cairo, containing 10 kilograms of thumb-sized pieces that could have been either bone or elephant ivory.",
       "publishedAt": "2026-10-03T12:00:00.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "2497f6786b98ae90e6e2",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -2903,7 +3643,7 @@
       "originalTitle": "Suppliers pile pressure on government over energy bills",
       "originalSummary": "Immediate action is needed to help households struggling with bills this winter, says trade body Energy UK.",
       "publishedAt": "2026-10-03T08:58:44.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "c76ceff230e65bcbd50d",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -3289,7 +4029,7 @@
       "originalTitle": "New baby bank 'open to everybody'",
       "originalSummary": "The facility offers essential items for free, including clothes for babies and small children.",
       "publishedAt": "2026-10-03T06:08:05.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "aa4ee59fd9b3154ba5ce",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3371,7 +4111,7 @@
       "originalTitle": "G7 to release millions of barrels of oil and diesel after Trump threat",
       "originalSummary": "The co-ordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports.",
       "publishedAt": "2026-10-03T04:38:31.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
+      "fetchedAt": "2026-10-05T09:02:53.784Z",
       "id": "293f718f9bd6937e9b17",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3746,535 +4486,6 @@
           ]
         }
       }
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477232_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477232_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "新华财经早报：10月3日",
-      "publishedAt": "2026-10-03T00:56:56.000Z",
-      "fetchedAt": "2026-10-03T23:03:08.559Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 2159,
-        "reader": "cnfin-body",
-        "sha256": "2b061aa62b266b2141566b6d8ee141176b428aedc9d2a5c17fbf653b3ab5d18e",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261003/4477232_1.html",
-        "checkedAt": "2026-10-03T23:03:08.559Z"
-      },
-      "id": "76e058709943ec4b1eed",
-      "verificationStatus": "verified",
-      "titleZh": "新华财经早报：10月3日",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|新华财经早报10月3日|2026-10-03",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "analysisAttempt": {
-        "sourceBodyHash": "2b061aa62b266b2141566b6d8ee141176b428aedc9d2a5c17fbf653b3ab5d18e",
-        "count": 1,
-        "lastAttemptAt": "2026-10-03T23:03:08.559Z",
-        "rejection": {
-          "stage": "evidence",
-          "category": "facts",
-          "fields": [
-            "facts[0].quote"
-          ]
-        }
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm3eqegwpzl4o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "The South African men trying to end violence against women: 'Every man needs to play a part'",
-      "originalSummary": "The discovery of 12 women's bodies near Johannesburg has again highlighted South Africa's problem with violence against women.",
-      "publishedAt": "2026-10-02T23:56:21.000Z",
-      "fetchedAt": "2026-10-03T23:03:08.559Z",
-      "id": "84a1cc75dd0a38917f2c",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|thesouthafricanm|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "The discovery of 12 women's bodies near Johannesburg has again highlighted South Africa's problem with violence against women."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/weather/articles/cwgkvyyg8115o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Could El Niño mean there are no Atlantic hurricanes this year?",
-      "originalSummary": "For the first time in three decades there has not been a single Atlantic hurricane in September, normally the most active month.",
-      "publishedAt": "2026-10-02T23:37:13.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "id": "68cc648d7f231c21e1d9",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|couldelniomeanth|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "For the first time in three decades there has not been a single Atlantic hurricane in September, normally the most active month."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cjwyzyqvx1zxo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Women given shorts at Oktoberfest to prevent upskirting",
-      "originalSummary": "The step at the Munich festival comes after thousands of voyeuristic videos emerged on social media.",
-      "publishedAt": "2026-10-02T23:16:03.000Z",
-      "fetchedAt": "2026-10-04T02:38:19.755Z",
-      "id": "9886b2d9a1a45a9c618f",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|womengivenshorts|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "The step at the Munich festival comes after thousands of voyeuristic videos emerged on social media."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwgkvygg5nzvo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "US road rage killer's sentence quashed because AI video of victim was shown in court",
-      "originalSummary": "The Arizona appeals court ruled that airing an AI message from the dead victim \"crossed that line\".",
-      "publishedAt": "2026-10-02T23:06:00.000Z",
-      "fetchedAt": "2026-10-04T02:38:19.755Z",
-      "id": "2d0330990aa3b4e65590",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|usroadragekiller|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "The Arizona appeals court ruled that airing an AI message from the dead victim \"crossed that line\"."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck7v4v8pmzdeo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "The vanishing world of India's street magicians",
-      "originalSummary": "India's street performers are struggling to survive as audiences shrink and public spaces become harder to access.",
-      "publishedAt": "2026-10-02T22:59:05.000Z",
-      "fetchedAt": "2026-10-04T02:38:19.755Z",
-      "id": "3d04b8d421243fc3cba4",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|thevanishingworl|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "India's street performers are struggling to survive as audiences shrink and public spaces become harder to access."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck3r5dxxwqzpo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Riot police clash with students as education protests rage in France",
-      "originalSummary": "About 735 schools have faced disruption as violent protests over standards and lack of teachers continue.",
-      "publishedAt": "2026-10-02T21:13:27.000Z",
-      "fetchedAt": "2026-10-04T09:46:29.229Z",
-      "id": "d3ff37a37825e7de250e",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|riotpoliceclashw|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "About 735 schools have faced disruption as violent protests over standards and lack of teachers continue."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crd6dy4xepgyo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Hawaii's iconic 550-year-old Hōlei Sea Arch collapses",
-      "originalSummary": "The lava rock formation protruding from the rocky cliffs of Volcanoes National Park crumbled some time last weekend.",
-      "publishedAt": "2026-10-02T21:00:41.000Z",
-      "fetchedAt": "2026-10-04T02:38:19.755Z",
-      "id": "352e426434a92033d61e",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|hawaiisiconic550|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "The lava rock formation protruding from the rocky cliffs of Volcanoes National Park crumbled some time last weekend."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "fed",
-      "sourceName": "Federal Reserve",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.federalreserve.gov/feeds/press_all.xml",
-      "canonicalUrl": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm",
-      "originalLanguage": "en",
-      "originalTitle": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
-      "originalSummary": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
-      "publishedAt": "2026-10-02T20:45:00.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "id": "6fc26d211911d1e3d1e1",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "Federal Reserve",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
-          "publishedAt": "2026-10-02T20:00:00.000Z"
-        },
-        {
-          "name": "Federal Reserve",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
-          "publishedAt": "2026-10-02T15:00:00.000Z"
-        }
-      ],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "宏观"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "美国",
-        "全球",
-        "美股相关"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|federalreservebo|2026-10-02",
-      "detailStatus": "professional",
-      "facts": [
-        "Federal Reserve Board announces approval of application by Fleur Capital Corporation"
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cmewelkydwwyo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Newly released video shows Luigi Mangione’s arrest",
-      "originalSummary": "The bodycam footage also shows a police officer finding a gun in Mangione's backpack, days after the killing of UnitedHealthcare CEO Brian Thompson.",
-      "publishedAt": "2026-10-02T20:37:34.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "id": "1457970fe2715ce710c9",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|newlyreleasedvid|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "The bodycam footage also shows a police officer finding a gun in Mangione's backpack, days after the killing of UnitedHealthcare CEO Brian Thompson."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c3kgqw7zvz47o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say",
-      "originalSummary": "As of Thursday night, Pike remained critically ill and is being treated at a hospital in Nashville, Tennessee.",
-      "publishedAt": "2026-10-02T20:32:07.000Z",
-      "fetchedAt": "2026-10-03T12:33:18.565Z",
-      "id": "e478af96e36a04161cef",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|usmurdererchrist|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "As of Thursday night, Pike remained critically ill and is being treated at a hospital in Nashville, Tennessee."
-      ],
-      "expectations": [],
-      "inferences": []
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "G7 to release 100 million barrels of oil and diesel after Trump export ban threat",
-      "originalSummary": "The coordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports.",
-      "publishedAt": "2026-10-02T20:25:19.000Z",
-      "fetchedAt": "2026-10-03T00:29:40.740Z",
-      "id": "0ccb8c8811cfdeb7caf5",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-02T20:25:19.000Z"
-        }
-      ],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|g7torelease100mi|2026-10-02",
-      "detailStatus": "brief",
-      "facts": [
-        "The coordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports."
-      ],
-      "expectations": [],
-      "inferences": []
     }
   ],
   "sourceHealth": [
@@ -4307,7 +4518,7 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 49
     },
     {
       "id": "un",
@@ -4348,12 +4559,13 @@
       "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 2
+        "facts": 1,
+        "language": 1
       }
     }
   ],
