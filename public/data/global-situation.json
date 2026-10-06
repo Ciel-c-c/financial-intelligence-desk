@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-10-06T07:33:56.161Z",
-  "lastSuccessfulAt": "2026-10-06T07:33:56.161Z",
+  "attemptedAt": "2026-10-06T15:11:28.119Z",
+  "lastSuccessfulAt": "2026-10-06T15:11:28.119Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -15,7 +15,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -45,7 +45,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 23
+      "itemCount": 27
     },
     {
       "id": "bbc-business",
@@ -67,6 +67,904 @@
     }
   ],
   "events": [
+    {
+      "id": "c04fbe5652d7",
+      "headline": "AfD candidate elected speaker of German regional parliament for first time",
+      "sourceHeadline": "AfD candidate elected speaker of German regional parliament for first time",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "Although Tobias Rausch's role is largely symbolic, opponents have described the result as a watershed moment.",
+      "publishedAt": "2026-10-06T14:44:03.000Z",
+      "firstPublishedAt": "2026-10-06T14:44:03.000Z",
+      "latestSourceAt": "2026-10-06T14:44:03.000Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Although Tobias Rausch's role is largely symbolic, opponents have described the result as a watershed moment."
+      ],
+      "factSummary": "Although Tobias Rausch's role is largely symbolic, opponents have described the result as a watershed moment.",
+      "marketView": [
+        "本条来源报告：AfD candidate elected speaker of German regional parliament for first time。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/c54g1m2g1pg3o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-06T14:44:03.000Z"
+        }
+      ]
+    },
+    {
+      "id": "cd989bd7f67a",
+      "headline": "Nigeria mourns 25 killed as military plane crashes into swamp",
+      "sourceHeadline": "Nigeria mourns 25 killed as military plane crashes into swamp",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "President Bola Tinubu describes the crash as a \"painful moment\" for the military and the entire nation.",
+      "publishedAt": "2026-10-06T12:51:05.000Z",
+      "firstPublishedAt": "2026-10-06T12:51:05.000Z",
+      "latestSourceAt": "2026-10-06T12:51:05.000Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "President Bola Tinubu describes the crash as a \"painful moment\" for the military and the entire nation."
+      ],
+      "factSummary": "President Bola Tinubu describes the crash as a \"painful moment\" for the military and the entire nation.",
+      "marketView": [
+        "本条来源报告：Nigeria mourns 25 killed as military plane crashes into swamp。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/ck1wvjer20qqo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-06T12:51:05.000Z"
+        }
+      ]
+    },
+    {
+      "id": "e2d0389db241",
+      "headline": "In Islamabad, Guterres calls for end to US-Iran conflict",
+      "sourceHeadline": "In Islamabad, Guterres calls for end to US-Iran conflict",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "The UN Secretary-General appealed on Tuesday for an end to the United States-Iran war and the toll it has taken on global trade, as he began an official visit to Pakistan.",
+      "publishedAt": "2026-10-06T12:00:00.000Z",
+      "firstPublishedAt": "2026-10-06T12:00:00.000Z",
+      "latestSourceAt": "2026-10-06T12:00:00.000Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
+      "region": "united-states",
+      "countries": [
+        "US"
+      ],
+      "topic": "geopolitical-conflict",
+      "eventType": "geopolitical-conflict",
+      "relevance": {
+        "level": "high",
+        "score": 6,
+        "criteria": [
+          "trade",
+          "supplyChain",
+          "growth",
+          "fiscalPolicy",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 6,
+      "relevanceReasons": [
+        "trade",
+        "supplyChain",
+        "growth",
+        "fiscalPolicy",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The UN Secretary-General appealed on Tuesday for an end to the United States-Iran war and the toll it has taken on global trade, as he began an official visit to Pakistan."
+      ],
+      "factSummary": "The UN Secretary-General appealed on Tuesday for an end to the United States-Iran war and the toll it has taken on global trade, as he began an official visit to Pakistan.",
+      "marketView": [
+        "本条来源报告：In Islamabad, Guterres calls for end to US-Iran conflict。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168532",
+          "publishedAt": "2026-10-06T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "630ee2e8565b",
+      "headline": "Separatist party projected to win Quebec election, adding new test to Canada's unity",
+      "sourceHeadline": "Separatist party projected to win Quebec election, adding new test to Canada's unity",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "The Parti Québécois, which secured a minority, has vowed to hold an independence referendum in the years to come.",
+      "publishedAt": "2026-10-06T11:42:52.000Z",
+      "firstPublishedAt": "2026-10-06T11:42:52.000Z",
+      "latestSourceAt": "2026-10-06T11:42:52.000Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The Parti Québécois, which secured a minority, has vowed to hold an independence referendum in the years to come."
+      ],
+      "factSummary": "The Parti Québécois, which secured a minority, has vowed to hold an independence referendum in the years to come.",
+      "marketView": [
+        "本条来源报告：Separatist party projected to win Quebec election, adding new test to Canada's unity。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/crly09gz7ew4o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-06T11:42:52.000Z"
+        }
+      ]
+    },
+    {
+      "id": "501c7d543b4a",
+      "headline": "Indian opposition MPs detained in protest against election chief",
+      "sourceHeadline": "Indian opposition MPs detained in protest against election chief",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "Opposition leaders have alleged that CEC Gyanesh Kumar manipulated voter rolls to favour Prime Minister Narendra Modi's party during elections.",
+      "publishedAt": "2026-10-06T10:05:22.000Z",
+      "firstPublishedAt": "2026-10-06T10:05:22.000Z",
+      "latestSourceAt": "2026-10-06T10:05:22.000Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Opposition leaders have alleged that CEC Gyanesh Kumar manipulated voter rolls to favour Prime Minister Narendra Modi's party during elections."
+      ],
+      "factSummary": "Opposition leaders have alleged that CEC Gyanesh Kumar manipulated voter rolls to favour Prime Minister Narendra Modi's party during elections.",
+      "marketView": [
+        "本条来源报告：Indian opposition MPs detained in protest against election chief。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/crpdgvx82831o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-06T10:05:22.000Z"
+        }
+      ]
+    },
+    {
+      "id": "71e705c78a3c",
+      "headline": "Yemeni military says it has 'secured' Red Sea waterway",
+      "sourceHeadline": "Yemeni military says it has 'secured' Red Sea waterway",
+      "oneLine": "本条涉及航线与交付风险；是否影响能源价格，需要另查实际供应。",
+      "oneSentenceExplanation": "本条涉及航线与交付风险；是否影响能源价格，需要另查实际供应。",
+      "summary": "Saudi-backed forces gave conflicting reports of whether they had also seized the port city of Mokha, near the Bab al-Mandab Strait.",
+      "publishedAt": "2026-10-06T07:43:07.000Z",
+      "firstPublishedAt": "2026-10-06T07:43:07.000Z",
+      "latestSourceAt": "2026-10-06T07:43:07.000Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
+      "region": "middle-east",
+      "countries": [],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "energySupply",
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "energySupply",
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Saudi-backed forces gave conflicting reports of whether they had also seized the port city of Mokha, near the Bab al-Mandab Strait."
+      ],
+      "factSummary": "Saudi-backed forces gave conflicting reports of whether they had also seized the port city of Mokha, near the Bab al-Mandab Strait.",
+      "marketView": [
+        "本条来源报告：Yemeni military says it has 'secured' Red Sea waterway。以下为条件性机制参考，不是已核实的市场结论。",
+        "航运受阻不等于石油供给减少。先核实航线、货物和港口，再判断是否绕行以及谁承担成本。",
+        "条件性机制参考：绕行、保险费与交付周期可能改变贸易成本，不是已观察到的价格反应。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，交付与企业利润可能受压。这是一种有条件的路径。"
+      ],
+      "simpleExample": "一批货原本十天送到，如果实际绕行，可能多付运费、多占用库存资金。没有使用受影响航线的企业，未必受影响。",
+      "professionalConcept": "条件性机制参考：绕行、保险费与交付周期可能改变贸易成本，不是已观察到的价格反应。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "航线安全风险",
+          "beginnerExplanation": "来源报告航运风险，需核实范围。",
+          "condition": "存在实际航线暴露",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "船舶可能绕行",
+          "beginnerExplanation": "路线更长，交付可能延迟。",
+          "condition": "船公司实际改变航线",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "运费与保险成本可能增加",
+          "beginnerExplanation": "航程和保险风险可能增加账单。",
+          "condition": "运力和保险安排无法抵消",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "交付与企业利润可能受压",
+          "beginnerExplanation": "进口商可能增加库存或承担成本。",
+          "condition": "成本无法完全转嫁",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "航线安全风险",
+          "beginnerExplanation": "来源报告航运风险，需核实范围。",
+          "condition": "存在实际航线暴露",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "船舶可能绕行",
+          "beginnerExplanation": "路线更长，交付可能延迟。",
+          "condition": "船公司实际改变航线",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "运费与保险成本可能增加",
+          "beginnerExplanation": "航程和保险风险可能增加账单。",
+          "condition": "运力和保险安排无法抵消",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "交付与企业利润可能受压",
+          "beginnerExplanation": "进口商可能增加库存或承担成本。",
+          "condition": "成本无法完全转嫁",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "航运企业",
+          "explanation": "航程和运费影响收入，但燃料、保险和运营成本也可能增加。"
+        },
+        {
+          "name": "进口企业",
+          "explanation": "运输延迟可能增加库存占款，本地供应和固定合同可能减弱影响。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "船舶没有实际绕行",
+        "航线恢复安全",
+        "货物使用其他路线",
+        "运力充足或合同锁定费用"
+      ],
+      "watchConditions": [
+        "船舶没有实际绕行",
+        "航线恢复安全",
+        "货物使用其他路线",
+        "运力充足或合同锁定费用"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cw8rzd6lp0xpo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-06T07:43:07.000Z"
+        }
+      ]
+    },
     {
       "id": "00c2108a65ce",
       "headline": "Nigeria mourns as 32 killed in military plane crash",
@@ -223,7 +1121,7 @@
       "publishedAt": "2026-10-06T05:30:06.000Z",
       "firstPublishedAt": "2026-10-06T05:30:06.000Z",
       "latestSourceAt": "2026-10-06T05:30:06.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -403,7 +1301,7 @@
       "publishedAt": "2026-10-06T04:54:32.000Z",
       "firstPublishedAt": "2026-10-06T04:54:32.000Z",
       "latestSourceAt": "2026-10-06T04:54:32.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -540,314 +1438,6 @@
           "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/cqkgjnmx6ln4o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-10-06T04:54:32.000Z"
-        }
-      ]
-    },
-    {
-      "id": "71e705c78a3c",
-      "headline": "Yemeni military says it has 'secured' Red Sea waterway",
-      "sourceHeadline": "Yemeni military says it has 'secured' Red Sea waterway",
-      "oneLine": "本条涉及航线与交付风险；是否影响能源价格，需要另查实际供应。",
-      "oneSentenceExplanation": "本条涉及航线与交付风险；是否影响能源价格，需要另查实际供应。",
-      "summary": "Saudi-backed forces gave conflicting reports of whether they had also seized the port city of Mokha, near the Bab al-Mandab Strait.",
-      "publishedAt": "2026-10-06T04:29:53.000Z",
-      "firstPublishedAt": "2026-10-06T04:29:53.000Z",
-      "latestSourceAt": "2026-10-06T04:29:53.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
-      "region": "middle-east",
-      "countries": [],
-      "topic": "energy-security",
-      "eventType": "energy-security",
-      "relevance": {
-        "level": "high",
-        "score": 7,
-        "criteria": [
-          "energySupply",
-          "trade",
-          "supplyChain",
-          "inflation",
-          "growth",
-          "earnings",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "high",
-      "marketRelevanceScore": 7,
-      "relevanceReasons": [
-        "energySupply",
-        "trade",
-        "supplyChain",
-        "inflation",
-        "growth",
-        "earnings",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Saudi-backed forces gave conflicting reports of whether they had also seized the port city of Mokha, near the Bab al-Mandab Strait."
-      ],
-      "factSummary": "Saudi-backed forces gave conflicting reports of whether they had also seized the port city of Mokha, near the Bab al-Mandab Strait.",
-      "marketView": [
-        "本条来源报告：Yemeni military says it has 'secured' Red Sea waterway。以下为条件性机制参考，不是已核实的市场结论。",
-        "航运受阻不等于石油供给减少。先核实航线、货物和港口，再判断是否绕行以及谁承担成本。",
-        "条件性机制参考：绕行、保险费与交付周期可能改变贸易成本，不是已观察到的价格反应。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，交付与企业利润可能受压。这是一种有条件的路径。"
-      ],
-      "simpleExample": "一批货原本十天送到，如果实际绕行，可能多付运费、多占用库存资金。没有使用受影响航线的企业，未必受影响。",
-      "professionalConcept": "条件性机制参考：绕行、保险费与交付周期可能改变贸易成本，不是已观察到的价格反应。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "航线安全风险",
-          "beginnerExplanation": "来源报告航运风险，需核实范围。",
-          "condition": "存在实际航线暴露",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "船舶可能绕行",
-          "beginnerExplanation": "路线更长，交付可能延迟。",
-          "condition": "船公司实际改变航线",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "运费与保险成本可能增加",
-          "beginnerExplanation": "航程和保险风险可能增加账单。",
-          "condition": "运力和保险安排无法抵消",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "交付与企业利润可能受压",
-          "beginnerExplanation": "进口商可能增加库存或承担成本。",
-          "condition": "成本无法完全转嫁",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "航线安全风险",
-          "beginnerExplanation": "来源报告航运风险，需核实范围。",
-          "condition": "存在实际航线暴露",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "船舶可能绕行",
-          "beginnerExplanation": "路线更长，交付可能延迟。",
-          "condition": "船公司实际改变航线",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "运费与保险成本可能增加",
-          "beginnerExplanation": "航程和保险风险可能增加账单。",
-          "condition": "运力和保险安排无法抵消",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "交付与企业利润可能受压",
-          "beginnerExplanation": "进口商可能增加库存或承担成本。",
-          "condition": "成本无法完全转嫁",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "航运企业",
-          "explanation": "航程和运费影响收入，但燃料、保险和运营成本也可能增加。"
-        },
-        {
-          "name": "进口企业",
-          "explanation": "运输延迟可能增加库存占款，本地供应和固定合同可能减弱影响。"
-        }
-      ],
-      "relatedIndustries": [
-        "能源",
-        "航空",
-        "航运",
-        "化工"
-      ],
-      "knowledgeIds": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "relatedKnowledgePoints": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "conditionsThatChangeView": [
-        "船舶没有实际绕行",
-        "航线恢复安全",
-        "货物使用其他路线",
-        "运力充足或合同锁定费用"
-      ],
-      "watchConditions": [
-        "船舶没有实际绕行",
-        "航线恢复安全",
-        "货物使用其他路线",
-        "运力充足或合同锁定费用"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/cw8rzd6lp0xpo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-06T04:29:53.000Z"
-        }
-      ]
-    },
-    {
-      "id": "630ee2e8565b",
-      "headline": "Separatist party projected to win Quebec election, adding new test to Canada's unity",
-      "sourceHeadline": "Separatist party projected to win Quebec election, adding new test to Canada's unity",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "The Parti Québécois, which secured a minority, has vowed to hold an independence referendum in the years to come.",
-      "publishedAt": "2026-10-06T02:37:46.000Z",
-      "firstPublishedAt": "2026-10-06T02:37:46.000Z",
-      "latestSourceAt": "2026-10-06T02:37:46.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "The Parti Québécois, which secured a minority, has vowed to hold an independence referendum in the years to come."
-      ],
-      "factSummary": "The Parti Québécois, which secured a minority, has vowed to hold an independence referendum in the years to come.",
-      "marketView": [
-        "本条来源报告：Separatist party projected to win Quebec election, adding new test to Canada's unity。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/crly09gz7ew4o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-06T02:37:46.000Z"
         }
       ]
     },
@@ -1461,7 +2051,7 @@
       "publishedAt": "2026-10-05T17:23:28.000Z",
       "firstPublishedAt": "2026-10-05T17:23:28.000Z",
       "latestSourceAt": "2026-10-05T17:23:28.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -1611,7 +2201,7 @@
       "publishedAt": "2026-10-05T14:00:00.000Z",
       "firstPublishedAt": "2026-10-05T14:00:00.000Z",
       "latestSourceAt": "2026-10-05T14:00:00.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1947,7 +2537,7 @@
       "publishedAt": "2026-10-05T10:03:38.000Z",
       "firstPublishedAt": "2026-10-05T10:03:38.000Z",
       "latestSourceAt": "2026-10-05T10:03:38.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2093,7 +2683,7 @@
       "publishedAt": "2026-10-05T09:03:30.000Z",
       "firstPublishedAt": "2026-10-05T09:03:30.000Z",
       "latestSourceAt": "2026-10-05T09:03:30.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2239,7 +2829,7 @@
       "publishedAt": "2026-10-05T08:00:00.000Z",
       "firstPublishedAt": "2026-10-05T08:00:00.000Z",
       "latestSourceAt": "2026-10-05T08:00:00.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -2555,7 +3145,7 @@
       "publishedAt": "2026-10-05T04:51:24.000Z",
       "firstPublishedAt": "2026-10-05T04:51:24.000Z",
       "latestSourceAt": "2026-10-05T04:51:24.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2993,7 +3583,7 @@
       "publishedAt": "2026-10-05T00:20:00.000Z",
       "firstPublishedAt": "2026-10-05T00:20:00.000Z",
       "latestSourceAt": "2026-10-05T00:20:00.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
+      "fetchedAt": "2026-10-06T15:11:28.119Z",
       "region": "japan",
       "countries": [
         "JP"
@@ -3150,590 +3740,6 @@
           "name": "Bank of Japan",
           "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261005a.htm",
           "publishedAt": "2026-10-05T00:20:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "974cce703a86",
-      "headline": "Polls close in Brazil as Lula and Flávio Bolsonaro remain neck and neck",
-      "sourceHeadline": "Polls close in Brazil as Lula and Flávio Bolsonaro remain neck and neck",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "If no candidate gets more than 50% of the vote, the election will go to a run-off on 25 October.",
-      "publishedAt": "2026-10-04T21:11:49.000Z",
-      "firstPublishedAt": "2026-10-04T21:11:49.000Z",
-      "latestSourceAt": "2026-10-04T21:11:49.000Z",
-      "fetchedAt": "2026-10-04T23:08:48.164Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "If no candidate gets more than 50% of the vote, the election will go to a run-off on 25 October."
-      ],
-      "factSummary": "If no candidate gets more than 50% of the vote, the election will go to a run-off on 25 October.",
-      "marketView": [
-        "本条来源报告：Polls close in Brazil as Lula and Flávio Bolsonaro remain neck and neck。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-04T21:11:49.000Z"
-        }
-      ]
-    },
-    {
-      "id": "1efd09ff2662",
-      "headline": "What to know about Brazil's election as Lula and Flávio Bolsonaro face off",
-      "sourceHeadline": "What to know about Brazil's election as Lula and Flávio Bolsonaro face off",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Polls suggest the election will be a closely run contest between the left-wing incumbent and his right-wing rival.",
-      "publishedAt": "2026-10-04T20:14:49.000Z",
-      "firstPublishedAt": "2026-10-04T20:14:49.000Z",
-      "latestSourceAt": "2026-10-04T20:14:49.000Z",
-      "fetchedAt": "2026-10-05T02:00:08.595Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Polls suggest the election will be a closely run contest between the left-wing incumbent and his right-wing rival."
-      ],
-      "factSummary": "Polls suggest the election will be a closely run contest between the left-wing incumbent and his right-wing rival.",
-      "marketView": [
-        "本条来源报告：What to know about Brazil's election as Lula and Flávio Bolsonaro face off。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/c6wyz0r2n0djo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-04T20:14:49.000Z"
-        }
-      ]
-    },
-    {
-      "id": "1fa2175ae845",
-      "headline": "Indian police accused of sexually harassing journalists at protest",
-      "sourceHeadline": "Indian police accused of sexually harassing journalists at protest",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls.",
-      "publishedAt": "2026-10-04T17:01:19.000Z",
-      "firstPublishedAt": "2026-10-04T17:01:19.000Z",
-      "latestSourceAt": "2026-10-04T17:01:19.000Z",
-      "fetchedAt": "2026-10-05T09:02:53.784Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls."
-      ],
-      "factSummary": "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls.",
-      "marketView": [
-        "本条来源报告：Indian police accused of sexually harassing journalists at protest。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/c9e8lvm6nrr3o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-04T17:01:19.000Z"
-        }
-      ]
-    },
-    {
-      "id": "8ccb011fcc0a",
-      "headline": "Indian police accused of sexual harassment against journalists at protest",
-      "sourceHeadline": "Indian police accused of sexual harassment against journalists at protest",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls.",
-      "publishedAt": "2026-10-04T17:01:19.000Z",
-      "firstPublishedAt": "2026-10-04T17:01:19.000Z",
-      "latestSourceAt": "2026-10-04T17:01:19.000Z",
-      "fetchedAt": "2026-10-04T19:36:55.194Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls."
-      ],
-      "factSummary": "The allegations were made after police detained dozens of protesters demanding the resignation of the election chief over changes to voter rolls.",
-      "marketView": [
-        "本条来源报告：Indian police accused of sexual harassment against journalists at protest。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/c9e8lvm6nrr3o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-04T17:01:19.000Z"
         }
       ]
     }
