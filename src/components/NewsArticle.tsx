@@ -6,8 +6,8 @@ import { knowledge } from '../data/demoData';
 import { knowledgeForEvent } from '../data/learningEvents';
 import { soWhatForNews } from '../data/soWhat';
 import type { NewsItem,SoWhatData } from '../data/types';
-import type { MarketSignal } from '../data/newsFeedTypes';
-export function NewsArticle({item,data,language='zh',evidenceScope,signals}:{item:NewsItem;data?:SoWhatData;language?:'zh'|'en';evidenceScope?:'summary'|'full-body';signals?:MarketSignal[]}) {
+import type { MarketSignal,RelatedNewsSource } from '../data/newsFeedTypes';
+export function NewsArticle({item,data,language='zh',evidenceScope,signals,relatedSources}:{item:NewsItem;data?:SoWhatData;language?:'zh'|'en';evidenceScope?:'summary'|'full-body';signals?:MarketSignal[];relatedSources?:RelatedNewsSource[]}) {
   const terms = knowledge.filter((term) => item.termIds.includes(term.id));
   return (
     <main className="page detail-page">
@@ -16,6 +16,7 @@ export function NewsArticle({item,data,language='zh',evidenceScope,signals}:{ite
         <div className="card-row"><span className="topic">{item.region} · {item.topic}</span><span className="demo-badge">{item.mode}</span></div>
         <h1>{item.title}</h1><p className="lead">{item.summary}</p>
         <div className="source-row"><span>{item.sourceName} · {item.publishedAt}</span><a href={item.sourceUrl} target="_blank" rel="noreferrer">查看原始来源</a></div>
+        {!!relatedSources?.length&&<div className="source-row"><span>补充核验来源</span>{relatedSources.map(source=><a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.name} · {source.publishedAt} ↗</a>)}</div>}
       </article>
       <section className="reading-card"><p className="eyebrow">{item.mode === '演示' ? '演示阅读段落' : evidenceScope==='summary'?(language==='en'?'基于来源摘要 · 英文解读 · 尚未翻译':'基于来源摘要 · 中文解读'):language==='en'?'完整正文已读取 · 英文解读 · 尚未翻译':'完整正文已读取 · 中文解读'}</p><p>{item.excerpt}</p><div className="terms">{terms.map((term) => <TermExplanation key={term.id} item={term} />)}</div></section>
       <div className="analysis-grid">

@@ -13,6 +13,7 @@ import { toPublicEvidence } from './full-article.mjs';
 import { reviewChineseArticle } from './chinese-editorial.mjs';
 import {analyzeWithCerebras} from './cerebras-editorial.mjs';
 import {prepareNewsEvidence} from './summary-evidence.mjs';
+import {economicNewsPriority} from './news-priority.mjs';
 
 const defaultPath=resolve('public/data/news-feed.json');
 export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOptions={},reviewedNews=[]}){
@@ -24,14 +25,24 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
     const windows=selectNewsWindows(all,now),active=new Set([...windows.latest,...windows.continuing].map(item=>item.id));
     return {...previous,...windows,retainedDetails:all.filter(item=>!active.has(item.id)),attemptedAt:now,nextExpectedAt:new Date(Date.parse(now)+3600_000).toISOString(),status:'source_error',sourceHealth,message:'本轮新闻列表来源失败，保留此前已核验报道；正文复核变化与失效标记已同步。'};
   }
+  reviewedNews=reviewedNews.filter(record=>{
+   if(record.article?.status!=='summary') return true;
+   const current=healthy.flatMap(result=>result.items).find(raw=>raw.canonicalUrl===record.canonicalUrl);
+   if(!current) return true;
+   const evidence=prepareNewsEvidence(current).article;
+   return evidence?.sha256===record.article.sha256&&current.originalTitle===record.originalTitle&&current.publishedAt===record.publishedAt;
+  });
   const normalized=healthy.flatMap(result=>result.items).filter(raw=>!reviewedNews.some(item=>item.canonicalUrl===raw.canonicalUrl)).map(normalizeNewsItem).map(classifyNewsItem).map(prepareNewsEvidence);
   const clustered=clusterNewsItems(normalized),state={attempted:0,generated:0,rejected:0,failures:0,stopped:false};
   const enriched=[...reviewedNews];
   const prior=[...(previous?.latest??[]),...(previous?.continuing??[]),...(previous?.retainedDetails??[])];
   const previousAttempt=record=>prior.find(old=>old.canonicalUrl===record.canonicalUrl&&old.analysisAttempt?.sourceBodyHash===record.article?.sha256)?.analysisAttempt;
-  const sourceCounts=new Map(),rounds=new Map();
-  for(const record of [...clustered].sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt))){const count=sourceCounts.get(record.sourceId)??0;rounds.set(record.id,count);sourceCounts.set(record.sourceId,count+1);}
-  for(const raw of clustered.sort((a,b)=>(previousAttempt(a)?.count??0)-(previousAttempt(b)?.count??0)||(rounds.get(a.id)??0)-(rounds.get(b.id)??0)||Date.parse(b.publishedAt)-Date.parse(a.publishedAt))){
+  const sourceCounts=new Map(),rounds=new Map(),sourceLastAttempt=new Map();
+  const sourceFamily=record=>(record.sourceName??record.sourceId).split('·')[0].trim();
+  for(const record of prior){const time=Date.parse(record.analysisAttempt?.lastAttemptAt);if(Number.isFinite(time)) sourceLastAttempt.set(sourceFamily(record),Math.max(time,sourceLastAttempt.get(sourceFamily(record))??0));}
+  const priorityTier=record=>economicNewsPriority(record)>0?1:0;
+  for(const record of [...clustered].sort((a,b)=>economicNewsPriority(b)-economicNewsPriority(a)||Date.parse(b.publishedAt)-Date.parse(a.publishedAt))){const family=sourceFamily(record),count=sourceCounts.get(family)??0;rounds.set(record.id,count);sourceCounts.set(family,count+1);}
+  for(const raw of clustered.sort((a,b)=>priorityTier(b)-priorityTier(a)||(sourceLastAttempt.get(sourceFamily(a))??0)-(sourceLastAttempt.get(sourceFamily(b))??0)||(previousAttempt(a)?.count??0)-(previousAttempt(b)?.count??0)||(rounds.get(a.id)??0)-(rounds.get(b.id)??0)||economicNewsPriority(b)-economicNewsPriority(a)||Date.parse(b.publishedAt)-Date.parse(a.publishedAt))){
    let record=reviewChineseArticle(raw);
    const attempt=previousAttempt(record);
    if(attempt) record={...record,analysisAttempt:attempt};

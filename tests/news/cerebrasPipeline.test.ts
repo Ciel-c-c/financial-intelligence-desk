@@ -30,6 +30,15 @@ it('keeps conditional market signals and rejects unsupported numbers in them',as
  expect(result.latest[0].editorial?.marketSignals).toEqual([signal]);
  expect((await run({...response(),marketSignals:[{...signal,reason:'上涨概率70%。'}]})).latest[0].editorial).toBeUndefined();
 });
+it('does not promote an isolated company story into a consumer confidence index forecast',async()=>{
+ const output={...response(),marketSignals:[{asset:'消费者信心指数',direction:'下行',reason:'企业业务可能影响宏观信心。',condition:'报道受到关注。',invalidation:'若影响不扩大，则判断不成立。',timeframe:'短期'}]};
+ expect((await run(output)).latest[0].editorial).toBeUndefined();
+});
+it('maps an explicitly generated personal invalidation into the existing reading interface',async()=>{
+ const original=response();
+ const output={...original,soWhat:{...original.soWhat,personalImpact:[{label:'企业经营',impact:'供应商订单可能变化。',why:'业务进展可能传到采购需求。',invalidation:'若采购没有增加，影响不成立。'}]}};
+ expect((await run(output)).latest[0].editorial?.soWhat.personalImpact[0].condition).toBe('若采购没有增加，影响不成立。');
+});
 it('paces Groq generation and audit requests to avoid a free-token burst',async()=>{
  const waits:number[]=[];
  const result=await run(response(),200,true,'groq',async ms=>{waits.push(ms);});
