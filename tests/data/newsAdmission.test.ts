@@ -1,9 +1,17 @@
-import { webcrypto } from 'node:crypto';
+import { webcrypto,createHash } from 'node:crypto';
 import { afterEach, expect,it,vi } from 'vitest';
 import reviewed from '../fixtures/reviewed-news.json';
 import { isPublishableNews,verifyNewsEvidence } from '../../src/data/newsAdmission';
 import type { LiveNewsItem } from '../../src/data/newsFeedTypes';
 const item=reviewed.items[0] as unknown as LiveNewsItem;
+it('admits a hash-bound source summary and rejects a changed summary',async()=>{
+ vi.stubGlobal('crypto',webcrypto);
+ const summary='官方报道提供了事件的具体进展和当前情况，后续影响仍需结合政策落实、需求变化与企业经营数据观察。'.repeat(2);
+ const text=item.originalTitle+'\n'+summary,hash=createHash('sha256').update(text).digest('hex');
+ const record={...item,originalSummary:summary,article:{...item.article!,status:'summary',text,sha256:hash,reader:'publisher-feed-summary'},editorial:{...item.editorial!,evidenceScope:'summary',sourceBodyHash:hash}} as LiveNewsItem;
+ expect(await verifyNewsEvidence(record)).toBe(true);
+ expect(await verifyNewsEvidence({...record,originalSummary:'只有标题'})).toBe(false);
+});
 afterEach(()=>vi.unstubAllGlobals());
 it('admits server-read Chinese evidence without requiring republication of its full text',async()=>{
  const url='https://www.cnfin.com/yw-lb/detail/20260915/4470069_1.html';

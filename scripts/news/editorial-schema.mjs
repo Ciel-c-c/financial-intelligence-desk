@@ -5,6 +5,8 @@ const object=properties=>({type:'object',properties,required:Object.keys(propert
 const quote=object({text:string,evidence:string});
 const evidence=object({facts:array(quote),background:array(quote),expectations:array(quote),uncertainties:array(quote)});
 const analysis=object({language:{type:'string',enum:['zh','en']},title:string,summary:string,excerpt:string,consensus:strings,inference:strings,risks:strings,causalChain:array(object({title:string,explanation:string,condition:string})),watchItems:strings,topic:string,marketExpectationEvidence:{type:['string','null']},soWhat:object({analogy:object({image:string,explanation:string}),why:object({cause:string,mechanisms:strings,result:string}),focus:strings,marketBet:strings,expectationGap:string,counterView:string,personalImpact:array(object({label:{type:'string',enum:['投资','汇率','住房','工作','消费','企业经营']},impact:string,why:string,condition:string}))}),political:{anyOf:[{type:'null'},object({type:string,channel:string,affected:strings,watch:string,counterRisk:string})]},classification:object({analysisLevels:strings,eventTypes:strings,impactChannels:strings,regions:strings})});
+analysis.properties.marketSignals={...array(object({asset:string,direction:{type:'string',enum:['上行','下行','分化','中性']},reason:string,condition:string,invalidation:string,timeframe:string})),minItems:1,maxItems:4};
+analysis.required.push('marketSignals');
 export function sourceExcerpts(body){
   const excerpts=[];
   for(const sentence of body.split(/(?<=[。！？\n])/u)){

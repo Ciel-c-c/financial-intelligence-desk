@@ -2,13 +2,15 @@ import type { LiveNewsItem } from './newsFeedTypes';
 
 export function isPublishableNews(item:LiveNewsItem):boolean {
   const {article,editorial}=item;
-  if(!article||!editorial||article.status!=='complete'||!/^[a-f0-9]{64}$/.test(article.sha256)) return false;
+  if(!article||!editorial||!['complete','summary'].includes(article.status)||!/^[a-f0-9]{64}$/.test(article.sha256)) return false;
+  const summaryEvidence=article.status==='summary'&&editorial.evidenceScope==='summary'&&article.reader==='publisher-feed-summary'&&(item.originalSummary?.trim().length??0)>=80&&article.text===item.originalTitle+'\n'+item.originalSummary?.trim();
+  if(article.status==='summary'&&!summaryEvidence) return false;
   const hasText=typeof article.text==='string'&&article.text.trim().length>=400;
   // This reader is validated server-side; its publisher's full body is never reprinted.
   const approvedChineseReader=(article.reader==='cnfin-body'&&/^https:\/\/www\.cnfin\.com\/yw-lb\/detail\/\d{8}\/\d+_1\.html$/.test(article.sourceUrl))
     ||(article.reader==='yicai-body'&&/^https:\/\/www\.yicai\.com\/news\/\d+\.html$/.test(article.sourceUrl));
   const chineseEvidence=article.text===undefined&&approvedChineseReader&&(article.characterCount??0)>=100;
-  if(!hasText&&!chineseEvidence) return false;
+  if(!hasText&&!chineseEvidence&&!summaryEvidence) return false;
   const content=editorial.item;
   if(!content||![content.facts,content.consensus,content.inference,content.risks,content.causalChain,editorial.watchItems].every(Array.isArray)) return false;
   const language=editorial.language??'zh';

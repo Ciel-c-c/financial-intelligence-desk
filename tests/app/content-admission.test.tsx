@@ -55,5 +55,5 @@ it('does not substitute a generic explanation for unreadable full news',()=>{
  render(<MemoryRouter><LiveNewsDetail item={headlineOnly}/></MemoryRouter>);
  expect(screen.queryByRole('heading',{name:'Interest rate news without body'})).not.toBeInTheDocument();
  expect(screen.queryByRole('heading',{name:'所以呢？'})).not.toBeInTheDocument();
- expect(screen.getByText(/完整正文/)).toBeInTheDocument();
+ expect(screen.getByText(/来源摘要或正文/)).toBeInTheDocument();
 });

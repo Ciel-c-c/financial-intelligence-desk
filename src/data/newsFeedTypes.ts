@@ -10,7 +10,9 @@ export type TranslationStatus = 'original-zh' | 'generated' | 'cached' | 'unavai
 export type DetailStatus = 'brief' | 'professional' | 'so-what';
 export type NewsFeedStatus = 'fresh' | 'delayed' | 'source_error';
 export interface RelatedNewsSource { name: string; url: string; publishedAt: string }
-export interface FullArticle { status:'complete'; text?:string; characterCount?:number; reader?:string; sha256:string; checkedAt:string; sourceUrl:string }
+export interface FullArticle { status:'complete'|'summary'; text?:string; characterCount?:number; reader?:string; sha256:string; checkedAt:string; sourceUrl:string }
+export interface MarketSignal { asset:string; direction:'上行'|'下行'|'分化'|'中性'; reason:string; condition:string; invalidation:string; timeframe:string }
+export interface ReviewedEditorial { evidenceScope?:'summary'|'full-body'; marketSignals?:MarketSignal[] }
 export interface ReviewedEditorial { sourceBodyHash:string; originalTitle:string; reviewedAt:string; item:import('./types').NewsItem; watchItems:string[]; political?:import('./types').PoliticalImpact; soWhat?:import('./types').SoWhatData }
 export interface LiveNewsItem { invalidationReason?:string; article?:FullArticle; editorial?:ReviewedEditorial; id:string; canonicalUrl:string; sourceName:string; sourceTier:NewsSourceTier; verificationStatus:VerificationStatus; sourceUrl:string; publishedAt:string; fetchedAt:string; originalLanguage:string; originalTitle:string; originalSummary?:string; titleZh?:string; summaryZh?:string; translationStatus:TranslationStatus; analysisLevels:AnalysisLevel[]; eventTypes:EventType[]; impactChannels:ImpactChannel[]; regions:NewsRegion[]; keyTerms:string[]; causalSignals:string[]; importanceScore:number; continuingImpactScore:number; clusterId:string; relatedSources:RelatedNewsSource[]; detailStatus:DetailStatus; facts:string[]; expectations:string[]; inferences:string[] }
 export interface NewsSourceHealth { id:string; name:string; status:'ok'|'error'; itemCount:number; error?:string }

@@ -5,12 +5,14 @@ import { updateSnapshots } from './update-data-snapshots.mjs';
 import { updateNewsFeed } from './news/update-news-feed.mjs';
 import { buildDailyBrief } from './site/brief-pipeline.mjs';
 import { buildSiteSnapshot } from './site/site-contract.mjs';
+import {articleHash} from './news/full-article.mjs';
 
 const DATASET_IDS = ['news-feed', 'market-overview', 'sector-performance', 'global-situation', 'daily-brief'];
 export function selectBriefNews(news,now){
  return (news?.latest??[]).filter(record=>{
   const age=Date.parse(now)-Date.parse(record.publishedAt),article=record.article,review=record.editorial,item=review?.item;
-  return age>=0&&age<=86400_000&&article?.status==='complete'&&/^[a-f0-9]{64}$/.test(article.sha256)
+  const summaryEvidence=article?.status==='summary'&&review?.evidenceScope==='summary'&&article.reader==='publisher-feed-summary'&&(record.originalSummary?.trim().length??0)>=80&&article.text===record.originalTitle+'\n'+record.originalSummary.trim()&&articleHash(article.text)===article.sha256;
+  return age>=0&&age<=86400_000&&(article?.status==='complete'||summaryEvidence)&&/^[a-f0-9]{64}$/.test(article.sha256)
    &&review?.sourceBodyHash===article.sha256&&review.originalTitle===record.originalTitle
    &&item?.id===record.id&&item.publishedAt===record.publishedAt&&item.sourceUrl===record.canonicalUrl&&article.sourceUrl===record.canonicalUrl
    &&(review.language==='en'?item.title===record.titleEn&&item.summary===record.summaryEn:item.title===record.titleZh&&item.summary===record.summaryZh)
