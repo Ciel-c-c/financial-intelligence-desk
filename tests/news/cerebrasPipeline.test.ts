@@ -74,6 +74,11 @@ it('does not publish analysis whose factual evidence is absent from the body',as
 it('does not turn a quota error into fabricated analysis',async()=>{
  expect((await run(response(),429)).latest[0].editorial).toBeUndefined();
 });
+it('does not spend a content rejection attempt when the free API quota is exhausted',async()=>{
+ const result=await run(response(),429,true,'groq');
+ expect(result.latest[0].analysisAttempt).toBeUndefined();
+ expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.error).toBe('HTTP 429');
+});
 it('reports a safe rejection category rather than silently losing invalid facts',async()=>{
  const output=response();output.facts[0].evidence='公司宣布降息四次';
  const result=await run(output,200,true,'groq');

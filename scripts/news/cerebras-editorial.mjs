@@ -53,13 +53,14 @@ async function request(messages,options,state,audit=false){
  return JSON.parse(choice.message.content);
 }
 export async function analyzeWithCerebras(record,options,state){
+ const originalRecord=record;
  const body=record.article?.text;
  if(!options.apiKey||state.stopped||state.attempted>=2||record.editorial||!['complete','summary'].includes(record.article?.status)||typeof body!=='string'||body.length<(record.article?.status==='summary'?80:100)||body.length>6000||articleHash(body)!==record.article.sha256||(record.analysisAttempt?.count??0)>=3) return record;
  state.attempted++;
  record={...record,analysisAttempt:{sourceBodyHash:record.article.sha256,count:(record.analysisAttempt?.count??0)+1,lastAttemptAt:record.article.checkedAt}};
  state.stages??={evidence:0,analysis:0,audit:0};
  let stage='evidence';
- const reject=(category,fields=[])=>{record.analysisAttempt.rejection={stage,category,fields};state.rejected++;state.rejectionReasons??={};state.rejectionReasons[category]=(state.rejectionReasons[category]??0)+1;return record;};
+ const reject=(category,fields=[])=>{if(state.stopped)return originalRecord;record.analysisAttempt.rejection={stage,category,fields};state.rejected++;state.rejectionReasons??={};state.rejectionReasons[category]=(state.rejectionReasons[category]??0)+1;return record;};
  try{
   const scope=record.article.status==='summary'?'summary':'full-body';
   const source={title:record.originalTitle,publishedAt:record.publishedAt,source:record.sourceName,url:record.canonicalUrl,evidenceScope:scope,body};
