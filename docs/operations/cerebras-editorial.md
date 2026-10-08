@@ -1,8 +1,8 @@
-# Complete-body automatic analysis
+# Legacy Cerebras adapter — disabled in scheduled operation
 
-Repository Actions secret: `CEREBRAS_API_KEY`. Never put the value in frontend code, public snapshots, prompts or logs.
+The September 17 live probe returned HTTP 402. The earlier description of this integration as permanently free was incorrect. Do not enable payment, enter a card or retry this provider automatically. The scheduled workflow now uses only `GROQ_API_KEY`; see `groq-editorial.md`. The Cerebras adapter exists only for backwards-compatible tests, not as a recommended free service.
 
-The hourly data job uses the fixed Cerebras chat-completions endpoint and `qwen-3.8-27b`. Each run attempts at most four complete articles within the last 24 hours. Each candidate needs both structured evidence validation and a separate model review. HTTP 401/402/403/429 stops further calls in that run. There is no paid-provider fallback. Keep the provider account on its free plan; application limits are not a provider billing guarantee.
+If explicitly invoked, the legacy adapter uses a fixed endpoint and `qwen-3.8-27b`. It shares the two-article, six-request evidence-first safety limits. HTTP 401/402/403/429 stops further calls. There is no paid-provider fallback. Secrets must never enter frontend code, public snapshots, prompts or logs.
 
 An article must have a verified full-body reader, matching source identity and body SHA-256. Feeds, headlines and short introductions alone are not sufficient. Unchanged verified bodies reuse cached editorials. Failed or rejected analysis is not published as a full explanation. English analysis may be retained when Chinese output is unavailable, with its language explicitly marked.
 
