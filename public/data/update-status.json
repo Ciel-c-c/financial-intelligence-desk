@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-08T06:19:12.846Z",
-  "lastSuccessfulAt": "2026-10-08T06:19:12.846Z",
+  "attemptedAt": "2026-10-08T06:24:35.416Z",
+  "lastSuccessfulAt": "2026-10-08T06:24:35.416Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T06:19:12.846Z"
+      "lastSuccessfulAt": "2026-10-08T06:24:35.416Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-08T06:19:12.846Z"
+      "lastSuccessfulAt": "2026-10-08T06:24:35.416Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T06:19:12.846Z"
+      "lastSuccessfulAt": "2026-10-08T06:24:35.416Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T06:19:12.846Z"
+      "lastSuccessfulAt": "2026-10-08T06:24:35.416Z"
     }
   ],
   "sourceHealth": [
@@ -98,7 +98,7 @@
       "name": "国家统计局（新闻）",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "news-fed",
@@ -153,17 +153,18 @@
       "name": "Groq 完整正文解读（新闻）",
       "status": "error",
       "itemCount": 0,
-      "error": "HTTP 400 [schema,enum]",
+      "error": "HTTP 413",
       "attempted": 2,
       "rejected": 2,
-      "failures": 2,
+      "failures": 1,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "facts": 2
+        "professional-sections": 1,
+        "facts": 1
       }
     }
   ],
