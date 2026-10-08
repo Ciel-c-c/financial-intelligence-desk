@@ -34,6 +34,17 @@ it('does not promote an isolated company story into a consumer confidence index 
  const output={...response(),marketSignals:[{asset:'消费者信心指数',direction:'下行',reason:'企业业务可能影响宏观信心。',condition:'报道受到关注。',invalidation:'若影响不扩大，则判断不成立。',timeframe:'短期'}]};
  expect((await run(output)).latest[0].editorial).toBeUndefined();
 });
+it('publishes economic interpretation without forcing any asset signal',async()=>{
+ const result=await run({...response(),marketSignals:[]},200,true,'groq');
+ expect(result.latest[0].editorial?.marketSignals).toEqual([]);
+ expect(result.latest[0].editorial?.soWhat.personalImpact[0].label).toBe('企业经营');
+});
+it('rejects a fact borrowing a number from another source passage',async()=>{
+ const {validateGeneratedEditorial}=await import('../../scripts/news/cerebras-editorial.mjs');
+ const output=response();
+ output.facts=[{text:'企业公布收入增长18%。',evidence:'企业公布业务进展，并提醒盈利效果仍取决于订单落实与成本控制。'}];
+ expect(validateGeneratedEditorial(output,text+'另一家公司股价下跌18%。')).toBe(false);
+});
 it('maps an explicitly generated personal invalidation into the existing reading interface',async()=>{
  const original=response();
  const output={...original,soWhat:{...original.soWhat,personalImpact:[{label:'企业经营',impact:'供应商订单可能变化。',why:'业务进展可能传到采购需求。',invalidation:'若采购没有增加，影响不成立。'}]}};
