@@ -1,6 +1,6 @@
 import {articleHash} from './full-article.mjs';
 import {evidencePrompt,validateEvidence} from './editorial-evidence.mjs';
-import {editorialResponseFormat} from './editorial-schema.mjs';
+import {editorialResponseFormat,sourceExcerpts} from './editorial-schema.mjs';
 import {setTimeout as wait} from 'node:timers/promises';
 export const CEREBRAS_MODEL='qwen-3.8-27b';
 const endpoint='https://api.cerebras.ai/v1/chat/completions';
@@ -58,7 +58,9 @@ export async function analyzeWithCerebras(record,options,state){
  const reject=(category,fields=[])=>{record.analysisAttempt.rejection={stage,category,fields};state.rejected++;state.rejectionReasons??={};state.rejectionReasons[category]=(state.rejectionReasons[category]??0)+1;return record;};
  try{
   const source={title:record.originalTitle,publishedAt:record.publishedAt,source:record.sourceName,url:record.canonicalUrl,body};
-  const evidence=await request([{role:'system',content:evidencePrompt},{role:'user',content:JSON.stringify(source)}],options,state);
+  const fragments=sourceExcerpts(body);
+  const evidence=await request([{role:'system',content:evidencePrompt+' OVERRIDE evidence representation: source.evidenceFragments maps short IDs to exact body excerpts. The evidence field MUST be one ID such as E1, NOT copied quotation text. Select an ID whose excerpt supports the entire paraphrase, including all numbers. Use empty arrays for unreported background/expectations/uncertainties. JSON skeleton: {"facts":[{"text":"accurate Chinese paraphrase","evidence":"E1"}],"background":[],"expectations":[],"uncertainties":[]}'},{role:'user',content:JSON.stringify({...source,evidenceFragments:fragments})}],options,state);
+  for(const key of ['facts','background','expectations','uncertainties']) if(Array.isArray(evidence?.[key])) evidence[key]=evidence[key].map(entry=>({...entry,evidence:fragments[entry?.evidence]??entry?.evidence}));
   if(Array.isArray(evidence?.expectations)) evidence.expectations=evidence.expectations.filter(entry=>typeof entry?.evidence==='string'&&/预期|预计|expect|forecast|consensus/i.test(entry.evidence));
   let evidenceFields=[];
   if(!validateEvidence(evidence,body,fields=>{evidenceFields=fields;})) return reject('facts',evidenceFields);
