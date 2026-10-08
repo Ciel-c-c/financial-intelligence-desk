@@ -6,7 +6,7 @@ const businessSoWhat={analogy:{image:'像商店接到订单。',explanation:'接
 const text='企业公布业务进展，并提醒盈利效果仍取决于订单落实与成本控制。'.repeat(20);
 const raw={sourceId:'cnfin',sourceName:'新华财经',sourceTier:'verified',originalTitle:'企业公布新的业务进展',originalLanguage:'zh',canonicalUrl:'https://www.cnfin.com/yw-lb/detail/20260917/4472000_1.html',sourceUrl:'https://www.cnfin.com/yw-lb/detail/20260917/4472000_1.html',publishedAt:now,fetchedAt:now,article:{status:'complete',reader:'cnfin-body',text,characterCount:text.length,sha256:articleHash(text),sourceUrl:'https://www.cnfin.com/yw-lb/detail/20260917/4472000_1.html',checkedAt:now}};
 function response(){return {language:'zh',title:'企业公布业务进展，盈利仍需观察',summary:'企业公布业务进展，订单落实与成本控制决定盈利效果。',excerpt:'报道未提供市场一致预期，不能判断是否超预期。',facts:[{text:'企业公布业务进展。',evidence:'企业公布业务进展'}],consensus:['常见机制：订单变化通过收入与成本传到盈利。'],inference:['条件性推演：订单落实可能增加收入。'],risks:['订单不能落实时，收入改善可能不成立。'],causalChain:[{title:'业务进展',explanation:'企业公布进展。',condition:'订单落实。'},{title:'收入可能变化',explanation:'订单转为收入。',condition:'交付完成。'},{title:'利润可能变化',explanation:'收入需要减去成本。',condition:'成本不抵消增长。'}],watchItems:['观察订单与利润。'],soWhat:structuredClone(businessSoWhat),political:null};}
-async function run(output=response(),status=200,approved=true,provider='cerebras',waitImpl=async(_ms:number)=>{},analysisFacts=output.facts,requireSchema=false,input=raw){
+async function run(output=response(),status=200,approved=true,provider='cerebras',waitImpl=async(_ms:number)=>{},analysisFacts=output.facts,requireSchema=false,input=raw,repairOutput=undefined){
  const fetchImpl=async(url,init)=>{
   expect(url).toBe(provider==='groq'?'https://api.groq.com/openai/v1/chat/completions':'https://api.cerebras.ai/v1/chat/completions');
   const sent=JSON.parse(init.body);
@@ -14,7 +14,7 @@ async function run(output=response(),status=200,approved=true,provider='cerebras
   if(requireSchema&&sent.response_format?.type!=='json_schema') return {ok:false,status:400};
   expect(sent.messages[1].content).toContain(text);
   expect(sent.messages[1].content).not.toContain('test-secret');
-  const content=JSON.stringify(sent.messages[0].content.includes('EVIDENCE_ONLY')?{facts:output.facts,background:[],expectations:[],uncertainties:[]}:sent.messages[0].content.includes('AUDIT_ONLY')?{approved}:{...output,facts:analysisFacts});
+  const content=JSON.stringify(sent.messages[0].content.startsWith('REPAIR_ONLY')&&repairOutput?repairOutput:sent.messages[0].content.includes('EVIDENCE_ONLY')?{facts:output.facts,background:[],expectations:[],uncertainties:[]}:sent.messages[0].content.includes('AUDIT_ONLY')?{approved}:{...output,facts:analysisFacts});
   return {ok:status===200,status,json:async()=>({choices:[{finish_reason:'stop',message:{content}}]})};
  };
  return buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[input]}],enrichmentOptions:{apiKey:'test-secret',fetchImpl,provider,waitImpl,nowMs:()=>0}});
@@ -73,6 +73,17 @@ it('rejects numerical forecasts hidden outside the facts section',async()=>{
 it('rejects a claimed prior market consensus without source expectation evidence',async()=>{
  const output=response();output.soWhat.expectationGap='市场原本预期本季度结束，实际进展落后。';
  expect((await run(output,200,true,'groq')).latest[0].editorial).toBeUndefined();
+});
+it('allows an explicit absence of consensus without inventing prior expectations',async()=>{
+ const output=response();output.soWhat.expectationGap='报道未提供市场预期，无法判断实际结果是否超预期。';
+ expect((await run(output)).latest[0].editorial?.item.facts).toEqual(['企业公布业务进展。']);
+});
+it('repairs untranslated fields once and still audits before publication',async()=>{
+ const broken=response();broken.title='Business update';
+ const waits:number[]=[];
+ const result=await run(broken,200,true,'groq',async ms=>{waits.push(ms);},broken.facts,false,raw,response());
+ expect(result.latest[0].editorial?.item.title).toBe('企业公布业务进展，盈利仍需观察');
+ expect(waits).toEqual([60000,60000,60000]);
 });
 it('withholds a structurally valid analysis when the separate audit rejects it',async()=>{
  expect((await run(response(),200,false)).latest[0].editorial).toBeUndefined();

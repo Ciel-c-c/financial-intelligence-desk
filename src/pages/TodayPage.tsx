@@ -29,7 +29,7 @@ export function TodayPage() {
   return <main className="page today-page">
     <MarketOverview snapshot={market} activeGroup={marketTab} onGroupChange={setMarketTab} />
     <div className="dashboard-split"><SectorPerformance snapshot={sectors} activeGroup={marketTab} /><CoreTransmission chain={chain} /></div>
-    <section aria-labelledby="political-title"><div className="section-heading"><div><p className="eyebrow">政策 · 国际关系 · 地缘冲突</p><h2 id="political-title">政策与地缘传导</h2></div><span>{policies.length} 个事件</span></div>{policies.length ? <div className="political-grid">{policies.slice(0,6).map(item=><PoliticalImpactCard key={item.id} item={{...item.editorial!.political!,event:item.editorial!.item.title,newsId:item.id,publishedAt:item.publishedAt}}/>)}</div> : <p className="empty-state">暂无已读取完整正文并完成中文解读的政策新闻。</p>}</section>
+    <section aria-labelledby="political-title"><div className="section-heading"><div><p className="eyebrow">政策 · 国际关系 · 地缘冲突</p><h2 id="political-title">政策与地缘传导</h2></div><span>{policies.length} 个事件</span></div>{policies.length ? <div className="political-grid">{policies.slice(0,6).map(item=><PoliticalImpactCard key={item.id} item={{...item.editorial!.political!,event:item.editorial!.item.title,newsId:item.id,publishedAt:item.publishedAt}}/>)}</div> : <p className="empty-state">暂无已完成来源核验和解读的政策新闻。</p>}</section>
     <NewsFeedSections snapshot={newsSnapshot} loading={newsLoading} error={newsError} showFilters={false} />
   </main>;
 }
