@@ -20,7 +20,7 @@ export function validateGeneratedEditorial(output,body,onReject=()=>{}){
  const reject=(category,fields=[])=>{onReject(category,fields);return false;};
  if(!output||!['zh','en'].includes(output.language)||![output.title,output.summary,output.excerpt].every(text)) return reject('required-fields');
  if(!Array.isArray(output.facts)||output.facts.length<1||output.facts.length>5||!output.facts.every(f=>text(f?.text)&&typeof f.evidence==='string'&&f.evidence.length>=6&&f.evidence.length<=120&&body.includes(f.evidence)&&numbers(f.text).every(n=>body.includes(n)))) return reject('facts');
- if(![output.consensus,output.inference,output.risks,output.watchItems].every(a=>list(a))) return reject('professional-sections');
+ if(![output.consensus,output.inference,output.risks,output.watchItems].every(a=>list(a))) return reject('professional-sections',['consensus','inference','risks','watchItems'].filter(key=>!list(output[key])));
  if(!Array.isArray(output.causalChain)||output.causalChain.length<3||output.causalChain.length>6||!output.causalChain.every(n=>[n?.title,n?.explanation,n?.condition].every(text))) return reject('causal-chain');
  const s=output.soWhat;
  if(!s||![s.analogy?.image,s.analogy?.explanation,s.why?.cause,s.why?.result,s.expectationGap,s.counterView].every(text)||![s.focus,s.marketBet,s.why?.mechanisms].every(a=>list(a))) return reject('so-what');
@@ -42,7 +42,7 @@ async function request(messages,options,state,audit=false){
  state.requests=(state.requests??0)+1;
  const groq=options.provider==='groq';
  if(groq){const nowMs=options.nowMs??Date.now;if(state.lastRequestAt!==undefined) await (options.waitImpl??wait)(Math.max(0,60000-(nowMs()-state.lastRequestAt)));state.lastRequestAt=nowMs();}
- const response=await (options.fetchImpl??fetch)(groq?groqEndpoint:endpoint,{method:'POST',redirect:'error',signal:AbortSignal.timeout(45000),headers:{authorization:`Bearer ${options.apiKey}`,'content-type':'application/json'},body:JSON.stringify({model:groq?groqModel:CEREBRAS_MODEL,messages,stream:false,reasoning_effort:groq?'low':'none',...(groq?{include_reasoning:false}:{}),temperature:0.1,max_completion_tokens:audit?(groq?1536:512):5000,response_format:groq?editorialResponseFormat(audit?'audit':messages[0].content.startsWith('EVIDENCE_ONLY')?'evidence':'analysis',JSON.parse(messages[1].content).body??''):{type:'json_object'}})});
+ const response=await (options.fetchImpl??fetch)(groq?groqEndpoint:endpoint,{method:'POST',redirect:'error',signal:AbortSignal.timeout(45000),headers:{authorization:`Bearer ${options.apiKey}`,'content-type':'application/json'},body:JSON.stringify({model:groq?groqModel:CEREBRAS_MODEL,messages,stream:false,reasoning_effort:groq?'low':'none',...(groq?{include_reasoning:false}:{}),temperature:0.1,max_completion_tokens:audit?768:messages[0].content.startsWith('EVIDENCE_ONLY')?1800:3500,response_format:groq?editorialResponseFormat(audit?'audit':messages[0].content.startsWith('EVIDENCE_ONLY')?'evidence':'analysis',JSON.parse(messages[1].content).body??''):{type:'json_object'}})});
  if(!response.ok){state.failures++;state.reason=`HTTP ${response.status}`;if(response.status===400){try{const error=(await response.json()).error;const message=String(error?.message??'');const keys=['json_schema','schema','enum','reasoning_effort','include_reasoning','max_completion_tokens','temperature','tokens','unsupported','not supported','minimum','maximum'];state.reason+=' ['+keys.filter(key=>message.toLowerCase().includes(key)).join(',')+']';console.error('Editorial provider request rejected:',message.replace(/gsk_[A-Za-z0-9_-]+/g,'[redacted]').slice(0,400));}catch{}}if([401,402,403,429].includes(response.status)) state.stopped=true;return undefined;}
  const data=await response.json(),choice=data.choices?.[0];
  if(choice?.finish_reason!=='stop'||typeof choice.message?.content!=='string') return undefined;
@@ -50,7 +50,7 @@ async function request(messages,options,state,audit=false){
 }
 export async function analyzeWithCerebras(record,options,state){
  const body=record.article?.text;
- if(!options.apiKey||state.stopped||state.attempted>=2||record.editorial||record.article?.status!=='complete'||typeof body!=='string'||body.length<100||body.length>20000||articleHash(body)!==record.article.sha256||(record.analysisAttempt?.count??0)>=3) return record;
+ if(!options.apiKey||state.stopped||state.attempted>=2||record.editorial||record.article?.status!=='complete'||typeof body!=='string'||body.length<100||body.length>6000||articleHash(body)!==record.article.sha256||(record.analysisAttempt?.count??0)>=3) return record;
  state.attempted++;
  record={...record,analysisAttempt:{sourceBodyHash:record.article.sha256,count:(record.analysisAttempt?.count??0)+1,lastAttemptAt:record.article.checkedAt}};
  state.stages??={evidence:0,analysis:0,audit:0};
