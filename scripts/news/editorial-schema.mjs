@@ -1,6 +1,6 @@
 const string={type:'string'};
 const array=items=>({type:'array',items});
-const strings=array(string);
+const strings={...array(string),minItems:1,maxItems:6};
 const object=properties=>({type:'object',properties,required:Object.keys(properties),additionalProperties:false});
 const quote=object({text:string,evidence:string});
 const evidence=object({facts:array(quote),background:array(quote),expectations:array(quote),uncertainties:array(quote)});
