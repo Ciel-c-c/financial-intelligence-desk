@@ -1,5 +1,6 @@
 import {articleHash} from './full-article.mjs';
 import {evidencePrompt,validateEvidence} from './editorial-evidence.mjs';
+import {editorialResponseFormat} from './editorial-schema.mjs';
 import {setTimeout as wait} from 'node:timers/promises';
 export const CEREBRAS_MODEL='qwen-3.8-27b';
 const endpoint='https://api.cerebras.ai/v1/chat/completions';
@@ -40,7 +41,7 @@ async function request(messages,options,state,audit=false){
  state.requests=(state.requests??0)+1;
  const groq=options.provider==='groq';
  if(groq){const nowMs=options.nowMs??Date.now;if(state.lastRequestAt!==undefined) await (options.waitImpl??wait)(Math.max(0,60000-(nowMs()-state.lastRequestAt)));state.lastRequestAt=nowMs();}
- const response=await (options.fetchImpl??fetch)(groq?groqEndpoint:endpoint,{method:'POST',redirect:'error',signal:AbortSignal.timeout(45000),headers:{authorization:`Bearer ${options.apiKey}`,'content-type':'application/json'},body:JSON.stringify({model:groq?groqModel:CEREBRAS_MODEL,messages,stream:false,reasoning_effort:groq?'low':'none',...(groq?{include_reasoning:false}:{}),temperature:0.1,max_completion_tokens:audit?(groq?1536:512):5000,response_format:{type:'json_object'}})});
+ const response=await (options.fetchImpl??fetch)(groq?groqEndpoint:endpoint,{method:'POST',redirect:'error',signal:AbortSignal.timeout(45000),headers:{authorization:`Bearer ${options.apiKey}`,'content-type':'application/json'},body:JSON.stringify({model:groq?groqModel:CEREBRAS_MODEL,messages,stream:false,reasoning_effort:groq?'low':'none',...(groq?{include_reasoning:false}:{}),temperature:0.1,max_completion_tokens:audit?(groq?1536:512):5000,response_format:groq?editorialResponseFormat(audit?'audit':messages[0].content.startsWith('EVIDENCE_ONLY')?'evidence':'analysis'):{type:'json_object'}})});
  if(!response.ok){state.failures++;if([401,402,403,429].includes(response.status)){state.stopped=true;state.reason=`HTTP ${response.status}`;}return undefined;}
  const data=await response.json(),choice=data.choices?.[0];
  if(choice?.finish_reason!=='stop'||typeof choice.message?.content!=='string') return undefined;
