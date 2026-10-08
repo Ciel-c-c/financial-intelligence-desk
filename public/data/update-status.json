@@ -1,31 +1,37 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-08T07:39:26.716Z",
-  "lastSuccessfulAt": "2026-10-08T07:39:26.716Z",
+  "attemptedAt": "2026-10-08T09:46:49.454Z",
+  "lastSuccessfulAt": "2026-10-08T09:46:49.454Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T07:39:26.716Z"
+      "lastSuccessfulAt": "2026-10-08T09:46:49.454Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-08T07:39:26.716Z"
+      "lastSuccessfulAt": "2026-10-08T09:46:49.454Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T07:39:26.716Z"
+      "lastSuccessfulAt": "2026-10-08T09:46:49.454Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T07:39:26.716Z"
+      "lastSuccessfulAt": "2026-10-08T09:46:49.454Z"
     }
   ],
   "sourceHealth": [
+    {
+      "id": "cnbc-markets",
+      "name": "CNBC",
+      "status": "ok",
+      "itemCount": 30
+    },
     {
       "id": "cnbc-business",
       "name": "CNBC",
@@ -73,13 +79,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 22
+      "itemCount": 24
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 39
+      "itemCount": 40
     },
     {
       "id": "bis-press",
@@ -92,6 +98,12 @@
       "name": "U.S. Energy Information Administration",
       "status": "ok",
       "itemCount": 14
+    },
+    {
+      "id": "news-cnbc-markets",
+      "name": "CNBC（新闻）",
+      "status": "ok",
+      "itemCount": 30
     },
     {
       "id": "news-cnbc-business",
@@ -140,13 +152,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 22
+      "itemCount": 24
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 39
+      "itemCount": 40
     },
     {
       "id": "news-bis-press",
@@ -174,7 +186,7 @@
         "audit": 1
       },
       "rejectionReasons": {
-        "language": 1
+        "numbers": 1
       }
     }
   ],
