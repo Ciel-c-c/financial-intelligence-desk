@@ -1,31 +1,37 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-08T06:32:51.449Z",
-  "lastSuccessfulAt": "2026-10-08T06:32:51.449Z",
+  "attemptedAt": "2026-10-08T07:28:23.640Z",
+  "lastSuccessfulAt": "2026-10-08T07:28:23.640Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T06:32:51.449Z"
+      "lastSuccessfulAt": "2026-10-08T07:28:23.640Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-08T06:32:51.449Z"
+      "lastSuccessfulAt": "2026-10-08T07:28:23.640Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T06:32:51.449Z"
+      "lastSuccessfulAt": "2026-10-08T07:28:23.640Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T06:32:51.449Z"
+      "lastSuccessfulAt": "2026-10-08T07:28:23.640Z"
     }
   ],
   "sourceHealth": [
+    {
+      "id": "cnbc-business",
+      "name": "CNBC",
+      "status": "ok",
+      "itemCount": 30
+    },
     {
       "id": "cnfin",
       "name": "新华财经",
@@ -73,7 +79,7 @@
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 38
+      "itemCount": 39
     },
     {
       "id": "bis-press",
@@ -86,6 +92,12 @@
       "name": "U.S. Energy Information Administration",
       "status": "ok",
       "itemCount": 14
+    },
+    {
+      "id": "news-cnbc-business",
+      "name": "CNBC（新闻）",
+      "status": "ok",
+      "itemCount": 30
     },
     {
       "id": "news-cnfin",
@@ -134,7 +146,7 @@
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 38
+      "itemCount": 39
     },
     {
       "id": "news-bis-press",
@@ -151,18 +163,19 @@
     {
       "id": "news-groq-editorial",
       "name": "Groq 完整正文解读（新闻）",
-      "status": "ok",
-      "itemCount": 1,
+      "status": "error",
+      "itemCount": 0,
       "attempted": 2,
-      "rejected": 1,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 1,
-        "analysis": 1,
-        "audit": 1
+        "evidence": 2,
+        "analysis": 0,
+        "audit": 0
       },
       "rejectionReasons": {
-        "facts": 1
+        "market-expectation-evidence": 1,
+        "language": 1
       }
     }
   ],

@@ -1,9 +1,15 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-10-08T06:32:51.449Z",
-  "lastSuccessfulAt": "2026-10-08T06:32:51.449Z",
+  "attemptedAt": "2026-10-08T07:28:23.640Z",
+  "lastSuccessfulAt": "2026-10-08T07:28:23.640Z",
   "status": "delayed",
   "sourceHealth": [
+    {
+      "id": "cnbc-business",
+      "name": "CNBC",
+      "status": "ok",
+      "itemCount": 30
+    },
     {
       "id": "cnfin",
       "name": "新华财经",
@@ -51,7 +57,7 @@
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 38
+      "itemCount": 39
     },
     {
       "id": "bis-press",
@@ -68,6 +74,156 @@
   ],
   "events": [
     {
+      "id": "d74cac6e5a76",
+      "headline": "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+      "sourceHeadline": "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "Israel said in September it would act in response to UK sanctions on illegal Israeli settlements in the West Bank.",
+      "publishedAt": "2026-10-08T07:06:15.000Z",
+      "firstPublishedAt": "2026-10-08T07:06:15.000Z",
+      "latestSourceAt": "2026-10-08T07:06:15.000Z",
+      "fetchedAt": "2026-10-08T07:28:23.640Z",
+      "region": "middle-east",
+      "countries": [],
+      "topic": "geopolitical-conflict",
+      "eventType": "geopolitical-conflict",
+      "relevance": {
+        "level": "high",
+        "score": 6,
+        "criteria": [
+          "trade",
+          "supplyChain",
+          "growth",
+          "fiscalPolicy",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 6,
+      "relevanceReasons": [
+        "trade",
+        "supplyChain",
+        "growth",
+        "fiscalPolicy",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Israel said in September it would act in response to UK sanctions on illegal Israeli settlements in the West Bank."
+      ],
+      "factSummary": "Israel said in September it would act in response to UK sanctions on illegal Israeli settlements in the West Bank.",
+      "marketView": [
+        "本条来源报告：Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cw33xd6vegnno?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-08T07:06:15.000Z"
+        }
+      ]
+    },
+    {
       "id": "1505b1987cd2",
       "headline": "Margaret Hamilton, whose software helped land Apollo 11 on the Moon, dies at 90",
       "sourceHeadline": "Margaret Hamilton, whose software helped land Apollo 11 on the Moon, dies at 90",
@@ -77,7 +233,7 @@
       "publishedAt": "2026-10-08T05:10:40.000Z",
       "firstPublishedAt": "2026-10-08T05:10:40.000Z",
       "latestSourceAt": "2026-10-08T05:10:40.000Z",
-      "fetchedAt": "2026-10-08T06:32:51.449Z",
+      "fetchedAt": "2026-10-08T07:28:23.640Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -223,7 +379,7 @@
       "publishedAt": "2026-10-08T01:59:54.000Z",
       "firstPublishedAt": "2026-10-08T01:59:54.000Z",
       "latestSourceAt": "2026-10-08T01:59:54.000Z",
-      "fetchedAt": "2026-10-08T06:32:51.449Z",
+      "fetchedAt": "2026-10-08T07:28:23.640Z",
       "region": "global",
       "countries": [],
       "topic": "trade-policy",
@@ -395,7 +551,7 @@
       "publishedAt": "2026-10-07T23:10:13.000Z",
       "firstPublishedAt": "2026-10-07T23:10:13.000Z",
       "latestSourceAt": "2026-10-07T23:10:13.000Z",
-      "fetchedAt": "2026-10-08T06:32:51.449Z",
+      "fetchedAt": "2026-10-08T07:28:23.640Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -583,7 +739,7 @@
       "publishedAt": "2026-10-07T22:50:00.000Z",
       "firstPublishedAt": "2026-10-07T22:50:00.000Z",
       "latestSourceAt": "2026-10-07T22:50:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:51.449Z",
+      "fetchedAt": "2026-10-08T07:28:23.640Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -722,6 +878,178 @@
       ]
     },
     {
+      "id": "9ac067e0070f",
+      "headline": "Levi Strauss hikes profit guidance after tariff refunds, but its sales outlook is less optimistic",
+      "sourceHeadline": "Levi Strauss hikes profit guidance after tariff refunds, but its sales outlook is less optimistic",
+      "oneLine": "跨境买卖的规则或成本在变化，企业需要重新算供应链和利润。",
+      "oneSentenceExplanation": "跨境买卖的规则或成本在变化，企业需要重新算供应链和利润。",
+      "summary": "Levi Strauss on Wednesday posted earnings that beat expectations, though it saw benefits from tariff refunds.",
+      "publishedAt": "2026-10-07T21:31:40.000Z",
+      "firstPublishedAt": "2026-10-07T21:31:40.000Z",
+      "latestSourceAt": "2026-10-07T21:31:40.000Z",
+      "fetchedAt": "2026-10-08T07:28:23.640Z",
+      "region": "global",
+      "countries": [],
+      "topic": "trade-policy",
+      "eventType": "trade-policy",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Levi Strauss on Wednesday posted earnings that beat expectations, though it saw benefits from tariff refunds."
+      ],
+      "factSummary": "Levi Strauss on Wednesday posted earnings that beat expectations, though it saw benefits from tariff refunds.",
+      "marketView": [
+        "本条来源报告：Levi Strauss hikes profit guidance after tariff refunds, but its sales outlook is less optimistic。以下为条件性机制参考，不是已核实的市场结论。",
+        "关税和出口限制会让某些零件更贵、更难买，企业要在涨价、少赚或换供应商之间选择。",
+        "专业一点说，贸易壁垒会改变成本转嫁、比较优势和供应链配置。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，投资地点可能改变。这是一种有条件的路径。"
+      ],
+      "simpleExample": "一家玩具店用 80 元进口玩具，卖 100 元。若边境成本增加 10 元，它只能提价、少赚 10 元，或寻找新工厂。",
+      "professionalConcept": "专业一点说，贸易壁垒会改变成本转嫁、比较优势和供应链配置。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "贸易规则收紧",
+          "beginnerExplanation": "进口或出口的手续、税费或许可增加。",
+          "condition": "措施真正生效且执行",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "跨境成本可能上升",
+          "beginnerExplanation": "企业需要缴费、绕行或更换供应商。",
+          "condition": "没有及时获得豁免或替代",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "物价与利润重新分配",
+          "beginnerExplanation": "消费者、进口商和出口商分担成本。",
+          "condition": "需求弹性与议价能力不同",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "投资地点可能改变",
+          "beginnerExplanation": "企业评估把产能移到更安全的市场。",
+          "condition": "政策预计持续足够久",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "贸易规则收紧",
+          "beginnerExplanation": "进口或出口的手续、税费或许可增加。",
+          "condition": "措施真正生效且执行",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "跨境成本可能上升",
+          "beginnerExplanation": "企业需要缴费、绕行或更换供应商。",
+          "condition": "没有及时获得豁免或替代",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "物价与利润重新分配",
+          "beginnerExplanation": "消费者、进口商和出口商分担成本。",
+          "condition": "需求弹性与议价能力不同",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "投资地点可能改变",
+          "beginnerExplanation": "企业评估把产能移到更安全的市场。",
+          "condition": "政策预计持续足够久",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "半导体股",
+          "explanation": "出口许可与设备限制会影响订单和扩产。"
+        },
+        {
+          "name": "工业股",
+          "explanation": "零部件成本和海外需求会改变利润。"
+        },
+        {
+          "name": "美元与人民币",
+          "explanation": "贸易流和资本避险会影响货币需求。"
+        },
+        {
+          "name": "航运股",
+          "explanation": "提前出货、绕行和贸易量变化都会影响运价。"
+        }
+      ],
+      "relatedIndustries": [
+        "半导体",
+        "工业制造",
+        "零售",
+        "航运"
+      ],
+      "knowledgeIds": [
+        "trade",
+        "elasticity",
+        "exchange-rate",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "trade",
+        "elasticity",
+        "exchange-rate",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "豁免范围扩大",
+        "谈判达成协议",
+        "汇率抵消部分成本",
+        "企业找到替代供应",
+        "需求下降导致企业无法提价"
+      ],
+      "watchConditions": [
+        "豁免范围扩大",
+        "谈判达成协议",
+        "汇率抵消部分成本",
+        "企业找到替代供应",
+        "需求下降导致企业无法提价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/07/levi-strauss-levi-q3-2026-earnings.html",
+          "publishedAt": "2026-10-07T21:31:40.000Z"
+        }
+      ]
+    },
+    {
       "id": "80cea0727b78",
       "headline": "Israelis demand accountability over 7 October failures three years after attacks",
       "sourceHeadline": "Israelis demand accountability over 7 October failures three years after attacks",
@@ -731,7 +1059,7 @@
       "publishedAt": "2026-10-07T16:00:18.000Z",
       "firstPublishedAt": "2026-10-07T16:00:18.000Z",
       "latestSourceAt": "2026-10-07T16:00:18.000Z",
-      "fetchedAt": "2026-10-08T06:32:51.449Z",
+      "fetchedAt": "2026-10-08T07:28:23.640Z",
       "region": "middle-east",
       "countries": [],
       "topic": "political-transition",
@@ -877,7 +1205,7 @@
       "publishedAt": "2026-10-07T14:33:11.000Z",
       "firstPublishedAt": "2026-10-07T14:33:11.000Z",
       "latestSourceAt": "2026-10-07T14:33:11.000Z",
-      "fetchedAt": "2026-10-08T06:32:51.449Z",
+      "fetchedAt": "2026-10-08T07:28:23.640Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1023,7 +1351,7 @@
       "publishedAt": "2026-10-07T14:00:00.000Z",
       "firstPublishedAt": "2026-10-07T14:00:00.000Z",
       "latestSourceAt": "2026-10-07T14:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:51.449Z",
+      "fetchedAt": "2026-10-08T07:28:23.640Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1487,7 +1815,7 @@
       "publishedAt": "2026-10-07T05:00:21.000Z",
       "firstPublishedAt": "2026-10-07T05:00:21.000Z",
       "latestSourceAt": "2026-10-07T05:00:21.000Z",
-      "fetchedAt": "2026-10-08T06:32:51.449Z",
+      "fetchedAt": "2026-10-08T07:28:23.640Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2447,7 +2775,7 @@
       "publishedAt": "2026-10-06T12:00:00.000Z",
       "firstPublishedAt": "2026-10-06T12:00:00.000Z",
       "latestSourceAt": "2026-10-06T12:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:51.449Z",
+      "fetchedAt": "2026-10-08T07:28:23.640Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -3550,298 +3878,6 @@
           "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/cqkgjnmx6ln4o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-10-06T04:54:32.000Z"
-        }
-      ]
-    },
-    {
-      "id": "42e45dc418bb",
-      "headline": "Right-wing Flávio Bolsonaro wins first round of Brazil election",
-      "sourceHeadline": "Right-wing Flávio Bolsonaro wins first round of Brazil election",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "With neither candidate getting more than 50% of the vote, the election will go to a run-off on 25 October.",
-      "publishedAt": "2026-10-05T23:19:14.000Z",
-      "firstPublishedAt": "2026-10-05T23:19:14.000Z",
-      "latestSourceAt": "2026-10-05T23:19:14.000Z",
-      "fetchedAt": "2026-10-06T00:48:38.529Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "With neither candidate getting more than 50% of the vote, the election will go to a run-off on 25 October."
-      ],
-      "factSummary": "With neither candidate getting more than 50% of the vote, the election will go to a run-off on 25 October.",
-      "marketView": [
-        "本条来源报告：Right-wing Flávio Bolsonaro wins first round of Brazil election。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-05T23:19:14.000Z"
-        }
-      ]
-    },
-    {
-      "id": "d7145f411b93",
-      "headline": "Flávio Bolsonaro rides right-wing wave to win first round of Brazil election",
-      "sourceHeadline": "Flávio Bolsonaro rides right-wing wave to win first round of Brazil election",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Flávio Bolsonaro's success could be the latest example of a resurgence of right-wing support in Latin America.",
-      "publishedAt": "2026-10-05T20:42:19.000Z",
-      "firstPublishedAt": "2026-10-05T20:42:19.000Z",
-      "latestSourceAt": "2026-10-05T20:42:19.000Z",
-      "fetchedAt": "2026-10-06T07:33:56.161Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Flávio Bolsonaro's success could be the latest example of a resurgence of right-wing support in Latin America."
-      ],
-      "factSummary": "Flávio Bolsonaro's success could be the latest example of a resurgence of right-wing support in Latin America.",
-      "marketView": [
-        "本条来源报告：Flávio Bolsonaro rides right-wing wave to win first round of Brazil election。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/cqj6je4jen6po?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-05T20:42:19.000Z"
         }
       ]
     }
