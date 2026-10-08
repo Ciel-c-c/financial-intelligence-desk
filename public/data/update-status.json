@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-08T07:28:23.640Z",
-  "lastSuccessfulAt": "2026-10-08T07:28:23.640Z",
+  "attemptedAt": "2026-10-08T07:39:26.716Z",
+  "lastSuccessfulAt": "2026-10-08T07:39:26.716Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T07:28:23.640Z"
+      "lastSuccessfulAt": "2026-10-08T07:39:26.716Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-08T07:28:23.640Z"
+      "lastSuccessfulAt": "2026-10-08T07:39:26.716Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T07:28:23.640Z"
+      "lastSuccessfulAt": "2026-10-08T07:39:26.716Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T07:28:23.640Z"
+      "lastSuccessfulAt": "2026-10-08T07:39:26.716Z"
     }
   ],
   "sourceHealth": [
@@ -162,19 +162,18 @@
     },
     {
       "id": "news-groq-editorial",
-      "name": "Groq 完整正文解读（新闻）",
-      "status": "error",
-      "itemCount": 0,
+      "name": "Groq 新闻摘要与机制解读（新闻）",
+      "status": "ok",
+      "itemCount": 1,
       "attempted": 2,
-      "rejected": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
         "evidence": 2,
-        "analysis": 0,
-        "audit": 0
+        "analysis": 1,
+        "audit": 1
       },
       "rejectionReasons": {
-        "market-expectation-evidence": 1,
         "language": 1
       }
     }
