@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-08T09:46:49.454Z",
-  "lastSuccessfulAt": "2026-10-08T09:46:49.454Z",
+  "attemptedAt": "2026-10-08T15:39:33.518Z",
+  "lastSuccessfulAt": "2026-10-08T15:39:33.518Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T09:46:49.454Z"
+      "lastSuccessfulAt": "2026-10-08T15:39:33.518Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-08T09:46:49.454Z"
+      "lastSuccessfulAt": "2026-10-08T15:39:33.518Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T09:46:49.454Z"
+      "lastSuccessfulAt": "2026-10-08T15:39:33.518Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-08T09:46:49.454Z"
+      "lastSuccessfulAt": "2026-10-08T15:39:33.518Z"
     }
   ],
   "sourceHealth": [
@@ -79,13 +79,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 24
+      "itemCount": 34
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 40
+      "itemCount": 45
     },
     {
       "id": "bis-press",
@@ -152,13 +152,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 24
+      "itemCount": 34
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 40
+      "itemCount": 45
     },
     {
       "id": "news-bis-press",
@@ -175,18 +175,19 @@
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "ok",
-      "itemCount": 1,
+      "status": "error",
+      "itemCount": 0,
       "attempted": 2,
-      "rejected": 1,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 2,
-        "analysis": 1,
-        "audit": 1
+        "evidence": 1,
+        "analysis": 0,
+        "audit": 0
       },
       "rejectionReasons": {
-        "numbers": 1
+        "facts": 1,
+        "language": 1
       }
     }
   ],
