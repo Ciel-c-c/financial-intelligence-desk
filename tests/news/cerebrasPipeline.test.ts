@@ -165,3 +165,19 @@ it('rotates past attempted bodies and stops after two article attempts per run',
  const second=await buildNewsSnapshot({...input,previous:first});
  expect(second.latest.find(i=>i.id===untouched.id)?.analysisAttempt.count).toBe(1);
 });
+it('allows a bounded three-article cloud run with every article audited',async()=>{
+ const {analyzeWithCerebras}=await import('../../scripts/news/cerebras-editorial.mjs');
+ const state={attempted:0,generated:0,rejected:0,failures:0,stopped:false};
+ const output=response();
+ const fetchImpl=async(_url,init)=>{
+  const sent=JSON.parse(init.body),system=sent.messages[0].content;
+  const content=system.startsWith('EVIDENCE_ONLY')?{facts:output.facts,background:[],expectations:[],uncertainties:[]}:system.startsWith('AUDIT_ONLY')?{approved:true}:output;
+  return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:JSON.stringify(content)}}]})};
+ };
+ const options={apiKey:'test-secret',provider:'groq',maxArticles:3,fetchImpl,waitImpl:async()=>{},nowMs:()=>0};
+ for(let i=0;i<4;i++) await analyzeWithCerebras({...raw,id:String(i),regions:['全球']},options,state);
+ expect(state.generated).toBe(3);
+ expect(state.attempted).toBe(3);
+ expect(state.stages.audit).toBe(3);
+ expect(state.requests).toBe(9);
+});
