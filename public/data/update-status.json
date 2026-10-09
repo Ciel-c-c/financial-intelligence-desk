@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-09T07:59:37.800Z",
-  "lastSuccessfulAt": "2026-10-09T07:59:37.800Z",
+  "attemptedAt": "2026-10-09T08:17:31.646Z",
+  "lastSuccessfulAt": "2026-10-09T08:17:31.646Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T07:59:37.800Z"
+      "lastSuccessfulAt": "2026-10-09T08:17:31.646Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-09T07:59:37.800Z"
+      "lastSuccessfulAt": "2026-10-09T08:17:31.646Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T07:59:37.800Z"
+      "lastSuccessfulAt": "2026-10-09T08:17:31.646Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T07:59:37.800Z"
+      "lastSuccessfulAt": "2026-10-09T08:17:31.646Z"
     }
   ],
   "sourceHealth": [
@@ -91,7 +91,7 @@
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 49
+      "itemCount": 50
     },
     {
       "id": "bis-press",
@@ -134,7 +134,7 @@
       "name": "国家统计局（新闻）",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "news-fed",
@@ -170,7 +170,7 @@
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 49
+      "itemCount": 50
     },
     {
       "id": "news-bis-press",
@@ -188,19 +188,16 @@
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
       "status": "ok",
-      "itemCount": 1,
+      "itemCount": 3,
       "attempted": 3,
-      "rejected": 2,
+      "rejected": 0,
       "failures": 0,
       "stages": {
         "evidence": 3,
-        "analysis": 1,
-        "audit": 1
+        "analysis": 3,
+        "audit": 3
       },
-      "rejectionReasons": {
-        "facts": 1,
-        "language": 1
-      }
+      "rejectionReasons": {}
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
