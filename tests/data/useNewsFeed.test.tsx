@@ -1,0 +1,21 @@
+import {act,renderHook} from '@testing-library/react';
+import {afterEach,expect,it,vi} from 'vitest';
+import {useNewsFeed} from '../../src/data/useNewsFeed';
+afterEach(()=>{vi.useRealTimers();vi.restoreAllMocks();});
+it('refreshes visible news and pauses polling while the page is hidden',async()=>{
+ vi.useFakeTimers();
+ const visibility=vi.spyOn(document,'visibilityState','get').mockReturnValue('visible');
+ let revision=0;
+ const fetcher=async(path:string)=>({ok:true,json:async()=>path==='./data/reviewed-news.json'?{items:[]}:{schemaVersion:1,attemptedAt:revision++?'2026-10-09T09:00:00Z':'2026-10-09T08:00:00Z',lastSuccessfulAt:'2026-10-09T08:00:00Z',nextExpectedAt:'2026-10-09T09:00:00Z',status:'fresh',latest:[],continuing:[],retainedDetails:[],sourceHealth:[]}});
+ const {result,unmount}=renderHook(()=>useNewsFeed({fetcher:fetcher as typeof fetch,refreshIntervalMs:1000}));
+ await act(async()=>{});
+ expect(result.current.snapshot.attemptedAt).toBe('2026-10-09T08:00:00Z');
+ visibility.mockReturnValue('hidden');
+ await act(async()=>{await vi.advanceTimersByTimeAsync(1000);});
+ expect(result.current.snapshot.attemptedAt).toBe('2026-10-09T08:00:00Z');
+ visibility.mockReturnValue('visible');
+ await act(async()=>{document.dispatchEvent(new Event('visibilitychange'));});
+ expect(result.current.snapshot.attemptedAt).toBe('2026-10-09T09:00:00Z');
+ unmount();
+ expect(vi.getTimerCount()).toBe(0);
+});

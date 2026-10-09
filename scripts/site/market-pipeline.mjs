@@ -16,7 +16,16 @@ export function resolveMarketState(group, now, dataAsOf) {
   if (weekday === 'Sat' || weekday === 'Sun') return 'previous_close';
   const nowDay = new Intl.DateTimeFormat('en-CA', { timeZone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(now));
   const dataDay = new Intl.DateTimeFormat('en-CA', { timeZone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(dataAsOf));
-  return nowDay === dataDay ? 'close' : 'previous_close';
+  if (nowDay !== dataDay) return 'previous_close';
+  if (group === 'globalAssets') return 'delayed';
+  const minutes = value => {
+    const parts = new Intl.DateTimeFormat('en-GB', { timeZone, hour:'2-digit', minute:'2-digit', hourCycle:'h23' }).formatToParts(new Date(value));
+    return Number(parts.find(part => part.type === 'hour').value) * 60 + Number(parts.find(part => part.type === 'minute').value);
+  };
+  // A date match does not prove a close: the observation itself must be at
+  // or after the regular closing time. Holidays retain the prior dated quote.
+  const closeMinute = group === 'aShare' ? 15 * 60 : 16 * 60;
+  return minutes(now) >= closeMinute && minutes(dataAsOf) >= closeMinute ? 'close' : 'delayed';
 }
 
 function validInstrument(item) {
@@ -34,12 +43,14 @@ function latestIso(items, field) {
 export function buildMarketOverview({ attemptedAt, sourceResults = [], previous } = {}) {
   const groups = {};
   const groupHealth = {};
+  let fetchedNewInstruments = false;
   for (const group of MARKET_GROUPS) {
     const relevant = sourceResults.filter(result => result.market === group);
     const current = relevant.flatMap(result => result.status === 'ok' ? result.instruments ?? [] : []).filter(validInstrument)
       .map(item => ({ ...item, marketState: item.marketState === 'delayed' ? resolveMarketState(group, attemptedAt, item.dataAsOf) : item.marketState }));
     const failures = relevant.filter(result => result.status !== 'ok');
     if (current.length) {
+      fetchedNewInstruments = true;
       groups[group] = current;
       groupHealth[group] = { status: failures.length ? 'partial' : 'fresh', sourceIds: relevant.filter(result => result.status === 'ok').map(result => result.sourceId), ...(failures.length ? { fallbackReason: failures.map(result => result.error ?? `${result.sourceId} failed`).join('; ') } : {}) };
       continue;
@@ -57,7 +68,7 @@ export function buildMarketOverview({ attemptedAt, sourceResults = [], previous 
   const statuses = Object.values(groupHealth).map(value => value.status);
   const status = statuses.every(value => value === 'unavailable') ? 'unavailable' : statuses.some(value => value !== 'fresh') ? 'partial' : 'fresh';
   const dataAsOf = latestIso(items, 'dataAsOf');
-  const lastSuccessfulAt = items.length ? attemptedAt : previous?.lastSuccessfulAt ?? null;
+  const lastSuccessfulAt = fetchedNewInstruments ? attemptedAt : previous?.lastSuccessfulAt ?? null;
   return {
     schemaVersion: 1,
     attemptedAt,

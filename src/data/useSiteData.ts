@@ -3,10 +3,10 @@ import { isDailyBriefSnapshot, isMarketOverviewSnapshot, isSectorPerformanceSnap
 import type { DailyBriefSnapshot, MarketOverviewSnapshot, SectorPerformanceSnapshot, SiteSnapshot } from './siteSnapshotTypes';
 
 export function shouldRefresh(lastCheckedAt: number, now: number, intervalMs: number) {
-  return now - lastCheckedAt > intervalMs;
+  return now - lastCheckedAt >= intervalMs;
 }
 
-export function useSiteData({ fetcher = fetch, refreshIntervalMs = 3_600_000 }: { fetcher?: typeof fetch; refreshIntervalMs?: number } = {}) {
+export function useSiteData({ fetcher = fetch, refreshIntervalMs = 300_000 }: { fetcher?: typeof fetch; refreshIntervalMs?: number } = {}) {
   const [site, setSite] = useState<SiteSnapshot>();
   const [market, setMarket] = useState<MarketOverviewSnapshot>();
   const [sectors, setSectors] = useState<SectorPerformanceSnapshot>();
@@ -14,8 +14,12 @@ export function useSiteData({ fetcher = fetch, refreshIntervalMs = 3_600_000 }: 
   const [loading, setLoading] = useState(true);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const lastCheckedAt = useRef(0);
+  const inFlight = useRef(false);
 
   const refresh = useCallback(async () => {
+    if (inFlight.current) return;
+    inFlight.current = true;
+    lastCheckedAt.current = Date.now();
     setLoading(true);
     const nextErrors: Record<string, string> = {};
     try {
@@ -36,6 +40,7 @@ export function useSiteData({ fetcher = fetch, refreshIntervalMs = 3_600_000 }: 
     } catch (error) {
       nextErrors.site = error instanceof Error ? error.message : String(error);
     } finally {
+      inFlight.current = false;
       setErrors(nextErrors);
       setLoading(false);
     }
@@ -47,7 +52,8 @@ export function useSiteData({ fetcher = fetch, refreshIntervalMs = 3_600_000 }: 
       if (document.visibilityState === 'visible' && shouldRefresh(lastCheckedAt.current, Date.now(), refreshIntervalMs)) void refresh();
     };
     document.addEventListener('visibilitychange', onVisibility);
-    return () => document.removeEventListener('visibilitychange', onVisibility);
+    const timer = window.setInterval(onVisibility, refreshIntervalMs);
+    return () => { document.removeEventListener('visibilitychange', onVisibility); window.clearInterval(timer); };
   }, [refresh, refreshIntervalMs]);
 
   return { site, market, sectors, brief, loading, errors, refresh };

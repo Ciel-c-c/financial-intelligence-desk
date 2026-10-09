@@ -25,5 +25,6 @@ export function editorialResponseFormat(stage,body=''){
   const ids=Object.keys(sourceExcerpts(body));
   if(ids.length){const boundQuote=object({text:string,evidence:{type:'string',enum:ids}});evidenceSchema=object({facts:array(boundQuote),background:array(boundQuote),expectations:array(boundQuote),uncertainties:array(boundQuote)});}
  }
- return {type:'json_schema',json_schema:{name:`editorial_${stage}`,strict:true,schema:stage==='evidence'?evidenceSchema:stage==='audit'?object({approved:{type:'boolean'}}):analysis}};
+ const audit=object({approved:{type:'boolean'},facts:array({type:'boolean'}),causalEdges:array({type:'boolean'}),personalImpacts:array({type:'boolean'}),scenariosAreConditional:{type:'boolean'}});
+ return {type:'json_schema',json_schema:{name:`editorial_${stage}`,strict:true,schema:stage==='evidence'?evidenceSchema:stage==='audit'?audit:analysis}};
 }

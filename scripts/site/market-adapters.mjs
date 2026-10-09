@@ -2,6 +2,7 @@ const GROUPS = ['aShare', 'hongKong', 'us', 'globalAssets'];
 const KNOWN_CURRENCIES = ['CNY', 'HKD', 'USD', 'EUR', 'JPY', 'GBP', 'NONE'];
 
 function finite(value) {
+  if (value == null || typeof value === 'boolean' || typeof value !== 'number' && typeof value !== 'string' || typeof value === 'string' && !value.trim()) return undefined;
   const number = Number(value);
   return Number.isFinite(number) ? number : undefined;
 }
@@ -19,6 +20,7 @@ export function normalizeInstrument(raw, source, fetchedAt, { staleAfterMs = 36 
   if (!Number.isFinite(observedAt.valueOf())) throw new Error('valid source timestamp is required');
   const fetched = new Date(fetchedAt);
   if (!Number.isFinite(fetched.valueOf())) throw new Error('valid fetch timestamp is required');
+  if (observedAt.valueOf() > fetched.valueOf()) throw new Error('future source timestamp is not allowed');
   const currency = raw.currency ?? 'NONE';
   if (!KNOWN_CURRENCIES.includes(currency)) throw new Error(`unknown currency: ${currency}`);
 

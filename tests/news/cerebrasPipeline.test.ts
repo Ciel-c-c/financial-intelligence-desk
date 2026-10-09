@@ -10,11 +10,12 @@ async function run(output=response(),status=200,approved=true,provider='cerebras
  const fetchImpl=async(url,init)=>{
   expect(url).toBe(provider==='groq'?'https://api.groq.com/openai/v1/chat/completions':'https://api.cerebras.ai/v1/chat/completions');
   const sent=JSON.parse(init.body);
-  if(provider==='groq') {expect(sent.model).toBe('openai/gpt-oss-120b');expect(sent.reasoning_effort).toBe('low');}
+  if(provider==='groq') {expect(sent.model).toBe(sent.messages[0].content.startsWith('AUDIT_ONLY')?'openai/gpt-oss-20b':'openai/gpt-oss-120b');expect(sent.reasoning_effort).toBe('low');}
   if(requireSchema&&sent.response_format?.type!=='json_schema') return {ok:false,status:400};
   expect(sent.messages[1].content).toContain(text);
   expect(sent.messages[1].content).not.toContain('test-secret');
-  const content=JSON.stringify(sent.messages[0].content.startsWith('REPAIR_ONLY')&&repairOutput?repairOutput:sent.messages[0].content.includes('EVIDENCE_ONLY')?{facts:output.facts,background:[],expectations:[],uncertainties:[]}:sent.messages[0].content.includes('AUDIT_ONLY')?{approved}:{...output,facts:analysisFacts});
+  const audit={approved,facts:output.facts.map(()=>true),causalEdges:output.causalChain.slice(1).map(()=>true),personalImpacts:output.soWhat.personalImpact.map(()=>true),scenariosAreConditional:true};
+  const content=JSON.stringify(sent.messages[0].content.startsWith('REPAIR_ONLY')&&repairOutput?repairOutput:sent.messages[0].content.includes('EVIDENCE_ONLY')?{facts:output.facts,background:[],expectations:[],uncertainties:[]}:sent.messages[0].content.includes('AUDIT_ONLY')?audit:{...output,facts:analysisFacts});
   return {ok:status===200,status,json:async()=>({choices:[{finish_reason:'stop',message:{content}}]})};
  };
  return buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[input]}],enrichmentOptions:{apiKey:'test-secret',fetchImpl,provider,waitImpl,nowMs:()=>0}});
@@ -79,6 +80,21 @@ it('does not spend a content rejection attempt when the free API quota is exhaus
  expect(result.latest[0].analysisAttempt).toBeUndefined();
  expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.error).toBe('HTTP 429');
 });
+it('does not spend a content rejection attempt on a temporary provider failure',async()=>{
+ const result=await run(response(),503,true,'groq');
+ expect(result.latest[0].analysisAttempt).toBeUndefined();
+ expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.error).toBe('HTTP 503');
+});
+it('keeps unchanged news eligible after a network outage',async()=>{
+ const result=await buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[raw]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',fetchImpl:async()=>{throw new TypeError('fetch failed');}}});
+ expect(result.latest[0].analysisAttempt).toBeUndefined();
+ expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.failures).toBe(1);
+});
+it('keeps news eligible when reading the provider response body times out',async()=>{
+ const result=await buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[raw]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',fetchImpl:async()=>({ok:true,json:async()=>{throw new DOMException('response timeout','TimeoutError');}})}});
+ expect(result.latest[0].analysisAttempt).toBeUndefined();
+ expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.failures).toBe(1);
+});
 it('reports a safe rejection category rather than silently losing invalid facts',async()=>{
  const output=response();output.facts[0].evidence='公司宣布降息四次';
  const result=await run(output,200,true,'groq');
@@ -120,6 +136,12 @@ it('repairs an unsupported numerical scenario once without changing source facts
 });
 it('withholds a structurally valid analysis when the separate audit rejects it',async()=>{
  expect((await run(response(),200,false)).latest[0].editorial).toBeUndefined();
+});
+it('does not accept a blanket approval that leaves causal links unchecked',async()=>{
+ const {validateEditorialAudit}=await import('../../scripts/news/cerebras-editorial.mjs');
+ expect(validateEditorialAudit({approved:true},response())).toBe(false);
+ expect(validateEditorialAudit({approved:true,facts:[true],causalEdges:[true,false],personalImpacts:[true],scenariosAreConditional:true},response())).toBe(false);
+ expect(validateEditorialAudit({approved:true,facts:[true],causalEdges:[true,true],personalImpacts:[true],scenariosAreConditional:true},response())).toBe(true);
 });
 it('does not mistake a previous headline-only record for a cached editorial',async()=>{
  const headline={...raw,article:undefined};
@@ -173,13 +195,21 @@ it('rotates past attempted bodies and stops after two article attempts per run',
  const second=await buildNewsSnapshot({...input,previous:first});
  expect(second.latest.find(i=>i.id===untouched.id)?.analysisAttempt.count).toBe(1);
 });
+it('does not let source rotation bury an exceptional AI market event',async()=>{
+ const target={...raw,sourceId:'cnbc-markets',sourceName:'CNBC',originalTitle:'Nvidia-backed AI firm withdraws IPO amid volatility',canonicalUrl:'https://www.cnbc.com/2026/09/17/ai-ipo.html'};
+ const routine={...raw,sourceId:'bbc-business',sourceName:'BBC News',originalTitle:'Company appoints chief product officer',canonicalUrl:'https://www.bbc.co.uk/news/articles/abc'};
+ const previous={latest:[{...target,id:'prior',analysisAttempt:{sourceBodyHash:'different',count:1,lastAttemptAt:now}}],continuing:[],retainedDetails:[]};
+ const requested:string[]=[];
+ await buildNewsSnapshot({now,previous,sourceResults:[{id:'cnbc-markets',name:'CNBC',ok:true,items:[target]},{id:'bbc-business',name:'BBC News',ok:true,items:[routine]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',waitImpl:async()=>{},fetchImpl:async(_url,init)=>{requested.push(JSON.parse(JSON.parse(init.body).messages[1].content).title);return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:'{}'}}]})};}}});
+ expect(requested[0]).toBe(target.originalTitle);
+});
 it('allows a bounded three-article cloud run with every article audited',async()=>{
  const {analyzeWithCerebras}=await import('../../scripts/news/cerebras-editorial.mjs');
  const state={attempted:0,generated:0,rejected:0,failures:0,stopped:false};
  const output=response();
  const fetchImpl=async(_url,init)=>{
   const sent=JSON.parse(init.body),system=sent.messages[0].content;
-  const content=system.startsWith('EVIDENCE_ONLY')?{facts:output.facts,background:[],expectations:[],uncertainties:[]}:system.startsWith('AUDIT_ONLY')?{approved:true}:output;
+  const content=system.startsWith('EVIDENCE_ONLY')?{facts:output.facts,background:[],expectations:[],uncertainties:[]}:system.startsWith('AUDIT_ONLY')?{approved:true,facts:[true],causalEdges:[true,true],personalImpacts:[true],scenariosAreConditional:true}:output;
   return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:JSON.stringify(content)}}]})};
  };
  const options={apiKey:'test-secret',provider:'groq',maxArticles:3,fetchImpl,waitImpl:async()=>{},nowMs:()=>0};

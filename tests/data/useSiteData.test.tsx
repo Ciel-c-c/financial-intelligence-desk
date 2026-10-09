@@ -1,8 +1,22 @@
 import { act, renderHook, waitFor } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { shouldRefresh, useSiteData } from '../../src/data/useSiteData';
 
 describe('useSiteData', () => {
+  afterEach(()=>{vi.useRealTimers();vi.restoreAllMocks();});
+  it('updates an already visible page when the refresh interval expires', async () => {
+    vi.useFakeTimers();
+    vi.spyOn(document,'visibilityState','get').mockReturnValue('visible');
+    let revision=0;
+    const fetcher=async()=>({ok:true,json:async()=>({schemaVersion:1,attemptedAt:revision++?'2026-10-09T09:00:00Z':'2026-10-09T08:00:00Z',lastSuccessfulAt:null,status:'unavailable',datasets:[]})});
+    const {result,unmount}=renderHook(()=>useSiteData({fetcher:fetcher as typeof fetch,refreshIntervalMs:1000}));
+    await act(async()=>{});
+    expect(result.current.site?.attemptedAt).toBe('2026-10-09T08:00:00Z');
+    await act(async()=>{await vi.advanceTimersByTimeAsync(1000);});
+    expect(result.current.site?.attemptedAt).toBe('2026-10-09T09:00:00Z');
+    unmount();
+    expect(vi.getTimerCount()).toBe(0);
+  });
   it('refreshes on focus only after the interval has elapsed', () => {
     expect(shouldRefresh(1_000, 3_000, 3_600_000)).toBe(false);
     expect(shouldRefresh(1_000, 3_700_001, 3_600_000)).toBe(true);

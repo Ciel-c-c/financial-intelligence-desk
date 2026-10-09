@@ -9,6 +9,21 @@ const instrument = (id: string, group: string, dataAsOf = '2026-09-14T01:55:00Z'
 });
 
 describe('market overview pipeline', () => {
+  it('does not relabel intraday observations as a closing snapshot', () => {
+    expect(resolveMarketState('aShare', '2026-10-09T02:00:00Z', '2026-10-09T01:55:00Z')).toBe('delayed');
+    expect(resolveMarketState('hongKong', '2026-10-09T07:30:00Z', '2026-10-09T07:25:00Z')).toBe('delayed');
+    expect(resolveMarketState('us', '2026-10-09T18:00:00Z', '2026-10-09T17:55:00Z')).toBe('delayed');
+    expect(resolveMarketState('aShare', '2026-10-09T08:00:00Z', '2026-10-09T07:00:00Z')).toBe('close');
+    expect(resolveMarketState('aShare', '2026-10-09T08:00:00Z', '2026-10-09T02:00:00Z')).toBe('delayed');
+    expect(resolveMarketState('globalAssets','2026-10-09T10:00:00Z','2026-10-09T09:55:00Z')).toBe('delayed');
+  });
+
+  it('keeps the last successful fetch time when only retaining older quotes', () => {
+    const previous = {lastSuccessfulAt:'2026-10-08T08:00:00Z', groups:{aShare:[instrument('sse','aShare','2026-10-08T07:00:00Z')]}};
+    const result = buildMarketOverview({attemptedAt:'2026-10-09T08:00:00Z',sourceResults:[],previous});
+    expect(result.lastSuccessfulAt).toBe('2026-10-08T08:00:00Z');
+    expect(result.groups.aShare[0].dataAsOf).toBe('2026-10-08T07:00:00Z');
+  });
   it('keeps healthy groups when one market fails and falls back independently', () => {
     const previous = buildMarketOverview({
       attemptedAt: '2026-09-13T02:00:00Z',

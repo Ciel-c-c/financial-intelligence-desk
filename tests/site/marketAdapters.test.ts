@@ -6,6 +6,17 @@ const source = {
 };
 
 describe('market adapters', () => {
+  it('does not invent a zero price or previous close from empty source fields', () => {
+    const raw={id:'x',group:'us',name:'X',symbol:'X',timestamp:'2026-09-14T01:00:00Z'};
+    expect(() => normalizeInstrument({...raw,value:null},source,'2026-09-14T02:00:00Z')).toThrow(/value/);
+    expect(() => normalizeInstrument({...raw,value:''},source,'2026-09-14T02:00:00Z')).toThrow(/value/);
+    const result=normalizeInstrument({...raw,value:10,previousClose:null,change:null,changePercent:''},source,'2026-09-14T02:00:00Z');
+    expect(result.change).toBeUndefined();
+    expect(result.changePercent).toBeUndefined();
+  });
+  it('rejects a source observation from the future', () => {
+    expect(() => normalizeInstrument({id:'x',group:'us',name:'X',symbol:'X',value:10,timestamp:'2026-09-15T01:00:00Z'},source,'2026-09-14T02:00:00Z')).toThrow(/future/);
+  });
   it('uses the source timestamp instead of the fetch timestamp', () => {
     const item = normalizeInstrument({
       id: 'sp500', group: 'us', name: '标普500', symbol: 'SPX', value: 6000,

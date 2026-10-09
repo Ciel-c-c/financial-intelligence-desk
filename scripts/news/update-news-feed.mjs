@@ -40,7 +40,7 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
   const sourceCounts=new Map(),rounds=new Map(),sourceLastAttempt=new Map();
   const sourceFamily=record=>(record.sourceName??record.sourceId).split('·')[0].trim();
   for(const record of prior){const time=Date.parse(record.analysisAttempt?.lastAttemptAt);if(Number.isFinite(time)) sourceLastAttempt.set(sourceFamily(record),Math.max(time,sourceLastAttempt.get(sourceFamily(record))??0));}
-  const priorityTier=record=>economicNewsPriority(record)>0?1:0;
+  const priorityTier=record=>economicNewsPriority(record)>=60?2:economicNewsPriority(record)>0?1:0;
   for(const record of [...clustered].sort((a,b)=>economicNewsPriority(b)-economicNewsPriority(a)||Date.parse(b.publishedAt)-Date.parse(a.publishedAt))){const family=sourceFamily(record),count=sourceCounts.get(family)??0;rounds.set(record.id,count);sourceCounts.set(family,count+1);}
   for(const raw of clustered.sort((a,b)=>priorityTier(b)-priorityTier(a)||(sourceLastAttempt.get(sourceFamily(a))??0)-(sourceLastAttempt.get(sourceFamily(b))??0)||(previousAttempt(a)?.count??0)-(previousAttempt(b)?.count??0)||(rounds.get(a.id)??0)-(rounds.get(b.id)??0)||economicNewsPriority(b)-economicNewsPriority(a)||Date.parse(b.publishedAt)-Date.parse(a.publishedAt))){
    let record=reviewChineseArticle(raw);
