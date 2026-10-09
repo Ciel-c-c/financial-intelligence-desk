@@ -110,6 +110,14 @@ it('repairs untranslated fields once and still audits before publication',async(
  expect(result.latest[0].editorial?.item.title).toBe('企业公布业务进展，盈利仍需观察');
  expect(waits).toEqual([60000,60000,60000]);
 });
+it('repairs an unsupported numerical scenario once without changing source facts',async()=>{
+ const broken=response();broken.soWhat.marketBet=['加息概率可能升至70%。'];
+ const waits:number[]=[];
+ const result=await run(broken,200,true,'groq',async ms=>{waits.push(ms);},broken.facts,false,raw,response());
+ expect(result.latest[0].editorial?.item.facts).toEqual(['企业公布业务进展。']);
+ expect(result.latest[0].editorial?.soWhat.marketBet).toEqual(businessSoWhat.marketBet);
+ expect(waits).toEqual([60000,60000,60000]);
+});
 it('withholds a structurally valid analysis when the separate audit rejects it',async()=>{
  expect((await run(response(),200,false)).latest[0].editorial).toBeUndefined();
 });

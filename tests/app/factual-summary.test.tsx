@@ -23,3 +23,7 @@ it('withholds summaries with changed evidence or an unapproved host',async()=>{
  expect(isPublishableSummary({...item,originalLanguage:'en'})).toBe(false);
  expect(await verifyNewsEvidence({...item,article:{...item.article!,sha256:'a'.repeat(64)}})).toBe(false);
 });
+it('accepts the official UN feed-view Chinese story route',()=>{
+ const url='https://news.un.org/feed/view/zh/story/2026/10/1142960';
+ expect(isPublishableSummary({...item,canonicalUrl:url,article:{...item.article!,sourceUrl:url}})).toBe(true);
+});

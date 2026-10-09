@@ -5,7 +5,7 @@ export function isPublishableSummary(item:LiveNewsItem):boolean {
  if(item.editorial||item.invalidationReason||item.originalLanguage!=='zh'||item.translationStatus!=='original-zh'||!summary||summary.length<80||summary===item.originalTitle) return false;
  try {
   const url=new URL(item.canonicalUrl);
-  const approved=(url.hostname==='news.un.org'&&url.pathname.startsWith('/zh/')&&item.sourceTier==='official'&&item.verificationStatus==='official')
+  const approved=(url.hostname==='news.un.org'&&/^\/(?:feed\/view\/)?zh\/story\//.test(url.pathname)&&item.sourceTier==='official'&&item.verificationStatus==='official')
     ||(url.hostname==='www.cnfin.com'&&url.pathname.startsWith('/yw-lb/detail/')&&item.sourceTier==='verified'&&['verified','cross-checked'].includes(item.verificationStatus));
   return approved&&url.protocol==='https:'&&!!a&&a.status==='summary'&&a.reader==='publisher-feed-summary'
    &&a.sourceUrl===item.canonicalUrl&&a.text===item.originalTitle+'\n'+summary&&/^[a-f0-9]{64}$/.test(a.sha256)
