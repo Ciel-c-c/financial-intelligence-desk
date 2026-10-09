@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-09T10:25:31.236Z",
-  "lastSuccessfulAt": "2026-10-09T10:25:31.236Z",
+  "attemptedAt": "2026-10-09T15:45:03.444Z",
+  "lastSuccessfulAt": "2026-10-09T15:45:03.444Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T10:25:31.236Z"
+      "lastSuccessfulAt": "2026-10-09T15:45:03.444Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-09T10:25:31.236Z"
+      "lastSuccessfulAt": "2026-10-09T15:45:03.444Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T10:25:31.236Z"
+      "lastSuccessfulAt": "2026-10-09T15:45:03.444Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T10:25:31.236Z"
+      "lastSuccessfulAt": "2026-10-09T15:45:03.444Z"
     }
   ],
   "sourceHealth": [
@@ -60,9 +60,8 @@
     {
       "id": "fed",
       "name": "Federal Reserve",
-      "status": "error",
-      "itemCount": 0,
-      "error": "HTTP 404"
+      "status": "ok",
+      "itemCount": 20
     },
     {
       "id": "ecb",
@@ -86,13 +85,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 36
+      "itemCount": 34
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 49
     },
     {
       "id": "bis-press",
@@ -104,7 +103,7 @@
       "id": "eia-energy",
       "name": "U.S. Energy Information Administration",
       "status": "ok",
-      "itemCount": 14
+      "itemCount": 15
     },
     {
       "id": "news-un-zh",
@@ -140,9 +139,8 @@
     {
       "id": "news-fed",
       "name": "Federal Reserve（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "HTTP 404"
+      "status": "ok",
+      "itemCount": 20
     },
     {
       "id": "news-ecb",
@@ -166,13 +164,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 36
+      "itemCount": 34
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 49
     },
     {
       "id": "news-bis-press",
@@ -184,25 +182,33 @@
       "id": "news-eia-energy",
       "name": "U.S. Energy Information Administration（新闻）",
       "status": "ok",
-      "itemCount": 14
+      "itemCount": 15
+    },
+    {
+      "id": "news-groq-summary",
+      "name": "来源事实总结与中文整理（新闻）",
+      "status": "error",
+      "itemCount": 0,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 0,
+      "requests": 8
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
       "status": "error",
-      "itemCount": 1,
-      "error": "HTTP 400 []",
-      "attempted": 3,
+      "itemCount": 0,
+      "attempted": 2,
       "rejected": 2,
-      "failures": 1,
+      "failures": 0,
       "stages": {
-        "evidence": 3,
-        "analysis": 2,
-        "audit": 1
+        "evidence": 2,
+        "analysis": 0,
+        "audit": 0
       },
       "rejectionReasons": {
-        "required-fields": 1,
-        "audit": 1
+        "impact-assessment": 2
       }
     }
   ],
