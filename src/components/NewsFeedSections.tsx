@@ -5,12 +5,12 @@ import type { NewsFeedSnapshot } from '../data/newsFeedTypes';
 import { LiveNewsCard } from './LiveNewsCard';
 import { NewsFeedStatus } from './NewsFeedStatus';
 import { NewsFilters } from './NewsFilters';
-import { isPublishableNews } from '../data/newsAdmission';
+import { isPublishableNews,isPublishableSummary } from '../data/newsAdmission';
 
 export function NewsFeedSections({snapshot,loading,error,showFilters=true}:{snapshot:NewsFeedSnapshot;loading:boolean;error?:string;showFilters?:boolean}) {
   const [filters,setFilters] = useState<LiveNewsFilters>({query:'',region:'全部',level:'全部',eventType:'全部'});
   const all = useMemo(() => [...snapshot.latest,...snapshot.continuing,...snapshot.retainedDetails].filter((item,index,list) => list.findIndex(candidate => candidate.id === item.id) === index),[snapshot]);
-  const publishable=all.filter(isPublishableNews);
+  const publishable=all.filter(item=>isPublishableNews(item)||isPublishableSummary(item));
   const filtered = filterLiveNews(publishable,filters);
   const latest = filtered.filter(item => isRecentNews(item.publishedAt));
   const background = filtered.filter(item => Number.isFinite(Date.parse(item.publishedAt)) && Date.parse(item.publishedAt) <= Date.now() && !isRecentNews(item.publishedAt)).sort((a,b) => Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
