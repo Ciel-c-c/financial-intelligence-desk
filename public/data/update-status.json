@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-09T02:08:58.749Z",
-  "lastSuccessfulAt": "2026-10-09T02:08:58.749Z",
+  "attemptedAt": "2026-10-09T06:48:10.397Z",
+  "lastSuccessfulAt": "2026-10-09T06:48:10.397Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T02:08:58.749Z"
+      "lastSuccessfulAt": "2026-10-09T06:48:10.397Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-09T02:08:58.749Z"
+      "lastSuccessfulAt": "2026-10-09T06:48:10.397Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T02:08:58.749Z"
+      "lastSuccessfulAt": "2026-10-09T06:48:10.397Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T02:08:58.749Z"
+      "lastSuccessfulAt": "2026-10-09T06:48:10.397Z"
     }
   ],
   "sourceHealth": [
@@ -49,7 +49,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "fed",
@@ -85,7 +85,7 @@
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 49
     },
     {
       "id": "bis-press",
@@ -158,7 +158,7 @@
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 49
     },
     {
       "id": "news-bis-press",
@@ -176,16 +176,19 @@
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
       "status": "ok",
-      "itemCount": 2,
-      "attempted": 2,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 3,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 2,
-        "analysis": 2,
-        "audit": 2
+        "evidence": 3,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 1,
+        "causal-chain": 1
+      }
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
