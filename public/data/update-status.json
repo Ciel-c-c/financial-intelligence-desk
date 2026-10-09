@@ -1,31 +1,37 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-09T06:48:10.397Z",
-  "lastSuccessfulAt": "2026-10-09T06:48:10.397Z",
+  "attemptedAt": "2026-10-09T07:59:37.800Z",
+  "lastSuccessfulAt": "2026-10-09T07:59:37.800Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T06:48:10.397Z"
+      "lastSuccessfulAt": "2026-10-09T07:59:37.800Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-09T06:48:10.397Z"
+      "lastSuccessfulAt": "2026-10-09T07:59:37.800Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T06:48:10.397Z"
+      "lastSuccessfulAt": "2026-10-09T07:59:37.800Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T06:48:10.397Z"
+      "lastSuccessfulAt": "2026-10-09T07:59:37.800Z"
     }
   ],
   "sourceHealth": [
+    {
+      "id": "un-zh",
+      "name": "UN News",
+      "status": "ok",
+      "itemCount": 30
+    },
     {
       "id": "cnbc-markets",
       "name": "CNBC",
@@ -49,7 +55,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -79,7 +85,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 36
+      "itemCount": 35
     },
     {
       "id": "bbc-business",
@@ -98,6 +104,12 @@
       "name": "U.S. Energy Information Administration",
       "status": "ok",
       "itemCount": 14
+    },
+    {
+      "id": "news-un-zh",
+      "name": "UN News（新闻）",
+      "status": "ok",
+      "itemCount": 30
     },
     {
       "id": "news-cnbc-markets",
@@ -152,7 +164,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 36
+      "itemCount": 35
     },
     {
       "id": "news-bbc-business",
@@ -186,8 +198,8 @@
         "audit": 1
       },
       "rejectionReasons": {
-        "numbers": 1,
-        "causal-chain": 1
+        "facts": 1,
+        "language": 1
       }
     }
   ],
