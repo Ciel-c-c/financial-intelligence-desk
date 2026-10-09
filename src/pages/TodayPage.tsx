@@ -10,6 +10,8 @@ import { useSiteData } from '../data/useSiteData';
 import type { MarketGroup } from '../data/siteSnapshotTypes';
 import { PoliticalImpactCard } from '../components/PoliticalImpactCard';
 import { isPublishableNews } from '../data/newsAdmission';
+import {isPublishableSummary} from '../data/newsAdmission';
+import {LiveNewsCard} from '../components/LiveNewsCard';
 
 export function TodayPage() {
   const { snapshot: newsSnapshot, loading: newsLoading, error: newsError } = useNewsFeed();
@@ -17,7 +19,9 @@ export function TodayPage() {
   const rawSituation = useGlobalSituation();
   const situation = { ...rawSituation, events: rawSituation.events.filter(event => isRecentNews(event.latestSourceAt ?? event.publishedAt)) };
   const [marketTab, setMarketTab] = useState<MarketGroup>('aShare');
-  const policies=[...newsSnapshot.latest,...newsSnapshot.continuing,...newsSnapshot.retainedDetails].filter(isPublishableNews).filter(item=>item.editorial?.political);
+  const policies=[...newsSnapshot.latest,...newsSnapshot.continuing,...newsSnapshot.retainedDetails].filter(isPublishableNews).filter(item=>item.editorial?.political&&isRecentNews(item.publishedAt));
+  const policySummaries=newsSnapshot.latest.filter(isPublishableSummary).filter(item=>isRecentNews(item.publishedAt)&&item.eventTypes.some(type=>['监管','货币政策','财政政策','贸易','地缘风险','经济数据'].includes(type)));
+  const oldPolicies=[...newsSnapshot.latest,...newsSnapshot.continuing,...newsSnapshot.retainedDetails].filter(isPublishableNews).filter(item=>item.editorial?.political&&!isRecentNews(item.publishedAt)&&Date.parse(item.publishedAt)<=Date.now());
   const recentEvents = situation.events;
   const featured = [...recentEvents].sort((a, b) => Date.parse(b.latestSourceAt ?? b.publishedAt) - Date.parse(a.latestSourceAt ?? a.publishedAt) || b.relevance.score - a.relevance.score)[0];
   const chain = useMemo(() => featured?.causalChain?.length >= 3 ? {
@@ -29,7 +33,8 @@ export function TodayPage() {
   return <main className="page today-page">
     <MarketOverview snapshot={market} activeGroup={marketTab} onGroupChange={setMarketTab} />
     <div className="dashboard-split"><SectorPerformance snapshot={sectors} activeGroup={marketTab} /><CoreTransmission chain={chain} /></div>
-    <section aria-labelledby="political-title"><div className="section-heading"><div><p className="eyebrow">政策 · 国际关系 · 地缘冲突</p><h2 id="political-title">政策与地缘传导</h2></div><span>{policies.length} 个事件</span></div>{policies.length ? <div className="political-grid">{policies.slice(0,6).map(item=><PoliticalImpactCard key={item.id} item={{...item.editorial!.political!,event:item.editorial!.item.title,newsId:item.id,publishedAt:item.publishedAt}}/>)}</div> : <p className="empty-state">暂无已完成来源核验和解读的政策新闻。</p>}</section>
+    <section aria-labelledby="political-title"><div className="section-heading"><div><p className="eyebrow">政策 · 国际关系 · 地缘冲突</p><h2 id="political-title">政策与地缘传导</h2></div><span>{policies.length+policySummaries.length} 个事件</span></div>{policies.length+policySummaries.length ? <div className="political-grid">{policies.slice(0,6).map(item=><PoliticalImpactCard key={item.id} item={{...item.editorial!.political!,event:item.editorial!.item.title,newsId:item.id,publishedAt:item.publishedAt}}/>) }{policySummaries.slice(0,Math.max(0,6-policies.length)).map(item=><LiveNewsCard key={item.id} item={item}/>)}</div> : <p className="empty-state">暂无已完成来源核验和解读的政策新闻。</p>}</section>
+    {oldPolicies.length>0&&<details className="watch-card" open={policies.length+policySummaries.length===0}><summary><h2>此前政策与地缘事件 / 背景参考</h2></summary><p>以下保留原新闻日期，不作为今日重点。</p><div className="political-grid">{oldPolicies.slice(0,6).map(item=><PoliticalImpactCard key={item.id} item={{...item.editorial!.political!,event:item.editorial!.item.title,newsId:item.id,publishedAt:item.publishedAt}}/>)}</div></details>}
     <NewsFeedSections snapshot={newsSnapshot} loading={newsLoading} error={newsError} showFilters={false} />
   </main>;
 }

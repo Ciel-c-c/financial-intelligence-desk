@@ -2,7 +2,7 @@ import { readJson } from '../snapshot-schema.mjs';
 import { newsSources,articleSources } from './source-registry.mjs';
 import { articleHash,fetchFullArticle,toPublicEvidence } from './full-article.mjs';
 import { reviewChineseArticle } from './chinese-editorial.mjs';
-export async function refreshReviewedNews(now,fetchImpl=fetch,records){
+export async function refreshReviewedNews(now,fetchImpl=fetch,records,{retainBody=false}={}){
   const stored=records??(await readJson('public/data/reviewed-news.json'))?.items??[];
   return Promise.all(stored.map(async item=>{
     if(!item.article||item.editorial?.sourceBodyHash!==item.article.sha256) return undefined;
@@ -19,6 +19,7 @@ export async function refreshReviewedNews(now,fetchImpl=fetch,records){
       return {...item,fetchedAt:now,editorial:undefined,article:{status:'unreadable',reader:item.article.reader,sha256:'0'.repeat(64),sourceUrl:item.canonicalUrl,checkedAt:now},invalidationReason:confirmedFailure};
     }
     const updated={...item,fetchedAt:now,article,editorial:article.sha256===item.article.sha256?item.editorial:undefined};
-    return toPublicEvidence(updated.editorial?updated:reviewChineseArticle(updated));
+    const result=updated.editorial?updated:reviewChineseArticle(updated);
+    return retainBody?result:toPublicEvidence(result);
   })).then(items=>items.filter(Boolean));
 }

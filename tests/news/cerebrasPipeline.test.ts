@@ -4,9 +4,10 @@ import {articleHash} from '../../scripts/news/full-article.mjs';
 const now='2026-09-17T10:00:00Z';
 const businessSoWhat={analogy:{image:'像商店接到订单。',explanation:'接到订单不等于赚到钱，还要完成交付并控制成本。'},why:{cause:'企业公布业务进展。',mechanisms:['订单落实后可能形成收入。','收入减去成本才是利润。'],result:'利润变化仍需要观察。'},focus:['订单落实与成本控制。'],marketBet:['订单能否落实。','交付能否完成。','成本能否控制。'],expectationGap:'报道没有提供市场一致预期，不能判断是否超预期。',counterView:'如果订单未落实或成本上升，业务进展可能不转化为盈利。',personalImpact:[{label:'企业经营',impact:'相关供应商的订单可能变化。',why:'业务落实可能传到采购需求。',condition:'若订单未落实或未增加采购，影响可能不成立。'}]};
 const text='企业公布业务进展，并提醒盈利效果仍取决于订单落实与成本控制。'.repeat(20);
+const impactAssessment=['投资','汇率','住房','工作','消费','企业经营'].map(label=>({label,score:label==='企业经营'?3:0,audience:label==='企业经营'?'firms':'none',region:'事件相关企业',triggerEvidence:label==='企业经营'?'企业公布业务进展':null,path:label==='企业经营'?['业务落实','采购变化','供应商订单变化']:[],invalidation:'若订单没有落实，影响不成立'}));
 const raw={sourceId:'cnfin',sourceName:'新华财经',sourceTier:'verified',originalTitle:'企业公布新的业务进展',originalLanguage:'zh',canonicalUrl:'https://www.cnfin.com/yw-lb/detail/20260917/4472000_1.html',sourceUrl:'https://www.cnfin.com/yw-lb/detail/20260917/4472000_1.html',publishedAt:now,fetchedAt:now,article:{status:'complete',reader:'cnfin-body',text,characterCount:text.length,sha256:articleHash(text),sourceUrl:'https://www.cnfin.com/yw-lb/detail/20260917/4472000_1.html',checkedAt:now}};
-function response(){return {language:'zh',title:'企业公布业务进展，盈利仍需观察',summary:'企业公布业务进展，订单落实与成本控制决定盈利效果。',excerpt:'报道未提供市场一致预期，不能判断是否超预期。',facts:[{text:'企业公布业务进展。',evidence:'企业公布业务进展'}],consensus:['常见机制：订单变化通过收入与成本传到盈利。'],inference:['条件性推演：订单落实可能增加收入。'],risks:['订单不能落实时，收入改善可能不成立。'],causalChain:[{title:'业务进展',explanation:'企业公布进展。',condition:'订单落实。'},{title:'收入可能变化',explanation:'订单转为收入。',condition:'交付完成。'},{title:'利润可能变化',explanation:'收入需要减去成本。',condition:'成本不抵消增长。'}],watchItems:['观察订单与利润。'],soWhat:structuredClone(businessSoWhat),political:null};}
-async function run(output=response(),status=200,approved=true,provider='cerebras',waitImpl=async(_ms:number)=>{},analysisFacts=output.facts,requireSchema=false,input=raw,repairOutput=undefined){
+function response(){return {language:'zh',title:'企业公布业务进展，盈利仍需观察',summary:'企业公布业务进展，订单落实与成本控制决定盈利效果。',excerpt:'报道未提供市场一致预期，不能判断是否超预期。',facts:[{text:'企业公布业务进展。',evidence:'企业公布业务进展'}],consensus:['常见机制：订单变化通过收入与成本传到盈利。'],inference:['条件性推演：订单落实可能增加收入。'],risks:['订单不能落实时，收入改善可能不成立。'],causalChain:[{title:'业务进展',explanation:'企业公布进展。',condition:'订单落实。'},{title:'收入可能变化',explanation:'订单转为收入。',condition:'交付完成。'},{title:'利润可能变化',explanation:'收入需要减去成本。',condition:'成本不抵消增长。'}],watchItems:['观察订单与利润。'],soWhat:structuredClone(businessSoWhat),political:null,impactAssessment};}
+async function run(output=response(),status=200,approved=true,provider='groq',waitImpl=async(_ms:number)=>{},analysisFacts=output.facts,requireSchema=false,input=raw,repairOutput=undefined){
  const fetchImpl=async(url,init)=>{
   expect(url).toBe(provider==='groq'?'https://api.groq.com/openai/v1/chat/completions':'https://api.cerebras.ai/v1/chat/completions');
   const sent=JSON.parse(init.body);
@@ -14,11 +15,11 @@ async function run(output=response(),status=200,approved=true,provider='cerebras
   if(requireSchema&&sent.response_format?.type!=='json_schema') return {ok:false,status:400};
   expect(sent.messages[1].content).toContain(text);
   expect(sent.messages[1].content).not.toContain('test-secret');
-  const audit={approved,facts:output.facts.map(()=>true),causalEdges:output.causalChain.slice(1).map(()=>true),personalImpacts:output.soWhat.personalImpact.map(()=>true),scenariosAreConditional:true};
+  const audit={approved,facts:output.facts.map(()=>true),causalEdges:output.causalChain.slice(1).map(()=>true),personalImpacts:output.soWhat.personalImpact.map(()=>true),scenariosAreConditional:true,findings:[]};
   const content=JSON.stringify(sent.messages[0].content.startsWith('REPAIR_ONLY')&&repairOutput?repairOutput:sent.messages[0].content.includes('EVIDENCE_ONLY')?{facts:output.facts,background:[],expectations:[],uncertainties:[]}:sent.messages[0].content.includes('AUDIT_ONLY')?audit:{...output,facts:analysisFacts});
   return {ok:status===200,status,json:async()=>({choices:[{finish_reason:'stop',message:{content}}]})};
  };
- return buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[input]}],enrichmentOptions:{apiKey:'test-secret',fetchImpl,provider,waitImpl,nowMs:()=>0}});
+ return buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[input]}],enrichmentOptions:{apiKey:'test-secret',fetchImpl,provider,waitImpl,nowMs:()=>0,maxSummaries:0}});
 }
 it('publishes audited summary-based analysis without claiming to have read the full body',async()=>{
  const result=await run(response(),200,true,'groq',async()=>{},response().facts,false,{...raw,article:undefined,originalSummary:text});
@@ -140,8 +141,8 @@ it('withholds a structurally valid analysis when the separate audit rejects it',
 it('does not accept a blanket approval that leaves causal links unchecked',async()=>{
  const {validateEditorialAudit}=await import('../../scripts/news/cerebras-editorial.mjs');
  expect(validateEditorialAudit({approved:true},response())).toBe(false);
- expect(validateEditorialAudit({approved:true,facts:[true],causalEdges:[true,false],personalImpacts:[true],scenariosAreConditional:true},response())).toBe(false);
- expect(validateEditorialAudit({approved:true,facts:[true],causalEdges:[true,true],personalImpacts:[true],scenariosAreConditional:true},response())).toBe(true);
+ expect(validateEditorialAudit({approved:true,facts:[true],causalEdges:[true,false],personalImpacts:[true],scenariosAreConditional:true,findings:[]},response())).toBe(false);
+ expect(validateEditorialAudit({approved:true,facts:[true],causalEdges:[true,true],personalImpacts:[true],scenariosAreConditional:true,findings:[]},response())).toBe(true);
 });
 it('does not mistake a previous headline-only record for a cached editorial',async()=>{
  const headline={...raw,article:undefined};
@@ -203,19 +204,19 @@ it('does not let source rotation bury an exceptional AI market event',async()=>{
  await buildNewsSnapshot({now,previous,sourceResults:[{id:'cnbc-markets',name:'CNBC',ok:true,items:[target]},{id:'bbc-business',name:'BBC News',ok:true,items:[routine]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',waitImpl:async()=>{},fetchImpl:async(_url,init)=>{requested.push(JSON.parse(JSON.parse(init.body).messages[1].content).title);return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:'{}'}}]})};}}});
  expect(requested[0]).toBe(target.originalTitle);
 });
-it('allows a bounded three-article cloud run with every article audited',async()=>{
+it('caps a cloud run at two deep analyses even when given an obsolete three-article setting',async()=>{
  const {analyzeWithCerebras}=await import('../../scripts/news/cerebras-editorial.mjs');
  const state={attempted:0,generated:0,rejected:0,failures:0,stopped:false};
  const output=response();
  const fetchImpl=async(_url,init)=>{
   const sent=JSON.parse(init.body),system=sent.messages[0].content;
-  const content=system.startsWith('EVIDENCE_ONLY')?{facts:output.facts,background:[],expectations:[],uncertainties:[]}:system.startsWith('AUDIT_ONLY')?{approved:true,facts:[true],causalEdges:[true,true],personalImpacts:[true],scenariosAreConditional:true}:output;
+  const content=system.startsWith('EVIDENCE_ONLY')?{facts:output.facts,background:[],expectations:[],uncertainties:[]}:system.startsWith('AUDIT_ONLY')?{approved:true,facts:[true],causalEdges:[true,true],personalImpacts:[true],scenariosAreConditional:true,findings:[]}:output;
   return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:JSON.stringify(content)}}]})};
  };
  const options={apiKey:'test-secret',provider:'groq',maxArticles:3,fetchImpl,waitImpl:async()=>{},nowMs:()=>0};
  for(let i=0;i<4;i++) await analyzeWithCerebras({...raw,id:String(i),regions:['全球']},options,state);
- expect(state.generated).toBe(3);
- expect(state.attempted).toBe(3);
- expect(state.stages.audit).toBe(3);
- expect(state.requests).toBe(9);
+ expect(state.generated).toBe(2);
+ expect(state.attempted).toBe(2);
+ expect(state.stages.audit).toBe(2);
+ expect(state.requests).toBe(6);
 });

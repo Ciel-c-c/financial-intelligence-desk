@@ -4,6 +4,7 @@ import { enrichNewsItems, validateTranslation } from '../../scripts/news/news-en
 const item:any={ id:'x',originalLanguage:'en',originalTitle:'Fed keeps rate at 4.25% on September 14',originalSummary:'The Federal Reserve held the rate at 4.25%.',translationStatus:'unavailable' };
 describe('news enrichment',()=>{
   it('accepts structured Chinese text while preserving protected tokens',()=>{
+    expect(validateTranslation(item,{titleZh:'美联储于9月14日维持利率在4.25%',summaryZh:'美联储将利率维持在4.25%。'})).toBe(true);
     expect(validateTranslation(item,{titleZh:'美联储于 September 14 维持利率在 4.25%',summaryZh:'Federal Reserve 将利率维持在 4.25%。'})).toBe(true);
     expect(validateTranslation(item,{titleZh:'美联储维持利率',summaryZh:'利率不变。'})).toBe(false);
   });

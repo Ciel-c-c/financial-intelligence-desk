@@ -1,4 +1,7 @@
 export const NEWS_SCHEMA_VERSION = 1;
+import {validateFactualSummary} from './factual-summary.mjs';
+import {buildSourcePolicies} from './source-policy.mjs';
+import {newsSources} from './source-registry.mjs';
 const values = {
   sourceTier: ['official', 'verified'], verificationStatus: ['official', 'verified', 'cross-checked'],
   translationStatus: ['original-zh', 'generated', 'cached', 'unavailable'], detailStatus: ['brief', 'professional', 'so-what'],
@@ -10,14 +13,15 @@ const https = value => { try { return new URL(value).protocol === 'https:'; } ca
 const strings = value => Array.isArray(value) && value.every(item => typeof item === 'string');
 const enums = (value, allowed) => Array.isArray(value) && value.length > 0 && value.every(item => allowed.includes(item));
 
-export function validateNewsRecord(value) {
+export function validateNewsRecord(value,now=new Date().toISOString()) {
   return !!value && typeof value.id === 'string' && https(value.canonicalUrl) && https(value.sourceUrl)
     && typeof value.sourceName === 'string' && values.sourceTier.includes(value.sourceTier) && values.verificationStatus.includes(value.verificationStatus)
     && iso(value.publishedAt) && iso(value.fetchedAt) && typeof value.originalLanguage === 'string' && typeof value.originalTitle === 'string' && value.originalTitle.trim().length > 0
     && values.translationStatus.includes(value.translationStatus) && enums(value.analysisLevels, values.analysisLevels) && enums(value.eventTypes, values.eventTypes)
     && enums(value.impactChannels, values.impactChannels) && enums(value.regions, values.regions) && strings(value.keyTerms) && strings(value.causalSignals)
     && Number.isFinite(value.importanceScore) && Number.isFinite(value.continuingImpactScore) && typeof value.clusterId === 'string'
-    && Array.isArray(value.relatedSources) && values.detailStatus.includes(value.detailStatus) && strings(value.facts) && strings(value.expectations) && strings(value.inferences);
+    && Array.isArray(value.relatedSources) && values.detailStatus.includes(value.detailStatus) && strings(value.facts) && strings(value.expectations) && strings(value.inferences)
+    &&(value.factualSummary===undefined||validateFactualSummary(value,value.factualSummary,buildSourcePolicies(newsSources,now),now));
 }
 
 export function validateNewsSnapshot(value) {
@@ -25,5 +29,5 @@ export function validateNewsSnapshot(value) {
     || !['fresh', 'delayed', 'source_error'].includes(value.status) || !Array.isArray(value.latest) || !Array.isArray(value.continuing)
     || value.continuing.length > 6 || !Array.isArray(value.retainedDetails) || !Array.isArray(value.sourceHealth)) return false;
   const all = [...value.latest, ...value.continuing, ...value.retainedDetails];
-  return all.every(validateNewsRecord) && new Set(all.map(item => item.id)).size === all.length;
+  return all.every(record=>validateNewsRecord(record,value.attemptedAt)) && new Set(all.map(item => item.id)).size === all.length;
 }

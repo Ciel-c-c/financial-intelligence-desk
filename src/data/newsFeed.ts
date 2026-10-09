@@ -10,12 +10,14 @@ export async function loadNewsFeed(fetchImpl:typeof fetch=fetch):Promise<NewsFee
  const approved=await Promise.all(candidates.map(async item=>{
    const current=raw.find(news=>news.canonicalUrl===item.canonicalUrl);
    if(current?.invalidationReason) return undefined;
+   if(current&&(current.originalTitle!==item.originalTitle||current.publishedAt!==item.publishedAt))return undefined;
+   if(current?.reviewMigration?.state==='rejected'&&current.reviewMigration.sourceHash===item.article?.sha256)return undefined;
    if(current?.article&&current.article.sha256!==item.article?.sha256) return undefined;
    if(current&&!current.editorial&&item.article?.status==='summary'&&(current.originalSummary!==item.originalSummary||current.originalTitle!==item.originalTitle||current.publishedAt!==item.publishedAt)) return undefined;
    const candidate=current?.editorial?current:item;
    return await verifyNewsEvidence(candidate)?candidate:undefined;
  }));
- const validateRaw=async(items:LiveNewsItem[])=>{const checked=await Promise.all(items.map(async item=>!item.editorial&&item.article?.status!=='summary'||await verifyNewsEvidence(item)?item:undefined));return checked.filter((item):item is LiveNewsItem=>!!item);};
+ const validateRaw=async(items:LiveNewsItem[])=>{const checked=await Promise.all(items.map(async item=>item.invalidationReason||!item.editorial&&!item.factualSummary&&item.article?.status!=='summary'||await verifyNewsEvidence(item)?item:undefined));return checked.filter((item):item is LiveNewsItem=>!!item);};
  const [latest,continuing,retained]=await Promise.all([validateRaw(snapshot.latest),validateRaw(snapshot.continuing),validateRaw(snapshot.retainedDetails)]);
  const reviewedItems=approved.filter((item):item is LiveNewsItem=>!!item);
  const now=Date.parse(snapshot.attemptedAt);

@@ -17,7 +17,7 @@ describe('global situation learning loop', () => {
     expect(screen.getAllByRole('link', { name:/全球局势/ }).length).toBeGreaterThan(0);
     expect(screen.getAllByRole('link', { name:/经济与市场学院/ }).length).toBeGreaterThan(0);
     expect(screen.getByRole('heading', { name:'今天，全球有哪些事情正在影响你的钱？' })).toBeInTheDocument();
-    expect(screen.getByText(/当前没有被规则判定/)).toBeInTheDocument();
+    expect(screen.queryByLabelText('核心影响路径')).not.toBeInTheDocument();
     expect(screen.getByRole('heading', { name:'市场正在交易什么' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name:'接下来关注什么' })).toBeInTheDocument();
     expect(await screen.findByText('暂无数据')).toBeInTheDocument();

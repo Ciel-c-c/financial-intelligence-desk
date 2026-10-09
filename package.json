@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "node scripts/news/source-policy.mjs --check && tsc -b && vite build",
+    "sources:generate": "node scripts/news/source-policy.mjs",
     "typecheck": "tsc -b --pretty false",
     "test": "vitest",
     "fetch:situation": "node scripts/fetch-global-situation.mjs",

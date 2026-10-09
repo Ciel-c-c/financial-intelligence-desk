@@ -29,6 +29,7 @@ it('admits a full official body with its corresponding Chinese analysis',async()
  expect(await verifyNewsEvidence(item)).toBe(true);
 });
 it('rejects mismatched Chinese headlines and reused interpretation',()=>{
+ expect(isPublishableNews({...item,invalidationReason:'withdrawn'})).toBe(false);
  expect(isPublishableNews({...item,titleZh:'美联储降息'})).toBe(false);
  expect(isPublishableNews({...item,originalTitle:'A different policy announcement'})).toBe(false);
  expect(isPublishableNews({...item,editorial:{...item.editorial!,sourceBodyHash:'0'.repeat(64)}})).toBe(false);

@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 const fingerprint=item=>createHash('sha256').update(`${item.originalTitle}|${item.originalSummary??''}`).digest('hex');
-const protectedTokens=item=>{const text=`${item.originalTitle} ${item.originalSummary??''}`; const numbers=text.match(/\d+(?:\.\d+)?%?/g)??[]; const entities=(text.match(/\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)+\b/g)??[]).map(value=>value.replace(/^The\s+/,'')); return [...new Set([...numbers,...entities])];};
+const protectedTokens=item=>[...new Set(`${item.originalTitle} ${item.originalSummary??''}`.match(/\d+(?:\.\d+)?%?/g)??[])];
 export function validateTranslation(item,response){ if(!response||typeof response.titleZh!=='string'||typeof response.summaryZh!=='string'||!response.titleZh.trim()||!response.summaryZh.trim()) return false; const text=`${response.titleZh} ${response.summaryZh}`; return protectedTokens(item).every(token=>text.includes(token)); }
 export function createTranslationRequest(item,model){ return {model,input:{originalTitle:item.originalTitle,originalSummary:item.originalSummary??''},instructions:'Return JSON with titleZh and summaryZh. Preserve every number, date, unit, institution and person exactly. State facts plainly; distinguish expectations and inference. Do not give investment advice.'}; }
 export async function enrichNewsItems(items,options={}){

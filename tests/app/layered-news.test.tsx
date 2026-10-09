@@ -1,0 +1,32 @@
+import {render,screen,cleanup} from '@testing-library/react';
+import {MemoryRouter} from 'react-router-dom';
+import {afterEach,beforeEach,expect,it,vi} from 'vitest';
+import {LiveNewsCard} from '../../src/components/LiveNewsCard';
+import {LiveNewsDetail} from '../../src/components/LiveNewsDetail';
+import {BriefStoryCard} from '../../src/components/BriefStoryCard';
+import {BriefPage} from '../../src/pages/BriefPage';
+import {TodayPage} from '../../src/pages/TodayPage';
+import {GlobalSituationPage} from '../../src/pages/GlobalSituationPage';
+import {prepareNewsEvidence} from '../../scripts/news/summary-evidence.mjs';
+import {normalizeNewsItem} from '../../scripts/news/news-normalizer.mjs';
+import {classifyNewsItem} from '../../scripts/news/news-classifier.mjs';
+const data=vi.hoisted(()=>({snapshot:undefined as any}));
+vi.mock('../../src/data/useNewsFeed',()=>({useNewsFeed:()=>({snapshot:data.snapshot,loading:false})}));
+vi.mock('../../src/data/useSiteData',()=>({useSiteData:()=>({})}));
+const now='2026-10-09T14:00:00Z',title='联合国介绍经济与就业变化',summary='联合国发布报告介绍冲突与经济变化对家庭生活及就业的影响。报告强调公共服务和政策落实的重要性，后续改善仍需要结合当地条件判断，不能从单条新闻推断所有资产的涨跌。报道没有提供具体的市场一致预期。';
+const item:any=prepareNewsEvidence(classifyNewsItem(normalizeNewsItem({sourceId:'un-zh',sourceName:'UN News',sourceTier:'official',originalLanguage:'zh',originalTitle:title,originalSummary:summary,canonicalUrl:'https://news.un.org/feed/view/zh/story/2026/10/1142960',publishedAt:now,fetchedAt:now})));
+item.factualSummary={language:'zh',originalTitle:title,title,summary,sourceUrl:item.canonicalUrl,publishedAt:now,sourceHash:item.article.sha256,evidenceScope:'summary',reviewVersion:'factual-v1',checkedAt:now,origin:'publisher-zh',evidence:[]};
+beforeEach(()=>{vi.useFakeTimers();vi.setSystemTime(new Date(now));data.snapshot={schemaVersion:1,attemptedAt:now,lastSuccessfulAt:now,status:'fresh',latest:[item],continuing:[],retainedDetails:[],sourceHealth:[]};});
+afterEach(()=>{cleanup();vi.useRealTimers();});
+it('shows the same independent summary and links to its existing detail route',()=>{
+ render(<MemoryRouter><LiveNewsCard item={item}/><BriefStoryCard index={0} item={item} story={{id:item.id,title,publishedAt:now,sourceName:'UN News',sourceUrl:item.canonicalUrl}}/></MemoryRouter>);
+ expect(screen.getByText(/查看来源总结/)).toBeInTheDocument();
+ expect(screen.getAllByRole('link').filter(a=>a.getAttribute('href')===`/news/${item.id}`)).toHaveLength(2);
+ cleanup();render(<MemoryRouter><LiveNewsDetail item={item}/></MemoryRouter>);
+ expect(screen.getByText(summary)).toBeInTheDocument();expect(screen.queryByText('所以呢？')).not.toBeInTheDocument();
+});
+it.each([BriefPage,TodayPage,GlobalSituationPage])('keeps a factual-only event clickable across the existing pages',Page=>{
+ render(<MemoryRouter><Page/></MemoryRouter>);
+ expect(screen.getAllByRole('link').some(a=>a.getAttribute('href')===`/news/${item.id}`)).toBe(true);
+ expect(screen.getAllByText(title).length).toBeGreaterThan(0);
+});

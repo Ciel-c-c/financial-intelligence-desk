@@ -27,3 +27,7 @@ it('accepts the official UN feed-view Chinese story route',()=>{
  const url='https://news.un.org/feed/view/zh/story/2026/10/1142960';
  expect(isPublishableSummary({...item,canonicalUrl:url,article:{...item.article!,sourceUrl:url}})).toBe(true);
 });
+it('does not bypass the shared source-review expiry through legacy summary admission',()=>{
+ vi.useFakeTimers();vi.setSystemTime(new Date('2027-01-10T00:00:00Z'));
+ try{expect(isPublishableSummary(item)).toBe(false);}finally{vi.useRealTimers();}
+});

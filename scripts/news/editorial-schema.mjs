@@ -8,6 +8,8 @@ const analysis=object({language:{type:'string',enum:['zh','en']},title:string,su
 analysis.properties.marketSignals={...array(object({asset:string,direction:{type:'string',enum:['上行','下行','分化','中性']},reason:string,condition:string,invalidation:string,timeframe:string})),minItems:0,maxItems:4};
 analysis.required.push('marketSignals');
 const personalSchema=analysis.properties.soWhat.properties.personalImpact.items;
+analysis.properties.impactAssessment=array(object({label:{type:'string',enum:['投资','汇率','住房','工作','消费','企业经营']},score:{type:'integer',minimum:0,maximum:3},audience:{type:'string',enum:['households','firms','investors','workers','none']},region:string,triggerEvidence:{type:['string','null']},path:array(string),invalidation:string}));
+analysis.required.push('impactAssessment');
 personalSchema.properties.invalidation={type:'string',description:'Specific condition under which this personal impact DOES NOT occur or is reversed; never the condition that makes it happen.'};
 delete personalSchema.properties.condition;
 personalSchema.required=Object.keys(personalSchema.properties);
@@ -25,6 +27,10 @@ export function editorialResponseFormat(stage,body=''){
   const ids=Object.keys(sourceExcerpts(body));
   if(ids.length){const boundQuote=object({text:string,evidence:{type:'string',enum:ids}});evidenceSchema=object({facts:array(boundQuote),background:array(boundQuote),expectations:array(boundQuote),uncertainties:array(boundQuote)});}
  }
- const audit=object({approved:{type:'boolean'},facts:array({type:'boolean'}),causalEdges:array({type:'boolean'}),personalImpacts:array({type:'boolean'}),scenariosAreConditional:{type:'boolean'}});
+ const audit=object({approved:{type:'boolean'},facts:array({type:'boolean'}),causalEdges:array({type:'boolean'}),personalImpacts:array({type:'boolean'}),scenariosAreConditional:{type:'boolean'},findings:array(object({category:{type:'string',enum:['fact-evidence','translation','parallel-cause','causal-gap','expectation-attribution','impact-scope','invalidation']},section:{type:'string',enum:['facts','causalEdges','personalImpacts','expectations','scenarios']},index:{type:'integer',minimum:0,maximum:19}}))});
  return {type:'json_schema',json_schema:{name:`editorial_${stage}`,strict:true,schema:stage==='evidence'?evidenceSchema:stage==='audit'?audit:analysis}};
+}
+export function factualSummaryResponseFormat(body,audit=false){
+ const schema=audit?object({approved:{type:'boolean'},facts:array({type:'boolean'}),title:{type:'boolean'},summary:{type:'boolean'},preservesMeaning:{type:'boolean'}}):object({title:string,summary:string,facts:array(object({text:string,evidence:{type:'string',enum:Object.keys(sourceExcerpts(body))}}))});
+ return {type:'json_schema',json_schema:{name:audit?'factual_summary_audit':'factual_summary',strict:true,schema}};
 }

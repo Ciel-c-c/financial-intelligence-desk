@@ -1,5 +1,9 @@
 export type NewsSourceTier = 'official' | 'verified';
 export interface ReviewedEditorial { language?: 'zh' | 'en' }
+export interface FactualSummary { language:'zh';title:string;summary:string;originalTitle:string;sourceUrl:string;publishedAt:string;sourceHash:string;evidenceScope:'summary'|'full-body';reviewVersion:string;checkedAt:string;origin:'publisher-zh'|'model';evidence:{text:string;quote:string}[];review?:{approved:boolean;model:string} }
+export interface LiveNewsItem { sourceId?:string;factualSummary?:FactualSummary }
+export interface LiveNewsItem { reviewMigration?:{state:'pending'|'approved'|'rejected';sourceHash:string;reviewVersion:string;lastAttemptAt?:string} }
+export interface LiveNewsItem { supersededBy?:string }
 export interface LiveNewsItem { titleEn?:string; summaryEn?:string }
 export type VerificationStatus = 'official' | 'verified' | 'cross-checked';
 export type AnalysisLevel = '宏观' | '行业' | '公司';
