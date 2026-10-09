@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-10-09T09:02:44.583Z",
-  "lastSuccessfulAt": "2026-10-09T09:02:44.583Z",
+  "attemptedAt": "2026-10-09T10:25:31.236Z",
+  "lastSuccessfulAt": "2026-10-09T10:25:31.236Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -38,8 +38,9 @@
     {
       "id": "fed",
       "name": "Federal Reserve",
-      "status": "ok",
-      "itemCount": 20
+      "status": "error",
+      "itemCount": 0,
+      "error": "HTTP 404"
     },
     {
       "id": "ecb",
@@ -63,7 +64,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 35
+      "itemCount": 36
     },
     {
       "id": "bbc-business",
@@ -95,7 +96,7 @@
       "publishedAt": "2026-10-09T04:53:50.000Z",
       "firstPublishedAt": "2026-10-09T04:53:50.000Z",
       "latestSourceAt": "2026-10-09T04:53:50.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -641,7 +642,7 @@
       "publishedAt": "2026-10-09T02:52:15.000Z",
       "firstPublishedAt": "2026-10-09T02:52:15.000Z",
       "latestSourceAt": "2026-10-09T02:52:15.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1195,7 +1196,7 @@
       "publishedAt": "2026-10-08T20:12:33.000Z",
       "firstPublishedAt": "2026-10-08T20:12:33.000Z",
       "latestSourceAt": "2026-10-08T20:12:33.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "global",
       "countries": [],
       "topic": "trade-policy",
@@ -1519,7 +1520,7 @@
       "publishedAt": "2026-10-08T20:06:31.000Z",
       "firstPublishedAt": "2026-10-08T20:06:31.000Z",
       "latestSourceAt": "2026-10-08T20:06:31.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1851,7 +1852,7 @@
       "publishedAt": "2026-10-08T19:10:06.000Z",
       "firstPublishedAt": "2026-10-08T19:10:06.000Z",
       "latestSourceAt": "2026-10-08T19:10:06.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1997,7 +1998,7 @@
       "publishedAt": "2026-10-08T19:00:49.000Z",
       "firstPublishedAt": "2026-10-08T19:00:49.000Z",
       "latestSourceAt": "2026-10-08T19:00:49.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2187,7 +2188,7 @@
       "publishedAt": "2026-10-08T17:51:51.000Z",
       "firstPublishedAt": "2026-10-08T17:51:51.000Z",
       "latestSourceAt": "2026-10-08T17:51:51.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2333,7 +2334,7 @@
       "publishedAt": "2026-10-08T17:41:20.000Z",
       "firstPublishedAt": "2026-10-08T17:41:20.000Z",
       "latestSourceAt": "2026-10-08T17:41:20.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2481,7 +2482,7 @@
       "publishedAt": "2026-10-08T17:31:03.000Z",
       "firstPublishedAt": "2026-10-08T17:31:03.000Z",
       "latestSourceAt": "2026-10-08T17:31:03.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2655,7 +2656,7 @@
       "publishedAt": "2026-10-08T17:13:32.000Z",
       "firstPublishedAt": "2026-10-08T17:13:32.000Z",
       "latestSourceAt": "2026-10-08T17:13:32.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2807,7 +2808,7 @@
       "publishedAt": "2026-10-08T15:21:46.000Z",
       "firstPublishedAt": "2026-10-08T15:21:46.000Z",
       "latestSourceAt": "2026-10-08T15:21:46.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "middle-east",
       "countries": [],
       "topic": "geopolitical-conflict",
@@ -2957,7 +2958,7 @@
       "publishedAt": "2026-10-08T14:51:27.000Z",
       "firstPublishedAt": "2026-10-08T14:51:27.000Z",
       "latestSourceAt": "2026-10-08T14:51:27.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -3107,7 +3108,7 @@
       "publishedAt": "2026-10-08T14:43:38.000Z",
       "firstPublishedAt": "2026-10-08T14:43:38.000Z",
       "latestSourceAt": "2026-10-08T14:43:38.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "global",
       "countries": [],
       "topic": "trade-policy",
@@ -3279,7 +3280,7 @@
       "publishedAt": "2026-10-08T14:12:10.000Z",
       "firstPublishedAt": "2026-10-08T14:12:10.000Z",
       "latestSourceAt": "2026-10-08T14:12:10.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -3579,7 +3580,7 @@
       "publishedAt": "2026-10-08T13:40:12.000Z",
       "firstPublishedAt": "2026-10-08T13:40:12.000Z",
       "latestSourceAt": "2026-10-08T13:40:12.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -3725,7 +3726,7 @@
       "publishedAt": "2026-10-08T13:29:52.000Z",
       "firstPublishedAt": "2026-10-08T13:29:52.000Z",
       "latestSourceAt": "2026-10-08T13:29:52.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -3877,7 +3878,7 @@
       "publishedAt": "2026-10-08T12:32:12.000Z",
       "firstPublishedAt": "2026-10-08T12:32:12.000Z",
       "latestSourceAt": "2026-10-08T12:32:12.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
+      "fetchedAt": "2026-10-09T10:25:31.236Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",

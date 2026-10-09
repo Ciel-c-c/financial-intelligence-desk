@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-09T09:02:44.583Z",
-  "lastSuccessfulAt": "2026-10-09T09:02:44.583Z",
+  "attemptedAt": "2026-10-09T10:25:31.236Z",
+  "lastSuccessfulAt": "2026-10-09T10:25:31.236Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T09:02:44.583Z"
+      "lastSuccessfulAt": "2026-10-09T10:25:31.236Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-09T09:02:44.583Z"
+      "lastSuccessfulAt": "2026-10-09T10:25:31.236Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T09:02:44.583Z"
+      "lastSuccessfulAt": "2026-10-09T10:25:31.236Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-09T09:02:44.583Z"
+      "lastSuccessfulAt": "2026-10-09T10:25:31.236Z"
     }
   ],
   "sourceHealth": [
@@ -60,8 +60,9 @@
     {
       "id": "fed",
       "name": "Federal Reserve",
-      "status": "ok",
-      "itemCount": 20
+      "status": "error",
+      "itemCount": 0,
+      "error": "HTTP 404"
     },
     {
       "id": "ecb",
@@ -85,7 +86,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 35
+      "itemCount": 36
     },
     {
       "id": "bbc-business",
@@ -139,8 +140,9 @@
     {
       "id": "news-fed",
       "name": "Federal Reserve（新闻）",
-      "status": "ok",
-      "itemCount": 20
+      "status": "error",
+      "itemCount": 0,
+      "error": "HTTP 404"
     },
     {
       "id": "news-ecb",
@@ -164,7 +166,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 35
+      "itemCount": 36
     },
     {
       "id": "news-bbc-business",
@@ -187,17 +189,21 @@
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "ok",
-      "itemCount": 3,
+      "status": "error",
+      "itemCount": 1,
+      "error": "HTTP 400 []",
       "attempted": 3,
-      "rejected": 0,
-      "failures": 0,
+      "rejected": 2,
+      "failures": 1,
       "stages": {
         "evidence": 3,
-        "analysis": 3,
-        "audit": 3
+        "analysis": 2,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "required-fields": 1,
+        "audit": 1
+      }
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
