@@ -4033,41 +4033,11 @@
         "sourceUrl": "https://www.cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
         "checkedAt": "2026-10-10T09:59:02.640Z"
       },
-      "factualSummary": {
-        "language": "zh",
-        "originalTitle": "Trump created a committee to dig into the Fed's Lisa Cook. What is it and what comes next?",
-        "sourceUrl": "https://www.cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
-        "publishedAt": "2026-10-09T19:19:00.000Z",
-        "sourceHash": "5d09fd46c1a195a8005975cd683791435eadd32f8ee946077e84d1243fd50cdd",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-10T09:02:35.693Z",
-        "title": "特朗普成立委员会调查美联储莉萨·库克",
-        "summary": "特朗普成立了一个专门委员会，旨在调查美联储副主席莉萨·库克的行为。此举是在最高法院裁决之后，特朗普试图将库克免职。该行动可能对美联储主席杰罗姆·鲍威尔、央行独立性以及利率政策产生影响。",
-        "origin": "model",
-        "evidence": [
-          {
-            "text": "特朗普成立了一个专门委员会，调查美联储的莉萨·库克。",
-            "quote": "Trump created a committee to dig into the Fed's Lisa Cook. What is it and what comes next?"
-          },
-          {
-            "text": "特朗普试图免除莉萨·库克的职务，此举紧随最高法院的裁决。",
-            "quote": "Trump’s bid to fire the Fed's Lisa Cook follows a Supreme Court ruling and could affect Jerome Powell, central bank"
-          },
-          {
-            "text": "此举可能影响杰罗姆·鲍威尔、央行独立性以及利率。",
-            "quote": "and could affect Jerome Powell, central bank independence and interest rates."
-          }
-        ],
-        "review": {
-          "approved": true,
-          "model": "openai/gpt-oss-20b"
-        }
-      },
       "queue": {
         "firstSeenAt": "2026-10-09T20:53:38.276Z",
         "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
+        "summaryAttemptVersion": "summary-diagnostics-v1",
+        "summaryRejection": "unsupported-role"
       }
     },
     {

@@ -39,3 +39,18 @@ it('reports a safe failure field without copying source or model prose',()=>{
  const reasons:string[]=[];validateFactualSummary(record,{...summary,summary:'只有标题'},policies,now,reason=>reasons.push(reason));
  expect(reasons).toEqual(['summary-length']);
 });
+it('withholds cached translations that invent a vice-chair role even after model approval',()=>{
+ const source='Trump created a committee to dig into the Fed Lisa Cook. The action could affect central bank independence and interest rates.';
+ const input={...record,originalTitle:'Lisa Cook committee',originalSummary:source,originalLanguage:'en',article:{...record.article,text:'Lisa Cook committee\n'+source,sha256:articleHash('Lisa Cook committee\n'+source)}};
+ const translated={...summary,originalTitle:input.originalTitle,sourceHash:input.article.sha256,title:'特朗普成立委员会调查库克',summary:'特朗普成立委员会调查美联储副主席莉萨·库克。报道称该行动可能影响央行独立性和利率，但并没有确认利率已经变化。',origin:'model',review:{approved:true,model:'openai/gpt-oss-20b'},evidence:[{text:'特朗普成立委员会调查库克。',quote:'Trump created a committee to dig into the Fed Lisa Cook.'}]};
+ const reasons:string[]=[];
+ expect(validateFactualSummary(input,translated,policies,now,reason=>reasons.push(reason))).toBe(false);
+ expect(reasons).toEqual(['unsupported-role']);
+ expect(validateFactualSummary(input,{...translated,summary:translated.summary.replace('副主席','')},policies,now)).toBe(true);
+});
+it('does not reject a translated vice-chair role explicitly present in the source',()=>{
+ const source='The Vice Chair explained how policy affects central bank independence and interest rates without announcing a new policy decision.';
+ const input={...record,originalTitle:'Vice Chair speaks',originalSummary:source,originalLanguage:'en',article:{...record.article,text:'Vice Chair speaks\n'+source,sha256:articleHash('Vice Chair speaks\n'+source)}};
+ const translated={...summary,originalTitle:input.originalTitle,sourceHash:input.article.sha256,title:'副主席介绍政策机制',summary:'副主席解释了政策如何影响央行独立性和利率。这段报道没有宣布新的政策决定，不能据此判断政策已经改变。',origin:'model',review:{approved:true,model:'openai/gpt-oss-20b'},evidence:[{text:'副主席解释了政策机制。',quote:'The Vice Chair explained how policy affects central bank independence and interest rates'}]};
+ expect(validateFactualSummary(input,translated,policies,now)).toBe(true);
+});

@@ -26,5 +26,11 @@ export function validateFactualSummary(record,s,policies,now=new Date().toISOStr
  const paired=s.evidence.every(f=>zh(f.text)&&typeof f.quote==='string'&&f.quote.length>=6&&f.quote.length<=120
   &&(typeof body!=='string'||body.includes(f.quote))&&nums(f.text).every(n=>nums(f.quote).includes(n)))
  if(!paired)return reject('paired-evidence');
+ // A review approval cannot license filling a person's job title from model
+ // memory. This narrow bilingual guard catches the observed vice-chair error;
+ // it is not a general proof of entity attribution or factual correctness.
+ const sourceText=typeof body==='string'?body:s.evidence.map(f=>f.quote).join('\n');
+ const generatedText=[s.title,s.summary,...s.evidence.map(f=>f.text)].join('\n');
+ if(/副主席|副董事长/.test(generatedText)&&!/副主席|副董事长|\b(?:vice|deputy)[\s-]+chair(?:man|woman|person)?\b/i.test(sourceText))return reject('unsupported-role');
  return typeof body!=='string'||nums(s.title+' '+s.summary).every(n=>body.includes(n))||reject('unsupported-numbers');
 }
