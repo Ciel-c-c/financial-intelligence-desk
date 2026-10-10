@@ -1,4 +1,4 @@
-export const EDITORIAL_REVIEW_VERSION='edge-audit-v3';
+export const EDITORIAL_REVIEW_VERSION='edge-audit-v4';
 export const IMPACT_LABELS=['投资','汇率','住房','工作','消费','企业经营'];
 export const AUDIT_CATEGORIES=['fact-evidence','translation','parallel-cause','causal-gap','expectation-attribution','impact-scope','invalidation'];
 const sections=['facts','causalEdges','personalImpacts','expectations','scenarios'];

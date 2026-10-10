@@ -17,7 +17,15 @@ export function sourceExcerpts(body){
   const excerpts=[];
   for(const sentence of body.split(/(?<=[。！？\n])/u)){
    if(sentence.length<=120){if(sentence.trim().length>=6) excerpts.push(sentence.trim());}
-   else for(let start=0;start<sentence.length;start+=70){const part=sentence.slice(start,start+120).trim();if(part.length>=6) excerpts.push(part);}
+   else for(let offset=0;offset<sentence.length;offset+=70){
+    let start=offset,end=Math.min(start+120,sentence.length);
+    const word=char=>char!==undefined&&/[A-Za-z0-9]/.test(char);
+    while(start>0&&word(sentence[start])&&word(sentence[start-1]))start--;
+    end=Math.min(start+120,sentence.length);
+    while(end<sentence.length&&end>start&&word(sentence[end-1])&&word(sentence[end]))end--;
+    const part=sentence.slice(start,end).trim();if(part.length>=6)excerpts.push(part);
+    if(end===sentence.length)break;
+   }
   }
   return Object.fromEntries([...new Set(excerpts)].map((text,index)=>[`E${index+1}`,text]));
 }

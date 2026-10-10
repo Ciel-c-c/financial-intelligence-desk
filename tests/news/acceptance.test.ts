@@ -1,7 +1,7 @@
 import {expect,it} from 'vitest';
 import {buildNewsAcceptance} from '../../scripts/news/acceptance.mjs';
 it('does not count a model-version marker on an incomplete editorial as a deep interpretation',()=>{
- const hash='a'.repeat(64),news={attemptedAt:'2026-10-09T14:00:00Z',latest:[{publishedAt:'2026-10-09T14:00:00Z',article:{sha256:hash},editorial:{sourceBodyHash:hash,generator:{review:'edge-audit-v3'}}}],status:'fresh',sourceHealth:[]};
+ const hash='a'.repeat(64),news={attemptedAt:'2026-10-09T14:00:00Z',latest:[{publishedAt:'2026-10-09T14:00:00Z',article:{sha256:hash},editorial:{sourceBodyHash:hash,generator:{review:'edge-audit-v4'}}}],status:'fresh',sourceHealth:[]};
  expect(buildNewsAcceptance(news,undefined).current.deep).toBe(0);
 });
 it('does not turn a manual or empty workflow success into three scheduled content passes',()=>{
