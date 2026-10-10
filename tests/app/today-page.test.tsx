@@ -8,11 +8,11 @@ import { reviewedFetch,reviewedItem } from '../fixtures/reviewedFeed';
 describe('Today page', () => {
   beforeEach(()=>vi.stubGlobal('fetch',vi.fn().mockResolvedValue({ok:true,json:async()=>({schemaVersion:1,attemptedAt:'2026-09-14T10:17:00Z',lastSuccessfulAt:'2026-09-14T10:17:00Z',nextExpectedAt:'2026-09-14T11:17:00Z',status:'fresh',latest:[{id:'live-cpi',originalTitle:'China CPI',titleZh:'中国居民消费价格公布',summaryZh:'物价变化影响通胀预期。',sourceName:'国家统计局',publishedAt:'2026-09-14T10:00:00Z',analysisLevels:['宏观'],eventTypes:['经济数据'],impactChannels:['通胀'],regions:['中国'],translationStatus:'generated'}],continuing:[{id:'old-policy',originalTitle:'Policy',titleZh:'政策仍在传导',summaryZh:'市场继续评估影响。',sourceName:'Federal Reserve',publishedAt:'2026-09-12T10:00:00Z',analysisLevels:['宏观'],eventTypes:['货币政策'],impactChannels:['利率'],regions:['全球'],translationStatus:'generated'}],retainedDetails:[],sourceHealth:[]})})));
   afterEach(()=>vi.unstubAllGlobals());
-  it('opens with a dynamic A-share dashboard and honest unavailable states', () => {
+  it('opens with attributed A-share embeds while keeping unavailable backend data distinct', () => {
     const { container } = render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
     const page = container.querySelector<HTMLElement>('.today-page')!;
     const copy = page.textContent ?? '';
-    for (const expected of ['A股概览','行业相对强弱','政策与地缘传导','暂无可靠市场数据','暂无经过验证的行业表现数据']) {
+    for (const expected of ['A股概览','行业相对强弱','政策与地缘传导','非本站开收盘快照','暂无经过验证的行业表现数据']) {
       expect(copy).toContain(expected);
     }
     const buttons = [...page.querySelectorAll('button')].map(button => button.textContent?.trim());
@@ -44,7 +44,8 @@ describe('Today page', () => {
 
     expect(screen.getByRole('navigation', { name: '桌面主要导航' })).toBeInTheDocument();
     expect(screen.getByRole('region', { name: '行业相对强弱' })).toBeInTheDocument();
-    expect(screen.getByText('暂无可靠市场数据')).toBeInTheDocument();
+    expect(screen.getByText('第三方展示 · 非本站开收盘快照')).toBeInTheDocument();
+    expect(screen.getAllByText(/TradingView 提供/)).toHaveLength(3);
   });
 
   it('uses the Financial Lens brand and beginner-friendly message', () => {

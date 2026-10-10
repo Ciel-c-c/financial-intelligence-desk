@@ -34,6 +34,7 @@ button { cursor:pointer; }
 .market-grid { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(170px,1fr); gap:12px; overflow-x:auto; padding-bottom:5px; scroll-snap-type:x mandatory; }
 .market-card,.news-card,.empty-state { background:var(--paper); border:1px solid rgba(255,255,255,.64); border-radius:20px; box-shadow:var(--glass-shadow); backdrop-filter:blur(22px) saturate(135%); -webkit-backdrop-filter:blur(22px) saturate(135%); }
 .market-card { padding:16px; scroll-snap-align:start; }
+@media(max-width:767px){.market-grid>.market-embed-card{grid-column:1/-1;grid-template-columns:minmax(0,1fr)}}
 .market-card h3 { margin:16px 0 4px; font-size:1rem; }
 .market-card strong { font-family:Georgia,serif; font-size:1.4rem; }
 .market-card p { margin:8px 0; font-weight:800; }
