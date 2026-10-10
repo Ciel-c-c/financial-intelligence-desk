@@ -1,4 +1,5 @@
 import { validateDatasetEnvelope } from './site-contract.mjs';
+import {validateObservation,dateInZone} from '../../src/data/marketObservationValidation.mjs';
 
 export const MARKET_GROUPS = ['aShare', 'hongKong', 'us', 'globalAssets'];
 const ITEM_FRESHNESS = ['fresh', 'delayed'];
@@ -35,6 +36,11 @@ function validInstrument(item) {
     && typeof item.source?.url === 'string' && ITEM_FRESHNESS.includes(item.freshness)
     && MARKET_STATES.includes(item.marketState);
 }
+function stateFor(item,now){
+ if(!item.session)return item.marketState==='delayed'?resolveMarketState(item.group,now,item.dataAsOf):item.marketState;
+ if(item.session!=='close')return 'delayed';
+ return item.tradingDate===dateInZone(now,item.timeZone)?'close':'previous_close';
+}
 
 function latestIso(items, field) {
   return items.map(item => item[field]).filter(isIso).sort().at(-1) ?? null;
@@ -46,18 +52,19 @@ export function buildMarketOverview({ attemptedAt, sourceResults = [], previous 
   let fetchedNewInstruments = false;
   for (const group of MARKET_GROUPS) {
     const relevant = sourceResults.filter(result => result.market === group);
-    const current = relevant.flatMap(result => result.status === 'ok' ? result.instruments ?? [] : []).filter(validInstrument)
-      .map(item => ({ ...item, marketState: item.marketState === 'delayed' ? resolveMarketState(group, attemptedAt, item.dataAsOf) : item.marketState }));
+    const current = relevant.flatMap(result => result.status === 'ok' ? result.instruments ?? [] : []).filter(item=>validInstrument(item)&&item.group===group&&(!item.session||validateObservation(item,attemptedAt)))
+      .map(item => ({ ...item, marketState:stateFor(item,attemptedAt) }));
+    const prior = previous?.groups?.[group]?.filter(item=>validInstrument(item)&&(!item.session||validateObservation(item,attemptedAt))) ?? [];
     const failures = relevant.filter(result => result.status !== 'ok');
     if (current.length) {
-      fetchedNewInstruments = true;
-      groups[group] = current;
-      groupHealth[group] = { status: failures.length ? 'partial' : 'fresh', sourceIds: relevant.filter(result => result.status === 'ok').map(result => result.sourceId), ...(failures.length ? { fallbackReason: failures.map(result => result.error ?? `${result.sourceId} failed`).join('; ') } : {}) };
+      const retained=prior.filter(old=>!current.some(item=>item.id===old.id)).map(item=>({...item,freshness:'delayed',marketState:stateFor(item,attemptedAt)}));
+      fetchedNewInstruments ||= current.some(item=>!prior.some(old=>old.id===item.id&&old.value===item.value&&old.changePercent===item.changePercent&&old.dataAsOf===item.dataAsOf));
+      groups[group] = [...current,...retained];
+      groupHealth[group] = { status: failures.length||retained.length ? 'partial' : 'fresh', sourceIds: relevant.filter(result => result.status === 'ok').map(result => result.sourceId), ...(failures.length||retained.length ? { fallbackReason: failures.map(result => result.error ?? `${result.sourceId} failed`).join('; ')||'部分观察项沿用最近有效数据' } : {}) };
       continue;
     }
-    const prior = previous?.groups?.[group]?.filter(validInstrument) ?? [];
     if (prior.length) {
-      groups[group] = prior.map(item => ({ ...item, freshness: 'delayed', marketState: resolveMarketState(group, attemptedAt, item.dataAsOf) }));
+      groups[group] = prior.map(item => ({ ...item, freshness: 'delayed', marketState:item.session?stateFor(item,attemptedAt):resolveMarketState(group, attemptedAt, item.dataAsOf) }));
       groupHealth[group] = { status: 'delayed', sourceIds: [], fallbackReason: failures.map(result => result.error).filter(Boolean).join('; ') || '本轮没有获得有效新数据，沿用最近成功快照' };
     } else {
       groups[group] = [];

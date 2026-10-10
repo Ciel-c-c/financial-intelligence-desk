@@ -3,7 +3,7 @@ import { pathToFileURL } from 'node:url';
 import { buildSnapshot } from './global-situation-core.mjs';
 import { fetchSource, sources } from './fetch-global-situation.mjs';
 import { promoteValidatedSnapshot, readJson, validateGlobalSituation, validateMacroEvents, validateMarketOverview, validateUpdateStatus, writeJsonAtomic } from './snapshot-schema.mjs';
-import { buildMarketOverview } from './site/market-pipeline.mjs';
+import {updateMarketData} from './update-market-data.mjs';
 
 const DATA_DIR = resolve('public/data');
 const paths = { situation:resolve(DATA_DIR,'global-situation.json'), market:resolve(DATA_DIR,'market-overview.json'), macro:resolve(DATA_DIR,'macro-events.json'), status:resolve(DATA_DIR,'update-status.json') };
@@ -19,16 +19,6 @@ export function parseEcbFx(xml, fetchedAt) {
   return [...xml.matchAll(/currency=['"]([A-Z]{3})['"]\s+rate=['"]([0-9.]+)['"]/g)].filter(match => ['USD','JPY','GBP','CNY'].includes(match[1])).map(match => ({ id:`EUR${match[1]}`, label:`欧元兑${match[1]}`, value:Number(match[2]), unit:match[1], timestamp, source:{ name:'European Central Bank', url:'https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html' }, freshness:age <= 36*3600_000 ? 'fresh':'delayed' }));
 }
 
-async function fetchMarket(attemptedAt) {
-  const url = 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml';
-  try {
-    const response = await fetch(url, { signal:AbortSignal.timeout(15_000), headers:{'user-agent':'Financial-Lens-Snapshot/2.0'} });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const instruments = parseEcbFx(xmlEntities(await response.text()), attemptedAt);
-    if (!instruments.length) throw new Error('No supported ECB rates');
-    return buildMarketOverview({ attemptedAt, sourceResults:[{ sourceId:'ecb-reference-rates', market:'globalAssets', status:'ok', instruments:instruments.map(item=>({ id:item.id, group:'globalAssets', name:item.label, symbol:item.id, value:item.value, currency:item.unit, unit:item.unit, marketState:'delayed', dataAsOf:item.timestamp, fetchedAt:attemptedAt, freshness:item.freshness, source:{ id:'ecb-reference-rates', name:item.source.name, url:item.source.url } })) }] });
-  } catch (error) { return { error:error instanceof Error ? error.message:String(error) }; }
-}
 
 function macroFrom(snapshot, attemptedAt) {
   return { schemaVersion:1, generatedAt:attemptedAt, events:snapshot.events.filter(event => ['monetary-policy','fiscal-policy','trade-policy','economic-policy'].includes(event.eventType)).slice(0,10).map(event => ({ id:event.id, headline:event.headline, eventType:event.eventType, region:event.region, publishedAt:event.latestSourceAt, sourceUrl:event.sources[0].url, relatedKnowledgePoints:event.relatedKnowledgePoints })) };
@@ -43,7 +33,7 @@ export async function updateSnapshots({ now = new Date().toISOString(), sourceRe
   if (situationValid) await promoteValidatedSnapshot({ path:paths.situation, candidate:candidateSituation, validate:validateGlobalSituation });
   const activeSituation = situationValid ? candidateSituation : previousSituation;
 
-  const marketCandidate = marketResult ?? await fetchMarket(now);
+  const marketCandidate = marketResult ?? (await updateMarketData({now})).market;
   const marketValid = validateMarketOverview(marketCandidate);
   if (marketValid) await promoteValidatedSnapshot({ path:paths.market, candidate:marketCandidate, validate:validateMarketOverview });
 

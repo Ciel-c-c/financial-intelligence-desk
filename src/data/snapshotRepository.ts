@@ -1,4 +1,5 @@
 import type { DailyBriefSnapshot, MarketGroup, MarketOverviewSnapshot, SectorPerformanceSnapshot, SiteSnapshot } from './siteSnapshotTypes';
+import {validateObservation} from './marketObservationValidation.mjs';
 
 const statuses = ['fresh', 'partial', 'delayed', 'unavailable'];
 const groups: MarketGroup[] = ['aShare', 'hongKong', 'us', 'globalAssets'];
@@ -14,7 +15,7 @@ export function isSiteSnapshot(value: unknown): value is SiteSnapshot {
 export function isMarketOverviewSnapshot(value: unknown): value is MarketOverviewSnapshot {
   if (!value || typeof value !== 'object') return false;
   const item = value as MarketOverviewSnapshot;
-  return item.schemaVersion === 1 && statuses.includes(item.status) && groups.every(group => Array.isArray(item.groups?.[group]));
+  return item.schemaVersion === 1 && statuses.includes(item.status) && groups.every(group => Array.isArray(item.groups?.[group])&&item.groups[group].every(observation=>!observation.session||validateObservation(observation,item.attemptedAt)));
 }
 
 export function isSectorPerformanceSnapshot(value: unknown): value is SectorPerformanceSnapshot {

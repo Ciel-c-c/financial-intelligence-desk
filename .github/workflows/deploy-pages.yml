@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   workflow_run:
-    workflows: ['Update public data snapshots']
+    workflows: ['Update public data snapshots', 'Update market session snapshots']
     types: [completed]
     branches: [main]
 

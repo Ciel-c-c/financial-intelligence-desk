@@ -1,0 +1,42 @@
+name: Update market session snapshots
+
+on:
+  schedule:
+    - cron: '47 1,7,8,13,14,20,21 * * 1-5'
+    - cron: '47 */3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-market.yml'
+      - 'scripts/site/market-*.mjs'
+      - 'scripts/update-market-data.mjs'
+      - 'src/data/marketObservationValidation.mjs'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-data-snapshots
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.actor != 'github-actions[bot]' || github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Retrieve and validate market sessions without model calls
+        run: npm run update:market
+      - run: npm run validate:data
+      - name: Publish without overwriting concurrent data or code changes
+        run: node scripts/site/publish-data.mjs

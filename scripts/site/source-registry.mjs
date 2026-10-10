@@ -3,6 +3,9 @@ const REVIEW_WINDOW_MS = 90 * 24 * 60 * 60 * 1_000;
 export const marketSources = [
   {
     id: 'ecb-reference-rates',
+    adapter: 'ecb-reference',
+    usageMode: 'reference-display',
+    allowedPathPatterns: ['^/stats/eurofxref/eurofxref-daily\\.xml$'],
     name: 'European Central Bank Reference Rates',
     owner: 'European Central Bank',
     baseUrl: 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml',
@@ -27,7 +30,8 @@ export const marketSources = [
     reviewedAt: '2026-09-14T00:00:00Z',
     reviewExpiresAt: '2026-12-13T00:00:00Z',
     termsUrl: 'https://fred.stlouisfed.org/legal/',
-    enabled: true,
+    enabled: false,
+    disabledReason: '2026-10-10复核：SP500系列要求事先书面授权；未逐系列批准，不将可下载视作可再发布。',
     cadence: 'business-day',
     latency: 'end-of-day',
   },

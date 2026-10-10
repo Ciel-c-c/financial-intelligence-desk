@@ -10,6 +10,8 @@ import {validateFactualSummary} from './news/factual-summary.mjs';
 import {buildSourcePolicies} from './news/source-policy.mjs';
 import {newsSources} from './news/source-registry.mjs';
 import {buildNewsAcceptance} from './news/acceptance.mjs';
+import {reconcileMarketSummaries} from './site/market-close-summary.mjs';
+import {validateMarketOverview} from './site/market-pipeline.mjs';
 
 const DATASET_IDS = ['news-feed', 'market-overview', 'sector-performance', 'global-situation', 'daily-brief'];
 export function selectBriefNews(news,now){
@@ -118,6 +120,14 @@ export async function runSiteUpdate({ now = new Date().toISOString(), dataDir = 
     for (const id of DATASET_IDS) datasets[id] = snapshots[id]
       ? { promoted: !dryRun, status: snapshots[id].status, snapshot: snapshots[id] }
       : { promoted: false, status: 'unavailable', error: 'snapshot missing' };
+  }
+  // Both producer jobs have finished. Rebuild links/explanations against the
+  // exact news version included in this publication, including withdrawals.
+  const market=datasets['market-overview']?.snapshot,news=datasets['news-feed']?.snapshot;
+  if(validateMarketOverview(market)&&news){
+    const consistent=reconcileMarketSummaries({market,news,now});
+    datasets['market-overview'].snapshot=consistent;
+    if(!dryRun)await writeJsonAtomic(join(dataDir,'market-overview.json'),consistent);
   }
   const summaries = DATASET_IDS.map(id => datasetSummary(id, datasets[id]?.snapshot, datasets[id]?.error, now));
   const siteSnapshot = buildSiteSnapshot({ attemptedAt: now, datasets: summaries });
