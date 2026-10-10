@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-10-10T00:50:00.640Z",
-  "lastSuccessfulAt": "2026-10-10T00:50:00.640Z",
+  "attemptedAt": "2026-10-10T06:37:30.697Z",
+  "lastSuccessfulAt": "2026-10-10T06:37:30.697Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -33,7 +33,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -63,7 +63,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 34
+      "itemCount": 38
     },
     {
       "id": "bbc-business",
@@ -92,10 +92,10 @@
       "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "summary": "Ukraine's president sharply criticised the move, calling it an \"investment in war that must be ended, not prolonged\".",
-      "publishedAt": "2026-10-10T00:45:51.000Z",
-      "firstPublishedAt": "2026-10-10T00:45:51.000Z",
-      "latestSourceAt": "2026-10-10T00:45:51.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "publishedAt": "2026-10-10T04:38:20.000Z",
+      "firstPublishedAt": "2026-10-10T04:38:20.000Z",
+      "latestSourceAt": "2026-10-10T04:38:20.000Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -229,7 +229,153 @@
         {
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-10T00:45:51.000Z"
+          "publishedAt": "2026-10-10T04:38:20.000Z"
+        }
+      ]
+    },
+    {
+      "id": "966126588fab",
+      "headline": "'Stain on the country': Trump criticises Norway over Nobel Peace Prize",
+      "sourceHeadline": "'Stain on the country': Trump criticises Norway over Nobel Peace Prize",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "The US president told a rally he had \"never heard of\" the winner, former International Criminal Court judge Navi Pillay.",
+      "publishedAt": "2026-10-10T04:07:11.000Z",
+      "firstPublishedAt": "2026-10-10T04:07:11.000Z",
+      "latestSourceAt": "2026-10-10T04:07:11.000Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The US president told a rally he had \"never heard of\" the winner, former International Criminal Court judge Navi Pillay."
+      ],
+      "factSummary": "The US president told a rally he had \"never heard of\" the winner, former International Criminal Court judge Navi Pillay.",
+      "marketView": [
+        "本条来源报告：'Stain on the country': Trump criticises Norway over Nobel Peace Prize。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/ckgj921e14jdo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-10T04:07:11.000Z"
         }
       ]
     },
@@ -240,10 +386,10 @@
       "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "summary": "Ukraine President Volodymyr Zelenskyy said in a searing statement that the U.S. easing sanctions on Moscow \"plays into Russia's hands.\"",
-      "publishedAt": "2026-10-09T23:16:50.000Z",
-      "firstPublishedAt": "2026-10-09T23:16:50.000Z",
-      "latestSourceAt": "2026-10-09T23:16:50.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "publishedAt": "2026-10-10T02:09:00.000Z",
+      "firstPublishedAt": "2026-10-10T02:09:00.000Z",
+      "latestSourceAt": "2026-10-10T02:09:00.000Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -381,7 +527,7 @@
         {
           "name": "CNBC",
           "url": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html",
-          "publishedAt": "2026-10-09T23:16:50.000Z"
+          "publishedAt": "2026-10-10T02:09:00.000Z"
         }
       ]
     },
@@ -395,7 +541,7 @@
       "publishedAt": "2026-10-09T22:30:22.000Z",
       "firstPublishedAt": "2026-10-09T22:30:22.000Z",
       "latestSourceAt": "2026-10-09T22:30:22.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -543,7 +689,7 @@
       "publishedAt": "2026-10-09T22:22:35.000Z",
       "firstPublishedAt": "2026-10-09T22:22:35.000Z",
       "latestSourceAt": "2026-10-09T22:22:35.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "global",
       "countries": [],
       "topic": "trade-policy",
@@ -1011,7 +1157,7 @@
       "publishedAt": "2026-10-09T19:19:00.000Z",
       "firstPublishedAt": "2026-10-09T19:19:00.000Z",
       "latestSourceAt": "2026-10-09T19:19:00.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1181,7 +1327,7 @@
       "publishedAt": "2026-10-09T18:50:21.000Z",
       "firstPublishedAt": "2026-10-09T18:50:21.000Z",
       "latestSourceAt": "2026-10-09T18:50:21.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "global",
       "countries": [],
       "topic": "trade-policy",
@@ -1353,7 +1499,7 @@
       "publishedAt": "2026-10-09T18:40:10.000Z",
       "firstPublishedAt": "2026-10-09T18:40:10.000Z",
       "latestSourceAt": "2026-10-09T18:40:10.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "global",
       "countries": [],
       "topic": "geopolitical-conflict",
@@ -1503,7 +1649,7 @@
       "publishedAt": "2026-10-09T17:56:24.000Z",
       "firstPublishedAt": "2026-10-09T17:56:24.000Z",
       "latestSourceAt": "2026-10-09T17:56:24.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1651,7 +1797,7 @@
       "publishedAt": "2026-10-09T17:12:17.000Z",
       "firstPublishedAt": "2026-10-09T17:12:17.000Z",
       "latestSourceAt": "2026-10-09T17:12:17.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1841,7 +1987,7 @@
       "publishedAt": "2026-10-09T16:15:30.000Z",
       "firstPublishedAt": "2026-10-09T16:15:30.000Z",
       "latestSourceAt": "2026-10-09T16:15:30.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2137,7 +2283,7 @@
       "publishedAt": "2026-10-09T15:20:56.000Z",
       "firstPublishedAt": "2026-10-09T15:20:56.000Z",
       "latestSourceAt": "2026-10-09T15:20:56.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2283,7 +2429,7 @@
       "publishedAt": "2026-10-09T13:09:19.000Z",
       "firstPublishedAt": "2026-10-09T13:09:19.000Z",
       "latestSourceAt": "2026-10-09T13:09:19.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2435,7 +2581,7 @@
       "publishedAt": "2026-10-09T12:00:00.000Z",
       "firstPublishedAt": "2026-10-09T12:00:00.000Z",
       "latestSourceAt": "2026-10-09T12:00:00.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2587,7 +2733,7 @@
       "publishedAt": "2026-10-09T11:51:11.000Z",
       "firstPublishedAt": "2026-10-09T11:51:11.000Z",
       "latestSourceAt": "2026-10-09T11:51:11.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "middle-east",
       "countries": [],
       "topic": "political-transition",
@@ -2733,7 +2879,7 @@
       "publishedAt": "2026-10-09T10:38:15.000Z",
       "firstPublishedAt": "2026-10-09T10:38:15.000Z",
       "latestSourceAt": "2026-10-09T10:38:15.000Z",
-      "fetchedAt": "2026-10-10T00:50:00.640Z",
+      "fetchedAt": "2026-10-10T06:37:30.697Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -3794,180 +3940,6 @@
           "name": "CNBC",
           "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html",
           "publishedAt": "2026-10-09T01:37:01.000Z"
-        }
-      ]
-    },
-    {
-      "id": "e2c19d0fa152",
-      "headline": "America shut out Chinese EVs. Britain welcomed them — and now faces a difficult choice",
-      "sourceHeadline": "America shut out Chinese EVs. Britain welcomed them — and now faces a difficult choice",
-      "oneLine": "跨境买卖的规则或成本在变化，企业需要重新算供应链和利润。",
-      "oneSentenceExplanation": "跨境买卖的规则或成本在变化，企业需要重新算供应链和利润。",
-      "summary": "Britain faces a finely balanced choice over whether to follow the EU in imposing tariffs on Chinese EVs.",
-      "publishedAt": "2026-10-08T20:55:39.000Z",
-      "firstPublishedAt": "2026-10-08T20:55:39.000Z",
-      "latestSourceAt": "2026-10-08T20:55:39.000Z",
-      "fetchedAt": "2026-10-09T09:02:44.583Z",
-      "region": "china",
-      "countries": [
-        "CN"
-      ],
-      "topic": "trade-policy",
-      "eventType": "trade-policy",
-      "relevance": {
-        "level": "high",
-        "score": 7,
-        "criteria": [
-          "trade",
-          "supplyChain",
-          "inflation",
-          "growth",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "high",
-      "marketRelevanceScore": 7,
-      "relevanceReasons": [
-        "trade",
-        "supplyChain",
-        "inflation",
-        "growth",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Britain faces a finely balanced choice over whether to follow the EU in imposing tariffs on Chinese EVs."
-      ],
-      "factSummary": "Britain faces a finely balanced choice over whether to follow the EU in imposing tariffs on Chinese EVs.",
-      "marketView": [
-        "本条来源报告：America shut out Chinese EVs. Britain welcomed them — and now faces a difficult choice。以下为条件性机制参考，不是已核实的市场结论。",
-        "关税和出口限制会让某些零件更贵、更难买，企业要在涨价、少赚或换供应商之间选择。",
-        "专业一点说，贸易壁垒会改变成本转嫁、比较优势和供应链配置。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，投资地点可能改变。这是一种有条件的路径。"
-      ],
-      "simpleExample": "一家玩具店用 80 元进口玩具，卖 100 元。若边境成本增加 10 元，它只能提价、少赚 10 元，或寻找新工厂。",
-      "professionalConcept": "专业一点说，贸易壁垒会改变成本转嫁、比较优势和供应链配置。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "贸易规则收紧",
-          "beginnerExplanation": "进口或出口的手续、税费或许可增加。",
-          "condition": "措施真正生效且执行",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "跨境成本可能上升",
-          "beginnerExplanation": "企业需要缴费、绕行或更换供应商。",
-          "condition": "没有及时获得豁免或替代",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "物价与利润重新分配",
-          "beginnerExplanation": "消费者、进口商和出口商分担成本。",
-          "condition": "需求弹性与议价能力不同",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "投资地点可能改变",
-          "beginnerExplanation": "企业评估把产能移到更安全的市场。",
-          "condition": "政策预计持续足够久",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "贸易规则收紧",
-          "beginnerExplanation": "进口或出口的手续、税费或许可增加。",
-          "condition": "措施真正生效且执行",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "跨境成本可能上升",
-          "beginnerExplanation": "企业需要缴费、绕行或更换供应商。",
-          "condition": "没有及时获得豁免或替代",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "物价与利润重新分配",
-          "beginnerExplanation": "消费者、进口商和出口商分担成本。",
-          "condition": "需求弹性与议价能力不同",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "投资地点可能改变",
-          "beginnerExplanation": "企业评估把产能移到更安全的市场。",
-          "condition": "政策预计持续足够久",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "半导体股",
-          "explanation": "出口许可与设备限制会影响订单和扩产。"
-        },
-        {
-          "name": "工业股",
-          "explanation": "零部件成本和海外需求会改变利润。"
-        },
-        {
-          "name": "美元与人民币",
-          "explanation": "贸易流和资本避险会影响货币需求。"
-        },
-        {
-          "name": "航运股",
-          "explanation": "提前出货、绕行和贸易量变化都会影响运价。"
-        }
-      ],
-      "relatedIndustries": [
-        "半导体",
-        "工业制造",
-        "零售",
-        "航运"
-      ],
-      "knowledgeIds": [
-        "trade",
-        "elasticity",
-        "exchange-rate",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "trade",
-        "elasticity",
-        "exchange-rate",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "豁免范围扩大",
-        "谈判达成协议",
-        "汇率抵消部分成本",
-        "企业找到替代供应",
-        "需求下降导致企业无法提价"
-      ],
-      "watchConditions": [
-        "豁免范围扩大",
-        "谈判达成协议",
-        "汇率抵消部分成本",
-        "企业找到替代供应",
-        "需求下降导致企业无法提价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/08/autos-china-evs-uk-tariffs-hybrid-cars.html",
-          "publishedAt": "2026-10-08T20:55:39.000Z"
         }
       ]
     }
