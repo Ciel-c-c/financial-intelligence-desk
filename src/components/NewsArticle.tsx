@@ -8,7 +8,12 @@ import { soWhatForNews } from '../data/soWhat';
 import type { NewsItem,SoWhatData } from '../data/types';
 import type { MarketSignal,RelatedNewsSource } from '../data/newsFeedTypes';
 export function NewsArticle({item,data,language='zh',evidenceScope,signals,relatedSources}:{item:NewsItem;data?:SoWhatData;language?:'zh'|'en';evidenceScope?:'summary'|'full-body';signals?:MarketSignal[];relatedSources?:RelatedNewsSource[]}) {
-  const terms = knowledge.filter((term) => item.termIds.includes(term.id));
+  // Generated/cached editorials may omit termIds. Recover only terms actually
+  // present in the displayed interpretation, never infer an unrelated topic.
+  const readingText=[item.title,item.summary,item.excerpt,...item.facts,...item.consensus,...item.inference,...item.risks,...item.causalChain.flatMap(step=>[step.title,step.explanation])].join(' ');
+  const termPatterns:Record<string,RegExp>={cpi:/\bCPI\b|消费者价格指数/i,'interest-rate':/利率|\binterest rates?\b/i,valuation:/估值|\bvaluation\b/i,guidance:/业绩指引|\b(?:earnings|revenue|profit) guidance\b/i};
+  const terms = knowledge.filter((term) => item.termIds.includes(term.id)||termPatterns[term.id]?.test(readingText));
+  const learningItem={...item,termIds:[...new Set([...item.termIds,...terms.map(term=>term.id)])]};
   return (
     <main className="page detail-page">
       <Link className="back-link" to="/">← 返回今日</Link>
@@ -27,7 +32,7 @@ export function NewsArticle({item,data,language='zh',evidenceScope,signals,relat
       </div>
       {!!signals?.length&&<section className="reading-card"><h2>条件性涨跌信号</h2><p className="eyebrow">描述可能的市场压力，方向仍取决于条件和原先预期</p>{signals.map((signal,index)=><div key={index}><h3>{signal.direction==='上行'?'↑':signal.direction==='下行'?'↓':signal.direction==='分化'?'↔':'—'} {signal.asset} · {signal.direction}压力 · {signal.timeframe}</h3><p>{signal.reason}</p><p>成立条件：{signal.condition}</p><p>什么情况下失效：{signal.invalidation}</p></div>)}</section>}
       {(data||language==='zh')&&<SoWhatSection data={data ?? soWhatForNews(item)} />}
-      <section><h2>把事件连到知识点</h2><div className="lesson-tags">{knowledgeForEvent(item).map(lesson => <Link key={lesson.id} to={`/learn/${lesson.id}`}>{lesson.title} →</Link>)}</div><p><Link to="/learn">浏览全部学习目录 →</Link></p></section>
+      <section><h2>把事件连到知识点</h2><div className="lesson-tags">{knowledgeForEvent(learningItem).map(lesson => <Link key={lesson.id} to={`/learn/${lesson.id}`}>{lesson.title} →</Link>)}</div><p><Link to="/learn">浏览全部学习目录 →</Link></p></section>
     </main>
   );
 }
