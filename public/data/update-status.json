@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-10T07:06:01.473Z",
-  "lastSuccessfulAt": "2026-10-10T07:06:01.473Z",
+  "attemptedAt": "2026-10-10T07:20:59.172Z",
+  "lastSuccessfulAt": "2026-10-10T07:20:59.172Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T07:06:01.473Z"
+      "lastSuccessfulAt": "2026-10-10T07:20:59.172Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-10T07:06:01.473Z"
+      "lastSuccessfulAt": "2026-10-10T07:20:59.172Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T07:06:01.473Z"
+      "lastSuccessfulAt": "2026-10-10T07:20:59.172Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T07:06:01.473Z"
+      "lastSuccessfulAt": "2026-10-10T07:20:59.172Z"
     }
   ],
   "sourceHealth": [
@@ -72,9 +72,8 @@
     {
       "id": "boj",
       "name": "Bank of Japan",
-      "status": "error",
-      "itemCount": 0,
-      "error": "Feed contained no usable items"
+      "status": "ok",
+      "itemCount": 50
     },
     {
       "id": "un",
@@ -152,9 +151,8 @@
     {
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "Feed contained no usable items"
+      "status": "ok",
+      "itemCount": 50
     },
     {
       "id": "news-un",
@@ -189,31 +187,28 @@
     {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
-      "status": "error",
-      "itemCount": 0,
+      "status": "ok",
+      "itemCount": 2,
       "originalSummaries": 0,
       "attempted": 2,
-      "generated": 0,
-      "requests": 8,
-      "rejectionReasons": {
-        "summary-length": 2
-      }
+      "generated": 2,
+      "requests": 10,
+      "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "error",
-      "itemCount": 0,
+      "status": "ok",
+      "itemCount": 1,
       "attempted": 2,
-      "rejected": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
         "evidence": 2,
         "analysis": 1,
-        "audit": 0
+        "audit": 1
       },
       "rejectionReasons": {
-        "audit": 1,
         "impact-assessment": 1
       }
     }
