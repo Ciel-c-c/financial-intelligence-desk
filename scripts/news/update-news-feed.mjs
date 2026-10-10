@@ -58,7 +58,7 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
    const priorSummary=prior.find(old=>old.factualSummary&&old.canonicalUrl===record.canonicalUrl&&validateFactualSummary(record,old.factualSummary,policies,now));
    if(priorSummary)record={...record,factualSummary:priorSummary.factualSummary};
    const oldQueue=prior.find(old=>old.id===record.id&&old.article?.sha256===record.article?.sha256)?.queue;
-   record={...record,queue:{firstSeenAt:oldQueue?.firstSeenAt??now,summaryAttempt:oldQueue?.summaryAttempt??0}};
+   record={...record,queue:{firstSeenAt:oldQueue?.firstSeenAt??now,summaryAttempt:oldQueue?.summaryAttemptVersion==='summary-diagnostics-v1'?oldQueue.summaryAttempt??0:0,summaryAttemptVersion:'summary-diagnostics-v1'}};
    working.push(record);
   }
   const current=record=>{const age=Date.parse(now)-Date.parse(record.publishedAt);return age>=0&&age<=86400_000;};
@@ -73,7 +73,7 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
   }
   // Raw allowed Chinese publisher summaries need no API budget, even if a
   // model outage later stops all generation for this run.
-  let originalSummaries=0,summaryAttempts=0,summaryGenerated=0;
+  let originalSummaries=0,summaryAttempts=0,summaryGenerated=0;const summaryRejections={};
   for(let i=0;i<working.length;i++){
    const record=working[i];if(record.factualSummary||!current(record))continue;
    const factualSummary=await buildFactualSummary(record,{policies,budget:state,modelOptions:{},now});
@@ -96,14 +96,15 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
   for(let i=0;i<working.length&&summaryAttempts<summaryLimit;i++){
    const record=working[i];if(record.factualSummary||record.editorial||!current(record)||!isSourceAllowed(record,policies,now)||!record.article?.text||record.queue?.summaryAttempt>=3||!enrichmentOptions.apiKey||state.stopped||state.requests>10)continue;
    summaryAttempts++;
-   const factualSummary=await buildFactualSummary(record,{policies,budget:state,modelOptions:enrichmentOptions,now});
+   let summaryRejection;
+   const factualSummary=await buildFactualSummary(record,{policies,budget:state,modelOptions:enrichmentOptions,now,onReject:reason=>{summaryRejection=reason;summaryRejections[reason]=(summaryRejections[reason]??0)+1;}});
    if(factualSummary){working[i]={...record,factualSummary};summaryGenerated++;}
-   else if(!state.stopped&&!state.protocolFailure)working[i]={...record,queue:{...record.queue,summaryAttempt:(record.queue?.summaryAttempt??0)+1}};
+   else if(!state.stopped&&!state.protocolFailure)working[i]={...record,queue:{...record.queue,summaryAttempt:(record.queue?.summaryAttempt??0)+1,summaryRejection}};
   }
   const second=migrationCandidates().find(({index})=>index!==first?.index)??eligibleDeep().find(({index})=>index!==first?.index);
   if(second)await deep(second.index);
   const enriched=working.map(toPublicEvidence);
-  sourceHealth.push({id:'groq-summary',name:'来源事实总结与中文整理',status:state.stopped||summaryAttempts>0&&summaryGenerated===0?'error':'ok',itemCount:originalSummaries+summaryGenerated,originalSummaries,attempted:summaryAttempts,generated:summaryGenerated,requests:state.requests,...(state.reason?{error:state.reason}:{})});
+  sourceHealth.push({id:'groq-summary',name:'来源事实总结与中文整理',status:state.stopped||summaryAttempts>0&&summaryGenerated===0?'error':'ok',itemCount:originalSummaries+summaryGenerated,originalSummaries,attempted:summaryAttempts,generated:summaryGenerated,requests:state.requests,rejectionReasons:summaryRejections,...(state.reason?{error:state.reason}:{})});
   if(enrichmentOptions.apiKey) sourceHealth.push({id:'groq-editorial',name:'Groq 新闻摘要与机制解读',status:state.stopped||state.failures||(state.attempted>0&&state.generated===0)?'error':'ok',itemCount:state.generated,...(state.reason?{error:state.reason}:{}),attempted:state.attempted,rejected:state.rejected,failures:state.failures,stages:state.stages??{evidence:0,analysis:0,audit:0},rejectionReasons:state.rejectionReasons??{}});
   const {latest,continuing}=selectNewsWindows(enriched,now);
   const activeIds=new Set([...latest,...continuing].map(item=>item.id)); const retainedDetails=[...enriched,...(previous?.latest??[]),...(previous?.continuing??[]),...(previous?.retainedDetails??[])].filter(item=>!activeIds.has(item.id)&&Number.isFinite(Date.parse(item.publishedAt))&&Date.parse(item.publishedAt)<=Date.parse(now)).filter((item,index,array)=>array.findIndex(candidate=>candidate.id===item.id)===index).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,60);

@@ -35,3 +35,7 @@ it('requires paired source evidence and a review for generated summaries',()=>{
  expect(validateFactualSummary(record,{...generated,review:undefined},policies,now)).toBe(false);
  expect(validateFactualSummary(record,{...generated,evidence:[{text:originalSummary,quote:'并不存在的引用'}]},policies,now)).toBe(false);
 });
+it('reports a safe failure field without copying source or model prose',()=>{
+ const reasons:string[]=[];validateFactualSummary(record,{...summary,summary:'只有标题'},policies,now,reason=>reasons.push(reason));
+ expect(reasons).toEqual(['summary-length']);
+});

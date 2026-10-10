@@ -26,3 +26,8 @@ it('requires a complete granular audit with an empty valid findings list before 
 it('keeps only safe bounded rejection codes, not model prose',()=>{
  expect(safeAuditFindings({findings:[{category:'parallel-cause',section:'causalEdges',index:1,message:'do not log'},{category:'secret\ntext',section:'causalEdges',index:1}]})).toEqual([{category:'parallel-cause',section:'causalEdges',index:1}]);
 });
+it('identifies a rejected impact field without returning its unsupported quotation',()=>{
+ const a=assessment();a[5].triggerEvidence='并不存在的原文';const reasons:string[]=[];
+ expect(validateImpactAssessment(a,selected,body,reason=>reasons.push(reason))).toBe(false);
+ expect(reasons).toEqual(['personalImpact[0].trigger-evidence']);
+});

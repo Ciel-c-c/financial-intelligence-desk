@@ -11,14 +11,18 @@ export function validateAudit(audit,output){
  return audit?.approved===true&&Array.isArray(audit.findings)&&audit.findings.length===0&&audit.scenariosAreConditional===true
   &&passed(audit.facts,output.facts.length)&&passed(audit.causalEdges,output.causalChain.length-1)&&passed(audit.personalImpacts,output.soWhat.personalImpact.length);
 }
-export function validateImpactAssessment(assessment,selected,body){
+export function validateImpactAssessment(assessment,selected,body,onReject=()=>{}){
+ const reject=reason=>{onReject(reason);return false;};
  if(!Array.isArray(assessment)||assessment.length!==6||new Set(assessment.map(a=>a.label)).size!==6||!assessment.every(a=>IMPACT_LABELS.includes(a.label)&&Number.isInteger(a.score)&&a.score>=0&&a.score<=3)
-  ||!Array.isArray(selected)||selected.length<1||selected.length>5||new Set(selected.map(i=>i.label)).size!==selected.length)return false;
+  ||!Array.isArray(selected)||selected.length<1||selected.length>5||new Set(selected.map(i=>i.label)).size!==selected.length)return reject('impact-assessment-structure');
  const audiences={'投资':['investors'],'汇率':['households','firms','investors'],'住房':['households','firms'],'工作':['workers'],'消费':['households'],'企业经营':['firms']};
- return selected.every(item=>{
+ return selected.every((item,index)=>{
   const a=assessment.find(a=>a.label===item.label);
-  return a?.score>=2&&audiences[item.label]?.includes(a.audience)&&nonempty(a.region)&&nonempty(a.invalidation)
-   &&Array.isArray(a.path)&&a.path.length>=3&&a.path.length<=6&&a.path.every(nonempty)
-   &&nonempty(a.triggerEvidence)&&a.triggerEvidence.length>=6&&a.triggerEvidence.length<=120&&body.includes(a.triggerEvidence);
+  const field=suffix=>`personalImpact[${index}].${suffix}`;
+  if(!(a?.score>=2))return reject(field('score'));
+  if(!audiences[item.label]?.includes(a.audience))return reject(field('audience'));
+  if(!nonempty(a.region)||!nonempty(a.invalidation))return reject(field('region-or-invalidation'));
+  if(!Array.isArray(a.path)||a.path.length<3||a.path.length>6||!a.path.every(nonempty))return reject(field('path'));
+  return nonempty(a.triggerEvidence)&&a.triggerEvidence.length>=6&&a.triggerEvidence.length<=120&&body.includes(a.triggerEvidence)||reject(field('trigger-evidence'));
  });
 }
