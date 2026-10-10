@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-10T09:02:35.693Z",
-  "lastSuccessfulAt": "2026-10-10T09:02:35.693Z",
+  "attemptedAt": "2026-10-10T09:59:02.640Z",
+  "lastSuccessfulAt": "2026-10-10T09:59:02.640Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T09:02:35.693Z"
+      "lastSuccessfulAt": "2026-10-10T09:59:02.640Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-10T09:02:35.693Z"
+      "lastSuccessfulAt": "2026-10-10T09:59:02.640Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T09:02:35.693Z"
+      "lastSuccessfulAt": "2026-10-10T09:59:02.640Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T09:02:35.693Z"
+      "lastSuccessfulAt": "2026-10-10T09:59:02.640Z"
     }
   ],
   "sourceHealth": [
@@ -188,28 +188,31 @@
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 2,
+      "itemCount": 1,
       "originalSummaries": 0,
       "attempted": 2,
-      "generated": 2,
-      "requests": 10,
-      "rejectionReasons": {}
+      "generated": 1,
+      "requests": 7,
+      "rejectionReasons": {
+        "paired-evidence": 1
+      }
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "ok",
-      "itemCount": 1,
+      "status": "error",
+      "itemCount": 0,
       "attempted": 2,
-      "rejected": 1,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 2,
-        "analysis": 2,
-        "audit": 1
+        "evidence": 1,
+        "analysis": 0,
+        "audit": 0
       },
       "rejectionReasons": {
-        "audit": 1
+        "facts": 1,
+        "numbers": 1
       }
     }
   ],
