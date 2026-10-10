@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-10T18:34:49.419Z",
-  "lastSuccessfulAt": "2026-10-10T18:34:49.419Z",
+  "attemptedAt": "2026-10-10T22:30:38.065Z",
+  "lastSuccessfulAt": "2026-10-10T22:30:38.065Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T18:34:49.419Z"
+      "lastSuccessfulAt": "2026-10-10T22:30:38.065Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-10T18:34:49.419Z"
+      "lastSuccessfulAt": "2026-10-10T22:30:38.065Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T18:34:49.419Z"
+      "lastSuccessfulAt": "2026-10-10T22:30:38.065Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T18:34:49.419Z"
+      "lastSuccessfulAt": "2026-10-10T22:30:38.065Z"
     }
   ],
   "sourceHealth": [
@@ -55,7 +55,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -188,31 +188,28 @@
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 1,
+      "itemCount": 2,
       "originalSummaries": 0,
       "attempted": 2,
-      "generated": 1,
-      "requests": 9,
-      "rejectionReasons": {
-        "summary-audit": 1
-      }
+      "generated": 2,
+      "requests": 10,
+      "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "error",
-      "itemCount": 0,
+      "status": "ok",
+      "itemCount": 1,
       "attempted": 2,
-      "rejected": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
         "evidence": 2,
         "analysis": 1,
-        "audit": 0
+        "audit": 1
       },
       "rejectionReasons": {
-        "personal-impact": 1,
-        "audit": 1
+        "impact-assessment": 1
       }
     }
   ],
