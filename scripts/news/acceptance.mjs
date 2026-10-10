@@ -7,7 +7,7 @@ import {needsReview} from './review-migration.mjs';
 export function buildNewsAcceptance(news,previous,{scheduled=false}={}){
  const now=news.attemptedAt,policies=buildSourcePolicies(newsSources,now),rows=(news.latest??[]).filter(r=>{const age=Date.parse(now)-Date.parse(r.publishedAt);return age>=0&&age<=86400_000;}),health=news.sourceHealth??[];
  const requests=health.find(h=>h.id==='groq-summary')?.requests??0;
- const publisher=rows.filter(r=>r.factualSummary?.origin==='publisher-zh'&&validateFactualSummary(r,r.factualSummary,policies,now)).length;
+ const publisher=rows.filter(r=>r.originalLanguage==='zh'&&r.factualSummary&&validateFactualSummary(r,r.factualSummary,policies,now)).length;
  const translated=rows.filter(r=>r.originalLanguage==='en'&&r.factualSummary?.origin==='model'&&validateFactualSummary(r,r.factualSummary,policies,now)).length;
  const deep=rows.filter(r=>isPublishableNews(r)&&!needsReview(r)).length;
  const bounded=Number.isInteger(requests)&&requests>=0&&requests<=12&&(health.find(h=>h.id==='groq-summary')?.attempted??0)<=2&&(health.find(h=>h.id==='groq-editorial')?.attempted??0)<=2;
