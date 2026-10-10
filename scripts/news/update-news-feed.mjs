@@ -93,7 +93,9 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
   const eligibleDeep=()=>working.map((record,index)=>({record,index})).filter(({record})=>current(record)&&!record.editorial&&record.article?.text&&(record.analysisAttempt?.count??0)<3);
   const first=eligibleDeep()[0]??migrationCandidates()[0];if(first)await deep(first.index);
   const summaryLimit=Number(enrichmentOptions.maxSummaries)===0?0:Number(enrichmentOptions.maxSummaries)===1?1:2;
-  for(let i=0;i<working.length&&summaryAttempts<summaryLimit;i++){
+  const summaryOrder=working.map((record,index)=>({record,index})).sort((a,b)=>(a.record.originalLanguage==='en'?0:1)-(b.record.originalLanguage==='en'?0:1)).map(({index})=>index);
+  for(const i of summaryOrder){
+   if(summaryAttempts>=summaryLimit)break;
    const record=working[i];if(record.factualSummary||record.editorial||!current(record)||!isSourceAllowed(record,policies,now)||!record.article?.text||record.queue?.summaryAttempt>=3||!enrichmentOptions.apiKey||state.stopped||state.requests>10)continue;
    summaryAttempts++;
    let summaryRejection;

@@ -41,6 +41,15 @@ it('publishes economic interpretation without forcing any asset signal',async()=
  expect(result.latest[0].editorial?.marketSignals).toEqual([]);
  expect(result.latest[0].editorial?.soWhat.personalImpact[0].label).toBe('企业经营');
 });
+it('binds impact triggers through immutable evidence IDs rather than copying quotation punctuation',async()=>{
+ const output=response();output.impactAssessment=output.impactAssessment.map(a=>({...a,triggerEvidence:a.score>=2?'T1':null}));
+ const result=await run(output,200,true,'groq');
+ expect(result.latest[0].editorial?.impactAssessment.find(a=>a.score>=2).triggerEvidence).toBe('企业公布业务进展');
+});
+it('does not admit an impact with an unknown source-evidence ID',async()=>{
+ const output=response();output.impactAssessment=output.impactAssessment.map(a=>({...a,triggerEvidence:a.score>=2?'T999':null}));
+ expect((await run(output,200,true,'groq')).latest[0].editorial).toBeUndefined();
+});
 it('rejects a fact borrowing a number from another source passage',async()=>{
  const {validateGeneratedEditorial}=await import('../../scripts/news/cerebras-editorial.mjs');
  const output=response();

@@ -23,3 +23,10 @@ it('bounds every generation stage under one twelve-request allowance',async()=>{
  expect(calls).toBeLessThanOrEqual(12);
  expect(result.sourceHealth.find(s=>s.id==='groq-summary')?.attempted).toBe(2);
 });
+it('does not let Chinese body summaries consume every slot while English news remains untranslated',async()=>{
+ const zh={...raw,sourceId:'cnfin',sourceName:'新华财经',sourceTier:'verified',originalTitle:'央行利率变化与企业融资成本',canonicalUrl:'https://www.cnfin.com/yw-lb/detail/20261009/4474000_1.html'};
+ const en={...raw,sourceId:'cnbc-markets',sourceName:'CNBC',sourceTier:'verified',originalLanguage:'en',originalTitle:'Company earnings change market expectations',originalSummary:'The company reported updated earnings and said market conditions affected its financing plans. Investors will monitor future guidance rather than assume a guaranteed stock price direction.',canonicalUrl:'https://www.cnbc.com/2026/10/09/earnings.html'};
+ const summarized:string[]=[];
+ await buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[zh]},{id:'cnbc-markets',name:'CNBC',ok:true,items:[en]}],enrichmentOptions:{apiKey:'test-secret',waitImpl:async()=>{},fetchImpl:async(_url,init)=>{const payload=JSON.parse(init.body);if(payload.messages[0].content.startsWith('SUMMARY_ONLY'))summarized.push(JSON.parse(payload.messages[1].content).title);return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:'{}'}}]})};}}});
+ expect(summarized[0]).toBe(en.originalTitle);
+});

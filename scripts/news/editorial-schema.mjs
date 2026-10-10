@@ -21,16 +21,18 @@ export function sourceExcerpts(body){
   }
   return Object.fromEntries([...new Set(excerpts)].map((text,index)=>[`E${index+1}`,text]));
 }
-export function editorialResponseFormat(stage,body=''){
+export function editorialResponseFormat(stage,body='',triggerIds=[]){
  let evidenceSchema=evidence;
  if(stage==='evidence'&&body){
   const ids=Object.keys(sourceExcerpts(body));
   if(ids.length){const boundQuote=object({text:string,evidence:{type:'string',enum:ids}});evidenceSchema=object({facts:array(boundQuote),background:array(boundQuote),expectations:array(boundQuote),uncertainties:array(boundQuote)});}
  }
  const audit=object({approved:{type:'boolean'},facts:array({type:'boolean'}),causalEdges:array({type:'boolean'}),personalImpacts:array({type:'boolean'}),scenariosAreConditional:{type:'boolean'},findings:array(object({category:{type:'string',enum:['fact-evidence','translation','parallel-cause','causal-gap','expectation-attribution','impact-scope','invalidation']},section:{type:'string',enum:['facts','causalEdges','personalImpacts','expectations','scenarios']},index:{type:'integer',minimum:0,maximum:19}}))});
- return {type:'json_schema',json_schema:{name:`editorial_${stage}`,strict:true,schema:stage==='evidence'?evidenceSchema:stage==='audit'?audit:analysis}};
+ const boundAnalysis=structuredClone(analysis);
+ if(triggerIds.length)boundAnalysis.properties.impactAssessment.items.properties.triggerEvidence={anyOf:[{type:'null'},{type:'string',enum:triggerIds}]};
+ return {type:'json_schema',json_schema:{name:`editorial_${stage}`,strict:true,schema:stage==='evidence'?evidenceSchema:stage==='audit'?audit:boundAnalysis}};
 }
 export function factualSummaryResponseFormat(body,audit=false){
- const schema=audit?object({approved:{type:'boolean'},facts:array({type:'boolean'}),title:{type:'boolean'},summary:{type:'boolean'},preservesMeaning:{type:'boolean'}}):object({title:string,summary:string,facts:array(object({text:string,evidence:{type:'string',enum:Object.keys(sourceExcerpts(body))}}))});
+ const schema=audit?object({approved:{type:'boolean'},facts:array({type:'boolean'}),title:{type:'boolean'},summary:{type:'boolean'},preservesMeaning:{type:'boolean'}}):object({title:{type:'string',description:'Chinese factual headline; translated proper names are allowed.'},summary:{type:'string',description:'Chinese factual paragraph of 40-400 characters, not just a repeated headline. Only report source facts; do not invent facts to meet the length.'},facts:array(object({text:{type:'string',description:'A factual paraphrase in Chinese, supported entirely by one selected fragment. Do not combine numbers from different fragments or add metadata dates.'},evidence:{type:'string',enum:Object.keys(sourceExcerpts(body)),description:'One source fragment ID, not a copied quotation.'}}))});
  return {type:'json_schema',json_schema:{name:audit?'factual_summary_audit':'factual_summary',strict:true,schema}};
 }
