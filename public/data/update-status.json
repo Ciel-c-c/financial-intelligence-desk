@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-10T22:30:38.065Z",
-  "lastSuccessfulAt": "2026-10-10T22:30:38.065Z",
+  "attemptedAt": "2026-10-11T01:52:47.974Z",
+  "lastSuccessfulAt": "2026-10-11T01:52:47.974Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T22:30:38.065Z"
+      "lastSuccessfulAt": "2026-10-11T01:52:47.974Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-10T22:30:38.065Z"
+      "lastSuccessfulAt": "2026-10-11T01:52:47.974Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T22:30:38.065Z"
+      "lastSuccessfulAt": "2026-10-11T01:52:47.974Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-10T22:30:38.065Z"
+      "lastSuccessfulAt": "2026-10-11T01:52:47.974Z"
     }
   ],
   "sourceHealth": [
@@ -73,7 +73,7 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 49
     },
     {
       "id": "un",
@@ -85,7 +85,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 30
+      "itemCount": 32
     },
     {
       "id": "bbc-business",
@@ -152,7 +152,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 49
     },
     {
       "id": "news-un",
@@ -164,7 +164,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 30
+      "itemCount": 32
     },
     {
       "id": "news-bbc-business",
@@ -187,29 +187,32 @@
     {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
-      "status": "ok",
-      "itemCount": 2,
+      "status": "error",
+      "itemCount": 0,
       "originalSummaries": 0,
       "attempted": 2,
-      "generated": 2,
+      "generated": 0,
       "requests": 10,
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "summary-audit": 2
+      }
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "ok",
-      "itemCount": 1,
+      "status": "error",
+      "itemCount": 0,
       "attempted": 2,
-      "rejected": 1,
+      "rejected": 2,
       "failures": 0,
       "stages": {
         "evidence": 2,
         "analysis": 1,
-        "audit": 1
+        "audit": 0
       },
       "rejectionReasons": {
-        "impact-assessment": 1
+        "numbers": 1,
+        "audit": 1
       }
     }
   ],
