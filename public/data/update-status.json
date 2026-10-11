@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-11T01:52:47.974Z",
-  "lastSuccessfulAt": "2026-10-11T01:52:47.974Z",
+  "attemptedAt": "2026-10-11T08:49:16.594Z",
+  "lastSuccessfulAt": "2026-10-11T08:49:16.594Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-11T01:52:47.974Z"
+      "lastSuccessfulAt": "2026-10-11T08:49:16.594Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-11T01:52:47.974Z"
+      "lastSuccessfulAt": "2026-10-11T08:49:16.594Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-11T01:52:47.974Z"
+      "lastSuccessfulAt": "2026-10-11T08:49:16.594Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-11T01:52:47.974Z"
+      "lastSuccessfulAt": "2026-10-11T08:49:16.594Z"
     }
   ],
   "sourceHealth": [
@@ -78,8 +78,9 @@
     {
       "id": "un",
       "name": "UN News",
-      "status": "ok",
-      "itemCount": 30
+      "status": "error",
+      "itemCount": 0,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "bbc-world",
@@ -157,8 +158,9 @@
     {
       "id": "news-un",
       "name": "UN News（新闻）",
-      "status": "ok",
-      "itemCount": 30
+      "status": "error",
+      "itemCount": 0,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "news-bbc-world",
@@ -187,14 +189,14 @@
     {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
-      "status": "error",
-      "itemCount": 0,
+      "status": "ok",
+      "itemCount": 1,
       "originalSummaries": 0,
       "attempted": 2,
-      "generated": 0,
-      "requests": 10,
+      "generated": 1,
+      "requests": 9,
       "rejectionReasons": {
-        "summary-audit": 2
+        "summary-audit": 1
       }
     },
     {
@@ -207,12 +209,12 @@
       "failures": 0,
       "stages": {
         "evidence": 2,
-        "analysis": 1,
+        "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "numbers": 1,
-        "audit": 1
+        "personal-impact": 1,
+        "impact-assessment": 1
       }
     }
   ],

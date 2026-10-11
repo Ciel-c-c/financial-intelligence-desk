@@ -1,10 +1,463 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-11T01:52:47.974Z",
-  "lastSuccessfulAt": "2026-10-11T01:52:47.974Z",
-  "nextExpectedAt": "2026-10-11T02:52:47.974Z",
+  "attemptedAt": "2026-10-11T08:49:16.594Z",
+  "lastSuccessfulAt": "2026-10-11T08:49:16.594Z",
+  "nextExpectedAt": "2026-10-11T09:49:16.594Z",
   "status": "delayed",
   "latest": [
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479226_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479226_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "新华社经济随笔：在“老本行”里找到“新活法”",
+      "publishedAt": "2026-10-11T08:18:24.000Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1716,
+        "reader": "cnfin-body",
+        "sha256": "f8fa0004074de25bbf8b042c6902afd368ba0bab86629d8617aad6738520be33",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479226_1.html",
+        "checkedAt": "2026-10-11T08:49:16.594Z"
+      },
+      "id": "e85fdd9249a0b45dc79d",
+      "verificationStatus": "verified",
+      "titleZh": "新华社经济随笔：在“老本行”里找到“新活法”",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|新华社经济随笔在老本行里找到新活|2026-10-11",
+      "detailStatus": "professional",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-11T08:49:16.594Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c84g179n2393o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Delhi braces for more protests as 'cockroach' group's leaders released",
+      "originalSummary": "Police say they will keep restricting access to the city centre after 7,000 people were detained and released on Saturday.",
+      "publishedAt": "2026-10-11T07:10:49.000Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
+      "id": "fbbe503f6fdada7190d1",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|delhibracesformo|2026-10-11",
+      "detailStatus": "brief",
+      "facts": [
+        "Police say they will keep restricting access to the city centre after 7,000 people were detained and released on Saturday."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Delhi braces for more protests as 'cockroach' group's leaders released\nPolice say they will keep restricting access to the city centre after 7,000 people were detained and released on Saturday.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 193,
+        "sha256": "5cfa6e473cc581724a20b646ec737d76fe23711a3663096b4bfe8f522e956f9b",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c84g179n2393o?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-11T08:49:16.594Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-11T08:49:16.594Z",
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "summary-diagnostics-v1",
+        "summaryRejection": "summary-audit"
+      }
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c5x2vn4dzz08o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Charities and businesses wrestle with diesel cost",
+      "originalSummary": "Cancer charity Daft as a Brush and Teesside Minibus Hire say they are struggling with pump prices.",
+      "publishedAt": "2026-10-11T06:23:27.000Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
+      "id": "0f15f6381488414c1a5b",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|charitiesandbusi|2026-10-11",
+      "detailStatus": "brief",
+      "facts": [
+        "Cancer charity Daft as a Brush and Teesside Minibus Hire say they are struggling with pump prices."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Charities and businesses wrestle with diesel cost\nCancer charity Daft as a Brush and Teesside Minibus Hire say they are struggling with pump prices.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 148,
+        "sha256": "ff28f8f0d75c71a0355386768af8e1308450fbf62d150991191170435429bf60",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c5x2vn4dzz08o?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-11T08:49:16.594Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-11T08:49:16.594Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Charities and businesses wrestle with diesel cost",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c5x2vn4dzz08o?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-11T06:23:27.000Z",
+        "sourceHash": "ff28f8f0d75c71a0355386768af8e1308450fbf62d150991191170435429bf60",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-11T08:49:16.594Z",
+        "title": "慈善机构和企业受柴油价格压力",
+        "summary": "慈善机构和企业正面临柴油成本的困扰，癌症慈善组织“Daft as a Brush”以及Teesside Minibus Hire均表示油价让它们感到困难。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "慈善机构和企业正面临柴油成本的困扰。",
+            "quote": "Charities and businesses wrestle with diesel cost"
+          },
+          {
+            "text": "癌症慈善机构“Daft as a Brush”和Teesside Minibus Hire表示它们正为油价而苦恼。",
+            "quote": "Cancer charity Daft as a Brush and Teesside Minibus Hire say they are struggling with pump prices."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479216_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479216_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "中国汽车工业协会：严守安全底线，规范创新设计",
+      "publishedAt": "2026-10-11T05:15:51.000Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 647,
+        "reader": "cnfin-body",
+        "sha256": "f804c9b66faee5fcd6839872ab6a3b4b3016504c9f796255eda95d2e72e56315",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479216_1.html",
+        "checkedAt": "2026-10-11T08:49:16.594Z"
+      },
+      "id": "5465f737e6e3f740c8f1",
+      "verificationStatus": "verified",
+      "titleZh": "中国汽车工业协会：严守安全底线，规范创新设计",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|中国汽车工业协会严守安全底线规范|2026-10-11",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-11T08:49:16.594Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "US justice department investigates TV networks over Trump pool coverage",
+      "originalSummary": "The White House had blocked access for CNN, MS Now and Politico, leading them to restrict pool coverage.",
+      "publishedAt": "2026-10-11T05:05:43.000Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
+      "id": "0c791286cb375d3ef9d8",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|usjusticedepartm|2026-10-11",
+      "detailStatus": "brief",
+      "facts": [
+        "The White House had blocked access for CNN, MS Now and Politico, leading them to restrict pool coverage."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "US justice department investigates TV networks over Trump pool coverage\nThe White House had blocked access for CNN, MS Now and Politico, leading them to restrict pool coverage.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 176,
+        "sha256": "c00eef0be5390fad284b3bf0036d2af789545e8c08c51a5c39504e35d7ef965c",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-11T08:49:16.594Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-11T08:49:16.594Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479210_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479210_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【中经社信号】从买菌种到育菌种 益生菌千亿赛道迎价值重构",
+      "publishedAt": "2026-10-11T03:27:21.000Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1842,
+        "reader": "cnfin-body",
+        "sha256": "f9ac36855571b083f0d2ada7308f6d4e5dcbdda1d3a0a482dda29d1bf5107ee0",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479210_1.html",
+        "checkedAt": "2026-10-11T08:49:16.594Z"
+      },
+      "id": "ebba40151c9a89c28790",
+      "verificationStatus": "verified",
+      "titleZh": "【中经社信号】从买菌种到育菌种 益生菌千亿赛道迎价值重构",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|中经社信号从买菌种到育菌种益生菌|2026-10-11",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-11T08:49:16.594Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479207_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479207_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "定增缩水近10亿元 华曙高科超净资产融资待考",
+      "publishedAt": "2026-10-11T03:15:03.000Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 2353,
+        "reader": "cnfin-body",
+        "sha256": "08c2e96729f3fce9dfd3547e7c9b3f6115406dde8ec1b4359536511ff856d7f0",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479207_1.html",
+        "checkedAt": "2026-10-11T08:49:16.594Z"
+      },
+      "id": "a54c85341421a03403b3",
+      "verificationStatus": "verified",
+      "titleZh": "定增缩水近10亿元 华曙高科超净资产融资待考",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|定增缩水近10亿元华曙高科超净资|2026-10-11",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-11T08:49:16.594Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479203_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479203_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "中国车企加速融入欧洲汽车产业生态——访巴黎车展主办方负责人塞尔日·加绍",
+      "publishedAt": "2026-10-11T03:04:04.000Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1153,
+        "reader": "cnfin-body",
+        "sha256": "a29c98706f2d7f7f2403961fff9513acfc89c8b0b6b77cd6b430b7160b808ed7",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479203_1.html",
+        "checkedAt": "2026-10-11T08:49:16.594Z"
+      },
+      "id": "dd4d78e92cc04890db50",
+      "verificationStatus": "verified",
+      "titleZh": "中国车企加速融入欧洲汽车产业生态——访巴黎车展主办方负责人塞尔日·加绍",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|中国车企加速融入欧洲汽车产业生态|2026-10-11",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-11T08:49:16.594Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
     {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
@@ -14,14 +467,14 @@
       "originalLanguage": "zh",
       "originalTitle": "美乌现分歧 英国首相力挺泽连斯基",
       "publishedAt": "2026-10-11T01:44:12.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "article": {
         "status": "complete",
         "characterCount": 402,
         "reader": "cnfin-body",
         "sha256": "7369f4d58fadd52becd424aa63b686b851f2016d42347fcf69437e668782925b",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479200_1.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "id": "38e740e285546fc402e5",
       "verificationStatus": "verified",
@@ -54,8 +507,7 @@
       "queue": {
         "firstSeenAt": "2026-10-11T01:52:47.974Z",
         "summaryAttempt": 1,
-        "summaryAttemptVersion": "summary-diagnostics-v1",
-        "summaryRejection": "summary-audit"
+        "summaryAttemptVersion": "summary-diagnostics-v1"
       }
     },
     {
@@ -68,7 +520,7 @@
       "originalTitle": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
       "originalSummary": "Ukraine's leader had said the deal with Russia to release diesel into the US would help Moscow fund the war.",
       "publishedAt": "2026-10-11T01:41:29.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "1b46d4930648dfb29659",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -105,7 +557,7 @@
         "characterCount": 196,
         "sha256": "ccf3edfae44daa7985b63820cf6cedcded13831f096619ad7fb62f3d3f273488",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T18:34:49.419Z",
@@ -122,14 +574,14 @@
       "originalLanguage": "zh",
       "originalTitle": "三季度高频数据折射我国经济向好态势",
       "publishedAt": "2026-10-11T01:36:32.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "article": {
         "status": "complete",
         "characterCount": 697,
         "reader": "cnfin-body",
         "sha256": "f0835d99e0764a8a0d2d1cce520c7217930b79c9b8db2f528cb6176c3ee20bf8",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479197_1.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "id": "80da2fb0a6a9d5a61da2",
       "verificationStatus": "verified",
@@ -174,14 +626,14 @@
       "originalLanguage": "zh",
       "originalTitle": "俄政府部分解除柴油出口禁令",
       "publishedAt": "2026-10-11T00:47:19.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "article": {
         "status": "complete",
         "characterCount": 359,
         "reader": "cnfin-body",
         "sha256": "124a00fb3849a317ca294e4d3216ae050d0bc83750e9ff1379fba4698868c89c",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479190_1.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "id": "75772aba951b72642ce1",
       "verificationStatus": "verified",
@@ -226,14 +678,14 @@
       "originalLanguage": "zh",
       "originalTitle": "飓风“伊萨亚斯”已致美国4人死亡 部分石油企业停产 数十万人遭遇断电",
       "publishedAt": "2026-10-11T00:46:58.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "article": {
         "status": "complete",
         "characterCount": 410,
         "reader": "cnfin-body",
         "sha256": "3a363d05c194f7c070440506225dd6b4fb76be43e6a78f338cec2acab514816b",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479187_1.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "id": "e17c6a05364542a6662f",
       "verificationStatus": "verified",
@@ -278,14 +730,14 @@
       "originalLanguage": "zh",
       "originalTitle": "新华财经早报：10月11日",
       "publishedAt": "2026-10-11T00:32:25.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "article": {
         "status": "complete",
         "characterCount": 3470,
         "reader": "cnfin-body",
         "sha256": "10366a918ce4ed452ac9fd42c9287c7bc7a3bb691d333f967b9d0cd865cfec3d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261011/4479183_1.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "id": "72d71a56b6862a8c2704",
       "verificationStatus": "verified",
@@ -386,7 +838,7 @@
       "originalTitle": "Inside the room: What it was like to be with Blackpink's Lisa as race scandal erupted",
       "originalSummary": "Film-maker Sue Kim talks about having unprecedented access to K-Pop idol Lisa Manobal at her most candid.",
       "publishedAt": "2026-10-10T23:31:35.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "8788aaafdd6475725ee0",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -423,7 +875,7 @@
         "characterCount": 191,
         "sha256": "33f99ea365148947face4719326e8abec2900ba32a9049dff6683005e68b0a10",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cjzxl56q30k7o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-11T01:52:47.974Z",
@@ -441,7 +893,7 @@
       "originalTitle": "Four dead and thousands without power after Hurricane Isaias lashes US",
       "originalSummary": "Roofs were ripped off buildings after Isaias barrelled into the US on Friday evening, before it weakened to a post-tropical cyclone.",
       "publishedAt": "2026-10-10T23:19:55.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "c508677f9d3844088099",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -478,7 +930,7 @@
         "characterCount": 203,
         "sha256": "524a2f8ba4645251f733ebc5407c7bf978d21175fec71351a1de45dc887df949",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmje5x80yg70o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T22:30:38.065Z",
@@ -496,7 +948,7 @@
       "originalTitle": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
       "originalSummary": "Ukraine's president sharply criticised the move, calling it an \"investment in war that must be ended, not prolonged\".",
       "publishedAt": "2026-10-10T14:24:14.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "7ea0cae0e70813540d17",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -539,7 +991,7 @@
         "characterCount": 194,
         "sha256": "5b89ff31940680d962cdf27e7c6f6aff74abfb9a8a4ba92de5d0a177ef99d66d",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T18:34:49.419Z",
@@ -623,7 +1075,7 @@
       "originalTitle": "Young men live in fear of being snatched off the streets and sold to Myanmar's army",
       "originalSummary": "A desperate junta is in a war of attrition against ethnic militias and and civilian resistance.",
       "publishedAt": "2026-10-10T22:13:08.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "59fe62cd2764f693b341",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -660,7 +1112,7 @@
         "characterCount": 179,
         "sha256": "e559778bbcbf94b6619dd93389d29722dca357591aace86b5ea241b5451533d5",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c680zlny0gk4o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-11T01:52:47.974Z",
@@ -735,7 +1187,7 @@
       "originalTitle": "Microsoft's Nadella says AI needs an ‘emergency brake’ that humans control",
       "originalSummary": "Nadella joined other tech moguls and researchers in calling for stronger safeguards and, in some cases, for the pacing of frontier development.",
       "publishedAt": "2026-10-10T20:59:28.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "f787d49610d7a3255dd5",
       "verificationStatus": "verified",
       "titleZh": "微软CEO纳德拉呼吁为AI设立人控“紧急刹车”",
@@ -774,7 +1226,7 @@
         "characterCount": 218,
         "sha256": "014cb64aaf33cb2d56eb80ed477623169d7a980ccb5673eb990e032a326a1d6f",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
@@ -1006,7 +1458,7 @@
       "originalTitle": "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
       "originalSummary": "Volodymyr Zelensky says the attack, which left children dead, was Russia expressing its \"thanks\" for a US diesel deal.",
       "publishedAt": "2026-10-10T20:51:12.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "63503e2ebae8ed72a135",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1043,7 +1495,7 @@
         "characterCount": 185,
         "sha256": "4d5e3822a91b4ec6b1ce44dea940744d580cdd444e95671f2b6e5a80cbeddef9",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cwvgdpv642g5o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T22:30:38.065Z",
@@ -1061,7 +1513,7 @@
       "originalTitle": "From BJ’s to Lululemon, retailers are trimming assortments to boost business",
       "originalSummary": "Retail brands are shrinking assortments to get back to healthy growth, while box stores are culling products to better curate offerings and stabilize business.",
       "publishedAt": "2026-10-10T12:00:01.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "8760a35241c6e6daa019",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -1104,7 +1556,7 @@
         "characterCount": 236,
         "sha256": "3a864e2316fb53b5d7a46ced9cd044870d2056cae40034c0106b2fdfbb349c3a",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/from-bjs-to-lululemon-retailers-are-trimming-assortments.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T13:40:22.083Z",
@@ -1122,7 +1574,7 @@
       "originalTitle": "Watch: 'Time for Ukraine to get a new president', says Trump",
       "originalSummary": "The US president's said President Volodymyr Zelensky \"wants to make problems for the world\".",
       "publishedAt": "2026-10-10T19:25:03.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "10cce85922d7e7571c3b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1159,7 +1611,7 @@
         "characterCount": 153,
         "sha256": "ea0945bfd9179bff0ec395eaf036b75fee8957df252786659c7f604e4c393449",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cwkg50dgpml7o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T22:30:38.065Z",
@@ -1177,7 +1629,7 @@
       "originalTitle": "Expedition hopes to find aviator Amelia Earhart's plane on remote island",
       "originalSummary": "The team en route to the suspected crash site aim finally to solve the mystery of her 1937 disappearance.",
       "publishedAt": "2026-10-10T18:22:29.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "c9068edec7dd02ce2712",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1214,7 +1666,7 @@
         "characterCount": 178,
         "sha256": "475587de8e86a6e92f23cba0dd8633ed33dc6c3a639b31048e78dc1cbc5e93e3",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c3y0e871rk4vo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T18:34:49.419Z",
@@ -1232,7 +1684,7 @@
       "originalTitle": "US murderer Christa Pike discharged from hospital 10 days after failed execution",
       "originalSummary": "Pike's lawyers say she is \"grateful\" to the medical team who cared for her after she survived two lethal injections last month.",
       "publishedAt": "2026-10-10T17:44:26.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "20109f072b94607a2f70",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1269,7 +1721,7 @@
         "characterCount": 208,
         "sha256": "fe2c4c0553008730738a54947e4ed54a54f57b551c19aa4ea407c45bf1a68639",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmlyle97pqd7o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T18:34:49.419Z",
@@ -1287,7 +1739,7 @@
       "originalTitle": "Nobel peace laureate says US sanctions on ICC 'unacceptable'",
       "originalSummary": "Navi Pillay says the Trump administrations' sweeping penalties on the international tribunal were \"unheard of\".",
       "publishedAt": "2026-10-10T15:23:47.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "e400bf7d80928d023b35",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1324,13 +1776,13 @@
         "characterCount": 172,
         "sha256": "cff0a58725b1d3ff335a2bfd0bc8fe971cb260737c5867589c335ba12bacfa1f",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cqkgjrpmr47vo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
         "sourceBodyHash": "cff0a58725b1d3ff335a2bfd0bc8fe971cb260737c5867589c335ba12bacfa1f",
-        "count": 1,
-        "lastAttemptAt": "2026-10-10T18:34:49.419Z",
+        "count": 2,
+        "lastAttemptAt": "2026-10-11T08:49:16.594Z",
         "rejection": {
           "stage": "analysis",
           "category": "personal-impact",
@@ -1380,7 +1832,7 @@
       "originalTitle": "JPMorgan makes bullish call in fixed income space, suggests it's a once in a generation opportunity",
       "originalSummary": "Why Priya Misra, a portfolio manager at the firm, is looking to take credit risk in high-quality companies.",
       "publishedAt": "2026-10-10T15:00:01.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "60d3c0eafa07c48c821e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1417,7 +1869,7 @@
         "characterCount": 207,
         "sha256": "124d8220ce8a5194e2f49105b384306bb73dc8ae29d15e2444a536b436e4125f",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/jpmorgan-sees-once-in-a-generation-opportunity-in-fixed-income-space.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T18:34:49.419Z",
@@ -1435,7 +1887,7 @@
       "originalTitle": "Woman injures three people in third Poland school knife attack in a week",
       "originalSummary": "Polish police had already deployed to schools after a female caretaker was killed and several others injured in two earlier attacks in two days.",
       "publishedAt": "2026-10-10T14:58:55.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "f05e7d42a95212874a55",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1472,7 +1924,7 @@
         "characterCount": 217,
         "sha256": "05db1c0e5690d2fc44231b6ceac0d85f1cd74b6c489d497fc9d6c683c5bd741b",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cv8ezd246z1wo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T18:34:49.419Z",
@@ -1490,7 +1942,7 @@
       "originalTitle": "Drone strike by Sudan paramilitary kills 41 near Ethiopian border, rights group says",
       "originalSummary": "Eight children are said to be among those killed by the strike, which hit a gathering of displaced people.",
       "publishedAt": "2026-10-10T14:49:32.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "35dbd86939e1cde9a7d5",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1527,7 +1979,7 @@
         "characterCount": 191,
         "sha256": "e76f416657e1c5d76c4b73c781b9bd105b8e2a2fd6754a44b3cefe1e4f86cec2",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c8vgx9ew571wo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T18:34:49.419Z",
@@ -1545,7 +1997,7 @@
       "originalTitle": "Vance says Microsoft replaced laid-off workers with foreign hires. Here’s what the visa data shows",
       "originalSummary": "The administration barred Microsoft and seven other firms from sponsoring green cards over claims they favor foreign workers. Here's what the visa data shows.",
       "publishedAt": "2026-10-10T14:22:23.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "ef31479d49456c1c9440",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1582,7 +2034,7 @@
         "characterCount": 257,
         "sha256": "20a952b43510e515c3664afe6e1cf2bd0ba37a360d026296563079676286a54d",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/vance-microsoft-h1b-layoffs-visa-data.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T14:43:25.083Z",
@@ -1657,7 +2109,7 @@
       "originalTitle": "Why have hundreds of 'cockroach' protesters been detained in Delhi",
       "originalSummary": "Thousands of security personnel were deployed in Delhi ahead of the Gen-Z led Cockroach Janta Party protest on Saturday calling for electoral reforms.",
       "publishedAt": "2026-10-10T14:13:13.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "aa7f70f8772f2e1a147a",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1694,7 +2146,7 @@
         "characterCount": 217,
         "sha256": "e73e0f7b3918f4b52bacf60f4d5110955cabe6e9e90620b9f8a72560cd659234",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cqwy7p2y20gxo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-11T01:52:47.974Z",
@@ -1712,7 +2164,7 @@
       "originalTitle": "How de-extincting dire wolves and woolly mammoths may extend human life",
       "originalSummary": "Colossal Biosciences CEO Ben Lamm says bringing extinct species back can contribute to conservation, healthcare and developmental biology.",
       "publishedAt": "2026-10-10T14:00:01.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "aa0eed570d5e46e2fdbb",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1749,7 +2201,7 @@
         "characterCount": 210,
         "sha256": "3ec7255c7c8dca2c7560f9f65a5428f287f45d66bd8b68cf7321c864b4cc70e4",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/de-extincting-dire-wolves-woolly-mammoths-help-humans.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -1794,7 +2246,7 @@
       "originalTitle": "Putin relayed Iran war proposal to Trump, Kremlin says",
       "originalSummary": "Putin's reported call with Trump regarding the Iran war comes on the heels of a deal for the U.S. to buy Russian diesel amid a surge in fuel prices.",
       "publishedAt": "2026-10-10T13:42:36.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "7a827bccb83df8977423",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1831,7 +2283,7 @@
         "characterCount": 203,
         "sha256": "a88d8781ec64e78b09dd0a6408fa9cce0bea9bcb9a3fcbf6983e4173031a5563",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/putin-trump-iran-war-russia-diesel.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T14:43:25.083Z",
@@ -1849,7 +2301,7 @@
       "originalTitle": "Pokémon card values are soaring. What collectors should know before buying or selling",
       "originalSummary": "Pokémon card values are surging. Learn how grading, scarcity, recent sales and counterfeits can affect what collectors pay.",
       "publishedAt": "2026-10-10T13:30:02.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "833e30baad60169eb480",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1886,7 +2338,7 @@
         "characterCount": 209,
         "sha256": "3fe744b7d3b686b8f00adfad822523afcb39f651e3db56d8818c2748c8490ad8",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/pokemon-card-values-grading-guide.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T18:34:49.419Z",
@@ -1903,14 +2355,14 @@
       "originalLanguage": "zh",
       "originalTitle": "三季报行情打响 机构：上游能源原材料及TMT领域有望延续较高增长",
       "publishedAt": "2026-10-10T13:22:28.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "article": {
         "status": "complete",
         "characterCount": 1734,
         "reader": "cnfin-body",
         "sha256": "05065ae0c22eb0599b5e080f34126311f66f09529585cbd90d9286538b638492",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261010/4479171_1.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "id": "b5fd5dbda06aa05c447e",
       "verificationStatus": "verified",
@@ -1956,7 +2408,7 @@
       "originalTitle": "I work hard to stay close to my friends. A researcher says it’s good for my well-being—and these 3 habits can help",
       "originalSummary": "Keeping in touch with friends can be hard, but often worth the effort, research shows. A friendship expert recommends these three practices for connection.",
       "publishedAt": "2026-10-10T13:05:01.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "4b2119ef3c51707c3173",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1993,7 +2445,7 @@
         "characterCount": 270,
         "sha256": "1aff40230c38830e50457c8f1d183b24d4754cb08ebb0f01b80e1be8c4152f8c",
         "sourceUrl": "https://www.cnbc.com/make-it/2026/10/10/how-to-maintain-close-friendships.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T13:40:22.083Z",
@@ -2011,7 +2463,7 @@
       "originalTitle": "How Supreme Court justices are leaning in major 401(k) case over private funds and underperformance",
       "originalSummary": "The Supreme Court is weighing an Intel 401(k) case as employers await new Labor Department rules on private investments in retirement plans.",
       "publishedAt": "2026-10-10T13:00:01.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "a06609aa7b3c8bb70129",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2048,7 +2500,7 @@
         "characterCount": 240,
         "sha256": "30f7f82390204ab320dcfd9f4cf8458fa62f27b900bfe7dd1d8f05c01ea250ff",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/supreme-court-case-401k-private-funds-intel.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T13:40:22.083Z",
@@ -2121,7 +2573,7 @@
       "originalTitle": "Headmaster detained after BBC investigation into alleged sexual abuse of students",
       "originalSummary": "Former students launched their own investigation, spending years collecting evidence and testimonies from others who say they were abused by the headteacher.",
       "publishedAt": "2026-10-10T12:28:51.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "64b14aa78eaae99e9f08",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2158,7 +2610,7 @@
         "characterCount": 239,
         "sha256": "ce78e491ad082375abc7bf725abdb932647e9e467bdf87d612ef04dbb125d01f",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cwy8lx1r2vrro?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T13:40:22.083Z",
@@ -2175,14 +2627,14 @@
       "originalLanguage": "zh",
       "originalTitle": "货币市场日报：10月10日",
       "publishedAt": "2026-10-10T12:24:32.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "article": {
         "status": "complete",
         "characterCount": 1313,
         "reader": "cnfin-body",
         "sha256": "338b399fa0515d572a11c63698c25fea5dbe8f800a76f82ad1f6bff491880348",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261010/4479164_1.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "id": "7f4531a8182a6303a22c",
       "verificationStatus": "verified",
@@ -2227,15 +2679,7 @@
       "originalLanguage": "zh",
       "originalTitle": "我国经营者集中审查举行首次公开听证审议美团收购案",
       "publishedAt": "2026-10-10T12:12:59.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 769,
-        "reader": "cnfin-body",
-        "sha256": "430bab1fbf007e48c286e34cc4fe2e51fe03bff5de8d8764bc0c0b5030dd67dc",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261010/4479155_1.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
-      },
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "f10207c7121b0339d1ce",
       "verificationStatus": "verified",
       "titleZh": "我国经营者集中审查举行首次公开听证审议美团收购案",
@@ -2265,7 +2709,7 @@
       "expectations": [],
       "inferences": [],
       "queue": {
-        "firstSeenAt": "2026-10-10T13:40:22.083Z",
+        "firstSeenAt": "2026-10-11T08:49:16.594Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
       }
@@ -2332,7 +2776,7 @@
       "originalTitle": "Buffett's 'trips down YouTube rabbit hole' revealed",
       "originalSummary": "Warren Buffett watches CNBC in the morning, but nearly every evening he \"can't get enough\" of watching YouTube clips while sitting on a recliner in front of an \"enormous\" television in his Omaha home, reports The Wall Street Journal.",
       "publishedAt": "2026-10-10T12:01:16.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "520b2bca2c0ff8873a25",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2369,7 +2813,7 @@
         "characterCount": 285,
         "sha256": "db8af31af717820132249de6dcde8e924e614e224a87a5fe17d8b57158c44ea1",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/buffetts-trips-down-youtube-rabbit-hole-revealed.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T13:40:22.083Z",
@@ -2571,7 +3015,7 @@
       "originalTitle": "Money Box",
       "originalSummary": "What age will you get your state pension?",
       "publishedAt": "2026-10-10T11:30:00.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "61bf3ebcc24a31fb27d7",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2669,7 +3113,7 @@
       "originalTitle": "Nvidia GPUs are everywhere. Here are the ways companies are accessing them",
       "originalSummary": "One industry researcher identified over 300 neoclouds that can provide GPU capacity, up about 55% in less than a year.",
       "publishedAt": "2026-10-10T11:00:01.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "c17fc07d54eb3e3e4e43",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2706,7 +3150,7 @@
         "characterCount": 193,
         "sha256": "547814edd92e58643c04ca78affc6bcfdffd356c3059122107b4a30930cdd7cd",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-heres-how-companies-access-them.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T13:40:22.083Z",
@@ -2724,7 +3168,7 @@
       "originalTitle": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case",
       "originalSummary": "Philadelphia police said the tip was \"flagged as spam\", but criticised the tech company for taking more than two months to detect and report the breach.",
       "publishedAt": "2026-10-10T10:06:23.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "2a27462729f57703ac3c",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2761,7 +3205,7 @@
         "characterCount": 222,
         "sha256": "95805a1930c9ba773a42b243a8f70983d3e284b051a6dda65d12416aebfd78b6",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cqkg50j1yd5lo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
@@ -2886,7 +3330,7 @@
       "originalTitle": "Public executions in the US stopped nearly a century ago - why are they resuming now?",
       "originalSummary": "The Pentagon says the execution of Fort Hood shooter Nidal Hasan will be livestreamed, but experts suggest officials are reading the country wrong.",
       "publishedAt": "2026-10-10T09:17:36.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "289724783dbdab5cd019",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2923,7 +3367,7 @@
         "characterCount": 233,
         "sha256": "b0e2201ca2492dbf72c17856587c318707effe5a47e3acf78ad5790e8bec06b7",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c6kgq7rqdql7o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T06:37:30.697Z",
@@ -2982,7 +3426,10 @@
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
       }
-    },
+    }
+  ],
+  "continuing": [],
+  "retainedDetails": [
     {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
@@ -3204,7 +3651,7 @@
       "originalTitle": "How the trial of murdered Australian brothers and US friend unfolded",
       "originalSummary": "The mother of two Australian surfers murdered in Mexico two years ago with their American friend said \"accountability matters\".",
       "publishedAt": "2026-10-10T06:04:35.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "3c328f9e198345840996",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3241,7 +3688,7 @@
         "characterCount": 196,
         "sha256": "206b7309212c1be3448508c913f9c616ef46b53b3c52e982f08e3a3138b9c8aa",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cr86z34vz95yo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T06:37:30.697Z",
@@ -3259,7 +3706,7 @@
       "originalTitle": "AI is changing how lawyers work — and putting the billable hour under pressure",
       "originalSummary": "AI adoption is forcing the legal profession to rethink the billable hour and how lawyers build expertise.",
       "publishedAt": "2026-10-10T05:00:01.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "4bcecf554bf46ef53cf3",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3296,7 +3743,7 @@
         "characterCount": 184,
         "sha256": "db2d62dc169a939045525299f67d765dbf220aa414f648b91ee8ab47f9f7efb6",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -3341,7 +3788,7 @@
       "originalTitle": "The world needs Ukraine’s grain. Its farmers are running out of reasons to plant",
       "originalSummary": "Cash-strapped farmers have no incentive to sow for 2027 with exports remaining trapped, as analysts say commodity markets could \"flip fast.\"",
       "publishedAt": "2026-10-10T05:00:01.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "bd63b5886633cfdf49ad",
       "verificationStatus": "verified",
       "titleZh": "乌克兰粮食需求仍在，农民缺乏2027年种植动力",
@@ -3380,7 +3827,7 @@
         "characterCount": 221,
         "sha256": "95739eafa37b3884dd9fd80dd17ee75b3bf7922539e190f5be4670f10bb96779",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/ukraine-grain-exports-russia-harvest.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
@@ -3626,7 +4073,7 @@
       "originalTitle": "Nord Stream trial: How German police followed the evidence - to Ukraine",
       "originalSummary": "After four years, a Ukrainian man is set to stand trial in Hamburg accused of sabotaging the Nord Stream pipelines.",
       "publishedAt": "2026-10-10T04:51:57.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "6f05665b06270e45aabd",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3663,7 +4110,7 @@
         "characterCount": 187,
         "sha256": "b24092eabdc82a86c3d444b07834e222af14cdfb8750f887e8618783a2814b1c",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c317ke5ngrq7o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T06:37:30.697Z",
@@ -3681,7 +4128,7 @@
       "originalTitle": "Flydubai attacker began a 'drift towards extremism and terrorism' in Australia, UAE says",
       "originalSummary": "The United Arab Emirates' attorney-general also alleges the co-pilot was trying to crash the plane into Tel Aviv's airport.",
       "publishedAt": "2026-10-10T04:34:55.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "6cf04d8c148cccf5fc75",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3718,7 +4165,7 @@
         "characterCount": 212,
         "sha256": "d926ca2fb6b98311c919eecba53c62a51aad25004709dd3e83ab32f578e47eed",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cw3dj5n538jpo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T06:37:30.697Z",
@@ -3996,7 +4443,7 @@
       "originalTitle": "Trump's diesel agreement with Putin accused of contradicting Russia sanctions law",
       "originalSummary": "Ukraine President Volodymyr Zelenskyy said in a searing statement that the U.S. easing sanctions on Moscow \"plays into Russia's hands.\"",
       "publishedAt": "2026-10-10T02:09:00.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "cd947805b68e3769f0a3",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4033,7 +4480,7 @@
         "characterCount": 217,
         "sha256": "7461870fe143a3fc5ad7aef25b240dfce54b1d1165db15fc4a0c7e2f05bb5d6f",
         "sourceUrl": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v3",
@@ -4049,8 +4496,7 @@
       "queue": {
         "firstSeenAt": "2026-10-10T00:50:00.640Z",
         "summaryAttempt": 1,
-        "summaryAttemptVersion": "summary-diagnostics-v1",
-        "summaryRejection": "summary-audit"
+        "summaryAttemptVersion": "summary-diagnostics-v1"
       }
     },
     {
@@ -4063,7 +4509,7 @@
       "originalTitle": "US country music star Ella Langley cancels show due to 'security threat'",
       "originalSummary": "Police say they checked the concert venue in Tulsa, Oklahoma but \"could not find any threat\".",
       "publishedAt": "2026-10-10T02:02:54.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "22847ba39c573c00b8d7",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4100,7 +4546,7 @@
         "characterCount": 166,
         "sha256": "93e8ccf7d3456c335e0a73c796564bc693c189cc46b7cf1295da662f55ea48d8",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cm79pdlywqd4o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T06:37:30.697Z",
@@ -4164,10 +4610,7 @@
       },
       "invalidationReason": "superseded-source-version",
       "supersededBy": "a9a9e0c9380fa70e92ca"
-    }
-  ],
-  "continuing": [],
-  "retainedDetails": [
+    },
     {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
@@ -4298,7 +4741,7 @@
       "originalTitle": "Questions remain over Ebola patient who travelled across three nations undetected",
       "originalSummary": "Fresh details reveal how the 40-year-old businessman flew and crossed regional borders while seriously ill.",
       "publishedAt": "2026-10-10T00:00:08.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "787968b48a46e832ca51",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4335,7 +4778,7 @@
         "characterCount": 189,
         "sha256": "d68ca6a39144adca080321d04f2a9cbfc0fd75ffc9de19e5ef13cac9e861c28d",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cqp8gknl1njjo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T00:50:00.640Z",
@@ -4405,7 +4848,7 @@
       "originalTitle": "'Everyone hates the police' – what France's school protests reveal about a divided nation",
       "originalSummary": "Students taking to the streets have become a focal point in the country's increasingly polarised politics.",
       "publishedAt": "2026-10-09T23:24:33.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "c0953a572865151d5b2b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4442,7 +4885,7 @@
         "characterCount": 196,
         "sha256": "f22d249be1df1c1954faf3a0a57554ccf790a9b568536082afa5f41013710bb5",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/crq5nlqnn184o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T09:02:35.693Z",
@@ -4558,7 +5001,7 @@
       "originalTitle": "Boots has a new owner: Three ways it could affect you",
       "originalSummary": "The stalwart of Britain's High Street has been sold to a Canadian billionaire family. What will that mean for you?",
       "publishedAt": "2026-10-09T23:01:14.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "4130efa97ce565d7c341",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4595,7 +5038,7 @@
         "characterCount": 168,
         "sha256": "a94e243a0f22fb9b0c92dc0a579be1424d78ed1bb8a0fb9185b8169f89e23c7f",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c63djxry8124o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T00:50:00.640Z",
@@ -4720,7 +5163,7 @@
       "originalTitle": "Analysis: Trump's shock Russia deal highlights mounting pressure to curb fuel prices",
       "originalSummary": "The US president hopes to ease his party's pain before next month's midterm elections, writes the BBC's North America correspondent.",
       "publishedAt": "2026-10-09T22:30:22.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "746293b6e6f897f6fa27",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -4763,7 +5206,7 @@
         "characterCount": 217,
         "sha256": "8c468b48729b65e5a93f6e5743f61e07f1a2294851aa81c285f8cc4d1dbd2c04",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c5lye9z4xw4yo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T00:50:00.640Z",
@@ -4838,7 +5281,7 @@
       "originalTitle": "Three men found guilty of murdering Australian brothers and US friend in Mexico",
       "originalSummary": "Jake and Callum Robinson and their friend Carter Rhoad were on a surf trip when they were killed in an apparent botched robbery.",
       "publishedAt": "2026-10-09T21:55:51.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "26172e56e3bfb4919268",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4875,7 +5318,7 @@
         "characterCount": 208,
         "sha256": "ee52356228b8c626093e1094d79ebe5173e27139808a2acdb04ef531d109ddc4",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cj5ynwnye009o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T06:37:30.697Z",
@@ -4949,7 +5392,7 @@
       "originalTitle": "JD Vance casts doubt on firing squad execution and says he would not watch it",
       "originalSummary": "The planned execution of Nidal Hasan by firing squad would be the first military execution in more than 60 years.",
       "publishedAt": "2026-10-09T21:50:47.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "51185af1b2d7d23bed66",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4986,7 +5429,7 @@
         "characterCount": 191,
         "sha256": "ca67a6b673a70db58effb97523c6e7f8014130848d8afe3814361039723832ee",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/ck20r39nl3qzo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T09:02:35.693Z",
@@ -5116,7 +5559,7 @@
       "originalTitle": "Junk bonds are 'flashing yellow.' Watch these warning signs",
       "originalSummary": "Spreads have widened in the high-yield bond market, but that doesn't tell the whole story.",
       "publishedAt": "2026-10-09T20:51:25.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "144d3bf94f5a66d09f43",
       "verificationStatus": "verified",
       "titleZh": "垃圾债券警示：高收益债券利差扩大",
@@ -5155,7 +5598,7 @@
         "characterCount": 150,
         "sha256": "7965d43e84619a0deaa93fa7e2d6f94e8f56b3dcafa97e6e180f77aab98f9b3c",
         "sourceUrl": "https://www.cnbc.com/2026/10/09/junk-bonds-are-flashing-yellow-watch-these-warning-signs.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
@@ -5536,7 +5979,7 @@
       "originalTitle": "BBC breaks down video of the aftermath of New York City ICE shooting",
       "originalSummary": "The BBC's Nada Tawfik goes through new dramatic body cam footage that shows the tense moments when police arrive on scene.",
       "publishedAt": "2026-10-09T20:20:09.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "622ea6872790d66e65ae",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5573,7 +6016,7 @@
         "characterCount": 191,
         "sha256": "16310fea28ab74fbe7bc879bd99a6cc8a6dcadfccafda084aee8a4cbcb2f01d6",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cm36905w7zl4o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T06:37:30.697Z",
@@ -5591,7 +6034,7 @@
       "originalTitle": "Verizon posts worst day since 2002 as SpaceX U.S. network plans whack cell provider stocks",
       "originalSummary": "SpaceX announced the spectrum deal Thursday, as the company aims to push deeper into the telecom market through its Starlink service.",
       "publishedAt": "2026-10-09T20:16:58.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "24b5ca0c1181b4dee332",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5628,7 +6071,7 @@
         "characterCount": 224,
         "sha256": "e038dd552eca3f007c1a595a3da20a64ddd834bc74bfc4727898d308230536c2",
         "sourceUrl": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-09T20:53:38.276Z",
@@ -5646,7 +6089,7 @@
       "originalTitle": "Thai Queen makes first solo flight in fighter jet",
       "originalSummary": "Thailand’s Queen Suthida made her first solo flight in a fighter jet, according to the Thai Royal Household.",
       "publishedAt": "2026-10-09T19:48:26.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "21d8a4e4734142181b1f",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5683,7 +6126,7 @@
         "characterCount": 158,
         "sha256": "517aa97c088c1ec6c8196365c0e8a3c767e79c42939f303f10c7029a7440b641",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cqm263x40y37o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-09T20:53:38.276Z",
@@ -5701,7 +6144,7 @@
       "originalTitle": "Trump wants to reduce the cost of fuel as the midterms loom - will it work?",
       "originalSummary": "The price of fuel has soared as the cost of living emerges as a key issue for millions of Americans.",
       "publishedAt": "2026-10-09T19:32:50.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "b065f5d9e3766417aec9",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -5744,7 +6187,7 @@
         "characterCount": 176,
         "sha256": "b93f407ad70b789767e6c7c79fbe5581b94ce55d25d558ce09b80d2b8b5aeb9c",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cv2d6x749lwro?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-09T15:45:03.444Z",
@@ -5762,7 +6205,7 @@
       "originalTitle": "Trump Media advisor Katie Zacharia offered White House press secretary role",
       "originalSummary": "The White House has tapped Katie Zacharia to be its next press secretary, a White House official confirmed to CNBC.",
       "publishedAt": "2026-10-09T19:25:28.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "8cc287ee4753a155b050",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5799,7 +6242,7 @@
         "characterCount": 191,
         "sha256": "fe56973b875ae7b6e4ae6be2ded7d148fadb31a5865fc67fa2433675e85e140c",
         "sourceUrl": "https://www.cnbc.com/2026/10/09/katie-zacharia-white-house-press-secretary.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-09T20:53:38.276Z",
@@ -5817,7 +6260,7 @@
       "originalTitle": "Tesla drops 'Full Self-Driving' brand name in Europe after regulator pushback",
       "originalSummary": "German regulators called Tesla's \"Full Self-Driving\" brand name \"somewhat misleading.\"",
       "publishedAt": "2026-10-09T19:21:14.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "bfb38cd42936d173514d",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5854,7 +6297,7 @@
         "characterCount": 164,
         "sha256": "6fe9b85498a8332ce791c95148c57c4eee8c545299abc40a47937098496559dd",
         "sourceUrl": "https://www.cnbc.com/2026/10/09/tesla-full-self-driving-europe-regulator.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-09T20:53:38.276Z",
@@ -5872,7 +6315,7 @@
       "originalTitle": "Trump created a committee to dig into the Fed's Lisa Cook. What is it and what comes next?",
       "originalSummary": "Trump’s bid to fire the Fed's Lisa Cook follows a Supreme Court ruling and could affect Jerome Powell, central bank independence and interest rates.",
       "publishedAt": "2026-10-09T19:19:00.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "3119af39659eb54a3f1b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5909,7 +6352,7 @@
         "characterCount": 239,
         "sha256": "5d09fd46c1a195a8005975cd683791435eadd32f8ee946077e84d1243fd50cdd",
         "sourceUrl": "https://www.cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -5958,7 +6401,7 @@
       "originalTitle": "Americans' debt problems are flashing a warning not seen since the Great Recession",
       "originalSummary": "Researchers found that while wealth disparities narrowed somewhat, the ability to meet debt payments deteriorated significantly.",
       "publishedAt": "2026-10-09T19:18:24.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "6280d8aab057688c7dbf",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5995,7 +6438,7 @@
         "characterCount": 211,
         "sha256": "3970a474837616ff813be664ad2cf5162815aeb0100707ca21c6392bda79fc4d",
         "sourceUrl": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-09T15:45:03.444Z",
@@ -6068,7 +6511,7 @@
       "originalTitle": "What's behind the recovery rally in tech stocks — plus, Elon Musk's very good week",
       "originalSummary": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
       "publishedAt": "2026-10-09T19:02:29.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "073efa9aa81a93c97ea9",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6105,7 +6548,7 @@
         "characterCount": 216,
         "sha256": "a6cfbb1d2e8977e554ea00994eb39e78983ac70f7148596ddf248905265488e8",
         "sourceUrl": "https://www.cnbc.com/investingclub/2026/10/09/whats-behind-the-recovery-rally-in-tech-stocks-plus-musks-good-week.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-09T20:53:38.276Z",
@@ -6278,7 +6721,7 @@
       "originalTitle": "Trump appoints committee to investigate statements by the Fed's Lisa Cook",
       "originalSummary": "Trump tried to fire Cook, a nominee of former President Joe Biden, but the Supreme Court blocked his first attempt.",
       "publishedAt": "2026-10-09T17:56:24.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "63cd338a92838df82824",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6315,7 +6758,7 @@
         "characterCount": 189,
         "sha256": "0322eea3af749d1ba1fde28094ea8d22d09ebee67104d0980f3e515bf874bcf2",
         "sourceUrl": "https://www.cnbc.com/2026/10/09/fed-lisa-cook-trump.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-09T15:45:03.444Z",
@@ -6333,7 +6776,7 @@
       "originalTitle": "The used car market is stagnant. Here's how to profit anyway",
       "originalSummary": "Michael Khouw breaks down this short strangle options trade.",
       "publishedAt": "2026-10-09T17:37:31.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "89774f71298dd7faa788",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6433,7 +6876,7 @@
       "originalTitle": "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
       "originalSummary": "Often dubbed \"Russia's Google\", the tech firm admits customers may experience disruption to digital services due to the attacks.",
       "publishedAt": "2026-10-09T17:14:44.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "09ec7553380f92ad28df",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6470,7 +6913,7 @@
         "characterCount": 207,
         "sha256": "bc4ecf4fd645dee530375c7a8a93006c809c9b360f5c1a2901b562162d3ef990",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c68xzqqn4ekro?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-09T20:53:38.276Z",
@@ -6488,7 +6931,7 @@
       "originalTitle": "Hurricane Isaias disrupts U.S. oil production in Gulf of Mexico, threatens refineries",
       "originalSummary": "The hurricane could tighten a fuel market that is already facing big disruptions from the wars in Eastern Europe and the Middle East.",
       "publishedAt": "2026-10-09T17:12:17.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "a863955f00881e6269ed",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6525,7 +6968,7 @@
         "characterCount": 219,
         "sha256": "2c8a25ef380204ad13e3c4b1072336d537b1674a0f18b3c0a09cb0fa5a7c6a11",
         "sourceUrl": "https://www.cnbc.com/2026/10/09/hurricane-isaias-gulf-mexico-oil-refinery.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -6574,7 +7017,7 @@
       "originalTitle": "Man named Hitler Mussolini elected mayor in Peru",
       "originalSummary": "The left-wing candidate won a narrow victory in a remote district in the Peruvian Andes, exit polls show.",
       "publishedAt": "2026-10-09T16:32:22.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "ed8e9187cad6fc7d9af8",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6611,7 +7054,7 @@
         "characterCount": 154,
         "sha256": "aa1e44eba417affbe8d835d5be49f7b010adc058a80e2eee3f9a0c6ff0971f97",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmdxwn9dr42yo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-09T20:53:38.276Z",
@@ -6738,7 +7181,7 @@
       "originalTitle": "Burnham promises to curb non-compete rules in job contracts",
       "originalSummary": "The prime minister says restrictions on what workers can do after leaving roles have \"gone too far\".",
       "publishedAt": "2026-10-09T16:15:30.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
+      "fetchedAt": "2026-10-11T08:49:16.594Z",
       "id": "3c04dc890836a79608a3",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6775,7 +7218,7 @@
         "characterCount": 160,
         "sha256": "045ed0c26ceb534a501df55137ff81c48895953a5d44c5f2c526bb7e6152d85c",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c63r5wx8z8wzo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
+        "checkedAt": "2026-10-11T08:49:16.594Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-09T15:45:03.444Z",
@@ -6894,946 +7337,6 @@
         "firstSeenAt": "2026-10-09T16:11:42.322Z",
         "summaryAttempt": 0
       }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cq8ezdww6w0do?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Watch: Who is Nobel Peace Prize winner Navi Pillay?",
-      "originalSummary": "BBC correspondent Joe Inwood explains how Pillay's childhood in South Africa led her to become a driving force in international law from Myanmar to Gaza.",
-      "publishedAt": "2026-10-09T15:26:33.000Z",
-      "fetchedAt": "2026-10-10T22:30:38.065Z",
-      "id": "7fff7a1702db6235518d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|watchwhoisnobelp|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "BBC correspondent Joe Inwood explains how Pillay's childhood in South Africa led her to become a driving force in international law from Myanmar to Gaza."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Watch: Who is Nobel Peace Prize winner Navi Pillay?\nBBC correspondent Joe Inwood explains how Pillay's childhood in South Africa led her to become a driving force in international law from Myanmar to Gaza.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 205,
-        "sha256": "8a328e103a875249ec53e9060205bb60b99910ebbe4773af2e2272e4f6c91bfd",
-        "sourceUrl": "https://www.bbc.co.uk/news/videos/cq8ezdww6w0do?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-10T22:30:38.065Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T20:53:38.276Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c65ynvw250y1o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Ethiopia warns Eritrea it will defend itself after troops cross border",
-      "originalSummary": "Truckloads of Eritrean soldiers have been seen driving into Ethiopia, which has reportedly responded with drone strikes.",
-      "publishedAt": "2026-10-09T15:24:43.000Z",
-      "fetchedAt": "2026-10-10T11:04:49.954Z",
-      "id": "516f1f12f89a848f37ec",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ethiopiawarnseri|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "Truckloads of Eritrean soldiers have been seen driving into Ethiopia, which has reportedly responded with drone strikes."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Ethiopia warns Eritrea it will defend itself after troops cross border\nTruckloads of Eritrean soldiers have been seen driving into Ethiopia, which has reportedly responded with drone strikes.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 191,
-        "sha256": "26dc2348dbc8fb804824a00f9f45b454a925df28b205133af8c3465a0c0f7f50",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c65ynvw250y1o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-10T11:04:49.954Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T20:53:38.276Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c65ynvw250y1o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Ethiopia and Eritrea accuse each other of starting conflict after troops cross border",
-      "originalSummary": "Truckloads of Eritrean soldiers have been seen driving into Ethiopia, which has reportedly responded with drone strikes.",
-      "publishedAt": "2026-10-09T15:24:43.000Z",
-      "fetchedAt": "2026-10-09T16:11:42.322Z",
-      "id": "0d42e2af3fb65145b8d5",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|ethiopiaanderitr|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "Truckloads of Eritrean soldiers have been seen driving into Ethiopia, which has reportedly responded with drone strikes."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Ethiopia and Eritrea accuse each other of starting conflict after troops cross border\nTruckloads of Eritrean soldiers have been seen driving into Ethiopia, which has reportedly responded with drone strikes.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 206,
-        "sha256": "cd2505415ab5e2a14d64e949eb2ca968ea495e27a2385b750b40fc3ecbc9da6f",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c65ynvw250y1o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-09T16:11:42.322Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0
-      },
-      "invalidationReason": "superseded-source-version",
-      "supersededBy": "516f1f12f89a848f37ec"
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/09/ice-bronx-shooting-mamdani-dhs.html",
-      "originalLanguage": "en",
-      "originalTitle": "ICE won't pause enforcement in NY after Bronx shooting, DHS' Mullin says",
-      "originalSummary": "New York Gov. Kathy Hochul said she asked Homeland Security Secretary Mullin and President Donald Trump to immediately halt ICE operations in her state.",
-      "publishedAt": "2026-10-09T15:20:56.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
-      "id": "60dfde5715335b00ec8d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|icewontpauseenfo|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "New York Gov. Kathy Hochul said she asked Homeland Security Secretary Mullin and President Donald Trump to immediately halt ICE operations in her state."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "ICE won't pause enforcement in NY after Bronx shooting, DHS' Mullin says\nNew York Gov. Kathy Hochul said she asked Homeland Security Secretary Mullin and President Donald Trump to immediately halt ICE operations in her state.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 225,
-        "sha256": "0b993bcf391da0b49dc7e2ae82abe939438f038808153927215c776792e607a9",
-        "sourceUrl": "https://www.cnbc.com/2026/10/09/ice-bronx-shooting-mamdani-dhs.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/09/ai-data-centers-investing.html",
-      "originalLanguage": "en",
-      "originalTitle": "Wall Street is pitching data centers as a major real estate bet. The risks are piling up",
-      "originalSummary": "Wall Street firms are bringing AI data center investments to public markets as political, liquidity and project risks grow.",
-      "publishedAt": "2026-10-09T15:08:20.000Z",
-      "fetchedAt": "2026-10-10T13:40:22.083Z",
-      "id": "0c6080c809b5a96d2eb2",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|wallstreetispitc|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "Wall Street firms are bringing AI data center investments to public markets as political, liquidity and project risks grow."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Wall Street is pitching data centers as a major real estate bet. The risks are piling up\nWall Street firms are bringing AI data center investments to public markets as political, liquidity and project risks grow.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 212,
-        "sha256": "849ea2ce947e54f931c2e1a2eaf997369a025a6d3368b2a1c34561ad412a1641",
-        "sourceUrl": "https://www.cnbc.com/2026/10/09/ai-data-centers-investing.html",
-        "checkedAt": "2026-10-10T13:40:22.083Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/make-it/2026/10/09/chatgpt-for-teens-safety-common-sense-media.html",
-      "originalLanguage": "en",
-      "originalTitle": "ChatGPT for Teens is not necessarily 'safer than the previous version,' Common Sense Media finds",
-      "originalSummary": "Common Sense Media released its report about ChatGPT for Teens' new features, concluding the tool does not meet the safety standards OpenAI set.",
-      "publishedAt": "2026-10-09T15:07:53.000Z",
-      "fetchedAt": "2026-10-10T14:43:25.083Z",
-      "id": "f70e89520144d50f406c",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|chatgptforteensi|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "Common Sense Media released its report about ChatGPT for Teens' new features, concluding the tool does not meet the safety standards OpenAI set."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "ChatGPT for Teens is not necessarily 'safer than the previous version,' Common Sense Media finds\nCommon Sense Media released its report about ChatGPT for Teens' new features, concluding the tool does not meet the safety standards OpenAI set.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 241,
-        "sha256": "4c3c60f2c91ee7d284e2d4aaa783b5c6ae30731a2d49815b574b4ba2d15f685d",
-        "sourceUrl": "https://www.cnbc.com/make-it/2026/10/09/chatgpt-for-teens-safety-common-sense-media.html",
-        "checkedAt": "2026-10-10T14:43:25.083Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/09/delta-air-lines-dal-q3-2026-earnings.html",
-      "originalLanguage": "en",
-      "originalTitle": "Delta Air Lines cuts 2026 forecast on fuel surge, but CEO says demand is still strong",
-      "originalSummary": "Delta Air Lines reported third-quarter earnings and missed Wall Street estimates for the first time in two years.",
-      "publishedAt": "2026-10-09T15:07:46.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
-      "id": "8fd3746c34607bda5d6d",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/09/delta-air-lines-dal-q3-2026-earnings.html",
-          "publishedAt": "2026-10-09T15:07:46.000Z"
-        }
-      ],
-      "keyTerms": [
-        "盈利"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "公司"
-      ],
-      "eventTypes": [
-        "公司经营"
-      ],
-      "impactChannels": [
-        "盈利"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "公司经营|deltaairlinescut|2026-10-09",
-      "detailStatus": "professional",
-      "facts": [
-        "Delta Air Lines reported third-quarter earnings and missed Wall Street estimates for the first time in two years."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Delta Air Lines cuts 2026 forecast on fuel surge, but CEO says demand is still strong\nDelta Air Lines reported third-quarter earnings and missed Wall Street estimates for the first time in two years.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 199,
-        "sha256": "c5b57cf83cb4326017df76d497f41176c3334128b1d2c073649f6be4c390e831",
-        "sourceUrl": "https://www.cnbc.com/2026/10/09/delta-air-lines-dal-q3-2026-earnings.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/09/china-europe-hybrid-vehicle-exports-deal.html",
-      "originalLanguage": "en",
-      "originalTitle": "China and Europe agree to cut Chinese hybrid vehicle exports by half",
-      "originalSummary": "Europe's trade chief Maroš Sefčovič cast the two days of talks with China's Commerce Minister Wang Wentao in Beijing as a positive first step.",
-      "publishedAt": "2026-10-09T15:03:10.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
-      "id": "638f05dd75508101b79f",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|chinaandeuropeag|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "Europe's trade chief Maroš Sefčovič cast the two days of talks with China's Commerce Minister Wang Wentao in Beijing as a positive first step."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "China and Europe agree to cut Chinese hybrid vehicle exports by half\nEurope's trade chief Maroš Sefčovič cast the two days of talks with China's Commerce Minister Wang Wentao in Beijing as a positive first step.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 211,
-        "sha256": "416691944faa7a76343f15ec25fd8a6da92a4810c8bf59bc0971aecb350079b4",
-        "sourceUrl": "https://www.cnbc.com/2026/10/09/china-europe-hybrid-vehicle-exports-deal.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
-      },
-      "analysisAttempt": {
-        "reviewVersion": "edge-audit-v3",
-        "sourceBodyHash": "416691944faa7a76343f15ec25fd8a6da92a4810c8bf59bc0971aecb350079b4",
-        "count": 1,
-        "lastAttemptAt": "2026-10-09T15:45:03.444Z",
-        "rejection": {
-          "stage": "analysis",
-          "category": "impact-assessment",
-          "fields": []
-        }
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/09/nba-commissioner-adam-silver-says-euroleague-deal-still-on-table.html",
-      "originalLanguage": "en",
-      "originalTitle": "NBA Commissioner Adam Silver says he still intends to get a deal done with EuroLeague as he plans launch of NBA Europe",
-      "originalSummary": "NBA Commissioner Adam Silver expressed confidence on Friday that the league will get a deal done with EuroLeague to help launch NBA Europe.",
-      "publishedAt": "2026-10-09T14:50:32.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
-      "id": "789b8c7be93e3b15efd7",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|nbacommissionera|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "NBA Commissioner Adam Silver expressed confidence on Friday that the league will get a deal done with EuroLeague to help launch NBA Europe."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "NBA Commissioner Adam Silver says he still intends to get a deal done with EuroLeague as he plans launch of NBA Europe\nNBA Commissioner Adam Silver expressed confidence on Friday that the league will get a deal done with EuroLeague to help launch NBA Europe.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 258,
-        "sha256": "b1dec94547048aa22d453cab7a923552d97026813f6272a36abbc6ec490736a9",
-        "sourceUrl": "https://www.cnbc.com/2026/10/09/nba-commissioner-adam-silver-says-euroleague-deal-still-on-table.html",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqgkvj10k6lno?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Ex-Deutsche Bank trader jailed for rigging rates has conviction overturned",
-      "originalSummary": "The Court of Appeal quashes the conviction of Christian Bittar, a former Deutsche Bank trader jailed in 2018.",
-      "publishedAt": "2026-10-09T14:36:35.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
-      "id": "5ac49e9747c16a1a10d2",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|exdeutschebanktr|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "The Court of Appeal quashes the conviction of Christian Bittar, a former Deutsche Bank trader jailed in 2018."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Ex-Deutsche Bank trader jailed for rigging rates has conviction overturned\nThe Court of Appeal quashes the conviction of Christian Bittar, a former Deutsche Bank trader jailed in 2018.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 184,
-        "sha256": "8c6c058f363899b55496df7b5acaf7d44415d507db626bf142f3fa116a61320d",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cqgkvj10k6lno?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-11T01:52:47.974Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwkg50v1vn07o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Two Renoir paintings stolen from French museum are recovered",
-      "originalSummary": "The two works were seized last month when thieves cut through a fence and smashed a window at the Renoir Museum on the French Riviera.",
-      "publishedAt": "2026-10-09T14:25:18.000Z",
-      "fetchedAt": "2026-10-10T11:04:49.954Z",
-      "id": "a677a2199f9916cecedd",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|tworenoirpaintin|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "The two works were seized last month when thieves cut through a fence and smashed a window at the Renoir Museum on the French Riviera."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Two Renoir paintings stolen from French museum are recovered\nThe two works were seized last month when thieves cut through a fence and smashed a window at the Renoir Museum on the French Riviera.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 195,
-        "sha256": "529b6d1a43c3ce71f608f59e7eba5e0d0455a8daa8fa122cc2167fef58598c8d",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cwkg50v1vn07o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-10T11:04:49.954Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/investingclub/2026/10/09/ai-agents-could-soon-shop-for-consumers-what-it-means-for-retail-stocks.html",
-      "originalLanguage": "en",
-      "originalTitle": "AI agents like Muse can shop for you. Here's what that means for retail stocks",
-      "originalSummary": "For Amazon, Costco, and TJX, the rise of AI shopping agents presents challenges — and some surprising advantages.",
-      "publishedAt": "2026-10-09T14:15:38.000Z",
-      "fetchedAt": "2026-10-09T15:45:03.444Z",
-      "id": "74cdd985e57be1b7d083",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|aiagentslikemuse|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "For Amazon, Costco, and TJX, the rise of AI shopping agents presents challenges — and some surprising advantages."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "AI agents like Muse can shop for you. Here's what that means for retail stocks\nFor Amazon, Costco, and TJX, the rise of AI shopping agents presents challenges — and some surprising advantages.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 192,
-        "sha256": "eece589e2d366e4ec35b42d7072301f52602641b4a516ddb41990a5cd0f5677f",
-        "sourceUrl": "https://www.cnbc.com/investingclub/2026/10/09/ai-agents-could-soon-shop-for-consumers-what-it-means-for-retail-stocks.html",
-        "checkedAt": "2026-10-09T15:45:03.444Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/09/nobel-peace-prize-navanethem-navi-pillay-winner.html",
-      "originalLanguage": "en",
-      "originalTitle": "South Africa lawyer 'Navi' Pillay wins Nobel Peace Prize for efforts to prosecute war crimes, genocide",
-      "originalSummary": "Navanethem \"Navi\" Pillay was awarded the Nobel Peace Prize on Friday for her work promoting peace and international law.",
-      "publishedAt": "2026-10-09T14:12:23.000Z",
-      "fetchedAt": "2026-10-10T11:04:49.954Z",
-      "id": "c938d27e495bf330aa50",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|southafricalawye|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "Navanethem \"Navi\" Pillay was awarded the Nobel Peace Prize on Friday for her work promoting peace and international law."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "South Africa lawyer 'Navi' Pillay wins Nobel Peace Prize for efforts to prosecute war crimes, genocide\nNavanethem \"Navi\" Pillay was awarded the Nobel Peace Prize on Friday for her work promoting peace and international law.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 223,
-        "sha256": "4e6478b2569eefd4f06f67d6a37e8947794266490a723cac59aaec3f1cea229e",
-        "sourceUrl": "https://www.cnbc.com/2026/10/09/nobel-peace-prize-navanethem-navi-pillay-winner.html",
-        "checkedAt": "2026-10-10T11:04:49.954Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261009/4478852_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261009/4478852_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "降至5000万元 权益类基金成立门槛拟下调",
-      "publishedAt": "2026-10-09T14:05:54.000Z",
-      "fetchedAt": "2026-10-10T09:02:35.693Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 859,
-        "reader": "cnfin-body",
-        "sha256": "9b6dc672ff1ab932aff54fa2151fba5d012d25201870d907de3985dc9fd89332",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261009/4478852_1.html",
-        "checkedAt": "2026-10-10T09:02:35.693Z"
-      },
-      "id": "f99515fec78b14159170",
-      "verificationStatus": "verified",
-      "titleZh": "降至5000万元 权益类基金成立门槛拟下调",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|降至5000万元权益类基金成立门|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "fed",
-      "sourceName": "Federal Reserve",
-      "sourceTier": "official",
-      "sourceUrl": "https://www.federalreserve.gov/feeds/press_all.xml",
-      "canonicalUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
-      "originalLanguage": "en",
-      "originalTitle": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
-      "originalSummary": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
-      "publishedAt": "2026-10-09T14:00:00.000Z",
-      "fetchedAt": "2026-10-11T01:52:47.974Z",
-      "id": "65a09734539ce8b65806",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "利率"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "宏观"
-      ],
-      "eventTypes": [
-        "货币政策"
-      ],
-      "impactChannels": [
-        "利率"
-      ],
-      "regions": [
-        "美国",
-        "全球",
-        "美股相关"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 70,
-      "clusterId": "货币政策|federalreservebo|2026-10-09",
-      "detailStatus": "professional",
-      "facts": [
-        "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/09/kalshi-traders-see-high-odds-of-5000-plus-data-centers-by-2027.html",
-      "originalLanguage": "en",
-      "originalTitle": "Kalshi traders see high odds that more than 5,100 data centers will be planned or operating before 2027",
-      "originalSummary": "Despite the growing backlash against data centers, Kalshi odds show the buildout will continue to expand.",
-      "publishedAt": "2026-10-09T13:53:52.000Z",
-      "fetchedAt": "2026-10-09T16:11:42.322Z",
-      "id": "42baf446cc89503211bb",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|kalshitraderssee|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "Despite the growing backlash against data centers, Kalshi odds show the buildout will continue to expand."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Kalshi traders see high odds that more than 5,100 data centers will be planned or operating before 2027\nDespite the growing backlash against data centers, Kalshi odds show the buildout will continue to expand.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 209,
-        "sha256": "2267c34f8625f9f0ff361529d17e6ec51c8d6d864fc350e02cc7d4d47d445205",
-        "sourceUrl": "https://www.cnbc.com/2026/10/09/kalshi-traders-see-high-odds-of-5000-plus-data-centers-by-2027.html",
-        "checkedAt": "2026-10-09T16:11:42.322Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/08/spacex-spectrum-license-att-verizon-tmobile.html",
-      "originalLanguage": "en",
-      "originalTitle": "SpaceX deal to acquire spectrum license hammers shares of AT&T, Verizon and T-Mobile",
-      "originalSummary": "SpaceX agreed to purchase a nationwide spectrum portfolio as it to pushes its Starlink service deeper into the U.S. telecommunications market.",
-      "publishedAt": "2026-10-09T13:52:27.000Z",
-      "fetchedAt": "2026-10-09T20:53:38.276Z",
-      "id": "eb97f2bbb1dae71d4f7c",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|spacexdealtoacqu|2026-10-09",
-      "detailStatus": "brief",
-      "facts": [
-        "SpaceX agreed to purchase a nationwide spectrum portfolio as it to pushes its Starlink service deeper into the U.S. telecommunications market."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "SpaceX deal to acquire spectrum license hammers shares of AT&T, Verizon and T-Mobile\nSpaceX agreed to purchase a nationwide spectrum portfolio as it to pushes its Starlink service deeper into the U.S. telecommunications market.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 227,
-        "sha256": "8c4a3fe34c24af98b11b9c306b1e3ea091e0fb9ccf33aa89b83bdb423d2ec793",
-        "sourceUrl": "https://www.cnbc.com/2026/10/08/spacex-spectrum-license-att-verizon-tmobile.html",
-        "checkedAt": "2026-10-09T20:53:38.276Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-09T15:45:03.444Z",
-        "summaryAttempt": 0
-      }
     }
   ],
   "sourceHealth": [
@@ -7889,8 +7392,9 @@
     {
       "id": "un",
       "name": "UN News",
-      "status": "ok",
-      "itemCount": 30
+      "status": "error",
+      "itemCount": 0,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "bbc-world",
@@ -7919,14 +7423,14 @@
     {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
-      "status": "error",
-      "itemCount": 0,
+      "status": "ok",
+      "itemCount": 1,
       "originalSummaries": 0,
       "attempted": 2,
-      "generated": 0,
-      "requests": 10,
+      "generated": 1,
+      "requests": 9,
       "rejectionReasons": {
-        "summary-audit": 2
+        "summary-audit": 1
       }
     },
     {
@@ -7939,12 +7443,12 @@
       "failures": 0,
       "stages": {
         "evidence": 2,
-        "analysis": 1,
+        "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "numbers": 1,
-        "audit": 1
+        "personal-impact": 1,
+        "impact-assessment": 1
       }
     }
   ],
