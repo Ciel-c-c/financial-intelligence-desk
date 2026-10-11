@@ -13,6 +13,14 @@ const record:any={id:'summary-test',sourceId:'un-zh',sourceTier:'official',verif
 const summary={language:'zh',title:originalTitle,summary:originalSummary,originalTitle,sourceUrl:url,publishedAt:now,sourceHash:record.article.sha256,evidenceScope:'summary',reviewVersion:'factual-v1',checkedAt:now,origin:'publisher-zh',evidence:[]};
 const policies=buildSourcePolicies(newsSources,now);
 afterEach(()=>vi.unstubAllGlobals());
+it('admits reviewed English summaries without relaxing evidence or language consistency',()=>{
+ const source='The agency reported that employment weakened. Future improvement remains uncertain and depends on economic conditions.';
+ const input={...record,originalTitle:'Employment outlook',originalSummary:source,originalLanguage:'en',article:{...record.article,text:'Employment outlook\n'+source,sha256:articleHash('Employment outlook\n'+source)}};
+ const generated={...summary,language:'en',originalTitle:input.originalTitle,title:'Employment outlook',summary:source,sourceHash:input.article.sha256,origin:'model',review:{approved:true,model:'openai/gpt-oss-20b'},evidence:[{text:'Employment weakened according to the agency.',quote:'The agency reported that employment weakened.'}]};
+ expect(validateFactualSummary(input,generated,policies,now)).toBe(true);
+ expect(validateFactualSummary(input,{...generated,review:undefined},policies,now)).toBe(false);
+ expect(validateFactualSummary(input,{...generated,title:'就业变化'},policies,now)).toBe(false);
+});
 it('admits an independent Chinese factual summary without an editorial',async()=>{
  expect(validateFactualSummary(record,summary,policies,now)).toBe(true);
  vi.stubGlobal('crypto',webcrypto);

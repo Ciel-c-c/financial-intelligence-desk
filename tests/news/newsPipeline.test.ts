@@ -8,9 +8,9 @@ const folders:string[]=[]; afterEach(async()=>Promise.all(folders.splice(0).map(
 const raw={sourceId:'nbs-cn',sourceName:'国家统计局',sourceTier:'official',sourceUrl:'https://www.stats.gov.cn/sj/zxfb/rss.xml',canonicalUrl:'https://www.stats.gov.cn/a',originalLanguage:'zh',originalTitle:'居民消费价格同比上涨',originalSummary:'CPI 上涨，市场关注通胀和利率。',publishedAt:'2026-09-14T10:00:00Z',fetchedAt:'2026-09-14T10:17:00Z'};
 
 describe('news snapshot pipeline',()=>{
-  it('builds a valid hourly snapshot with source health',async()=>{
+  it('builds a valid three-edition snapshot with source health',async()=>{
     const value=await buildNewsSnapshot({now:'2026-09-14T10:17:00Z',sourceResults:[{id:'nbs-cn',name:'国家统计局',ok:true,items:[raw]}],previous:undefined,enrichmentOptions:{cache:{}}});
-    expect(value).toMatchObject({status:'fresh',nextExpectedAt:'2026-09-14T11:17:00.000Z'});
+    expect(value).toMatchObject({status:'fresh',nextExpectedAt:'2026-09-14T12:17:00.000Z'});
     expect(value.latest).toHaveLength(1); expect(value.sourceHealth[0]).toMatchObject({status:'ok',itemCount:1});
   });
   it('does not overwrite a successful snapshot when every source fails',async()=>{
@@ -27,4 +27,13 @@ describe('news snapshot pipeline',()=>{
     expect(status.datasets).toEqual([{id:'news-feed',status:'fresh',lastSuccessfulAt:'2026-09-14T10:17:00Z'}]);
     expect(status.sourceHealth[0]).toMatchObject({id:'news-nbs-cn',name:'国家统计局（新闻）'});
   });
+});
+it.each([
+ ['2026-10-11T00:16:00Z','2026-10-11T00:17:00.000Z'],
+ ['2026-10-11T00:17:00Z','2026-10-11T04:17:00.000Z'],
+ ['2026-10-11T04:17:00Z','2026-10-11T12:17:00.000Z'],
+ ['2026-10-11T12:17:00Z','2026-10-12T00:17:00.000Z'],
+])('reports the next planned edition after %s',async(now,want)=>{
+ const value=await buildNewsSnapshot({now,sourceResults:[{id:'test',name:'test',ok:true,items:[]}],enrichmentOptions:{}});
+ expect(value.nextExpectedAt).toBe(want);
 });

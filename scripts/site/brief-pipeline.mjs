@@ -1,4 +1,5 @@
 import { validateDatasetEnvelope } from './site-contract.mjs';
+import {nextNewsEdition} from './news-schedule.mjs';
 
 const EDITIONS = ['morning', 'close'];
 const isIso = value => typeof value === 'string' && Number.isFinite(new Date(value).valueOf());
@@ -16,7 +17,7 @@ export function buildDailyBrief({ edition, generatedAt, snapshots = {}, facts = 
     attemptedAt: generatedAt,
     lastSuccessfulAt: hasFacts ? generatedAt : null,
     dataAsOf: dates.length ? new Date(dates.at(-1)).toISOString() : null,
-    nextExpectedAt: new Date(new Date(generatedAt).valueOf() + 12 * 60 * 60 * 1_000).toISOString(),
+    nextExpectedAt: nextNewsEdition(generatedAt),
     status: hasFacts ? 'fresh' : 'unavailable',
     freshness: hasFacts ? 'delayed' : 'historical',
     sourceHealth: [],

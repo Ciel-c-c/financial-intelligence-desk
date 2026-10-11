@@ -1,4 +1,5 @@
 import { resolve } from 'node:path';
+import {nextNewsEdition} from '../site/news-schedule.mjs';
 import { pathToFileURL } from 'node:url';
 import { readJson, writeJsonAtomic } from '../snapshot-schema.mjs';
 import { validateNewsSnapshot } from './news-contract.mjs';
@@ -29,7 +30,7 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
     const cached=[...(previous.latest??[]),...(previous.continuing??[]),...(previous.retainedDetails??[])].filter(item=>!replacements.has(item.canonicalUrl));
     const all=[...reviewedNews,...reconcileHistory(cached,reviewedNews)].map(record=>toPublicEvidence(reconcileReview(record,prior,now)));
     const windows=selectNewsWindows(all,now),active=new Set([...windows.latest,...windows.continuing].map(item=>item.id));
-    return {...previous,...windows,retainedDetails:all.filter(item=>!active.has(item.id)),attemptedAt:now,nextExpectedAt:new Date(Date.parse(now)+3600_000).toISOString(),status:'source_error',sourceHealth,message:'本轮新闻列表来源失败，保留此前已核验报道；正文复核变化与失效标记已同步。'};
+    return {...previous,...windows,retainedDetails:all.filter(item=>!active.has(item.id)),attemptedAt:now,nextExpectedAt:nextNewsEdition(now),status:'source_error',sourceHealth,message:'本轮新闻列表来源失败，保留此前已核验报道；正文复核变化与失效标记已同步。'};
   }
   reviewedNews=reviewedNews.filter(record=>{
    const current=healthy.flatMap(result=>result.items).find(raw=>raw.canonicalUrl===record.canonicalUrl);
@@ -112,7 +113,7 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
   if(enrichmentOptions.apiKey) sourceHealth.push({id:'groq-editorial',name:'Groq 新闻摘要与机制解读',status:state.stopped||state.failures||(state.attempted>0&&state.generated===0)?'error':'ok',itemCount:state.generated,...(state.reason?{error:state.reason}:{}),attempted:state.attempted,rejected:state.rejected,failures:state.failures,stages:state.stages??{evidence:0,analysis:0,audit:0},rejectionReasons:state.rejectionReasons??{}});
   const {latest,continuing}=selectNewsWindows(enriched,now);
   const activeIds=new Set([...latest,...continuing].map(item=>item.id)); const retainedDetails=[...enriched,...(previous?.latest??[]),...(previous?.continuing??[]),...(previous?.retainedDetails??[])].filter(item=>!activeIds.has(item.id)&&Number.isFinite(Date.parse(item.publishedAt))&&Date.parse(item.publishedAt)<=Date.parse(now)).filter((item,index,array)=>array.findIndex(candidate=>candidate.id===item.id)===index).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,60);
-  const status=sourceResults.some(result=>!result.ok)?'delayed':'fresh'; return {schemaVersion:1,attemptedAt:now,lastSuccessfulAt:now,nextExpectedAt:new Date(Date.parse(now)+3600_000).toISOString(),status,latest,continuing,retainedDetails,sourceHealth,...(status==='delayed'?{message:'部分新闻来源暂时异常，已发布其余可靠来源。'}:{})};
+  const status=sourceResults.some(result=>!result.ok)?'delayed':'fresh'; return {schemaVersion:1,attemptedAt:now,lastSuccessfulAt:now,nextExpectedAt:nextNewsEdition(now),status,latest,continuing,retainedDetails,sourceHealth,...(status==='delayed'?{message:'部分新闻来源暂时异常，已发布其余可靠来源。'}:{})};
 }
 export async function updateNewsFeed({now=new Date().toISOString(),sourceResults,outputPath=defaultPath,statusPath=outputPath===defaultPath?resolve('public/data/update-status.json'):undefined,previous,enrichmentOptions}={}){
   const old=previous??await readJson(outputPath); const results=sourceResults??await Promise.all(newsSources.filter(source=>source.enabled).map(source=>fetchNewsSource(source,now))); const reviewedNews=sourceResults?[]:await refreshReviewedNews(now,fetch,undefined,{retainBody:true}); const options=enrichmentOptions??{apiKey:process.env.GROQ_API_KEY,provider:'groq',maxArticles:process.env.NEWS_MAX_ARTICLES_PER_RUN}; const candidate=await buildNewsSnapshot({now,sourceResults:results,previous:old,enrichmentOptions:options,reviewedNews}); if(!validateNewsSnapshot(candidate)) throw new Error('Generated news snapshot is invalid'); await writeJsonAtomic(outputPath,candidate);

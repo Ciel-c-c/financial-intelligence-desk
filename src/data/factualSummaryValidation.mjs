@@ -9,9 +9,10 @@ export function isSourceAllowed(record,policies,now=new Date().toISOString()){
 export function validateFactualSummary(record,s,policies,now=new Date().toISOString(),onReject=()=>{}){
  const reject=reason=>{onReject(reason);return false;};
  const a=record.article,time=Date.parse(now),zh=value=>typeof value==='string'&&value.trim().length>0&&/[\u3400-\u9fff]/.test(value);
+ const valid=value=>s?.language==='en'?record.originalLanguage==='en'&&typeof value==='string'&&/[A-Za-z]/.test(value)&&!/[\u3400-\u9fff]/.test(value):zh(value);
  if(s&&typeof s.summary==='string'&&(s.summary.trim().length<40||s.summary.length>1200))return reject('summary-length');
  if(record.invalidationReason||!s||!isSourceAllowed(record,policies,now)||!a||!['complete','summary'].includes(a.status)
-  ||s.language!=='zh'||!zh(s.title)||!zh(s.summary)||s.summary.trim().length<40||s.summary.length>1200||s.summary.trim()===s.title.trim()
+  ||!['zh','en'].includes(s.language)||!valid(s.title)||!valid(s.summary)||s.summary.trim().length<40||s.summary.length>1200||s.summary.trim()===s.title.trim()
   ||s.originalTitle!==record.originalTitle||s.sourceUrl!==record.canonicalUrl||a.sourceUrl!==record.canonicalUrl||s.publishedAt!==record.publishedAt
   ||!Number.isFinite(Date.parse(s.publishedAt))||Date.parse(s.publishedAt)>time||!Number.isFinite(Date.parse(s.checkedAt))||Date.parse(s.checkedAt)>time
   ||s.sourceHash!==a.sha256||!/^[a-f0-9]{64}$/.test(s.sourceHash)||s.reviewVersion!=='factual-v1'
@@ -23,7 +24,7 @@ export function validateFactualSummary(record,s,policies,now=new Date().toISOStr
  if(s.origin==='publisher-zh')return p.summaryMode==='publisher'&&record.originalLanguage==='zh'&&s.title===record.originalTitle&&s.summary===record.originalSummary?.trim()&&s.summary.length>=80||reject('publisher-policy-or-text');
  if(s.origin!=='model'||s.review?.approved!==true||s.review.model!=='openai/gpt-oss-20b'||!Array.isArray(s.evidence)||!s.evidence.length||s.evidence.length>5)return reject('review-or-evidence-structure');
  const nums=value=>value.match(/\d+(?:[.,]\d+)*(?:%|％)?/g)??[];
- const paired=s.evidence.every(f=>zh(f.text)&&typeof f.quote==='string'&&f.quote.length>=6&&f.quote.length<=120
+ const paired=s.evidence.every(f=>valid(f.text)&&typeof f.quote==='string'&&f.quote.length>=6&&f.quote.length<=120
   &&(typeof body!=='string'||body.includes(f.quote))&&nums(f.text).every(n=>nums(f.quote).includes(n)))
  if(!paired)return reject('paired-evidence');
  // A review approval cannot license filling a person's job title from model

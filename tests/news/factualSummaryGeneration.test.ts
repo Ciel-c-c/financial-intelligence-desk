@@ -7,7 +7,7 @@ const now='2026-10-09T14:00:00Z',policies=buildSourcePolicies(newsSources,now);
 const raw={id:'en-summary',sourceId:'cnbc-markets',sourceTier:'verified',originalLanguage:'en',originalTitle:'Nvidia-backed data centre company scraps IPO',originalSummary:'The company cancelled its initial public offering because of recent market volatility and prevailing market conditions. No new revenue forecast was announced.',canonicalUrl:'https://www.cnbc.com/2026/10/09/ai-ipo.html',publishedAt:now,fetchedAt:now};
 const record=prepareNewsEvidence(raw);
 const generated={title:'英伟达支持的数据中心企业取消上市',summary:'这家数据中心企业取消首次公开募股，将决定归因于近期市场波动和整体市场环境。报道没有宣布新的收入预测，不能据此判断订单已经下降。',facts:[{text:'公司取消上市，称原因是市场波动和整体市场环境。',evidence:'E1'}]};
-async function run(approved=true,output=generated){
+async function run(approved=true,output:any=generated){
  const budget={requests:0,limit:12,stopped:false};
  const fetchImpl=async(_url,init)=>{
   const request=JSON.parse(init.body),source=JSON.parse(request.messages[1].content);
@@ -18,6 +18,11 @@ async function run(approved=true,output=generated){
  };
  return {value:await buildFactualSummary(record,{policies,budget,modelOptions:{apiKey:'test-secret',fetchImpl,waitImpl:async()=>{},nowMs:()=>0}}),budget};
 }
+it('publishes English fallback only after the independent audit approves it',async()=>{
+ const english={language:'en',title:raw.originalTitle,summary:raw.originalSummary,facts:[{text:'The company cancelled its initial public offering.',evidence:'E1'}]};
+ const result=await run(true,english);expect(result.value?.language).toBe('en');expect(result.budget.requests).toBe(2);
+ expect((await run(false,english)).value).toBeUndefined();
+});
 it('generates Chinese summaries with accurate Chinese names, without requiring English literal names',async()=>{
  const {value,budget}=await run();expect(value?.title).toBe(generated.title);expect(value?.origin).toBe('model');expect(value?.evidenceScope).toBe('summary');expect(budget.requests).toBe(2);
 });
