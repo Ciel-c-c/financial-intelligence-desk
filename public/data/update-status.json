@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-11T08:49:16.594Z",
-  "lastSuccessfulAt": "2026-10-11T08:49:16.594Z",
+  "attemptedAt": "2026-10-11T13:20:06.406Z",
+  "lastSuccessfulAt": "2026-10-11T13:20:06.406Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-11T08:49:16.594Z"
+      "lastSuccessfulAt": "2026-10-11T13:20:06.406Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-11T08:49:16.594Z"
+      "lastSuccessfulAt": "2026-10-11T13:20:06.406Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-11T08:49:16.594Z"
+      "lastSuccessfulAt": "2026-10-11T13:20:06.406Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-11T08:49:16.594Z"
+      "lastSuccessfulAt": "2026-10-11T13:20:06.406Z"
     }
   ],
   "sourceHealth": [
@@ -86,7 +86,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 32
+      "itemCount": 36
     },
     {
       "id": "bbc-business",
@@ -166,7 +166,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 32
+      "itemCount": 36
     },
     {
       "id": "news-bbc-business",
@@ -190,14 +190,12 @@
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 1,
+      "itemCount": 2,
       "originalSummaries": 0,
       "attempted": 2,
-      "generated": 1,
-      "requests": 9,
-      "rejectionReasons": {
-        "summary-audit": 1
-      }
+      "generated": 2,
+      "requests": 10,
+      "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
@@ -213,8 +211,8 @@
         "audit": 0
       },
       "rejectionReasons": {
-        "personal-impact": 1,
-        "impact-assessment": 1
+        "impact-assessment": 1,
+        "numbers": 1
       }
     }
   ],
