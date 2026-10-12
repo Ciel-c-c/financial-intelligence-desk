@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-10-12T08:18:03.829Z",
-  "lastSuccessfulAt": "2026-10-12T08:18:03.829Z",
+  "attemptedAt": "2026-10-12T09:07:19.580Z",
+  "lastSuccessfulAt": "2026-10-12T09:07:19.580Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -33,7 +33,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "fed",
@@ -86,162 +86,16 @@
   ],
   "events": [
     {
-      "id": "c55c5c90addf",
-      "headline": "AI is less regulated than milk, says Microsoft president",
-      "sourceHeadline": "AI is less regulated than milk, says Microsoft president",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge.",
-      "publishedAt": "2026-10-12T07:47:37.000Z",
-      "firstPublishedAt": "2026-10-12T07:47:37.000Z",
-      "latestSourceAt": "2026-10-12T07:47:37.000Z",
-      "fetchedAt": "2026-10-12T08:18:03.829Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge."
-      ],
-      "factSummary": "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge.",
-      "marketView": [
-        "本条来源报告：AI is less regulated than milk, says Microsoft president。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/c6rmy7zmvx3lo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-12T07:47:37.000Z"
-        }
-      ]
-    },
-    {
       "id": "c4ded539c9e3",
       "headline": "Healey faces £35bn Budget challenge to meet spending pledges, says think tank",
       "sourceHeadline": "Healey faces £35bn Budget challenge to meet spending pledges, says think tank",
       "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
       "summary": "The Institute for Fiscal Studies says the government will need a \"top-up\" of billions of pounds if it wants to meet its spending plans.",
-      "publishedAt": "2026-10-12T07:42:22.000Z",
-      "firstPublishedAt": "2026-10-12T07:42:22.000Z",
-      "latestSourceAt": "2026-10-12T07:42:22.000Z",
-      "fetchedAt": "2026-10-12T08:18:03.829Z",
+      "publishedAt": "2026-10-12T08:50:22.000Z",
+      "firstPublishedAt": "2026-10-12T08:50:22.000Z",
+      "latestSourceAt": "2026-10-12T08:50:22.000Z",
+      "fetchedAt": "2026-10-12T09:07:19.580Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -377,7 +231,335 @@
         {
           "name": "BBC News · 财经",
           "url": "https://www.bbc.co.uk/news/articles/cm78pwdp3n5qo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-12T07:42:22.000Z"
+          "publishedAt": "2026-10-12T08:50:22.000Z"
+        }
+      ]
+    },
+    {
+      "id": "751edb1fa1bd",
+      "headline": "Zelenskyy says Ukraine is ready to agree to energy ceasefire, but warns Russia must do same",
+      "sourceHeadline": "Zelenskyy says Ukraine is ready to agree to energy ceasefire, but warns Russia must do same",
+      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
+      "summary": "If Russia doesn't agree to Trump's energy ceasefire, Ukraine will respond, Zelenskyy said in a live-streamed address Monday morning.",
+      "publishedAt": "2026-10-12T08:48:11.000Z",
+      "firstPublishedAt": "2026-10-12T08:48:11.000Z",
+      "latestSourceAt": "2026-10-12T08:48:11.000Z",
+      "fetchedAt": "2026-10-12T09:07:19.580Z",
+      "region": "europe",
+      "countries": [
+        "EU"
+      ],
+      "topic": "energy-security",
+      "eventType": "energy-security",
+      "relevance": {
+        "level": "medium",
+        "score": 3,
+        "criteria": [
+          "energySupply",
+          "growth",
+          "earnings"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 3,
+      "relevanceReasons": [
+        "energySupply",
+        "growth",
+        "earnings"
+      ],
+      "fact": [
+        "If Russia doesn't agree to Trump's energy ceasefire, Ukraine will respond, Zelenskyy said in a live-streamed address Monday morning."
+      ],
+      "factSummary": "If Russia doesn't agree to Trump's energy ceasefire, Ukraine will respond, Zelenskyy said in a live-streamed address Monday morning.",
+      "marketView": [
+        "本条来源报告：Zelenskyy says Ukraine is ready to agree to energy ceasefire, but warns Russia must do same。以下为条件性机制参考，不是已核实的市场结论。",
+        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
+        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
+      ],
+      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
+      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "运输或供应风险上升",
+          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
+          "condition": "风险持续且替代路线有限",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "原油与运费可能上涨",
+          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
+          "condition": "库存和备用产能不足以抵消",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "企业成本可能增加",
+          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
+          "condition": "企业无法完全用效率或合同锁价吸收",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "通胀压力可能升高",
+          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
+          "condition": "需求仍能承受提价",
+          "uncertain": true
+        },
+        {
+          "id": "5",
+          "title": "降息空间可能缩小",
+          "beginnerExplanation": "央行会担心价格压力扩散。",
+          "condition": "通胀持续而增长尚未明显崩弱",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "原油",
+          "explanation": "供应中断概率直接影响每桶油的边际价格。"
+        },
+        {
+          "name": "黄金",
+          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
+        },
+        {
+          "name": "航空股",
+          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
+        },
+        {
+          "name": "能源股",
+          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
+        }
+      ],
+      "relatedIndustries": [
+        "能源",
+        "航空",
+        "航运",
+        "化工"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "supply-demand",
+        "cpi",
+        "trade"
+      ],
+      "conditionsThatChangeView": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "watchConditions": [
+        "停火或紧张局势缓和",
+        "关键航线恢复正常",
+        "OPEC 或其他产油国增产",
+        "释放战略石油储备",
+        "全球需求明显下降",
+        "实际供应未受影响"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/12/russia-ukraine-energy-ceasefire-trump.html",
+          "publishedAt": "2026-10-12T08:48:11.000Z"
+        }
+      ]
+    },
+    {
+      "id": "c55c5c90addf",
+      "headline": "AI is less regulated than milk, says Microsoft president",
+      "sourceHeadline": "AI is less regulated than milk, says Microsoft president",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge.",
+      "publishedAt": "2026-10-12T07:47:37.000Z",
+      "firstPublishedAt": "2026-10-12T07:47:37.000Z",
+      "latestSourceAt": "2026-10-12T07:47:37.000Z",
+      "fetchedAt": "2026-10-12T09:07:19.580Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge."
+      ],
+      "factSummary": "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge.",
+      "marketView": [
+        "本条来源报告：AI is less regulated than milk, says Microsoft president。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/c6rmy7zmvx3lo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-12T07:47:37.000Z"
         }
       ]
     },
@@ -736,7 +918,7 @@
       "publishedAt": "2026-10-12T05:27:55.000Z",
       "firstPublishedAt": "2026-10-12T05:27:55.000Z",
       "latestSourceAt": "2026-10-12T05:27:55.000Z",
-      "fetchedAt": "2026-10-12T08:18:03.829Z",
+      "fetchedAt": "2026-10-12T09:07:19.580Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -924,7 +1106,7 @@
       "publishedAt": "2026-10-12T02:28:54.000Z",
       "firstPublishedAt": "2026-10-12T02:28:54.000Z",
       "latestSourceAt": "2026-10-12T02:28:54.000Z",
-      "fetchedAt": "2026-10-12T08:18:03.829Z",
+      "fetchedAt": "2026-10-12T09:07:19.580Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -1070,7 +1252,7 @@
       "publishedAt": "2026-10-11T23:18:45.000Z",
       "firstPublishedAt": "2026-10-11T23:18:45.000Z",
       "latestSourceAt": "2026-10-11T23:18:45.000Z",
-      "fetchedAt": "2026-10-12T08:18:03.829Z",
+      "fetchedAt": "2026-10-12T09:07:19.580Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1218,7 +1400,7 @@
       "publishedAt": "2026-10-11T23:13:51.000Z",
       "firstPublishedAt": "2026-10-11T23:13:51.000Z",
       "latestSourceAt": "2026-10-11T23:13:51.000Z",
-      "fetchedAt": "2026-10-12T08:18:03.829Z",
+      "fetchedAt": "2026-10-12T09:07:19.580Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1516,7 +1698,7 @@
       "publishedAt": "2026-10-11T21:36:40.000Z",
       "firstPublishedAt": "2026-10-11T21:36:40.000Z",
       "latestSourceAt": "2026-10-11T21:36:40.000Z",
-      "fetchedAt": "2026-10-12T08:18:03.829Z",
+      "fetchedAt": "2026-10-12T09:07:19.580Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1880,7 +2062,7 @@
       "publishedAt": "2026-10-11T20:55:02.000Z",
       "firstPublishedAt": "2026-10-11T20:55:02.000Z",
       "latestSourceAt": "2026-10-11T20:55:02.000Z",
-      "fetchedAt": "2026-10-12T08:18:03.829Z",
+      "fetchedAt": "2026-10-12T09:07:19.580Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -2659,7 +2841,7 @@
       "publishedAt": "2026-10-10T14:24:14.000Z",
       "firstPublishedAt": "2026-10-10T14:24:14.000Z",
       "latestSourceAt": "2026-10-10T14:24:14.000Z",
-      "fetchedAt": "2026-10-12T08:18:03.829Z",
+      "fetchedAt": "2026-10-12T09:07:19.580Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -3251,7 +3433,7 @@
       "publishedAt": "2026-10-09T22:30:22.000Z",
       "firstPublishedAt": "2026-10-09T22:30:22.000Z",
       "latestSourceAt": "2026-10-09T22:30:22.000Z",
-      "fetchedAt": "2026-10-12T08:18:03.829Z",
+      "fetchedAt": "2026-10-12T09:07:19.580Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -3706,154 +3888,6 @@
           "name": "BBC News · 世界",
           "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-10-09T20:32:42.000Z"
-        }
-      ]
-    },
-    {
-      "id": "ed97b93d2087",
-      "headline": "Trump strikes deal with Putin to supply Russian diesel to U.S. and global markets",
-      "sourceHeadline": "Trump strikes deal with Putin to supply Russian diesel to U.S. and global markets",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "President Donald Trump has few options to reduce diesel prices given the destruction done to refineries by the wars in Eastern Europe and the Middle East.",
-      "publishedAt": "2026-10-09T20:20:57.000Z",
-      "firstPublishedAt": "2026-10-09T20:20:57.000Z",
-      "latestSourceAt": "2026-10-09T20:20:57.000Z",
-      "fetchedAt": "2026-10-09T20:53:38.276Z",
-      "region": "united-states",
-      "countries": [
-        "US"
-      ],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "President Donald Trump has few options to reduce diesel prices given the destruction done to refineries by the wars in Eastern Europe and the Middle East."
-      ],
-      "factSummary": "President Donald Trump has few options to reduce diesel prices given the destruction done to refineries by the wars in Eastern Europe and the Middle East.",
-      "marketView": [
-        "本条来源报告：Trump strikes deal with Putin to supply Russian diesel to U.S. and global markets。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/09/trump-putin-russian-diesel-us-global-markets.html",
-          "publishedAt": "2026-10-09T20:20:57.000Z"
         }
       ]
     }

@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-12T08:18:03.829Z",
-  "lastSuccessfulAt": "2026-10-12T08:18:03.829Z",
+  "attemptedAt": "2026-10-12T09:07:19.580Z",
+  "lastSuccessfulAt": "2026-10-12T09:07:19.580Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T08:18:03.829Z"
+      "lastSuccessfulAt": "2026-10-12T09:07:19.580Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-12T08:18:03.829Z"
+      "lastSuccessfulAt": "2026-10-12T09:07:19.580Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T08:18:03.829Z"
+      "lastSuccessfulAt": "2026-10-12T09:07:19.580Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T08:18:03.829Z"
+      "lastSuccessfulAt": "2026-10-12T09:07:19.580Z"
     }
   ],
   "sourceHealth": [
@@ -55,7 +55,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "fed",
@@ -205,12 +205,12 @@
       "failures": 0,
       "stages": {
         "evidence": 2,
-        "analysis": 1,
+        "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "numbers": 1,
-        "audit": 1
+        "impact-assessment": 1,
+        "numbers": 1
       }
     }
   ],
