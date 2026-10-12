@@ -6,7 +6,8 @@ export function requestModel(payload,options,budget){
  const task=(queues.get(budget)??Promise.resolve()).then(()=>perform(payload,options,budget));
  queues.set(budget,task.catch(()=>undefined));return task;
 }
-async function perform({stage,messages,responseFormat,maxTokens},options,budget){
+async function perform(payload,options,budget,formatRetry=0){
+ const {stage,messages,responseFormat,maxTokens}=payload;
  if(!options.apiKey||budget.stopped)return undefined;
  budget.protocolFailure=false;
  const limit=Number.isInteger(budget.limit)&&budget.limit>0?Math.min(12,budget.limit):12;
@@ -24,6 +25,10 @@ async function perform({stage,messages,responseFormat,maxTokens},options,budget)
   if(!response.ok){
    if(response.status===400){
     try{const code=(await response.json()).error?.code;if(code==='json_validate_failed'){
+     if(formatRetry===0&&(budget.requests??0)<limit){
+      budget.formatRetries=(budget.formatRetries??0)+1;
+      return perform(payload,options,budget,1);
+     }
      budget.failures=(budget.failures??0)+1;budget.protocolFailure=true;budget.reason='Provider JSON-generation failure';return undefined;
     }}catch{}
    }

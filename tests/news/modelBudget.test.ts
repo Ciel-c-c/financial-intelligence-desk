@@ -17,10 +17,19 @@ it('paces interleaved generation and review calls and uses only fixed Groq model
 it('does not call a provider without a key',async()=>{
  let calls=0;await requestModel(payload,{fetchImpl:async()=>{calls++;return success;}},{requests:0,limit:12,stopped:false});expect(calls).toBe(0);
 });
-it('does not let a single JSON-generation failure prevent other summary tasks',async()=>{
+it('recovers one JSON-generation failure within the shared paced budget',async()=>{
  let calls=0;const budget={requests:0,limit:12,stopped:false},options={apiKey:'test-secret',waitImpl:async()=>{},fetchImpl:async()=>++calls===1?{ok:false,status:400,json:async()=>({error:{code:'json_validate_failed'}})}:success};
- expect(await requestModel(payload,options,budget)).toBeUndefined();expect(budget.stopped).toBe(false);
- expect(await requestModel(payload,options,budget)).toEqual({ok:true});expect(calls).toBe(2);
+ expect(await requestModel(payload,options,budget)).toEqual({ok:true});expect(budget.stopped).toBe(false);expect(calls).toBe(2);expect(budget.requests).toBe(2);
+});
+it('bounds repeated format failures to one retry and leaves unrelated tasks available',async()=>{
+ let calls=0;const budget={requests:0,limit:12,stopped:false};
+ const options={apiKey:'test-secret',waitImpl:async()=>{},fetchImpl:async()=>{calls++;return {ok:false,status:400,json:async()=>({error:{code:'json_validate_failed'}})};}};
+ expect(await requestModel(payload,options,budget)).toBeUndefined();expect(calls).toBe(2);expect(budget.stopped).toBe(false);
+});
+it('does not spend a thirteenth request on format recovery',async()=>{
+ let calls=0;const budget={requests:11,limit:12,stopped:false};
+ const options={apiKey:'test-secret',waitImpl:async()=>{},fetchImpl:async()=>{calls++;return {ok:false,status:400,json:async()=>({error:{code:'json_validate_failed'}})};}};
+ expect(await requestModel(payload,options,budget)).toBeUndefined();expect(calls).toBe(1);expect(budget.requests).toBe(12);
 });
 it.each([401,402,403,408,429,500,503])('stops shared model work on HTTP %s without paid fallback',async status=>{
  let calls=0;const budget={requests:0,limit:12,stopped:false};const options={apiKey:'test-secret',fetchImpl:async()=>{calls++;return {ok:false,status};}};

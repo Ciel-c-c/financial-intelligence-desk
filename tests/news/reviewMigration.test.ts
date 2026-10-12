@@ -20,7 +20,7 @@ it('withdraws a rejected old interpretation without dropping a valid factual sum
  expect(snapshot.latest[0].editorial).toBeUndefined();expect(snapshot.latest[0].reviewMigration?.state).toBe('rejected');expect(snapshot.latest[0].factualSummary).toBeDefined();
 });
 it('does not mistake a provider JSON-generation failure for a rejected old interpretation',async()=>{
- const snapshot=await buildNewsSnapshot({now,sourceResults:[{id:'un-zh',name:'UN News',ok:true,items:[raw]}],reviewedNews:[old],enrichmentOptions:{apiKey:'test-secret',fetchImpl:async()=>({ok:false,status:400,json:async()=>({error:{code:'json_validate_failed'}})})}});
+ const snapshot=await buildNewsSnapshot({now,sourceResults:[{id:'un-zh',name:'UN News',ok:true,items:[raw]}],reviewedNews:[old],enrichmentOptions:{apiKey:'test-secret',waitImpl:async()=>{},fetchImpl:async()=>({ok:false,status:400,json:async()=>({error:{code:'json_validate_failed'}})})}});
  expect(snapshot.latest[0].reviewMigration?.state).toBe('pending');expect(snapshot.latest[0].editorial).toBeDefined();
 });
 it('queues retained generated content even when it has disappeared from the current feed',async()=>{
