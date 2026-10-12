@@ -7,6 +7,24 @@ const now='2026-10-09T14:00:00Z';
 const raw={id:'old-summary',sourceId:'un-zh',sourceName:'UN News',sourceTier:'official',originalLanguage:'zh',originalTitle:'联合国发布经济与就业报告',originalSummary:'联合国发布报告介绍冲突与经济变化对家庭生活及就业的影响。报告强调公共服务和政策落实的重要性，后续改善仍需要结合当地条件判断，不能从单条新闻推断所有资产的涨跌。报道没有提供具体的市场一致预期。',canonicalUrl:'https://news.un.org/feed/view/zh/story/2026/10/1142960',publishedAt:now,fetchedAt:now};
 const base=prepareNewsEvidence(raw);
 const old={...base,editorial:{originalTitle:raw.originalTitle,sourceBodyHash:base.article.sha256,language:'zh',generator:{review:'old-audit'},item:{id:raw.id,publishedAt:now,sourceUrl:raw.canonicalUrl,title:raw.originalTitle,summary:raw.originalSummary}}};
+it('publishes an independently audited factual summary before attempting a blocked deep review',async()=>{
+ const input={...raw,id:'english-pending',sourceId:'cnbc-markets',sourceTier:'verified',originalLanguage:'en',originalTitle:'Data centre company cancels IPO',originalSummary:'The company cancelled its initial public offering because of recent market volatility and prevailing market conditions. No new revenue forecast was announced.',canonicalUrl:'https://www.cnbc.com/2026/10/09/ai-ipo.html'};
+ const evidence=prepareNewsEvidence(input),pending={...evidence,editorial:{...old.editorial,originalTitle:input.originalTitle,sourceBodyHash:evidence.article.sha256}};
+ const stages:string[]=[];
+ const fetchImpl=async(_url,init)=>{
+  const request=JSON.parse(init.body),stage=request.messages[0].content.split(':')[0];stages.push(stage);
+  let value;
+  if(stage==='SUMMARY_ONLY'){
+   const source=JSON.parse(request.messages[1].content),id=Object.entries(source.evidenceFragments).find(([,quote])=>String(quote).includes('cancelled'))![0];
+   value={language:'zh',title:'数据中心企业取消上市',summary:'这家企业宣布取消首次公开募股，并将决定归因于近期市场波动和整体市场环境。报道还说明没有发布新的收入预测。',facts:[{text:'公司取消首次公开募股。',evidence:id}]};
+  }else if(stage==='SUMMARY_AUDIT')value={approved:true,title:true,summary:true,preservesMeaning:true,facts:[true]};
+  else return {ok:false,status:400,json:async()=>({error:{code:'json_validate_failed'}})};
+  return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:JSON.stringify(value)}}]})};
+ };
+ const snapshot=await buildNewsSnapshot({now,sourceResults:[{id:input.sourceId,name:'CNBC',ok:true,items:[input]}],reviewedNews:[pending],enrichmentOptions:{apiKey:'test-secret',waitImpl:async()=>{},fetchImpl}});
+ const record=snapshot.latest.find(r=>r.id===input.id)!;
+ expect(record.factualSummary?.title).toBe('数据中心企业取消上市');expect(stages[0]).toBe('SUMMARY_ONLY');expect(record.reviewMigration?.state).toBe('pending');
+});
 it('recognizes an old cache without granting the current audit version',()=>{
  expect(needsReview(old,EDITORIAL_REVIEW_VERSION)).toBe(true);
  expect(needsReview({...old,editorial:undefined},EDITORIAL_REVIEW_VERSION)).toBe(false);

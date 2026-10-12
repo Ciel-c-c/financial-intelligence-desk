@@ -210,7 +210,7 @@ it('does not let source rotation bury an exceptional AI market event',async()=>{
  const routine={...raw,sourceId:'bbc-business',sourceName:'BBC News',originalTitle:'Company appoints chief product officer',canonicalUrl:'https://www.bbc.co.uk/news/articles/abc'};
  const previous={latest:[{...target,id:'prior',analysisAttempt:{sourceBodyHash:'different',count:1,lastAttemptAt:now}}],continuing:[],retainedDetails:[]};
  const requested:string[]=[];
- await buildNewsSnapshot({now,previous,sourceResults:[{id:'cnbc-markets',name:'CNBC',ok:true,items:[target]},{id:'bbc-business',name:'BBC News',ok:true,items:[routine]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',waitImpl:async()=>{},fetchImpl:async(_url,init)=>{requested.push(JSON.parse(JSON.parse(init.body).messages[1].content).title);return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:'{}'}}]})};}}});
+ await buildNewsSnapshot({now,previous,sourceResults:[{id:'cnbc-markets',name:'CNBC',ok:true,items:[target]},{id:'bbc-business',name:'BBC News',ok:true,items:[routine]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',waitImpl:async()=>{},fetchImpl:async(_url,init)=>{if(JSON.parse(init.body).messages[0].content.startsWith('EVIDENCE_ONLY'))requested.push(JSON.parse(JSON.parse(init.body).messages[1].content).title);return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:'{}'}}]})};}}});
  expect(requested[0]).toBe(target.originalTitle);
 });
 it('caps a cloud run at two deep analyses even when given an obsolete three-article setting',async()=>{

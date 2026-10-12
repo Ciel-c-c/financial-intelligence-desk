@@ -92,21 +92,22 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
   };
   const migrationCandidates=()=>working.map((record,index)=>({record,index})).filter(({record})=>needsReview(record)&&record.article?.text&&(record.analysisAttempt?.reviewVersion!==EDITORIAL_REVIEW_VERSION||(record.analysisAttempt?.count??0)<3)).sort((a,b)=>Date.parse(a.record.reviewMigration?.lastAttemptAt??'1970-01-01')-Date.parse(b.record.reviewMigration?.lastAttemptAt??'1970-01-01'));
   const eligibleDeep=()=>working.map((record,index)=>({record,index})).filter(({record})=>current(record)&&!record.editorial&&record.article?.text&&(record.analysisAttempt?.count??0)<3);
-  const first=eligibleDeep()[0]??migrationCandidates()[0];if(first)await deep(first.index);
   const summaryLimit=Number(enrichmentOptions.maxSummaries)===0?0:Number(enrichmentOptions.maxSummaries)===1?1:2;
-  const summaryEligible=working.map((record,index)=>({record,index})).filter(({record})=>!record.factualSummary&&!record.editorial&&current(record)&&isSourceAllowed(record,policies,now)&&record.article?.text&&(record.queue?.summaryAttempt??0)<3);
+  const summaryEligible=working.map((record,index)=>({record,index})).filter(({record})=>!record.factualSummary&&(!record.editorial||needsReview(record))&&current(record)&&isSourceAllowed(record,policies,now)&&record.article?.text&&(record.queue?.summaryAttempt??0)<3).sort((a,b)=>Number(needsReview(b.record))-Number(needsReview(a.record)));
   const firstEnglish=summaryEligible.find(({record})=>record.originalLanguage==='en');
-  const summaryOrder=firstEnglish?[firstEnglish.index,...summaryEligible.filter(({index})=>index!==firstEnglish.index).map(({index})=>index)]:summaryEligible.map(({index})=>index);
+  const firstChinese=summaryEligible.find(({record})=>record.originalLanguage==='zh');
+  const summaryOrder=[...new Set([firstEnglish?.index,firstChinese?.index,...summaryEligible.map(({index})=>index)].filter(index=>index!==undefined))];
   for(const i of summaryOrder){
    if(summaryAttempts>=summaryLimit)break;
-   const record=working[i];if(record.factualSummary||record.editorial||!current(record)||!isSourceAllowed(record,policies,now)||!record.article?.text||record.queue?.summaryAttempt>=3||!enrichmentOptions.apiKey||state.stopped||state.requests>10)continue;
+   const record=working[i];if(record.factualSummary||record.editorial&&!needsReview(record)||!current(record)||!isSourceAllowed(record,policies,now)||!record.article?.text||record.queue?.summaryAttempt>=3||!enrichmentOptions.apiKey||state.stopped||state.requests>10)continue;
    summaryAttempts++;
    let summaryRejection;
    const factualSummary=await buildFactualSummary(record,{policies,budget:state,modelOptions:enrichmentOptions,now,onReject:reason=>{summaryRejection=reason;summaryRejections[reason]=(summaryRejections[reason]??0)+1;}});
    if(factualSummary){working[i]={...record,factualSummary};summaryGenerated++;}
    else if(!state.stopped&&!state.protocolFailure)working[i]={...record,queue:{...record.queue,summaryAttempt:(record.queue?.summaryAttempt??0)+1,summaryRejection}};
   }
-  const second=migrationCandidates().find(({index})=>index!==first?.index)??eligibleDeep().find(({index})=>index!==first?.index);
+  const first=migrationCandidates()[0]??eligibleDeep()[0];if(first)await deep(first.index);
+  const second=eligibleDeep().find(({index})=>index!==first?.index)??migrationCandidates().find(({index})=>index!==first?.index);
   if(second)await deep(second.index);
   const enriched=working.map(toPublicEvidence);
   sourceHealth.push({id:'groq-summary',name:'来源事实总结与中文整理',status:state.stopped||summaryAttempts>0&&summaryGenerated===0?'error':'ok',itemCount:originalSummaries+summaryGenerated,originalSummaries,attempted:summaryAttempts,generated:summaryGenerated,requests:state.requests,rejectionReasons:summaryRejections,...(state.reason?{error:state.reason}:{})});
