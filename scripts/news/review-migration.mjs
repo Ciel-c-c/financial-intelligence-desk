@@ -1,7 +1,8 @@
 import {EDITORIAL_REVIEW_VERSION} from './editorial-audit.mjs';
 import {editorialLiquidityIssue} from '../../src/data/liquidityReasoning.mjs';
+import {editorialAttributionIssue} from '../../src/data/attributionReasoning.mjs';
 export function needsReview(record,version=EDITORIAL_REVIEW_VERSION){
- return !!record.editorial&&!record.invalidationReason&&(!!editorialLiquidityIssue(record)||record.editorial.generator?.review!==version||!Array.isArray(record.editorial.impactAssessment)||record.editorial.impactAssessment.length!==6);
+ return !!record.editorial&&!record.invalidationReason&&(!!editorialLiquidityIssue(record)||!!editorialAttributionIssue(record)||record.editorial.generator?.review!==version||!Array.isArray(record.editorial.impactAssessment)||record.editorial.impactAssessment.length!==6);
 }
 export function reconcileReview(record,prior,now){
  if(record.invalidationReason)return {...record,editorial:undefined,factualSummary:undefined};
