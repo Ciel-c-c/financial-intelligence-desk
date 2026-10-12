@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-11T13:20:06.406Z",
-  "lastSuccessfulAt": "2026-10-11T13:20:06.406Z",
+  "attemptedAt": "2026-10-12T05:54:25.169Z",
+  "lastSuccessfulAt": "2026-10-12T05:54:25.169Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-11T13:20:06.406Z"
+      "lastSuccessfulAt": "2026-10-12T05:54:25.169Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-11T13:20:06.406Z"
+      "lastSuccessfulAt": "2026-10-12T05:54:25.169Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-11T13:20:06.406Z"
+      "lastSuccessfulAt": "2026-10-12T05:54:25.169Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-11T13:20:06.406Z"
+      "lastSuccessfulAt": "2026-10-12T05:54:25.169Z"
     }
   ],
   "sourceHealth": [
@@ -73,26 +73,25 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 49
+      "itemCount": 48
     },
     {
       "id": "un",
       "name": "UN News",
-      "status": "error",
-      "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "status": "ok",
+      "itemCount": 30
     },
     {
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 36
+      "itemCount": 25
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 39
     },
     {
       "id": "bis-press",
@@ -153,26 +152,25 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 49
+      "itemCount": 48
     },
     {
       "id": "news-un",
       "name": "UN News（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "status": "ok",
+      "itemCount": 30
     },
     {
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 36
+      "itemCount": 25
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 39
     },
     {
       "id": "news-bis-press",
@@ -190,29 +188,33 @@
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 2,
+      "itemCount": 1,
       "originalSummaries": 0,
       "attempted": 2,
-      "generated": 2,
+      "generated": 1,
       "requests": 10,
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "summary-audit": 1
+      },
+      "error": "Provider JSON-generation failure"
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
       "status": "error",
       "itemCount": 0,
+      "error": "Provider JSON-generation failure",
       "attempted": 2,
       "rejected": 2,
-      "failures": 0,
+      "failures": 1,
       "stages": {
         "evidence": 2,
-        "analysis": 0,
+        "analysis": 1,
         "audit": 0
       },
       "rejectionReasons": {
         "impact-assessment": 1,
-        "numbers": 1
+        "audit": 1
       }
     }
   ],
