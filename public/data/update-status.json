@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-12T13:18:10.034Z",
-  "lastSuccessfulAt": "2026-10-12T13:18:10.034Z",
+  "attemptedAt": "2026-10-12T13:45:29.259Z",
+  "lastSuccessfulAt": "2026-10-12T13:45:29.259Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T13:18:10.034Z"
+      "lastSuccessfulAt": "2026-10-12T13:45:29.259Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-12T13:18:10.034Z"
+      "lastSuccessfulAt": "2026-10-12T13:45:29.259Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T13:18:10.034Z"
+      "lastSuccessfulAt": "2026-10-12T13:45:29.259Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T13:18:10.034Z"
+      "lastSuccessfulAt": "2026-10-12T13:45:29.259Z"
     }
   ],
   "sourceHealth": [
@@ -188,56 +188,50 @@
       "id": "news-review-queue",
       "name": "复审队列诊断（新闻）",
       "status": "ok",
-      "itemCount": 5,
-      "withBody": 5,
+      "itemCount": 4,
+      "withBody": 4,
       "withoutBody": 0,
-      "selectedId": "998b283aa40c6c27af45",
-      "selectedPublishedAt": "2026-10-12T01:29:20.000Z",
+      "selectedId": "81f2d8bbb0fc4d744871",
+      "selectedPublishedAt": "2026-10-11T23:18:45.000Z",
       "selectedIsCurrent": true
     },
     {
       "id": "news-review-body-recovery",
       "name": "复审正文恢复（新闻）",
       "status": "ok",
-      "itemCount": 1,
-      "eligible": 1,
-      "selected": [
-        "998b283aa40c6c27af45"
-      ],
+      "itemCount": 0,
+      "eligible": 0,
+      "selected": [],
       "unavailable": 0
     },
     {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "error",
-      "itemCount": 28,
-      "originalSummaries": 28,
+      "itemCount": 0,
+      "originalSummaries": 0,
       "attempted": 2,
       "generated": 0,
-      "requests": 10,
+      "requests": 9,
       "rejectionReasons": {
-        "paired-evidence": 1,
-        "summary-audit": 1
-      },
-      "error": "Provider JSON-generation failure"
+        "paired-evidence": 2
+      }
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "Provider JSON-generation failure",
+      "status": "ok",
+      "itemCount": 1,
       "attempted": 2,
-      "rejected": 2,
-      "failures": 1,
+      "rejected": 1,
+      "failures": 0,
       "stages": {
         "evidence": 2,
-        "analysis": 0,
-        "audit": 0
+        "analysis": 2,
+        "audit": 1
       },
       "rejectionReasons": {
-        "numbers": 1,
-        "language": 1
+        "audit": 1
       }
     }
   ],
