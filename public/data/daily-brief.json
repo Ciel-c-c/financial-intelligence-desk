@@ -1,23 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-12T05:54:25.169Z",
-  "lastSuccessfulAt": "2026-10-12T05:54:25.169Z",
-  "dataAsOf": "2026-10-12T05:27:55.000Z",
+  "attemptedAt": "2026-10-12T06:48:46.433Z",
+  "lastSuccessfulAt": "2026-10-12T06:48:46.433Z",
+  "dataAsOf": "2026-10-12T06:35:02.000Z",
   "nextExpectedAt": "2026-10-12T12:17:00.000Z",
   "status": "fresh",
   "freshness": "delayed",
   "sourceHealth": [],
   "edition": "close",
-  "generatedAt": "2026-10-12T05:54:25.169Z",
+  "generatedAt": "2026-10-12T06:48:46.433Z",
   "snapshotVersions": {
     "market": "2026-10-10T14:43:25.083Z",
     "sectors": "2026-09-14T13:21:37.336Z",
-    "news": "2026-10-12T05:54:25.169Z",
-    "situation": "2026-10-12T05:54:25.169Z"
+    "news": "2026-10-12T06:48:46.433Z",
+    "situation": "2026-10-12T06:48:46.433Z"
   },
   "facts": [
     "在天气转冷时，农村社区面临取暖油价上涨的压力，导致这些地区的居民不得不承担更高的油费。",
-    "慈善机构和企业正面临柴油成本的困扰，癌症慈善组织“Daft as a Brush”以及Teesside Minibus Hire均表示油价让它们感到困难。",
+    "上周国庆后首个交易周，债市整体呈窄幅震荡、结构性走强。",
+    "央行通过隔夜逆回购和买断式逆回购组合操作呵护流动性，资金面平稳偏宽。",
+    "10年期国债收益率维持在约1.68%，30年期下行约1BP至2.09%，收益率曲线略微走平。",
+    "央行开展6060亿元隔夜逆回购和12000亿元3个月买断式逆回购，公开市场净回笼4085亿元。",
+    "全周美国10年期国债收益率下行约3BP至5.24%。",
+    "特朗普的俄罗斯柴油进口计划引发了广泛的反对声浪。共和党和民主党议员均对该交易提出批评。该交易在美国中期选举前数周公布，引发了选举期间的争议。",
     "欧元兑美元：1.1206 USD",
     "欧元兑日元：177.34 JPY"
   ],
@@ -30,13 +35,36 @@
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cqgm09xvlvjeo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "id": "0f15f6381488414c1a5b",
-      "title": "慈善机构和企业受柴油价格压力",
-      "publishedAt": "2026-10-11T06:23:27.000Z",
+      "id": "998b283aa40c6c27af45",
+      "title": "节后资金面平稳偏宽 超长端小幅结构性走强",
+      "publishedAt": "2026-10-12T01:29:20.000Z",
+      "sourceName": "新华财经",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479348_1.html"
+    },
+    {
+      "id": "81f2d8bbb0fc4d744871",
+      "title": "特朗普因计划从俄罗斯进口柴油而遭到日益增长的反对",
+      "publishedAt": "2026-10-11T23:18:45.000Z",
+      "sourceName": "BBC News · 世界",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cjn5v21py07vo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "id": "e5a7bfd76977cf9c7e5d",
+      "title": "微软总裁称AI监管不如牛奶",
+      "publishedAt": "2026-10-11T23:07:35.000Z",
       "sourceName": "BBC News · 财经",
-      "sourceUrl": "https://www.bbc.co.uk/news/articles/c5x2vn4dzz08o?at_medium=RSS&at_campaign=rss"
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c6rmy7zmvx3lo?at_medium=RSS&at_campaign=rss"
     }
   ],
-  "watchItems": [],
-  "invalidationConditions": []
+  "watchItems": [
+    "央行下周逆回购投放规模",
+    "10年期国债收益率是否突破1.70%关口",
+    "美国10年期国债发行规模与收益率走势",
+    "国内制造业PMI后续表现"
+  ],
+  "invalidationConditions": [
+    "若央行逆回购规模显著收缩，流动性紧张可能导致收益率快速上行。",
+    "若国内宏观需求弱于预期，债券需求下降，收益率可能出现上行压力。",
+    "若美国通胀预期上升，导致美债收益率回升，可能传导至国内市场。"
+  ]
 }

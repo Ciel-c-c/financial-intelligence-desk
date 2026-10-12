@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-12T05:54:25.169Z",
-  "lastSuccessfulAt": "2026-10-12T05:54:25.169Z",
+  "attemptedAt": "2026-10-12T06:48:46.433Z",
+  "lastSuccessfulAt": "2026-10-12T06:48:46.433Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T05:54:25.169Z"
+      "lastSuccessfulAt": "2026-10-12T06:48:46.433Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-12T05:54:25.169Z"
+      "lastSuccessfulAt": "2026-10-12T06:48:46.433Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T05:54:25.169Z"
+      "lastSuccessfulAt": "2026-10-12T06:48:46.433Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T05:54:25.169Z"
+      "lastSuccessfulAt": "2026-10-12T06:48:46.433Z"
     }
   ],
   "sourceHealth": [
@@ -55,7 +55,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "fed",
@@ -85,13 +85,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 25
+      "itemCount": 24
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 39
+      "itemCount": 40
     },
     {
       "id": "bis-press",
@@ -164,13 +164,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 25
+      "itemCount": 24
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 39
+      "itemCount": 40
     },
     {
       "id": "news-bis-press",
@@ -188,33 +188,28 @@
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 1,
+      "itemCount": 2,
       "originalSummaries": 0,
       "attempted": 2,
-      "generated": 1,
+      "generated": 2,
       "requests": 10,
-      "rejectionReasons": {
-        "summary-audit": 1
-      },
-      "error": "Provider JSON-generation failure"
+      "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "Provider JSON-generation failure",
+      "status": "ok",
+      "itemCount": 1,
       "attempted": 2,
-      "rejected": 2,
-      "failures": 1,
+      "rejected": 1,
+      "failures": 0,
       "stages": {
         "evidence": 2,
         "analysis": 1,
-        "audit": 0
+        "audit": 1
       },
       "rejectionReasons": {
-        "impact-assessment": 1,
-        "audit": 1
+        "numbers": 1
       }
     }
   ],

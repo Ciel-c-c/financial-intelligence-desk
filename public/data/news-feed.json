@@ -1,10 +1,71 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-12T05:54:25.169Z",
-  "lastSuccessfulAt": "2026-10-12T05:54:25.169Z",
+  "attemptedAt": "2026-10-12T06:48:46.433Z",
+  "lastSuccessfulAt": "2026-10-12T06:48:46.433Z",
   "nextExpectedAt": "2026-10-12T12:17:00.000Z",
   "status": "delayed",
   "latest": [
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Documents falsified to evade tax on Abramovich's wealth",
+      "originalSummary": "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, BBC finds.",
+      "publishedAt": "2026-10-12T05:00:52.000Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
+      "id": "45b190f93ab621851542",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-12T05:00:52.000Z"
+        }
+      ],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|documentsfalsifi|2026-10-12",
+      "detailStatus": "brief",
+      "facts": [
+        "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, BBC finds."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Documents falsified to evade tax on Abramovich's wealth\nBackdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, BBC finds.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 164,
+        "sha256": "bb69f65f7aa6c3775a9f76b367a55bf276bd2a551c8f658713e1ea816963e5e6",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-12T06:48:46.433Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-12T05:54:25.169Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
     {
       "sourceId": "bbc-business",
       "sourceName": "BBC News · 财经",
@@ -15,7 +76,7 @@
       "originalTitle": "Debt advice that may leave you owing even more money",
       "originalSummary": "People are increasingly falling behind on credit card repayments, so here's the best way to get debt advice.",
       "publishedAt": "2026-10-11T23:19:07.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "40a4b5d8ba5e9e0e1047",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -58,7 +119,7 @@
         "characterCount": 161,
         "sha256": "cbb5e86955fd4bf2eb7149a9cdb59b896e0a9a2064fc07b22989d0180993ccfe",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c84g1xz1l9ddo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -76,7 +137,7 @@
       "originalTitle": "Trump faces growing backlash over plans to import diesel from Russia",
       "originalSummary": "Both Republican and Democratic lawmakers have criticised the deal, which was announced weeks before the US midterm elections.",
       "publishedAt": "2026-10-11T23:18:45.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "81f2d8bbb0fc4d744871",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -119,7 +180,414 @@
         "characterCount": 194,
         "sha256": "cd2eb9800f55def468c1c08949f1dbfd08dbf862694f6098cda5d8f71b19377c",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cjn5v21py07vo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-12T05:54:25.169Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Trump faces growing backlash over plans to import diesel from Russia",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cjn5v21py07vo?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-11T23:18:45.000Z",
+        "sourceHash": "cd2eb9800f55def468c1c08949f1dbfd08dbf862694f6098cda5d8f71b19377c",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-12T06:48:46.433Z",
+        "title": "特朗普因计划从俄罗斯进口柴油而遭到日益增长的反对",
+        "summary": "特朗普的俄罗斯柴油进口计划引发了广泛的反对声浪。共和党和民主党议员均对该交易提出批评。该交易在美国中期选举前数周公布，引发了选举期间的争议。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "特朗普因计划从俄罗斯进口柴油而面临日益增长的反对。",
+            "quote": "Trump faces growing backlash over plans to import diesel from Russia"
+          },
+          {
+            "text": "共和党和民主党议员都批评了这项交易。",
+            "quote": "Both Republican and Democratic lawmakers have criticised the deal, which was announced weeks before the US midterm"
+          },
+          {
+            "text": "该交易在美国中期选举前数周公布。",
+            "quote": "which was announced weeks before the US midterm elections."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      }
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c9rkynp1m01mo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Watch: How did Roman Abramovich's advisors help hide his wealth?",
+      "originalSummary": "Working with the Bureau of Investigative Journalism, BBC Panorama reveals how the Russian billionaire hid his wealth with the help of Deloitte.",
+      "publishedAt": "2026-10-12T06:35:02.000Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
+      "id": "a33984478c159eef96e2",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|watchhowdidroman|2026-10-12",
+      "detailStatus": "brief",
+      "facts": [
+        "Working with the Bureau of Investigative Journalism, BBC Panorama reveals how the Russian billionaire hid his wealth with the help of Deloitte."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Watch: How did Roman Abramovich's advisors help hide his wealth?\nWorking with the Bureau of Investigative Journalism, BBC Panorama reveals how the Russian billionaire hid his wealth with the help of Deloitte.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 208,
+        "sha256": "3464b66dd2f1b08d642dc53a5fa7eb34e16ab2c33d446eb7eab7cdc4dd646f2f",
+        "sourceUrl": "https://www.bbc.co.uk/news/videos/c9rkynp1m01mo?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-12T06:48:46.433Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-12T06:48:46.433Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479459_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479459_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "厄尔尼诺持续增强 全球面临多重风险",
+      "publishedAt": "2026-10-12T06:33:52.000Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 1942,
+        "reader": "cnfin-body",
+        "sha256": "f5db169bdae65712bcb6eab052a354bc49f99ce077045e711bcbc3360401a9b1",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479459_1.html",
+        "checkedAt": "2026-10-12T06:48:46.433Z"
+      },
+      "id": "31e2d5a21e1ec618ab10",
+      "verificationStatus": "verified",
+      "titleZh": "厄尔尼诺持续增强 全球面临多重风险",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|厄尔尼诺持续增强全球面临多重风险|2026-10-12",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-12T06:48:46.433Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479457_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479457_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "商务部新闻发言人就中欧混动汽车、电动汽车磋商共识答记者问",
+      "publishedAt": "2026-10-12T06:32:45.000Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 689,
+        "reader": "cnfin-body",
+        "sha256": "1a774e9562af9c234730463501368db9819ffd524f01ec94a278910e86b4de93",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479457_1.html",
+        "checkedAt": "2026-10-12T06:48:46.433Z"
+      },
+      "id": "eb9594661fe85ae27411",
+      "verificationStatus": "verified",
+      "titleZh": "商务部新闻发言人就中欧混动汽车、电动汽车磋商共识答记者问",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|商务部新闻发言人就中欧混动汽车电|2026-10-12",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-12T06:48:46.433Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm78pwdp3n5qo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Healey faces £35bn Budget challenge to meet spending pledges, says think tank",
+      "originalSummary": "The impact of the Iran war poses significant risks for the government’s spending plans, the Institute for Fiscal Studies says.",
+      "publishedAt": "2026-10-12T06:23:50.000Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
+      "id": "999b5c1f612379b50203",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|healeyfaces35bnb|2026-10-12",
+      "detailStatus": "brief",
+      "facts": [
+        "The impact of the Iran war poses significant risks for the government’s spending plans, the Institute for Fiscal Studies says."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Healey faces £35bn Budget challenge to meet spending pledges, says think tank\nThe impact of the Iran war poses significant risks for the government’s spending plans, the Institute for Fiscal Studies says.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 204,
+        "sha256": "bb122937059541b4ec67b6ccfdca153b9840a5b4ab60716f84734631470ef109",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cm78pwdp3n5qo?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-12T06:48:46.433Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-12T06:48:46.433Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479441_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479441_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "前三季度我国新能源汽车新车销量占比升至53.6%",
+      "publishedAt": "2026-10-12T06:12:43.000Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 318,
+        "reader": "cnfin-body",
+        "sha256": "19754623acb982a2c60131156f3304a4a40fb0c49bfb7456b4d2f59b8871a656",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479441_1.html",
+        "checkedAt": "2026-10-12T06:48:46.433Z"
+      },
+      "id": "cbe2e15eb698102d529e",
+      "verificationStatus": "verified",
+      "titleZh": "前三季度我国新能源汽车新车销量占比升至53.6%",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|前三季度我国新能源汽车新车销量占|2026-10-12",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-12T06:48:46.433Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "cnbc-markets",
+      "sourceName": "CNBC",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
+      "originalLanguage": "en",
+      "originalTitle": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
+      "originalSummary": "As retailers turn to AI tools to streamline operations, experts warn that collecting more detailed consumer data increases the risk of personalized pricing.",
+      "publishedAt": "2026-10-12T06:02:18.000Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
+      "id": "a4e5951943f93ca6fb01",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|aimaychangethepr|2026-10-12",
+      "detailStatus": "brief",
+      "facts": [
+        "As retailers turn to AI tools to streamline operations, experts warn that collecting more detailed consumer data increases the risk of personalized pricing."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "AI may change the price of your Big Mac and groceries — what this means for shoppers\nAs retailers turn to AI tools to streamline operations, experts warn that collecting more detailed consumer data increases the risk of personalized pricing.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 241,
+        "sha256": "4afdc4e31723689e0785571ebbef4062ccb03272026eed2fca8d1ad2a3673180",
+        "sourceUrl": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
+        "checkedAt": "2026-10-12T06:48:46.433Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-11T13:20:06.406Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "cnbc-markets",
+      "sourceName": "CNBC",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/12/oil-prics-today-iran-us-saudi-arabia-crude-.html",
+      "originalLanguage": "en",
+      "originalTitle": "Oil falls after Trump declares 'energy ceasefire' between Russia and Ukraine",
+      "originalSummary": "Ukrainian President Volodymyr Zelenskyy said in a post on social media that \"Ukraine supports the ceasefire, and it is important that Russia support it as well.\"",
+      "publishedAt": "2026-10-12T05:57:29.000Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
+      "id": "943c569a44706dee3e7d",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|oilfallsaftertru|2026-10-12",
+      "detailStatus": "brief",
+      "facts": [
+        "Ukrainian President Volodymyr Zelenskyy said in a post on social media that \"Ukraine supports the ceasefire, and it is important that Russia support it as well.\""
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Oil falls after Trump declares 'energy ceasefire' between Russia and Ukraine\nUkrainian President Volodymyr Zelenskyy said in a post on social media that \"Ukraine supports the ceasefire, and it is important that Russia support it as well.\"",
+        "reader": "publisher-feed-summary",
+        "characterCount": 238,
+        "sha256": "26e7091210a28b147dfdf8abdcb7afdbd680a0db70c4f346dfe2e3252e1b0fbd",
+        "sourceUrl": "https://www.cnbc.com/2026/10/12/oil-prics-today-iran-us-saudi-arabia-crude-.html",
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -137,7 +605,7 @@
       "originalTitle": "Why some have no choice but to pay costly oil prices",
       "originalSummary": "The rural communities vulnerable to heating oil prices rises as the weather gets colder.",
       "publishedAt": "2026-10-12T05:27:55.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "4e068a8ef86cd88135e2",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -174,12 +642,7 @@
         "characterCount": 141,
         "sha256": "fee9c40e8df65223a0c4223e49db57b9733fef0810ebd711edef47eec59fc4b8",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cqgm09xvlvjeo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-12T05:54:25.169Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -207,6 +670,11 @@
           "approved": true,
           "model": "openai/gpt-oss-20b"
         }
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-12T05:54:25.169Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
       }
     },
     {
@@ -274,7 +742,7 @@
       "originalTitle": "Campaigners claim minister attempting to undermine 'Holiday Hunger Bill'",
       "originalSummary": "The education minister has warned it would immediately cost his department £20m a year at a time when it is already struggling to balance its budget.",
       "publishedAt": "2026-10-12T05:23:34.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "f11e95986ffcd26e1a67",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -311,62 +779,7 @@
         "characterCount": 222,
         "sha256": "c325fbbd20d4b0fb0748cfb93fe7ce59d46a076007bae2a49e964c823cac865f",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/crkg78q7yz41o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-12T05:54:25.169Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Documents falsified to evade tax on Abramovich's wealth",
-      "originalSummary": "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, BBC finds.",
-      "publishedAt": "2026-10-12T05:00:52.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
-      "id": "45b190f93ab621851542",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|documentsfalsifi|2026-10-12",
-      "detailStatus": "brief",
-      "facts": [
-        "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, BBC finds."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Documents falsified to evade tax on Abramovich's wealth\nBackdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, BBC finds.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 164,
-        "sha256": "bb69f65f7aa6c3775a9f76b367a55bf276bd2a551c8f658713e1ea816963e5e6",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -384,7 +797,7 @@
       "originalTitle": "TikTok CEO sees major scientific breakthroughs from AI within three years",
       "originalSummary": "Chew cautioned that AI's growing capabilities would require stronger safeguards, particularly as autonomous systems become more widely adopted.",
       "publishedAt": "2026-10-12T04:24:33.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "b2bb0236e36a0a45865c",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -421,62 +834,7 @@
         "characterCount": 217,
         "sha256": "500f26c805771ffe513eab7a262a638ec3d7017316c0a687467126f68f939ad6",
         "sourceUrl": "https://www.cnbc.com/2026/10/12/tiktok-ceo-bytedance-ai-scientific-breakthroughs.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-12T05:54:25.169Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/12/oil-prics-today-iran-us-saudi-arabia-crude-.html",
-      "originalLanguage": "en",
-      "originalTitle": "Oil falls after Trump declares 'energy ceasefire' between Russia and Ukraine",
-      "originalSummary": "Ukrainian President Volodymyr Zelenskyy said in a post on social media that \"Ukraine supports the ceasefire, and it is important that Russia support it as well.\"",
-      "publishedAt": "2026-10-12T04:21:21.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
-      "id": "943c569a44706dee3e7d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|oilfallsaftertru|2026-10-12",
-      "detailStatus": "brief",
-      "facts": [
-        "Ukrainian President Volodymyr Zelenskyy said in a post on social media that \"Ukraine supports the ceasefire, and it is important that Russia support it as well.\""
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Oil falls after Trump declares 'energy ceasefire' between Russia and Ukraine\nUkrainian President Volodymyr Zelenskyy said in a post on social media that \"Ukraine supports the ceasefire, and it is important that Russia support it as well.\"",
-        "reader": "publisher-feed-summary",
-        "characterCount": 238,
-        "sha256": "26e7091210a28b147dfdf8abdcb7afdbd680a0db70c4f346dfe2e3252e1b0fbd",
-        "sourceUrl": "https://www.cnbc.com/2026/10/12/oil-prics-today-iran-us-saudi-arabia-crude-.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -493,14 +851,14 @@
       "originalLanguage": "zh",
       "originalTitle": "午评：创业板指半日跌超1% 中国银行、工商银行再创新高",
       "publishedAt": "2026-10-12T03:49:23.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "article": {
         "status": "complete",
         "characterCount": 1380,
         "reader": "cnfin-body",
         "sha256": "e46cd92815a3bd3ac90e2ce7b23c2713ac4c0f8f4eb03d9bf4da70c667b29c90",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479428_1.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "id": "065353790c39685a53f6",
       "verificationStatus": "verified",
@@ -545,14 +903,14 @@
       "originalLanguage": "zh",
       "originalTitle": "大手笔分红！银行板块再度走强 中国银行、中信银行续创历史新高",
       "publishedAt": "2026-10-12T03:13:50.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "article": {
         "status": "complete",
         "characterCount": 973,
         "reader": "cnfin-body",
         "sha256": "939ad113d4b6e540c17161ee75dab3e7d41c37aad780634bf3a6f57e4a5e7597",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479421_1.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "id": "323d05eee414df112c9f",
       "verificationStatus": "verified",
@@ -598,7 +956,7 @@
       "originalTitle": "Sustaining livelihoods amid crisis in Gaza",
       "originalSummary": "Nidaa, Hanaa and Hanin have different stories, but share a common thread: the determination to build something of their own and keep it going despite extraordinary challenges facing them in war-ravaged Gaza.",
       "publishedAt": "2026-10-11T12:00:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "e967626844970b464276",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -635,12 +993,7 @@
         "characterCount": 250,
         "sha256": "c808174fda9a2c796941d7bd64abbaaa0012d0b3aa91ef77740f1acd24c1db83",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168569",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-12T05:54:25.169Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
@@ -654,6 +1007,11 @@
             "personalImpact[0].path"
           ]
         }
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-12T05:54:25.169Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
       }
     },
     {
@@ -666,7 +1024,7 @@
       "originalTitle": "吉布提近海发生严重沉船事故：139人遇难",
       "originalSummary": "国际移民组织周日表示，一艘载有305人的船在吉布提近海翻沉，造成至少139名移民遇难，另有84余人仍下落不明。",
       "publishedAt": "2026-10-11T12:00:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "4a2c3d55b1bf14d781e6",
       "verificationStatus": "official",
       "titleZh": "吉布提近海发生严重沉船事故：139人遇难",
@@ -714,7 +1072,7 @@
       "originalTitle": "Djibouti shipwreck: Death toll rises to 139 as 84 remain missing",
       "originalSummary": "At least 139 migrants have died after their boat capsized off Djibouti, with a further 84 people still missing, the UN migration agency (IOM) said on Sunday.",
       "publishedAt": "2026-10-11T12:00:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "50e600eb4939452bb6dc",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -751,7 +1109,7 @@
         "characterCount": 222,
         "sha256": "c8ed7be0116c9f37ace8bab084f2f2caada4930eabcd2ea7e2deb6be4426f9a0",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168573",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -769,7 +1127,7 @@
       "originalTitle": "‘These attacks must cease immediately’: Guterres condemns deadly Houthi strike on Riyadh airport",
       "originalSummary": "UN Secretary-General António Guterres has condemned a Houthi missile attack on Riyadh’s main airport that Saudi authorities say killed 12 people and wounded more than 300.",
       "publishedAt": "2026-10-11T12:00:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "46b1e010ad55ab2b92f7",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -806,7 +1164,7 @@
         "characterCount": 268,
         "sha256": "5fcdb55d4de30fa2fcd020ab053fcb06890f24694c8a3886c3e6a5a9e11a718a",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168572",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -823,14 +1181,14 @@
       "originalLanguage": "zh",
       "originalTitle": "下游MTO装置停车引发负反馈 甲醇期货早盘跳水",
       "publishedAt": "2026-10-12T02:45:17.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "article": {
         "status": "complete",
         "characterCount": 963,
         "reader": "cnfin-body",
         "sha256": "53e93072f149bf407d99a5a28d3b480e290f3ff79f3ce8e70154ceda98ce7170",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479413_1.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "id": "ff54b1e09eb1a5196717",
       "verificationStatus": "verified",
@@ -875,7 +1233,7 @@
       "originalLanguage": "zh",
       "originalTitle": "【央行圆桌汇】美联储官员静默期前密集发声（2026年10月12日）",
       "publishedAt": "2026-10-12T02:30:30.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "3ad05dee9bb73c9164a4",
       "verificationStatus": "verified",
       "titleZh": "【央行圆桌汇】美联储官员静默期前密集发声（2026年10月12日）",
@@ -920,7 +1278,7 @@
       "originalTitle": "Judge orders Trump administration to immediately stop taxpayer-funded TV ads",
       "originalSummary": "The ads featuring President Trump have been criticized as government propaganda and as aimed at influencing the outcome of the midterm election.",
       "publishedAt": "2026-10-12T02:28:54.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "9fb5444a17f354b36813",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -957,7 +1315,7 @@
         "characterCount": 221,
         "sha256": "091c8adb27215197c740b56471826ca92d4d48ee1acd64d352a47e1d62af52ea",
         "sourceUrl": "https://www.cnbc.com/2026/10/11/trump-ads-dhs-judge-order.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -974,7 +1332,7 @@
       "originalLanguage": "zh",
       "originalTitle": "李强将出席第140届广交会开幕式及相关活动",
       "publishedAt": "2026-10-12T02:17:43.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "2f513202a9022a4ab9be",
       "verificationStatus": "verified",
       "titleZh": "李强将出席第140届广交会开幕式及相关活动",
@@ -1018,14 +1376,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【财经分析】基金风波牵动消费 土耳其经济面临需求放缓压力",
       "publishedAt": "2026-10-12T01:51:08.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "article": {
         "status": "complete",
         "characterCount": 1611,
         "reader": "cnfin-body",
         "sha256": "bc5f707405a4546c774249263e7d42812d34b638040fe75620c450d99600c51f",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479384_1.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "id": "92ed6f56344b6c44a0b2",
       "verificationStatus": "verified",
@@ -1070,14 +1428,14 @@
       "originalLanguage": "zh",
       "originalTitle": "碳酸锂主力合约跌超8% 今年以来首次跌破11万关口",
       "publishedAt": "2026-10-12T01:48:27.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "article": {
         "status": "complete",
         "characterCount": 372,
         "reader": "cnfin-body",
         "sha256": "2375eb24146129d27805d0cc2fff4c9224db774d9bdede6d49d06424a52146d8",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479377_1.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "id": "ab85772db3ea8f185119",
       "verificationStatus": "verified",
@@ -1122,14 +1480,14 @@
       "originalLanguage": "zh",
       "originalTitle": "一周流动性观察 | 节后扰动有限 10月资金压力或集中在月末",
       "publishedAt": "2026-10-12T01:39:04.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "article": {
         "status": "complete",
         "characterCount": 1045,
         "reader": "cnfin-body",
         "sha256": "207c6d3f795853daf1eebb1fb6807165017ce4c6eae19dabd1d43f3f2e1b0092",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479369_1.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "id": "6a60a64cbbb3a470a417",
       "verificationStatus": "verified",
@@ -1174,18 +1532,19 @@
       "originalLanguage": "zh",
       "originalTitle": "【债市观察】节后资金面平稳偏宽 超长端小幅结构性走强",
       "publishedAt": "2026-10-12T01:29:20.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "article": {
         "status": "complete",
         "characterCount": 3223,
         "reader": "cnfin-body",
         "sha256": "e05bf81fbff1bfe7dc200b33f0305eda1b38d20caea795c516dc086904de9987",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479348_1.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "id": "998b283aa40c6c27af45",
       "verificationStatus": "verified",
-      "titleZh": "【债市观察】节后资金面平稳偏宽 超长端小幅结构性走强",
+      "titleZh": "节后资金面平稳偏宽 超长端小幅结构性走强",
+      "summaryZh": "国庆后首周，央行通过逆回购组合维持流动性，10年期国债收益率约1.68%基本持平，30年期略微下行，整体债市呈窄幅震荡但超长端表现相对强势；美国同周期10年期国债收益率下行约3BP至5.24%。",
       "translationStatus": "original-zh",
       "relatedSources": [],
       "keyTerms": [
@@ -1193,28 +1552,304 @@
       ],
       "causalSignals": [],
       "analysisLevels": [
-        "行业"
+        "宏观"
       ],
       "eventTypes": [
-        "监管"
+        "货币政策",
+        "经济数据"
       ],
       "impactChannels": [
+        "利率",
         "供需"
       ],
       "regions": [
-        "全球"
+        "中国",
+        "美国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "监管|债市观察节后资金面平稳偏宽超长端|2026-10-12",
-      "detailStatus": "brief",
-      "facts": [],
+      "detailStatus": "so-what",
+      "facts": [
+        "上周国庆后首个交易周，债市整体呈窄幅震荡、结构性走强。",
+        "央行通过隔夜逆回购和买断式逆回购组合操作呵护流动性，资金面平稳偏宽。",
+        "10年期国债收益率维持在约1.68%，30年期下行约1BP至2.09%，收益率曲线略微走平。",
+        "央行开展6060亿元隔夜逆回购和12000亿元3个月买断式逆回购，公开市场净回笼4085亿元。",
+        "全周美国10年期国债收益率下行约3BP至5.24%。"
+      ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若央行继续保持逆回购规模，短期资金面仍将保持宽松，债券收益率波动幅度可能继续受限。",
+        "若国内信贷需求上升，超长端收益率可能进一步下行，收益率曲线趋平。",
+        "若美国财政部继续大规模发行10年期国债，可能抑制美国债券收益率的进一步下行。"
+      ],
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "e05bf81fbff1bfe7dc200b33f0305eda1b38d20caea795c516dc086904de9987",
+        "count": 1,
+        "lastAttemptAt": "2026-10-12T06:48:46.433Z"
+      },
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "上周国庆后首个交易周，债市整体呈窄幅震荡、结构性走强。",
+              "evidence": "新华财经北京10月12日电（王菁）上周（10月8日至10月10日），国庆长假后的首个交易周， 债市 整体呈窄幅震荡、结构性走强格局。"
+            },
+            {
+              "text": "央行通过隔夜逆回购和买断式逆回购组合操作呵护流动性，资金面平稳偏宽。",
+              "evidence": "节后央行通过隔夜逆回购和买断式逆回购组合操作呵护流动性，资金面平稳偏宽。"
+            },
+            {
+              "text": "10年期国债收益率维持在约1.68%，30年期下行约1BP至2.09%，收益率曲线略微走平。",
+              "evidence": "全周来看，10年期国债收益率持平于1.68%附近，30年期下行约1BP至2.09%，收益率曲线略微走平。"
+            },
+            {
+              "text": "央行开展6060亿元隔夜逆回购和12000亿元3个月买断式逆回购，公开市场净回笼4085亿元。",
+              "evidence": "收益率上行0.3BP至1.758%，当日央行7天期逆回购操作量为零，开展6060亿元隔夜逆回购和12000亿元3个月期买断式逆回购操作，公开市场净回笼4085亿元；周五（10月9日），长端利率债价格回升、收益率回落，超长端表现突出，30年期"
+            },
+            {
+              "text": "全周美国10年期国债收益率下行约3BP至5.24%。",
+              "evidence": "全周整体来看，10年期美债收益率震荡下行约3BPs至5.24%，2年期下行约4BPs至4.79%。"
+            }
+          ],
+          "background": [],
+          "expectations": [
+            {
+              "text": "光大证券预计10月末10年期国债收益率可能在1.70%附近。",
+              "evidence": "光大证券 ： 债市 可能呈现收益率“下不去，上也难”的胶着局面，整体缺乏明确方向，预计10月末10年期国债收益率可能在1.70%附近。"
+            }
+          ],
+          "uncertainties": [
+            {
+              "text": "债市缺乏明确主线，呈窄幅震荡格局，市场方向不明。",
+              "evidence": "各期限收益率变动均在±1BP以内， 债市 缺乏明确主线，呈窄幅震荡格局。"
+            }
+          ]
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "中国",
+            "triggerEvidence": "节后央行通过隔夜逆回购和买断式逆回购组合操作呵护流动性，资金面平稳偏宽。",
+            "path": [
+              "央行逆回购操作",
+              "资金面宽松",
+              "债券收益率窄幅震荡"
+            ],
+            "invalidation": "央行逆回购规模显著收缩导致流动性紧张"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "中国",
+            "triggerEvidence": "节后央行通过隔夜逆回购和买断式逆回购组合操作呵护流动性，资金面平稳偏宽。",
+            "path": [
+              "央行逆回购操作",
+              "资金面宽松",
+              "企业融资成本低"
+            ],
+            "invalidation": "流动性紧缩导致企业融资成本上升"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "full-body",
+        "marketSignals": [
+          {
+            "asset": "10年期国债",
+            "direction": "中性",
+            "reason": "流动性维持宽松，收益率波动幅度受限",
+            "condition": "央行继续保持逆回购投放规模",
+            "invalidation": "央行大幅收缩逆回购导致流动性紧张",
+            "timeframe": "短期"
+          },
+          {
+            "asset": "30年期国债",
+            "direction": "上行",
+            "reason": "超长端需求相对提升，价格上行推动收益率下行",
+            "condition": "超长端需求保持或增加",
+            "invalidation": "超长端供给大幅增加或需求下降",
+            "timeframe": "中期"
+          }
+        ],
+        "sourceBodyHash": "e05bf81fbff1bfe7dc200b33f0305eda1b38d20caea795c516dc086904de9987",
+        "originalTitle": "【债市观察】节后资金面平稳偏宽 超长端小幅结构性走强",
+        "reviewedAt": "2026-10-12T06:48:46.433Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "998b283aa40c6c27af45",
+          "title": "节后资金面平稳偏宽 超长端小幅结构性走强",
+          "summary": "国庆后首周，央行通过逆回购组合维持流动性，10年期国债收益率约1.68%基本持平，30年期略微下行，整体债市呈窄幅震荡但超长端表现相对强势；美国同周期10年期国债收益率下行约3BP至5.24%。",
+          "excerpt": "上周国庆后首个交易周，债市整体呈窄幅震荡、结构性走强；央行通过隔夜逆回购和买断式逆回购组合操作呵护流动性，资金面平稳偏宽；10年期国债收益率持平于1.68%附近，30年期下行约1BP至2.09%；美国10年期国债收益率下行约3BP至5.24%。",
+          "sourceName": "新华财经",
+          "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261012/4479348_1.html",
+          "publishedAt": "2026-10-12T01:29:20.000Z",
+          "region": "A股",
+          "topic": "债券市场流动性与收益率走势",
+          "termIds": [],
+          "facts": [
+            "上周国庆后首个交易周，债市整体呈窄幅震荡、结构性走强。",
+            "央行通过隔夜逆回购和买断式逆回购组合操作呵护流动性，资金面平稳偏宽。",
+            "10年期国债收益率维持在约1.68%，30年期下行约1BP至2.09%，收益率曲线略微走平。",
+            "央行开展6060亿元隔夜逆回购和12000亿元3个月买断式逆回购，公开市场净回笼4085亿元。",
+            "全周美国10年期国债收益率下行约3BP至5.24%。"
+          ],
+          "consensus": [
+            "央行使用逆回购工具维持流动性是常规的短期流动性管理手段。",
+            "在资金面宽松且需求不强时，债券收益率往往呈窄幅波动。",
+            "超长端债券对流动性变化更敏感，常出现结构性走强。"
+          ],
+          "inference": [
+            "若央行继续保持逆回购规模，短期资金面仍将保持宽松，债券收益率波动幅度可能继续受限。",
+            "若国内信贷需求上升，超长端收益率可能进一步下行，收益率曲线趋平。",
+            "若美国财政部继续大规模发行10年期国债，可能抑制美国债券收益率的进一步下行。"
+          ],
+          "risks": [
+            "若央行逆回购规模显著收缩，流动性紧张可能导致收益率快速上行。",
+            "若国内宏观需求弱于预期，债券需求下降，收益率可能出现上行压力。",
+            "若美国通胀预期上升，导致美债收益率回升，可能传导至国内市场。"
+          ],
+          "causalChain": [
+            {
+              "title": "央行逆回购操作",
+              "explanation": "通过6060亿元隔夜逆回购和12000亿元3个月买断式逆回购向市场注入流动性。",
+              "condition": "央行保持逆回购规模不低于上周水平"
+            },
+            {
+              "title": "资金面宽松",
+              "explanation": "流动性注入使银行体系可用资金增多，DR007利率下降。",
+              "condition": "逆回购资金被银行吸收并未被大规模提前兑付"
+            },
+            {
+              "title": "债券收益率窄幅震荡",
+              "explanation": "宽松的资金面抑制了收益率上行压力，导致10年期国债收益率维持在约1.68%。",
+              "condition": "市场对流动性需求保持平稳"
+            },
+            {
+              "title": "超长端结构性走强",
+              "explanation": "在整体收益率平稳的背景下，投资者倾向于配置更长期限以获取潜在收益，推动30年期收益率小幅下行。",
+              "condition": "超长端需求相对增加且供给未显著扩大"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "家庭水管系统",
+            "explanation": "央行的逆回购就像打开水龙头向家庭供水，水压（流动性）保持在合适水平时，家中用水（债券需求）不会出现剧烈波动；但如果水压突然下降，可能导致用水不便（收益率上行）。该类比适用于短期流动性管理，但不适用于长期结构性需求变化。"
+          },
+          "why": {
+            "cause": "央行逆回购注入流动性",
+            "mechanisms": [
+              "流动性宽松抑制短期利率上行",
+              "投资者在宽松环境下倾向配置更长期限",
+              "超长端需求提升导致收益率小幅下行"
+            ],
+            "result": "债市整体窄幅震荡，超长端表现相对强势"
+          },
+          "focus": [
+            "流动性供给",
+            "收益率曲线形态",
+            "超长端需求"
+          ],
+          "marketBet": [
+            "若逆回购继续投放，10年期国债收益率将维持在1.68%-1.70%区间",
+            "超长端收益率可能继续小幅下行",
+            "美国10年期国债收益率若继续下行，可能对国内长端收益率形成下行压力"
+          ],
+          "expectationGap": "市场普遍预期在节后流动性收紧会推高收益率，但实际央行通过逆回购保持了宽松，导致收益率未出现明显上行，形成预期与实际的差距。",
+          "counterView": "若国内信贷需求显著回升，资金面宽松的效果可能被需求吸收，收益率仍有上行空间。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "债券持有者的持有成本保持稳定，短期内收益率波动有限。",
+              "why": "流动性宽松抑制了收益率上行，持有期收益率变化小。",
+              "invalidation": "若央行逆回购规模大幅收缩导致流动性紧张，收益率可能快速上行，持有成本上升。",
+              "condition": "若央行逆回购规模大幅收缩导致流动性紧张，收益率可能快速上行，持有成本上升。"
+            },
+            {
+              "label": "消费",
+              "impact": "宽松的资金面有助于企业融资成本保持低位，间接支持消费信贷需求。",
+              "why": "企业融资成本低，可能通过降价或促销刺激终端消费。",
+              "invalidation": "若流动性紧缩导致企业融资成本上升，消费信贷需求可能受抑。",
+              "condition": "若流动性紧缩导致企业融资成本上升，消费信贷需求可能受抑。"
+            }
+          ],
+          "surface": "节后资金面平稳偏宽 超长端小幅结构性走强",
+          "next": [
+            "央行逆回购操作",
+            "资金面宽松",
+            "债券收益率窄幅震荡",
+            "超长端结构性走强"
+          ],
+          "condition": [
+            "央行保持逆回购规模不低于上周水平",
+            "逆回购资金被银行吸收并未被大规模提前兑付",
+            "市场对流动性需求保持平稳",
+            "超长端需求相对增加且供给未显著扩大"
+          ]
+        },
+        "watchItems": [
+          "央行下周逆回购投放规模",
+          "10年期国债收益率是否突破1.70%关口",
+          "美国10年期国债发行规模与收益率走势",
+          "国内制造业PMI后续表现"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "e05bf81fbff1bfe7dc200b33f0305eda1b38d20caea795c516dc086904de9987",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-10-12T06:48:46.433Z",
+        "state": "approved"
       }
     },
     {
@@ -1227,7 +1862,7 @@
       "originalTitle": "From BJ’s to Lululemon, retailers are trimming assortments to boost business",
       "originalSummary": "Retail brands are shrinking assortments to get back to healthy growth, while box stores are culling products to better curate offerings and stabilize business.",
       "publishedAt": "2026-10-11T17:08:30.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "8760a35241c6e6daa019",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -1270,7 +1905,7 @@
         "characterCount": 236,
         "sha256": "3a864e2316fb53b5d7a46ced9cd044870d2056cae40034c0106b2fdfbb349c3a",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/from-bjs-to-lululemon-retailers-are-trimming-assortments.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T13:40:22.083Z",
@@ -1288,7 +1923,7 @@
       "originalTitle": "Why China is importing a record amount of gold — and what it means for prices",
       "originalSummary": "Beijing’s push to diversify away from the dollar and Chinese households’ search for a safe place to put their savings has fueled China’s record gold buying.",
       "publishedAt": "2026-10-12T00:51:10.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "a70d7f25645839d32044",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1325,7 +1960,7 @@
         "characterCount": 234,
         "sha256": "9d6f255f9444a6964091bed7625449764849a9d9e52431a9faa5961dfefa6199",
         "sourceUrl": "https://www.cnbc.com/2026/10/12/china-gold-buying-interest-rate-.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -1343,7 +1978,7 @@
       "originalTitle": "Plenty is working against this market. Here's why I'm staying invested anyway",
       "originalSummary": "The fact is, I don't have a strong case for owning stocks at the moment.",
       "publishedAt": "2026-10-12T00:23:07.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "cbe801589a75a1e25861",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1388,7 +2023,7 @@
       "originalLanguage": "zh",
       "originalTitle": "【五大信披媒体精华摘要】10月12日",
       "publishedAt": "2026-10-12T00:16:04.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "847b1aace39d7fa7aa44",
       "verificationStatus": "verified",
       "titleZh": "【五大信披媒体精华摘要】10月12日",
@@ -1433,7 +2068,7 @@
       "originalTitle": "Watch: Endangered orangutans released back into the wild after Borneo fires",
       "originalSummary": "The critically endangered apes were rescued from intense wildfires that destroyed their habitat in August and September.",
       "publishedAt": "2026-10-11T23:48:25.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "4b16ee96ff0e37f0fa6b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1470,7 +2105,7 @@
         "characterCount": 196,
         "sha256": "ce59d26922d0fca5893c9488f4e8b974d44aa8709b934a707cb4037057b1f931",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/c6073z5rvrk3o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -1540,7 +2175,7 @@
       "originalTitle": "Iconic Australian band Powderfinger announce first tour in 17 years",
       "originalSummary": "The band, who announced their reunion last week, say they are \"absolutely ecstatic\" to be playing together again.",
       "publishedAt": "2026-10-11T23:33:24.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "89da8c13e5bc0c069ca5",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1577,7 +2212,7 @@
         "characterCount": 181,
         "sha256": "e421964f5081ff1e5bbb23ffbf7ac33b155596b879ee7512927374fb2b399ad5",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c680zyx8gkkjo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -1647,7 +2282,7 @@
       "originalTitle": "Roofing scammers con homeowners out of thousands of pounds",
       "originalSummary": "One in 10 scams reported to Citizens Advice relate to fraudsters charging for work not done, or done badly.",
       "publishedAt": "2026-10-11T23:19:49.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "bd06f5fe574799dd4fc2",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1684,7 +2319,7 @@
         "characterCount": 166,
         "sha256": "aba52d5b8686043f2b8f7a0a1aa2721bc1cee26fd1877f13e3f875b9754595be",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c6x29kydnzv0o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -1702,7 +2337,7 @@
       "originalTitle": "American ranchers wrestle with soaring costs - and their loyalty to Trump",
       "originalSummary": "Many farmers in states that backed the president say they are being hit from all sides, with the crucial midterm elections just weeks away.",
       "publishedAt": "2026-10-11T23:13:51.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "f76b9d17400e4ce46716",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1739,7 +2374,7 @@
         "characterCount": 213,
         "sha256": "9ec31423c18f0681d9732b2d8f9160abb44fbe1e4471643447676e1406f24e18",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c6d7q5z17gp5o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -1757,7 +2392,7 @@
       "originalTitle": "Mourners killed by Kenya police at ex-PM's national farewell not part of violence, BBC finds",
       "originalSummary": "After analysing 1,500 videos and images of the Raila Odinga memorial, Africa Eye finds that those killed were far from the scuffles.",
       "publishedAt": "2026-10-11T23:13:20.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "6321e3d961bca83d0e83",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1794,7 +2429,7 @@
         "characterCount": 225,
         "sha256": "826f959fa2fcbf8bb47c1c88f695e9553f72ea00ca468bb94a8f6a3df7d5ce03",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c962y4ld1d7do?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -1812,7 +2447,7 @@
       "originalTitle": "AI is less regulated than milk, says Microsoft president",
       "originalSummary": "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge.",
       "publishedAt": "2026-10-11T23:07:35.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "e5a7bfd76977cf9c7e5d",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1849,12 +2484,39 @@
         "characterCount": 159,
         "sha256": "31e2c797bda5cb50e9ad58aa217ce2ef594e752cdeccee6251b5017625dc02c5",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c6rmy7zmvx3lo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "AI is less regulated than milk, says Microsoft president",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6rmy7zmvx3lo?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-11T23:07:35.000Z",
+        "sourceHash": "31e2c797bda5cb50e9ad58aa217ce2ef594e752cdeccee6251b5017625dc02c5",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-12T06:48:46.433Z",
+        "title": "微软总裁称AI监管不如牛奶",
+        "summary": "微软总裁布拉德·史密斯表示，人工智能的监管力度甚至不及牛奶，并呼吁在全球范围内制定AI规则。他指出，英国在推动此类国际监管方面处于最佳位置。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "微软总裁布拉德·史密斯称，人工智能的监管不如牛奶。",
+            "quote": "AI is less regulated than milk, says Microsoft president"
+          },
+          {
+            "text": "他呼吁制定全球AI规则，并表示英国在此方面处于最佳位置。",
+            "quote": "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       }
     },
     {
@@ -1910,7 +2572,9 @@
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
+      },
+      "invalidationReason": "superseded-source-version",
+      "supersededBy": "999b5c1f612379b50203"
     },
     {
       "sourceId": "cnfin",
@@ -1966,7 +2630,7 @@
       "originalTitle": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
       "originalSummary": "The Saudi capital has been hit by multiple attacks from the Iran-backed Yemeni group over the weekend.",
       "publishedAt": "2026-10-11T22:45:58.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "7b9aa84410188f9a96de",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2003,7 +2667,7 @@
         "characterCount": 179,
         "sha256": "9a7199e8583fae66d49abbe399186898113a310e810883af260e2d836cad9f0a",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2021,7 +2685,7 @@
       "originalTitle": "Ukraine strikes Yandex data centre in third attack on Russian tech giant",
       "originalSummary": "It is the third time this week that Ukraine has targeted Russian tech giant Yandex, forcing the company to suspend its operations.",
       "publishedAt": "2026-10-11T14:38:10.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "a26393d2d161ff9b6e4d",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -2064,7 +2728,7 @@
         "characterCount": 203,
         "sha256": "f24cc39d902f23804ba71f7dc372ae77f45c8fa73dcb152c4d114dc7ef9a4b7b",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cw0k0g57mk3zo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2082,7 +2746,7 @@
       "originalTitle": "Trump Media advisor Katie Zacharia named White House press secretary",
       "originalSummary": "Trump named Katie Zacharia to take over as the next press secretary.",
       "publishedAt": "2026-10-11T22:16:40.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "10c7a19fe88bf724286a",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2114,6 +2778,61 @@
       "inferences": [],
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Zelensky backs Trump's 'energy ceasefire' but says Russia continues to hit power plants",
+      "originalSummary": "Ukraine's leader says he will support such a truce if Moscow does, after initially expressing surprise at Donald Trump's announcement.",
+      "publishedAt": "2026-10-11T21:36:40.000Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
+      "id": "4da02ab22045a7a44d38",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [
+        "行业"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "监管|zelenskybackstru|2026-10-11",
+      "detailStatus": "brief",
+      "facts": [
+        "Ukraine's leader says he will support such a truce if Moscow does, after initially expressing surprise at Donald Trump's announcement."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Zelensky backs Trump's 'energy ceasefire' but says Russia continues to hit power plants\nUkraine's leader says he will support such a truce if Moscow does, after initially expressing surprise at Donald Trump's announcement.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 222,
+        "sha256": "64f53a4aa8f43a94ca0e00085d3891e957c11aa1851648d26f65c3a9be13cf94",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-12T06:48:46.433Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-12T06:48:46.433Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
       }
@@ -2171,7 +2890,9 @@
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
+      },
+      "invalidationReason": "superseded-source-version",
+      "supersededBy": "4da02ab22045a7a44d38"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2183,7 +2904,7 @@
       "originalTitle": "Trump says he is 'going to look at' joining Saudi Arabia in the fight against Iran-backed Houthis after deadly airport strike",
       "originalSummary": "U.S. military involvement in the fight against the Houthis would stretch resources in the Middle East already committed to fighting Iran, analysts said.",
       "publishedAt": "2026-10-11T21:30:45.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "9d3c0938ed2e1ab9cfec",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2220,7 +2941,7 @@
         "characterCount": 278,
         "sha256": "8d5af10bb8caded7f372f2a7ccf872876d48a66b2430b0f0368b3054e935564b",
         "sourceUrl": "https://www.cnbc.com/2026/10/11/trump-saudi-arabia-iran-houthis.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-11T13:20:06.406Z",
@@ -2238,7 +2959,7 @@
       "originalTitle": "Dozens of gold prospectors killed in strikes on Egypt-Sudan border, rights group says",
       "originalSummary": "Neither Egypt nor Sudan has commented on the alleged strikes on an artisanal mining camp on Saturday.",
       "publishedAt": "2026-10-11T21:12:44.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "b45378563e602aeebfa9",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2275,7 +2996,7 @@
         "characterCount": 187,
         "sha256": "a2e5a38082c382535abdd261900ab6041dc917206b268583627c179898deb88f",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cqy43vrk8wv8o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2293,7 +3014,7 @@
       "originalTitle": "Watch: What's behind Trump's energy ceasefire claim?",
       "originalSummary": "The US president made the announcement in a social media post, which was an apparent surprise to Ukraine and Russia is yet to comment.",
       "publishedAt": "2026-10-11T20:55:02.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "c7e9d6d09bf9b78e884e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2330,7 +3051,7 @@
         "characterCount": 187,
         "sha256": "f68f1d22dbfd509ffae3b0088196c054b753fe4e810c7748aa6286547a93deb7",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cwvgde9vrdd9o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2348,7 +3069,7 @@
       "originalTitle": "Justice Department investigates TV networks as White House press-access fight escalates",
       "originalSummary": "The Justice Department said in a statement that it is examining whether the White House TV press pool violated the Sherman Act.",
       "publishedAt": "2026-10-11T20:18:38.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "eae4c9f1909802188ce8",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2385,7 +3106,7 @@
         "characterCount": 215,
         "sha256": "0a3dbfaabeeec0597d4eb2bbb927b6e21c34986776c6469735bbc6d799e9c0fd",
         "sourceUrl": "https://www.cnbc.com/2026/10/11/trump-doj-white-house-tv-press-pool-antitrust.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2403,7 +3124,7 @@
       "originalTitle": "Trump declares 'energy ceasefire' between Russia and Ukraine; Zelenskyy is waiting for details",
       "originalSummary": "Ukrainian President Volodymyr Zelenskyy said he is waiting on details from Washington.",
       "publishedAt": "2026-10-11T19:33:51.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "7a715d6f39124b66acc1",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2440,7 +3161,7 @@
         "characterCount": 181,
         "sha256": "33ad56276da47b1648519cc42c7607fc006f5a24baac7548e477f5801532f863",
         "sourceUrl": "https://www.cnbc.com/2026/10/11/trump-energy-ceasefire-russia-ukraine-zelenskyy.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2458,7 +3179,7 @@
       "originalTitle": "Poland detains man suspected of planning assassination of PM Tusk",
       "originalSummary": "Police received credible information about possible attacks against Donald Tusk and his defence minister.",
       "publishedAt": "2026-10-11T17:27:24.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "7e308106d43094610ffb",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2495,7 +3216,7 @@
         "characterCount": 171,
         "sha256": "b95fe6a28a17503814e4dec3b5c4b0216f749e8d3b989ead7428ea7a4a0598a3",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c6n9rvynl5p5o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2513,7 +3234,7 @@
       "originalTitle": "Citroen revives the 2CV for an electric age",
       "originalSummary": "The French firm is reinventing the classic model as carmakers come under pressure from Chinese rivals.",
       "publishedAt": "2026-10-11T17:00:05.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "30abf91763c9f4bb6e5e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2550,7 +3271,7 @@
         "characterCount": 146,
         "sha256": "9197a05426f7214bbdf37a66f2acf743edfb6c883d0442df4e3991a4ab7affe7",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c620r33plgppo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2568,7 +3289,7 @@
       "originalTitle": "Riyadh airport attacks another dangerous moment in already tense conflict",
       "originalSummary": "While the physical damage from Houthi attacks can be quickly repaired, the Saudi reputation for stability is taking a battering.",
       "publishedAt": "2026-10-11T15:32:32.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "381d01992a2ecdc99669",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2605,7 +3326,7 @@
         "characterCount": 202,
         "sha256": "ac845fe76f7d50a92f22d7023e122f6bd6fd45a3abfab7aa0f06ff64fe1e4d44",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cr4g1pwxxlq1o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2623,7 +3344,7 @@
       "originalTitle": "Children among 139 dead after boat capsizes off Djibouti, UN says",
       "originalSummary": "The boat was travelling from Djibouti to Yemen with 305 people on board, when it capsized near the port town of Obock on Thursday night.",
       "publishedAt": "2026-10-11T15:32:23.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "82d442ff80a0f99c9e27",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2660,7 +3381,7 @@
         "characterCount": 202,
         "sha256": "10a6e78285c7f1e807b9d7254280b6f37ca344eebceeee8b53164b924108fe0f",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cwy7lxx60dg5o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2678,7 +3399,7 @@
       "originalTitle": "Poland stabbings driven by online glorification of violence, Tusk says",
       "originalSummary": "The PM was speaking after violent attacks at Polish schools this week left one dead and others injured.",
       "publishedAt": "2026-10-11T15:18:52.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "af9e8329f8aa0c80ac22",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2715,7 +3436,7 @@
         "characterCount": 174,
         "sha256": "5aed255e451337cf671a0d6fefe41224c2332122d80e66ae6c4a8533e0792b65",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/ckp8gyd65z2go?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2733,7 +3454,7 @@
       "originalTitle": "AI’s quiet safety gatekeepers are stepping into the spotlight",
       "originalSummary": "The intensifying AI safety debate is bringing a small group of third-party evaluators into the center of a multitrillion-dollar industry.",
       "publishedAt": "2026-10-11T14:08:44.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "a10b787cba9181017fa5",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2770,7 +3491,7 @@
         "characterCount": 199,
         "sha256": "8b2ec38855cc65943f270132919cd31f0522b33618796598ab0dc6e1bbe5d6ba",
         "sourceUrl": "https://www.cnbc.com/2026/10/11/ais-quiet-safety-gatekeepers-are-stepping-into-the-spotlight.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-11T13:20:06.406Z",
@@ -2788,7 +3509,7 @@
       "originalTitle": "Pope Leo to have surgery after lump found on lung",
       "originalSummary": "The 71-year-old pontiff said the nodule was identified \"at a very early stage\".",
       "publishedAt": "2026-10-11T13:38:55.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "d8b6cbfa2c1ae37ac863",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2834,7 +3555,7 @@
       "originalTitle": "AI is automating coding. So why are software developer job postings on the rise?",
       "originalSummary": "Software developer job postings are rebounding, led by senior and AI-focused roles, even as AI automates more coding and entry-level hiring weakens.",
       "publishedAt": "2026-10-11T13:30:01.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "4b69d19858ae01561d6b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2871,7 +3592,7 @@
         "characterCount": 229,
         "sha256": "b18a39591c2be5cee1fda3910fbb49b842aa992af9bfd13c710dca5c316a0dba",
         "sourceUrl": "https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -2889,7 +3610,7 @@
       "originalTitle": "NBA commissioner Adam Silver says league could introduce ‘smart ball’ technology as soon as next year",
       "originalSummary": "Commissioner Adam Silver says the NBA could begin using a new \"smart ball\" in games as soon as next year, potentially transforming how officials make calls.",
       "publishedAt": "2026-10-11T12:54:04.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "092c9bdd6ddf558da8ad",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2926,7 +3647,7 @@
         "characterCount": 258,
         "sha256": "c9d5fd4b918050d5662a36f997c9241549bf4411d0bf4593e831978e03e2d347",
         "sourceUrl": "https://www.cnbc.com/2026/10/11/commissioner-adam-silver-nba-could-launch-smart-ball-tech-next-year.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-11T13:20:06.406Z",
@@ -3001,7 +3722,7 @@
       "originalTitle": "I’m a psychologist who studies couples: The No. 1 way to end a fight before it escalates—it works ‘almost immediately’",
       "originalSummary": "\"In my experience, nothing de-escalates a conflict faster,\" says psychologist Mark Travers. Why a \"partial yield\" works, and how to use it.",
       "publishedAt": "2026-10-11T12:48:01.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "308e713122eff6336ae9",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3038,7 +3759,7 @@
         "characterCount": 258,
         "sha256": "1ef5d38a66bd7eed4ba47e1f0d67687780c4eafd71af51d6ec25e1a7953729c1",
         "sourceUrl": "https://www.cnbc.com/make-it/2026/10/11/psychologist-couples-end-fight-before-escalates-partial-yield.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
@@ -3238,7 +3959,7 @@
       "originalTitle": "Buildings swept away as flash floods hit central Nepal",
       "originalSummary": "A flash flood at the Budhi Gandaki River has swept away several buildings and bridges, two months after catastrophic floods hit the country.",
       "publishedAt": "2026-10-11T10:34:02.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "d4e29f0683456a1a8a30",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3275,7 +3996,7 @@
         "characterCount": 195,
         "sha256": "142fc10e49a007677a2b70a26bd3e9a3955f64d585edf7feafd493e68f2c739d",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cwzrdnljedx0o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-11T13:20:06.406Z",
@@ -3444,7 +4165,10 @@
       },
       "invalidationReason": "superseded-source-version",
       "supersededBy": "f91ae80fa2a9454f2e34"
-    },
+    }
+  ],
+  "continuing": [],
+  "retainedDetails": [
     {
       "sourceId": "bbc-business",
       "sourceName": "BBC News · 财经",
@@ -3455,7 +4179,7 @@
       "originalTitle": "Charities and businesses wrestle with diesel cost",
       "originalSummary": "Cancer charity Daft as a Brush and Teesside Minibus Hire say they are struggling with pump prices.",
       "publishedAt": "2026-10-11T06:23:27.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "0f15f6381488414c1a5b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3492,7 +4216,7 @@
         "characterCount": 148,
         "sha256": "ff28f8f0d75c71a0355386768af8e1308450fbf62d150991191170435429bf60",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c5x2vn4dzz08o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -3526,10 +4250,7 @@
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
       }
-    }
-  ],
-  "continuing": [],
-  "retainedDetails": [
+    },
     {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
@@ -3633,92 +4354,6 @@
       },
       "queue": {
         "firstSeenAt": "2026-10-11T08:49:16.594Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
-      "originalLanguage": "en",
-      "originalTitle": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
-      "originalSummary": "As retailers turn to AI tools to streamline operations, experts warn that collecting more detailed consumer data increases the risk of personalized pricing.",
-      "publishedAt": "2026-10-11T05:00:01.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
-      "id": "a4e5951943f93ca6fb01",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [
-        "监管"
-      ],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "监管|aimaychangethepr|2026-10-11",
-      "detailStatus": "brief",
-      "facts": [
-        "As retailers turn to AI tools to streamline operations, experts warn that collecting more detailed consumer data increases the risk of personalized pricing."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "AI may change the price of your Big Mac and groceries — what this means for shoppers\nAs retailers turn to AI tools to streamline operations, experts warn that collecting more detailed consumer data increases the risk of personalized pricing.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 241,
-        "sha256": "4afdc4e31723689e0785571ebbef4062ccb03272026eed2fca8d1ad2a3673180",
-        "sourceUrl": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
-      },
-      "factualSummary": {
-        "language": "zh",
-        "originalTitle": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
-        "sourceUrl": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
-        "publishedAt": "2026-10-11T05:00:01.000Z",
-        "sourceHash": "4afdc4e31723689e0785571ebbef4062ccb03272026eed2fca8d1ad2a3673180",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-11T13:20:06.406Z",
-        "title": "AI 可能影响巨无霸和杂货价格——对购物者的意义",
-        "summary": "随着零售商使用人工智能优化运营，专家指出，收集更详尽的消费者数据可能导致个性化定价，从而改变巨无霸和日常杂货的价格。",
-        "origin": "model",
-        "evidence": [
-          {
-            "text": "AI 可能改变巨无霸和杂货的价格。",
-            "quote": "AI may change the price of your Big Mac and groceries — what this means for shoppers"
-          },
-          {
-            "text": "零售商正使用 AI 工具来简化运营，专家对此发出警告。",
-            "quote": "As retailers turn to AI tools to streamline operations, experts warn that collecting more detailed consumer data"
-          },
-          {
-            "text": "收集更详细的消费者数据会增加个性化定价的风险。",
-            "quote": "that collecting more detailed consumer data increases the risk of personalized pricing."
-          }
-        ],
-        "review": {
-          "approved": true,
-          "model": "openai/gpt-oss-20b"
-        }
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-11T13:20:06.406Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
       }
@@ -4259,7 +4894,7 @@
       "originalTitle": "Inside the room: What it was like to be with Blackpink's Lisa as race scandal erupted",
       "originalSummary": "Film-maker Sue Kim talks about having unprecedented access to K-Pop idol Lisa Manobal at her most candid.",
       "publishedAt": "2026-10-10T23:31:35.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "8788aaafdd6475725ee0",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4296,7 +4931,7 @@
         "characterCount": 191,
         "sha256": "33f99ea365148947face4719326e8abec2900ba32a9049dff6683005e68b0a10",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cjzxl56q30k7o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-11T01:52:47.974Z",
@@ -4367,9 +5002,9 @@
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/c680zlny0gk4o?at_medium=RSS&at_campaign=rss",
       "originalLanguage": "en",
       "originalTitle": "Young men live in fear of being snatched off the streets and sold to Myanmar's army",
-      "originalSummary": "A desperate junta is in a war of attrition against ethnic militias and and civilian resistance.",
+      "originalSummary": "A desperate junta is in a war of attrition against ethnic militias and civilian resistance.",
       "publishedAt": "2026-10-10T22:13:08.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "59fe62cd2764f693b341",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4395,21 +5030,21 @@
       "clusterId": "货币政策|youngmenliveinfe|2026-10-10",
       "detailStatus": "brief",
       "facts": [
-        "A desperate junta is in a war of attrition against ethnic militias and and civilian resistance."
+        "A desperate junta is in a war of attrition against ethnic militias and civilian resistance."
       ],
       "expectations": [],
       "inferences": [],
       "article": {
         "status": "summary",
-        "text": "Young men live in fear of being snatched off the streets and sold to Myanmar's army\nA desperate junta is in a war of attrition against ethnic militias and and civilian resistance.",
+        "text": "Young men live in fear of being snatched off the streets and sold to Myanmar's army\nA desperate junta is in a war of attrition against ethnic militias and civilian resistance.",
         "reader": "publisher-feed-summary",
-        "characterCount": 179,
-        "sha256": "e559778bbcbf94b6619dd93389d29722dca357591aace86b5ea241b5451533d5",
+        "characterCount": 175,
+        "sha256": "581fb1cb176cdb2a7c25e146472e8e7b466355471fdffa357bf02802da056775",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c680zlny0gk4o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
-        "firstSeenAt": "2026-10-11T01:52:47.974Z",
+        "firstSeenAt": "2026-10-12T06:48:46.433Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
       }
@@ -4972,7 +5607,7 @@
       "originalTitle": "Nobel peace laureate says US sanctions on ICC 'unacceptable'",
       "originalSummary": "Navi Pillay says the Trump administrations' sweeping penalties on the international tribunal were \"unheard of\".",
       "publishedAt": "2026-10-10T15:23:47.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "e400bf7d80928d023b35",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5009,7 +5644,7 @@
         "characterCount": 172,
         "sha256": "cff0a58725b1d3ff335a2bfd0bc8fe971cb260737c5867589c335ba12bacfa1f",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cqkgjrpmr47vo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
@@ -5065,7 +5700,7 @@
       "originalTitle": "JPMorgan makes bullish call in fixed income space, suggests it's a once in a generation opportunity",
       "originalSummary": "Why Priya Misra, a portfolio manager at the firm, is looking to take credit risk in high-quality companies.",
       "publishedAt": "2026-10-10T15:00:01.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "60d3c0eafa07c48c821e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5102,7 +5737,7 @@
         "characterCount": 207,
         "sha256": "124d8220ce8a5194e2f49105b384306bb73dc8ae29d15e2444a536b436e4125f",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/jpmorgan-sees-once-in-a-generation-opportunity-in-fixed-income-space.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T18:34:49.419Z",
@@ -5230,7 +5865,7 @@
       "originalTitle": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
       "originalSummary": "Ukraine's president sharply criticised the move, calling it an \"investment in war that must be ended, not prolonged\".",
       "publishedAt": "2026-10-10T14:24:14.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "7ea0cae0e70813540d17",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -5273,7 +5908,7 @@
         "characterCount": 194,
         "sha256": "5b89ff31940680d962cdf27e7c6f6aff74abfb9a8a4ba92de5d0a177ef99d66d",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T18:34:49.419Z",
@@ -5357,7 +5992,7 @@
       "originalTitle": "Vance says Microsoft replaced laid-off workers with foreign hires. Here’s what the visa data shows",
       "originalSummary": "The administration barred Microsoft and seven other firms from sponsoring green cards over claims they favor foreign workers. Here's what the visa data shows.",
       "publishedAt": "2026-10-10T14:22:23.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "ef31479d49456c1c9440",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5394,7 +6029,7 @@
         "characterCount": 257,
         "sha256": "20a952b43510e515c3664afe6e1cf2bd0ba37a360d026296563079676286a54d",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/vance-microsoft-h1b-layoffs-visa-data.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T14:43:25.083Z",
@@ -5469,7 +6104,7 @@
       "originalTitle": "Why have hundreds of 'cockroach' protesters been detained in Delhi",
       "originalSummary": "Thousands of security personnel were deployed in Delhi ahead of the Gen-Z led Cockroach Janta Party protest on Saturday calling for electoral reforms.",
       "publishedAt": "2026-10-10T14:13:13.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "aa7f70f8772f2e1a147a",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5506,7 +6141,7 @@
         "characterCount": 217,
         "sha256": "e73e0f7b3918f4b52bacf60f4d5110955cabe6e9e90620b9f8a72560cd659234",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cqwy7p2y20gxo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-11T01:52:47.974Z",
@@ -5524,7 +6159,7 @@
       "originalTitle": "How de-extincting dire wolves and woolly mammoths may extend human life",
       "originalSummary": "Colossal Biosciences CEO Ben Lamm says bringing extinct species back can contribute to conservation, healthcare and developmental biology.",
       "publishedAt": "2026-10-10T14:00:01.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "aa0eed570d5e46e2fdbb",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5561,7 +6196,7 @@
         "characterCount": 210,
         "sha256": "3ec7255c7c8dca2c7560f9f65a5428f287f45d66bd8b68cf7321c864b4cc70e4",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/de-extincting-dire-wolves-woolly-mammoths-help-humans.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -5606,7 +6241,7 @@
       "originalTitle": "Putin relayed Iran war proposal to Trump, Kremlin says",
       "originalSummary": "Putin's reported call with Trump regarding the Iran war comes on the heels of a deal for the U.S. to buy Russian diesel amid a surge in fuel prices.",
       "publishedAt": "2026-10-10T13:42:36.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "7a827bccb83df8977423",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5643,7 +6278,7 @@
         "characterCount": 203,
         "sha256": "a88d8781ec64e78b09dd0a6408fa9cce0bea9bcb9a3fcbf6983e4173031a5563",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/putin-trump-iran-war-russia-diesel.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T14:43:25.083Z",
@@ -5661,7 +6296,7 @@
       "originalTitle": "Pokémon card values are soaring. What collectors should know before buying or selling",
       "originalSummary": "Pokémon card values are surging. Learn how grading, scarcity, recent sales and counterfeits can affect what collectors pay.",
       "publishedAt": "2026-10-10T13:30:02.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "833e30baad60169eb480",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5698,7 +6333,7 @@
         "characterCount": 209,
         "sha256": "3fe744b7d3b686b8f00adfad822523afcb39f651e3db56d8818c2748c8490ad8",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/pokemon-card-values-grading-guide.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T18:34:49.419Z",
@@ -5823,7 +6458,7 @@
       "originalTitle": "How Supreme Court justices are leaning in major 401(k) case over private funds and underperformance",
       "originalSummary": "The Supreme Court is weighing an Intel 401(k) case as employers await new Labor Department rules on private investments in retirement plans.",
       "publishedAt": "2026-10-10T13:00:01.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "a06609aa7b3c8bb70129",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5860,7 +6495,7 @@
         "characterCount": 240,
         "sha256": "30f7f82390204ab320dcfd9f4cf8458fa62f27b900bfe7dd1d8f05c01ea250ff",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/supreme-court-case-401k-private-funds-intel.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T13:40:22.083Z",
@@ -6128,7 +6763,7 @@
       "originalTitle": "Buffett's 'trips down YouTube rabbit hole' revealed",
       "originalSummary": "Warren Buffett watches CNBC in the morning, but nearly every evening he \"can't get enough\" of watching YouTube clips while sitting on a recliner in front of an \"enormous\" television in his Omaha home, reports The Wall Street Journal.",
       "publishedAt": "2026-10-10T12:01:16.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "520b2bca2c0ff8873a25",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6165,7 +6800,7 @@
         "characterCount": 285,
         "sha256": "db8af31af717820132249de6dcde8e924e614e224a87a5fe17d8b57158c44ea1",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/buffetts-trips-down-youtube-rabbit-hole-revealed.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T13:40:22.083Z",
@@ -6183,7 +6818,7 @@
       "originalTitle": "Hollywood takes on Zuckerberg, Musk and Altman amid widespread anxiety over AI",
       "originalSummary": "New films about Zuckerberg, Musk, Altman and AI arrive as public concern about the technology and its leaders rises.",
       "publishedAt": "2026-10-10T12:00:01.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "761cb0c51a38cfebb6bc",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6220,7 +6855,7 @@
         "characterCount": 195,
         "sha256": "7091dc6838fee8c283d05afca140c98cd5e69454b76476d74965011f16d97163",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/ai-movies-tech-ceos-hollywood.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -6265,7 +6900,7 @@
       "originalTitle": "秘书长强烈谴责胡塞武装袭击利雅得机场致12人死亡数百人受伤",
       "originalSummary": "秘书长古特雷斯周六晚就沙特阿拉伯首都利雅得遭袭事件发表声明。他对这次针对平民和民用基础设施的致命袭击表示“深感震惊”，并予以“强烈谴责”。",
       "publishedAt": "2026-10-10T12:00:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "ce03113de6a87349fc5c",
       "verificationStatus": "official",
       "titleZh": "秘书长强烈谴责胡塞武装袭击利雅得机场致12人死亡数百人受伤",
@@ -6313,7 +6948,7 @@
       "originalTitle": "联合国人权高专办关注印度德里抗议期间发生大规模拘留事件",
       "originalSummary": "联合国人权事务高级专员办事处周六对印度首都新德里大规模抗议活动前后发生的拘留行动表示关切，呼吁印度当局充分保障和平集会权利，立即释放所有遭任意拘留人员。",
       "publishedAt": "2026-10-10T12:00:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "6c54bfa5c53b6274746d",
       "verificationStatus": "official",
       "titleZh": "联合国人权高专办关注印度德里抗议期间发生大规模拘留事件",
@@ -6361,7 +6996,7 @@
       "originalTitle": "【子午播报】2026年10月10日",
       "originalSummary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，前联合国人权高专皮莱获诺贝尔和平奖；世卫组织敦促俄罗斯就疑似肺鼠疫事件提供更多信息；子午聚焦：从赛场到联合国，郑钦文的联合国妇女署总部之行。",
       "publishedAt": "2026-10-10T12:00:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "a9021ceb3cebdf9a019f",
       "verificationStatus": "official",
       "titleZh": "【子午播报】2026年10月10日",
@@ -6400,7 +7035,7 @@
         "characterCount": 126,
         "sha256": "0dc2ecbb07a5cdbc1c879e47ea2b5b4ccd39792d8679b132dd64912e7851e37f",
         "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1142979",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -6418,7 +7053,7 @@
       "originalTitle": "Giving a dam: Cultivating peace in Côte d’Ivoire",
       "originalSummary": "Adam Ouattara and Makongo Traoré have four children and a home on the edge of Torla village in Côte d’Ivoire. He herds cattle. She grows vegetables on a small plot nearby. For years, the dry season pitted their two livelihoods against each other.",
       "publishedAt": "2026-10-10T12:00:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "ac07870b0dab2d379842",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -6455,7 +7090,7 @@
         "characterCount": 295,
         "sha256": "882e8ff855789add30129b3c7f0eec47b897b66ad29c765b04f244c95e647057",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168568",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -6473,7 +7108,7 @@
       "originalTitle": "India: UN rights office urges release of ‘arbitrarily detained’ protesters",
       "originalSummary": "The UN human rights office (OHCHR) has voiced concern over reports of mass detentions in India of demonstrators, protest leaders, civil society members, lawyers and journalists, before and during large-scale protests in Delhi on Saturday.",
       "publishedAt": "2026-10-10T12:00:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "27dce30dce29cd46ba42",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -6510,7 +7145,7 @@
         "characterCount": 313,
         "sha256": "e2ba3202bbe29ead5e997e14208bf5515df6bb004c43ddbe54aeb1419ac795a3",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168571",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -6528,7 +7163,7 @@
       "originalTitle": "In the Mekong Delta, a push to grow food with saltwater",
       "originalSummary": "For generations, farming in Viet Nam’s Mekong Delta has depended on a delicate bargain. The river flooded, retreated and flooded again, carrying freshwater and sediment across a flat landscape whose vast fields helped turn the country into one of the world’s leading rice exporters.&nbsp;",
       "publishedAt": "2026-10-10T12:00:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "37782d285efee0bfd0cc",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -6565,7 +7200,7 @@
         "characterCount": 344,
         "sha256": "46a1fb869075ce709418d1d1d4d9bc1489760b97b469f9a19f4314b71a6a8a7e",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168545",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -6583,7 +7218,7 @@
       "originalTitle": "UN chief ‘gravely concerned’ by renewed fighting in northern Ethiopia, warns against escalation",
       "originalSummary": "UN Secretary-General António Guterres has called for an immediate end to the renewed fighting in northern Ethiopia, saying he is deeply worried by reports that Eritrean forces are present in the country.",
       "publishedAt": "2026-10-10T12:00:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "84ff1334005de0ecd268",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -6620,7 +7255,7 @@
         "characterCount": 299,
         "sha256": "5e3c105823e5be62c30b3cfe856dbb5a72825ac4a5a299617027879cc59fa4cf",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168570",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -6740,7 +7375,7 @@
       "originalTitle": "Money Box",
       "originalSummary": "What age will you get your state pension?",
       "publishedAt": "2026-10-10T11:30:00.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "61bf3ebcc24a31fb27d7",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6838,7 +7473,7 @@
       "originalTitle": "Why Japan's 7-Eleven store closures in India don’t signal an exit",
       "originalSummary": "7-Eleven store closures point to a reset of its operations in India, not to an exit.",
       "publishedAt": "2026-10-10T11:21:05.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "d0aa4218f707267b349b",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6875,7 +7510,7 @@
         "characterCount": 150,
         "sha256": "eb5c2e84835ef62ca4e7aae30dbf4e5a5d46d9ba58c6e5751b3561480784bacc",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/7-eleven-india-japan-reliance.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-12T05:54:25.169Z",
@@ -6893,7 +7528,7 @@
       "originalTitle": "Nvidia GPUs are everywhere. Here are the ways companies are accessing them",
       "originalSummary": "One industry researcher identified over 300 neoclouds that can provide GPU capacity, up about 55% in less than a year.",
       "publishedAt": "2026-10-10T11:00:01.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "c17fc07d54eb3e3e4e43",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6930,7 +7565,7 @@
         "characterCount": 193,
         "sha256": "547814edd92e58643c04ca78affc6bcfdffd356c3059122107b4a30930cdd7cd",
         "sourceUrl": "https://www.cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-heres-how-companies-access-them.html",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T13:40:22.083Z",
@@ -7110,7 +7745,7 @@
       "originalTitle": "Public executions in the US stopped nearly a century ago - why are they resuming now?",
       "originalSummary": "The Pentagon says the execution of Fort Hood shooter Nidal Hasan will be livestreamed, but experts suggest officials are reading the country wrong.",
       "publishedAt": "2026-10-10T09:17:36.000Z",
-      "fetchedAt": "2026-10-12T05:54:25.169Z",
+      "fetchedAt": "2026-10-12T06:48:46.433Z",
       "id": "289724783dbdab5cd019",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -7147,7 +7782,7 @@
         "characterCount": 233,
         "sha256": "b0e2201ca2492dbf72c17856587c318707effe5a47e3acf78ad5790e8bec06b7",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c6kgq7rqdql7o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-12T05:54:25.169Z"
+        "checkedAt": "2026-10-12T06:48:46.433Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-10T06:37:30.697Z",
@@ -7216,13 +7851,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 25
+      "itemCount": 24
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 39
+      "itemCount": 40
     },
     {
       "id": "bis-press",
@@ -7240,33 +7875,28 @@
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 1,
+      "itemCount": 2,
       "originalSummaries": 0,
       "attempted": 2,
-      "generated": 1,
+      "generated": 2,
       "requests": 10,
-      "rejectionReasons": {
-        "summary-audit": 1
-      },
-      "error": "Provider JSON-generation failure"
+      "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "error",
-      "itemCount": 0,
-      "error": "Provider JSON-generation failure",
+      "status": "ok",
+      "itemCount": 1,
       "attempted": 2,
-      "rejected": 2,
-      "failures": 1,
+      "rejected": 1,
+      "failures": 0,
       "stages": {
         "evidence": 2,
         "analysis": 1,
-        "audit": 0
+        "audit": 1
       },
       "rejectionReasons": {
-        "impact-assessment": 1,
-        "audit": 1
+        "numbers": 1
       }
     }
   ],
