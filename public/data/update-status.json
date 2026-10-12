@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-12T13:45:29.259Z",
-  "lastSuccessfulAt": "2026-10-12T13:45:29.259Z",
+  "attemptedAt": "2026-10-12T14:09:29.043Z",
+  "lastSuccessfulAt": "2026-10-12T14:09:29.043Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T13:45:29.259Z"
+      "lastSuccessfulAt": "2026-10-12T14:09:29.043Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-12T13:45:29.259Z"
+      "lastSuccessfulAt": "2026-10-12T14:09:29.043Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T13:45:29.259Z"
+      "lastSuccessfulAt": "2026-10-12T14:09:29.043Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T13:45:29.259Z"
+      "lastSuccessfulAt": "2026-10-12T14:09:29.043Z"
     }
   ],
   "sourceHealth": [
@@ -91,7 +91,7 @@
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 42
+      "itemCount": 43
     },
     {
       "id": "bis-press",
@@ -170,7 +170,7 @@
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 42
+      "itemCount": 43
     },
     {
       "id": "news-bis-press",
@@ -188,8 +188,8 @@
       "id": "news-review-queue",
       "name": "复审队列诊断（新闻）",
       "status": "ok",
-      "itemCount": 4,
-      "withBody": 4,
+      "itemCount": 5,
+      "withBody": 5,
       "withoutBody": 0,
       "selectedId": "81f2d8bbb0fc4d744871",
       "selectedPublishedAt": "2026-10-11T23:18:45.000Z",
@@ -207,31 +207,32 @@
     {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "originalSummaries": 0,
+      "status": "ok",
+      "itemCount": 5,
+      "originalSummaries": 4,
       "attempted": 2,
-      "generated": 0,
+      "generated": 1,
       "requests": 9,
       "rejectionReasons": {
-        "paired-evidence": 2
+        "paired-evidence": 1
       }
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "ok",
-      "itemCount": 1,
+      "status": "error",
+      "itemCount": 0,
       "attempted": 2,
-      "rejected": 1,
+      "rejected": 2,
       "failures": 0,
       "stages": {
         "evidence": 2,
-        "analysis": 2,
-        "audit": 1
+        "analysis": 1,
+        "audit": 0
       },
       "rejectionReasons": {
-        "audit": 1
+        "audit": 1,
+        "language": 1
       }
     }
   ],
