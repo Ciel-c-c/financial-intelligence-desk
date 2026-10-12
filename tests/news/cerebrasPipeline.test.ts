@@ -7,12 +7,17 @@ const text='企业公布业务进展，并提醒盈利效果仍取决于订单�
 const impactAssessment=['投资','汇率','住房','工作','消费','企业经营'].map(label=>({label,score:label==='企业经营'?3:0,audience:label==='企业经营'?'firms':'none',region:'事件相关企业',triggerEvidence:label==='企业经营'?'企业公布业务进展':null,path:label==='企业经营'?['业务落实','采购变化','供应商订单变化']:[],invalidation:'若订单没有落实，影响不成立'}));
 const raw={sourceId:'cnfin',sourceName:'新华财经',sourceTier:'verified',originalTitle:'企业公布新的业务进展',originalLanguage:'zh',canonicalUrl:'https://www.cnfin.com/yw-lb/detail/20260917/4472000_1.html',sourceUrl:'https://www.cnfin.com/yw-lb/detail/20260917/4472000_1.html',publishedAt:now,fetchedAt:now,article:{status:'complete',reader:'cnfin-body',text,characterCount:text.length,sha256:articleHash(text),sourceUrl:'https://www.cnfin.com/yw-lb/detail/20260917/4472000_1.html',checkedAt:now}};
 function response(){return {language:'zh',title:'企业公布业务进展，盈利仍需观察',summary:'企业公布业务进展，订单落实与成本控制决定盈利效果。',excerpt:'报道未提供市场一致预期，不能判断是否超预期。',facts:[{text:'企业公布业务进展。',evidence:'企业公布业务进展'}],consensus:['常见机制：订单变化通过收入与成本传到盈利。'],inference:['条件性推演：订单落实可能增加收入。'],risks:['订单不能落实时，收入改善可能不成立。'],causalChain:[{title:'业务进展',explanation:'企业公布进展。',condition:'订单落实。'},{title:'收入可能变化',explanation:'订单转为收入。',condition:'交付完成。'},{title:'利润可能变化',explanation:'收入需要减去成本。',condition:'成本不抵消增长。'}],watchItems:['观察订单与利润。'],soWhat:structuredClone(businessSoWhat),political:null,impactAssessment};}
-async function run(output=response(),status=200,approved=true,provider='groq',waitImpl=async(_ms:number)=>{},analysisFacts=output.facts,requireSchema=false,input=raw,repairOutput=undefined){
+async function run(output=response(),status=200,approved=true,provider='groq',waitImpl=async(_ms:number)=>{},analysisFacts=output.facts,requireSchema=false,input=raw,repairOutput=undefined,observeRequest=undefined){
  const fetchImpl=async(url,init)=>{
   expect(url).toBe(provider==='groq'?'https://api.groq.com/openai/v1/chat/completions':'https://api.cerebras.ai/v1/chat/completions');
   const sent=JSON.parse(init.body);
+  observeRequest?.(sent);
   if(provider==='groq') {expect(sent.model).toBe(sent.messages[0].content.startsWith('AUDIT_ONLY')?'openai/gpt-oss-20b':'openai/gpt-oss-120b');expect(sent.reasoning_effort).toBe('low');}
   if(requireSchema&&sent.response_format?.type!=='json_schema') return {ok:false,status:400};
+  if(requireSchema&&sent.response_format?.json_schema?.schema.properties.classification&&output.classification){
+   const properties=sent.response_format.json_schema.schema.properties.classification.properties;
+   if(Object.entries(output.classification).some(([key,values])=>values.length<(properties[key].minItems??0)))return {ok:false,status:400};
+  }
   expect(sent.messages[1].content).toContain(text);
   expect(sent.messages[1].content).not.toContain('test-secret');
   const audit={approved,facts:output.facts.map(()=>true),causalEdges:output.causalChain.slice(1).map(()=>true),personalImpacts:output.soWhat.personalImpact.map(()=>true),scenariosAreConditional:true,findings:[]};
@@ -21,6 +26,26 @@ async function run(output=response(),status=200,approved=true,provider='groq',wa
  };
  return buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[input]}],enrichmentOptions:{apiKey:'test-secret',fetchImpl,provider,waitImpl,nowMs:()=>0,maxSummaries:0}});
 }
+it('permits an audited analysis with genuinely unknown classifications through strict provider constraints',async()=>{
+ const output={...response(),classification:{analysisLevels:[],eventTypes:[],impactChannels:[],regions:[]}};
+ expect((await run(output,200,true,'groq',async()=>{},output.facts,true)).latest[0].editorial).toBeDefined();
+});
+it('sends bound evidence IDs rather than resolved quotations in a repair request',async()=>{
+ const output=response();output.summary='未经来源支持的收入增长99%。';let repairTrigger;
+ const result=await run(output,200,true,'groq',async()=>{},output.facts,false,raw,response(),sent=>{
+  if(sent.messages[0].content.startsWith('REPAIR_ONLY'))repairTrigger=JSON.parse(sent.messages[1].content).analysis.impactAssessment.find(a=>a.score>=2).triggerEvidence;
+ });
+ expect(result.latest[0].editorial).toBeDefined();expect(repairTrigger).toBe('T1');
+});
+it('identifies the narrative field with unsupported numbers without publishing generated text',async()=>{
+ const output=response();output.summary='未经来源支持的收入增长99%。';
+ const result=await run(output);expect(result.latest[0].analysisAttempt.rejection).toMatchObject({category:'numbers',fields:['summary']});
+ expect(JSON.stringify(result.latest[0].analysisAttempt.rejection)).not.toContain('99');
+});
+it('repairs a malformed non-array impact assessment rather than throwing out the recovery path',async()=>{
+ const output={...response(),impactAssessment:{}};
+ expect((await run(output,200,true,'groq',async()=>{},output.facts,false,raw,response())).latest[0].editorial).toBeDefined();
+});
 it('publishes audited summary-based analysis without claiming to have read the full body',async()=>{
  const result=await run(response(),200,true,'groq',async()=>{},response().facts,false,{...raw,article:undefined,originalSummary:text});
  expect(result.latest[0].editorial?.evidenceScope).toBe('summary');
