@@ -1,6 +1,12 @@
 import {expect,it} from 'vitest';
 import {buildNewsAcceptance} from '../../scripts/news/acceptance.mjs';
 import {prepareNewsEvidence} from '../../scripts/news/summary-evidence.mjs';
+it('does not count a retained English model summary as a Chinese translation',()=>{
+ const now='2026-10-12T09:00:00Z',title='World Bank jobs council urges employment support',summary='The World Bank jobs council urges employment support measures as the IMF warns artificial intelligence could affect young workers entering the labor market.';
+ const record=prepareNewsEvidence({id:'english-retained',sourceId:'cnbc-markets',sourceTier:'verified',canonicalUrl:'https://www.cnbc.com/2026/10/12/jobs-support.html',originalTitle:title,originalSummary:summary,originalLanguage:'en',publishedAt:now,fetchedAt:now});
+ record.factualSummary={language:'en',title,originalTitle:title,summary,sourceUrl:record.canonicalUrl,publishedAt:now,sourceHash:record.article.sha256,evidenceScope:'summary',reviewVersion:'factual-v1',checkedAt:now,origin:'model',evidence:[{text:'The World Bank jobs council urges employment support measures.',quote:'The World Bank jobs council urges employment support measures'}],review:{approved:true,model:'openai/gpt-oss-20b'}};
+ expect(buildNewsAcceptance({attemptedAt:now,latest:[record],status:'fresh',sourceHealth:[]},undefined).current.translated).toBe(0);
+});
 it('counts an audited Chinese-source body summary as Chinese coverage',()=>{
  const now='2026-10-10T08:00:00Z',title='企业发布业务进展',summary='企业发布业务进展，介绍当前订单落实与成本控制情况。报道强调后续盈利仍取决于交付和经营成本变化，不能把业务进展直接理解为所有相关股票都会上涨，还需要结合下一期收入和利润数据观察。';
  const record=prepareNewsEvidence({id:'cn-model-summary',sourceId:'cnfin',sourceTier:'verified',canonicalUrl:'https://www.cnfin.com/yw-lb/detail/20261010/4475000_1.html',originalTitle:title,originalSummary:summary,originalLanguage:'zh',publishedAt:now,fetchedAt:now});

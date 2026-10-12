@@ -68,10 +68,11 @@ function versionOf(snapshot) {
 
 async function runDefaultDatasets({ now, dataDir, dryRun }) {
   if (!dryRun) {
-    await Promise.allSettled([
+    const producerResults = await Promise.allSettled([
       updateSnapshots({ now }),
       updateNewsFeed({ now, outputPath: join(dataDir, 'news-feed.json'), statusPath: undefined }),
     ]);
+    if (producerResults.some(result => result.status === 'rejected')) throw new Error('Data producer failed; published snapshots were not replaced.');
   }
   const snapshots = Object.fromEntries(await Promise.all(DATASET_IDS.filter(id => id !== 'daily-brief').map(async id => [id, await readJson(join(dataDir, `${id}.json`))])));
   const news = snapshots['news-feed'];

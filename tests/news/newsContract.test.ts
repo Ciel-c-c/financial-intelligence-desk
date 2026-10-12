@@ -18,6 +18,13 @@ describe('news snapshot contract', () => {
     expect(validateNewsRecord(item)).toBe(true);
     expect(validateNewsSnapshot(snapshot)).toBe(true);
   });
+  it('allows unknown economic classification without fabricated tags but keeps region required', () => {
+    const unclassified = {...item, analysisLevels: [], eventTypes: [], impactChannels: []};
+    expect(validateNewsRecord(unclassified)).toBe(true);
+    expect(validateNewsSnapshot({...snapshot, latest: [unclassified]})).toBe(true);
+    expect(validateNewsRecord({...unclassified, impactChannels: ['unknown']})).toBe(false);
+    expect(validateNewsRecord({...unclassified, regions: []})).toBe(false);
+  });
   it('rejects unsafe, unverified, duplicated, and oversized data', () => {
     expect(validateNewsRecord({ ...item, canonicalUrl: 'javascript:alert(1)' })).toBe(false);
     expect(validateNewsRecord({ ...item, verificationStatus: 'unverified' })).toBe(false);
