@@ -1,5 +1,7 @@
+import {editorialLiquidityIssue} from './liquidityReasoning.mjs';
 export function isPublishableNews(item) {
   if(item.invalidationReason)return false;
+  if(editorialLiquidityIssue(item))return false;
   const {article,editorial}=item;
   if(!article||!editorial||!['complete','summary'].includes(article.status)||!/^[a-f0-9]{64}$/.test(article.sha256)) return false;
   const summaryEvidence=article.status==='summary'&&editorial.evidenceScope==='summary'&&article.reader==='publisher-feed-summary'&&(item.originalSummary?.trim().length??0)>=80&&article.text===item.originalTitle+'\n'+item.originalSummary?.trim();

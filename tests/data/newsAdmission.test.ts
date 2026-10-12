@@ -3,7 +3,19 @@ import { afterEach, expect,it,vi } from 'vitest';
 import reviewed from '../fixtures/reviewed-news.json';
 import { isPublishableNews,verifyNewsEvidence } from '../../src/data/newsAdmission';
 import type { LiveNewsItem } from '../../src/data/newsFeedTypes';
+import {needsReview} from '../../scripts/news/review-migration.mjs';
 const item=reviewed.items[0] as unknown as LiveNewsItem;
+const liquidityRecord=()=>{
+ const url='https://www.cnfin.com/yw-lb/detail/20261012/4479348_1.html';
+ return {...item,canonicalUrl:url,article:{...item.article!,text:undefined,reader:'cnfin-body',characterCount:200,sourceUrl:url},editorial:{...item.editorial!,generator:{review:'edge-audit-v4'},impactAssessment:Array.from({length:6},(_,label)=>({label})),evidence:{facts:[{text:'操作后净回笼。',evidence:'开展6060亿元隔夜逆回购和12000亿元买断式逆回购，当日净回笼4085亿元。'}]},item:{...item.editorial!.item,sourceUrl:url,causalChain:[{title:'央行逆回购操作',explanation:'开展6060亿元隔夜逆回购和12000亿元买断式逆回购。',condition:'操作持续'},{title:'资金面宽松',explanation:'流动性注入使银行体系可用资金增多。',condition:'需求稳定'},{title:'利率影响',explanation:'资金价格可能变化。',condition:'其他条件不变'}]}}} as any;
+};
+it('withholds a gross-to-net liquidity leap even when full publisher text is stripped',()=>{
+ const record=liquidityRecord();expect(isPublishableNews(record)).toBe(false);expect(needsReview(record)).toBe(true);
+});
+it('does not reject a conditional net-injection mechanism merely because the source also reports net withdrawal',()=>{
+ const record=liquidityRecord();record.editorial.item.causalChain[1].explanation='若计入到期后实现净投放，银行体系可用资金才可能增加；总操作额不等于净额。';
+ expect(isPublishableNews(record)).toBe(true);expect(needsReview(record)).toBe(false);
+});
 it('admits a hash-bound source summary and rejects a changed summary',async()=>{
  vi.stubGlobal('crypto',webcrypto);
  const summary='官方报道提供了事件的具体进展和当前情况，后续影响仍需结合政策落实、需求变化与企业经营数据观察。'.repeat(2);
