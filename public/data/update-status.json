@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-12T14:09:29.043Z",
-  "lastSuccessfulAt": "2026-10-12T14:09:29.043Z",
+  "attemptedAt": "2026-10-12T21:15:54.431Z",
+  "lastSuccessfulAt": "2026-10-12T21:15:54.431Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T14:09:29.043Z"
+      "lastSuccessfulAt": "2026-10-12T21:15:54.431Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-12T14:09:29.043Z"
+      "lastSuccessfulAt": "2026-10-12T21:15:54.431Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T14:09:29.043Z"
+      "lastSuccessfulAt": "2026-10-12T21:15:54.431Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T14:09:29.043Z"
+      "lastSuccessfulAt": "2026-10-12T21:15:54.431Z"
     }
   ],
   "sourceHealth": [
@@ -85,13 +85,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 23
+      "itemCount": 28
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 43
+      "itemCount": 44
     },
     {
       "id": "bis-press",
@@ -164,13 +164,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 23
+      "itemCount": 28
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 43
+      "itemCount": 44
     },
     {
       "id": "news-bis-press",
@@ -188,11 +188,11 @@
       "id": "news-review-queue",
       "name": "复审队列诊断（新闻）",
       "status": "ok",
-      "itemCount": 5,
-      "withBody": 5,
+      "itemCount": 4,
+      "withBody": 4,
       "withoutBody": 0,
-      "selectedId": "81f2d8bbb0fc4d744871",
-      "selectedPublishedAt": "2026-10-11T23:18:45.000Z",
+      "selectedId": "f3244a7fd5a5604f3b4b",
+      "selectedPublishedAt": "2026-10-12T15:51:30.000Z",
       "selectedIsCurrent": true
     },
     {
@@ -207,13 +207,14 @@
     {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
-      "status": "ok",
-      "itemCount": 5,
-      "originalSummaries": 4,
+      "status": "error",
+      "itemCount": 17,
+      "originalSummaries": 17,
       "attempted": 2,
-      "generated": 1,
+      "generated": 0,
       "requests": 9,
       "rejectionReasons": {
+        "summary-audit": 1,
         "paired-evidence": 1
       }
     },
@@ -227,12 +228,12 @@
       "failures": 0,
       "stages": {
         "evidence": 2,
-        "analysis": 1,
+        "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "audit": 1,
-        "language": 1
+        "impact-assessment": 1,
+        "unsupported-attribution": 1
       }
     }
   ],
