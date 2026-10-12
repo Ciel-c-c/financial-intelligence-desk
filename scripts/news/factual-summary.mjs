@@ -9,8 +9,8 @@ export async function buildFactualSummary(record,{policies,budget,modelOptions,n
  if(!a||record.invalidationReason||!isSourceAllowed(record,policies,now)||typeof a.text!=='string'||articleHash(a.text)!==a.sha256)return undefined;
  const base={language:'zh',originalTitle:record.originalTitle,sourceUrl:record.canonicalUrl,publishedAt:record.publishedAt,sourceHash:a.sha256,evidenceScope:a.status==='summary'?'summary':'full-body',reviewVersion:FACTUAL_REVIEW_VERSION,checkedAt:now};
  const policy=policies.find(p=>p.id===record.sourceId);
- if(record.originalLanguage==='zh'&&policy.summaryMode==='publisher'){
-  const candidate={...base,title:record.originalTitle,summary:record.originalSummary?.trim(),origin:'publisher-zh',evidence:[]};
+ if(['zh','en'].includes(record.originalLanguage)&&policy.summaryMode==='publisher'){
+  const candidate={...base,language:record.originalLanguage,title:record.originalTitle,summary:record.originalSummary?.trim(),origin:'publisher-'+record.originalLanguage,evidence:[]};
   if(validateFactualSummary(record,candidate,policies,now))return candidate;
  }
  if(!modelOptions.apiKey||budget.stopped||(budget.requests??0)>Math.min(12,budget.limit??12)-2||a.text.length<80||a.text.length>6000)return undefined;

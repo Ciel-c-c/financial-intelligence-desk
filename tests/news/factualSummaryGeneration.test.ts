@@ -36,6 +36,18 @@ it('does not use model requests for allowed original Chinese publisher summaries
  const input=prepareNewsEvidence({...raw,sourceId:'un-zh',sourceTier:'official',originalLanguage:'zh',originalTitle:'联合国发布经济发展报告',originalSummary:'联合国发布经济发展报告，介绍冲突与经济变化对家庭生活及就业的影响。报告强调公共服务和政策落实的重要性，后续改善仍需要结合当地条件判断，不能从单条新闻推断所有资产的涨跌。',canonicalUrl:'https://news.un.org/feed/view/zh/story/2026/10/1142960'});
  const budget={requests:0,limit:12,stopped:false};expect((await buildFactualSummary(input,{policies,budget,modelOptions:{}}))?.origin).toBe('publisher-zh');expect(budget.requests).toBe(0);
 });
+it('publishes permitted English RSS summaries without a translation dependency or model request',async()=>{
+ const input=prepareNewsEvidence({...raw,sourceId:'bbc-business',canonicalUrl:'https://www.bbc.co.uk/news/articles/abc'});
+ const budget={requests:0,limit:12,stopped:false};
+ const value=await buildFactualSummary(input,{policies,budget,modelOptions:{}});
+ expect(value).toMatchObject({origin:'publisher-en',language:'en',title:input.originalTitle,summary:input.originalSummary});expect(budget.requests).toBe(0);
+});
+it('does not publish unapproved English publisher text or headline-only feeds as a native summary',async()=>{
+ const budget={requests:0,limit:12,stopped:false};
+ expect(await buildFactualSummary(record,{policies,budget,modelOptions:{}})).toBeUndefined();
+ const short=prepareNewsEvidence({...raw,sourceId:'bbc-business',canonicalUrl:'https://www.bbc.co.uk/news/articles/abc',originalSummary:'Only a headline.'});
+ expect(await buildFactualSummary(short,{policies,budget,modelOptions:{}})).toBeUndefined();
+});
 it('does not start generation when only one request is left or the source is headline-only',async()=>{
  const budget={requests:11,limit:12,stopped:false};expect(await buildFactualSummary(record,{policies,budget,modelOptions:{apiKey:'test-secret'}})).toBeUndefined();expect(budget.requests).toBe(11);
  expect(await buildFactualSummary({...raw,originalSummary:undefined},{policies,budget:{requests:0,limit:12,stopped:false},modelOptions:{apiKey:'test-secret'}})).toBeUndefined();

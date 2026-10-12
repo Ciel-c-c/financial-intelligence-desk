@@ -7,6 +7,27 @@ const now='2026-10-09T14:00:00Z';
 const raw={id:'old-summary',sourceId:'un-zh',sourceName:'UN News',sourceTier:'official',originalLanguage:'zh',originalTitle:'联合国发布经济与就业报告',originalSummary:'联合国发布报告介绍冲突与经济变化对家庭生活及就业的影响。报告强调公共服务和政策落实的重要性，后续改善仍需要结合当地条件判断，不能从单条新闻推断所有资产的涨跌。报道没有提供具体的市场一致预期。',canonicalUrl:'https://news.un.org/feed/view/zh/story/2026/10/1142960',publishedAt:now,fetchedAt:now};
 const base=prepareNewsEvidence(raw);
 const old={...base,editorial:{originalTitle:raw.originalTitle,sourceBodyHash:base.article.sha256,language:'zh',generator:{review:'old-audit'},item:{id:raw.id,publishedAt:now,sourceUrl:raw.canonicalUrl,title:raw.originalTitle,summary:raw.originalSummary}}};
+it('reviews a current pending story before an older static baseline',async()=>{
+ const archiveInput={...raw,id:'archive',originalTitle:'历史报告',publishedAt:'2026-10-06T14:00:00Z',canonicalUrl:raw.canonicalUrl.replace('1142960','1142961')};
+ const archiveBody=prepareNewsEvidence(archiveInput),archive={...archiveBody,editorial:{...old.editorial,originalTitle:archiveInput.originalTitle,sourceBodyHash:archiveBody.article.sha256}};
+ const requested:string[]=[];
+ await buildNewsSnapshot({now,sourceResults:[{id:'un-zh',name:'UN News',ok:true,items:[raw]}],reviewedNews:[archive,old],enrichmentOptions:{apiKey:'test-secret',waitImpl:async()=>{},fetchImpl:async(_url,init)=>{
+  const request=JSON.parse(init.body);if(request.messages[0].content.startsWith('EVIDENCE_ONLY'))requested.push(JSON.parse(request.messages[1].content).title);
+  return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:'{}'}}]})};
+ }}});
+ expect(requested[0]).toBe(raw.originalTitle);
+});
+it('uses both available deep slots for two current pending reviews before a new analysis',async()=>{
+ const secondInput={...raw,id:'pending-two',originalTitle:'第二条今日待审核',canonicalUrl:raw.canonicalUrl.replace('1142960','1142961')};
+ const secondBody=prepareNewsEvidence(secondInput),second={...secondBody,editorial:{...old.editorial,originalTitle:secondInput.originalTitle,sourceBodyHash:secondBody.article.sha256}};
+ const fresh={...raw,id:'fresh',originalTitle:'今日新报道',canonicalUrl:raw.canonicalUrl.replace('1142960','1142962')};
+ const requested:string[]=[];
+ await buildNewsSnapshot({now,sourceResults:[{id:'un-zh',name:'UN News',ok:true,items:[raw,fresh]}],reviewedNews:[old,second],enrichmentOptions:{apiKey:'test-secret',waitImpl:async()=>{},fetchImpl:async(_url,init)=>{
+  const request=JSON.parse(init.body);if(request.messages[0].content.startsWith('EVIDENCE_ONLY'))requested.push(JSON.parse(request.messages[1].content).title);
+  return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:'{}'}}]})};
+ }}});
+ expect(requested).toEqual([raw.originalTitle,secondInput.originalTitle]);
+});
 it('publishes an independently audited factual summary before attempting a blocked deep review',async()=>{
  const input={...raw,id:'english-pending',sourceId:'cnbc-markets',sourceTier:'verified',originalLanguage:'en',originalTitle:'Data centre company cancels IPO',originalSummary:'The company cancelled its initial public offering because of recent market volatility and prevailing market conditions. No new revenue forecast was announced.',canonicalUrl:'https://www.cnbc.com/2026/10/09/ai-ipo.html'};
  const evidence=prepareNewsEvidence(input),pending={...evidence,editorial:{...old.editorial,originalTitle:input.originalTitle,sourceBodyHash:evidence.article.sha256}};
@@ -24,6 +45,8 @@ it('publishes an independently audited factual summary before attempting a block
  const snapshot=await buildNewsSnapshot({now,sourceResults:[{id:input.sourceId,name:'CNBC',ok:true,items:[input]}],reviewedNews:[pending],enrichmentOptions:{apiKey:'test-secret',waitImpl:async()=>{},fetchImpl}});
  const record=snapshot.latest.find(r=>r.id===input.id)!;
  expect(record.factualSummary?.title).toBe('数据中心企业取消上市');expect(stages[0]).toBe('SUMMARY_ONLY');expect(record.reviewMigration?.state).toBe('pending');
+ expect(snapshot.sourceHealth.find(h=>h.id==='review-queue')).toMatchObject({selectedId:'english-pending',selectedPublishedAt:now,selectedIsCurrent:true});
+ expect(JSON.stringify(snapshot.sourceHealth)).not.toContain('test-secret');
 });
 it('recognizes an old cache without granting the current audit version',()=>{
  expect(needsReview(old,EDITORIAL_REVIEW_VERSION)).toBe(true);

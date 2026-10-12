@@ -8,9 +8,10 @@ const item={id:'review',sourceId:'cnfin',originalTitle:'已核验报道',canonic
 it('restores a dynamic pending body omitted from public snapshots without exceeding two extra reads',async()=>{
  const now='2026-10-12T08:00:00Z',body='这是一篇完整的官方财经报道，说明事件事实与相关背景。'.repeat(8);
  const records=Array.from({length:4},(_,i)=>({...item,id:'pending-'+i,sourceTier:'verified',publishedAt:now,canonicalUrl:`https://www.cnfin.com/yw-lb/detail/20261012/${4479348+i}_1.html`,article:{...item.article,sha256:articleHash(body)},editorial:{sourceBodyHash:articleHash(body)}}));
- const calls:string[]=[];
- const result=await refreshReviewedNews(now,async url=>{calls.push(url);return {ok:true,url,text:async()=>`<h1>已核验报道</h1><div class="xhcj_detail_main"><p>${body}</p><p class="app-statement">声明</p>`};},[],{retainBody:true,pending:{latest:records},sourceResults:[]});
+ const calls:string[]=[],diagnostics:any={};
+ const result=await refreshReviewedNews(now,async url=>{calls.push(url);return {ok:true,url,text:async()=>`<h1>已核验报道</h1><div class="xhcj_detail_main"><p>${body}</p><p class="app-statement">声明</p>`};},[],{retainBody:true,pending:{latest:records},sourceResults:[],diagnostics});
  expect(calls).toHaveLength(2);expect(result).toHaveLength(2);expect(result[0].article.text).toBe(body);expect(result[0].publishedAt).toBe(now);
+ expect(diagnostics).toMatchObject({eligible:4,selected:['pending-0','pending-1'],restored:2,unavailable:0});expect(JSON.stringify(diagnostics)).not.toContain(body);
 });
 it('does not refetch a pending body already supplied by this run or a disabled source',async()=>{
  const now='2026-10-12T08:00:00Z',pending={...item,sourceTier:'verified',publishedAt:now};let calls=0;

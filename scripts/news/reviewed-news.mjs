@@ -4,7 +4,7 @@ import { articleHash,fetchFullArticle,toPublicEvidence } from './full-article.mj
 import { reviewChineseArticle } from './chinese-editorial.mjs';
 import {needsReview} from './review-migration.mjs';
 import {buildSourcePolicies,isSourceAllowed} from './source-policy.mjs';
-export async function refreshReviewedNews(now,fetchImpl=fetch,records,{retainBody=false,pending,sourceResults=[]}={}){
+export async function refreshReviewedNews(now,fetchImpl=fetch,records,{retainBody=false,pending,sourceResults=[],diagnostics}={}){
   const staticRecords=records??(await readJson('public/data/reviewed-news.json'))?.items??[];
   const freshBodies=new Set(sourceResults.filter(s=>s.ok).flatMap(s=>s.items??[]).filter(r=>typeof r.article?.text==='string').map(r=>r.canonicalUrl));
   const policies=buildSourcePolicies(newsSources,now);
@@ -14,6 +14,7 @@ export async function refreshReviewedNews(now,fetchImpl=fetch,records,{retainBod
       &&newsSources.some(s=>s.id===r.sourceId&&s.enabled)&&isSourceAllowed(r,policies,now)&&!freshBodies.has(r.canonicalUrl);
   }).sort((a,b)=>Date.parse(a.reviewMigration?.lastAttemptAt??'1970-01-01')-Date.parse(b.reviewMigration?.lastAttemptAt??'1970-01-01'));
   const extra=[...new Map(dynamic.map(r=>[r.id,r])).values()].slice(0,2);
+  const selected=new Set(extra.map(r=>r.id)),restored=new Set();
   const stored=[...new Map([...staticRecords,...extra].map(r=>[r.id,r])).values()];
   return Promise.all(stored.map(async item=>{
     if(!item.article||item.editorial?.sourceBodyHash!==item.article.sha256) return undefined;
@@ -29,8 +30,9 @@ export async function refreshReviewedNews(now,fetchImpl=fetch,records,{retainBod
       if(!confirmedFailure) return item;
       return {...item,fetchedAt:now,editorial:undefined,article:{status:'unreadable',reader:item.article.reader,sha256:'0'.repeat(64),sourceUrl:item.canonicalUrl,checkedAt:now},invalidationReason:confirmedFailure};
     }
+    if(selected.has(item.id))restored.add(item.id);
     const updated={...item,fetchedAt:now,article,editorial:article.sha256===item.article.sha256?item.editorial:undefined};
     const result=updated.editorial?updated:reviewChineseArticle(updated);
     return retainBody?result:toPublicEvidence(result);
-  })).then(items=>items.filter(Boolean));
+  })).then(items=>{if(diagnostics)Object.assign(diagnostics,{eligible:dynamic.length,selected:[...selected],restored:restored.size,unavailable:selected.size-restored.size});return items.filter(Boolean);});
 }

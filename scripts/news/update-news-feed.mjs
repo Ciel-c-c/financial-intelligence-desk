@@ -21,7 +21,7 @@ import {needsReview,reconcileReview,reconcileHistory} from './review-migration.m
 import {EDITORIAL_REVIEW_VERSION} from './editorial-audit.mjs';
 
 const defaultPath=resolve('public/data/news-feed.json');
-export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOptions={},reviewedNews=[]}){
+export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOptions={},reviewedNews=[],reviewDiagnostics}={}){
   const healthy=sourceResults.filter(result=>result.ok); const sourceHealth=sourceResults.map(result=>({id:result.id,name:result.name,status:result.ok?'ok':'error',itemCount:result.items.length,...(result.error?{error:result.error}:{})}));
   const prior=[...(previous?.latest??[]),...(previous?.continuing??[]),...(previous?.retainedDetails??[])];
   reviewedNews=reviewedNews.map(record=>reconcileReview(record,prior,now));
@@ -106,8 +106,12 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
    if(factualSummary){working[i]={...record,factualSummary};summaryGenerated++;}
    else if(!state.stopped&&!state.protocolFailure)working[i]={...record,queue:{...record.queue,summaryAttempt:(record.queue?.summaryAttempt??0)+1,summaryRejection}};
   }
-  const first=migrationCandidates()[0]??eligibleDeep()[0];if(first)await deep(first.index);
-  const second=eligibleDeep().find(({index})=>index!==first?.index)??migrationCandidates().find(({index})=>index!==first?.index);
+  const first=migrationCandidates().find(({record})=>current(record))??eligibleDeep()[0]??migrationCandidates()[0];
+  const pendingReviews=working.filter(r=>needsReview(r));
+  sourceHealth.push({id:'review-queue',name:'复审队列诊断',status:'ok',itemCount:pendingReviews.length,withBody:pendingReviews.filter(r=>typeof r.article?.text==='string').length,withoutBody:pendingReviews.filter(r=>typeof r.article?.text!=='string').length,selectedId:first?.record.id??null,selectedPublishedAt:first?.record.publishedAt??null,selectedIsCurrent:first?current(first.record):false});
+  if(reviewDiagnostics?.selected)sourceHealth.push({id:'review-body-recovery',name:'复审正文恢复',status:reviewDiagnostics.unavailable?'error':'ok',itemCount:reviewDiagnostics.restored,eligible:reviewDiagnostics.eligible,selected:reviewDiagnostics.selected,unavailable:reviewDiagnostics.unavailable});
+  if(first)await deep(first.index);
+  const second=migrationCandidates().find(({record,index})=>index!==first?.index&&current(record))??eligibleDeep().find(({index})=>index!==first?.index)??migrationCandidates().find(({index})=>index!==first?.index);
   if(second)await deep(second.index);
   const enriched=working.map(toPublicEvidence);
   sourceHealth.push({id:'groq-summary',name:'来源事实总结与中文整理',status:state.stopped||summaryAttempts>0&&summaryGenerated===0?'error':'ok',itemCount:originalSummaries+summaryGenerated,originalSummaries,attempted:summaryAttempts,generated:summaryGenerated,requests:state.requests,rejectionReasons:summaryRejections,...(state.reason?{error:state.reason}:{})});
@@ -117,7 +121,7 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
   const status=sourceResults.some(result=>!result.ok)?'delayed':'fresh'; return {schemaVersion:1,attemptedAt:now,lastSuccessfulAt:now,nextExpectedAt:nextNewsEdition(now),status,latest,continuing,retainedDetails,sourceHealth,...(status==='delayed'?{message:'部分新闻来源暂时异常，已发布其余可靠来源。'}:{})};
 }
 export async function updateNewsFeed({now=new Date().toISOString(),sourceResults,outputPath=defaultPath,statusPath=outputPath===defaultPath?resolve('public/data/update-status.json'):undefined,previous,enrichmentOptions}={}){
-  const old=previous??await readJson(outputPath); const results=sourceResults??await Promise.all(newsSources.filter(source=>source.enabled).map(source=>fetchNewsSource(source,now))); const reviewedNews=sourceResults?[]:await refreshReviewedNews(now,fetch,undefined,{retainBody:true,pending:old,sourceResults:results}); const options=enrichmentOptions??{apiKey:process.env.GROQ_API_KEY,provider:'groq',maxArticles:process.env.NEWS_MAX_ARTICLES_PER_RUN}; const candidate=await buildNewsSnapshot({now,sourceResults:results,previous:old,enrichmentOptions:options,reviewedNews}); if(!validateNewsSnapshot(candidate)) throw new Error('Generated news snapshot is invalid'); await writeJsonAtomic(outputPath,candidate);
+  const reviewDiagnostics={}; const old=previous??await readJson(outputPath); const results=sourceResults??await Promise.all(newsSources.filter(source=>source.enabled).map(source=>fetchNewsSource(source,now))); const reviewedNews=sourceResults?[]:await refreshReviewedNews(now,fetch,undefined,{retainBody:true,pending:old,sourceResults:results,diagnostics:reviewDiagnostics}); const options=enrichmentOptions??{apiKey:process.env.GROQ_API_KEY,provider:'groq',maxArticles:process.env.NEWS_MAX_ARTICLES_PER_RUN}; const candidate=await buildNewsSnapshot({now,sourceResults:results,previous:old,enrichmentOptions:options,reviewedNews,reviewDiagnostics}); if(!validateNewsSnapshot(candidate)) throw new Error('Generated news snapshot is invalid'); await writeJsonAtomic(outputPath,candidate);
   if(statusPath){const existing=await readJson(statusPath);const others=(existing?.datasets??[]).filter(dataset=>dataset.id!=='news-feed');const newsHealth=candidate.sourceHealth.map(source=>({...source,id:`news-${source.id}`,name:`${source.name}（新闻）`}));const oldHealth=(existing?.sourceHealth??[]).filter(source=>!source.id.startsWith('news-'));const status={schemaVersion:1,attemptedAt:now,lastSuccessfulAt:candidate.lastSuccessfulAt,status:candidate.status,datasets:[...others,{id:'news-feed',status:candidate.status,lastSuccessfulAt:candidate.lastSuccessfulAt}],sourceHealth:[...oldHealth,...newsHealth],...(candidate.message?{message:candidate.message}:{})};await writeJsonAtomic(statusPath,status);}
   return candidate;
 }

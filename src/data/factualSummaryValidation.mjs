@@ -21,7 +21,7 @@ export function validateFactualSummary(record,s,policies,now=new Date().toISOStr
  if(a.status==='summary'&&(a.reader!=='publisher-feed-summary'||a.text!==record.originalTitle+'\n'+record.originalSummary?.trim()||(record.originalSummary?.trim().length??0)<80)) return reject('source-summary-binding');
  const body=a.text;
  if(typeof body!=='string'&&!(a.reader==='cnfin-body'&&(a.characterCount??0)>=100))return reject('source-body');
- if(s.origin==='publisher-zh')return p.summaryMode==='publisher'&&record.originalLanguage==='zh'&&s.title===record.originalTitle&&s.summary===record.originalSummary?.trim()&&s.summary.length>=80||reject('publisher-policy-or-text');
+ if(['publisher-zh','publisher-en'].includes(s.origin))return p.summaryMode==='publisher'&&s.origin==='publisher-'+s.language&&s.language===record.originalLanguage&&s.title===record.originalTitle&&s.summary===record.originalSummary?.trim()&&s.summary.length>=80||reject('publisher-policy-or-text');
  if(s.origin!=='model'||s.review?.approved!==true||s.review.model!=='openai/gpt-oss-20b'||!Array.isArray(s.evidence)||!s.evidence.length||s.evidence.length>5)return reject('review-or-evidence-structure');
  const nums=value=>value.match(/\d+(?:[.,]\d+)*(?:%|％)?/g)??[];
  const paired=s.evidence.every(f=>valid(f.text)&&typeof f.quote==='string'&&f.quote.length>=6&&f.quote.length<=120

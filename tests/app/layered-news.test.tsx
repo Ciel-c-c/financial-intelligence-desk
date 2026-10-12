@@ -18,6 +18,15 @@ const item:any=prepareNewsEvidence(classifyNewsItem(normalizeNewsItem({sourceId:
 item.factualSummary={language:'zh',originalTitle:title,title,summary,sourceUrl:item.canonicalUrl,publishedAt:now,sourceHash:item.article.sha256,evidenceScope:'summary',reviewVersion:'factual-v1',checkedAt:now,origin:'publisher-zh',evidence:[]};
 beforeEach(()=>{vi.useFakeTimers();vi.setSystemTime(new Date(now));data.snapshot={schemaVersion:1,attemptedAt:now,lastSuccessfulAt:now,status:'fresh',latest:[item],continuing:[],retainedDetails:[],sourceHealth:[]};});
 afterEach(()=>{cleanup();vi.useRealTimers();});
+it('labels permitted native English summaries as source summaries, not English analyses',()=>{
+ const englishTitle='Company cancels IPO',englishSummary='The company cancelled its initial public offering because of market volatility. It did not announce a new revenue forecast.';
+ const r:any=prepareNewsEvidence(classifyNewsItem(normalizeNewsItem({sourceId:'bbc-business',sourceName:'BBC News',sourceTier:'verified',originalLanguage:'en',originalTitle:englishTitle,originalSummary:englishSummary,canonicalUrl:'https://www.bbc.co.uk/news/articles/abc',publishedAt:now,fetchedAt:now})));
+ r.factualSummary={language:'en',originalTitle:englishTitle,title:englishTitle,summary:englishSummary,sourceUrl:r.canonicalUrl,publishedAt:now,sourceHash:r.article.sha256,evidenceScope:'summary',reviewVersion:'factual-v1',checkedAt:now,origin:'publisher-en',evidence:[]};
+ render(<MemoryRouter><LiveNewsCard item={r}/></MemoryRouter>);
+ expect(screen.getByText(/英文来源摘要/)).toBeInTheDocument();
+ cleanup();render(<MemoryRouter><LiveNewsDetail item={r}/></MemoryRouter>);
+ expect(screen.getByText(englishSummary)).toBeInTheDocument();expect(screen.queryByText('所以呢？')).not.toBeInTheDocument();
+});
 it('shows the same independent summary and links to its existing detail route',()=>{
  render(<MemoryRouter><LiveNewsCard item={item}/><BriefStoryCard index={0} item={item} story={{id:item.id,title,publishedAt:now,sourceName:'UN News',sourceUrl:item.canonicalUrl}}/></MemoryRouter>);
  expect(screen.getByText(/查看来源总结/)).toBeInTheDocument();

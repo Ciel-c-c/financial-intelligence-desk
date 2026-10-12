@@ -12,6 +12,8 @@ import {newsSources} from './news/source-registry.mjs';
 import {buildNewsAcceptance} from './news/acceptance.mjs';
 import {reconcileMarketSummaries} from './site/market-close-summary.mjs';
 import {validateMarketOverview} from './site/market-pipeline.mjs';
+import {isPublishableNews} from '../src/data/newsEditorialValidation.mjs';
+import {economicNewsPriority} from './news/news-priority.mjs';
 
 const DATASET_IDS = ['news-feed', 'market-overview', 'sector-performance', 'global-situation', 'daily-brief'];
 export function selectBriefNews(news,now){
@@ -19,12 +21,12 @@ export function selectBriefNews(news,now){
   const age=Date.parse(now)-Date.parse(record.publishedAt),article=record.article,review=record.editorial,item=review?.item;
   if(age>=0&&age<=86400_000&&record.factualSummary&&validateFactualSummary(record,record.factualSummary,buildSourcePolicies(newsSources,now),now))return true;
   const summaryEvidence=article?.status==='summary'&&review?.evidenceScope==='summary'&&article.reader==='publisher-feed-summary'&&(record.originalSummary?.trim().length??0)>=80&&article.text===record.originalTitle+'\n'+record.originalSummary.trim()&&articleHash(article.text)===article.sha256;
-  return age>=0&&age<=86400_000&&(article?.status==='complete'||summaryEvidence)&&/^[a-f0-9]{64}$/.test(article.sha256)
+  return age>=0&&age<=86400_000&&isPublishableNews(record)&&(article?.status==='complete'||summaryEvidence)&&/^[a-f0-9]{64}$/.test(article.sha256)
    &&review?.sourceBodyHash===article.sha256&&review.originalTitle===record.originalTitle
    &&item?.id===record.id&&item.publishedAt===record.publishedAt&&item.sourceUrl===record.canonicalUrl&&article.sourceUrl===record.canonicalUrl
    &&(review.language==='en'?item.title===record.titleEn&&item.summary===record.summaryEn:item.title===record.titleZh&&item.summary===record.summaryZh)
    &&[item.facts,item.consensus,item.inference,item.risks,item.causalChain,review.watchItems].every(section=>Array.isArray(section)&&section.length>0);
- }).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,8);
+ }).sort((a,b)=>economicNewsPriority(b)-economicNewsPriority(a)||Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,8).map(record=>isPublishableNews(record)?record:{...record,editorial:undefined});
 }
 
 function latest(items, field) {
