@@ -1,28 +1,23 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-12T09:19:17.837Z",
-  "lastSuccessfulAt": "2026-10-12T09:19:17.837Z",
+  "attemptedAt": "2026-10-12T13:01:47.365Z",
+  "lastSuccessfulAt": "2026-10-12T13:01:47.365Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T09:19:17.837Z"
+      "lastSuccessfulAt": "2026-10-12T13:01:47.365Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-12T09:19:17.837Z"
+      "lastSuccessfulAt": "2026-10-12T13:01:47.365Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T09:19:17.837Z"
-    },
-    {
-      "id": "news-feed",
-      "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T09:19:17.837Z"
+      "lastSuccessfulAt": "2026-10-12T13:01:47.365Z"
     }
   ],
   "sourceHealth": [
@@ -55,7 +50,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "fed",
@@ -91,7 +86,7 @@
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 40
+      "itemCount": 42
     },
     {
       "id": "bis-press",
@@ -104,116 +99,6 @@
       "name": "U.S. Energy Information Administration",
       "status": "ok",
       "itemCount": 15
-    },
-    {
-      "id": "news-un-zh",
-      "name": "UN News（新闻）",
-      "status": "ok",
-      "itemCount": 30
-    },
-    {
-      "id": "news-cnbc-markets",
-      "name": "CNBC（新闻）",
-      "status": "ok",
-      "itemCount": 30
-    },
-    {
-      "id": "news-cnbc-business",
-      "name": "CNBC（新闻）",
-      "status": "ok",
-      "itemCount": 30
-    },
-    {
-      "id": "news-cnfin",
-      "name": "新华财经（新闻）",
-      "status": "ok",
-      "itemCount": 13
-    },
-    {
-      "id": "news-nbs-cn",
-      "name": "国家统计局（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "news-fed",
-      "name": "Federal Reserve（新闻）",
-      "status": "ok",
-      "itemCount": 20
-    },
-    {
-      "id": "news-ecb",
-      "name": "European Central Bank（新闻）",
-      "status": "ok",
-      "itemCount": 15
-    },
-    {
-      "id": "news-boj",
-      "name": "Bank of Japan（新闻）",
-      "status": "ok",
-      "itemCount": 47
-    },
-    {
-      "id": "news-un",
-      "name": "UN News（新闻）",
-      "status": "ok",
-      "itemCount": 30
-    },
-    {
-      "id": "news-bbc-world",
-      "name": "BBC News · 世界（新闻）",
-      "status": "ok",
-      "itemCount": 23
-    },
-    {
-      "id": "news-bbc-business",
-      "name": "BBC News · 财经（新闻）",
-      "status": "ok",
-      "itemCount": 40
-    },
-    {
-      "id": "news-bis-press",
-      "name": "Bank for International Settlements（新闻）",
-      "status": "ok",
-      "itemCount": 10
-    },
-    {
-      "id": "news-eia-energy",
-      "name": "U.S. Energy Information Administration（新闻）",
-      "status": "ok",
-      "itemCount": 15
-    },
-    {
-      "id": "news-groq-summary",
-      "name": "来源事实总结与中文整理（新闻）",
-      "status": "ok",
-      "itemCount": 1,
-      "originalSummaries": 0,
-      "attempted": 2,
-      "generated": 1,
-      "requests": 9,
-      "rejectionReasons": {
-        "summary-audit": 1
-      }
-    },
-    {
-      "id": "news-groq-editorial",
-      "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "ok",
-      "itemCount": 1,
-      "attempted": 2,
-      "rejected": 1,
-      "failures": 0,
-      "stages": {
-        "evidence": 2,
-        "analysis": 1,
-        "audit": 1
-      },
-      "rejectionReasons": {
-        "personal-impact": 1
-      }
     }
-  ],
-  "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
+  ]
 }
