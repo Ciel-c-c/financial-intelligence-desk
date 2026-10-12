@@ -1,23 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-12T13:01:47.365Z",
-  "lastSuccessfulAt": "2026-10-12T13:01:47.365Z",
+  "attemptedAt": "2026-10-12T13:18:10.034Z",
+  "lastSuccessfulAt": "2026-10-12T13:18:10.034Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T13:01:47.365Z"
+      "lastSuccessfulAt": "2026-10-12T13:18:10.034Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-12T13:01:47.365Z"
+      "lastSuccessfulAt": "2026-10-12T13:18:10.034Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-12T13:01:47.365Z"
+      "lastSuccessfulAt": "2026-10-12T13:18:10.034Z"
+    },
+    {
+      "id": "news-feed",
+      "status": "delayed",
+      "lastSuccessfulAt": "2026-10-12T13:18:10.034Z"
     }
   ],
   "sourceHealth": [
@@ -99,6 +104,142 @@
       "name": "U.S. Energy Information Administration",
       "status": "ok",
       "itemCount": 15
+    },
+    {
+      "id": "news-un-zh",
+      "name": "UN News（新闻）",
+      "status": "ok",
+      "itemCount": 30
+    },
+    {
+      "id": "news-cnbc-markets",
+      "name": "CNBC（新闻）",
+      "status": "ok",
+      "itemCount": 30
+    },
+    {
+      "id": "news-cnbc-business",
+      "name": "CNBC（新闻）",
+      "status": "ok",
+      "itemCount": 30
+    },
+    {
+      "id": "news-cnfin",
+      "name": "新华财经（新闻）",
+      "status": "ok",
+      "itemCount": 13
+    },
+    {
+      "id": "news-nbs-cn",
+      "name": "国家统计局（新闻）",
+      "status": "error",
+      "itemCount": 0,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "news-fed",
+      "name": "Federal Reserve（新闻）",
+      "status": "ok",
+      "itemCount": 20
+    },
+    {
+      "id": "news-ecb",
+      "name": "European Central Bank（新闻）",
+      "status": "ok",
+      "itemCount": 15
+    },
+    {
+      "id": "news-boj",
+      "name": "Bank of Japan（新闻）",
+      "status": "ok",
+      "itemCount": 47
+    },
+    {
+      "id": "news-un",
+      "name": "UN News（新闻）",
+      "status": "ok",
+      "itemCount": 30
+    },
+    {
+      "id": "news-bbc-world",
+      "name": "BBC News · 世界（新闻）",
+      "status": "ok",
+      "itemCount": 23
+    },
+    {
+      "id": "news-bbc-business",
+      "name": "BBC News · 财经（新闻）",
+      "status": "ok",
+      "itemCount": 42
+    },
+    {
+      "id": "news-bis-press",
+      "name": "Bank for International Settlements（新闻）",
+      "status": "ok",
+      "itemCount": 10
+    },
+    {
+      "id": "news-eia-energy",
+      "name": "U.S. Energy Information Administration（新闻）",
+      "status": "ok",
+      "itemCount": 15
+    },
+    {
+      "id": "news-review-queue",
+      "name": "复审队列诊断（新闻）",
+      "status": "ok",
+      "itemCount": 5,
+      "withBody": 5,
+      "withoutBody": 0,
+      "selectedId": "998b283aa40c6c27af45",
+      "selectedPublishedAt": "2026-10-12T01:29:20.000Z",
+      "selectedIsCurrent": true
+    },
+    {
+      "id": "news-review-body-recovery",
+      "name": "复审正文恢复（新闻）",
+      "status": "ok",
+      "itemCount": 1,
+      "eligible": 1,
+      "selected": [
+        "998b283aa40c6c27af45"
+      ],
+      "unavailable": 0
+    },
+    {
+      "id": "news-groq-summary",
+      "name": "来源事实总结与中文整理（新闻）",
+      "status": "error",
+      "itemCount": 28,
+      "originalSummaries": 28,
+      "attempted": 2,
+      "generated": 0,
+      "requests": 10,
+      "rejectionReasons": {
+        "paired-evidence": 1,
+        "summary-audit": 1
+      },
+      "error": "Provider JSON-generation failure"
+    },
+    {
+      "id": "news-groq-editorial",
+      "name": "Groq 新闻摘要与机制解读（新闻）",
+      "status": "error",
+      "itemCount": 0,
+      "error": "Provider JSON-generation failure",
+      "attempted": 2,
+      "rejected": 2,
+      "failures": 1,
+      "stages": {
+        "evidence": 2,
+        "analysis": 0,
+        "audit": 0
+      },
+      "rejectionReasons": {
+        "numbers": 1,
+        "language": 1
+      }
     }
-  ]
+  ],
+  "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
 }
