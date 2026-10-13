@@ -2,7 +2,7 @@
 
 日期：2026-10-13（北京时间）
 
-状态：已确认试验范围；本文件待用户审阅。尚未完成登录、模型调用或生产接入。
+状态：设计已于 2026-10-13 获用户确认；实施计划待审阅。尚未完成登录、模型调用或生产接入。
 
 目标分支：`codex/chatgpt-plan-trial`。原站继续使用 `main` 上的 Groq 与 GitHub Actions。
 
@@ -132,4 +132,4 @@ ChatGPT 试验失败不触发 Groq 或付费 API 兜底；原网站的独立 Gro
 - [凭据保护、刷新及额度管理](https://developers.openai.com/siwc/token-sharing-open-source/profiles-and-sessions)
 - [自托管 VM](https://developers.openai.com/siwc/token-sharing-open-source/self-hosted-vms)
 
-上述资料证明官方存在接入路径，不证明本账号已获权或本项目已完成接入。下一阶段需先审阅本设计，再制定实施计划。
+上述资料证明官方存在接入路径，不证明本账号已获权或本项目已完成接入。下一阶段需审阅实施计划，确认后才开始代码实施。
