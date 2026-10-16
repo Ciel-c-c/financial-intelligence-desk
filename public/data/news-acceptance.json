@@ -1,16 +1,8 @@
 {
   "schemaVersion": 1,
   "reviewVersion": "edge-audit-v4",
-  "attemptedAt": "2026-10-16T04:29:38.095Z",
+  "attemptedAt": "2026-10-16T16:37:23.196Z",
   "scheduledCycles": [
-    {
-      "attemptedAt": "2026-10-15T04:36:06.144Z",
-      "passed": false,
-      "publisher": 5,
-      "translated": 2,
-      "deep": 0,
-      "requests": 11
-    },
     {
       "attemptedAt": "2026-10-15T16:58:50.133Z",
       "passed": false,
@@ -26,16 +18,24 @@
       "translated": 1,
       "deep": 1,
       "requests": 9
+    },
+    {
+      "attemptedAt": "2026-10-16T16:37:23.196Z",
+      "passed": false,
+      "publisher": 1,
+      "translated": 2,
+      "deep": 0,
+      "requests": 9
     }
   ],
   "status": "pending",
   "current": {
-    "publisher": 7,
-    "translated": 1,
-    "deep": 1,
+    "publisher": 1,
+    "translated": 2,
+    "deep": 0,
     "requests": 9,
     "bounded": true,
-    "passed": true
+    "passed": false
   },
   "limitations": [
     "自动检查验证结构、版本、来源绑定和运行状态，不证明所有语义判断正确。",
