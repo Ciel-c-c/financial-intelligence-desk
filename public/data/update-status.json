@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-17T02:11:21.826Z",
-  "lastSuccessfulAt": "2026-10-17T02:11:21.826Z",
+  "attemptedAt": "2026-10-17T04:23:13.654Z",
+  "lastSuccessfulAt": "2026-10-17T04:23:13.654Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-17T02:11:21.826Z"
+      "lastSuccessfulAt": "2026-10-17T04:23:13.654Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-17T02:11:21.826Z"
+      "lastSuccessfulAt": "2026-10-17T04:23:13.654Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-17T02:11:21.826Z"
+      "lastSuccessfulAt": "2026-10-17T04:23:13.654Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-17T02:11:21.826Z"
+      "lastSuccessfulAt": "2026-10-17T04:23:13.654Z"
     }
   ],
   "sourceHealth": [
@@ -85,7 +85,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 33
+      "itemCount": 32
     },
     {
       "id": "bbc-business",
@@ -164,7 +164,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 33
+      "itemCount": 32
     },
     {
       "id": "news-bbc-business",
@@ -191,8 +191,8 @@
       "itemCount": 4,
       "withBody": 4,
       "withoutBody": 0,
-      "selectedId": "1bfef8b5f16ed397cfba",
-      "selectedPublishedAt": "2026-10-17T01:09:42.000Z",
+      "selectedId": "b49624ef6abe5487bb71",
+      "selectedPublishedAt": "2026-10-16T12:00:00.000Z",
       "selectedIsCurrent": true
     },
     {
@@ -208,12 +208,14 @@
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 19,
-      "originalSummaries": 17,
+      "itemCount": 4,
+      "originalSummaries": 3,
       "attempted": 2,
-      "generated": 2,
+      "generated": 1,
       "requests": 10,
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "news-groq-editorial",
@@ -225,12 +227,11 @@
       "failures": 0,
       "stages": {
         "evidence": 2,
-        "analysis": 0,
+        "analysis": 2,
         "audit": 0
       },
       "rejectionReasons": {
-        "numbers": 1,
-        "impact-assessment": 1
+        "audit": 2
       }
     }
   ],

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-10-17T02:11:21.826Z",
-  "lastSuccessfulAt": "2026-10-17T02:11:21.826Z",
+  "attemptedAt": "2026-10-17T04:23:13.654Z",
+  "lastSuccessfulAt": "2026-10-17T04:23:13.654Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -63,7 +63,7 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 33
+      "itemCount": 32
     },
     {
       "id": "bbc-business",
@@ -86,6 +86,304 @@
   ],
   "events": [
     {
+      "id": "fb254ed4b764",
+      "headline": "Trump waives several Russia sanctions as new US law takes effect",
+      "sourceHeadline": "Trump waives several Russia sanctions as new US law takes effect",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "Trump says parts of a new law that aims to punish Moscow for its war against Ukraine are against US national interests.",
+      "publishedAt": "2026-10-17T02:48:36.000Z",
+      "firstPublishedAt": "2026-10-17T02:48:36.000Z",
+      "latestSourceAt": "2026-10-17T02:48:36.000Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "region": "europe",
+      "countries": [
+        "EU"
+      ],
+      "topic": "geopolitical-conflict",
+      "eventType": "geopolitical-conflict",
+      "relevance": {
+        "level": "high",
+        "score": 6,
+        "criteria": [
+          "trade",
+          "supplyChain",
+          "growth",
+          "fiscalPolicy",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 6,
+      "relevanceReasons": [
+        "trade",
+        "supplyChain",
+        "growth",
+        "fiscalPolicy",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Trump says parts of a new law that aims to punish Moscow for its war against Ukraine are against US national interests."
+      ],
+      "factSummary": "Trump says parts of a new law that aims to punish Moscow for its war against Ukraine are against US national interests.",
+      "marketView": [
+        "本条来源报告：Trump waives several Russia sanctions as new US law takes effect。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-17T02:48:36.000Z"
+        }
+      ]
+    },
+    {
+      "id": "31f757ab7b5b",
+      "headline": "Brazil sees record fall in Amazon deforestation as key election looms",
+      "sourceHeadline": "Brazil sees record fall in Amazon deforestation as key election looms",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro.",
+      "publishedAt": "2026-10-17T02:33:09.000Z",
+      "firstPublishedAt": "2026-10-17T02:33:09.000Z",
+      "latestSourceAt": "2026-10-17T02:33:09.000Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro."
+      ],
+      "factSummary": "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro.",
+      "marketView": [
+        "本条来源报告：Brazil sees record fall in Amazon deforestation as key election looms。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-17T02:33:09.000Z"
+        }
+      ]
+    },
+    {
       "id": "f497aee135ca",
       "headline": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
       "sourceHeadline": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
@@ -95,7 +393,7 @@
       "publishedAt": "2026-10-16T22:33:05.000Z",
       "firstPublishedAt": "2026-10-16T22:33:05.000Z",
       "latestSourceAt": "2026-10-16T22:33:05.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -247,7 +545,7 @@
       "publishedAt": "2026-10-16T20:02:21.000Z",
       "firstPublishedAt": "2026-10-16T20:02:21.000Z",
       "latestSourceAt": "2026-10-16T20:02:21.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -437,7 +735,7 @@
       "publishedAt": "2026-10-16T19:22:21.000Z",
       "firstPublishedAt": "2026-10-16T19:22:21.000Z",
       "latestSourceAt": "2026-10-16T19:22:21.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -585,7 +883,7 @@
       "publishedAt": "2026-10-16T19:09:37.000Z",
       "firstPublishedAt": "2026-10-16T19:09:37.000Z",
       "latestSourceAt": "2026-10-16T19:09:37.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -731,7 +1029,7 @@
       "publishedAt": "2026-10-16T17:55:05.000Z",
       "firstPublishedAt": "2026-10-16T17:55:05.000Z",
       "latestSourceAt": "2026-10-16T17:55:05.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -877,7 +1175,7 @@
       "publishedAt": "2026-10-16T16:46:18.000Z",
       "firstPublishedAt": "2026-10-16T16:46:18.000Z",
       "latestSourceAt": "2026-10-16T16:46:18.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -1503,7 +1801,7 @@
       "publishedAt": "2026-10-16T16:00:30.000Z",
       "firstPublishedAt": "2026-10-16T16:00:30.000Z",
       "latestSourceAt": "2026-10-16T16:00:30.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -1947,7 +2245,7 @@
       "publishedAt": "2026-10-16T12:36:00.000Z",
       "firstPublishedAt": "2026-10-16T12:36:00.000Z",
       "latestSourceAt": "2026-10-16T12:36:00.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2117,7 +2415,7 @@
       "publishedAt": "2026-10-16T12:00:00.000Z",
       "firstPublishedAt": "2026-10-16T12:00:00.000Z",
       "latestSourceAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "global",
       "countries": [],
       "topic": "geopolitical-conflict",
@@ -2267,7 +2565,7 @@
       "publishedAt": "2026-10-16T12:00:00.000Z",
       "firstPublishedAt": "2026-10-16T12:00:00.000Z",
       "latestSourceAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "middle-east",
       "countries": [],
       "topic": "geopolitical-conflict",
@@ -2417,7 +2715,7 @@
       "publishedAt": "2026-10-16T11:33:44.000Z",
       "firstPublishedAt": "2026-10-16T11:33:44.000Z",
       "latestSourceAt": "2026-10-16T11:33:44.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "global",
       "countries": [],
       "topic": "trade-policy",
@@ -2921,7 +3219,7 @@
       "publishedAt": "2026-10-16T10:16:27.000Z",
       "firstPublishedAt": "2026-10-16T10:16:27.000Z",
       "latestSourceAt": "2026-10-16T10:16:27.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -3071,7 +3369,7 @@
       "publishedAt": "2026-10-16T08:45:54.000Z",
       "firstPublishedAt": "2026-10-16T08:45:54.000Z",
       "latestSourceAt": "2026-10-16T08:45:54.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "china",
       "countries": [
         "CN"
@@ -3219,7 +3517,7 @@
       "publishedAt": "2026-10-16T05:00:17.000Z",
       "firstPublishedAt": "2026-10-16T05:00:17.000Z",
       "latestSourceAt": "2026-10-16T05:00:17.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
+      "fetchedAt": "2026-10-17T04:23:13.654Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -3540,298 +3838,6 @@
           "name": "CNBC",
           "url": "https://www.cnbc.com/2026/10/16/singapore-haze-wong-warning-indonesia.html",
           "publishedAt": "2026-10-16T00:06:48.000Z"
-        }
-      ]
-    },
-    {
-      "id": "0b455666c006",
-      "headline": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
-      "sourceHeadline": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Yemen's information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace.",
-      "publishedAt": "2026-10-15T23:38:46.000Z",
-      "firstPublishedAt": "2026-10-15T23:38:46.000Z",
-      "latestSourceAt": "2026-10-15T23:38:46.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Yemen's information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace."
-      ],
-      "factSummary": "Yemen's information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace.",
-      "marketView": [
-        "本条来源报告：Houthi missile attack on Yemeni presidential palace kills five, minister says。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-15T23:38:46.000Z"
-        }
-      ]
-    },
-    {
-      "id": "a163f7c51ce3",
-      "headline": "Are student protests being manipulated ahead of France's presidential election?",
-      "sourceHeadline": "Are student protests being manipulated ahead of France's presidential election?",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "France's prime minister has suggested that student anger is being weaponised, as the unions and other protesters prepare to take to the streets too.",
-      "publishedAt": "2026-10-15T23:25:06.000Z",
-      "firstPublishedAt": "2026-10-15T23:25:06.000Z",
-      "latestSourceAt": "2026-10-15T23:25:06.000Z",
-      "fetchedAt": "2026-10-17T02:11:21.826Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "France's prime minister has suggested that student anger is being weaponised, as the unions and other protesters prepare to take to the streets too."
-      ],
-      "factSummary": "France's prime minister has suggested that student anger is being weaponised, as the unions and other protesters prepare to take to the streets too.",
-      "marketView": [
-        "本条来源报告：Are student protests being manipulated ahead of France's presidential election?。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/c8zxlyg965r3o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-15T23:25:06.000Z"
         }
       ]
     }
