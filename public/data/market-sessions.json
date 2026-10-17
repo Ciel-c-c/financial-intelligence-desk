@@ -1,8 +1,100 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-16T23:52:35.921Z",
+  "attemptedAt": "2026-10-17T02:11:08.645Z",
   "groups": {
-    "aShare": [],
+    "aShare": [
+      {
+        "tradingDate": "2026-10-16",
+        "open": {},
+        "close": {
+          "sse-composite": {
+            "id": "sse-composite",
+            "group": "aShare",
+            "name": "上证指数",
+            "symbol": "000001",
+            "value": 3716.28,
+            "changePercent": 0.24,
+            "currency": "NONE",
+            "unit": "点",
+            "marketState": "close",
+            "dataAsOf": "2026-10-16T00:00:00.000Z",
+            "fetchedAt": "2026-10-17T02:11:08.645Z",
+            "freshness": "fresh",
+            "source": {
+              "id": "cnfin",
+              "name": "新华财经",
+              "url": "https://www.cnfin.com/gs-lb/detail/20261016/4482069_1.html"
+            },
+            "session": "close",
+            "tradingDate": "2026-10-16",
+            "timeZone": "Asia/Shanghai",
+            "timestampPrecision": "date",
+            "provenance": "report",
+            "sourcePublishedAt": "2026-10-16T07:33:13.000Z",
+            "valuePrecision": 2,
+            "evidence": "截至收盘，上证指数报3716.28点，涨幅0.24%，成交额约7325亿元；深证成指报11802.46点，跌幅0.12%，成交额约8229亿元；创业板指报2772.38点，跌幅0.39%，成交额约3962亿元； 科创 综指报1584.04点，跌幅0.18%，成交额约2117亿元；北证50指数报950.00点，跌幅1.81%，成交额约138亿元。",
+            "changeBasis": "source"
+          },
+          "szse-component": {
+            "id": "szse-component",
+            "group": "aShare",
+            "name": "深证成指",
+            "symbol": "399001",
+            "value": 11802.46,
+            "changePercent": -0.12,
+            "currency": "NONE",
+            "unit": "点",
+            "marketState": "close",
+            "dataAsOf": "2026-10-16T00:00:00.000Z",
+            "fetchedAt": "2026-10-17T02:11:08.645Z",
+            "freshness": "fresh",
+            "source": {
+              "id": "cnfin",
+              "name": "新华财经",
+              "url": "https://www.cnfin.com/gs-lb/detail/20261016/4482069_1.html"
+            },
+            "session": "close",
+            "tradingDate": "2026-10-16",
+            "timeZone": "Asia/Shanghai",
+            "timestampPrecision": "date",
+            "provenance": "report",
+            "sourcePublishedAt": "2026-10-16T07:33:13.000Z",
+            "valuePrecision": 2,
+            "evidence": "截至收盘，上证指数报3716.28点，涨幅0.24%，成交额约7325亿元；深证成指报11802.46点，跌幅0.12%，成交额约8229亿元；创业板指报2772.38点，跌幅0.39%，成交额约3962亿元； 科创 综指报1584.04点，跌幅0.18%，成交额约2117亿元；北证50指数报950.00点，跌幅1.81%，成交额约138亿元。",
+            "changeBasis": "source"
+          },
+          "chinext": {
+            "id": "chinext",
+            "group": "aShare",
+            "name": "创业板指",
+            "symbol": "399006",
+            "value": 2772.38,
+            "changePercent": -0.39,
+            "currency": "NONE",
+            "unit": "点",
+            "marketState": "close",
+            "dataAsOf": "2026-10-16T00:00:00.000Z",
+            "fetchedAt": "2026-10-17T02:11:08.645Z",
+            "freshness": "fresh",
+            "source": {
+              "id": "cnfin",
+              "name": "新华财经",
+              "url": "https://www.cnfin.com/gs-lb/detail/20261016/4482069_1.html"
+            },
+            "session": "close",
+            "tradingDate": "2026-10-16",
+            "timeZone": "Asia/Shanghai",
+            "timestampPrecision": "date",
+            "provenance": "report",
+            "sourcePublishedAt": "2026-10-16T07:33:13.000Z",
+            "valuePrecision": 2,
+            "evidence": "截至收盘，上证指数报3716.28点，涨幅0.24%，成交额约7325亿元；深证成指报11802.46点，跌幅0.12%，成交额约8229亿元；创业板指报2772.38点，跌幅0.39%，成交额约3962亿元； 科创 综指报1584.04点，跌幅0.18%，成交额约2117亿元；北证50指数报950.00点，跌幅1.81%，成交额约138亿元。",
+            "changeBasis": "source"
+          }
+        },
+        "reference": {}
+      }
+    ],
     "hongKong": [],
     "us": [],
     "globalAssets": [
