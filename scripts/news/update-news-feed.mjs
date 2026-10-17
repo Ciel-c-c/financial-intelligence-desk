@@ -16,7 +16,7 @@ import {analyzeWithCerebras} from './cerebras-editorial.mjs';
 import {prepareNewsEvidence} from './summary-evidence.mjs';
 import {economicNewsPriority} from './news-priority.mjs';
 import {buildSourcePolicies,isSourceAllowed} from './source-policy.mjs';
-import {buildFactualSummary,validateFactualSummary} from './factual-summary.mjs';
+import {buildFactualSummary,validateFactualSummary,needsFactualSummary} from './factual-summary.mjs';
 import {needsReview,reconcileReview,reconcileHistory} from './review-migration.mjs';
 import {EDITORIAL_REVIEW_VERSION} from './editorial-audit.mjs';
 
@@ -93,16 +93,17 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
   const migrationCandidates=()=>working.map((record,index)=>({record,index})).filter(({record})=>needsReview(record)&&record.article?.text&&(record.analysisAttempt?.reviewVersion!==EDITORIAL_REVIEW_VERSION||(record.analysisAttempt?.count??0)<3)).sort((a,b)=>Date.parse(a.record.reviewMigration?.lastAttemptAt??'1970-01-01')-Date.parse(b.record.reviewMigration?.lastAttemptAt??'1970-01-01'));
   const eligibleDeep=()=>working.map((record,index)=>({record,index})).filter(({record})=>current(record)&&!record.editorial&&record.article?.text&&(record.analysisAttempt?.count??0)<3);
   const summaryLimit=Number(enrichmentOptions.maxSummaries)===0?0:Number(enrichmentOptions.maxSummaries)===1?1:2;
-  const summaryEligible=working.map((record,index)=>({record,index})).filter(({record})=>!record.factualSummary&&(!record.editorial||needsReview(record))&&current(record)&&isSourceAllowed(record,policies,now)&&record.article?.text&&(record.queue?.summaryAttempt??0)<3).sort((a,b)=>Number(needsReview(b.record))-Number(needsReview(a.record)));
+  const preferChinese=enrichmentOptions.preferChineseSummaries===true;
+  const summaryEligible=working.map((record,index)=>({record,index})).filter(({record})=>needsFactualSummary(record,{preferChinese})&&(!record.editorial||needsReview(record))&&current(record)&&isSourceAllowed(record,policies,now)&&record.article?.text&&(record.queue?.summaryAttempt??0)<3).sort((a,b)=>Number(needsReview(b.record))-Number(needsReview(a.record)));
   const firstEnglish=summaryEligible.find(({record})=>record.originalLanguage==='en');
   const firstChinese=summaryEligible.find(({record})=>record.originalLanguage==='zh');
   const summaryOrder=[...new Set([firstEnglish?.index,firstChinese?.index,...summaryEligible.map(({index})=>index)].filter(index=>index!==undefined))];
   for(const i of summaryOrder){
    if(summaryAttempts>=summaryLimit)break;
-   const record=working[i];if(record.factualSummary||record.editorial&&!needsReview(record)||!current(record)||!isSourceAllowed(record,policies,now)||!record.article?.text||record.queue?.summaryAttempt>=3||!enrichmentOptions.apiKey||state.stopped||state.requests>10)continue;
+   const record=working[i];if(!needsFactualSummary(record,{preferChinese})||record.editorial&&!needsReview(record)||!current(record)||!isSourceAllowed(record,policies,now)||!record.article?.text||record.queue?.summaryAttempt>=3||!enrichmentOptions.apiKey||state.stopped||state.requests>10)continue;
    summaryAttempts++;
    let summaryRejection;
-   const factualSummary=await buildFactualSummary(record,{policies,budget:state,modelOptions:enrichmentOptions,now,onReject:reason=>{summaryRejection=reason;summaryRejections[reason]=(summaryRejections[reason]??0)+1;}});
+   const factualSummary=await buildFactualSummary(record,{policies,budget:state,modelOptions:enrichmentOptions,preferChinese,now,onReject:reason=>{summaryRejection=reason;summaryRejections[reason]=(summaryRejections[reason]??0)+1;}});
    if(factualSummary){working[i]={...record,factualSummary};summaryGenerated++;}
    else if(!state.stopped&&!state.protocolFailure)working[i]={...record,queue:{...record.queue,summaryAttempt:(record.queue?.summaryAttempt??0)+1,summaryRejection}};
   }

@@ -4,14 +4,17 @@ import {isSourceAllowed} from './source-policy.mjs';
 import {requestModel,REVIEW_MODEL} from './model-client.mjs';
 import {factualSummaryResponseFormat,sourceExcerpts} from './editorial-schema.mjs';
 export const FACTUAL_REVIEW_VERSION='factual-v1';
-export async function buildFactualSummary(record,{policies,budget,modelOptions,now=record.fetchedAt,onReject=()=>{}}={}){
+export function needsFactualSummary(record,{preferChinese=false}={}){
+ return !record.factualSummary||Boolean(preferChinese&&record.originalLanguage==='en'&&record.factualSummary.language==='en');
+}
+export async function buildFactualSummary(record,{policies,budget,modelOptions,preferChinese=false,now=record.fetchedAt,onReject=()=>{}}={}){
  const a=record.article;
  if(!a||record.invalidationReason||!isSourceAllowed(record,policies,now)||typeof a.text!=='string'||articleHash(a.text)!==a.sha256)return undefined;
  const base={language:'zh',originalTitle:record.originalTitle,sourceUrl:record.canonicalUrl,publishedAt:record.publishedAt,sourceHash:a.sha256,evidenceScope:a.status==='summary'?'summary':'full-body',reviewVersion:FACTUAL_REVIEW_VERSION,checkedAt:now};
  const policy=policies.find(p=>p.id===record.sourceId);
  if(['zh','en'].includes(record.originalLanguage)&&policy.summaryMode==='publisher'){
   const candidate={...base,language:record.originalLanguage,title:record.originalTitle,summary:record.originalSummary?.trim(),origin:'publisher-'+record.originalLanguage,evidence:[]};
-  if(validateFactualSummary(record,candidate,policies,now))return candidate;
+  if(validateFactualSummary(record,candidate,policies,now)&&!(preferChinese&&record.originalLanguage==='en'&&modelOptions?.apiKey))return candidate;
  }
  if(!modelOptions.apiKey||budget.stopped||(budget.requests??0)>Math.min(12,budget.limit??12)-2||a.text.length<80||a.text.length>6000)return undefined;
  const evidenceFragments=sourceExcerpts(a.text),source={title:record.originalTitle,url:record.canonicalUrl,publishedAt:record.publishedAt,evidenceScope:base.evidenceScope,body:a.text,evidenceFragments};
@@ -20,6 +23,9 @@ export async function buildFactualSummary(record,{policies,budget,modelOptions,n
   {role:'user',content:JSON.stringify(source)},
  ]},modelOptions,budget);
  if(!output||!Array.isArray(output.facts)){onReject('summary-response');return undefined;}
+ // An English model fallback is not a completed Chinese translation. Keep
+ // the existing publisher fallback and let the caller count a bounded miss.
+ if(preferChinese&&output.language==='en'){onReject('translation-unavailable');return undefined;}
  const candidate={...base,language:output.language??'zh',title:output.title,summary:output.summary,origin:'model',evidence:output.facts.map(f=>({text:f.text,quote:evidenceFragments[f.evidence]}))};
  // Validate structure/evidence before spending review tokens. This temporary
  // validation marker is never returned or cached as an actual approval.

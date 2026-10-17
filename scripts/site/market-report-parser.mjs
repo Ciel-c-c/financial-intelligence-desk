@@ -12,6 +12,27 @@ export const INSTRUMENT_CATALOG=[
 ];
 const number='(?:\\d{1,3}(?:,\\d{3})+|\\d+)(?:\\.\\d+)?';
 const months=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function cnfinClose(report,text,policy,now){
+ const dateline=text.match(/^新华财经(?:北京|上海|深圳)(\d{1,2})月(\d{1,2})日电/);
+ const tradingDate=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(report.publishedAt));
+ const day=text.match(/主要股指(\d{1,2})日/);
+ const paragraphs=[...text.matchAll(/截至收盘[，,]([^。\n]+)[。\n]/g)];
+ if(paragraphs.length!==1)return [];
+ const paragraph=paragraphs[0];
+ if(!dateline||!day||!paragraph||Number(dateline[1])!==Number(tradingDate.slice(5,7))||Number(dateline[2])!==Number(tradingDate.slice(8))||Number(day[1])!==Number(dateline[2]))return [];
+ const context=text.slice(0,paragraph.index).split(/[。！？\n]/).slice(-2).join('。')+paragraph[0];
+ if(/回顾|昨日|前日|去年|上周|历史|假设|如果|预计|预测|可能|有望|目标|并非|不是|尚未|没有|未能/.test(context))return [];
+ for(const match of context.matchAll(/(?:(20\d{2})年)?(\d{1,2})月(\d{1,2})日/g)){
+  if(match[1]&&Number(match[1])!==Number(tradingDate.slice(0,4))||Number(match[2])!==Number(dateline[1])||Number(match[3])!==Number(dateline[2]))return [];
+ }
+ const out=[];
+ for(const item of INSTRUMENT_CATALOG.filter(item=>item.group==='aShare')){
+  const match=paragraph[1].match(new RegExp('(?:'+item.aliases.join('|')+')\\s*报('+number+')点[，,]\\s*(涨幅|跌幅)(\\d+(?:\\.\\d+)?)%'));
+  if(!match)continue;
+  out.push(normalizeObservation({...item,value:Number(match[1].replaceAll(',','')),changePercent:Number(match[3])*(match[2]==='跌幅'?-1:1),session:'close',tradingDate,timeZone:MARKET_TIME_ZONES.aShare,timestampPrecision:'date',provenance:'report',currency:'NONE',unit:'点',sourcePublishedAt:report.publishedAt,sourceUrl:report.url,evidence:paragraph[0].slice(0,250),valuePrecision:match[1].split('.')[1]?.length??0},policy,now));
+ }
+ return out;
+}
 function reportedDate(text){
  const zh=text.match(/(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日/),iso=text.match(/\b(20\d{2})-(\d{2})-(\d{2})\b/);
  if(zh||iso){const m=zh??iso;return m[1]+'-'+m[2].padStart(2,'0')+'-'+m[3].padStart(2,'0');}
@@ -26,6 +47,7 @@ export function parseMarketReport(report,{now,policy}){
  try{
   const text=report.text;
   if(report.sourceId!==policy.id||typeof text!=='string'||text.trim().length<60||text.length>100000||/<(?:html|nav|script)\b/i.test(text))return [];
+  if(report.sourceId==='cnfin'&&/^收评[：:]/.test(report.title??''))return cnfinClose(report,text,policy,now);
   // Ambiguous retrospective/premarket/forecast reports are withheld rather
   // than converting their figures into session observations.
   if(/今年以来|年初至今|预计收盘|盘前|premarket|pre-market|year.to.date|expected to close/i.test(text))return [];

@@ -3,8 +3,28 @@ import {parseMarketReport} from '../../scripts/site/market-report-parser.mjs';
 const now='2026-10-10T12:00:00Z';
 const policy={id:'fixture-source',name:'Fixture',baseUrl:'https://market.test/report/close',enabled:true,usageMode:'report-facts',allowedHosts:['market.test'],allowedPathPatterns:['^/report/'],markets:['aShare','hongKong','us'],reviewedAt:'2026-10-01T00:00:00Z',reviewExpiresAt:'2026-12-01T00:00:00Z'};
 const report={sourceId:policy.id,url:policy.baseUrl,publishedAt:'2026-10-10T05:15:00+08:00',title:'市场收盘报道',text:'2026年10月9日，截至收盘，上证指数收于3,888.11点，跌1.18%。市场成交结构出现变化，本文记录当日收盘表现而非未来预测，其他数据需结合原始来源查看。'};
+it('binds a CNFin close paragraph to its dateline and explicit trade day, not analyst background dates',()=>{
+ const p={...policy,id:'cnfin'};
+ const r={...report,sourceId:'cnfin',title:'收评：合成收盘测试',publishedAt:'2026-10-09T08:00:00Z',text:'新华财经北京10月9日电 沪深两市主要股指9日早间高开，创业板指盘中回落。截至收盘，上证指数报3000.12点，涨幅0.20%；深证成指报10000.34点，跌幅0.10%；创业板指报2000.56点，跌幅0.30%。机构背景：2026年9月28日曾发布一份其他行业报告。'};
+ expect(parseMarketReport(r,{now,policy:p}).map(x=>({id:x.id,value:x.value,day:x.tradingDate,change:x.changePercent}))).toEqual([
+  {id:'sse-composite',value:3000.12,day:'2026-10-09',change:0.2},
+  {id:'szse-component',value:10000.34,day:'2026-10-09',change:-0.1},
+  {id:'chinext',value:2000.56,day:'2026-10-09',change:-0.3}]);
+ expect(parseMarketReport({...r,publishedAt:'2026-10-08T08:00:00Z'},{now,policy:p})).toEqual([]);
+ expect(parseMarketReport({...r,text:r.text.replace('股指9日','股指8日')},{now,policy:p})).toEqual([]);
+});
 it('extracts a Chinese close level and its paired percentage',()=>{
  const rows=parseMarketReport(report,{now,policy});expect(rows).toHaveLength(1);expect(rows[0]).toMatchObject({id:'sse-composite',value:3888.11,changePercent:-1.18,tradingDate:'2026-10-09',session:'close',provenance:'report'});
+});
+it.each([
+ '回顾昨日10月8日市场，截至收盘，上证指数报3000.12点，涨幅0.20%。今日数据另见后文。',
+ '回顾昨日市场。 截至收盘，上证指数报3000.12点，涨幅0.20%。',
+ '如果截至收盘，上证指数报3000.12点，涨幅0.20%。',
+ '预计截至收盘，上证指数报3000.12点，涨幅0.20%。',
+ '截至收盘，上证指数报3000.12点，涨幅0.20%。截至收盘，上证指数报3001.12点，涨幅0.30%。',
+])('does not relabel historical, hypothetical or ambiguous CNFin closing context as today',text=>{
+ const r={...report,sourceId:'cnfin',title:'收评：合成测试',publishedAt:'2026-10-09T08:00:00Z',text:'新华财经北京10月9日电 沪深两市主要股指9日震荡。市场参与者同时关注行业表现及资金变化。报道列出相关市场情况，并提供原始信息以便核对。'+text};
+ expect(parseMarketReport(r,{now,policy:{...policy,id:'cnfin'}})).toEqual([]);
 });
 it('keeps US trade date separate from next-day Beijing publication',()=>{
  const text='On October 9, 2026, the S&P 500 closed at 7,811.54, up 0.59%. Investors monitored incoming economic news. This is a closing report rather than a forecast of future performance.';
