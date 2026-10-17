@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-17T04:59:01.760Z",
+  "attemptedAt": "2026-10-17T07:07:42.039Z",
   "groups": {
     "aShare": [
       {
@@ -96,7 +96,190 @@
       }
     ],
     "hongKong": [],
-    "us": [],
+    "us": [
+      {
+        "tradingDate": "2026-10-16",
+        "open": {},
+        "close": {
+          "sp500": {
+            "id": "sp500",
+            "group": "us",
+            "name": "标普500",
+            "symbol": "SPX",
+            "value": 7659.44,
+            "changePercent": -1.09,
+            "currency": "NONE",
+            "unit": "点",
+            "marketState": "close",
+            "dataAsOf": "2026-10-16T00:00:00.000Z",
+            "fetchedAt": "2026-10-17T07:07:42.039Z",
+            "freshness": "fresh",
+            "source": {
+              "id": "cnfin",
+              "name": "新华财经",
+              "url": "https://www.cnfin.com/gs-lb/detail/20261017/4482412_1.html"
+            },
+            "session": "close",
+            "tradingDate": "2026-10-16",
+            "timeZone": "America/New_York",
+            "timestampPrecision": "date",
+            "provenance": "report",
+            "sourcePublishedAt": "2026-10-17T01:40:53.000Z",
+            "valuePrecision": 2,
+            "evidence": "；标准普尔500种股票指数下跌84.62点，收于7659.44点，跌幅为1.09%",
+            "changeBasis": "source"
+          },
+          "dow-jones": {
+            "id": "dow-jones",
+            "group": "us",
+            "name": "道琼斯指数",
+            "symbol": "DJI",
+            "value": 52002.41,
+            "changePercent": -0.34,
+            "currency": "NONE",
+            "unit": "点",
+            "marketState": "close",
+            "dataAsOf": "2026-10-16T00:00:00.000Z",
+            "fetchedAt": "2026-10-17T07:07:42.039Z",
+            "freshness": "fresh",
+            "source": {
+              "id": "cnfin",
+              "name": "新华财经",
+              "url": "https://www.cnfin.com/gs-lb/detail/20261017/4482412_1.html"
+            },
+            "session": "close",
+            "tradingDate": "2026-10-16",
+            "timeZone": "America/New_York",
+            "timestampPrecision": "date",
+            "provenance": "report",
+            "sourcePublishedAt": "2026-10-17T01:40:53.000Z",
+            "valuePrecision": 2,
+            "evidence": "道琼斯工业平均指数比前一交易日下跌175.28点，收于52002.41点，跌幅为0.34%",
+            "changeBasis": "source"
+          },
+          "nasdaq-composite": {
+            "id": "nasdaq-composite",
+            "group": "us",
+            "name": "纳斯达克综合指数",
+            "symbol": "IXIC",
+            "value": 26140.034,
+            "changePercent": -2.15,
+            "currency": "NONE",
+            "unit": "点",
+            "marketState": "close",
+            "dataAsOf": "2026-10-16T00:00:00.000Z",
+            "fetchedAt": "2026-10-17T07:07:42.039Z",
+            "freshness": "fresh",
+            "source": {
+              "id": "cnfin",
+              "name": "新华财经",
+              "url": "https://www.cnfin.com/gs-lb/detail/20261017/4482412_1.html"
+            },
+            "session": "close",
+            "tradingDate": "2026-10-16",
+            "timeZone": "America/New_York",
+            "timestampPrecision": "date",
+            "provenance": "report",
+            "sourcePublishedAt": "2026-10-17T01:40:53.000Z",
+            "valuePrecision": 3,
+            "evidence": "；纳斯达克综合指数下跌572.992点，收于26140.034点，跌幅为2.15%",
+            "changeBasis": "source"
+          }
+        },
+        "reference": {}
+      },
+      {
+        "tradingDate": "2026-10-15",
+        "open": {},
+        "close": {
+          "sp500": {
+            "id": "sp500",
+            "group": "us",
+            "name": "标普500",
+            "symbol": "SPX",
+            "value": 7744.06,
+            "changePercent": 0.33,
+            "currency": "NONE",
+            "unit": "点",
+            "marketState": "close",
+            "dataAsOf": "2026-10-15T00:00:00.000Z",
+            "fetchedAt": "2026-10-17T07:07:42.039Z",
+            "freshness": "delayed",
+            "source": {
+              "id": "cnfin",
+              "name": "新华财经",
+              "url": "https://www.cnfin.com/gs-lb/detail/20261016/4481946_1.html"
+            },
+            "session": "close",
+            "tradingDate": "2026-10-15",
+            "timeZone": "America/New_York",
+            "timestampPrecision": "date",
+            "provenance": "report",
+            "sourcePublishedAt": "2026-10-15T22:52:13.000Z",
+            "valuePrecision": 2,
+            "evidence": "；标准普尔500种股票指数上涨25.12点，收于7744.06点，涨幅为0.33%",
+            "changeBasis": "source"
+          },
+          "dow-jones": {
+            "id": "dow-jones",
+            "group": "us",
+            "name": "道琼斯指数",
+            "symbol": "DJI",
+            "value": 52177.69,
+            "changePercent": 1.08,
+            "currency": "NONE",
+            "unit": "点",
+            "marketState": "close",
+            "dataAsOf": "2026-10-15T00:00:00.000Z",
+            "fetchedAt": "2026-10-17T07:07:42.039Z",
+            "freshness": "delayed",
+            "source": {
+              "id": "cnfin",
+              "name": "新华财经",
+              "url": "https://www.cnfin.com/gs-lb/detail/20261016/4481946_1.html"
+            },
+            "session": "close",
+            "tradingDate": "2026-10-15",
+            "timeZone": "America/New_York",
+            "timestampPrecision": "date",
+            "provenance": "report",
+            "sourcePublishedAt": "2026-10-15T22:52:13.000Z",
+            "valuePrecision": 2,
+            "evidence": "道琼斯工业平均指数比前一交易日上涨556.21点，收于52177.69点，涨幅为1.08%",
+            "changeBasis": "source"
+          },
+          "nasdaq-composite": {
+            "id": "nasdaq-composite",
+            "group": "us",
+            "name": "纳斯达克综合指数",
+            "symbol": "IXIC",
+            "value": 26713.026,
+            "changePercent": 0.08,
+            "currency": "NONE",
+            "unit": "点",
+            "marketState": "close",
+            "dataAsOf": "2026-10-15T00:00:00.000Z",
+            "fetchedAt": "2026-10-17T07:07:42.039Z",
+            "freshness": "delayed",
+            "source": {
+              "id": "cnfin",
+              "name": "新华财经",
+              "url": "https://www.cnfin.com/gs-lb/detail/20261016/4481946_1.html"
+            },
+            "session": "close",
+            "tradingDate": "2026-10-15",
+            "timeZone": "America/New_York",
+            "timestampPrecision": "date",
+            "provenance": "report",
+            "sourcePublishedAt": "2026-10-15T22:52:13.000Z",
+            "valuePrecision": 3,
+            "evidence": "；纳斯达克综合指数上涨20.158点，收于26713.026点，涨幅为0.08%",
+            "changeBasis": "source"
+          }
+        },
+        "reference": {}
+      }
+    ],
     "globalAssets": [
       {
         "tradingDate": "2026-10-16",

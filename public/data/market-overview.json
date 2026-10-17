@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-17T04:59:01.760Z",
-  "lastSuccessfulAt": "2026-10-17T02:11:08.645Z",
+  "attemptedAt": "2026-10-17T07:07:42.039Z",
+  "lastSuccessfulAt": "2026-10-17T07:07:42.039Z",
   "dataAsOf": "2026-10-16T00:00:00.000Z",
-  "nextExpectedAt": "2026-10-17T05:59:01.760Z",
+  "nextExpectedAt": "2026-10-17T08:07:42.039Z",
   "status": "partial",
   "freshness": "close",
   "sourceHealth": [
@@ -25,9 +25,8 @@
     },
     {
       "id": "cnfin",
-      "status": "error",
-      "itemCount": 0,
-      "error": "no-explicit-session-observations"
+      "status": "ok",
+      "itemCount": 6
     }
   ],
   "groups": {
@@ -118,7 +117,92 @@
       }
     ],
     "hongKong": [],
-    "us": [],
+    "us": [
+      {
+        "id": "sp500",
+        "group": "us",
+        "name": "标普500",
+        "symbol": "SPX",
+        "value": 7659.44,
+        "changePercent": -1.09,
+        "currency": "NONE",
+        "unit": "点",
+        "marketState": "previous_close",
+        "dataAsOf": "2026-10-16T00:00:00.000Z",
+        "fetchedAt": "2026-10-17T07:07:42.039Z",
+        "freshness": "fresh",
+        "source": {
+          "id": "cnfin",
+          "name": "新华财经",
+          "url": "https://www.cnfin.com/gs-lb/detail/20261017/4482412_1.html"
+        },
+        "session": "close",
+        "tradingDate": "2026-10-16",
+        "timeZone": "America/New_York",
+        "timestampPrecision": "date",
+        "provenance": "report",
+        "sourcePublishedAt": "2026-10-17T01:40:53.000Z",
+        "valuePrecision": 2,
+        "evidence": "；标准普尔500种股票指数下跌84.62点，收于7659.44点，跌幅为1.09%",
+        "changeBasis": "source"
+      },
+      {
+        "id": "dow-jones",
+        "group": "us",
+        "name": "道琼斯指数",
+        "symbol": "DJI",
+        "value": 52002.41,
+        "changePercent": -0.34,
+        "currency": "NONE",
+        "unit": "点",
+        "marketState": "previous_close",
+        "dataAsOf": "2026-10-16T00:00:00.000Z",
+        "fetchedAt": "2026-10-17T07:07:42.039Z",
+        "freshness": "fresh",
+        "source": {
+          "id": "cnfin",
+          "name": "新华财经",
+          "url": "https://www.cnfin.com/gs-lb/detail/20261017/4482412_1.html"
+        },
+        "session": "close",
+        "tradingDate": "2026-10-16",
+        "timeZone": "America/New_York",
+        "timestampPrecision": "date",
+        "provenance": "report",
+        "sourcePublishedAt": "2026-10-17T01:40:53.000Z",
+        "valuePrecision": 2,
+        "evidence": "道琼斯工业平均指数比前一交易日下跌175.28点，收于52002.41点，跌幅为0.34%",
+        "changeBasis": "source"
+      },
+      {
+        "id": "nasdaq-composite",
+        "group": "us",
+        "name": "纳斯达克综合指数",
+        "symbol": "IXIC",
+        "value": 26140.034,
+        "changePercent": -2.15,
+        "currency": "NONE",
+        "unit": "点",
+        "marketState": "previous_close",
+        "dataAsOf": "2026-10-16T00:00:00.000Z",
+        "fetchedAt": "2026-10-17T07:07:42.039Z",
+        "freshness": "fresh",
+        "source": {
+          "id": "cnfin",
+          "name": "新华财经",
+          "url": "https://www.cnfin.com/gs-lb/detail/20261017/4482412_1.html"
+        },
+        "session": "close",
+        "tradingDate": "2026-10-16",
+        "timeZone": "America/New_York",
+        "timestampPrecision": "date",
+        "provenance": "report",
+        "sourcePublishedAt": "2026-10-17T01:40:53.000Z",
+        "valuePrecision": 3,
+        "evidence": "；纳斯达克综合指数下跌572.992点，收于26140.034点，跌幅为2.15%",
+        "changeBasis": "source"
+      }
+    ],
     "globalAssets": [
       {
         "id": "EURUSD",
@@ -231,9 +315,10 @@
       "fallbackReason": "no-explicit-session-observations"
     },
     "us": {
-      "status": "unavailable",
-      "sourceIds": [],
-      "fallbackReason": "no-explicit-session-observations"
+      "status": "fresh",
+      "sourceIds": [
+        "cnfin"
+      ]
     },
     "globalAssets": {
       "status": "fresh",
@@ -259,6 +344,25 @@
           "id": "cnfin",
           "name": "新华财经",
           "url": "https://www.cnfin.com/gs-lb/detail/20261016/4482069_1.html"
+        }
+      ]
+    },
+    "us": {
+      "tradingDate": "2026-10-16",
+      "session": "close",
+      "facts": [
+        "标普500收于7,659.44点，下跌1.09%。",
+        "道琼斯指数收于52,002.41点，下跌0.34%。",
+        "纳斯达克综合指数收于26,140.034点，下跌2.15%。"
+      ],
+      "explanations": [],
+      "watchItems": [],
+      "invalidationConditions": [],
+      "sources": [
+        {
+          "id": "cnfin",
+          "name": "新华财经",
+          "url": "https://www.cnfin.com/gs-lb/detail/20261017/4482412_1.html"
         }
       ]
     }
