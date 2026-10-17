@@ -1,10 +1,497 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-17T04:23:13.654Z",
-  "lastSuccessfulAt": "2026-10-17T04:23:13.654Z",
+  "attemptedAt": "2026-10-17T07:08:01.535Z",
+  "lastSuccessfulAt": "2026-10-17T07:08:01.535Z",
   "nextExpectedAt": "2026-10-17T12:17:00.000Z",
   "status": "delayed",
   "latest": [
+    {
+      "sourceId": "ecb",
+      "sourceName": "European Central Bank",
+      "sourceTier": "official",
+      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
+      "canonicalUrl": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
+      "originalLanguage": "en",
+      "originalTitle": "Christine Lagarde: IMFC Statement",
+      "publishedAt": "2026-10-17T05:00:00.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "5257be41e5d8a48ea7c1",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "欧洲",
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|christinelagarde|2026-10-17",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482466_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482466_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【环球财经】特朗普签署行政令豁免对俄多项制裁",
+      "publishedAt": "2026-10-17T07:06:07.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 526,
+        "reader": "cnfin-body",
+        "sha256": "d7e2880c849b2a7a5c328929df285319373694db7b6056975b0c7732b5a832b2",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482466_1.html",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "id": "72aad65dbb257e1207aa",
+      "verificationStatus": "verified",
+      "titleZh": "【环球财经】特朗普签署行政令豁免对俄多项制裁",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|环球财经特朗普签署行政令豁免对俄|2026-10-17",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "summary-diagnostics-v1",
+        "summaryRejection": "paired-evidence"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "d7e2880c849b2a7a5c328929df285319373694db7b6056975b0c7732b5a832b2",
+        "count": 1,
+        "lastAttemptAt": "2026-10-17T07:08:01.535Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482463_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482463_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "【高端访谈】IMF官员警告全球经济面临紧迫财政挑战",
+      "publishedAt": "2026-10-17T06:55:23.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 826,
+        "reader": "cnfin-body",
+        "sha256": "26bddb08a54848f400394645e904d2fece8095e8a812e66ed61808bfc3ae6e41",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482463_1.html",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "id": "4cc1a128dca114bf8eb3",
+      "verificationStatus": "verified",
+      "titleZh": "【高端访谈】IMF官员警告全球经济面临紧迫财政挑战",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|高端访谈imf官员警告全球经济面|2026-10-17",
+      "detailStatus": "professional",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'",
+      "originalSummary": "The 16-year-old suspect previously attended the primary school and had targeted a special educational needs classroom, police say.",
+      "publishedAt": "2026-10-17T06:49:48.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "23bd0ce24345e3778efa",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|oregonteacherfou|2026-10-17",
+      "detailStatus": "brief",
+      "facts": [
+        "The 16-year-old suspect previously attended the primary school and had targeted a special educational needs classroom, police say."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'\nThe 16-year-old suspect previously attended the primary school and had targeted a special educational needs classroom, police say.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 215,
+        "sha256": "0d4a7d89cf876c5cca91eeebe30aeda4ca1d3c5473c65860ddd900e31edb2d28",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T02:11:21.826Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "factualSummary": {
+        "language": "en",
+        "originalTitle": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-17T06:49:48.000Z",
+        "sourceHash": "0d4a7d89cf876c5cca91eeebe30aeda4ca1d3c5473c65860ddd900e31edb2d28",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-17T07:08:01.535Z",
+        "title": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'",
+        "summary": "The 16-year-old suspect previously attended the primary school and had targeted a special educational needs classroom, police say.",
+        "origin": "publisher-en",
+        "evidence": []
+      }
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+      "originalSummary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
+      "publishedAt": "2026-10-17T06:39:40.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "d158011b6be2fdafe5fa",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|trumpwaivessever|2026-10-17",
+      "detailStatus": "brief",
+      "facts": [
+        "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Trump waives several Russia sanctions as row with Zelensky intensifies\nThe US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 195,
+        "sha256": "c5ae702fb7a8668f454624dcf0167373b54135cd4431827e33e0f7af643f9436",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "factualSummary": {
+        "language": "en",
+        "originalTitle": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-17T06:39:40.000Z",
+        "sourceHash": "c5ae702fb7a8668f454624dcf0167373b54135cd4431827e33e0f7af643f9436",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-17T07:08:01.535Z",
+        "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+        "summary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
+        "origin": "publisher-en",
+        "evidence": []
+      }
+    },
+    {
+      "sourceId": "cnfin",
+      "sourceName": "新华财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482452_1.html",
+      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482452_1.html",
+      "originalLanguage": "zh",
+      "originalTitle": "全国秋粮收获过七成",
+      "publishedAt": "2026-10-17T06:24:01.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "article": {
+        "status": "complete",
+        "characterCount": 118,
+        "reader": "cnfin-body",
+        "sha256": "4f3951c49f0f2ed3e5c7378df1aae765a3e3e81e06d12b3f3838028fd6807e03",
+        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482452_1.html",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "id": "fbeef3310668abf15a00",
+      "verificationStatus": "verified",
+      "titleZh": "全国秋粮收获过七成",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|全国秋粮收获过七成|2026-10-17",
+      "detailStatus": "brief",
+      "facts": [],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqde8zk6d916o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Call for more food funding due to high living cost",
+      "originalSummary": "Deputy Louise Doublet does not think the cost of living was considered in the ending of a trial.",
+      "publishedAt": "2026-10-17T06:18:16.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "39f30d652b1973bf398f",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|callformorefoodf|2026-10-17",
+      "detailStatus": "brief",
+      "facts": [
+        "Deputy Louise Doublet does not think the cost of living was considered in the ending of a trial."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Call for more food funding due to high living cost\nDeputy Louise Doublet does not think the cost of living was considered in the ending of a trial.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 147,
+        "sha256": "d96926624a28af1d15bfe8eda3575d5a2cfc467e22f3df69f5eb120f16b23258",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cqde8zk6d916o?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "factualSummary": {
+        "language": "en",
+        "originalTitle": "Call for more food funding due to high living cost",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cqde8zk6d916o?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-17T06:18:16.000Z",
+        "sourceHash": "d96926624a28af1d15bfe8eda3575d5a2cfc467e22f3df69f5eb120f16b23258",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-17T07:08:01.535Z",
+        "title": "Call for more food funding due to high living cost",
+        "summary": "Deputy Louise Doublet does not think the cost of living was considered in the ending of a trial.",
+        "origin": "publisher-en",
+        "evidence": []
+      }
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c615jnxv7n45o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Charity reflects on changing needs over 25 years",
+      "originalSummary": "Help a Guernsey Child says it has provided in excess of £1.2m worth of essential support.",
+      "publishedAt": "2026-10-17T06:11:54.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "6af1249122af269eeadb",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|charityreflectso|2026-10-17",
+      "detailStatus": "brief",
+      "facts": [
+        "Help a Guernsey Child says it has provided in excess of £1.2m worth of essential support."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Charity reflects on changing needs over 25 years\nHelp a Guernsey Child says it has provided in excess of £1.2m worth of essential support.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 138,
+        "sha256": "3e9290d690a3c9c762396b07182efec7ae610edcf71a1eaa274189c55ab04b49",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c615jnxv7n45o?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "factualSummary": {
+        "language": "en",
+        "originalTitle": "Charity reflects on changing needs over 25 years",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c615jnxv7n45o?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-17T06:11:54.000Z",
+        "sourceHash": "3e9290d690a3c9c762396b07182efec7ae610edcf71a1eaa274189c55ab04b49",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-17T07:08:01.535Z",
+        "title": "Charity reflects on changing needs over 25 years",
+        "summary": "Help a Guernsey Child says it has provided in excess of £1.2m worth of essential support.",
+        "origin": "publisher-en",
+        "evidence": []
+      }
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm5yngn0pl2ro?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Nightclubs are disappearing - and it's affecting young people",
+      "originalSummary": "One young person said with no nightlife in their town they cannot \"let loose and mess around\".",
+      "publishedAt": "2026-10-17T06:01:55.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "66f31b31209f3cf20822",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|nightclubsaredis|2026-10-17",
+      "detailStatus": "brief",
+      "facts": [
+        "One young person said with no nightlife in their town they cannot \"let loose and mess around\"."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Nightclubs are disappearing - and it's affecting young people\nOne young person said with no nightlife in their town they cannot \"let loose and mess around\".",
+        "reader": "publisher-feed-summary",
+        "characterCount": 156,
+        "sha256": "f30713cf725dd876e290df87d41cc3a4d58bafe7dd39fb0d4037d9578b77632f",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cm5yngn0pl2ro?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "factualSummary": {
+        "language": "en",
+        "originalTitle": "Nightclubs are disappearing - and it's affecting young people",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cm5yngn0pl2ro?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-17T06:01:55.000Z",
+        "sourceHash": "f30713cf725dd876e290df87d41cc3a4d58bafe7dd39fb0d4037d9578b77632f",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-17T07:08:01.535Z",
+        "title": "Nightclubs are disappearing - and it's affecting young people",
+        "summary": "One young person said with no nightlife in their town they cannot \"let loose and mess around\".",
+        "origin": "publisher-en",
+        "evidence": []
+      }
+    },
     {
       "sourceId": "fed",
       "sourceName": "Federal Reserve",
@@ -15,7 +502,7 @@
       "originalTitle": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
       "originalSummary": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
       "publishedAt": "2026-10-16T15:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "3e9b208f1b5aaf868e17",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -54,6 +541,165 @@
       }
     },
     {
+      "sourceId": "cnbc-markets",
+      "sourceName": "CNBC",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/17/trump-diesel-russia-ukraine-war.html",
+      "originalLanguage": "en",
+      "originalTitle": "Trump's Russia diesel deal may offer Putin more than money — and spell trouble for Ukraine",
+      "originalSummary": "Trump's diesel deal may do little for Russia's finances, but it raises bigger questions about Ukraine's leverage, U.S. support and Putin's next moves.",
+      "publishedAt": "2026-10-17T05:46:20.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "9c0b2a92ee7542503a57",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|trumpsrussiadies|2026-10-17",
+      "detailStatus": "brief",
+      "facts": [
+        "Trump's diesel deal may do little for Russia's finances, but it raises bigger questions about Ukraine's leverage, U.S. support and Putin's next moves."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Trump's Russia diesel deal may offer Putin more than money — and spell trouble for Ukraine\nTrump's diesel deal may do little for Russia's finances, but it raises bigger questions about Ukraine's leverage, U.S. support and Putin's next moves.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 241,
+        "sha256": "8e1b6b17dc147f6c17a5249fae511554d00e77432d61d17a97408706d2953fd4",
+        "sourceUrl": "https://www.cnbc.com/2026/10/17/trump-diesel-russia-ukraine-war.html",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Katie Zacharia leaving White House role less than five days into job",
+      "originalSummary": "Her public debut as press secretary ended with a flurry of media criticism about her credentials and preparedness.",
+      "publishedAt": "2026-10-17T05:20:40.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "a0c14515f41837540594",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|katiezacharialea|2026-10-17",
+      "detailStatus": "brief",
+      "facts": [
+        "Her public debut as press secretary ended with a flurry of media criticism about her credentials and preparedness."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Katie Zacharia leaving White House role less than five days into job\nHer public debut as press secretary ended with a flurry of media criticism about her credentials and preparedness.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 183,
+        "sha256": "848caa46fd29a3b1b2767421331bdc2bab3cf8948b57e35ef654c37c5fec2f37",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "factualSummary": {
+        "language": "en",
+        "originalTitle": "Katie Zacharia leaving White House role less than five days into job",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-17T05:20:40.000Z",
+        "sourceHash": "848caa46fd29a3b1b2767421331bdc2bab3cf8948b57e35ef654c37c5fec2f37",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-17T07:08:01.535Z",
+        "title": "Katie Zacharia leaving White House role less than five days into job",
+        "summary": "Her public debut as press secretary ended with a flurry of media criticism about her credentials and preparedness.",
+        "origin": "publisher-en",
+        "evidence": []
+      }
+    },
+    {
+      "sourceId": "cnbc-markets",
+      "sourceName": "CNBC",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html",
+      "originalLanguage": "en",
+      "originalTitle": "Some companies give AI to everyone. This CEO is doing the opposite",
+      "originalSummary": "Paysend CEO Ben Chisell limits AI tools to top performers as other U.K. companies push broader workplace rollouts.",
+      "publishedAt": "2026-10-17T05:00:01.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "6a21ddd228a70a6e7b44",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [
+        "公司"
+      ],
+      "eventTypes": [
+        "公司经营"
+      ],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "公司经营|somecompaniesgiv|2026-10-17",
+      "detailStatus": "professional",
+      "facts": [
+        "Paysend CEO Ben Chisell limits AI tools to top performers as other U.K. companies push broader workplace rollouts."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Some companies give AI to everyone. This CEO is doing the opposite\nPaysend CEO Ben Chisell limits AI tools to top performers as other U.K. companies push broader workplace rollouts.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 181,
+        "sha256": "51c19d7a865083d9d298e0869ac965b64df5696c5d950e018e1c11d2ac866e55",
+        "sourceUrl": "https://www.cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
       "sourceId": "eia-energy",
       "sourceName": "U.S. Energy Information Administration",
       "sourceTier": "official",
@@ -63,7 +709,7 @@
       "originalTitle": "U.S. small-scale solar generation has quadrupled in the last decade",
       "originalSummary": "We estimate that U.S. generation from small-scale or rooftop solar photovoltaic systems (smaller than 1 megawatt of capacity) has increased from 18,812 gigawatthours (GWh) to 92,979 GWh over the last decade. The four states with the highest generation of small-scale solar in the country-California, Arizona, Texas, and Florida-are in regions with more abundant solar resources. Even though it is in a region with lower solar resources, New York ranks as the fifth-largest rooftop solar generation producer as a result of capacity growth supported by technology improvements and state incentives.",
       "publishedAt": "2026-10-16T14:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "d76cf3547f2e96df5264",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -92,7 +738,7 @@
         "characterCount": 664,
         "sha256": "9b4bfec064ce1a9c1a4aef4eb2b303dd31ee50ac7b927251f7918fda1feaa814",
         "sourceUrl": "https://www.eia.gov/todayinenergy/detail.php?id=68324",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -124,7 +770,7 @@
       "originalTitle": "Here's who Netflix just brought in to run content — and what it means for the streamer",
       "originalSummary": "Peter Rice brings a wealth of experience in TV and film, including scripted and unscripted shows, live sports, prestige television and theatrical distribution.",
       "publishedAt": "2026-10-16T19:40:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "67496c2625e8a1a80d47",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -159,7 +805,7 @@
         "characterCount": 246,
         "sha256": "8d7f96ae009041437c5de50eb52af4b2af67ec56c0b935662eec5ccb08772086",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/netflix-peter-rice-chief-content-officer.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -177,7 +823,7 @@
       "originalTitle": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
       "originalSummary": "Brothers Jake and Callum Robinson and their friend Carter Rhoad were killed on a surfing trip in an apparent botched robbery.",
       "publishedAt": "2026-10-17T03:11:10.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "e5301d48695494acd183",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -206,12 +852,7 @@
         "characterCount": 211,
         "sha256": "d777aaec383263434b524836d4c4e61f753b68a2a8487612295bb2838b1174d3",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c3kgqjkzw29wo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-17T04:23:13.654Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -226,6 +867,11 @@
         "summary": "Brothers Jake and Callum Robinson and their friend Carter Rhoad were killed on a surfing trip in an apparent botched robbery.",
         "origin": "publisher-en",
         "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T04:23:13.654Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
       }
     },
     {
@@ -238,7 +884,7 @@
       "originalTitle": "【世界进行时】2026年10月16日",
       "originalSummary": "本期要点：也门多地战事持续，人道主义危机加剧；联合国官员警告加沙重陷战争风险上升；乌克兰平民伤亡处于近年高位；阿富汗近四成人口将面临严重粮食短缺；古特雷斯呼吁加快行动以遏制生物多样性丧失；全球多维贫困自2010年以来首次上升；人工智能可能导致弱势群体被抛在后面；基金组织上调全球经济增速预期至3.1%；殷玉珍获联合国粮农组织百名巾帼英雄荣誉称号。",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "b49624ef6abe5487bb71",
       "verificationStatus": "official",
       "titleZh": "【世界进行时】2026年10月16日",
@@ -271,7 +917,19 @@
         "characterCount": 192,
         "sha256": "467cf2b8f613a8e793b252d790b9218e314dc98a95fc3a1c6308f31e3db8120c",
         "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143021",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "467cf2b8f613a8e793b252d790b9218e314dc98a95fc3a1c6308f31e3db8120c",
+        "count": 1,
+        "lastAttemptAt": "2026-10-17T04:23:13.654Z",
+        "auditFindings": [],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       },
       "factualSummary": {
         "language": "zh",
@@ -291,18 +949,6 @@
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "analysisAttempt": {
-        "reviewVersion": "edge-audit-v4",
-        "sourceBodyHash": "467cf2b8f613a8e793b252d790b9218e314dc98a95fc3a1c6308f31e3db8120c",
-        "count": 1,
-        "lastAttemptAt": "2026-10-17T04:23:13.654Z",
-        "auditFindings": [],
-        "rejection": {
-          "stage": "audit",
-          "category": "audit",
-          "fields": []
-        }
       }
     },
     {
@@ -315,7 +961,7 @@
       "originalTitle": "乌克兰平民伤亡处于近年高位 能源设施遇袭加剧",
       "originalSummary": "联合国乌克兰人权监测团周五表示，俄罗斯9月加大对乌克兰的袭击力度，造成至少328名平民死亡、2105人受伤，伤亡人数较去年同期增加85%。进入10月后，俄军发起的多轮大规模袭击造成更多人员伤亡。与此同时，针对能源设施的袭击也使平民面临断电、供暖中断和再次流离失所的风险。&nbsp;",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "98b6d60a8b868e602c45",
       "verificationStatus": "official",
       "titleZh": "乌克兰平民伤亡处于近年高位 能源设施遇袭加剧",
@@ -348,7 +994,7 @@
         "characterCount": 164,
         "sha256": "05d4525172ae5c246873c08ff34294459328d0d99a8a42672d7dd969db0bdab3",
         "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143020",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -380,7 +1026,7 @@
       "originalTitle": "儿基会：加沙停火一周年 超过340名儿童遇害",
       "originalSummary": "联合国儿童基金会周五表示，自哈马斯与以色列于2025年10月宣布达成停火协议以来，据报告加沙已有超过340名儿童遇害，另有数百名儿童受伤。目前，约80万名儿童仍流离失所，随着冬季临近，缺乏安全住所以及污水积聚进一步威胁他们的安全。&nbsp;",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "4c0f09ba209b71544753",
       "verificationStatus": "official",
       "titleZh": "儿基会：加沙停火一周年 超过340名儿童遇害",
@@ -411,7 +1057,7 @@
         "characterCount": 144,
         "sha256": "8fa6d5e55592ecbcf49a273a4263adf65b943899ccc21e4c2ad9345970c05c4a",
         "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143019",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -443,7 +1089,7 @@
       "originalTitle": "世卫组织: 沙特确诊8例中东呼吸综合征冠状病毒病",
       "originalSummary": "世界卫生组织周五表示，沙特阿拉伯向该组织报告了8例经实验室确诊的中东呼吸综合征冠状病毒感染病例，其中包括1例死亡病例。",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "b0de9b5494791ac8a97d",
       "verificationStatus": "official",
       "titleZh": "世卫组织: 沙特确诊8例中东呼吸综合征冠状病毒病",
@@ -483,7 +1129,7 @@
       "originalTitle": "古特雷斯呼吁各方加快行动并增加投入，以遏制生物多样性丧失",
       "originalSummary": "联合国生物多样性大会第十七次缔约方大会将于下周在亚美尼亚首都埃里温开幕。联合国秘书长古特雷斯周五在当地举行的领导人峰会上表示，全球超过100万种物种面临灭绝风险，但保护行动却进展缓慢，资金投入严重不足，他敦促各国政府、企业和社会各界加快行动，遏制生物多样性丧失。&nbsp;",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "4d544fdf6a628cf65fb5",
       "verificationStatus": "official",
       "titleZh": "古特雷斯呼吁各方加快行动并增加投入，以遏制生物多样性丧失",
@@ -514,7 +1160,7 @@
         "characterCount": 166,
         "sha256": "93b60dcbf5866a08938dd44816f56317d3778b8be95421b76766869fac06e25b",
         "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143017",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -546,7 +1192,7 @@
       "originalTitle": "人权专家：多种形式的剥夺正导致全球土地和水资源所有权集中度达到历史最高水平",
       "originalSummary": "联合国人权专家周五警告称，战争与占领、企业土地交易、碳交易和保护计划，以及无视习惯性土地权属的法律，正在剥夺农民、渔民、牧民和土著人民的领地，并使土地集中度达到历史最高水平。",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "fee3e6d9da090d96c39f",
       "verificationStatus": "official",
       "titleZh": "人权专家：多种形式的剥夺正导致全球土地和水资源所有权集中度达到历史最高水平",
@@ -577,7 +1223,7 @@
         "characterCount": 125,
         "sha256": "b81768dcf221f4e3c7e3ae123de3ae0e63e5b95685d32fa0feee1a9b7eab8aba",
         "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143016",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -609,7 +1255,7 @@
       "originalTitle": "安理会聚焦苏丹危机：联合国警告战争正逼近地区失控边缘",
       "originalSummary": "联合国负责政治事务的副秘书长迪卡洛（Rosemary DiCarlo）和秘书长苏丹问题个人特使哈维斯托（Pekka Haavisto）周五在安理会公开会议上发出警告称，苏丹冲突不仅没有出现缓和迹象，反而在武器持续流入、无人机袭击增多以及周边局势恶化的背景下，面临进一步升级和外溢风险。他们呼吁冲突双方采取实际措施保护平民，并推动停火与政治进程。",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "0deceb105fa09dbe7be8",
       "verificationStatus": "official",
       "titleZh": "安理会聚焦苏丹危机：联合国警告战争正逼近地区失控边缘",
@@ -640,7 +1286,7 @@
         "characterCount": 199,
         "sha256": "72dfee05b9564a370dc33d923ab35d8158b5b37f97762b6c70b3ce6a9a31c93a",
         "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143013",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -672,7 +1318,7 @@
       "originalTitle": "【子午播报】2026年10月16日",
       "originalSummary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，也门多地战事持续，人道主义危机加剧；国际货币基金组织上调全球经济增速预期至3.1%；子午聚焦：荒漠里绽放的“巾帼英雄”。",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "5d442f444bca812bbcc6",
       "verificationStatus": "official",
       "titleZh": "【子午播报】2026年10月16日",
@@ -705,7 +1351,7 @@
         "characterCount": 116,
         "sha256": "707dcc7995839d844edf09840770d3b9bad147e7fb7379007e76265e133d0aa8",
         "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143012",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -737,7 +1383,7 @@
       "originalTitle": "As disasters mount, next UN climate summit faces a test of trust",
       "originalSummary": "Less than a month before the UN climate conference COP31 opens in Antalya, Türkiye, representatives of three successive summit presidencies gathered to address a pressing question: How can the world restore trust in climate action when the consequences of a warming planet are already being felt?",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "9c858253726ce59661a4",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -766,7 +1412,7 @@
         "characterCount": 361,
         "sha256": "542111fb597db9994cb41ac8ceeda72ec1d6eb05d7f9745e19a49d75424f10c2",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168617",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -784,7 +1430,7 @@
       "originalTitle": "Ukraine: Civilian casualty rates among ‘deadliest’ in years, as energy attacks intensify",
       "originalSummary": "Civilian casualties in Ukraine&nbsp;remain at record levels, with intensified Russian attacks in September continuing a pattern of harm in 2026 far exceeding previous years, UN human rights monitors in Ukraine said on Friday.",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "c15290029c512400a71d",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -815,7 +1461,7 @@
         "characterCount": 314,
         "sha256": "6387f0c0618f5ed64e31b14d0c0760e57f57470818e484668696facc319173f7",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168614",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -833,7 +1479,7 @@
       "originalTitle": "WHO scales up Ebola readiness in 22 countries across three continents",
       "originalSummary": "The World Health Organization (WHO) is strengthening Ebola preparedness amid conflict and displacement affecting millions of lives in a region that spans parts of Africa, Asia and Europe.",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "d82830de02236a2b70c9",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -862,7 +1508,7 @@
         "characterCount": 257,
         "sha256": "4ca3d0715b1ef00e04f91a044b6443dd665c603b3662f2e572b33b0b6831fcc2",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168613",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -880,7 +1526,7 @@
       "originalTitle": "Security Council LIVE: Sudan’s war spreads as drones and hunger take a deadly toll",
       "originalSummary": "As drone strikes kill civilians from El Obeid to Blue Nile and famine risk spreads across Darfur and Kordofan, the Security Council meets on Sudan – the world’s largest hunger and displacement crisis. Ambassadors are expected to press yet again for a ceasefire, safe aid access and an end to the weapons flows fuelling the brutal conflict.&nbsp;",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "4ddf7dfd36ca0d604635",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -909,7 +1555,7 @@
         "characterCount": 428,
         "sha256": "69ddd93ecc0f1945708f164095cd63ccb78d732a0ce5cb86e5c79ba15ad2e422",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168612",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -927,7 +1573,7 @@
       "originalTitle": "Gaza: 340 children killed despite ceasefire agreement - UNICEF",
       "originalSummary": "A little over one year since a ceasefire agreement was announced between Hamas fighters and Israel, more than 340 children have been reported killed and hundreds more injured, the UN Children’s Fund (UNICEF) said on Friday.&nbsp;",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "07480e90790bc31e3eeb",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -956,7 +1602,7 @@
         "characterCount": 292,
         "sha256": "20e0b333f09e2755b8471752edb3bbd109b978e9fa4cbf05d2e79c4dd41fff83",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168611",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -974,7 +1620,7 @@
       "originalTitle": "Guterres urges faster action and financing to stop biodiversity loss",
       "originalSummary": "The United Nations Secretary-General appealed on Friday for governments, businesses and communities to accelerate efforts to protect biodiversity for future generations and all life on Earth.",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "c24f90b3fe071fc6c4df",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1003,7 +1649,7 @@
         "characterCount": 260,
         "sha256": "5ee86b410c56cf93e20921f89d7f5286beeba25676f3e690585b2a1ab6fc966f",
         "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168610",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -1057,20 +1703,6 @@
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
       },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Trump waives several Russia sanctions as new US law takes effect",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-17T02:48:36.000Z",
-        "sourceHash": "995001394db39acc8b867dda60a9bbddb9efb4611352a802ab7efec3569120f1",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-17T04:23:13.654Z",
-        "title": "Trump waives several Russia sanctions as new US law takes effect",
-        "summary": "Trump says parts of a new law that aims to punish Moscow for its war against Ukraine are against US national interests.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
         "sourceBodyHash": "995001394db39acc8b867dda60a9bbddb9efb4611352a802ab7efec3569120f1",
@@ -1093,7 +1725,9 @@
           "category": "audit",
           "fields": []
         }
-      }
+      },
+      "invalidationReason": "superseded-source-version",
+      "supersededBy": "d158011b6be2fdafe5fa"
     },
     {
       "sourceId": "bbc-world",
@@ -1105,7 +1739,7 @@
       "originalTitle": "Brazil sees record fall in Amazon deforestation as key election looms",
       "originalSummary": "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro.",
       "publishedAt": "2026-10-17T02:33:09.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "7c109a2a34f7d34db449",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1134,12 +1768,7 @@
         "characterCount": 206,
         "sha256": "1ef719eec6a1a69c22faf9a1f08d606d34872c8b3c6650ff448b1af83449f67b",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-17T04:23:13.654Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -1154,6 +1783,11 @@
         "summary": "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro.",
         "origin": "publisher-en",
         "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T04:23:13.654Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
       }
     },
     {
@@ -1165,14 +1799,14 @@
       "originalLanguage": "zh",
       "originalTitle": "《世界职业技术教育标准框架》发布",
       "publishedAt": "2026-10-17T01:43:58.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "article": {
         "status": "complete",
         "characterCount": 295,
         "reader": "cnfin-body",
         "sha256": "90faa230cf59f7eb8297e1f2bb6e7e458a2dd15363878e1a19d7dbebaa2c58a6",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482415_1.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "id": "a6ef30bbf1a219f9e612",
       "verificationStatus": "verified",
@@ -1194,11 +1828,6 @@
       "facts": [],
       "expectations": [],
       "inferences": [],
-      "queue": {
-        "firstSeenAt": "2026-10-17T02:11:21.826Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
       "factualSummary": {
         "language": "zh",
         "originalTitle": "《世界职业技术教育标准框架》发布",
@@ -1233,62 +1862,6 @@
           "approved": true,
           "model": "openai/gpt-oss-20b"
         }
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'",
-      "originalSummary": "The 16-year-old suspect previously attended the primary school and had targeted a special educational needs classroom, police say.",
-      "publishedAt": "2026-10-17T01:19:04.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
-      "id": "23bd0ce24345e3778efa",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|oregonteacherfou|2026-10-17",
-      "detailStatus": "brief",
-      "facts": [
-        "The 16-year-old suspect previously attended the primary school and had targeted a special educational needs classroom, police say."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'\nThe 16-year-old suspect previously attended the primary school and had targeted a special educational needs classroom, police say.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 215,
-        "sha256": "0d4a7d89cf876c5cca91eeebe30aeda4ca1d3c5473c65860ddd900e31edb2d28",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-17T01:19:04.000Z",
-        "sourceHash": "0d4a7d89cf876c5cca91eeebe30aeda4ca1d3c5473c65860ddd900e31edb2d28",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-17T02:11:21.826Z",
-        "title": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'",
-        "summary": "The 16-year-old suspect previously attended the primary school and had targeted a special educational needs classroom, police say.",
-        "origin": "publisher-en",
-        "evidence": []
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -1306,7 +1879,7 @@
       "originalTitle": "The uncertain future of Canada's 30 rescued belugas",
       "originalSummary": "An international rescue operation for the last 30 captive whales in Canada made headlines. Then five of them died.",
       "publishedAt": "2026-10-17T01:18:08.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "6c616fc8de0f963edbfd",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1335,7 +1908,7 @@
         "characterCount": 166,
         "sha256": "b7b1b8cb19f0734bdfb140971c30c8dbd69a012caac3ce1abda225524f052f6e",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c623dnn3xvpko?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -1366,14 +1939,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【环球财经】地缘冲突消息刺激 国际油价16日显著上涨",
       "publishedAt": "2026-10-17T01:09:42.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "article": {
         "status": "complete",
         "characterCount": 581,
         "reader": "cnfin-body",
         "sha256": "83807d8b81c7947b8e6e9c8a355fd1002fec98756cd2824f82ee4c5ce857b20a",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482408_1.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "id": "1bfef8b5f16ed397cfba",
       "verificationStatus": "verified",
@@ -1462,14 +2035,14 @@
       "originalLanguage": "zh",
       "originalTitle": "多地发布细则，商品住房销售制度改革落地实施",
       "publishedAt": "2026-10-17T00:47:10.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "article": {
         "status": "complete",
         "characterCount": 1502,
         "reader": "cnfin-body",
         "sha256": "75330d361ed2b8482a277e757b2490b725837bfe1da11c6b2ed5ea91536ae9c0",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482405_1.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "id": "c212b3428a60522518b9",
       "verificationStatus": "verified",
@@ -1507,7 +2080,7 @@
       "originalTitle": "A thousand slogans echoed here - but it could be the end for iconic Delhi protest site",
       "originalSummary": "Jantar Mantar, an 18th Century site almost synonymous with demonstrations in Delhi, has been denotified as a protest site.",
       "publishedAt": "2026-10-17T00:41:58.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "911b4579624401739226",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1536,7 +2109,7 @@
         "characterCount": 209,
         "sha256": "d7396e36d539ba909e12761157e618887e96e522b4c77e06eace910c9a69d7ee",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c6kgqjvdv4n2o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -1567,14 +2140,14 @@
       "originalLanguage": "zh",
       "originalTitle": "新华财经早报：10月17日",
       "publishedAt": "2026-10-17T00:37:04.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "article": {
         "status": "complete",
         "characterCount": 3261,
         "reader": "cnfin-body",
         "sha256": "ff305edfe5d0da7b86bc9accb537ba7077c6f041d607bd808409ecfe3be0f577",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482401_1.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "id": "d8fc77ea001ced4dad1f",
       "verificationStatus": "verified",
@@ -1611,14 +2184,14 @@
       "originalLanguage": "zh",
       "originalTitle": "商务部详解修订《中国禁止出口限制出口技术目录》",
       "publishedAt": "2026-10-17T00:17:43.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "article": {
         "status": "complete",
         "characterCount": 1871,
         "reader": "cnfin-body",
         "sha256": "e52b7124d3418c1dd7e3684cce4b7063cc03e727f131db713284e125bf8b9b25",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261017/4482394_1.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "id": "305d9c4f8d4e8905afa5",
       "verificationStatus": "verified",
@@ -1656,7 +2229,7 @@
       "originalTitle": "Trump 'completely wrong' to restrict support for Ukraine, Italian minister tells BBC",
       "originalSummary": "Defence Minister Guido Crosetto tells the BBC the US risks prolonging Russia's full-scale invasion rather than helping to end it.",
       "publishedAt": "2026-10-16T23:54:35.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "4da66a37ade50f86a9be",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1685,7 +2258,7 @@
         "characterCount": 214,
         "sha256": "a94e5855e6ed6e285906ab72115094fb59529e885b00c8f742c5514403f68270",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c64g18ljjd8do?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -1717,7 +2290,7 @@
       "originalTitle": "Pope pictured for first time since surgery and cancer diagnosis",
       "originalSummary": "The pontiff was diagnosed with lung cancer after having surgery at Rome's Gemelli Hospital on Tuesday.",
       "publishedAt": "2026-10-16T23:20:37.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "56b82afc59e801f856a5",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1746,7 +2319,7 @@
         "characterCount": 166,
         "sha256": "faf3b12bdedf2579f9eb633ce4c2a6a2eb7cf2ce5a54ef7a98b3afb086bbee5b",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cw146ej00yn7o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -1778,7 +2351,7 @@
       "originalTitle": "Trial of German steakhouse heiress that sparked a huge spy scandal",
       "originalSummary": "For 15 months, a high-security courtroom in Hamburg has been hearing the case of Christina Block, accused of ordering the abduction of her children.",
       "publishedAt": "2026-10-16T23:07:18.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "ba88eafc902c24a2fbc9",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1807,7 +2380,7 @@
         "characterCount": 215,
         "sha256": "668e061322c9d06bc518af9c655bea0fe6f30f306e00e3665e8347c594e85826",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cwvgdn3d656vo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -1838,7 +2411,7 @@
       "originalLanguage": "en",
       "originalTitle": "BOJ Current Account Balances by Sector (Sept.)",
       "publishedAt": "2026-10-16T08:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "9851d043e268ed594b7f",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -1871,12 +2444,59 @@
       "sourceName": "CNBC",
       "sourceTier": "verified",
       "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+      "originalLanguage": "en",
+      "originalTitle": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+      "originalSummary": "The Treasury Department published the U.S. budget deficit for the 2026 fiscal year.",
+      "publishedAt": "2026-10-16T22:34:29.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "2730136c9e46a58617e1",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|usbudgetdeficits|2026-10-16",
+      "detailStatus": "brief",
+      "facts": [
+        "The Treasury Department published the U.S. budget deficit for the 2026 fiscal year."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year\nThe Treasury Department published the U.S. budget deficit for the 2026 fiscal year.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 173,
+        "sha256": "66709c9b82964006b592e0b7f29ccc8341efd5c46d439feebbcfa6103fcb9151",
+        "sourceUrl": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "cnbc-markets",
+      "sourceName": "CNBC",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
       "canonicalUrl": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
       "originalLanguage": "en",
       "originalTitle": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
       "originalSummary": "Treasury yields above 5% are raising borrowing costs for households and the federal government, highlighting the challenge of financing $2 trillion deficits.",
       "publishedAt": "2026-10-16T22:33:05.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "4204ee27e6f3d412e5fe",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1905,7 +2525,7 @@
         "characterCount": 266,
         "sha256": "f32c5a739e8b48a73c730c5bef50a28225bbe872217fddaf6c410c9f4d984e0a",
         "sourceUrl": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "zh",
@@ -1942,6 +2562,19 @@
         "firstSeenAt": "2026-10-15T16:58:50.133Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "f32c5a739e8b48a73c730c5bef50a28225bbe872217fddaf6c410c9f4d984e0a",
+        "count": 1,
+        "lastAttemptAt": "2026-10-17T07:08:01.535Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "watchItems"
+          ]
+        }
       }
     },
     {
@@ -1954,7 +2587,7 @@
       "originalTitle": "Apple’s $1,999 iPhone Duo puts the company's status-symbol power to the test",
       "originalSummary": "Apple’s $1,999 iPhone Duo is drawing early demand as analysts assess whether the foldable can lift iPhone pricing and revenue.",
       "publishedAt": "2026-10-16T22:31:26.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "91d41cd058b5f0b71a0e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -1993,7 +2626,7 @@
         "characterCount": 203,
         "sha256": "a848f14283225ba37fa583934d9aeb06270435cd49541e3eeed9d2fd30aec034",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/apple-iphone-duo-demand-price.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -2011,7 +2644,7 @@
       "originalTitle": "Katie Zacharia out as Trump's White House press secretary",
       "originalSummary": "Zacharia was on shaky ground from her first White House press conference and over questions about her claims of being a lawyer despite not passing a bar exam.",
       "publishedAt": "2026-10-16T21:26:15.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "6caa0385392e3216db16",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2040,7 +2673,7 @@
         "characterCount": 216,
         "sha256": "df5be5bd992e6156b65ba5a8f6db26b598d3840ef9e50e63a574affc421ab706",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/trump-katie-zacharia-white-house.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -2089,25 +2722,13 @@
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o?at_medium=RSS&at_campaign=rss",
         "checkedAt": "2026-10-17T04:23:13.654Z"
       },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Katie Zacharia leaving her White House role less than five days on the job",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-16T21:05:05.000Z",
-        "sourceHash": "0d12b10d33c449b562c5ca126f71af8e5ac7eb78f59e643516383e2ea1594aac",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-17T02:11:21.826Z",
-        "title": "Katie Zacharia leaving her White House role less than five days on the job",
-        "summary": "Her public debut as White House press secretary on Tuesday ended with a flurry of media criticism about her credentials and preparedness.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
+      },
+      "invalidationReason": "superseded-source-version",
+      "supersededBy": "a0c14515f41837540594"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2119,7 +2740,7 @@
       "originalTitle": "Why did CoreWeave stock get crushed this week? Look to this corner of the debt market for clues",
       "originalSummary": "CoreWeave’s bond yields and credit default swaps have surged as its stock sells off. Here’s what those credit signals mean for stock investors.",
       "publishedAt": "2026-10-16T20:33:55.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "af72680ef45d26469104",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2148,7 +2769,7 @@
         "characterCount": 239,
         "sha256": "ef260e03beb52ad9d141ce9f53f9268ca158ee2fdc7cadd0af78606bf54c45ed",
         "sourceUrl": "https://www.cnbc.com/investingclub/2026/10/16/coreweave-credit-default-swaps.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
@@ -2179,7 +2800,7 @@
       "originalTitle": "Watch: Did Tesla really just unveil a flying car?",
       "originalSummary": "Tesla CEO Elon Musk showcased the vehicle at a facility owned by his SpaceX company, which helped develop the model.",
       "publishedAt": "2026-10-16T12:32:31.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "1f66176117d123bdae4d",
       "verificationStatus": "cross-checked",
       "translationStatus": "unavailable",
@@ -2218,7 +2839,7 @@
         "characterCount": 166,
         "sha256": "02dd0aac67fc4bc562f9cb9f8de52638c62c14e5dce17a083772ef7f3de66be1",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/ckly4mj1g3n9o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -2250,7 +2871,7 @@
       "originalTitle": "Trump says White House didn't order Starlink restrictions in Ukraine",
       "originalSummary": "Ukrainian officials complained this week that SpaceX had limited internet connectivity without advance notice.",
       "publishedAt": "2026-10-16T20:28:10.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "7c7acb0851e31775d5ab",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2279,7 +2900,7 @@
         "characterCount": 179,
         "sha256": "4cebf5732a030dc2a951a4473109cac70dd1922e83345da964d4d523574a5fb3",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/trump-denies-musk-claim-he-ordered-starlink-restrictions-in-ukraine.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -2297,7 +2918,7 @@
       "originalTitle": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
       "originalSummary": "U.S. crude oil prices rose sharply Friday as Iran escalated attacks in the Strait of Hormuz this week.",
       "publishedAt": "2026-10-16T20:02:21.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "737495b3176c0f0f3c06",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2326,11 +2947,11 @@
         "characterCount": 198,
         "sha256": "f7211c728cc241a329ca6364d9761a80f48d768f9f42f8b1b661413f0820bbb2",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
-        "summaryAttempt": 1,
+        "summaryAttempt": 2,
         "summaryAttemptVersion": "summary-diagnostics-v1",
         "summaryRejection": "summary-audit"
       }
@@ -2345,7 +2966,7 @@
       "originalTitle": "Debt is eating up a bigger chunk of your raise, research shows",
       "originalSummary": "New research finds debt payments rose far faster than estimated real household income, absorbing about half of a one-earner household's gains.",
       "publishedAt": "2026-10-16T19:47:46.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "c9358ba329f882083d0e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2374,7 +2995,7 @@
         "characterCount": 205,
         "sha256": "97d310548b693196bb38f57862209c0de3154af7251e62d2e39a753f097199ec",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/debt-payments-rise-more-than-income.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -2392,7 +3013,7 @@
       "originalTitle": "Trump denies limiting Ukraine access to Starlink network",
       "originalSummary": "Speed curbs limited Ukraine's defences against deadly Russian attacks on Tuesday night.",
       "publishedAt": "2026-10-16T19:33:48.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "52be9553d81b169c605c",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2421,7 +3042,7 @@
         "characterCount": 144,
         "sha256": "0a04d075ff6d08f81923d1bfb0479ce064df04f4b944254416b089230f5309a3",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -2453,7 +3074,7 @@
       "originalTitle": "SpaceX AI policy leader grilled by NYC Council on Grok safety, sexualized images",
       "originalSummary": "SpaceX head of global government affairs for AI Gabriela Castillo Madrid faced critical questions from the New York City Council on Friday.",
       "publishedAt": "2026-10-16T19:30:51.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "d52c5e49b821ceb6b2ab",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2484,7 +3105,7 @@
         "characterCount": 220,
         "sha256": "10bb81767c1ef41171c05afabba9b5d410bd06656707f5b7ca0bf6bf0d0e0843",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/spacex-policy-manger-to-testify-in-nyc-council-ai-safety-investigation.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -2502,7 +3123,7 @@
       "originalTitle": "Wall Street's fear gauge is ripping. Traders see it going even higher",
       "originalSummary": "The sell-off in AI-related stocks pushed the VIX above 22 for the first time in four months. A cluster of trades suggests it could go even higher.",
       "publishedAt": "2026-10-16T19:28:10.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "1aa8fa727c3b36b88344",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2533,7 +3154,7 @@
         "characterCount": 216,
         "sha256": "dde6fde567dd2b3e18614014910bcac54f9da0a642f4961a6450c49d1e7ecdae",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/wall-streets-fear-gauge-is-ripping-traders-see-it-going-even-higher.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -2551,7 +3172,7 @@
       "originalTitle": "The affordability crisis isn't hitting all voters equally. Here's why",
       "originalSummary": "Younger Americans face higher inflation and housing costs than baby boomers, widening the affordability divide ahead of the 2026 midterm elections.",
       "publishedAt": "2026-10-16T19:22:21.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "fafceb564e207f6f638f",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2588,7 +3209,7 @@
         "characterCount": 217,
         "sha256": "01182f861bced87e07a73e38e21bbd2f22723bce43fdd6f72a7fbbe4ff61b057",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/affordability-inflation-midterms.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -2606,7 +3227,7 @@
       "originalTitle": "What we learned from heated US midterm Senate debates",
       "originalSummary": "As the 3 November election approaches and both parties fight for control of Congress, some clear themes have emerged.",
       "publishedAt": "2026-10-16T19:09:37.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "cbe7fe4e6e23834296a3",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2635,7 +3256,7 @@
         "characterCount": 171,
         "sha256": "b5c34764957661f0916600f1b8e3138c45a1e5f9e3e33d61dee723a1756d7d2a",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cqly03y3zg7lo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -2773,7 +3394,7 @@
       "originalTitle": "The Austin Powers steamroller: How to trade CoreWeave's slow moving crisis",
       "originalSummary": "After a 27.5% drop from last Friday's close to this Thursday morning's 52-week lows, followed by a 17% rebound, equity traders holding CoreWeave are dazed.",
       "publishedAt": "2026-10-16T18:24:35.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "4588e384a5348cc6278c",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2802,7 +3423,7 @@
         "characterCount": 230,
         "sha256": "728545fa58cb78028624975f83ba5a916d900adb28860f120eec97bc9888ec19",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/playing-the-coreweave-disconnect.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -2820,7 +3441,7 @@
       "originalTitle": "Toxic algorithms wouldn't let them go - now Australia wants an off switch",
       "originalSummary": "Australia has proposed a switch to force social media platforms to let users turn off recommended content.",
       "publishedAt": "2026-10-16T18:11:29.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "fd60cc85d63d39732a23",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2849,7 +3470,7 @@
         "characterCount": 180,
         "sha256": "1c30c3b6e6e259e4957266d56cbeca88b227f3f6a6ead3fad1c1f986926f9a1b",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cwr7y8er1n8vo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -2881,7 +3502,7 @@
       "originalTitle": "Why Trump and the GOP's billion-dollar midterm blitz isn’t working",
       "originalSummary": "Trump-aligned groups and Elon Musk have poured hundreds of millions into the midterm election, but the GOP spending surge has barely moved polls or the map.",
       "publishedAt": "2026-10-16T17:55:05.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "210facccb9957c49c30d",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2910,7 +3531,7 @@
         "characterCount": 223,
         "sha256": "518753171f9909f19c3da598d129e400b2fd0f98e08ba4c87a3a297984487aa9",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/republicans-midterms-spending-trump-musk-2026.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -2928,7 +3549,7 @@
       "originalTitle": "NBA tightens betting rules, develops AI to flag suspicious wagers",
       "originalSummary": "The NBA is tightening restrictions on bets and deploying AI to help identify suspicious wagering, according to two documents obtained by CNBC.",
       "publishedAt": "2026-10-16T17:50:50.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "b3527f1de5bf09f5feb8",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -2959,7 +3580,7 @@
         "characterCount": 208,
         "sha256": "14b91c25a0c9cf0aab1e90edca5785865aa727799197efee36757e1b09804465",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/nba-tightens-betting-rules-develops-ai-to-flag-suspicious-wagers.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -2977,7 +3598,7 @@
       "originalTitle": "Prediction market odds on Tesla-SpaceX merger are above 50% for early 2027",
       "originalSummary": "Kalshi odds for a Tesla-SpaceX merger rose above 50% for early 2027 as Barclays outlined how a deal could work.",
       "publishedAt": "2026-10-16T17:02:40.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "a4f307756adf38957df0",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3010,7 +3631,7 @@
         "characterCount": 186,
         "sha256": "7460f37b9c71f5a1c835f656f80c7770b44729237c2c08fc386cb65be135f5d4",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/tesla-spacex-merger-odds-rise-on-kalshi.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -3028,7 +3649,7 @@
       "originalTitle": "U.S. presses China on Mastercard, Citigroup market access in bilateral Bangkok talks, official says",
       "originalSummary": "The U.S. raised market access issues for Mastercard and Citigroup in China during bilateral meetings in Bangkok this week, a U.S. Treasury official says.",
       "publishedAt": "2026-10-16T16:46:18.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "5e10552b23f77c8aebe8",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3057,7 +3678,7 @@
         "characterCount": 253,
         "sha256": "535edc40cf56665bb40c83032e900c14cfe053bddf5a18c5234417a4479b4edd",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/us-china-mastercard-citigroup-market-access.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -3075,7 +3696,7 @@
       "originalTitle": "OpenAI Saudi national bugging case shows threat to U.S. leadership in AI: DNI Clayton",
       "originalSummary": "AI \"amplifies\" existing cybersecurity risks toward U.S. digital infrastructure, Clayton said on \"Squawk Box.\"",
       "publishedAt": "2026-10-16T16:27:44.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "ede7267374cd1b71cda9",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3106,7 +3727,7 @@
         "characterCount": 195,
         "sha256": "ae1314e324f496420a47c71e904af480d9bdf1ea6a1654931ba108a0607c92cc",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/ai-espionage-openai-jay-clayton.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -3210,7 +3831,7 @@
       "originalTitle": "Schwab to create 'tax-aware' strategy that's been attracting billions from wealthy investors",
       "originalSummary": "Wealthy investors are flocking to tax-aware long short strategies, adding billions into these super-powered versions of tax-loss harvesting accounts.",
       "publishedAt": "2026-10-16T16:21:14.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "d8262cd41e529117ff09",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3239,7 +3860,7 @@
         "characterCount": 242,
         "sha256": "aa6f08b2a9077f4d08312c9bc993fe04cbee052b3677eaefcf3af1268f4e25cb",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/tax-strategies-capital-gains-wealthy-investors-schwab.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-17T02:11:21.826Z",
@@ -3409,7 +4030,7 @@
       "originalTitle": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
       "originalSummary": "The BBC joins Ukraine's Operation Vivaldi as it regains crucial territory in the Donbas, but optimism has been dampened by souring relations with President Trump.",
       "publishedAt": "2026-10-16T16:00:30.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "c40027cc275d9e58aead",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3438,7 +4059,7 @@
         "characterCount": 244,
         "sha256": "4b5e5e68275e4c8dabb222531e1ea70f7ffe8a1888d6429f1d6ffa35ea9bf906",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -3580,7 +4201,7 @@
       "originalTitle": "Tesla unveils long-delayed Roadster developed with SpaceX, fueling merger speculation",
       "originalSummary": "Elon Musk first debuted the Roadster refresh concept in 2017 but Tesla has since missed every targeted delivery date.",
       "publishedAt": "2026-10-16T15:52:41.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "10b3068337548f3b96cc",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3613,7 +4234,7 @@
         "characterCount": 203,
         "sha256": "c6b8384bc2482c60883bfc6ddb05c24013e3078689785f59eb2fe8ac74e73443",
         "sourceUrl": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -3631,7 +4252,7 @@
       "originalTitle": "Sickle cell gene therapies offer new hope, but access remains a major challenge",
       "originalSummary": "FDA-approved gene therapies for sickle cell disease offer a chance to help patients, but factors including cost and access have slowed their use.",
       "publishedAt": "2026-10-16T15:50:15.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "315f6425882c653ed323",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3660,7 +4281,7 @@
         "characterCount": 225,
         "sha256": "89072fb256637d81b3553d2d8e40922c86fb979cac9d8f6bdfee276bf067d0b1",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/sickle-cell-gene-therapies-offer-new-hope-accessing-them-is-hard.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -3725,7 +4346,7 @@
       "originalTitle": "Watch: Will Ukraine get the support needed as tensions with US rise?",
       "originalSummary": "Zelensky thanked the \"real leaders\" ahead of a meeting with the EU in Brussels.",
       "publishedAt": "2026-10-16T15:45:10.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "d5cccddeaf4f8b24a1aa",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3763,7 +4384,7 @@
       "originalTitle": "Patients in chains rescued from suspected illegal rehab centre in South Africa",
       "originalSummary": "Some of the 200 patients were found with \"sores all over their bodies\" and in overcrowded rooms.",
       "publishedAt": "2026-10-16T14:57:51.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "7e1364948aa0bb46d566",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3792,7 +4413,7 @@
         "characterCount": 175,
         "sha256": "67c83105d478e05973cb929c8d2808f85cf8b50f2562e490bcae7dc23b4fd7a3",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmwyvxj49gpwo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -3824,7 +4445,7 @@
       "originalTitle": "Albanian protests turn violent: What we know",
       "originalSummary": "Albania's capital Tirana has seen months of protests from an anti-government \"Flamingo\" movement, but what started on Tuesday this week was on a different scale.",
       "publishedAt": "2026-10-16T14:33:32.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "06b0377dcfced7063721",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3853,7 +4474,7 @@
         "characterCount": 206,
         "sha256": "3d8aac9afa44d3dc29501b4b3a8158e6170db6f69af89831f063d6feb89abc8c",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cqdjv90d1jpko?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -3885,7 +4506,7 @@
       "originalTitle": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
       "originalSummary": "The BBC sees masked settlers attack Palestinians trying to harvest olives, amid a surge in similar incidents.",
       "publishedAt": "2026-10-16T14:31:04.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "e7f6ef0c4e737861c5b2",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -3914,7 +4535,7 @@
         "characterCount": 196,
         "sha256": "3e456fe153f159b258422d040facefe70fa24c624f4399f869e9d362af784d1b",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -3993,7 +4614,7 @@
       "originalTitle": "Blue Origin plans $330 million Florida expansion to ramp New Glenn launches",
       "originalSummary": "Blue Origin said it's targeting multiple flights per week of its New Glenn rocket by the end of the decade.",
       "publishedAt": "2026-10-16T14:26:05.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "d8006d05f195478edf3e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4022,7 +4643,7 @@
         "characterCount": 183,
         "sha256": "78c848f1613f6f4f54347d0780bf5f57c5679d294a1c0a48399588d521a97b4d",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/blue-origin-new-glenn-florida-expansion.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -4040,7 +4661,7 @@
       "originalTitle": "Dad fined after son, 2, died in Cyprus hotel fall",
       "originalSummary": "Joshua Foster \"lost control\" of his son while showing him the view of a water park from a window.",
       "publishedAt": "2026-10-16T14:21:32.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "316b0907cfef82beab3a",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4069,7 +4690,7 @@
         "characterCount": 147,
         "sha256": "efc9ebf90543dad5260467c309341be2d7dfc22d20a35204afeeb486f970d703",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cvj6j1klez88o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -4162,7 +4783,7 @@
       "originalTitle": "Here's how the CoreWeave sell-off is affecting OpenAI vs. Anthropic valuations",
       "originalSummary": "The spread is widening between AI leaders OpenAI and Anthropic as a sell-off in CoreWeave leads neocloud stocks lower.",
       "publishedAt": "2026-10-16T13:43:53.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "005eb9eb756d6f9e7dea",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4193,87 +4814,7 @@
         "characterCount": 197,
         "sha256": "c72052e56b29ea5a1acee448aaf9fd8b83e5243381021d041023850e3febec7b",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/coreweave-openai-anthropic-perps.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-16T16:37:23.196Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Ship attack reports near Hormuz reach record high as oil exports slow",
-      "originalSummary": "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
-      "publishedAt": "2026-10-16T05:00:17.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
-      "id": "5d72196af712be7f3cf6",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-16T05:00:17.000Z"
-        }
-      ],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|shipattackreport|2026-10-16",
-      "detailStatus": "brief",
-      "facts": [
-        "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Ship attack reports near Hormuz reach record high as oil exports slow\nBBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 163,
-        "sha256": "f63ce56d235c7f3d1ae623e87bb0e3941578ca1434ae929ca7b8e6960184fb1f",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
-      },
-      "analysisAttempt": {
-        "reviewVersion": "edge-audit-v4",
-        "sourceBodyHash": "f63ce56d235c7f3d1ae623e87bb0e3941578ca1434ae929ca7b8e6960184fb1f",
-        "count": 1,
-        "lastAttemptAt": "2026-10-16T16:37:23.196Z",
-        "rejection": {
-          "stage": "analysis",
-          "category": "language",
-          "fields": [
-            "causalChain"
-          ]
-        }
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Ship attack reports near Hormuz reach record high as oil exports slow",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-16T05:00:17.000Z",
-        "sourceHash": "f63ce56d235c7f3d1ae623e87bb0e3941578ca1434ae929ca7b8e6960184fb1f",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-16T16:37:23.196Z",
-        "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
-        "summary": "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -4337,14 +4878,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【环球财经】IMF与世行秋季年会呼吁合作应对经济挑战",
       "publishedAt": "2026-10-16T12:58:52.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "article": {
         "status": "complete",
         "characterCount": 1142,
         "reader": "cnfin-body",
         "sha256": "24fc1fc6c55149df568f925f0fa549c47116d6bc5a44fcc0e12cb855749bb986",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261016/4482359_1.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "id": "750aa6b77e5366451116",
       "verificationStatus": "verified",
@@ -4425,14 +4966,14 @@
       "originalLanguage": "zh",
       "originalTitle": "三部门：同意京津冀等5个城市群开展氢能综合应用试点工作",
       "publishedAt": "2026-10-16T12:50:27.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "article": {
         "status": "complete",
         "characterCount": 435,
         "reader": "cnfin-body",
         "sha256": "66683711f31111d3fccf4396eacc4b7d587f9798e4f4984daaa35166121aee1c",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261016/4482349_1.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "id": "4a1ec914e2ba9568643f",
       "verificationStatus": "verified",
@@ -4469,14 +5010,14 @@
       "originalLanguage": "zh",
       "originalTitle": "【财经分析】公募投资规则将调整 REITs独立分类料激活机构需求",
       "publishedAt": "2026-10-16T12:48:46.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "article": {
         "status": "complete",
         "characterCount": 2145,
         "reader": "cnfin-body",
         "sha256": "13c91b515ec763b59b1e52fd2041b604453f495a28bb979806b20fa9c35299fb",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261016/4482337_1.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "id": "cd46c347520adabdb415",
       "verificationStatus": "verified",
@@ -4518,7 +5059,7 @@
       "originalTitle": "Fed's Warsh withholds rate signal, praises recent global tightening",
       "originalSummary": "Warsh refrained from signaling another interest rate hike this month, pointed to a \"synchronous tightening\" by central banks in the fight against inflation.",
       "publishedAt": "2026-10-16T12:36:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "b3f703caf4c835f67395",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4559,7 +5100,7 @@
         "characterCount": 224,
         "sha256": "1f94ad285ff95e75a44b3c02dceb3fdab168252a132a4503303abd302f21111a",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/feds-warsh-says-ai-development-path-will-be-very-bumpy-.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -4576,14 +5117,14 @@
       "originalLanguage": "zh",
       "originalTitle": "货币市场日报：10月16日",
       "publishedAt": "2026-10-16T12:27:51.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "article": {
         "status": "complete",
         "characterCount": 2185,
         "reader": "cnfin-body",
         "sha256": "7153cd48248f037a4a0d9658fb60523d7da7e6f1e1bef288b571fb893343e812",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261016/4482314_1.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "id": "92a0fa711b4d77e4f089",
       "verificationStatus": "verified",
@@ -4668,7 +5209,7 @@
       "originalTitle": "Elon Musk cash infusion helps GOP Senate super PAC raise record $273 million",
       "originalSummary": "Elon Musk gave a record $158 million to the GOP’s Senate Leadership Fund, boosting its war chest as Republicans pour money into Texas to defend Ken Paxton.",
       "publishedAt": "2026-10-16T12:17:29.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "3c2c63cb538ad0659bb1",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4697,7 +5238,7 @@
         "characterCount": 232,
         "sha256": "5ee9b92159f0786479ced95515bdb9dc7a74900d2c03e3293f9e1843ec15418a",
         "sourceUrl": "https://www.cnbc.com/2026/10/15/elon-musk-senate-leadership-fund-fundraising.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -4714,15 +5255,7 @@
       "originalLanguage": "zh",
       "originalTitle": "【财经分析】德国财政“松绑”能否提振经济",
       "publishedAt": "2026-10-16T12:14:20.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
-      "article": {
-        "status": "complete",
-        "characterCount": 1511,
-        "reader": "cnfin-body",
-        "sha256": "b7e2736c30857e2c820326e49e4fb0c75785b45962e747afb0f933395ed7c6c2",
-        "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261016/4482304_1.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
-      },
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "442a172773799a24d95d",
       "verificationStatus": "verified",
       "titleZh": "【财经分析】德国财政“松绑”能否提振经济",
@@ -4746,7 +5279,7 @@
       "expectations": [],
       "inferences": [],
       "queue": {
-        "firstSeenAt": "2026-10-16T16:37:23.196Z",
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
       }
@@ -4841,7 +5374,7 @@
       "originalTitle": "India's 'cockroach' party founder detained ahead of protest",
       "originalSummary": "The youth-led movement had called for a Delhi protest after mass detentions last week and the jailing of two leaders.",
       "publishedAt": "2026-10-16T11:44:31.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "2e95f1ba976055adcd55",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4870,7 +5403,7 @@
         "characterCount": 177,
         "sha256": "79fa7ae3df0ee8b43687271dc3bf0d72e085185cb1acb38f528779dd47fd276f",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmx237n1y9lzo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -4902,7 +5435,7 @@
       "originalTitle": "Israeli settlers attack Palestinians in West Bank during olive harvest",
       "originalSummary": "Israeli settlers were seen attacking Palestinian farmers and setting fire to olive trees in the West Bank.",
       "publishedAt": "2026-10-16T11:40:41.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "1edc5ffcf669234c0d8a",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -4931,7 +5464,7 @@
         "characterCount": 177,
         "sha256": "339892bdf4e1467769c783f04e5d8f2a7643454d61cee6ec3c9871ccd33c3333",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cqn06zx2r15jo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -5043,7 +5576,7 @@
       "originalTitle": "I watched Nvidia's Jensen Huang work the room in London. He brought big checks — and a blunt message",
       "originalSummary": "Nvidia has a near monopoly over the most powerful AI chips and Huang courts tech execs and world leaders with ease.",
       "publishedAt": "2026-10-16T11:33:44.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "deda5bcb311cf22afeb9",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5074,7 +5607,7 @@
         "characterCount": 216,
         "sha256": "28e42c3867296c9d76763df27d718c90bf854b249895a5abd34a85f76458a7c8",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/nvidia-jensen-huang-london.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -5138,6 +5671,100 @@
       }
     },
     {
+      "sourceId": "cnbc-business",
+      "sourceName": "CNBC",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnbc.com/id/10001147/device/rss/rss.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/15/kfc-coca-cola-pepsi-switch.html",
+      "originalLanguage": "en",
+      "originalTitle": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",
+      "originalSummary": "KFC is switching from PepsiCo to Coca-Cola as its beverage supplier for U.S. restaurants.",
+      "publishedAt": "2026-10-16T11:02:24.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "daa7e711ed26cd200179",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|kfctoswitchtococ|2026-10-16",
+      "detailStatus": "brief",
+      "facts": [
+        "KFC is switching from PepsiCo to Coca-Cola as its beverage supplier for U.S. restaurants."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades\nKFC is switching from PepsiCo to Coca-Cola as its beverage supplier for U.S. restaurants.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 176,
+        "sha256": "807749898e5c2a4dc034b6063b6270b167254bccddf962e866a0035faae92c38",
+        "sourceUrl": "https://www.cnbc.com/2026/10/15/kfc-coca-cola-pepsi-switch.html",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "cnbc-business",
+      "sourceName": "CNBC",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnbc.com/id/10001147/device/rss/rss.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/16/nike-india-campus-china-sales.html",
+      "originalLanguage": "en",
+      "originalTitle": "Nike's India campus is a long-term growth bet amid turnaround",
+      "originalSummary": "Nike announced earlier this month that it's expanding into India. The retailer has been broadly struggling, especially in the China market.",
+      "publishedAt": "2026-10-16T11:00:01.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "770d4753788d2cac9325",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|nikesindiacampus|2026-10-16",
+      "detailStatus": "brief",
+      "facts": [
+        "Nike announced earlier this month that it's expanding into India. The retailer has been broadly struggling, especially in the China market."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Nike's India campus is a long-term growth bet amid turnaround\nNike announced earlier this month that it's expanding into India. The retailer has been broadly struggling, especially in the China market.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 201,
+        "sha256": "79fe5b763bc698c150dd41a76ea37304b4440f629c3d054b2db94fbde985ebd9",
+        "sourceUrl": "https://www.cnbc.com/2026/10/16/nike-india-campus-china-sales.html",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-17T07:08:01.535Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
       "sourceId": "cnbc-markets",
       "sourceName": "CNBC",
       "sourceTier": "verified",
@@ -5147,7 +5774,7 @@
       "originalTitle": "Norway's $2 trillion wealth fund was frozen out of major defense companies. That may be about to change",
       "originalSummary": "Existing ethical rules mean the fund is not permitted to invest in companies like Lockheed Martin and Boeing.",
       "publishedAt": "2026-10-16T10:56:47.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "ffa4c1e46b451fd888e6",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5180,7 +5807,7 @@
         "characterCount": 213,
         "sha256": "d8386bc61df155b83a5a1c052462e11c00babe8b88ef23809796570daa7eb86c",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/norway-sovereign-wealth-fund-defense-investment.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -5247,7 +5874,7 @@
       "originalTitle": "Banks expect to be hit with higher taxes in Budget",
       "originalSummary": "Senior banking executives have told the BBC they expect to be \"on the menu\" in the chancellor's Budget tax later this month.",
       "publishedAt": "2026-10-16T10:16:27.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "6ef354de96196d7cd39a",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5276,7 +5903,7 @@
         "characterCount": 175,
         "sha256": "4a8fb6d4193fe4fb68c9a5c3ed7b1a551921151bfa57ca0fcded576b85046ca0",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c32l4k2xdvrzo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -5344,7 +5971,7 @@
       "originalTitle": "Trump says he won't use nuclear weapons or send ground troops to Iran",
       "originalSummary": "Trump said he would not use nuclear weapons against Iran or send ground troops as the U.S. reportedly weighs new strike options.",
       "publishedAt": "2026-10-16T09:46:54.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "363dcdd08abb65465fda",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5373,7 +6000,7 @@
         "characterCount": 198,
         "sha256": "7b16ced7bb52a2f73ceca8b725b28f26791637765bc77badf358bd11a0827ba2",
         "sourceUrl": "https://www.cnbc.com/2026/10/16/us-iran-war-trump-hormuz.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -5517,7 +6144,7 @@
       "originalTitle": "China tells Israel to stop 'forced establishment' of West Bank settlements",
       "originalSummary": "Chinese Foreign Minister Wang Yi spoke to Israeli President Isaac Herzog on the sidelines of a conference.",
       "publishedAt": "2026-10-16T08:45:54.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "611a7f5086badebb82f9",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5546,7 +6173,7 @@
         "characterCount": 181,
         "sha256": "0a10d1e1851ab7cdc9101ce4c716b6b8bb758ac10959295fbc0b6e916a5d0630",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cq1j3wdxy48ro?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -5578,7 +6205,7 @@
       "originalTitle": "'It's really hard to believe' - How Oregon primary school shooting unfolded",
       "originalSummary": "Three children aged 5, 8 and 11 and a teacher were killed after a 16-year-old suspect opened fire in the city of Bend, local police say.",
       "publishedAt": "2026-10-16T08:27:16.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "25f742f576f1c6044be3",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -5607,7 +6234,7 @@
         "characterCount": 212,
         "sha256": "d1ee805003ed794d5e878c62f2b2ec5a38deb85c34e5e672156d4ba4e6593456",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cwe8r29mjd05o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -5625,236 +6252,6 @@
       },
       "queue": {
         "firstSeenAt": "2026-10-16T04:29:38.095Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/16/g20-russia-ukraine-trump-diesel-europe-.html",
-      "originalLanguage": "en",
-      "originalTitle": "Russia returns to G20 table in Bangkok on U.S. invitation that angers Europe",
-      "originalSummary": "Russia’s return to the G20 table has tested how far Washington’s outreach to Moscow will strain ties with European allies.",
-      "publishedAt": "2026-10-16T06:11:35.000Z",
-      "fetchedAt": "2026-10-16T16:37:23.196Z",
-      "id": "7b0e9c7b32f97e5c7768",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|russiareturnstog|2026-10-16",
-      "detailStatus": "brief",
-      "facts": [
-        "Russia’s return to the G20 table has tested how far Washington’s outreach to Moscow will strain ties with European allies."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Russia returns to G20 table in Bangkok on U.S. invitation that angers Europe\nRussia’s return to the G20 table has tested how far Washington’s outreach to Moscow will strain ties with European allies.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 199,
-        "sha256": "e1c6e8b714a4ebe891d14ef3c0e4fac8b95f82173686eb30f17d41a6df92ea74",
-        "sourceUrl": "https://www.cnbc.com/2026/10/16/g20-russia-ukraine-trump-diesel-europe-.html",
-        "checkedAt": "2026-10-16T16:37:23.196Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-16T04:29:38.095Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9rky27ljrxno?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Fuel costs squeezing margins for some businesses",
-      "originalSummary": "Diesel recently topped £2 per litre and there is concern that a duty freeze will not go far enough.",
-      "publishedAt": "2026-10-16T05:30:57.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
-      "id": "b71f0ec14a074167f9d4",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|fuelcostssqueezi|2026-10-16",
-      "detailStatus": "brief",
-      "facts": [
-        "Diesel recently topped £2 per litre and there is concern that a duty freeze will not go far enough."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Fuel costs squeezing margins for some businesses\nDiesel recently topped £2 per litre and there is concern that a duty freeze will not go far enough.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 148,
-        "sha256": "35aa359190a4cebb501014c7386b7e554ea1957aa8b725483d2d788793731578",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c9rky27ljrxno?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Fuel costs squeezing margins for some businesses",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c9rky27ljrxno?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-16T05:30:57.000Z",
-        "sourceHash": "35aa359190a4cebb501014c7386b7e554ea1957aa8b725483d2d788793731578",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-16T16:37:23.196Z",
-        "title": "Fuel costs squeezing margins for some businesses",
-        "summary": "Diesel recently topped £2 per litre and there is concern that a duty freeze will not go far enough.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-16T16:37:23.196Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6lyk77jq9d2o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'TV and cheap booze' blamed for landlord quitting",
-      "originalSummary": "Lincolnshire has lost 27% of its pubs and bars since 2009 and some are calling on the government to act against cheap supermarket booze.",
-      "publishedAt": "2026-10-16T05:03:15.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
-      "id": "ecdc966cbf63c395621b",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|tvandcheapboozeb|2026-10-16",
-      "detailStatus": "brief",
-      "facts": [
-        "Lincolnshire has lost 27% of its pubs and bars since 2009 and some are calling on the government to act against cheap supermarket booze."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "'TV and cheap booze' blamed for landlord quitting\nLincolnshire has lost 27% of its pubs and bars since 2009 and some are calling on the government to act against cheap supermarket booze.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 186,
-        "sha256": "01824d6e8a667f92d12c164a99e888e9de444a7097c8bcfc70f7a1f48651a00d",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6lyk77jq9d2o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "'TV and cheap booze' blamed for landlord quitting",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6lyk77jq9d2o?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-16T05:03:15.000Z",
-        "sourceHash": "01824d6e8a667f92d12c164a99e888e9de444a7097c8bcfc70f7a1f48651a00d",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-16T16:37:23.196Z",
-        "title": "'TV and cheap booze' blamed for landlord quitting",
-        "summary": "Lincolnshire has lost 27% of its pubs and bars since 2009 and some are calling on the government to act against cheap supermarket booze.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-16T16:37:23.196Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "They fled Russia, but the West sent them back",
-      "originalSummary": "Over the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge.",
-      "publishedAt": "2026-10-16T04:57:28.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
-      "id": "6b0f721b3527b2951d1a",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|theyfledrussiabu|2026-10-16",
-      "detailStatus": "brief",
-      "facts": [
-        "Over the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "They fled Russia, but the West sent them back\nOver the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 191,
-        "sha256": "95baf8f4788fa1d18598fe27e30763b4e310347ecf659ec48852a38422853750",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "They fled Russia, but the West sent them back",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-16T04:57:28.000Z",
-        "sourceHash": "95baf8f4788fa1d18598fe27e30763b4e310347ecf659ec48852a38422853750",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-16T16:37:23.196Z",
-        "title": "They fled Russia, but the West sent them back",
-        "summary": "Over the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-16T16:37:23.196Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
       }
@@ -5920,6 +6317,316 @@
     }
   ],
   "retainedDetails": [
+    {
+      "sourceId": "cnbc-markets",
+      "sourceName": "CNBC",
+      "sourceTier": "verified",
+      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/16/g20-russia-ukraine-trump-diesel-europe-.html",
+      "originalLanguage": "en",
+      "originalTitle": "Russia returns to G20 table in Bangkok on U.S. invitation that angers Europe",
+      "originalSummary": "Russia’s return to the G20 table has tested how far Washington’s outreach to Moscow will strain ties with European allies.",
+      "publishedAt": "2026-10-16T06:11:35.000Z",
+      "fetchedAt": "2026-10-16T16:37:23.196Z",
+      "id": "7b0e9c7b32f97e5c7768",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|russiareturnstog|2026-10-16",
+      "detailStatus": "brief",
+      "facts": [
+        "Russia’s return to the G20 table has tested how far Washington’s outreach to Moscow will strain ties with European allies."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Russia returns to G20 table in Bangkok on U.S. invitation that angers Europe\nRussia’s return to the G20 table has tested how far Washington’s outreach to Moscow will strain ties with European allies.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 199,
+        "sha256": "e1c6e8b714a4ebe891d14ef3c0e4fac8b95f82173686eb30f17d41a6df92ea74",
+        "sourceUrl": "https://www.cnbc.com/2026/10/16/g20-russia-ukraine-trump-diesel-europe-.html",
+        "checkedAt": "2026-10-16T16:37:23.196Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-16T04:29:38.095Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9rky27ljrxno?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Fuel costs squeezing margins for some businesses",
+      "originalSummary": "Diesel recently topped £2 per litre and there is concern that a duty freeze will not go far enough.",
+      "publishedAt": "2026-10-16T05:30:57.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "b71f0ec14a074167f9d4",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|fuelcostssqueezi|2026-10-16",
+      "detailStatus": "brief",
+      "facts": [
+        "Diesel recently topped £2 per litre and there is concern that a duty freeze will not go far enough."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Fuel costs squeezing margins for some businesses\nDiesel recently topped £2 per litre and there is concern that a duty freeze will not go far enough.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 148,
+        "sha256": "35aa359190a4cebb501014c7386b7e554ea1957aa8b725483d2d788793731578",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c9rky27ljrxno?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "factualSummary": {
+        "language": "en",
+        "originalTitle": "Fuel costs squeezing margins for some businesses",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c9rky27ljrxno?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-16T05:30:57.000Z",
+        "sourceHash": "35aa359190a4cebb501014c7386b7e554ea1957aa8b725483d2d788793731578",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-16T16:37:23.196Z",
+        "title": "Fuel costs squeezing margins for some businesses",
+        "summary": "Diesel recently topped £2 per litre and there is concern that a duty freeze will not go far enough.",
+        "origin": "publisher-en",
+        "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-16T16:37:23.196Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "bbc-business",
+      "sourceName": "BBC News · 财经",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6lyk77jq9d2o?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "'TV and cheap booze' blamed for landlord quitting",
+      "originalSummary": "Lincolnshire has lost 27% of its pubs and bars since 2009 and some are calling on the government to act against cheap supermarket booze.",
+      "publishedAt": "2026-10-16T05:03:15.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "ecdc966cbf63c395621b",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|tvandcheapboozeb|2026-10-16",
+      "detailStatus": "brief",
+      "facts": [
+        "Lincolnshire has lost 27% of its pubs and bars since 2009 and some are calling on the government to act against cheap supermarket booze."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "'TV and cheap booze' blamed for landlord quitting\nLincolnshire has lost 27% of its pubs and bars since 2009 and some are calling on the government to act against cheap supermarket booze.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 186,
+        "sha256": "01824d6e8a667f92d12c164a99e888e9de444a7097c8bcfc70f7a1f48651a00d",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6lyk77jq9d2o?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "factualSummary": {
+        "language": "en",
+        "originalTitle": "'TV and cheap booze' blamed for landlord quitting",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6lyk77jq9d2o?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-16T05:03:15.000Z",
+        "sourceHash": "01824d6e8a667f92d12c164a99e888e9de444a7097c8bcfc70f7a1f48651a00d",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-16T16:37:23.196Z",
+        "title": "'TV and cheap booze' blamed for landlord quitting",
+        "summary": "Lincolnshire has lost 27% of its pubs and bars since 2009 and some are calling on the government to act against cheap supermarket booze.",
+        "origin": "publisher-en",
+        "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-16T16:37:23.196Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "Ship attack reports near Hormuz reach record high as oil exports slow",
+      "originalSummary": "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
+      "publishedAt": "2026-10-16T05:00:17.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "5d72196af712be7f3cf6",
+      "verificationStatus": "cross-checked",
+      "translationStatus": "unavailable",
+      "relatedSources": [
+        {
+          "name": "BBC News · 财经",
+          "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-16T05:00:17.000Z"
+        }
+      ],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|shipattackreport|2026-10-16",
+      "detailStatus": "brief",
+      "facts": [
+        "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Ship attack reports near Hormuz reach record high as oil exports slow\nBBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 163,
+        "sha256": "f63ce56d235c7f3d1ae623e87bb0e3941578ca1434ae929ca7b8e6960184fb1f",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "f63ce56d235c7f3d1ae623e87bb0e3941578ca1434ae929ca7b8e6960184fb1f",
+        "count": 1,
+        "lastAttemptAt": "2026-10-16T16:37:23.196Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "language",
+          "fields": [
+            "causalChain"
+          ]
+        }
+      },
+      "factualSummary": {
+        "language": "en",
+        "originalTitle": "Ship attack reports near Hormuz reach record high as oil exports slow",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-16T05:00:17.000Z",
+        "sourceHash": "f63ce56d235c7f3d1ae623e87bb0e3941578ca1434ae929ca7b8e6960184fb1f",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-16T16:37:23.196Z",
+        "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
+        "summary": "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
+        "origin": "publisher-en",
+        "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-16T16:37:23.196Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
+    {
+      "sourceId": "bbc-world",
+      "sourceName": "BBC News · 世界",
+      "sourceTier": "verified",
+      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&at_campaign=rss",
+      "originalLanguage": "en",
+      "originalTitle": "They fled Russia, but the West sent them back",
+      "originalSummary": "Over the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge.",
+      "publishedAt": "2026-10-16T04:57:28.000Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
+      "id": "6b0f721b3527b2951d1a",
+      "verificationStatus": "verified",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 55,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|theyfledrussiabu|2026-10-16",
+      "detailStatus": "brief",
+      "facts": [
+        "Over the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "They fled Russia, but the West sent them back\nOver the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 191,
+        "sha256": "95baf8f4788fa1d18598fe27e30763b4e310347ecf659ec48852a38422853750",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&at_campaign=rss",
+        "checkedAt": "2026-10-17T07:08:01.535Z"
+      },
+      "factualSummary": {
+        "language": "en",
+        "originalTitle": "They fled Russia, but the West sent them back",
+        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&at_campaign=rss",
+        "publishedAt": "2026-10-16T04:57:28.000Z",
+        "sourceHash": "95baf8f4788fa1d18598fe27e30763b4e310347ecf659ec48852a38422853750",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-16T16:37:23.196Z",
+        "title": "They fled Russia, but the West sent them back",
+        "summary": "Over the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge.",
+        "origin": "publisher-en",
+        "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-16T16:37:23.196Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      }
+    },
     {
       "sourceId": "cnbc-markets",
       "sourceName": "CNBC",
@@ -6287,7 +6994,7 @@
       "originalTitle": "Basel Committee finalises measures to address window-dressing in the G-SIB framework and consults on G-SIB methodology review",
       "originalSummary": "The Basel Committee on Banking Supervision today published final amendments to address window dressing in the G-SIB framework and a consultation on the G-SIB methodology review.",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "8ec836afd9c748aac31f",
       "verificationStatus": "official",
       "translationStatus": "unavailable",
@@ -6316,7 +7023,7 @@
         "characterCount": 303,
         "sha256": "0bd75a29ba61e04c5fc73df6b6c5513294484ad92c344d740f12c541b239fd6f",
         "sourceUrl": "https://www.bis.org/media-releases/20261016-basel-committee-finalises-measures-address-window-dressing-g-sib-framework-and-consults-g-sib",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -6334,7 +7041,7 @@
       "originalTitle": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
       "originalSummary": "Yemen's information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace.",
       "publishedAt": "2026-10-15T23:38:46.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "f9c17fc9dd29582f019c",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6363,7 +7070,7 @@
         "characterCount": 209,
         "sha256": "db24c00eaae28fb2da50869a7d990df58c40f56975254f9e0fccab0358990509",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -6395,7 +7102,7 @@
       "originalTitle": "Tip-off foiled US teen suspect's plot to attack Hindu temple, police say",
       "originalSummary": "The alleged plot only failed because the 19-year-old suspect's gun jammed outside the place of worship, say police.",
       "publishedAt": "2026-10-15T23:27:21.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "d197743e3cd96ee84650",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6424,7 +7131,7 @@
         "characterCount": 188,
         "sha256": "db3e6f0bb78e96e163b75d29a1a27b8d2ad65387829c6082d95cdc6d43429f85",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cqgm0j4kjvevo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -6456,7 +7163,7 @@
       "originalTitle": "Are student protests being manipulated ahead of France's presidential election?",
       "originalSummary": "France's prime minister has suggested that student anger is being weaponised, as the unions and other protesters prepare to take to the streets too.",
       "publishedAt": "2026-10-15T23:25:06.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "e0f30892b900a288165f",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6485,7 +7192,7 @@
         "characterCount": 228,
         "sha256": "ae36850f185c91d78d3e09cda317ae636f5879b89421181816ed7ece7d2d7a81",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c8zxlyg965r3o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -6517,7 +7224,7 @@
       "originalTitle": "Living with a stink? Technology might help",
       "originalSummary": "Smells from rubbish dumps and industrial facilities are being more carefully monitored.",
       "publishedAt": "2026-10-15T23:18:21.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "fcb890abb71cac935d3d",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6546,7 +7253,7 @@
         "characterCount": 130,
         "sha256": "496bf8966d45ff0bac802bcd0aa93362a7d9e44f9453bc0651637b27ef8613da",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cr6240q1w136o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -6578,7 +7285,7 @@
       "originalTitle": "I find it quite demoralising in store - why I do all my shopping online",
       "originalSummary": "After Primark announced plans for home delivery, we hear from women who never go into clothes stores.",
       "publishedAt": "2026-10-15T23:16:12.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "a08520936c67f82bb37e",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -6607,7 +7314,7 @@
         "characterCount": 173,
         "sha256": "a8fb5d3532d549afd1aef6cd1ad2377e4b7cdb43e24dab705c9c12fb339e51c2",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c36lk280kd1o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -7196,7 +7903,7 @@
       "originalTitle": "Porsche reveals Mission S concept car that previews new design identity",
       "originalSummary": "Porsche revealed a concept car called Mission S as part of a turnaround plan that includes efforts to boost profits through higher-end products and lower sales.",
       "publishedAt": "2026-10-15T20:30:01.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "ee0c12b6ed6cf7d663d0",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -7233,7 +7940,7 @@
         "characterCount": 232,
         "sha256": "7eebdc91dea56ddee071a909b1c92fe30e46f4cfede70ae67b7d6e509ab81c3e",
         "sourceUrl": "https://www.cnbc.com/2026/10/15/porsche-mission-s-concept-car.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "queue": {
         "firstSeenAt": "2026-10-16T16:37:23.196Z",
@@ -7608,17 +8315,11 @@
       "originalTitle": "'I'd spend $1,000 on a wedding present'",
       "originalSummary": "New Yorkers share how much they spend on a wedding gift - and how they decide.",
       "publishedAt": "2026-10-15T18:30:09.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "7ded434f690be1f86f66",
-      "verificationStatus": "cross-checked",
+      "verificationStatus": "verified",
       "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/videos/ckly0jy2ygdjo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-15T18:30:09.000Z"
-        }
-      ],
+      "relatedSources": [],
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [],
@@ -7947,7 +8648,7 @@
       "originalTitle": "Trump calls off livestream of Fort Hood attacker's execution by firing squad",
       "originalSummary": "Trump said some would \"rather not watch\" the killing of Nidal Hasan, the first military execution in over 60 years.",
       "publishedAt": "2026-10-15T17:47:22.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "5679b6055bc11edd55db",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -7976,7 +8677,7 @@
         "characterCount": 192,
         "sha256": "5a0b5fa9f5a948cd83f5552e918eb880aa08a1c6fe3bf098a6c3c171cc83df19",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/crx23qlnj27qo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -8008,7 +8709,7 @@
       "originalTitle": "Watch: What does Starlink have to do with the Ukraine-Russia war?",
       "originalSummary": "Ukraine's president has told Elon Musk that any restriction on the Starlink's system cost lives.",
       "publishedAt": "2026-10-15T17:31:37.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "98241f740833c33fd710",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -8037,7 +8738,7 @@
         "characterCount": 162,
         "sha256": "9726d373c992f11ee5051219949232c7f8d406b41bcca18e7e0be3c34747c01c",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cqr7yzpxm083o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -8069,7 +8770,7 @@
       "originalTitle": "'I paid thousands to a company for jobs that never came'",
       "originalSummary": "Apurv Patel is one of several people who say they were promised job opportunities that did not appear.",
       "publishedAt": "2026-10-15T17:19:49.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
+      "fetchedAt": "2026-10-17T07:08:01.535Z",
       "id": "dc63d72799ceba71a54d",
       "verificationStatus": "verified",
       "translationStatus": "unavailable",
@@ -8102,7 +8803,7 @@
         "characterCount": 159,
         "sha256": "a0b6c581c43763e2ae4550a7a0ad66dff855187b7739493e1f6c9b6e5ed8ba8f",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c9j3dvezpdz0o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
+        "checkedAt": "2026-10-17T07:08:01.535Z"
       },
       "factualSummary": {
         "language": "en",
@@ -8860,269 +9561,6 @@
         "summaryAttempt": 0,
         "summaryAttemptVersion": "summary-diagnostics-v1"
       }
-    },
-    {
-      "sourceId": "cnbc-business",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/10001147/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/15/jetblue-bluefirst-first-class.html",
-      "originalLanguage": "en",
-      "originalTitle": "JetBlue’s new domestic first class, BlueFirst, is now on sale",
-      "originalSummary": "JetBlue announced that BlueFirst, its new domestic first class option, is available for booking on more than 30 routes. It launches December 8.",
-      "publishedAt": "2026-10-15T16:13:33.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
-      "id": "2182be41da9c197590a3",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|jetbluesnewdomes|2026-10-15",
-      "detailStatus": "brief",
-      "facts": [
-        "JetBlue announced that BlueFirst, its new domestic first class option, is available for booking on more than 30 routes. It launches December 8."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "JetBlue’s new domestic first class, BlueFirst, is now on sale\nJetBlue announced that BlueFirst, its new domestic first class option, is available for booking on more than 30 routes. It launches December 8.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 205,
-        "sha256": "0b3dd492dc97be5b8f941e9c2688e73c4507c65d0447bc2e2020d0482cd32d0d",
-        "sourceUrl": "https://www.cnbc.com/2026/10/15/jetblue-bluefirst-first-class.html",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-16T04:29:38.095Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/15/jetblue-bluefirst-first-class.html",
-      "originalLanguage": "en",
-      "originalTitle": "JetBlue’s new domestic first class, BlueFirst, is now on sale",
-      "originalSummary": "JetBlue announced that BlueFirst, its new domestic first class option, is available for booking on more than 30 routes. It launches December 8.",
-      "publishedAt": "2026-10-15T16:13:33.000Z",
-      "fetchedAt": "2026-10-15T16:58:50.133Z",
-      "id": "bc3ba45d134c260b9dfa",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/15/jetblue-bluefirst-first-class.html",
-          "publishedAt": "2026-10-15T16:13:33.000Z"
-        }
-      ],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|jetbluesnewdomes|2026-10-15",
-      "detailStatus": "brief",
-      "facts": [
-        "JetBlue announced that BlueFirst, its new domestic first class option, is available for booking on more than 30 routes. It launches December 8."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "JetBlue’s new domestic first class, BlueFirst, is now on sale\nJetBlue announced that BlueFirst, its new domestic first class option, is available for booking on more than 30 routes. It launches December 8.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 205,
-        "sha256": "0b3dd492dc97be5b8f941e9c2688e73c4507c65d0447bc2e2020d0482cd32d0d",
-        "sourceUrl": "https://www.cnbc.com/2026/10/15/jetblue-bluefirst-first-class.html",
-        "checkedAt": "2026-10-15T16:58:50.133Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-15T16:58:50.133Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
-      "originalLanguage": "en",
-      "originalTitle": "Economists: Hot PPI shows Fed's work is not done",
-      "originalSummary": "'We see real risks the Fed will deliver another rate hike in two weeks' time,' one Fedwatcher warns",
-      "publishedAt": "2026-10-15T15:37:59.000Z",
-      "fetchedAt": "2026-10-16T04:29:38.095Z",
-      "id": "6069790821b480f49734",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|economistshotppi|2026-10-15",
-      "detailStatus": "brief",
-      "facts": [
-        "'We see real risks the Fed will deliver another rate hike in two weeks' time,' one Fedwatcher warns"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Economists: Hot PPI shows Fed's work is not done\n'We see real risks the Fed will deliver another rate hike in two weeks' time,' one Fedwatcher warns",
-        "reader": "publisher-feed-summary",
-        "characterCount": 148,
-        "sha256": "25b5e6e8641f8adf980a4ad7f5c7bb250d90ddd234ad3f5fca999144d1a311a9",
-        "sourceUrl": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
-        "checkedAt": "2026-10-16T04:29:38.095Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-16T04:29:38.095Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
-      "originalSummary": "Children were buried under the debris after the roof crashed through three classrooms, police say.",
-      "publishedAt": "2026-10-15T15:26:16.000Z",
-      "fetchedAt": "2026-10-17T04:23:13.654Z",
-      "id": "2c0e59f83823c013b39f",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|atleast33pupilsa|2026-10-15",
-      "detailStatus": "brief",
-      "facts": [
-        "Children were buried under the debris after the roof crashed through three classrooms, police say."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "At least 33 pupils and teacher killed after school roof collapses in Pakistan\nChildren were buried under the debris after the roof crashed through three classrooms, police say.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 176,
-        "sha256": "e588a882c4372fa43f316bf2d50226b55bb57477b265a4443dca2adfb1b6b689",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-17T04:23:13.654Z"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-15T15:26:16.000Z",
-        "sourceHash": "e588a882c4372fa43f316bf2d50226b55bb57477b265a4443dca2adfb1b6b689",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-15T16:58:50.133Z",
-        "title": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
-        "summary": "Children were buried under the debris after the roof crashed through three classrooms, police say.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-15T16:58:50.133Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/investingclub/2026/10/15/were-trimming-a-rallying-defensive-stock-and-buying-other-on-a-muted-earnings-move.html",
-      "originalLanguage": "en",
-      "originalTitle": "We're trimming a rallying defensive stock and buying other on a muted earnings move",
-      "originalSummary": "A major rotation is happening in the market on Thursday, and we're capitalizing on it.",
-      "publishedAt": "2026-10-15T15:17:14.000Z",
-      "fetchedAt": "2026-10-15T16:58:50.133Z",
-      "id": "1bde7ba0dde115f25c0e",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [
-        "盈利"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [
-        "公司"
-      ],
-      "eventTypes": [
-        "公司经营"
-      ],
-      "impactChannels": [
-        "盈利"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "公司经营|weretrimmingaral|2026-10-15",
-      "detailStatus": "professional",
-      "facts": [
-        "A major rotation is happening in the market on Thursday, and we're capitalizing on it."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "We're trimming a rallying defensive stock and buying other on a muted earnings move\nA major rotation is happening in the market on Thursday, and we're capitalizing on it.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 170,
-        "sha256": "6713f561d3d7e307635ec0d41e5b4129dd544f38af4ae9e8deac570e553c61a0",
-        "sourceUrl": "https://www.cnbc.com/investingclub/2026/10/15/were-trimming-a-rallying-defensive-stock-and-buying-other-on-a-muted-earnings-move.html",
-        "checkedAt": "2026-10-15T16:58:50.133Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-15T16:58:50.133Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
     }
   ],
   "sourceHealth": [
@@ -9155,7 +9593,7 @@
       "name": "国家统计局",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "fed",
@@ -9212,8 +9650,8 @@
       "itemCount": 4,
       "withBody": 4,
       "withoutBody": 0,
-      "selectedId": "b49624ef6abe5487bb71",
-      "selectedPublishedAt": "2026-10-16T12:00:00.000Z",
+      "selectedId": "72aad65dbb257e1207aa",
+      "selectedPublishedAt": "2026-10-17T07:06:07.000Z",
       "selectedIsCurrent": true
     },
     {
@@ -9228,14 +9666,15 @@
     {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
-      "status": "ok",
-      "itemCount": 4,
-      "originalSummaries": 3,
+      "status": "error",
+      "itemCount": 6,
+      "originalSummaries": 6,
       "attempted": 2,
-      "generated": 1,
-      "requests": 10,
+      "generated": 0,
+      "requests": 9,
       "rejectionReasons": {
-        "summary-audit": 1
+        "summary-audit": 1,
+        "paired-evidence": 1
       }
     },
     {
@@ -9248,11 +9687,12 @@
       "failures": 0,
       "stages": {
         "evidence": 2,
-        "analysis": 2,
+        "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "audit": 2
+        "unsupported-attribution": 1,
+        "numbers": 1
       }
     }
   ],

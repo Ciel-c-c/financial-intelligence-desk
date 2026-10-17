@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-17T04:23:13.654Z",
-  "lastSuccessfulAt": "2026-10-17T04:23:13.654Z",
+  "attemptedAt": "2026-10-17T07:08:01.535Z",
+  "lastSuccessfulAt": "2026-10-17T07:08:01.535Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-17T04:23:13.654Z"
+      "lastSuccessfulAt": "2026-10-17T07:08:01.535Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-17T04:23:13.654Z"
+      "lastSuccessfulAt": "2026-10-17T07:08:01.535Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-17T04:23:13.654Z"
+      "lastSuccessfulAt": "2026-10-17T07:08:01.535Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-17T04:23:13.654Z"
+      "lastSuccessfulAt": "2026-10-17T07:08:01.535Z"
     }
   ],
   "sourceHealth": [
@@ -134,7 +134,7 @@
       "name": "国家统计局（新闻）",
       "status": "error",
       "itemCount": 0,
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     {
       "id": "news-fed",
@@ -191,8 +191,8 @@
       "itemCount": 4,
       "withBody": 4,
       "withoutBody": 0,
-      "selectedId": "b49624ef6abe5487bb71",
-      "selectedPublishedAt": "2026-10-16T12:00:00.000Z",
+      "selectedId": "72aad65dbb257e1207aa",
+      "selectedPublishedAt": "2026-10-17T07:06:07.000Z",
       "selectedIsCurrent": true
     },
     {
@@ -207,14 +207,15 @@
     {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
-      "status": "ok",
-      "itemCount": 4,
-      "originalSummaries": 3,
+      "status": "error",
+      "itemCount": 6,
+      "originalSummaries": 6,
       "attempted": 2,
-      "generated": 1,
-      "requests": 10,
+      "generated": 0,
+      "requests": 9,
       "rejectionReasons": {
-        "summary-audit": 1
+        "summary-audit": 1,
+        "paired-evidence": 1
       }
     },
     {
@@ -227,11 +228,12 @@
       "failures": 0,
       "stages": {
         "evidence": 2,
-        "analysis": 2,
+        "analysis": 0,
         "audit": 0
       },
       "rejectionReasons": {
-        "audit": 2
+        "unsupported-attribution": 1,
+        "numbers": 1
       }
     }
   ],
