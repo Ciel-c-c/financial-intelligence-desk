@@ -12,6 +12,32 @@ export const INSTRUMENT_CATALOG=[
 ];
 const number='(?:\\d{1,3}(?:,\\d{3})+|\\d+)(?:\\.\\d+)?';
 const months=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function cnfinNewYorkClose(report,text,policy,now){
+ const dateline=text.match(/^新华财经纽约(\d{1,2})月(\d{1,2})日电/);
+ const published=new Date(report.publishedAt);
+ const tradingDate=new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(published);
+ const hour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'America/New_York',hour:'2-digit',hourCycle:'h23'}).format(published));
+ const day=text.match(/三大股指(\d{1,2})日/);
+ const paragraphs=[...text.matchAll(/截至当天收盘[，,]([^。\n]+)[。\n]/g)];
+ if(!dateline||!day||hour<16||paragraphs.length!==1||Number(dateline[1])!==Number(tradingDate.slice(5,7))||Number(dateline[2])!==Number(tradingDate.slice(8))||Number(day[1])!==Number(dateline[2]))return [];
+ const paragraph=paragraphs[0];
+ const context=text.slice(0,paragraph.index).split(/[。！？\n]/).slice(-2).join('。')+paragraph[0];
+ if(datesIn(context).some(date=>date!==tradingDate))return [];
+ if(/回顾|昨日|前日|去年|上周|历史|假设|如果|预计|预测|可能|有望|目标|并非|不是|尚未|没有|未能/.test(context))return [];
+ for(const match of context.matchAll(/(?:(20\d{2})年)?(\d{1,2})月(\d{1,2})日/g)){
+  if(match[1]&&Number(match[1])!==Number(tradingDate.slice(0,4))||Number(match[2])!==Number(dateline[1])||Number(match[3])!==Number(dateline[2]))return [];
+ }
+ const out=[];
+ for(const item of INSTRUMENT_CATALOG.filter(item=>item.group==='us')){
+  const alias=item.id==='sp500'?'标准普尔500种股票指数':item.aliases[0];
+  const matches=[...paragraph[1].matchAll(new RegExp('(?:^|[；;])\\s*'+alias+'(?:比前一交易日)?(上涨|下跌)'+number+'点[，,]\\s*收于('+number+')点[，,]\\s*(涨幅|跌幅)为('+number+')%\\s*(?=[；;]|$)','g'))];
+  if(matches.length!==1)return [];
+  const match=matches[0];
+  if((match[1]==='下跌')!==(match[3]==='跌幅'))return [];
+  out.push(normalizeObservation({...item,value:Number(match[2].replaceAll(',','')),changePercent:Number(match[4].replaceAll(',',''))*(match[3]==='跌幅'?-1:1),session:'close',tradingDate,timeZone:'America/New_York',timestampPrecision:'date',provenance:'report',currency:'NONE',unit:'点',sourcePublishedAt:report.publishedAt,sourceUrl:report.url,evidence:match[0].slice(0,250),valuePrecision:match[2].split('.')[1]?.length??0},policy,now));
+ }
+ return out;
+}
 function cnfinClose(report,text,policy,now){
  const dateline=text.match(/^新华财经(?:北京|上海|深圳)(\d{1,2})月(\d{1,2})日电/);
  const tradingDate=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(report.publishedAt));
@@ -48,6 +74,7 @@ export function parseMarketReport(report,{now,policy}){
   const text=report.text;
   if(report.sourceId!==policy.id||typeof text!=='string'||text.trim().length<60||text.length>100000||/<(?:html|nav|script)\b/i.test(text))return [];
   if(report.sourceId==='cnfin'&&/^收评[：:]/.test(report.title??''))return cnfinClose(report,text,policy,now);
+  if(report.sourceId==='cnfin'&&/^新华财经纽约/.test(text))return cnfinNewYorkClose(report,text,policy,now);
   // Ambiguous retrospective/premarket/forecast reports are withheld rather
   // than converting their figures into session observations.
   if(/今年以来|年初至今|预计收盘|盘前|premarket|pre-market|year.to.date|expected to close/i.test(text))return [];

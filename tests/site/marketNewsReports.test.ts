@@ -8,6 +8,21 @@ const record={sourceId:'cnfin',canonicalUrl:'https://www.cnfin.com/yw-lb/detail/
 it('extracts only explicit reported closes from approved original body evidence',()=>{
  expect(reports.marketObservationsFromNews?.([record],source,now)?.[0]).toMatchObject({id:'sse-composite',value:3000.12,tradingDate:'2026-10-16',provenance:'report',session:'close'});
 });
+it('discovers a later-page New York close without filling the body budget only with A-share reports',async()=>{
+ const title='【环球财经】纽约股市三大股指15日均上涨',url='https://www.cnfin.com/gs-lb/detail/20261016/90000_1.html';
+ const body='新华财经纽约10月15日电 美国纽约股市三大股指15日收盘时均上涨。截至当天收盘，道琼斯工业平均指数上涨500点，收于50000.12点，涨幅为1.00%；标准普尔500种股票指数上涨20点，收于7000.34点，涨幅为0.30%；纳斯达克综合指数上涨10点，收于25000.56点，涨幅为0.04%。以上为合成回归数据，不是真实行情。';
+ const link=(title,url,time)=>`<div class="ui-zxlist-item"><h3><a href="${url}">${title}</a></h3><span class="ui-publish">${time}</span></div>`;
+ const requests:string[]=[];
+ const rows=await reports.fetchMarketReportSources({now,fetchImpl:async target=>{
+  const address=String(target);requests.push(address);
+  if(address===url)return new Response(`<h1>${title}</h1><div class="xhcj_detail_main"><p>${body}</p><p class="app-statement">声明</p></div>`);
+  if(address.endsWith('index_4.shtml'))return new Response(link(title,url,'2026-10-16 06:52:13'));
+  return new Response(Array.from({length:8},(_,i)=>link('收评：合成A股'+i,`https://www.cnfin.com/gs-lb/detail/20261016/${10000+i}_1.html`,'2026-10-16 16:00:00')).join(''));
+ }});
+ expect(rows.find(row=>row.market==='us')).toMatchObject({status:'ok',instruments:expect.arrayContaining([expect.objectContaining({id:'sp500',value:7000.34,tradingDate:'2026-10-15'})])});
+ expect(requests.filter(url=>url.includes('/gs-lb/detail/')).length).toBeLessThanOrEqual(6);
+ expect(requests.filter(url=>url.includes('/in/stockdata/')).length).toBeLessThanOrEqual(6);
+});
 it('does not promote summaries, generated analysis, altered bodies or another publisher into quotes',()=>{
  for(const item of [{...record,article:{...record.article,status:'summary'}},{...record,article:{...record.article,text:text+'changed'}},{...record,sourceId:'bbc-world'},{...record,article:undefined,editorial:{item:{facts:[text]}}}])
   expect(reports.marketObservationsFromNews?.([item],source,now)).toEqual([]);

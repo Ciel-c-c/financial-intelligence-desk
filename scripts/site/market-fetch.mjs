@@ -7,7 +7,7 @@ import {fetchNewsSource} from '../news/fetch-news-sources.mjs';
 import {articleHash,fetchFullArticle} from '../news/full-article.mjs';
 import {parseChineseIndex} from '../news/chinese-index.mjs';
 const MAX_BYTES=2*1024*1024;
-// Official stock page links to this public three-page discovery window.
+// Bounded public stock pagination; six body reads maximum across markets.
 export const marketReportSources=newsSources.filter(source=>source.id==='cnfin').map(source=>({...source,feedUrl:'https://www.cnfin.com/in/stockdata/index.shtml',articlePolicy:{...source.articlePolicy,pathPrefix:'/gs-lb/detail/'}}));
 function reportPolicy(source,now){
  // Reuse only the previously approved body reader, not arbitrary news feeds.
@@ -30,14 +30,17 @@ export async function fetchMarketReportSources({sources=marketReportSources,now=
   if(source.feedUrl==='https://www.cnfin.com/in/stockdata/index.shtml'){
    try{
     const records=[];let pages=0,discoveryFailures=0;
-    for(const tail of ['','_2','_3']){
+    for(const tail of ['','_2','_3','_4','_5','_6']){
      const page=source.feedUrl.replace('.shtml',tail+'.shtml');
      try{
-      const html=await fetchSourceText({...policy,baseUrl:page,allowedPathPatterns:['^/in/stockdata/index(?:_[23])?\\.shtml$']},fetchImpl);
+      const html=await fetchSourceText({...policy,baseUrl:page,allowedPathPatterns:['^/in/stockdata/index(?:_[2-6])?\\.shtml$']},fetchImpl);
       records.push(...parseChineseIndex(html,source,now));pages++;
      }catch{discoveryFailures++;}
     }
-    const candidates=records.filter((record,index,list)=>list.findIndex(item=>item.canonicalUrl===record.canonicalUrl)===index&&/^(?:收评|开盘)[：:]|(?:美股|港股|纽约股市|恒生).*(?:收盘|收涨|收跌)/.test(record.originalTitle)).slice(0,6);
+    const eligible=records.filter((record,index,list)=>list.findIndex(item=>item.canonicalUrl===record.canonicalUrl)===index&&/^(?:收评|开盘)[：:]|(?:美股|港股|纽约股市|恒生).*(?:收盘|收涨|收跌|上涨|下跌)/.test(record.originalTitle));
+    const pools=[eligible.filter(r=>/美股|纽约股市/.test(r.originalTitle)),eligible.filter(r=>/港股|恒生/.test(r.originalTitle)),eligible.filter(r=>/^(?:收评|开盘)[：:]/.test(r.originalTitle))];
+    const preferred=pools.flatMap(pool=>pool.slice(0,2));
+    const candidates=[...preferred,...eligible].filter((record,index,list)=>list.findIndex(item=>item.canonicalUrl===record.canonicalUrl)===index).slice(0,6);
     const items=[];
     for(const record of candidates){const article=await fetchFullArticle(record,source,now,fetchImpl);items.push({...record,...(article?{article}:{})});}
     fetched={ok:pages>0,items,discoveryFailures};

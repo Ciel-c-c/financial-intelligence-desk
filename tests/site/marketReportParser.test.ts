@@ -3,6 +3,24 @@ import {parseMarketReport} from '../../scripts/site/market-report-parser.mjs';
 const now='2026-10-10T12:00:00Z';
 const policy={id:'fixture-source',name:'Fixture',baseUrl:'https://market.test/report/close',enabled:true,usageMode:'report-facts',allowedHosts:['market.test'],allowedPathPatterns:['^/report/'],markets:['aShare','hongKong','us'],reviewedAt:'2026-10-01T00:00:00Z',reviewExpiresAt:'2026-12-01T00:00:00Z'};
 const report={sourceId:policy.id,url:policy.baseUrl,publishedAt:'2026-10-10T05:15:00+08:00',title:'市场收盘报道',text:'2026年10月9日，截至收盘，上证指数收于3,888.11点，跌1.18%。市场成交结构出现变化，本文记录当日收盘表现而非未来预测，其他数据需结合原始来源查看。'};
+it('binds New York CNFin closes to New York publication date and formal index names',()=>{
+ const r={...report,sourceId:'cnfin',title:'【环球财经】纽约股市三大股指15日均上涨',publishedAt:'2026-10-15T22:52:13Z',text:'新华财经纽约10月15日电（记者测试）美国纽约股市三大股指15日收盘时均上涨。截至当天收盘，道琼斯工业平均指数比前一交易日上涨500点，收于50000.12点，涨幅为1.00%；标准普尔500种股票指数上涨20点，收于7000.34点，涨幅为0.30%；纳斯达克综合指数上涨10点，收于25000.56点，涨幅为0.04%。以上数字为合成测试，不是真实行情。'};
+ const options={now:'2026-10-16T12:00:00Z',policy:{...policy,id:'cnfin'}};
+ expect(parseMarketReport(r,options).map(x=>({id:x.id,value:x.value,day:x.tradingDate,change:x.changePercent}))).toEqual([
+  {id:'sp500',value:7000.34,day:'2026-10-15',change:0.3},
+  {id:'dow-jones',value:50000.12,day:'2026-10-15',change:1},
+  {id:'nasdaq-composite',value:25000.56,day:'2026-10-15',change:0.04}]);
+ for(const text of [r.text.replace('纽约10月15日','纽约10月14日'),r.text.replace('截至当天收盘','回顾昨日，截至当天收盘'),r.text.replace('截至当天收盘','预计截至当天收盘'),r.text+'截至当天收盘，道指收于40000点，跌幅为1%。'])
+  expect(parseMarketReport({...r,text},options)).toEqual([]);
+});
+it.each(['iso-date','english-date','negated-close','denied-percentage'])('rejects a contradicted New York close: %s',kind=>{
+ let text='新华财经纽约10月15日电 美国纽约股市三大股指15日收盘时均上涨。截至当天收盘，道琼斯工业平均指数上涨500点，收于50000.12点，涨幅为1.00%；标准普尔500种股票指数上涨20点，收于7000.34点，涨幅为0.30%；纳斯达克综合指数上涨10点，收于25000.56点，涨幅为0.04%。';
+ if(kind==='iso-date')text=text.replace('截至当天收盘，','截至当天收盘，2025-10-15记录：');
+ if(kind==='english-date')text=text.replace('截至当天收盘，','截至当天收盘，October 15, 2025 records: ');
+ if(kind==='negated-close')text=text.replace('收于50000','未收于50000');
+ if(kind==='denied-percentage')text=text.replace('涨幅为1.00%','涨幅为1.00%不属实');
+ expect(parseMarketReport({...report,sourceId:'cnfin',title:'【环球财经】纽约股市三大股指15日均上涨',publishedAt:'2026-10-15T22:52:13Z',text},{now:'2026-10-16T12:00:00Z',policy:{...policy,id:'cnfin'}})).toEqual([]);
+});
 it('binds a CNFin close paragraph to its dateline and explicit trade day, not analyst background dates',()=>{
  const p={...policy,id:'cnfin'};
  const r={...report,sourceId:'cnfin',title:'收评：合成收盘测试',publishedAt:'2026-10-09T08:00:00Z',text:'新华财经北京10月9日电 沪深两市主要股指9日早间高开，创业板指盘中回落。截至收盘，上证指数报3000.12点，涨幅0.20%；深证成指报10000.34点，跌幅0.10%；创业板指报2000.56点，跌幅0.30%。机构背景：2026年9月28日曾发布一份其他行业报告。'};
