@@ -24,12 +24,12 @@ it('links approved regional mechanism explanations without declaring them the da
 it('does not link stale, invalidated, old-review, other-region or headline-only news',()=>{
  const items=[{...news,publishedAt:'2026-10-08T19:00:00Z'},{...news,invalidationReason:'withdrawn'},{...news,regions:['中国'],editorial:{...news.editorial,item:{...content,region:'中国'}}},{...news,editorial:undefined},{...news,editorial:{...news.editorial,generator:{review:'old'}}}];expect(run(items).explanations).toEqual([]);
 });
-it('reconciles market explanations against the final news result before publishing both datasets',async()=>{
+it('leaves archived market explanations untouched during news publication',async()=>{
  const dir=await mkdtemp(join(tmpdir(),'market-news-consistency-'));try{
   const priorSummary=run([news]);expect(priorSummary.explanations).toHaveLength(1);
   const market={schemaVersion:1,attemptedAt:now,lastSuccessfulAt:now,dataAsOf:observed.dataAsOf,nextExpectedAt:'2026-10-10T13:00:00Z',status:'partial',freshness:'delayed',sourceHealth:[],groups:{aShare:[],hongKong:[],us:[observed],globalAssets:[]},groupHealth:{aShare:{status:'unavailable',sourceIds:[]},hongKong:{status:'unavailable',sourceIds:[]},us:{status:'fresh',sourceIds:['cn']},globalAssets:{status:'unavailable',sourceIds:[]}},sessionSummary:{us:priorSummary}};
   const result=await runSiteUpdate({now,dataDir:dir,datasetRunners:{'market-overview':async()=>market,'news-feed':async()=>({status:'fresh',attemptedAt:now,lastSuccessfulAt:now,latest:[{...news,invalidationReason:'withdrawn'}]})}});
-  expect(result.datasets['market-overview'].snapshot.sessionSummary.us.explanations).toEqual([]);
-  const published=JSON.parse(await readFile(join(dir,'market-overview.json'),'utf8'));expect(published.sessionSummary.us.explanations).toEqual([]);expect(published.sessionSummary.us.facts).toHaveLength(1);
+  expect(result.datasets['market-overview'].snapshot).toEqual(market);
+  await expect(readFile(join(dir,'market-overview.json'),'utf8')).rejects.toThrow();
  }finally{await rm(dir,{recursive:true,force:true});}
 });

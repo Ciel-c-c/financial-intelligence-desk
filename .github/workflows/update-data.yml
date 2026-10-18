@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   update:
-    if: github.actor != 'github-actions[bot]' || github.event_name != 'push'
+    if: github.ref == 'refs/heads/main' && (github.actor != 'github-actions[bot]' || github.event_name != 'push')
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -46,6 +46,9 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NEWS_MAX_ARTICLES_PER_RUN: '2'
+
+      - name: Report news publication and optional deep generation separately
+        run: node scripts/news/run-report.mjs
 
       - name: Validate published snapshot contracts
         run: npm run validate:data

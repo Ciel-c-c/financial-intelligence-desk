@@ -1,72 +1,38 @@
 # 金融透镜
 
-Financial Lens — 手机端优先的市场解释与经济学习网站。
+Financial Lens — 手机端优先的资讯与金融知识库。React + TypeScript + Vite 静态站点，可添加到主屏幕。
 
-直接通过浏览器使用，可添加到手机主屏幕，无需下载应用商店 App。
+## 当前 MVP（2026-10-18）
 
-## 本地运行
+- 首页是自动资讯入口，支持搜索、地区、层级与事件筛选，保留新闻详情及原始来源。
+- 全球局势按国际关系、政策、地缘、宏观主题选择；来源事实摘要通过准入即可展示，金融影响解读为可选层，失败不阻断合格摘要。
+- 金融知识库完整保留课程、搜索筛选、自测与浏览器本地学习进度。旧事件明确标为历史教学案例，不链接到新新闻服务。
+- 每日简报是资讯的次级入口，基于已有合格新闻组织重点，不扩展行情功能。
+- 暂停首页行情、指数和行业涨跌展示，暂停独立行情工作流。行情代码与历史快照保留，资讯更新不执行行情生产。
+
+## 本地使用与检查
 
 ```bash
-npm install
+npm ci
 npm run dev
+npm test -- --run --maxWorkers=4
+npm run typecheck
+npm run build
+npm run validate:data
 ```
 
-生产检查使用 `npm test -- --run`、`npm run typecheck` 和 `npm run build`。部署到 HTTPS 后，可通过手机浏览器菜单添加到主屏幕。
+`npm run update:news` 获取新闻；`npm run update:data` 更新新闻、次级简报与兼容状态索引，不运行行情生产。`node scripts/news/run-report.mjs` 分别报告获取、可发布内容和本轮深度解读生成。`npm run update:data -- --dry-run` 只读快照。旧市场、行业及全球局势文件为历史兼容资料；全球局势页面从新闻快照派生。
 
-## 实时财经新闻
+## 更新与部署
 
-`npm run update:news` 从 `scripts/news/source-registry.mjs` 中已核验的白名单来源抓取新闻，生成 `public/data/news-feed.json`。首页主列表使用滚动 24 小时窗口；24–72 小时仍有明确传导信号的重大事件单独进入「持续影响」，最多 6 条。来源需每 90 天复核，验证证据记录在 `docs/news-source-registry.md`。
+现有新闻定时任务保持每天 UTC 00:17、04:17、12:17，即北京时间 **08:17、12:17、20:17**。实际执行可能排队延迟。每日简报随新闻版本变化更新；旧代码中 06/16 点判断不构成独立定时任务。
 
-英文内容可通过 GitHub Secrets `NEWS_TRANSLATION_API_URL`、`NEWS_TRANSLATION_API_KEY`、`NEWS_TRANSLATION_MODEL` 接入结构化中文整理。未配置或生成校验失败时，页面保留英文原标题与原始链接，不猜测中文。密钥不得写入仓库或前端资源。
+现有免费 Groq 配置使用仓库 Secret `GROQ_API_KEY`，不添加服务或付费依赖。未生成合格中文时保留允许展示的英文来源摘要；不猜测译文或金融影响。来源白名单、有效期及证据校验继续生效。
 
-`npm run update:data` 统一更新新闻、市场、全球局势、行业和简报状态，`npm run validate:data` 会验证全部公开快照。单个来源失败时发布其他可靠来源并标记异常；全部来源失败时保留上一份成功快照，不把旧数据标成最新。`public/data/site-snapshot.json` 是全站健康状态入口，各业务 JSON 独立失败和降级。
+生产部署监听 main 推送及 main 新闻工作流完成事件；分支与草稿 PR 不发布生产。发布工作流另加 main 条件，防止手动选择其他分支触发。合并 main 将触发原有发布，必须另行确认。独立行情工作流已暂停，包含手动入口。
 
-## 发布
+工作流成功仅表示流程完成。应查看 Actions step summary 和 `sourceHealth`：新闻获取、可发布数量、解读 attempted/generated/rejectionReasons 分开验收；缓存可用不代表本轮生成成功。全部来源失败时保留历史并标注异常，未通过证据准入的新闻仍不得展示。
 
-推送到 `main` 后，GitHub Actions 会运行测试、类型检查、生产构建并发布到 GitHub Pages。独立的 `Update public data snapshots` 工作流在每小时第 17 分钟运行；即使电脑关闭、Codex 不在线，也会抓取、校验并由 GitHub bot 提交独立业务快照及统一状态索引，再触发一次 Pages 发布。简报仅在北京时间 06 点和 16 点生成。
+详见 [数据管线](docs/data-pipeline.md)、[运行手册](docs/operations/dynamic-data-runbook.md)、[MVP 核查与验收](docs/operations/2026-10-18-news-knowledge-mvp.md)。旧方案文档保留为历史设计。
 
-全球局势数据链路：
-
-```text
-Fed / ECB / BOJ / UN 官方 RSS
-  → 解析与金融相关性筛选
-  → 72 小时相似事件去重聚合
-  → FACT / MARKET VIEW / SCENARIO 分层
-  → 静态 JSON 快照
-  → GitHub Pages
-```
-
-候选快照写入前必须通过 schema 校验。本轮全部主要来源失败、事件数异常为零或 JSON 不合法时，不覆盖 Last Successful Snapshot；`site-snapshot.json` 会标记 `partial`、`delayed` 或 `unavailable`。前端使用更新时间做 cache busting，并请求 `no-store`；Service Worker 不缓存动态 JSON。详见 [自动数据管线](docs/data-pipeline.md)、[数据来源注册表](docs/data-sources.md) 和 [动态数据运行手册](docs/operations/dynamic-data-runbook.md)。
-
-## MVP
-
-- 全球局势、A股、港股、美股与大类资产市场概览。
-- 新闻原文链接、通俗摘要、术语标注、事件因果链及可能影响。
-- 明确区分事实、市场共识、AI 推演和风险。
-- 每日市场简报与完整的经济与市场学院。
-- 全球局势事件、可点击因果链、敏感资产、反证条件和课程双向链接。
-- 移动端响应式布局及添加到主屏幕支持。
-
-技术方案：React + TypeScript + Vite + CSS。市场价格仅在有可靠来源与数据时间时展示；缺失时明确显示空状态。
-
-不包含账户、真实交易、复杂投资组合、社交或大型后端。
-
-## 项目结构
-
-```text
-docs/           产品与技术方案
-public/         图标与公开静态资源
-src/app/        路由与应用壳
-src/pages/      市场、全球局势、事件详情、简报、学院
-src/components/ 可复用阅读组件
-src/data/       类型、数据与适配器
-src/styles/     设计变量与响应式样式
-scripts/        官方源抓取、筛选与快照生成
-tests/          关键交互、数据契约与失败回退
-```
-
-详见 [产品与技术方案](docs/product-design.md) 与 [全球局势设计](docs/superpowers/specs/2026-09-11-global-situation-design.md)。
-
-## 独立性
-
-本项目使用独立 Git 仓库。不得复制或修改“求职面板”及其他项目的代码、配置或历史。
+不包含账户、真实交易、投资组合、社交或大型后端。学习进度只保存在当前浏览器，清理站点数据后会丢失。

@@ -1,39 +1,13 @@
-# 自动数据管线
+# 自动资讯管线
 
-GitHub 是本项目唯一发布基准。数据更新由 GitHub Actions 在云端执行，不依赖开发者电脑或 Codex 在线。
+当前范围：资讯＋金融知识库。GitHub Actions 在北京时间 08:17、12:17、20:17 抓取新闻，运行上限 20 分钟；执行可能因排队延迟。支持 main 上手动运行和受限路径的 main 推送。分支 PR 不触发生产部署。
 
-## 数据流
+白名单公开源 → 抓取与证据绑定 → 分类、去重 → 合格来源事实摘要 → 可选深度解读 → schema 校验 → 新闻快照与简报 → bot 数据提交 → main Pages 构建。
 
-```text
-官方公开源 → 抓取 → 标准化 → 去重与事件聚合 → 分类 → 11 项市场关联度评分
-→ 候选 JSON 校验 → 写入 Last Successful Snapshot → GitHub bot commit → Pages 发布
-```
+新闻事实摘要与深度解读独立准入。模型未配置、额度不足或审核失败时，允许的发布者摘要仍可发布；未经核验的摘要不会因“允许降级”而直接放行。`sourceHealth` 保留失败原因，工作流额外运行 `scripts/news/run-report.mjs`，分别输出获取状态、当期可发布数量、本轮解读尝试与生成数量。可发布数量包含有效缓存，不能等同新增量。
 
-`Update public data snapshots` 每小时第 17 分钟运行，也支持 Actions 页面中的 **Run workflow**。首次修改管线脚本时也会运行一次；bot 的数据提交不匹配该触发路径，因此不会形成循环。工作流设置了并发锁、12 分钟超时，并仅在 `public/data` 有变化时提交。
+`update:data` 不调用旧全球聚合与行情生产；全球局势前端按新闻主题派生，金融解读可选。旧 `global-situation.json`、`macro-events.json`、行情及行业快照保留为历史兼容文件，不代表仍在更新。状态索引暂时保留旧字段，判断资讯健康应查看 news-feed 及独立产出报告。
 
-## 公开来源
+每日简报随合格新闻版本变化整理，旧 06/16 点函数不构成独立调度。没有新事实时保留明确日期与空态。行情更新 workflow 暂停，旧代码供以后单独恢复。
 
-- Federal Reserve、European Central Bank、Bank of Japan 官方 RSS：货币政策和官方公告。
-- UN News 官方 RSS：仅保留能够通过能源、贸易、供应链、通胀、增长、政策、盈利、资金流或风险偏好传导到市场的事件。
-- ECB 欧元参考汇率：无需密钥的日频官方汇率。每条价格含数值、数据时间、来源和新鲜度。
-
-不读取付费墙，也不使用 Bloomberg、Reuters Terminal 或 FactSet。新增必须使用密钥的免费源时，只能配置为 GitHub Actions Secret，并由抓取脚本在服务端读取；禁止写入前端、日志或快照。
-
-## 快照
-
-- `public/data/global-situation.json`：聚合事件、来源、FACT、MARKET VIEW、SCENARIO、影响链、观察条件和课程映射。
-- `public/data/market-snapshot.json`：有官方时间戳的市场数据。缺少可靠数据时前端应显示“暂无可靠市场价格数据”。
-- `public/data/macro-events.json`：从已校验官方事件提取的宏观政策更新。
-- `public/data/update-status.json`：本轮尝试、最后成功时间、数据集状态和来源健康度。
-
-状态为 `fresh`、`delayed` 或 `source_error`。全球事件候选为零、全部主要来源失败或 schema 校验失败时，脚本不覆盖 `global-situation.json`；它保留最近一次成功数据，并在 `update-status.json` 标记异常。写入使用同目录临时文件后重命名，避免半写入 JSON。
-
-## 本地与手动运行
-
-```bash
-npm run update:data
-npm run validate:data
-npm test -- --run
-```
-
-在 GitHub 仓库的 **Actions → Update public data snapshots → Run workflow** 可手动刷新。发布工作流不访问数据源；它监听数据工作流成功完成的 `workflow_run`，从最新 `main` 检出 bot 已提交的快照，再验证、测试、构建并部署。这里不依赖 `GITHUB_TOKEN` 提交触发另一个 push workflow。
+`npm run update:data -- --dry-run` 只读；`npm run validate:data` 仍核查保留的快照结构。读取来源超时与内容生成失败必须分别排查，部署时间不能替代新闻日期。来源范围及复核时间参见 [来源注册表](news-source-registry.md)。

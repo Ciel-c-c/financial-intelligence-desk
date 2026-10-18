@@ -1,7 +1,6 @@
 import { resolve, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { readJson, writeJsonAtomic } from './snapshot-schema.mjs';
-import { updateSnapshots } from './update-data-snapshots.mjs';
 import { updateNewsFeed } from './news/update-news-feed.mjs';
 import { buildDailyBrief } from './site/brief-pipeline.mjs';
 import { buildSiteSnapshot } from './site/site-contract.mjs';
@@ -10,8 +9,6 @@ import {validateFactualSummary} from './news/factual-summary.mjs';
 import {buildSourcePolicies} from './news/source-policy.mjs';
 import {newsSources} from './news/source-registry.mjs';
 import {buildNewsAcceptance} from './news/acceptance.mjs';
-import {reconcileMarketSummaries} from './site/market-close-summary.mjs';
-import {validateMarketOverview} from './site/market-pipeline.mjs';
 import {isPublishableNews} from '../src/data/newsEditorialValidation.mjs';
 import {economicNewsPriority} from './news/news-priority.mjs';
 
@@ -69,7 +66,6 @@ function versionOf(snapshot) {
 async function runDefaultDatasets({ now, dataDir, dryRun }) {
   if (!dryRun) {
     const producerResults = await Promise.allSettled([
-      updateSnapshots({ now }),
       updateNewsFeed({ now, outputPath: join(dataDir, 'news-feed.json'), statusPath: undefined }),
     ]);
     if (producerResults.some(result => result.status === 'rejected')) throw new Error('Data producer failed; published snapshots were not replaced.');
@@ -81,21 +77,16 @@ async function runDefaultDatasets({ now, dataDir, dryRun }) {
    const acceptance=buildNewsAcceptance(news,await readJson(acceptancePath),{scheduled:process.env.GITHUB_EVENT_NAME==='schedule'});
    await writeJsonAtomic(acceptancePath,acceptance);
   }
-  const market = snapshots['market-overview'];
   const reviewedNews=selectBriefNews(news,now);
   const facts = [
     ...reviewedNews.slice(0,3).flatMap(item=>item.editorial?.item.facts??[item.factualSummary.summary]),
-    ...Object.values(market?.groups ?? {}).flat().slice(0, 2).map(item => `${item.name}：${item.value}${item.unit ? ` ${item.unit}` : ''}`),
   ];
   const existingBrief = await readJson(join(dataDir, 'daily-brief.json'));
   const currentStories = reviewedNews.map(item => ({ id:item.id, title:item.editorial?.item.title??item.factualSummary.title, publishedAt:item.publishedAt, sourceName:item.sourceName, sourceUrl:item.canonicalUrl }));
   const brief = !shouldGenerateBrief(now) && existingBrief?.stories?.length && existingBrief.snapshotVersions?.news === versionOf(news) ? existingBrief : buildDailyBrief({
     edition: briefEdition(now), generatedAt: now,
     snapshots: {
-      market: { version: versionOf(market), dataAsOf: market?.dataAsOf },
-      sectors: { version: versionOf(snapshots['sector-performance']), dataAsOf: snapshots['sector-performance']?.dataAsOf },
       news: { version: versionOf(news), dataAsOf: latest(news?.latest, 'publishedAt') },
-      situation: { version: versionOf(snapshots['global-situation']), dataAsOf: latest(snapshots['global-situation']?.events, 'latestSourceAt') },
     },
     facts,
     stories: currentStories,
@@ -123,14 +114,6 @@ export async function runSiteUpdate({ now = new Date().toISOString(), dataDir = 
     for (const id of DATASET_IDS) datasets[id] = snapshots[id]
       ? { promoted: !dryRun, status: snapshots[id].status, snapshot: snapshots[id] }
       : { promoted: false, status: 'unavailable', error: 'snapshot missing' };
-  }
-  // Both producer jobs have finished. Rebuild links/explanations against the
-  // exact news version included in this publication, including withdrawals.
-  const market=datasets['market-overview']?.snapshot,news=datasets['news-feed']?.snapshot;
-  if(validateMarketOverview(market)&&news){
-    const consistent=reconcileMarketSummaries({market,news,now});
-    datasets['market-overview'].snapshot=consistent;
-    if(!dryRun)await writeJsonAtomic(join(dataDir,'market-overview.json'),consistent);
   }
   const summaries = DATASET_IDS.map(id => datasetSummary(id, datasets[id]?.snapshot, datasets[id]?.error, now));
   const siteSnapshot = buildSiteSnapshot({ attemptedAt: now, datasets: summaries });

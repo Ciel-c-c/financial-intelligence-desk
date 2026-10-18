@@ -1,8 +1,9 @@
 import type { LiveNewsItem } from './newsFeedTypes';
 import type { GlobalEvent } from './globalSituationTypes';
+import {isGlobalNews} from './globalNews';
 import { isPublishableNews } from './newsAdmission';
 export function globalEventFromNews(news:LiveNewsItem):GlobalEvent|undefined{
- if(!isPublishableNews(news)||!news.editorial!.political) return undefined;
+ if(!isGlobalNews(news)||!isPublishableNews(news)||!news.editorial!.political) return undefined;
  const {item,political,watchItems,soWhat}=news.editorial!;
  const criteria=news.impactChannels.map(channel=>({'通胀':'inflation','利率':'centralBank','汇率':'capitalFlows','盈利':'earnings','供需':'supplyChain','估值':'riskAppetite','就业':'growth'})[channel]);
  const score=new Set(criteria).size;const level=score>=6?'high':score>=3?'medium':'low';

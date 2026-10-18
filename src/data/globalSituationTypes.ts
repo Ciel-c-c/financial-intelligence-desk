@@ -53,3 +53,5 @@ export interface GlobalSituationSnapshot {
   sourceHealth: SourceHealth[];
   events: GlobalEvent[];
 }
+
+export interface GlobalSituationSnapshot { nextExpectedAt?:string }

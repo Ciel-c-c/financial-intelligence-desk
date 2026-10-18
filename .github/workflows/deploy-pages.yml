@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   workflow_run:
-    workflows: ['Update public data snapshots', 'Update market session snapshots']
+    workflows: ['Update public data snapshots']
     types: [completed]
     branches: [main]
 
@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   build-and-deploy:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    if: github.ref == 'refs/heads/main' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
     timeout-minutes: 20
     runs-on: ubuntu-latest
     environment:

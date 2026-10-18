@@ -8,25 +8,20 @@ import { reviewedFetch,reviewedItem } from '../fixtures/reviewedFeed';
 describe('Today page', () => {
   beforeEach(()=>vi.stubGlobal('fetch',vi.fn().mockResolvedValue({ok:true,json:async()=>({schemaVersion:1,attemptedAt:'2026-09-14T10:17:00Z',lastSuccessfulAt:'2026-09-14T10:17:00Z',nextExpectedAt:'2026-09-14T11:17:00Z',status:'fresh',latest:[{id:'live-cpi',originalTitle:'China CPI',titleZh:'中国居民消费价格公布',summaryZh:'物价变化影响通胀预期。',sourceName:'国家统计局',publishedAt:'2026-09-14T10:00:00Z',analysisLevels:['宏观'],eventTypes:['经济数据'],impactChannels:['通胀'],regions:['中国'],translationStatus:'generated'}],continuing:[{id:'old-policy',originalTitle:'Policy',titleZh:'政策仍在传导',summaryZh:'市场继续评估影响。',sourceName:'Federal Reserve',publishedAt:'2026-09-12T10:00:00Z',analysisLevels:['宏观'],eventTypes:['货币政策'],impactChannels:['利率'],regions:['全球'],translationStatus:'generated'}],retainedDetails:[],sourceHealth:[]})})));
   afterEach(()=>vi.unstubAllGlobals());
-  it('opens with attributed A-share embeds while keeping unavailable backend data distinct', () => {
-    const { container } = render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
-    const page = container.querySelector<HTMLElement>('.today-page')!;
-    const copy = page.textContent ?? '';
-    for (const expected of ['A股概览','行业相对强弱','政策与地缘传导','非本站开收盘快照','暂无经过验证的行业表现数据']) {
-      expect(copy).toContain(expected);
-    }
-    const buttons = [...page.querySelectorAll('button')].map(button => button.textContent?.trim());
-    for (const label of ['港股','美股','全球资产']) expect(buttons).toContain(label);
-    expect(copy).not.toContain('元件 / MLCC');
+  it('opens with news and clear content entrances', () => {
+    const {container}=render(<MemoryRouter><App/></MemoryRouter>);
+    expect(screen.getByRole('heading',{name:'资讯'})).toBeInTheDocument();
+    expect(container.querySelector('iframe')).toBeNull();
+    expect(screen.getByRole('navigation',{name:'内容入口'})).toHaveTextContent('全球局势');
   });
 
-  it('keeps markets before news without news filtering', async () => {
+  it('supports filtering on the news homepage', async () => {
     vi.stubGlobal('crypto',webcrypto);vi.stubGlobal('fetch',reviewedFetch);
     const {container}=render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
 
     expect((await screen.findAllByText(reviewedItem.titleZh!)).length).toBeGreaterThan(0);
-    expect(screen.queryByRole('searchbox')).not.toBeInTheDocument();
-    expect(container.querySelector('.today-page')?.firstElementChild?.className).not.toContain('live-news-feed');
+    expect(screen.getByRole('searchbox')).toBeInTheDocument();
+    expect(container.querySelector('.live-news-feed')).toBeInTheDocument();
   });
 
   it('keeps complete old reports explicitly dated and linked, not presented as current news',async()=>{
@@ -34,18 +29,16 @@ describe('Today page', () => {
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
     expect(await screen.findByRole('heading',{name:'此前报道 / 背景参考'})).toBeInTheDocument();
     expect(screen.queryByRole('heading',{name:'正在发生'})).not.toBeInTheDocument();
-    expect(screen.getByRole('link',{name:'查看事件完整解读 →'})).toHaveAttribute('href',`/news/${reviewedItem.id}`);
-    expect(screen.getByText(/新闻日期.*2026-09-10/)).toBeInTheDocument();
-    expect(screen.getByText('反向风险')).toBeInTheDocument();
+    expect(screen.getByRole('link',{name:reviewedItem.editorial!.item.title})).toHaveAttribute('href',`/news/${reviewedItem.id}`);
+    expect(screen.getByText(/新闻发布：/)).toBeInTheDocument();
+    expect(screen.getByText(reviewedItem.editorial!.item.summary)).toBeInTheDocument();
   });
 
-  it('exposes dashboard navigation and keeps data state visible without hover', () => {
-    render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
-
-    expect(screen.getByRole('navigation', { name: '桌面主要导航' })).toBeInTheDocument();
-    expect(screen.getByRole('region', { name: '行业相对强弱' })).toBeInTheDocument();
-    expect(screen.getByText('第三方展示 · 非本站开收盘快照')).toBeInTheDocument();
-    expect(screen.getAllByText(/TradingView 提供/)).toHaveLength(3);
+  it('exposes both desktop and mobile navigation without market panels', () => {
+    render(<MemoryRouter><App/></MemoryRouter>);
+    expect(screen.getByRole('navigation',{name:'桌面主要导航'})).toHaveTextContent('金融知识库');
+    expect(screen.getByRole('navigation',{name:'主要导航'})).toHaveTextContent('资讯');
+    expect(screen.queryByRole('region',{name:'行业相对强弱'})).toBeNull();
   });
 
   it('uses the Financial Lens brand and beginner-friendly message', () => {
