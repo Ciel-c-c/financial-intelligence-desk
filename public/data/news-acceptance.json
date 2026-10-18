@@ -1,16 +1,8 @@
 {
   "schemaVersion": 1,
   "reviewVersion": "edge-audit-v4",
-  "attemptedAt": "2026-10-18T04:30:08.252Z",
+  "attemptedAt": "2026-10-18T15:50:55.613Z",
   "scheduledCycles": [
-    {
-      "attemptedAt": "2026-10-17T04:23:13.654Z",
-      "passed": false,
-      "publisher": 9,
-      "translated": 2,
-      "deep": 0,
-      "requests": 10
-    },
     {
       "attemptedAt": "2026-10-17T15:32:06.780Z",
       "passed": false,
@@ -26,13 +18,21 @@
       "translated": 1,
       "deep": 0,
       "requests": 10
+    },
+    {
+      "attemptedAt": "2026-10-18T15:50:55.613Z",
+      "passed": false,
+      "publisher": 0,
+      "translated": 2,
+      "deep": 1,
+      "requests": 10
     }
   ],
   "status": "pending",
   "current": {
     "publisher": 0,
-    "translated": 1,
-    "deep": 0,
+    "translated": 2,
+    "deep": 1,
     "requests": 10,
     "bounded": true,
     "passed": false
