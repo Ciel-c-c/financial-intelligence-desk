@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-19T04:38:01.964Z",
-  "lastSuccessfulAt": "2026-10-19T04:38:01.964Z",
+  "attemptedAt": "2026-10-19T18:43:09.367Z",
+  "lastSuccessfulAt": "2026-10-19T18:43:09.367Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-19T04:38:01.964Z"
+      "lastSuccessfulAt": "2026-10-19T18:43:09.367Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-19T04:38:01.964Z"
+      "lastSuccessfulAt": "2026-10-19T18:43:09.367Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-19T04:38:01.964Z"
+      "lastSuccessfulAt": "2026-10-19T18:43:09.367Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-19T04:38:01.964Z"
+      "lastSuccessfulAt": "2026-10-19T18:43:09.367Z"
     }
   ],
   "sourceHealth": [
@@ -36,7 +36,7 @@
       "id": "cnbc-markets",
       "name": "CNBC",
       "status": "ok",
-      "itemCount": 28
+      "itemCount": 30
     },
     {
       "id": "cnbc-business",
@@ -73,7 +73,7 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 49
     },
     {
       "id": "un",
@@ -85,13 +85,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 29
+      "itemCount": 27
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 44
+      "itemCount": 47
     },
     {
       "id": "bis-press",
@@ -103,7 +103,7 @@
       "id": "eia-energy",
       "name": "U.S. Energy Information Administration",
       "status": "ok",
-      "itemCount": 18
+      "itemCount": 19
     },
     {
       "id": "news-un-zh",
@@ -115,7 +115,7 @@
       "id": "news-cnbc-markets",
       "name": "CNBC（新闻）",
       "status": "ok",
-      "itemCount": 28
+      "itemCount": 30
     },
     {
       "id": "news-cnbc-business",
@@ -152,7 +152,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 49
     },
     {
       "id": "news-un",
@@ -164,13 +164,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 29
+      "itemCount": 27
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 44
+      "itemCount": 47
     },
     {
       "id": "news-bis-press",
@@ -182,7 +182,7 @@
       "id": "news-eia-energy",
       "name": "U.S. Energy Information Administration（新闻）",
       "status": "ok",
-      "itemCount": 18
+      "itemCount": 19
     },
     {
       "id": "news-review-queue",
@@ -191,8 +191,8 @@
       "itemCount": 4,
       "withBody": 4,
       "withoutBody": 0,
-      "selectedId": "504a6cea843ab630c925",
-      "selectedPublishedAt": "2026-10-18T12:34:51.000Z",
+      "selectedId": "041ad43c75710671a177",
+      "selectedPublishedAt": "2026-10-19T12:00:00.000Z",
       "selectedIsCurrent": true
     },
     {
@@ -207,14 +207,15 @@
     {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
-      "status": "ok",
-      "itemCount": 19,
-      "originalSummaries": 18,
+      "status": "error",
+      "itemCount": 32,
+      "originalSummaries": 32,
       "attempted": 2,
-      "generated": 1,
-      "requests": 9,
+      "generated": 0,
+      "requests": 7,
       "rejectionReasons": {
-        "summary-audit": 1
+        "summary-audit": 1,
+        "review-or-evidence-structure": 1
       }
     },
     {
@@ -226,12 +227,12 @@
       "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 2,
+        "evidence": 1,
         "analysis": 1,
         "audit": 1
       },
       "rejectionReasons": {
-        "personal-impact": 1
+        "facts": 1
       }
     }
   ],
