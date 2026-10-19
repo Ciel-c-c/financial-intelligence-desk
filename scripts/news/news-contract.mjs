@@ -25,10 +25,20 @@ export function validateNewsRecord(value,now=new Date().toISOString()) {
     &&(value.factualSummary===undefined||validateFactualSummary(value,value.factualSummary,buildSourcePolicies(newsSources,now),now));
 }
 
+export function validateRunMetrics(metrics){
+ if(!metrics||typeof metrics!=='object')return false;
+ return ['fetch','translation','analysis'].every(key=>{
+  const m=metrics[key],count=n=>Number.isInteger(n)&&n>=0;
+  return m&&['attempted','succeeded','failed'].every(k=>count(m[k]))&&m.succeeded<=m.attempted
+   &&['eligible','rejected','skipped'].every(k=>m[k]===undefined||count(m[k]))
+   &&m.successRate===(m.attempted?m.succeeded/m.attempted:null);
+ });
+}
 export function validateNewsSnapshot(value) {
   if (!value || value.schemaVersion !== NEWS_SCHEMA_VERSION || !iso(value.attemptedAt) || !iso(value.lastSuccessfulAt) || !iso(value.nextExpectedAt)
     || !['fresh', 'delayed', 'source_error'].includes(value.status) || !Array.isArray(value.latest) || !Array.isArray(value.continuing)
     || value.continuing.length > 6 || !Array.isArray(value.retainedDetails) || !Array.isArray(value.sourceHealth)) return false;
+  if(value.runMetrics!==undefined&&!validateRunMetrics(value.runMetrics))return false;
   const all = [...value.latest, ...value.continuing, ...value.retainedDetails];
   return all.every(record=>validateNewsRecord(record,value.attemptedAt)) && new Set(all.map(item => item.id)).size === all.length;
 }

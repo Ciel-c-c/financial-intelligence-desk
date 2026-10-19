@@ -123,12 +123,16 @@ it('does not spend a content rejection attempt on a temporary provider failure',
 it('keeps unchanged news eligible after a network outage',async()=>{
  const result=await buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[raw]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',fetchImpl:async()=>{throw new TypeError('fetch failed');}}});
  expect(result.latest[0].analysisAttempt).toBeUndefined();
- expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.failures).toBe(1);
+ expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.failures).toBe(0);
+ expect(result.sourceHealth.find(s=>s.id==='groq-summary')?.status).toBe('error');
+ expect(result.runMetrics.analysis.attempted).toBe(0);
 });
 it('keeps news eligible when reading the provider response body times out',async()=>{
  const result=await buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[raw]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',fetchImpl:async()=>({ok:true,json:async()=>{throw new DOMException('response timeout','TimeoutError');}})}});
  expect(result.latest[0].analysisAttempt).toBeUndefined();
- expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.failures).toBe(1);
+ expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.failures).toBe(0);
+ expect(result.sourceHealth.find(s=>s.id==='groq-summary')?.status).toBe('error');
+ expect(result.runMetrics.analysis.attempted).toBe(0);
 });
 it('reports a safe rejection category rather than silently losing invalid facts',async()=>{
  const output=response();output.facts[0].evidence='公司宣布降息四次';

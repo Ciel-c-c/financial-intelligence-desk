@@ -21,3 +21,8 @@ export interface ReviewedEditorial { sourceBodyHash:string; originalTitle:string
 export interface LiveNewsItem { invalidationReason?:string; article?:FullArticle; editorial?:ReviewedEditorial; id:string; canonicalUrl:string; sourceName:string; sourceTier:NewsSourceTier; verificationStatus:VerificationStatus; sourceUrl:string; publishedAt:string; fetchedAt:string; originalLanguage:string; originalTitle:string; originalSummary?:string; titleZh?:string; summaryZh?:string; translationStatus:TranslationStatus; analysisLevels:AnalysisLevel[]; eventTypes:EventType[]; impactChannels:ImpactChannel[]; regions:NewsRegion[]; keyTerms:string[]; causalSignals:string[]; importanceScore:number; continuingImpactScore:number; clusterId:string; relatedSources:RelatedNewsSource[]; detailStatus:DetailStatus; facts:string[]; expectations:string[]; inferences:string[] }
 export interface NewsSourceHealth { id:string; name:string; status:'ok'|'error'; itemCount:number; error?:string }
 export interface NewsFeedSnapshot { schemaVersion:1; attemptedAt:string; lastSuccessfulAt:string; nextExpectedAt:string; status:NewsFeedStatus; latest:LiveNewsItem[]; continuing:LiveNewsItem[]; retainedDetails:LiveNewsItem[]; sourceHealth:NewsSourceHealth[]; message?:string }
+
+export interface LiveNewsItem { chineseSummary?:{status:'pending'|'complete'|'failed'|'rejected'|'unavailable';reason?:string;attemptedAt?:string} }
+export interface NewsFeedSnapshot { runMetrics?:{fetch:NewsStageMetrics;translation:NewsStageMetrics;analysis:NewsStageMetrics};publicationPhase?:'source'|'translation'|'analysis' }
+
+export interface NewsStageMetrics {eligible?:number;attempted:number;succeeded:number;failed:number;rejected?:number;skipped?:number;successRate:number|null}

@@ -36,3 +36,11 @@ npm run validate:data
 详见 [数据管线](docs/data-pipeline.md)、[运行手册](docs/operations/dynamic-data-runbook.md)、[MVP 核查与验收](docs/operations/2026-10-18-news-knowledge-mvp.md)。旧方案文档保留为历史设计。
 
 不包含账户、真实交易、投资组合、社交或大型后端。学习进度只保存在当前浏览器，清理站点数据后会丢失。
+
+## 2026-10-19：发布与模型解耦
+
+来源更新先发布：定时来源工作流设置 source 阶段，不调用模型，完成即可触发部署。独立 Enrich published news 随后进行中文整理和可选分析，模型失败不阻止来源层上线；提交增强结果必须通过快照验证。两者仍只对 main 生效，当前草稿不会自动上线。
+
+英文默认优先生成经过审核的中文标题与通俗摘要。失败或审核拒绝时明确标记并保留已核验原文，不展示浏览器临时译文。已核验完整正文且尚无摘要的来源可先展示原标题及来源链接。
+
+runMetrics 分别记录抓取、翻译、分析的尝试数、成功数、拒绝/失败数、跳过数及成功率；零尝试为 null，旧快照没有记录时不追认成功。详见 [分层修复记录](docs/operations/2026-10-19-news-publication-layers.md)。

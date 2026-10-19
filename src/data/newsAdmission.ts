@@ -1,3 +1,4 @@
+import {isVerifiedSourceNews} from './sourceNewsAdmission.mjs';
 import type { LiveNewsItem } from './newsFeedTypes';
 import {newsSourcePolicies} from './newsSourcePolicy.generated';
 import {validateFactualSummary,isSourceAllowed} from './factualSummaryValidation.mjs';
@@ -20,8 +21,10 @@ export function isPublishableSummary(item:LiveNewsItem):boolean {
 
 export function isPublishableNews(item:LiveNewsItem):boolean{return validateEditorial(item);}
 
+export function isPublishableSource(item:LiveNewsItem):boolean{return isVerifiedSourceNews(item,newsSourcePolicies);}
+
 export async function verifyNewsEvidence(item:LiveNewsItem):Promise<boolean>{
-  if(!isPublishableNews(item)&&!isPublishableSummary(item)) return false;
+  if(!isPublishableNews(item)&&!isPublishableSummary(item)&&!isPublishableSource(item)) return false;
   if(item.article!.text===undefined) return true;
   try{
     const digest=await globalThis.crypto.subtle.digest('SHA-256',new TextEncoder().encode(item.article!.text));

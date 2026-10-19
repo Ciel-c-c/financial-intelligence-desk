@@ -1,0 +1,49 @@
+name: Enrich published news
+
+on:
+  workflow_run:
+    workflows: ['Update public data snapshots']
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-enrichment
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    if: github.ref == 'refs/heads/main' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Generate reviewed Chinese summaries then optional analysis
+        id: models
+        timeout-minutes: 12
+        continue-on-error: true
+        run: npm run update:data
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          NEWS_MAX_ARTICLES_PER_RUN: '2'
+      - name: Report stages independently
+        if: always()
+        run: node scripts/news/run-report.mjs
+      - name: Validate remaining publication checkpoint
+        id: validate
+        if: always()
+        run: npm run validate:data
+      - name: Publish only validated enrichment or its safe checkpoint
+        if: always() && steps.validate.outcome == 'success'
+        run: node scripts/site/publish-data.mjs
