@@ -1,17 +1,25 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-18T23:39:22.239Z",
-  "lastSuccessfulAt": "2026-10-18T15:50:55.613Z",
+  "attemptedAt": "2026-10-19T04:38:01.964Z",
+  "lastSuccessfulAt": "2026-10-19T04:38:01.964Z",
   "status": "partial",
   "datasets": [
     {
       "id": "news-feed",
       "status": "partial",
       "freshness": "delayed",
-      "lastSuccessfulAt": "2026-10-18T15:50:55.613Z",
-      "dataAsOf": "2026-10-18T15:46:10.000Z",
-      "nextExpectedAt": "2026-10-19T00:17:00.000Z",
+      "lastSuccessfulAt": "2026-10-19T04:38:01.964Z",
+      "dataAsOf": "2026-10-19T04:36:39.000Z",
+      "nextExpectedAt": "2026-10-19T12:17:00.000Z",
       "fallbackReason": "部分新闻来源暂时异常，已发布其余可靠来源。"
+    },
+    {
+      "id": "market-overview",
+      "status": "partial",
+      "freshness": "delayed",
+      "lastSuccessfulAt": "2026-10-17T07:07:42.039Z",
+      "dataAsOf": "2026-10-16T00:00:00.000Z",
+      "nextExpectedAt": "2026-10-19T05:38:01.964Z"
     },
     {
       "id": "sector-performance",
@@ -26,25 +34,17 @@
       "id": "global-situation",
       "status": "partial",
       "freshness": "delayed",
-      "lastSuccessfulAt": "2026-10-18T15:50:55.613Z",
-      "dataAsOf": "2026-10-18T15:46:10.000Z",
-      "nextExpectedAt": "2026-10-18T16:50:55.613Z"
+      "lastSuccessfulAt": "2026-10-19T04:38:01.964Z",
+      "dataAsOf": "2026-10-19T03:18:51.000Z",
+      "nextExpectedAt": "2026-10-19T05:38:01.964Z"
     },
     {
       "id": "daily-brief",
       "status": "fresh",
       "freshness": "delayed",
-      "lastSuccessfulAt": "2026-10-18T15:50:55.613Z",
-      "dataAsOf": "2026-10-18T15:46:10.000Z",
-      "nextExpectedAt": "2026-10-19T00:17:00.000Z"
-    },
-    {
-      "id": "market-overview",
-      "status": "partial",
-      "freshness": "delayed",
-      "lastSuccessfulAt": "2026-10-17T07:07:42.039Z",
-      "dataAsOf": "2026-10-16T00:00:00.000Z",
-      "nextExpectedAt": "2026-10-19T00:39:22.239Z"
+      "lastSuccessfulAt": "2026-10-19T04:38:01.964Z",
+      "dataAsOf": "2026-10-19T04:36:39.000Z",
+      "nextExpectedAt": "2026-10-19T12:17:00.000Z"
     }
   ]
 }

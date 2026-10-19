@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-18T15:50:55.613Z",
-  "lastSuccessfulAt": "2026-10-18T15:50:55.613Z",
+  "attemptedAt": "2026-10-19T04:38:01.964Z",
+  "lastSuccessfulAt": "2026-10-19T04:38:01.964Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-18T15:50:55.613Z"
+      "lastSuccessfulAt": "2026-10-19T04:38:01.964Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-18T15:50:55.613Z"
+      "lastSuccessfulAt": "2026-10-19T04:38:01.964Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-18T15:50:55.613Z"
+      "lastSuccessfulAt": "2026-10-19T04:38:01.964Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-18T15:50:55.613Z"
+      "lastSuccessfulAt": "2026-10-19T04:38:01.964Z"
     }
   ],
   "sourceHealth": [
@@ -36,7 +36,7 @@
       "id": "cnbc-markets",
       "name": "CNBC",
       "status": "ok",
-      "itemCount": 30
+      "itemCount": 28
     },
     {
       "id": "cnbc-business",
@@ -91,7 +91,7 @@
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 44
     },
     {
       "id": "bis-press",
@@ -115,7 +115,7 @@
       "id": "news-cnbc-markets",
       "name": "CNBC（新闻）",
       "status": "ok",
-      "itemCount": 30
+      "itemCount": 28
     },
     {
       "id": "news-cnbc-business",
@@ -170,7 +170,7 @@
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 44
     },
     {
       "id": "news-bis-press",
@@ -191,8 +191,8 @@
       "itemCount": 4,
       "withBody": 4,
       "withoutBody": 0,
-      "selectedId": "8d9dce2cfc27705473a3",
-      "selectedPublishedAt": "2026-10-18T15:46:10.000Z",
+      "selectedId": "504a6cea843ab630c925",
+      "selectedPublishedAt": "2026-10-18T12:34:51.000Z",
       "selectedIsCurrent": true
     },
     {
@@ -208,11 +208,11 @@
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 11,
-      "originalSummaries": 10,
+      "itemCount": 19,
+      "originalSummaries": 18,
       "attempted": 2,
       "generated": 1,
-      "requests": 10,
+      "requests": 9,
       "rejectionReasons": {
         "summary-audit": 1
       }
@@ -231,7 +231,7 @@
         "audit": 1
       },
       "rejectionReasons": {
-        "unsupported-attribution": 1
+        "personal-impact": 1
       }
     }
   ],

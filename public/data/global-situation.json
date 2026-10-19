@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "attemptedAt": "2026-10-18T15:50:55.613Z",
-  "lastSuccessfulAt": "2026-10-18T15:50:55.613Z",
+  "attemptedAt": "2026-10-19T04:38:01.964Z",
+  "lastSuccessfulAt": "2026-10-19T04:38:01.964Z",
   "status": "delayed",
   "sourceHealth": [
     {
@@ -14,7 +14,7 @@
       "id": "cnbc-markets",
       "name": "CNBC",
       "status": "ok",
-      "itemCount": 30
+      "itemCount": 28
     },
     {
       "id": "cnbc-business",
@@ -69,7 +69,7 @@
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 50
+      "itemCount": 44
     },
     {
       "id": "bis-press",
@@ -86,6 +86,948 @@
   ],
   "events": [
     {
+      "id": "7f44d34be5b0",
+      "headline": "France hit by worst unrest in years as attempts to rein in government spending meet citizen ire",
+      "sourceHeadline": "France hit by worst unrest in years as attempts to rein in government spending meet citizen ire",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "France’s worst unrest in years saw thousands arrested, prompting President Macron to vow an “uncompromising” response ahead of a critical budget vote.",
+      "publishedAt": "2026-10-19T03:18:51.000Z",
+      "firstPublishedAt": "2026-10-19T03:18:51.000Z",
+      "latestSourceAt": "2026-10-19T03:18:51.000Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
+      "region": "global",
+      "countries": [],
+      "topic": "fiscal-policy",
+      "eventType": "fiscal-policy",
+      "relevance": {
+        "level": "high",
+        "score": 6,
+        "criteria": [
+          "inflation",
+          "growth",
+          "centralBank",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 6,
+      "relevanceReasons": [
+        "inflation",
+        "growth",
+        "centralBank",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows"
+      ],
+      "fact": [
+        "France’s worst unrest in years saw thousands arrested, prompting President Macron to vow an “uncompromising” response ahead of a critical budget vote."
+      ],
+      "factSummary": "France’s worst unrest in years saw thousands arrested, prompting President Macron to vow an “uncompromising” response ahead of a critical budget vote.",
+      "marketView": [
+        "本条来源报告：France hit by worst unrest in years as attempts to rein in government spending meet citizen ire。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "fiscal-multiplier",
+        "public-debt",
+        "bonds",
+        "cpi"
+      ],
+      "relatedKnowledgePoints": [
+        "fiscal-multiplier",
+        "public-debt",
+        "bonds",
+        "cpi"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/19/france-protests-worst-in-years-unrest-macron-.html",
+          "publishedAt": "2026-10-19T03:18:51.000Z"
+        }
+      ]
+    },
+    {
+      "id": "af8dd213c1d0",
+      "headline": "China's CXMT sees shares drop over 6% as investors look past chipmaker's profit turnaround",
+      "sourceHeadline": "China's CXMT sees shares drop over 6% as investors look past chipmaker's profit turnaround",
+      "oneLine": "跨境买卖的规则或成本在变化，企业需要重新算供应链和利润。",
+      "oneSentenceExplanation": "跨境买卖的规则或成本在变化，企业需要重新算供应链和利润。",
+      "summary": "CXMT shares fell over 6% on Monday after the company released its earnings forecast for the first nine months of 2026.",
+      "publishedAt": "2026-10-19T01:56:34.000Z",
+      "firstPublishedAt": "2026-10-19T01:56:34.000Z",
+      "latestSourceAt": "2026-10-19T01:56:34.000Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
+      "region": "china",
+      "countries": [
+        "CN"
+      ],
+      "topic": "trade-policy",
+      "eventType": "trade-policy",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "CXMT shares fell over 6% on Monday after the company released its earnings forecast for the first nine months of 2026."
+      ],
+      "factSummary": "CXMT shares fell over 6% on Monday after the company released its earnings forecast for the first nine months of 2026.",
+      "marketView": [
+        "本条来源报告：China's CXMT sees shares drop over 6% as investors look past chipmaker's profit turnaround。以下为条件性机制参考，不是已核实的市场结论。",
+        "关税和出口限制会让某些零件更贵、更难买，企业要在涨价、少赚或换供应商之间选择。",
+        "专业一点说，贸易壁垒会改变成本转嫁、比较优势和供应链配置。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，投资地点可能改变。这是一种有条件的路径。"
+      ],
+      "simpleExample": "一家玩具店用 80 元进口玩具，卖 100 元。若边境成本增加 10 元，它只能提价、少赚 10 元，或寻找新工厂。",
+      "professionalConcept": "专业一点说，贸易壁垒会改变成本转嫁、比较优势和供应链配置。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "贸易规则收紧",
+          "beginnerExplanation": "进口或出口的手续、税费或许可增加。",
+          "condition": "措施真正生效且执行",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "跨境成本可能上升",
+          "beginnerExplanation": "企业需要缴费、绕行或更换供应商。",
+          "condition": "没有及时获得豁免或替代",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "物价与利润重新分配",
+          "beginnerExplanation": "消费者、进口商和出口商分担成本。",
+          "condition": "需求弹性与议价能力不同",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "投资地点可能改变",
+          "beginnerExplanation": "企业评估把产能移到更安全的市场。",
+          "condition": "政策预计持续足够久",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "贸易规则收紧",
+          "beginnerExplanation": "进口或出口的手续、税费或许可增加。",
+          "condition": "措施真正生效且执行",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "跨境成本可能上升",
+          "beginnerExplanation": "企业需要缴费、绕行或更换供应商。",
+          "condition": "没有及时获得豁免或替代",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "物价与利润重新分配",
+          "beginnerExplanation": "消费者、进口商和出口商分担成本。",
+          "condition": "需求弹性与议价能力不同",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "投资地点可能改变",
+          "beginnerExplanation": "企业评估把产能移到更安全的市场。",
+          "condition": "政策预计持续足够久",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "半导体股",
+          "explanation": "出口许可与设备限制会影响订单和扩产。"
+        },
+        {
+          "name": "工业股",
+          "explanation": "零部件成本和海外需求会改变利润。"
+        },
+        {
+          "name": "美元与人民币",
+          "explanation": "贸易流和资本避险会影响货币需求。"
+        },
+        {
+          "name": "航运股",
+          "explanation": "提前出货、绕行和贸易量变化都会影响运价。"
+        }
+      ],
+      "relatedIndustries": [
+        "半导体",
+        "工业制造",
+        "零售",
+        "航运"
+      ],
+      "knowledgeIds": [
+        "trade",
+        "elasticity",
+        "exchange-rate",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "trade",
+        "elasticity",
+        "exchange-rate",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "豁免范围扩大",
+        "谈判达成协议",
+        "汇率抵消部分成本",
+        "企业找到替代供应",
+        "需求下降导致企业无法提价"
+      ],
+      "watchConditions": [
+        "豁免范围扩大",
+        "谈判达成协议",
+        "汇率抵消部分成本",
+        "企业找到替代供应",
+        "需求下降导致企业无法提价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/19/china-cxmt-profit-outlook-shares.html",
+          "publishedAt": "2026-10-19T01:56:34.000Z"
+        }
+      ]
+    },
+    {
+      "id": "0eeba25258ef",
+      "headline": "EU tariffs aimed at China hitting Ukraine, steel boss says",
+      "sourceHeadline": "EU tariffs aimed at China hitting Ukraine, steel boss says",
+      "oneLine": "跨境买卖的规则或成本在变化，企业需要重新算供应链和利润。",
+      "oneSentenceExplanation": "跨境买卖的规则或成本在变化，企业需要重新算供应链和利润。",
+      "summary": "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
+      "publishedAt": "2026-10-18T23:28:45.000Z",
+      "firstPublishedAt": "2026-10-18T23:28:45.000Z",
+      "latestSourceAt": "2026-10-18T23:28:45.000Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
+      "region": "china",
+      "countries": [
+        "CN"
+      ],
+      "topic": "trade-policy",
+      "eventType": "trade-policy",
+      "relevance": {
+        "level": "high",
+        "score": 7,
+        "criteria": [
+          "trade",
+          "supplyChain",
+          "inflation",
+          "growth",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 7,
+      "relevanceReasons": [
+        "trade",
+        "supplyChain",
+        "inflation",
+        "growth",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports."
+      ],
+      "factSummary": "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
+      "marketView": [
+        "本条来源报告：EU tariffs aimed at China hitting Ukraine, steel boss says。以下为条件性机制参考，不是已核实的市场结论。",
+        "关税和出口限制会让某些零件更贵、更难买，企业要在涨价、少赚或换供应商之间选择。",
+        "专业一点说，贸易壁垒会改变成本转嫁、比较优势和供应链配置。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，投资地点可能改变。这是一种有条件的路径。"
+      ],
+      "simpleExample": "一家玩具店用 80 元进口玩具，卖 100 元。若边境成本增加 10 元，它只能提价、少赚 10 元，或寻找新工厂。",
+      "professionalConcept": "专业一点说，贸易壁垒会改变成本转嫁、比较优势和供应链配置。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "贸易规则收紧",
+          "beginnerExplanation": "进口或出口的手续、税费或许可增加。",
+          "condition": "措施真正生效且执行",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "跨境成本可能上升",
+          "beginnerExplanation": "企业需要缴费、绕行或更换供应商。",
+          "condition": "没有及时获得豁免或替代",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "物价与利润重新分配",
+          "beginnerExplanation": "消费者、进口商和出口商分担成本。",
+          "condition": "需求弹性与议价能力不同",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "投资地点可能改变",
+          "beginnerExplanation": "企业评估把产能移到更安全的市场。",
+          "condition": "政策预计持续足够久",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "贸易规则收紧",
+          "beginnerExplanation": "进口或出口的手续、税费或许可增加。",
+          "condition": "措施真正生效且执行",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "跨境成本可能上升",
+          "beginnerExplanation": "企业需要缴费、绕行或更换供应商。",
+          "condition": "没有及时获得豁免或替代",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "物价与利润重新分配",
+          "beginnerExplanation": "消费者、进口商和出口商分担成本。",
+          "condition": "需求弹性与议价能力不同",
+          "uncertain": true
+        },
+        {
+          "id": "4",
+          "title": "投资地点可能改变",
+          "beginnerExplanation": "企业评估把产能移到更安全的市场。",
+          "condition": "政策预计持续足够久",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "半导体股",
+          "explanation": "出口许可与设备限制会影响订单和扩产。"
+        },
+        {
+          "name": "工业股",
+          "explanation": "零部件成本和海外需求会改变利润。"
+        },
+        {
+          "name": "美元与人民币",
+          "explanation": "贸易流和资本避险会影响货币需求。"
+        },
+        {
+          "name": "航运股",
+          "explanation": "提前出货、绕行和贸易量变化都会影响运价。"
+        }
+      ],
+      "relatedIndustries": [
+        "半导体",
+        "工业制造",
+        "零售",
+        "航运"
+      ],
+      "knowledgeIds": [
+        "trade",
+        "elasticity",
+        "exchange-rate",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "trade",
+        "elasticity",
+        "exchange-rate",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "豁免范围扩大",
+        "谈判达成协议",
+        "汇率抵消部分成本",
+        "企业找到替代供应",
+        "需求下降导致企业无法提价"
+      ],
+      "watchConditions": [
+        "豁免范围扩大",
+        "谈判达成协议",
+        "汇率抵消部分成本",
+        "企业找到替代供应",
+        "需求下降导致企业无法提价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-18T23:28:45.000Z"
+        }
+      ]
+    },
+    {
+      "id": "adbb903e48e8",
+      "headline": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
+      "sourceHeadline": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "The US president blocked numerous sanctions on Russia two days before they were due to take effect.",
+      "publishedAt": "2026-10-18T23:20:15.000Z",
+      "firstPublishedAt": "2026-10-18T23:20:15.000Z",
+      "latestSourceAt": "2026-10-18T23:20:15.000Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
+      "region": "europe",
+      "countries": [
+        "EU"
+      ],
+      "topic": "geopolitical-conflict",
+      "eventType": "geopolitical-conflict",
+      "relevance": {
+        "level": "high",
+        "score": 6,
+        "criteria": [
+          "trade",
+          "supplyChain",
+          "growth",
+          "fiscalPolicy",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "high",
+      "marketRelevanceScore": 6,
+      "relevanceReasons": [
+        "trade",
+        "supplyChain",
+        "growth",
+        "fiscalPolicy",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "The US president blocked numerous sanctions on Russia two days before they were due to take effect."
+      ],
+      "factSummary": "The US president blocked numerous sanctions on Russia two days before they were due to take effect.",
+      "marketView": [
+        "本条来源报告：Trump says suspension of Russia sanctions is to keep peace negotiations going。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "relatedKnowledgePoints": [
+        "geopolitics",
+        "probability",
+        "trade",
+        "drawdown"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-18T23:20:15.000Z"
+        }
+      ]
+    },
+    {
+      "id": "b925929756e4",
+      "headline": "Major fire at Canada military base leaves four dead, dozens injured",
+      "sourceHeadline": "Major fire at Canada military base leaves four dead, dozens injured",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "Prime Minister Carney said military and emergency crews fought the flames throughout the night in \"some of the worst conditions imaginable\".",
+      "publishedAt": "2026-10-18T23:06:09.000Z",
+      "firstPublishedAt": "2026-10-18T23:06:09.000Z",
+      "latestSourceAt": "2026-10-18T23:06:09.000Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "Prime Minister Carney said military and emergency crews fought the flames throughout the night in \"some of the worst conditions imaginable\"."
+      ],
+      "factSummary": "Prime Minister Carney said military and emergency crews fought the flames throughout the night in \"some of the worst conditions imaginable\".",
+      "marketView": [
+        "本条来源报告：Major fire at Canada military base leaves four dead, dozens injured。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cxj0ly1m3q81o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-18T23:06:09.000Z"
+        }
+      ]
+    },
+    {
+      "id": "0a7181de57b6",
+      "headline": "Macron calls for 'calm and order' after riots across France",
+      "sourceHeadline": "Macron calls for 'calm and order' after riots across France",
+      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
+      "summary": "French President Emmanuel Macron gives a national address after widespread disorder and as some looting continued in Paris.",
+      "publishedAt": "2026-10-18T20:33:21.000Z",
+      "firstPublishedAt": "2026-10-18T20:33:21.000Z",
+      "latestSourceAt": "2026-10-18T20:33:21.000Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
+      "region": "global",
+      "countries": [],
+      "topic": "political-transition",
+      "eventType": "political-transition",
+      "relevance": {
+        "level": "medium",
+        "score": 5,
+        "criteria": [
+          "growth",
+          "fiscalPolicy",
+          "earnings",
+          "capitalFlows",
+          "riskAppetite"
+        ]
+      },
+      "marketRelevance": "medium",
+      "marketRelevanceScore": 5,
+      "relevanceReasons": [
+        "growth",
+        "fiscalPolicy",
+        "earnings",
+        "capitalFlows",
+        "riskAppetite"
+      ],
+      "fact": [
+        "French President Emmanuel Macron gives a national address after widespread disorder and as some looting continued in Paris."
+      ],
+      "factSummary": "French President Emmanuel Macron gives a national address after widespread disorder and as some looting continued in Paris.",
+      "marketView": [
+        "本条来源报告：Macron calls for 'calm and order' after riots across France。以下为条件性机制参考，不是已核实的市场结论。",
+        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
+        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
+      ],
+      "scenarios": [
+        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
+      ],
+      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
+      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
+      "causalChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "impactChain": [
+        {
+          "id": "1",
+          "title": "政策或事件发生",
+          "beginnerExplanation": "已确认的信息进入市场。",
+          "condition": "来源和细节可靠",
+          "uncertain": false
+        },
+        {
+          "id": "2",
+          "title": "预期可能改变",
+          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
+          "condition": "影响具有经济规模",
+          "uncertain": true
+        },
+        {
+          "id": "3",
+          "title": "资产重新定价",
+          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
+          "condition": "新信息尚未被完全计价",
+          "uncertain": true
+        }
+      ],
+      "relatedAssets": [
+        {
+          "name": "全球股票",
+          "explanation": "盈利与风险偏好共同决定影响。"
+        },
+        {
+          "name": "国债",
+          "explanation": "增长、通胀和政策预期会进入收益率。"
+        },
+        {
+          "name": "美元",
+          "explanation": "资本流与相对利率会改变需求。"
+        }
+      ],
+      "relatedIndustries": [
+        "银行",
+        "房地产",
+        "科技",
+        "可选消费"
+      ],
+      "knowledgeIds": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "relatedKnowledgePoints": [
+        "elections",
+        "probability",
+        "geopolitics"
+      ],
+      "conditionsThatChangeView": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "watchConditions": [
+        "政策没有真正执行",
+        "影响范围小于预期",
+        "出现方向相反的新数据",
+        "市场此前已经充分定价"
+      ],
+      "marketReaction": [],
+      "sources": [
+        {
+          "name": "BBC News · 世界",
+          "url": "https://www.bbc.co.uk/news/articles/cw240zl08dm5o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-18T20:33:21.000Z"
+        }
+      ]
+    },
+    {
       "id": "6f6d38da341c",
       "headline": "Oil facilities hit in deadly overnight attack on St Petersburg",
       "sourceHeadline": "Oil facilities hit in deadly overnight attack on St Petersburg",
@@ -95,7 +1037,7 @@
       "publishedAt": "2026-10-18T15:46:10.000Z",
       "firstPublishedAt": "2026-10-18T15:46:10.000Z",
       "latestSourceAt": "2026-10-18T15:46:10.000Z",
-      "fetchedAt": "2026-10-18T15:50:55.613Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -449,7 +1391,7 @@
       "publishedAt": "2026-10-18T12:34:51.000Z",
       "firstPublishedAt": "2026-10-18T12:34:51.000Z",
       "latestSourceAt": "2026-10-18T12:34:51.000Z",
-      "fetchedAt": "2026-10-18T15:50:55.613Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -637,7 +1579,7 @@
       "publishedAt": "2026-10-18T12:16:14.000Z",
       "firstPublishedAt": "2026-10-18T12:16:14.000Z",
       "latestSourceAt": "2026-10-18T12:16:14.000Z",
-      "fetchedAt": "2026-10-18T15:50:55.613Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
       "region": "europe",
       "countries": [
         "EU"
@@ -785,7 +1727,7 @@
       "publishedAt": "2026-10-18T11:10:44.000Z",
       "firstPublishedAt": "2026-10-18T11:10:44.000Z",
       "latestSourceAt": "2026-10-18T11:10:44.000Z",
-      "fetchedAt": "2026-10-18T15:50:55.613Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
       "region": "global",
       "countries": [],
       "topic": "trade-policy",
@@ -957,7 +1899,7 @@
       "publishedAt": "2026-10-18T10:22:17.000Z",
       "firstPublishedAt": "2026-10-18T10:22:17.000Z",
       "latestSourceAt": "2026-10-18T10:22:17.000Z",
-      "fetchedAt": "2026-10-18T15:50:55.613Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
       "region": "global",
       "countries": [],
       "topic": "fiscal-policy",
@@ -1107,7 +2049,7 @@
       "publishedAt": "2026-10-18T08:12:24.000Z",
       "firstPublishedAt": "2026-10-18T08:12:24.000Z",
       "latestSourceAt": "2026-10-18T08:12:24.000Z",
-      "fetchedAt": "2026-10-18T15:50:55.613Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -1287,7 +2229,7 @@
       "publishedAt": "2026-10-18T06:07:40.000Z",
       "firstPublishedAt": "2026-10-18T06:07:40.000Z",
       "latestSourceAt": "2026-10-18T06:07:40.000Z",
-      "fetchedAt": "2026-10-18T15:50:55.613Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
       "region": "middle-east",
       "countries": [],
       "topic": "energy-security",
@@ -2245,7 +3187,7 @@
       "publishedAt": "2026-10-17T03:57:16.000Z",
       "firstPublishedAt": "2026-10-17T03:57:16.000Z",
       "latestSourceAt": "2026-10-17T03:57:16.000Z",
-      "fetchedAt": "2026-10-18T15:50:55.613Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
       "region": "global",
       "countries": [],
       "topic": "political-transition",
@@ -2689,7 +3631,7 @@
       "publishedAt": "2026-10-16T22:34:29.000Z",
       "firstPublishedAt": "2026-10-16T22:34:29.000Z",
       "latestSourceAt": "2026-10-16T22:34:29.000Z",
-      "fetchedAt": "2026-10-18T15:50:55.613Z",
+      "fetchedAt": "2026-10-19T04:38:01.964Z",
       "region": "united-states",
       "countries": [
         "US"
@@ -2980,962 +3922,6 @@
           "name": "CNBC",
           "url": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
           "publishedAt": "2026-10-16T22:33:05.000Z"
-        }
-      ]
-    },
-    {
-      "id": "4d07792882d9",
-      "headline": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
-      "sourceHeadline": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
-      "oneLine": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
-      "oneSentenceExplanation": "能源或运输出现不确定性，市场先担心未来会不会供不应求。",
-      "summary": "U.S. crude oil prices rose sharply Friday as Iran escalated attacks in the Strait of Hormuz this week.",
-      "publishedAt": "2026-10-16T20:02:21.000Z",
-      "firstPublishedAt": "2026-10-16T20:02:21.000Z",
-      "latestSourceAt": "2026-10-16T20:02:21.000Z",
-      "fetchedAt": "2026-10-17T07:08:01.535Z",
-      "region": "united-states",
-      "countries": [
-        "US"
-      ],
-      "topic": "energy-security",
-      "eventType": "energy-security",
-      "relevance": {
-        "level": "high",
-        "score": 7,
-        "criteria": [
-          "energySupply",
-          "trade",
-          "supplyChain",
-          "inflation",
-          "growth",
-          "earnings",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "high",
-      "marketRelevanceScore": 7,
-      "relevanceReasons": [
-        "energySupply",
-        "trade",
-        "supplyChain",
-        "inflation",
-        "growth",
-        "earnings",
-        "riskAppetite"
-      ],
-      "fact": [
-        "U.S. crude oil prices rose sharply Friday as Iran escalated attacks in the Strait of Hormuz this week."
-      ],
-      "factSummary": "U.S. crude oil prices rose sharply Friday as Iran escalated attacks in the Strait of Hormuz this week.",
-      "marketView": [
-        "本条来源报告：Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries。以下为条件性机制参考，不是已核实的市场结论。",
-        "石油和运输像经济的血液。它们变贵，会让飞机、卡车、工厂和家庭一起多花钱。",
-        "专业一点说，市场正在为潜在供应中断加入风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，降息空间可能缩小。这是一种有条件的路径。"
-      ],
-      "simpleExample": "想象每天需要 100 桶油，大家忽然担心以后只能运到 90 桶。即使今天还没真的少 10 桶，买家也可能提前抢油，价格便会先动。",
-      "professionalConcept": "专业一点说，市场正在为潜在供应中断加入风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "运输或供应风险上升",
-          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
-          "condition": "风险持续且替代路线有限",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "原油与运费可能上涨",
-          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
-          "condition": "库存和备用产能不足以抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "企业成本可能增加",
-          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
-          "condition": "企业无法完全用效率或合同锁价吸收",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "通胀压力可能升高",
-          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
-          "condition": "需求仍能承受提价",
-          "uncertain": true
-        },
-        {
-          "id": "5",
-          "title": "降息空间可能缩小",
-          "beginnerExplanation": "央行会担心价格压力扩散。",
-          "condition": "通胀持续而增长尚未明显崩弱",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "运输或供应风险上升",
-          "beginnerExplanation": "可用能源可能减少，买家会更早锁定货源。",
-          "condition": "风险持续且替代路线有限",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "原油与运费可能上涨",
-          "beginnerExplanation": "更少的供给追逐相近的需求，价格容易上升。",
-          "condition": "库存和备用产能不足以抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "企业成本可能增加",
-          "beginnerExplanation": "航空、物流、化工和制造业都需要能源。",
-          "condition": "企业无法完全用效率或合同锁价吸收",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "通胀压力可能升高",
-          "beginnerExplanation": "企业可能把部分成本转到商品和服务价格。",
-          "condition": "需求仍能承受提价",
-          "uncertain": true
-        },
-        {
-          "id": "5",
-          "title": "降息空间可能缩小",
-          "beginnerExplanation": "央行会担心价格压力扩散。",
-          "condition": "通胀持续而增长尚未明显崩弱",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "原油",
-          "explanation": "供应中断概率直接影响每桶油的边际价格。"
-        },
-        {
-          "name": "黄金",
-          "explanation": "风险偏好下降时资金可能寻找避险，但实际利率上升会削弱吸引力。"
-        },
-        {
-          "name": "航空股",
-          "explanation": "燃油是重要成本；票价无法同步上涨时利润可能下降。"
-        },
-        {
-          "name": "能源股",
-          "explanation": "油价走高可能增加收入，但税费、成本和产量决定利润。"
-        }
-      ],
-      "relatedIndustries": [
-        "能源",
-        "航空",
-        "航运",
-        "化工"
-      ],
-      "knowledgeIds": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "relatedKnowledgePoints": [
-        "geopolitics",
-        "supply-demand",
-        "cpi",
-        "trade"
-      ],
-      "conditionsThatChangeView": [
-        "停火或紧张局势缓和",
-        "关键航线恢复正常",
-        "OPEC 或其他产油国增产",
-        "释放战略石油储备",
-        "全球需求明显下降",
-        "实际供应未受影响"
-      ],
-      "watchConditions": [
-        "停火或紧张局势缓和",
-        "关键航线恢复正常",
-        "OPEC 或其他产油国增产",
-        "释放战略石油储备",
-        "全球需求明显下降",
-        "实际供应未受影响"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
-          "publishedAt": "2026-10-16T20:02:21.000Z"
-        }
-      ]
-    },
-    {
-      "id": "4810774f9133",
-      "headline": "The affordability crisis isn't hitting all voters equally. Here's why",
-      "sourceHeadline": "The affordability crisis isn't hitting all voters equally. Here's why",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Younger Americans face higher inflation and housing costs than baby boomers, widening the affordability divide ahead of the 2026 midterm elections.",
-      "publishedAt": "2026-10-16T19:22:21.000Z",
-      "firstPublishedAt": "2026-10-16T19:22:21.000Z",
-      "latestSourceAt": "2026-10-16T19:22:21.000Z",
-      "fetchedAt": "2026-10-17T07:08:01.535Z",
-      "region": "united-states",
-      "countries": [
-        "US"
-      ],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Younger Americans face higher inflation and housing costs than baby boomers, widening the affordability divide ahead of the 2026 midterm elections."
-      ],
-      "factSummary": "Younger Americans face higher inflation and housing costs than baby boomers, widening the affordability divide ahead of the 2026 midterm elections.",
-      "marketView": [
-        "本条来源报告：The affordability crisis isn't hitting all voters equally. Here's why。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/16/affordability-inflation-midterms.html",
-          "publishedAt": "2026-10-16T19:22:21.000Z"
-        }
-      ]
-    },
-    {
-      "id": "ccfdefbfce92",
-      "headline": "What we learned from heated US midterm Senate debates",
-      "sourceHeadline": "What we learned from heated US midterm Senate debates",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "As the 3 November election approaches and both parties fight for control of Congress, some clear themes have emerged.",
-      "publishedAt": "2026-10-16T19:09:37.000Z",
-      "firstPublishedAt": "2026-10-16T19:09:37.000Z",
-      "latestSourceAt": "2026-10-16T19:09:37.000Z",
-      "fetchedAt": "2026-10-18T15:50:55.613Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "As the 3 November election approaches and both parties fight for control of Congress, some clear themes have emerged."
-      ],
-      "factSummary": "As the 3 November election approaches and both parties fight for control of Congress, some clear themes have emerged.",
-      "marketView": [
-        "本条来源报告：What we learned from heated US midterm Senate debates。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "BBC News · 世界",
-          "url": "https://www.bbc.co.uk/news/articles/cqly03y3zg7lo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-16T19:09:37.000Z"
-        }
-      ]
-    },
-    {
-      "id": "ed66f744c4c8",
-      "headline": "Why Trump and the GOP's billion-dollar midterm blitz isn’t working",
-      "sourceHeadline": "Why Trump and the GOP's billion-dollar midterm blitz isn’t working",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "Trump-aligned groups and Elon Musk have poured hundreds of millions into the midterm election, but the GOP spending surge has barely moved polls or the map.",
-      "publishedAt": "2026-10-16T17:55:05.000Z",
-      "firstPublishedAt": "2026-10-16T17:55:05.000Z",
-      "latestSourceAt": "2026-10-16T17:55:05.000Z",
-      "fetchedAt": "2026-10-18T15:50:55.613Z",
-      "region": "global",
-      "countries": [],
-      "topic": "political-transition",
-      "eventType": "political-transition",
-      "relevance": {
-        "level": "medium",
-        "score": 5,
-        "criteria": [
-          "growth",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "medium",
-      "marketRelevanceScore": 5,
-      "relevanceReasons": [
-        "growth",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Trump-aligned groups and Elon Musk have poured hundreds of millions into the midterm election, but the GOP spending surge has barely moved polls or the map."
-      ],
-      "factSummary": "Trump-aligned groups and Elon Musk have poured hundreds of millions into the midterm election, but the GOP spending surge has barely moved polls or the map.",
-      "marketView": [
-        "本条来源报告：Why Trump and the GOP's billion-dollar midterm blitz isn’t working。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "relatedKnowledgePoints": [
-        "elections",
-        "probability",
-        "geopolitics"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/16/republicans-midterms-spending-trump-musk-2026.html",
-          "publishedAt": "2026-10-16T17:55:05.000Z"
-        }
-      ]
-    },
-    {
-      "id": "077f9bb0b231",
-      "headline": "U.S. presses China on Mastercard, Citigroup market access in bilateral Bangkok talks, official says",
-      "sourceHeadline": "U.S. presses China on Mastercard, Citigroup market access in bilateral Bangkok talks, official says",
-      "oneLine": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "oneSentenceExplanation": "一项政策或政治变化正在改变增长、成本或资金流的预期。",
-      "summary": "The U.S. raised market access issues for Mastercard and Citigroup in China during bilateral meetings in Bangkok this week, a U.S. Treasury official says.",
-      "publishedAt": "2026-10-16T16:46:18.000Z",
-      "firstPublishedAt": "2026-10-16T16:46:18.000Z",
-      "latestSourceAt": "2026-10-16T16:46:18.000Z",
-      "fetchedAt": "2026-10-18T04:30:08.252Z",
-      "region": "united-states",
-      "countries": [
-        "US"
-      ],
-      "topic": "fiscal-policy",
-      "eventType": "fiscal-policy",
-      "relevance": {
-        "level": "high",
-        "score": 6,
-        "criteria": [
-          "inflation",
-          "growth",
-          "centralBank",
-          "fiscalPolicy",
-          "earnings",
-          "capitalFlows"
-        ]
-      },
-      "marketRelevance": "high",
-      "marketRelevanceScore": 6,
-      "relevanceReasons": [
-        "inflation",
-        "growth",
-        "centralBank",
-        "fiscalPolicy",
-        "earnings",
-        "capitalFlows"
-      ],
-      "fact": [
-        "The U.S. raised market access issues for Mastercard and Citigroup in China during bilateral meetings in Bangkok this week, a U.S. Treasury official says."
-      ],
-      "factSummary": "The U.S. raised market access issues for Mastercard and Citigroup in China during bilateral meetings in Bangkok this week, a U.S. Treasury official says.",
-      "marketView": [
-        "本条来源报告：U.S. presses China on Mastercard, Citigroup market access in bilateral Bangkok talks, official says。以下为条件性机制参考，不是已核实的市场结论。",
-        "市场关心的不是标题本身，而是它会不会改变企业赚多少钱、借钱多贵以及投资者愿意承担多少风险。",
-        "专业一点说，市场正在重估现金流、贴现率与风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，资产重新定价。这是一种有条件的路径。"
-      ],
-      "simpleExample": "像家庭重新做预算：收入、利息或必要开支变了，能用于其他事情的钱也会跟着变。",
-      "professionalConcept": "专业一点说，市场正在重估现金流、贴现率与风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "政策或事件发生",
-          "beginnerExplanation": "已确认的信息进入市场。",
-          "condition": "来源和细节可靠",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "预期可能改变",
-          "beginnerExplanation": "投资者重新估计增长、成本或风险。",
-          "condition": "影响具有经济规模",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "资产重新定价",
-          "beginnerExplanation": "买卖双方调整愿意接受的价格。",
-          "condition": "新信息尚未被完全计价",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "全球股票",
-          "explanation": "盈利与风险偏好共同决定影响。"
-        },
-        {
-          "name": "国债",
-          "explanation": "增长、通胀和政策预期会进入收益率。"
-        },
-        {
-          "name": "美元",
-          "explanation": "资本流与相对利率会改变需求。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "fiscal-multiplier",
-        "public-debt",
-        "bonds",
-        "cpi"
-      ],
-      "relatedKnowledgePoints": [
-        "fiscal-multiplier",
-        "public-debt",
-        "bonds",
-        "cpi"
-      ],
-      "conditionsThatChangeView": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "watchConditions": [
-        "政策没有真正执行",
-        "影响范围小于预期",
-        "出现方向相反的新数据",
-        "市场此前已经充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/16/us-china-mastercard-citigroup-market-access.html",
-          "publishedAt": "2026-10-16T16:46:18.000Z"
-        }
-      ]
-    },
-    {
-      "id": "d52672909222",
-      "headline": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
-      "sourceHeadline": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
-      "oneLine": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
-      "oneSentenceExplanation": "央行正在改变或解释“借钱的价格”，这会影响贷款、债券和股票估值。",
-      "summary": "Investors expect the Fed to pause rate hikes in October, but Kevin Warsh's rejection of traditional communications practices and continued concern about inflation leave the decision uncertain.",
-      "publishedAt": "2026-10-16T16:27:31.000Z",
-      "firstPublishedAt": "2026-10-16T16:27:31.000Z",
-      "latestSourceAt": "2026-10-16T16:27:31.000Z",
-      "fetchedAt": "2026-10-16T16:37:23.196Z",
-      "region": "united-states",
-      "countries": [
-        "US"
-      ],
-      "topic": "monetary-policy",
-      "eventType": "monetary-policy",
-      "relevance": {
-        "level": "high",
-        "score": 6,
-        "criteria": [
-          "inflation",
-          "growth",
-          "centralBank",
-          "earnings",
-          "capitalFlows",
-          "riskAppetite"
-        ]
-      },
-      "marketRelevance": "high",
-      "marketRelevanceScore": 6,
-      "relevanceReasons": [
-        "inflation",
-        "growth",
-        "centralBank",
-        "earnings",
-        "capitalFlows",
-        "riskAppetite"
-      ],
-      "fact": [
-        "Investors expect the Fed to pause rate hikes in October, but Kevin Warsh's rejection of traditional communications practices and continued concern about inflation leave the decision uncertain."
-      ],
-      "factSummary": "Investors expect the Fed to pause rate hikes in October, but Kevin Warsh's rejection of traditional communications practices and continued concern about inflation leave the decision uncertain.",
-      "marketView": [
-        "本条来源报告：Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all。以下为条件性机制参考，不是已核实的市场结论。",
-        "利率像资金的租金。租金变高，企业借钱扩张更贵，未来利润折算到今天也会变少。",
-        "专业一点说，市场在重估政策路径、贴现率和风险溢价。"
-      ],
-      "scenarios": [
-        "如果相关影响继续，股票估值可能重算。这是一种有条件的路径。"
-      ],
-      "simpleExample": "你明年收到 100 元。若安全存款一年能赚 2 元，今天为这 100 元支付的价格会高一些；若能赚 8 元，你会要求更低的今天价格。",
-      "professionalConcept": "专业一点说，市场在重估政策路径、贴现率和风险溢价。",
-      "causalChain": [
-        {
-          "id": "1",
-          "title": "央行信号变化",
-          "beginnerExplanation": "投资者调整未来利率预期。",
-          "condition": "后续数据没有推翻该信号",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "债券收益率可能变化",
-          "beginnerExplanation": "新利率预期进入债券价格。",
-          "condition": "信用和期限溢价没有反向抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "融资成本可能变化",
-          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
-          "condition": "政策能传导到实体融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "股票估值可能重算",
-          "beginnerExplanation": "远期现金流对贴现率敏感。",
-          "condition": "盈利预期没有同时大幅变化",
-          "uncertain": true
-        }
-      ],
-      "impactChain": [
-        {
-          "id": "1",
-          "title": "央行信号变化",
-          "beginnerExplanation": "投资者调整未来利率预期。",
-          "condition": "后续数据没有推翻该信号",
-          "uncertain": false
-        },
-        {
-          "id": "2",
-          "title": "债券收益率可能变化",
-          "beginnerExplanation": "新利率预期进入债券价格。",
-          "condition": "信用和期限溢价没有反向抵消",
-          "uncertain": true
-        },
-        {
-          "id": "3",
-          "title": "融资成本可能变化",
-          "beginnerExplanation": "银行和债券市场重新给贷款定价。",
-          "condition": "政策能传导到实体融资",
-          "uncertain": true
-        },
-        {
-          "id": "4",
-          "title": "股票估值可能重算",
-          "beginnerExplanation": "远期现金流对贴现率敏感。",
-          "condition": "盈利预期没有同时大幅变化",
-          "uncertain": true
-        }
-      ],
-      "relatedAssets": [
-        {
-          "name": "国债收益率",
-          "explanation": "它最直接反映政策、通胀和期限补偿。"
-        },
-        {
-          "name": "美元",
-          "explanation": "相对利率会改变持有不同货币的吸引力。"
-        },
-        {
-          "name": "Nasdaq",
-          "explanation": "许多成长公司的价值来自更远期利润，对贴现率更敏感。"
-        },
-        {
-          "name": "银行股",
-          "explanation": "利率影响息差、贷款需求和坏账风险，方向取决于三者合力。"
-        }
-      ],
-      "relatedIndustries": [
-        "银行",
-        "房地产",
-        "科技",
-        "可选消费"
-      ],
-      "knowledgeIds": [
-        "interest-rate",
-        "bonds",
-        "cpi",
-        "valuation",
-        "exchange-rate"
-      ],
-      "relatedKnowledgePoints": [
-        "interest-rate",
-        "bonds",
-        "cpi",
-        "valuation",
-        "exchange-rate"
-      ],
-      "conditionsThatChangeView": [
-        "通胀数据明显转向",
-        "就业或增长意外走弱",
-        "央行官员给出不同信号",
-        "金融压力让银行收紧贷款",
-        "市场已经提前充分定价"
-      ],
-      "watchConditions": [
-        "通胀数据明显转向",
-        "就业或增长意外走弱",
-        "央行官员给出不同信号",
-        "金融压力让银行收紧贷款",
-        "市场已经提前充分定价"
-      ],
-      "marketReaction": [],
-      "sources": [
-        {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
-          "publishedAt": "2026-10-16T16:27:31.000Z"
         }
       ]
     }
