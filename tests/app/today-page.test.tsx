@@ -20,7 +20,8 @@ describe('Today page', () => {
     const {container}=render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
 
     expect((await screen.findAllByText(reviewedItem.titleZh!)).length).toBeGreaterThan(0);
-    expect(screen.getByRole('searchbox')).toBeInTheDocument();
+    expect(screen.queryByRole('searchbox')).not.toBeInTheDocument();
+    expect(screen.getByRole('combobox',{name:'事件类型'})).toBeInTheDocument();
     expect(container.querySelector('.live-news-feed')).toBeInTheDocument();
   });
 

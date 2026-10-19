@@ -9,7 +9,8 @@ it('opens news and filters without market panels',async()=>{
  expect(screen.getByRole('heading',{name:'资讯'})).toBeInTheDocument();
  expect(container.querySelector('.market-overview')).toBeNull();
  expect(screen.queryByText('行业相对强弱')).toBeNull();
- expect(await screen.findByRole('searchbox')).toBeInTheDocument();
+ expect(await screen.findByRole('combobox',{name:'地区筛选'})).toBeInTheDocument();
+ expect(screen.queryByRole('searchbox')).not.toBeInTheDocument();
  vi.unstubAllGlobals();
 });
 it('selects macro and geopolitical topics without requiring financial analysis',()=>{
