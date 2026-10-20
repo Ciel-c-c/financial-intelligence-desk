@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-20T17:01:11.939Z",
+  "attemptedAt": "2026-10-20T17:01:45.108Z",
   "lastSuccessfulAt": "2026-10-20T17:01:11.939Z",
   "nextExpectedAt": "2026-10-21T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-20T17:01:11.939Z",
   "status": "delayed",
   "latest": [
     {
@@ -93,7 +95,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -144,11 +147,27 @@
       },
       "queue": {
         "firstSeenAt": "2026-10-20T17:01:11.939Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-10-20T17:01:45.108Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "85f62013a6ad8d8f1a7466704f5c3dae4bfb1750a1542b4a073e7be7f55249cf",
+        "count": 1,
+        "lastAttemptAt": "2026-10-20T17:01:11.939Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -164,7 +183,7 @@
       "fetchedAt": "2026-10-20T17:01:11.939Z",
       "id": "72faf6151e384d2e6208",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "CNBC",
@@ -177,26 +196,34 @@
       ],
       "causalSignals": [],
       "analysisLevels": [
-        "公司"
+        "宏观",
+        "行业"
       ],
       "eventTypes": [
-        "公司经营"
+        "公司经营",
+        "经济数据"
       ],
       "impactChannels": [
-        "盈利"
+        "盈利",
+        "估值"
       ],
       "regions": [
-        "全球"
+        "美国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "公司经营|hereswhattoexpec|2026-10-20",
-      "detailStatus": "professional",
+      "detailStatus": "so-what",
       "facts": [
-        "Investors will be looking for updates on Netflix's ad-supported business, engagement metrics and how the streaming giant continues to view potential M&A."
+        "Netflix 将在收盘后公布财报",
+        "投资者关注其广告支持业务、用户参与度以及并购前景"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若广告收入超预期，可能提升短期股价",
+        "若用户增长放缓，可能压制估值",
+        "若并购传闻被证实，可能带来长期增长预期"
+      ],
       "article": {
         "status": "summary",
         "text": "Here's what to expect when Netflix reports earnings after the bell\nInvestors will be looking for updates on Netflix's ad-supported business, engagement metrics and how the streaming giant continues to view potential M&A.",
@@ -212,7 +239,241 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-20T17:01:45.108Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Here's what to expect when Netflix reports earnings after the bell",
+        "sourceUrl": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
+        "publishedAt": "2026-10-20T16:00:01.000Z",
+        "sourceHash": "25e0dd0ce1d790b7d407910825370686829c12089032bf4f33d578ee3ef5d9ec",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-20T17:01:45.108Z",
+        "title": "Netflix 财报前瞻：广告业务、用户参与度与并购展望",
+        "summary": "投资者将在Netflix本次财报后关注其广告支持业务的最新进展、用户参与度指标以及公司对潜在并购的看法。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "本次报道聚焦Netflix财报发布后的关注点。",
+            "quote": "Here's what to expect when Netflix reports earnings after the bell"
+          },
+          {
+            "text": "投资者将关注Netflix的广告支持业务及用户参与度指标。",
+            "quote": "Investors will be looking for updates on Netflix's ad-supported business, engagement metrics and how the streaming giant"
+          },
+          {
+            "text": "投资者还将关注该流媒体公司对潜在并购的看法。",
+            "quote": "business, engagement metrics and how the streaming giant continues to view potential M&A."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "25e0dd0ce1d790b7d407910825370686829c12089032bf4f33d578ee3ef5d9ec",
+        "count": 1,
+        "lastAttemptAt": "2026-10-20T17:01:11.939Z"
+      },
+      "titleZh": "Netflix 将在收盘后公布财报，投资者关注广告业务与并购前景",
+      "summaryZh": "Netflix 将于收盘后发布第三季度财报，市场关注其广告支持业务的进展、用户参与度以及潜在并购计划。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "Netflix 将在收盘后公布财报",
+              "evidence": "Here's what to expect when Netflix reports earnings after the bell"
+            },
+            {
+              "text": "投资者关注其广告支持业务、用户参与度以及并购前景",
+              "evidence": "Investors will be looking for updates on Netflix's ad-supported business, engagement metrics and how the streaming giant"
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "美国",
+            "triggerEvidence": "Investors will be looking for updates on Netflix's ad-supported business, engagement metrics and how the streaming giant",
+            "path": [
+              "财报发布",
+              "投资者解读",
+              "股价波动"
+            ],
+            "invalidation": "若财报数据与预期基本持平，股价波动可能有限"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "25e0dd0ce1d790b7d407910825370686829c12089032bf4f33d578ee3ef5d9ec",
+        "originalTitle": "Here's what to expect when Netflix reports earnings after the bell",
+        "reviewedAt": "2026-10-20T17:01:11.939Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "72faf6151e384d2e6208",
+          "title": "Netflix 将在收盘后公布财报，投资者关注广告业务与并购前景",
+          "summary": "Netflix 将于收盘后发布第三季度财报，市场关注其广告支持业务的进展、用户参与度以及潜在并购计划。",
+          "excerpt": "投资者将关注Netflix的广告支持业务、用户参与度以及该流媒体巨头对潜在并购的看法。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
+          "publishedAt": "2026-10-20T16:00:01.000Z",
+          "region": "美股",
+          "topic": "Netflix 财报",
+          "termIds": [],
+          "facts": [
+            "Netflix 将在收盘后公布财报",
+            "投资者关注其广告支持业务、用户参与度以及并购前景"
+          ],
+          "consensus": [
+            "暂无明确市场共识"
+          ],
+          "inference": [
+            "若广告收入超预期，可能提升短期股价",
+            "若用户增长放缓，可能压制估值",
+            "若并购传闻被证实，可能带来长期增长预期"
+          ],
+          "risks": [
+            "实际广告收入低于预期",
+            "用户参与度或订阅增长不及预期",
+            "并购计划未落实或出现监管阻碍"
+          ],
+          "causalChain": [
+            {
+              "title": "财报发布",
+              "explanation": "Netflix 在收盘后公布第三季度业绩数据",
+              "condition": "公司按计划发布财报"
+            },
+            {
+              "title": "投资者解读",
+              "explanation": "市场关注广告业务、用户参与度和并购前景的具体数字",
+              "condition": "财报中提供相关指标"
+            },
+            {
+              "title": "股价波动",
+              "explanation": "投资者根据解读结果调整持仓，导致股价上行或下行",
+              "condition": "解读结果与市场预期出现差异"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "看电影前先看预告片",
+            "explanation": "观众在决定是否观看电影前会先看预告片的内容和质量，类似投资者在正式财报公布前会先关注预告信息（广告业务、用户数据、并购可能），但预告并不保证最终影片质量，实际表现仍是决定因素。"
+          },
+          "why": {
+            "cause": "财报信息直接反映公司业务进展",
+            "mechanisms": [
+              "广告收入提升可改善利润率",
+              "用户参与度提升支撑订阅续费",
+              "并购可能带来新内容或技术"
+            ],
+            "result": "这些因素共同影响投资者情绪，进而影响股价波动"
+          },
+          "focus": [
+            "广告业务盈利能力",
+            "用户增长与留存",
+            "并购进展"
+          ],
+          "marketBet": [
+            "若广告收入显著高于预期，股价可能出现短期上行",
+            "若用户增长放缓，估值可能面临下行压力",
+            "若并购传闻被证实，长期增长预期可能提升"
+          ],
+          "expectationGap": "源材料未提供任何市场共识或先前预期的具体表述，故无法比较实际结果与先前预期之间的差距。",
+          "counterView": "也有观点认为即使广告收入增长，整体订阅收入下降仍可能拖累整体业绩，导致股价仍承压。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "美国散户和机构投资者的持仓价值可能随股价波动而升降",
+              "why": "财报结果影响市场对Netflix未来盈利的预期，进而影响股价表现",
+              "invalidation": "若财报数据与市场预期基本持平，股价波动可能有限，投资者影响减弱",
+              "condition": "若财报数据与市场预期基本持平，股价波动可能有限，投资者影响减弱"
+            }
+          ],
+          "surface": "Netflix 将在收盘后公布财报，投资者关注广告业务与并购前景",
+          "next": [
+            "财报发布",
+            "投资者解读",
+            "股价波动"
+          ],
+          "condition": [
+            "公司按计划发布财报",
+            "财报中提供相关指标",
+            "解读结果与市场预期出现差异"
+          ]
+        },
+        "watchItems": [
+          "广告收入实际表现",
+          "用户增长率和观看时长",
+          "并购相关声明或传闻"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "25e0dd0ce1d790b7d407910825370686829c12089032bf4f33d578ee3ef5d9ec",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-10-20T17:01:45.108Z",
+        "state": "approved"
       }
     },
     {
@@ -329,7 +590,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -629,7 +891,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1552,7 +1815,7 @@
         "reader": "cnfin-body",
         "sha256": "44679b7d1b6c64e5d8e690a38b5d573318d9b360d5156a4725d3f220338cb88a",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261020/4483951_1.html",
-        "checkedAt": "2026-10-20T17:01:11.939Z"
+        "checkedAt": "2026-10-20T17:01:45.108Z"
       },
       "id": "4cfcecd5a83023d753f3",
       "verificationStatus": "verified",
@@ -1637,7 +1900,7 @@
         "reader": "cnfin-body",
         "sha256": "72ef7a3c754c32c2ccbb91db386348e85507a4a0d94fddc8f245949613626988",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261020/4483948_1.html",
-        "checkedAt": "2026-10-20T17:01:11.939Z"
+        "checkedAt": "2026-10-20T17:01:45.108Z"
       },
       "id": "ac55db249a6708ee4b83",
       "verificationStatus": "verified",
@@ -5762,7 +6025,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -9547,7 +9811,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9597,7 +9862,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9647,7 +9913,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9697,7 +9964,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9747,7 +10015,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9797,7 +10066,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9847,7 +10117,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -10482,57 +10753,81 @@
       "itemCount": 19
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 31
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "553460f320df64284af7",
+      "selectedPublishedAt": "2026-10-20T16:11:02.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 13,
-      "originalSummaries": 13,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 11,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 80,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 80,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 78,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 90,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 75,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 90,
-      "successRate": null
+      "skipped": 73,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
