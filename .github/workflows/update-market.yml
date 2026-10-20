@@ -1,17 +1,8 @@
 name: Update market session snapshots
 
+# Paused for the news + knowledge MVP. Legacy producer remains available locally.
 on:
-  schedule:
-    - cron: '47 1,7,8,13,14,20,21 * * 1-5'
-    - cron: '47 */3 * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/update-market.yml'
-      - 'scripts/site/market-*.mjs'
-      - 'scripts/update-market-data.mjs'
-      - 'src/data/marketObservationValidation.mjs'
 
 permissions:
   contents: write
@@ -22,7 +13,7 @@ concurrency:
 
 jobs:
   update:
-    if: github.actor != 'github-actions[bot]' || github.event_name != 'push'
+    if: ${{ false }} # Intentionally paused, including manual dispatch
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

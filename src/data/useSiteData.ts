@@ -6,7 +6,7 @@ export function shouldRefresh(lastCheckedAt: number, now: number, intervalMs: nu
   return now - lastCheckedAt >= intervalMs;
 }
 
-export function useSiteData({ fetcher = fetch, refreshIntervalMs = 300_000 }: { fetcher?: typeof fetch; refreshIntervalMs?: number } = {}) {
+export function useSiteData({ fetcher = fetch, refreshIntervalMs = 300_000, includeMarkets = true }: { fetcher?: typeof fetch; refreshIntervalMs?: number; includeMarkets?: boolean } = {}) {
   const [site, setSite] = useState<SiteSnapshot>();
   const [market, setMarket] = useState<MarketOverviewSnapshot>();
   const [sectors, setSectors] = useState<SectorPerformanceSnapshot>();
@@ -33,8 +33,8 @@ export function useSiteData({ fetcher = fetch, refreshIntervalMs = 300_000 }: { 
         catch (error) { nextErrors[id] = error instanceof Error ? error.message : String(error); }
       };
       await Promise.all([
-        load('market-overview', 'market-overview.json', isMarketOverviewSnapshot, setMarket),
-        load('sector-performance', 'sector-performance.json', isSectorPerformanceSnapshot, setSectors),
+        includeMarkets && load('market-overview', 'market-overview.json', isMarketOverviewSnapshot, setMarket),
+        includeMarkets && load('sector-performance', 'sector-performance.json', isSectorPerformanceSnapshot, setSectors),
         load('daily-brief', 'daily-brief.json', isDailyBriefSnapshot, setBrief),
       ]);
     } catch (error) {
@@ -44,7 +44,7 @@ export function useSiteData({ fetcher = fetch, refreshIntervalMs = 300_000 }: { 
       setErrors(nextErrors);
       setLoading(false);
     }
-  }, [fetcher]);
+  }, [fetcher, includeMarkets]);
 
   useEffect(() => { void refresh(); }, [refresh]);
   useEffect(() => {

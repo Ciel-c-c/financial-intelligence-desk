@@ -123,12 +123,16 @@ it('does not spend a content rejection attempt on a temporary provider failure',
 it('keeps unchanged news eligible after a network outage',async()=>{
  const result=await buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[raw]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',fetchImpl:async()=>{throw new TypeError('fetch failed');}}});
  expect(result.latest[0].analysisAttempt).toBeUndefined();
- expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.failures).toBe(1);
+ expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.failures).toBe(0);
+ expect(result.sourceHealth.find(s=>s.id==='groq-summary')?.status).toBe('error');
+ expect(result.runMetrics.analysis.attempted).toBe(0);
 });
 it('keeps news eligible when reading the provider response body times out',async()=>{
  const result=await buildNewsSnapshot({now,sourceResults:[{id:'cnfin',name:'新华财经',ok:true,items:[raw]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',fetchImpl:async()=>({ok:true,json:async()=>{throw new DOMException('response timeout','TimeoutError');}})}});
  expect(result.latest[0].analysisAttempt).toBeUndefined();
- expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.failures).toBe(1);
+ expect(result.sourceHealth.find(s=>s.id==='groq-editorial')?.failures).toBe(0);
+ expect(result.sourceHealth.find(s=>s.id==='groq-summary')?.status).toBe('error');
+ expect(result.runMetrics.analysis.attempted).toBe(0);
 });
 it('reports a safe rejection category rather than silently losing invalid facts',async()=>{
  const output=response();output.facts[0].evidence='公司宣布降息四次';
@@ -231,11 +235,12 @@ it('rotates past attempted bodies and stops after two article attempts per run',
  expect(second.latest.find(i=>i.id===untouched.id)?.analysisAttempt.count).toBe(1);
 });
 it('does not let source rotation bury an exceptional AI market event',async()=>{
- const target={...raw,sourceId:'cnbc-markets',sourceName:'CNBC',originalTitle:'Nvidia-backed AI firm withdraws IPO amid volatility',canonicalUrl:'https://www.cnbc.com/2026/09/17/ai-ipo.html'};
- const routine={...raw,sourceId:'bbc-business',sourceName:'BBC News',originalTitle:'Company appoints chief product officer',canonicalUrl:'https://www.bbc.co.uk/news/articles/abc'};
- const previous={latest:[{...target,id:'prior',analysisAttempt:{sourceBodyHash:'different',count:1,lastAttemptAt:now}}],continuing:[],retainedDetails:[]};
+ const priorityNow='2026-10-10T10:00:00Z';
+ const target={...raw,sourceId:'cnbc-markets',sourceName:'CNBC',originalTitle:'Nvidia-backed AI firm withdraws IPO amid volatility',canonicalUrl:'https://www.cnbc.com/2026/10/10/ai-ipo.html',publishedAt:priorityNow,fetchedAt:priorityNow,article:{...raw.article,sourceUrl:'https://www.cnbc.com/2026/10/10/ai-ipo.html',checkedAt:priorityNow}};
+ const routine={...raw,sourceId:'bbc-business',sourceName:'BBC News',originalTitle:'Company appoints chief product officer',canonicalUrl:'https://www.bbc.co.uk/news/articles/abc',publishedAt:priorityNow,fetchedAt:priorityNow,article:{...raw.article,sourceUrl:'https://www.bbc.co.uk/news/articles/abc',checkedAt:priorityNow}};
+ const previous={latest:[{...target,id:'prior',analysisAttempt:{sourceBodyHash:'different',count:1,lastAttemptAt:priorityNow}}],continuing:[],retainedDetails:[]};
  const requested:string[]=[];
- await buildNewsSnapshot({now,previous,sourceResults:[{id:'cnbc-markets',name:'CNBC',ok:true,items:[target]},{id:'bbc-business',name:'BBC News',ok:true,items:[routine]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',waitImpl:async()=>{},fetchImpl:async(_url,init)=>{if(JSON.parse(init.body).messages[0].content.startsWith('EVIDENCE_ONLY'))requested.push(JSON.parse(JSON.parse(init.body).messages[1].content).title);return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:'{}'}}]})};}}});
+ await buildNewsSnapshot({now:priorityNow,previous,sourceResults:[{id:'cnbc-markets',name:'CNBC',ok:true,items:[target]},{id:'bbc-business',name:'BBC News',ok:true,items:[routine]}],enrichmentOptions:{apiKey:'test-secret',provider:'groq',waitImpl:async()=>{},fetchImpl:async(_url,init)=>{if(JSON.parse(init.body).messages[0].content.startsWith('EVIDENCE_ONLY'))requested.push(JSON.parse(JSON.parse(init.body).messages[1].content).title);return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{content:'{}'}}]})};}}});
  expect(requested[0]).toBe(target.originalTitle);
 });
 it('caps a cloud run at two deep analyses even when given an obsolete three-article setting',async()=>{

@@ -1,5 +1,5 @@
 import { newsFeedSeed } from './newsFeedSeed'; import type { LiveNewsItem,NewsFeedSnapshot } from './newsFeedTypes';
-import { verifyNewsEvidence } from './newsAdmission';
+import { verifyNewsEvidence,isPublishableSource } from './newsAdmission';
 const valid=(value:any):value is NewsFeedSnapshot=>value?.schemaVersion===1&&['fresh','delayed','source_error'].includes(value.status)&&Array.isArray(value.latest)&&Array.isArray(value.continuing)&&value.continuing.length<=6&&Array.isArray(value.retainedDetails)&&Array.isArray(value.sourceHealth);
 export async function loadNewsFeed(fetchImpl:typeof fetch=fetch):Promise<NewsFeedSnapshot>{
  const read=async(path:string)=>{try{const response=await fetchImpl(path,{cache:'no-store'});return response.ok?await response.json():undefined;}catch{return undefined;}};
@@ -14,10 +14,10 @@ export async function loadNewsFeed(fetchImpl:typeof fetch=fetch):Promise<NewsFee
    if(current?.reviewMigration?.state==='rejected'&&current.reviewMigration.sourceHash===item.article?.sha256)return undefined;
    if(current?.article&&current.article.sha256!==item.article?.sha256) return undefined;
    if(current&&!current.editorial&&item.article?.status==='summary'&&(current.originalSummary!==item.originalSummary||current.originalTitle!==item.originalTitle||current.publishedAt!==item.publishedAt)) return undefined;
-   const candidate=current?.editorial?current:item;
+   const candidate=current?.editorial?current:current?{...item,factualSummary:current.factualSummary??item.factualSummary,chineseSummary:current.chineseSummary??item.chineseSummary}:item;
    return await verifyNewsEvidence(candidate)?candidate:undefined;
  }));
- const validateRaw=async(items:LiveNewsItem[])=>{const checked=await Promise.all(items.map(async item=>item.invalidationReason||!item.editorial&&!item.factualSummary&&item.article?.status!=='summary'||await verifyNewsEvidence(item)?item:undefined));return checked.filter((item):item is LiveNewsItem=>!!item);};
+ const validateRaw=async(items:LiveNewsItem[])=>{const checked=await Promise.all(items.map(async item=>item.invalidationReason||!isPublishableSource(item)&&!item.editorial&&!item.factualSummary&&item.article?.status!=='summary'||await verifyNewsEvidence(item)?item:undefined));return checked.filter((item):item is LiveNewsItem=>!!item);};
  const [latest,continuing,retained]=await Promise.all([validateRaw(snapshot.latest),validateRaw(snapshot.continuing),validateRaw(snapshot.retainedDetails)]);
  const reviewedItems=approved.filter((item):item is LiveNewsItem=>!!item);
  const now=Date.parse(snapshot.attemptedAt);

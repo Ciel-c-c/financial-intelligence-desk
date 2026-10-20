@@ -6,7 +6,8 @@ export function deriveFreshness(snapshot: GlobalSituationSnapshot, now = new Dat
   if (snapshot.status === 'unavailable' || !snapshot.lastSuccessfulAt) return { label:'暂无数据', tone:'error', detail:'目前没有可验证的全球局势快照。' };
   if (snapshot.status === 'source_error') return { label:'数据源异常', tone:'error', detail:`当前数据更新出现异常，以下内容来自最近一次成功抓取：${formatSnapshotTime(snapshot.lastSuccessfulAt)}` };
   const age = now.valueOf() - new Date(snapshot.lastSuccessfulAt).valueOf();
-  if (snapshot.status === 'delayed' || !Number.isFinite(age) || age > 3 * 3600_000) return { label:'延迟', tone:'delayed', detail:`部分来源延迟或快照超过 3 小时。最近一次成功抓取：${formatSnapshotTime(snapshot.lastSuccessfulAt)}` };
+  const overdue=snapshot.nextExpectedAt ? now.valueOf()>Date.parse(snapshot.nextExpectedAt)+30*60_000 : age>3*3600_000;
+  if (snapshot.status === 'delayed' || !Number.isFinite(age) || overdue) return { label:'延迟', tone:'delayed', detail:`部分来源异常或已超过预期更新窗口。新闻计划在北京时间 08:17、12:17、20:17 更新；最近一次成功抓取：${formatSnapshotTime(snapshot.lastSuccessfulAt)}` };
   return { label:'最新', tone:'fresh', detail:`最近一次成功抓取：${formatSnapshotTime(snapshot.lastSuccessfulAt)}` };
 }
 

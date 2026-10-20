@@ -15,8 +15,8 @@ describe('global situation learning loop', () => {
   it('adds professional primary navigation and a finance-first situation home', async () => {
     open('/situation');
     expect(screen.getAllByRole('link', { name:/全球局势/ }).length).toBeGreaterThan(0);
-    expect(screen.getAllByRole('link', { name:/经济与市场学院/ }).length).toBeGreaterThan(0);
-    expect(screen.getByRole('heading', { name:'今天，全球有哪些事情正在影响你的钱？' })).toBeInTheDocument();
+    expect(screen.getAllByRole('link', { name:/金融知识库/ }).length).toBeGreaterThan(0);
+    expect(screen.getByRole('heading', { name:'全球局势' })).toBeInTheDocument();
     expect(screen.queryByLabelText('核心影响路径')).not.toBeInTheDocument();
     expect(screen.getByRole('heading', { name:'市场正在交易什么' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name:'接下来关注什么' })).toBeInTheDocument();
@@ -45,7 +45,7 @@ describe('global situation learning loop', () => {
 
   it('does not inject seed cases into an academy lesson when live data is unavailable', async () => {
     open('/learn/cpi');
-    expect(screen.getByRole('heading', { name:'最近全球局势案例' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name:'全球局势案例 · 按原始日期阅读' })).toBeInTheDocument();
     expect(await screen.findByText(/当前发布快照暂无直接案例/)).toBeInTheDocument();
     expect(screen.queryByRole('link', { name:/中东冲突继续影响能源运输/ })).not.toBeInTheDocument();
   });
