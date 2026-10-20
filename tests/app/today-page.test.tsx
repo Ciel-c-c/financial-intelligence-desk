@@ -15,13 +15,14 @@ describe('Today page', () => {
     expect(screen.getByRole('navigation',{name:'内容入口'})).toHaveTextContent('全球局势');
   });
 
-  it('supports filtering on the news homepage', async () => {
+  it('shows the news homepage without the filter module', async () => {
     vi.stubGlobal('crypto',webcrypto);vi.stubGlobal('fetch',reviewedFetch);
     const {container}=render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
 
     expect((await screen.findAllByText(reviewedItem.titleZh!)).length).toBeGreaterThan(0);
     expect(screen.queryByRole('searchbox')).not.toBeInTheDocument();
-    expect(screen.getByRole('combobox',{name:'事件类型'})).toBeInTheDocument();
+    expect(screen.queryByRole('combobox')).not.toBeInTheDocument();
+    expect(screen.queryByRole('button',{name:'清除筛选'})).not.toBeInTheDocument();
     expect(container.querySelector('.live-news-feed')).toBeInTheDocument();
   });
 
