@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-19T18:43:09.367Z",
-  "lastSuccessfulAt": "2026-10-19T18:43:09.367Z",
+  "attemptedAt": "2026-10-20T04:47:43.770Z",
+  "lastSuccessfulAt": "2026-10-20T04:47:43.770Z",
   "status": "delayed",
   "datasets": [
     {
       "id": "global-situation",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-19T18:43:09.367Z"
+      "lastSuccessfulAt": "2026-10-20T04:47:43.770Z"
     },
     {
       "id": "market-overview",
       "status": "partial",
-      "lastSuccessfulAt": "2026-10-19T18:43:09.367Z"
+      "lastSuccessfulAt": "2026-10-20T04:47:43.770Z"
     },
     {
       "id": "macro-events",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-19T18:43:09.367Z"
+      "lastSuccessfulAt": "2026-10-20T04:47:43.770Z"
     },
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-19T18:43:09.367Z"
+      "lastSuccessfulAt": "2026-10-20T04:47:43.770Z"
     }
   ],
   "sourceHealth": [
@@ -73,7 +73,7 @@
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
-      "itemCount": 49
+      "itemCount": 46
     },
     {
       "id": "un",
@@ -85,13 +85,13 @@
       "id": "bbc-world",
       "name": "BBC News · 世界",
       "status": "ok",
-      "itemCount": 27
+      "itemCount": 28
     },
     {
       "id": "bbc-business",
       "name": "BBC News · 财经",
       "status": "ok",
-      "itemCount": 47
+      "itemCount": 50
     },
     {
       "id": "bis-press",
@@ -152,7 +152,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 49
+      "itemCount": 46
     },
     {
       "id": "news-un",
@@ -164,13 +164,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 27
+      "itemCount": 28
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 47
+      "itemCount": 50
     },
     {
       "id": "news-bis-press",
@@ -191,8 +191,8 @@
       "itemCount": 4,
       "withBody": 4,
       "withoutBody": 0,
-      "selectedId": "041ad43c75710671a177",
-      "selectedPublishedAt": "2026-10-19T12:00:00.000Z",
+      "selectedId": "9c199aad335ae5ea8704",
+      "selectedPublishedAt": "2026-10-20T00:29:16.000Z",
       "selectedIsCurrent": true
     },
     {
@@ -208,14 +208,13 @@
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "error",
-      "itemCount": 32,
-      "originalSummaries": 32,
+      "itemCount": 16,
+      "originalSummaries": 16,
       "attempted": 2,
       "generated": 0,
-      "requests": 7,
+      "requests": 10,
       "rejectionReasons": {
-        "summary-audit": 1,
-        "review-or-evidence-structure": 1
+        "summary-audit": 2
       }
     },
     {
@@ -227,12 +226,12 @@
       "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 1,
+        "evidence": 2,
         "analysis": 1,
         "audit": 1
       },
       "rejectionReasons": {
-        "facts": 1
+        "unsupported-attribution": 1
       }
     }
   ],
