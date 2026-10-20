@@ -1,0 +1,61 @@
+name: Isolated MVP Chinese summary smoke
+on:
+  push:
+    branches: [codex/mvp-model-smoke-20261020]
+permissions:
+  contents: read
+jobs:
+  smoke:
+    if: github.ref == 'refs/heads/codex/mvp-model-smoke-20261020'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check availability and test one real English news item
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import {appendFile} from 'node:fs/promises';
+          import {fetchNewsSource} from './scripts/news/fetch-news-sources.mjs';
+          import {newsSources} from './scripts/news/source-registry.mjs';
+          import {normalizeNewsItem} from './scripts/news/news-normalizer.mjs';
+          import {prepareNewsEvidence} from './scripts/news/summary-evidence.mjs';
+          import {buildSourcePolicies} from './scripts/news/source-policy.mjs';
+          import {buildFactualSummary} from './scripts/news/factual-summary.mjs';
+          const report={keyAvailable:Boolean(process.env.GROQ_API_KEY),attempted:0,succeeded:0,rejected:0,failed:0,requestLimit:2,requests:0,reasons:[]};
+          if(report.keyAvailable){
+            const now=new Date().toISOString();
+            const feed=await fetchNewsSource(newsSources.find(s=>s.id==='bbc-business'),now);
+            report.fetch={ok:feed.ok,count:feed.items.length,...(feed.error?{error:feed.error}:{})};
+            const policies=buildSourcePolicies(newsSources,now);
+            let record;
+            for(const item of feed.items){
+              const candidate=prepareNewsEvidence(normalizeNewsItem(item));
+              if(candidate.originalLanguage!=='en'||!candidate.article?.text)continue;
+              const fallback=await buildFactualSummary(candidate,{policies,budget:{},modelOptions:{},now});
+              if(fallback){record=candidate;report.originalFallbackAvailable=true;break;}
+            }
+            if(record){
+              report.source={title:record.originalTitle,url:record.canonicalUrl,publishedAt:record.publishedAt};
+              const budget={limit:2,requests:0,failures:0};
+              report.attempted=1;
+              const result=await buildFactualSummary(record,{policies,budget,modelOptions:{apiKey:process.env.GROQ_API_KEY},preferChinese:true,now,onReject:r=>report.reasons.push(r)});
+              report.requests=budget.requests;
+              if(result?.language==='zh'&&result.review?.approved){report.succeeded=1;report.approvedChinese={title:result.title,summary:result.summary};}
+              else if(budget.failures||budget.stopped||budget.protocolFailure){report.failed=1;report.reasons.push(budget.reason??'provider-failure');}
+              else report.rejected=1;
+              const fallback=await buildFactualSummary(record,{policies,budget:{},modelOptions:{},now});
+              report.originalFallbackStillAvailable=Boolean(fallback);
+            }else report.reasons.push('no-eligible-real-English-news');
+          }else report.reasons.push('GROQ_API_KEY-unavailable');
+          console.log(JSON.stringify(report,null,2));
+          await appendFile(process.env.GITHUB_STEP_SUMMARY,'## Isolated real-model result\n\n'+JSON.stringify(report,null,2)+'\n');
+          if(!report.keyAvailable||report.attempted!==1||report.succeeded!==1)process.exitCode=1;
+          NODE
