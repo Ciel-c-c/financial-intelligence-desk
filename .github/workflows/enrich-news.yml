@@ -37,6 +37,7 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NEWS_MAX_ARTICLES_PER_RUN: '2'
+          NEWS_PROCESSING_STAGE: published
       - name: Report stages independently
         if: always()
         run: node scripts/news/run-report.mjs

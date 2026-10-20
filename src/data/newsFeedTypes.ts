@@ -26,3 +26,5 @@ export interface LiveNewsItem { chineseSummary?:{status:'pending'|'complete'|'fa
 export interface NewsFeedSnapshot { runMetrics?:{fetch:NewsStageMetrics;translation:NewsStageMetrics;analysis:NewsStageMetrics};publicationPhase?:'source'|'translation'|'analysis' }
 
 export interface NewsStageMetrics {eligible?:number;attempted:number;succeeded:number;failed:number;rejected?:number;skipped?:number;successRate:number|null}
+
+export interface NewsFeedSnapshot { processingMode?:'published';sourceSnapshotAt?:string }
