@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-20T11:59:31.286Z",
+  "attemptedAt": "2026-10-20T12:00:11.670Z",
   "lastSuccessfulAt": "2026-10-20T11:59:31.286Z",
   "nextExpectedAt": "2026-10-20T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-20T11:59:31.286Z",
   "status": "delayed",
   "latest": [
     {
@@ -42,7 +44,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -105,7 +108,52 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-20T12:00:11.670Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "General Motors beats Wall Street's Q3 earnings expectations, narrows full-year guidance",
+        "sourceUrl": "https://www.cnbc.com/2026/10/20/general-motors-gm-earnings-q3-2026.html",
+        "publishedAt": "2026-10-20T11:45:30.000Z",
+        "sourceHash": "65485c80e440f062969e5dd0100bbd96201839aa2cb3780abe985a41a28fde09",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-20T12:00:11.670Z",
+        "title": "通用汽车第三季度盈利超预期 并收紧全年指引",
+        "summary": "通用汽车第三季度盈利超过华尔街预期，因而收紧2026年全年盈利指引，并上调调整后汽车自由现金流预期。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "通用汽车第三季度盈利超出华尔街的预期，并收紧了全年指引。",
+            "quote": "General Motors beats Wall Street's Q3 earnings expectations, narrows full-year guidance"
+          },
+          {
+            "text": "通用汽车在超预期后收紧了2026年的盈利指引，并提升了调整后的汽车自由现金流展望。",
+            "quote": "GM narrowed its 2026 earnings guidance and raised its adjusted automotive free cash flow outlook after beating Wall"
+          },
+          {
+            "text": "公司上调了汽车自由现金流的前景，原因是第三季度业绩超过华尔街预期。",
+            "quote": "automotive free cash flow outlook after beating Wall Street’s third-quarter estimates."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "65485c80e440f062969e5dd0100bbd96201839aa2cb3780abe985a41a28fde09",
+        "count": 1,
+        "lastAttemptAt": "2026-10-20T11:59:31.286Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "impact-assessment",
+          "fields": [
+            "personalImpact[0].path"
+          ]
+        }
       }
     },
     {
@@ -161,7 +209,52 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-20T12:00:11.670Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Best Buy launches new gaming hub ahead of 'Zelda' and 'Grand Theft Auto VI'",
+        "sourceUrl": "https://www.cnbc.com/2026/10/20/best-buy-gamers-beta-ign.html",
+        "publishedAt": "2026-10-20T11:00:01.000Z",
+        "sourceHash": "76f9145ab1670e8b557bd05b7cc9fd8b47df5442b0ae81c57fae9562f85643b4",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-20T12:00:11.670Z",
+        "title": "百思买推出新游戏中心，抢先迎接《塞尔达》与《侠盗猎车手VI》",
+        "summary": "百思买宣布推出全新游戏中心，旨在为顾客提供游戏体验，并借此在今年秋季《塞尔达》与《侠盗猎车手VI》等大型游戏上市前加强业务布局。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "百思买推出了一个新的游戏中心。",
+            "quote": "Best Buy launches new gaming hub ahead of 'Zelda' and 'Grand Theft Auto VI'"
+          },
+          {
+            "text": "该中心的推出正值《塞尔达》和《侠盗猎车手VI》即将发布之际。",
+            "quote": "Best Buy is launching a new gaming experience for customers as it leans into the business ahead of this fall's big"
+          },
+          {
+            "text": "百思买借此举措在本季大型游戏上市前加大业务投入。",
+            "quote": "leans into the business ahead of this fall's big launches."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "76f9145ab1670e8b557bd05b7cc9fd8b47df5442b0ae81c57fae9562f85643b4",
+        "count": 1,
+        "lastAttemptAt": "2026-10-20T11:59:31.286Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -854,7 +947,7 @@
         "reader": "cnfin-body",
         "sha256": "0ceae6eddc366643880d3a0d1b61efd72e2042ed97cec1c42879da9fb064b75d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261020/4483835_1.html",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
+        "checkedAt": "2026-10-20T12:00:11.670Z"
       },
       "id": "610e6c9032f9c2deb50f",
       "verificationStatus": "verified",
@@ -1009,7 +1102,7 @@
         "reader": "cnfin-body",
         "sha256": "86f063d710b14b8d805f611001dacc85e8f385576430f313299fdaff92f406e7",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261020/4483825_1.html",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
+        "checkedAt": "2026-10-20T12:00:11.670Z"
       },
       "id": "02034ae2f0876a1f9285",
       "verificationStatus": "verified",
@@ -2776,1037 +2869,6 @@
       }
     },
     {
-      "sourceId": "un-zh",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143024",
-      "originalLanguage": "zh",
-      "originalTitle": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪",
-      "originalSummary": "联合国毒品和犯罪问题办公室执行主任莫妮卡•朱马周一在维也纳举行的《联合国打击跨国有组织犯罪公约》第十三届缔约方会议开幕式上表示，从利用人工智能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际社会必须不断完善多边合作机制，以应对日益复杂的犯罪威胁。",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "041ad43c75710671a177",
-      "verificationStatus": "official",
-      "titleZh": "联合国呼吁完善多边合作机制打击跨国有组织犯罪",
-      "summaryZh": "联合国毒品和犯罪问题办公室执行主任莫妮卡·朱马在第十三届《联合国打击跨国有组织犯罪公约》缔约方会议上指出，跨国有组织犯罪正快速演变，涉及人工智能诈骗和3D打印枪支等新技术，呼吁国际社会加强多边合作。",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|从人工智能诈骗到3d打印枪支联合|2026-10-19",
-      "detailStatus": "so-what",
-      "facts": [
-        "联合国毒品和犯罪问题办公室执行主任莫妮卡•朱马周一在维也纳举行的《联合国打击跨国有组织犯罪公约》第十三届缔约方会议开幕式上表示，从利用人工智能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际社会必须不断完善多边合作机制，以应对日益复杂的犯罪威胁。"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪\n联合国毒品和犯罪问题办公室执行主任莫妮卡•朱马周一在维也纳举行的《联合国打击跨国有组织犯罪公约》第十三届缔约方会议开幕式上表示，从利用人工智能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际社会必须不断完善多边合作机制，以应对日益复杂的犯罪威胁。",
-        "reader": "publisher-feed-summary",
-        "characterCount": 186,
-        "sha256": "0272dc5ad1f125b44fb1dd278f17fca6ce91a1caaed95a94819cb77c15fc7551",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143024",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "analysisAttempt": {
-        "reviewVersion": "edge-audit-v4",
-        "sourceBodyHash": "0272dc5ad1f125b44fb1dd278f17fca6ce91a1caaed95a94819cb77c15fc7551",
-        "count": 1,
-        "lastAttemptAt": "2026-10-19T18:43:09.367Z"
-      },
-      "editorial": {
-        "language": "zh",
-        "evidence": {
-          "facts": [
-            {
-              "text": "联合国呼吁完善多边合作机制打击跨国有组织犯罪。",
-              "evidence": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪"
-            },
-            {
-              "text": "联合国毒品和犯罪问题办公室执行主任莫妮卡·朱马在维也纳的第十三届《联合国打击跨国有组织犯罪公约》缔约方会议开幕式上发表讲话。",
-              "evidence": "联合国毒品和犯罪问题办公室执行主任莫妮卡•朱马周一在维也纳举行的《联合国打击跨国有组织犯罪公约》第十三届缔约方会议开幕式上表示，从利用人工智能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际"
-            },
-            {
-              "text": "跨国有组织犯罪正快速演变，包括利用人工智能进行大规模诈骗和3D打印制造枪支。",
-              "evidence": "能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际社会必须不断完善多边合作机制，以应对日益复杂的犯罪威胁。"
-            }
-          ],
-          "background": [],
-          "expectations": [],
-          "uncertainties": []
-        },
-        "impactAssessment": [
-          {
-            "label": "投资",
-            "score": 0,
-            "audience": "none",
-            "region": "",
-            "triggerEvidence": null,
-            "path": [],
-            "invalidation": ""
-          },
-          {
-            "label": "汇率",
-            "score": 0,
-            "audience": "none",
-            "region": "",
-            "triggerEvidence": null,
-            "path": [],
-            "invalidation": ""
-          },
-          {
-            "label": "住房",
-            "score": 0,
-            "audience": "none",
-            "region": "",
-            "triggerEvidence": null,
-            "path": [],
-            "invalidation": ""
-          },
-          {
-            "label": "工作",
-            "score": 0,
-            "audience": "none",
-            "region": "",
-            "triggerEvidence": null,
-            "path": [],
-            "invalidation": ""
-          },
-          {
-            "label": "消费",
-            "score": 2,
-            "audience": "households",
-            "region": "全球",
-            "triggerEvidence": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪",
-            "path": [
-              "AI技术被用于大规模诈骗",
-              "跨境诈骗案件激增",
-              "消费者信任受损"
-            ],
-            "invalidation": "若监管机构推出有效防诈骗措施，消费者信任恢复，消费下降效应不再出现。"
-          },
-          {
-            "label": "企业经营",
-            "score": 0,
-            "audience": "none",
-            "region": "",
-            "triggerEvidence": null,
-            "path": [],
-            "invalidation": ""
-          }
-        ],
-        "evidenceScope": "summary",
-        "marketSignals": [],
-        "sourceBodyHash": "0272dc5ad1f125b44fb1dd278f17fca6ce91a1caaed95a94819cb77c15fc7551",
-        "originalTitle": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪",
-        "reviewedAt": "2026-10-19T18:43:09.367Z",
-        "generator": {
-          "provider": "groq",
-          "model": "openai/gpt-oss-120b",
-          "review": "edge-audit-v4",
-          "auditModel": "openai/gpt-oss-20b"
-        },
-        "item": {
-          "id": "041ad43c75710671a177",
-          "title": "联合国呼吁完善多边合作机制打击跨国有组织犯罪",
-          "summary": "联合国毒品和犯罪问题办公室执行主任莫妮卡·朱马在第十三届《联合国打击跨国有组织犯罪公约》缔约方会议上指出，跨国有组织犯罪正快速演变，涉及人工智能诈骗和3D打印枪支等新技术，呼吁国际社会加强多边合作。",
-          "excerpt": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪。",
-          "sourceName": "UN News",
-          "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143024",
-          "publishedAt": "2026-10-19T12:00:00.000Z",
-          "region": "全球",
-          "topic": "跨国有组织犯罪",
-          "termIds": [],
-          "facts": [
-            "联合国呼吁完善多边合作机制打击跨国有组织犯罪。",
-            "联合国毒品和犯罪问题办公室执行主任莫妮卡·朱马在维也纳的第十三届《联合国打击跨国有组织犯罪公约》缔约方会议开幕式上发表讲话。",
-            "跨国有组织犯罪正快速演变，包括利用人工智能进行大规模诈骗和3D打印制造枪支。"
-          ],
-          "consensus": [
-            "暂无明确的国际共识，报道未提供相关市场或政策预期的共识。"
-          ],
-          "inference": [
-            "如果各国能够快速制定统一的技术监管框架，跨国犯罪的技术扩散可能被遏制。",
-            "若多边合作机制迟滞，犯罪分子可能利用监管真空进一步创新作案手段。"
-          ],
-          "risks": [
-            "多边合作进程受政治分歧阻碍。",
-            "技术监管标准不统一导致执法难度加大。",
-            "新兴技术（AI、3D打印）快速迭代超出现有法律覆盖范围。"
-          ],
-          "causalChain": [
-            {
-              "title": "AI技术被用于大规模诈骗",
-              "explanation": "犯罪组织利用生成式AI自动化制作欺诈信息，提升诈骗规模和隐蔽性。",
-              "condition": "当AI工具的获取成本低且监管缺口大时成立。"
-            },
-            {
-              "title": "跨境诈骗案件激增",
-              "explanation": "AI驱动的诈骗易于跨境传播，导致受害者分布更广。",
-              "condition": "前提是诈骗信息能够通过互联网跨境流通。"
-            },
-            {
-              "title": "国际执法压力上升，呼吁多边合作",
-              "explanation": "各国执法机构面对跨境案件增多，要求在情报共享、法律协同上加强合作。",
-              "condition": "前提是各国认识到单边措施难以根除此类犯罪。"
-            }
-          ],
-          "mode": "今日快照"
-        },
-        "soWhat": {
-          "analogy": {
-            "image": "社区防盗系统升级",
-            "explanation": "就像居民区在发现新型盗窃手段后会升级防盗系统，国际社会也需要在面对AI诈骗和3D打印枪支等新型犯罪手段时，更新跨国合作的‘防护’机制。该类比适用于说明合作机制的必要性，但不等同于技术本身可以完全阻止犯罪。"
-          },
-          "why": {
-            "cause": "跨国有组织犯罪利用新技术快速演变",
-            "mechanisms": [
-              "技术降低犯罪成本",
-              "跨境信息流通加速",
-              "单边法律难以覆盖"
-            ],
-            "result": "迫使国际社会必须通过多边合作机制统一监管与执法，以降低犯罪扩散风险。"
-          },
-          "focus": [
-            "技术监管",
-            "跨国执法协作",
-            "情报共享机制"
-          ],
-          "marketBet": [
-            "各国将加速制定AI监管法规",
-            "3D打印相关武器管制立法可能出现新提案",
-            "多边合作平台的预算和资源投入可能上升"
-          ],
-          "expectationGap": "报道未提供任何市场或政策预期的具体共识，故无法比较实际与先前预期的差异。",
-          "counterView": "部分国家可能倾向于以国家安全为由保持技术自主，导致多边合作进程放缓。",
-          "personalImpact": [
-            {
-              "label": "消费",
-              "impact": "AI诈骗的增多可能削弱消费者对线上交易的信任，导致部分地区线上消费下降。",
-              "why": "当诈骗案件频发且防护措施不足时，消费者倾向于减少线上支付。",
-              "invalidation": "若监管部门快速推出有效的防诈骗技术和法律，消费者信任可恢复，消费下降效应不再出现。",
-              "condition": "若监管部门快速推出有效的防诈骗技术和法律，消费者信任可恢复，消费下降效应不再出现。"
-            }
-          ],
-          "surface": "联合国呼吁完善多边合作机制打击跨国有组织犯罪",
-          "next": [
-            "AI技术被用于大规模诈骗",
-            "跨境诈骗案件激增",
-            "国际执法压力上升，呼吁多边合作"
-          ],
-          "condition": [
-            "当AI工具的获取成本低且监管缺口大时成立。",
-            "前提是诈骗信息能够通过互联网跨境流通。",
-            "前提是各国认识到单边措施难以根除此类犯罪。"
-          ]
-        },
-        "watchItems": [
-          "第十三届《联合国打击跨国有组织犯罪公约》缔约方会议后续决议",
-          "主要经济体关于AI工具监管的立法进展",
-          "各国针对3D打印枪支的法律修订情况"
-        ]
-      },
-      "factualSummary": {
-        "language": "zh",
-        "originalTitle": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143024",
-        "publishedAt": "2026-10-19T12:00:00.000Z",
-        "sourceHash": "0272dc5ad1f125b44fb1dd278f17fca6ce91a1caaed95a94819cb77c15fc7551",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T18:43:09.367Z",
-        "title": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪",
-        "summary": "联合国毒品和犯罪问题办公室执行主任莫妮卡•朱马周一在维也纳举行的《联合国打击跨国有组织犯罪公约》第十三届缔约方会议开幕式上表示，从利用人工智能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际社会必须不断完善多边合作机制，以应对日益复杂的犯罪威胁。",
-        "origin": "publisher-zh",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T18:43:09.367Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "reviewMigration": {
-        "sourceHash": "0272dc5ad1f125b44fb1dd278f17fca6ce91a1caaed95a94819cb77c15fc7551",
-        "reviewVersion": "edge-audit-v4",
-        "lastAttemptAt": "2026-10-19T18:43:09.367Z",
-        "state": "approved"
-      }
-    },
-    {
-      "sourceId": "un-zh",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143029",
-      "originalLanguage": "zh",
-      "originalTitle": "联合国谴责苏丹多地无人机袭击事件",
-      "originalSummary": "联合国秘书长发言人杜加里克周一在纽约对记者表示，联合国对苏丹各地持续发生的致命无人机袭击深感震惊。这些袭击造成包括儿童在内的平民死亡，并扰乱基本服务。",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "bab2d0d40cfcb8325f3b",
-      "verificationStatus": "official",
-      "titleZh": "联合国谴责苏丹多地无人机袭击事件",
-      "summaryZh": "联合国秘书长发言人杜加里克周一在纽约对记者表示，联合国对苏丹各地持续发生的致命无人机袭击深感震惊。这些袭击造成包括儿童在内的平民死亡，并扰乱基本服务。",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|联合国谴责苏丹多地无人机袭击事件|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "联合国秘书长发言人杜加里克周一在纽约对记者表示，联合国对苏丹各地持续发生的致命无人机袭击深感震惊。这些袭击造成包括儿童在内的平民死亡，并扰乱基本服务。"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "queue": {
-        "firstSeenAt": "2026-10-20T04:47:43.770Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      }
-    },
-    {
-      "sourceId": "un-zh",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143028",
-      "originalLanguage": "zh",
-      "originalTitle": "安理会通过决议：警惕数字技术助长冲突中的儿童侵害行为",
-      "originalSummary": "安理会周一以15票赞成一致通过决议，警告数字技术正被武装冲突各方用于招募和使用儿童、绑架及性暴力等侵害行为，并呼吁各国加强儿童保护，推动数字平台采取措施防范相关风险。",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "c80166e84212f1e4c3df",
-      "verificationStatus": "official",
-      "titleZh": "安理会通过决议：警惕数字技术助长冲突中的儿童侵害行为",
-      "summaryZh": "安理会周一以15票赞成一致通过决议，警告数字技术正被武装冲突各方用于招募和使用儿童、绑架及性暴力等侵害行为，并呼吁各国加强儿童保护，推动数字平台采取措施防范相关风险。",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|安理会通过决议警惕数字技术助长冲|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "安理会周一以15票赞成一致通过决议，警告数字技术正被武装冲突各方用于招募和使用儿童、绑架及性暴力等侵害行为，并呼吁各国加强儿童保护，推动数字平台采取措施防范相关风险。"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "安理会通过决议：警惕数字技术助长冲突中的儿童侵害行为\n安理会周一以15票赞成一致通过决议，警告数字技术正被武装冲突各方用于招募和使用儿童、绑架及性暴力等侵害行为，并呼吁各国加强儿童保护，推动数字平台采取措施防范相关风险。",
-        "reader": "publisher-feed-summary",
-        "characterCount": 110,
-        "sha256": "f8fe7e2d17bd055f967c00d0007040f4d34d00cee522460c903495126a787ff0",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143028",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "factualSummary": {
-        "language": "zh",
-        "originalTitle": "安理会通过决议：警惕数字技术助长冲突中的儿童侵害行为",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143028",
-        "publishedAt": "2026-10-19T12:00:00.000Z",
-        "sourceHash": "f8fe7e2d17bd055f967c00d0007040f4d34d00cee522460c903495126a787ff0",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-20T04:47:43.770Z",
-        "title": "安理会通过决议：警惕数字技术助长冲突中的儿童侵害行为",
-        "summary": "安理会周一以15票赞成一致通过决议，警告数字技术正被武装冲突各方用于招募和使用儿童、绑架及性暴力等侵害行为，并呼吁各国加强儿童保护，推动数字平台采取措施防范相关风险。",
-        "origin": "publisher-zh",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-20T04:47:43.770Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      }
-    },
-    {
-      "sourceId": "un-zh",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143027",
-      "originalLanguage": "zh",
-      "originalTitle": "亚美尼亚会议聚焦保护地球脆弱的生物多样性",
-      "originalSummary": "《生物多样性公约》第十七次缔约方大会周一在亚美尼亚首都埃里温开幕。各国将在未来两周首次全面审查《昆明-蒙特利尔全球生物多样性框架》的集体落实进展，重点讨论资金筹措、行动落实和成效监测，推动保护承诺转化为可衡量的成果。&nbsp;",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "167e0f1b7e16c9f381a0",
-      "verificationStatus": "official",
-      "titleZh": "亚美尼亚会议聚焦保护地球脆弱的生物多样性",
-      "summaryZh": "《生物多样性公约》第十七次缔约方大会周一在亚美尼亚首都埃里温开幕。各国将在未来两周首次全面审查《昆明-蒙特利尔全球生物多样性框架》的集体落实进展，重点讨论资金筹措、行动落实和成效监测，推动保护承诺转化为可衡量的成果。&nbsp;",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|亚美尼亚会议聚焦保护地球脆弱的生|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "《生物多样性公约》第十七次缔约方大会周一在亚美尼亚首都埃里温开幕。各国将在未来两周首次全面审查《昆明-蒙特利尔全球生物多样性框架》的集体落实进展，重点讨论资金筹措、行动落实和成效监测，推动保护承诺转化为可衡量的成果。&nbsp;"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "亚美尼亚会议聚焦保护地球脆弱的生物多样性\n《生物多样性公约》第十七次缔约方大会周一在亚美尼亚首都埃里温开幕。各国将在未来两周首次全面审查《昆明-蒙特利尔全球生物多样性框架》的集体落实进展，重点讨论资金筹措、行动落实和成效监测，推动保护承诺转化为可衡量的成果。&nbsp;",
-        "reader": "publisher-feed-summary",
-        "characterCount": 135,
-        "sha256": "db4da5830836bed991cd84bc5ef760e1fbf669e7c8aad417f05416e969914755",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143027",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "factualSummary": {
-        "language": "zh",
-        "originalTitle": "亚美尼亚会议聚焦保护地球脆弱的生物多样性",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143027",
-        "publishedAt": "2026-10-19T12:00:00.000Z",
-        "sourceHash": "db4da5830836bed991cd84bc5ef760e1fbf669e7c8aad417f05416e969914755",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-20T04:47:43.770Z",
-        "title": "亚美尼亚会议聚焦保护地球脆弱的生物多样性",
-        "summary": "《生物多样性公约》第十七次缔约方大会周一在亚美尼亚首都埃里温开幕。各国将在未来两周首次全面审查《昆明-蒙特利尔全球生物多样性框架》的集体落实进展，重点讨论资金筹措、行动落实和成效监测，推动保护承诺转化为可衡量的成果。&nbsp;",
-        "origin": "publisher-zh",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-20T04:47:43.770Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      }
-    },
-    {
-      "sourceId": "un-zh",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143026",
-      "originalLanguage": "zh",
-      "originalTitle": "加沙粮食援助因资金短缺大幅缩减，约50万人失去援助",
-      "originalSummary": "联合国世界粮食计划署周一表示，资金短缺迫使该署将加沙粮食援助覆盖人数削减约三分之一，从9月的160万人降至本月的110万人。随着冬季临近，继续获得援助的家庭也面临食品配给和现金支持减少。&nbsp;",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "b647780a73e2146056f4",
-      "verificationStatus": "official",
-      "titleZh": "加沙粮食援助因资金短缺大幅缩减，约50万人失去援助",
-      "summaryZh": "联合国世界粮食计划署周一表示，资金短缺迫使该署将加沙粮食援助覆盖人数削减约三分之一，从9月的160万人降至本月的110万人。随着冬季临近，继续获得援助的家庭也面临食品配给和现金支持减少。&nbsp;",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|加沙粮食援助因资金短缺大幅缩减约|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "联合国世界粮食计划署周一表示，资金短缺迫使该署将加沙粮食援助覆盖人数削减约三分之一，从9月的160万人降至本月的110万人。随着冬季临近，继续获得援助的家庭也面临食品配给和现金支持减少。&nbsp;"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "加沙粮食援助因资金短缺大幅缩减，约50万人失去援助\n联合国世界粮食计划署周一表示，资金短缺迫使该署将加沙粮食援助覆盖人数削减约三分之一，从9月的160万人降至本月的110万人。随着冬季临近，继续获得援助的家庭也面临食品配给和现金支持减少。&nbsp;",
-        "reader": "publisher-feed-summary",
-        "characterCount": 125,
-        "sha256": "d05624e56f7cbb021cb476a61f57b760bcba4742a8c4748bb485a0ae4d2f5ee8",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143026",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "factualSummary": {
-        "language": "zh",
-        "originalTitle": "加沙粮食援助因资金短缺大幅缩减，约50万人失去援助",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143026",
-        "publishedAt": "2026-10-19T12:00:00.000Z",
-        "sourceHash": "d05624e56f7cbb021cb476a61f57b760bcba4742a8c4748bb485a0ae4d2f5ee8",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-20T04:47:43.770Z",
-        "title": "加沙粮食援助因资金短缺大幅缩减，约50万人失去援助",
-        "summary": "联合国世界粮食计划署周一表示，资金短缺迫使该署将加沙粮食援助覆盖人数削减约三分之一，从9月的160万人降至本月的110万人。随着冬季临近，继续获得援助的家庭也面临食品配给和现金支持减少。&nbsp;",
-        "origin": "publisher-zh",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-20T04:47:43.770Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      }
-    },
-    {
-      "sourceId": "un-zh",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143025",
-      "originalLanguage": "zh",
-      "originalTitle": "人权高专：不公正导致食物权难以真正落实",
-      "originalSummary": "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，食物权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "d4dfdb94f41c596d7494",
-      "verificationStatus": "official",
-      "titleZh": "人权高专：不公正导致食物权难以真正落实",
-      "summaryZh": "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，食物权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|人权高专不公正导致食物权难以真正|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，食物权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "人权高专：不公正导致食物权难以真正落实\n联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，食物权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
-        "reader": "publisher-feed-summary",
-        "characterCount": 153,
-        "sha256": "54560cc152903c5056e2485b16d6abfdb4d8038296763f9fead6b3f23001002c",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143025",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "factualSummary": {
-        "language": "zh",
-        "originalTitle": "人权高专：不公正导致食物权难以真正落实",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143025",
-        "publishedAt": "2026-10-19T12:00:00.000Z",
-        "sourceHash": "54560cc152903c5056e2485b16d6abfdb4d8038296763f9fead6b3f23001002c",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-20T04:47:43.770Z",
-        "title": "人权高专：不公正导致食物权难以真正落实",
-        "summary": "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，食物权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
-        "origin": "publisher-zh",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-20T04:47:43.770Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      }
-    },
-    {
-      "sourceId": "un-zh",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143023",
-      "originalLanguage": "zh",
-      "originalTitle": "海地选举筹备取得进展 帮派暴力与安全危机仍难缓解",
-      "originalSummary": "联合国官员周一在向安理会通报海地局势时指出，海地选举筹备工作取得进展，但帮派暴力持续威胁民众安全，政治过渡和国家治理仍面临重大挑战。今年7月至9月，联合国记录到海地超过1000人被杀，境内流离失所者总数接近150万。与此同时，镇压黑帮部队逐步扩大部署，联合国正加强后勤保障，以支持部队在更多地区开展行动。",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "8b9adad7f8c0a3faa80e",
-      "verificationStatus": "official",
-      "titleZh": "海地选举筹备取得进展 帮派暴力与安全危机仍难缓解",
-      "summaryZh": "联合国官员周一在向安理会通报海地局势时指出，海地选举筹备工作取得进展，但帮派暴力持续威胁民众安全，政治过渡和国家治理仍面临重大挑战。今年7月至9月，联合国记录到海地超过1000人被杀，境内流离失所者总数接近150万。与此同时，镇压黑帮部队逐步扩大部署，联合国正加强后勤保障，以支持部队在更多地区开展行动。",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|海地选举筹备取得进展帮派暴力与安|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "联合国官员周一在向安理会通报海地局势时指出，海地选举筹备工作取得进展，但帮派暴力持续威胁民众安全，政治过渡和国家治理仍面临重大挑战。今年7月至9月，联合国记录到海地超过1000人被杀，境内流离失所者总数接近150万。与此同时，镇压黑帮部队逐步扩大部署，联合国正加强后勤保障，以支持部队在更多地区开展行动。"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "海地选举筹备取得进展 帮派暴力与安全危机仍难缓解\n联合国官员周一在向安理会通报海地局势时指出，海地选举筹备工作取得进展，但帮派暴力持续威胁民众安全，政治过渡和国家治理仍面临重大挑战。今年7月至9月，联合国记录到海地超过1000人被杀，境内流离失所者总数接近150万。与此同时，镇压黑帮部队逐步扩大部署，联合国正加强后勤保障，以支持部队在更多地区开展行动。",
-        "reader": "publisher-feed-summary",
-        "characterCount": 177,
-        "sha256": "5e421e60ee4d87bcce85fc8844659bc4a5d04e93b64a32927949c3da1a72d288",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143023",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "factualSummary": {
-        "language": "zh",
-        "originalTitle": "海地选举筹备取得进展 帮派暴力与安全危机仍难缓解",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143023",
-        "publishedAt": "2026-10-19T12:00:00.000Z",
-        "sourceHash": "5e421e60ee4d87bcce85fc8844659bc4a5d04e93b64a32927949c3da1a72d288",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T18:43:09.367Z",
-        "title": "海地选举筹备取得进展 帮派暴力与安全危机仍难缓解",
-        "summary": "联合国官员周一在向安理会通报海地局势时指出，海地选举筹备工作取得进展，但帮派暴力持续威胁民众安全，政治过渡和国家治理仍面临重大挑战。今年7月至9月，联合国记录到海地超过1000人被杀，境内流离失所者总数接近150万。与此同时，镇压黑帮部队逐步扩大部署，联合国正加强后勤保障，以支持部队在更多地区开展行动。",
-        "origin": "publisher-zh",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T18:43:09.367Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      }
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168628",
-      "originalLanguage": "en",
-      "originalTitle": "UN condemns deadly wave of drone strikes in war-torn Sudan",
-      "originalSummary": "Drone strikes killed and injured dozens across Sudan on Monday as the ongoing war continues to cause soaring displacement and hunger.",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "9033052b0157ae800d37",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|uncondemnsdeadly|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "Drone strikes killed and injured dozens across Sudan on Monday as the ongoing war continues to cause soaring displacement and hunger."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "UN condemns deadly wave of drone strikes in war-torn Sudan\nDrone strikes killed and injured dozens across Sudan on Monday as the ongoing war continues to cause soaring displacement and hunger.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 192,
-        "sha256": "b9b4a342ffe43a74a2e6080b184942ad0dc600922b6ef0a5dd63f0c63de9c624",
-        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168628",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-20T04:47:43.770Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168627",
-      "originalLanguage": "en",
-      "originalTitle": "Hunger is ‘an avoidable tragedy’ in a world of plenty: Türk",
-      "originalSummary": "More than a quarter of humanity struggles to get enough food, even though the world produces enough for everyone, UN human rights chief Volker Türk said on Monday, blaming injustice and the denial of human rights for hunger in a world of plenty.&nbsp;",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "cea2c9c85896c2ab945e",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|hungerisanavoida|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "More than a quarter of humanity struggles to get enough food, even though the world produces enough for everyone, UN human rights chief Volker Türk said on Monday, blaming injustice and the denial of human rights for hunger in a world of plenty.&nbsp;"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Hunger is ‘an avoidable tragedy’ in a world of plenty: Türk\nMore than a quarter of humanity struggles to get enough food, even though the world produces enough for everyone, UN human rights chief Volker Türk said on Monday, blaming injustice and the denial of human rights for hunger in a world of plenty.&nbsp;",
-        "reader": "publisher-feed-summary",
-        "characterCount": 311,
-        "sha256": "a1e89844f64d44e6b51a4496c5bcc4aadc26479936fd8d02b82884e90ea8bc81",
-        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168627",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-20T04:47:43.770Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168626",
-      "originalLanguage": "en",
-      "originalTitle": "Haiti: Elections on hold as gangs adapt to security crackdown, Security Council hears",
-      "originalSummary": "Armed groups in Haiti are adapting to intensified security operations, stepping up reprisals against civilians and extending their reach into rural areas, the UN warned the Security Council on Monday.",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "b2d00c0e933954645fa2",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|haitielectionson|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "Armed groups in Haiti are adapting to intensified security operations, stepping up reprisals against civilians and extending their reach into rural areas, the UN warned the Security Council on Monday."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Haiti: Elections on hold as gangs adapt to security crackdown, Security Council hears\nArmed groups in Haiti are adapting to intensified security operations, stepping up reprisals against civilians and extending their reach into rural areas, the UN warned the Security Council on Monday.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 286,
-        "sha256": "a193492a87bcc18e8fb006ffd66d0404a3f8965f2c6eb577175b8ca5624c922f",
-        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168626",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-20T04:47:43.770Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168625",
-      "originalLanguage": "en",
-      "originalTitle": "‘Season of fear’: Escalating Israeli attacks on West Bank olive farmers, deadly strikes on Gaza",
-      "originalSummary": "Israeli attacks on war-torn Gaza over the weekend killed at least six Palestinians, including children, despite a year-old ceasefire agreement. Meanwhile, in the occupied West Bank, settler violence continued through the ongoing olive harvest, with UN independent experts on Monday urging Israel to protect Palestinian farmers.",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "8c1134d6fbe5563509fa",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|seasonoffearesca|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "Israeli attacks on war-torn Gaza over the weekend killed at least six Palestinians, including children, despite a year-old ceasefire agreement. Meanwhile, in the occupied West Bank, settler violence continued through the ongoing olive harvest, with UN independent experts on Monday urging Israel to protect Palestinian farmers."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "‘Season of fear’: Escalating Israeli attacks on West Bank olive farmers, deadly strikes on Gaza\nIsraeli attacks on war-torn Gaza over the weekend killed at least six Palestinians, including children, despite a year-old ceasefire agreement. Meanwhile, in the occupied West Bank, settler violence continued through the ongoing olive harvest, with UN independent experts on Monday urging Israel to protect Palestinian farmers.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 423,
-        "sha256": "fb4c770777cb59dfc9d16f27ace364fda530bbdc522169ec6c6ec5d26bc2c094",
-        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168625",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-20T04:47:43.770Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168623",
-      "originalLanguage": "en",
-      "originalTitle": "Guterres honours Indonesian troops who paid ‘ultimate sacrifice’",
-      "originalSummary": "UN Secretary-General António Guterres&nbsp;paid tribute to Indonesian peacekeepers on Monday, laying a wreath in honour of four who recently lost their lives in Lebanon and offering a robust defence of UN peacekeeping in what he called “testing times for peace”.",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "070259820d9cd3b9298a",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|guterreshonoursi|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "UN Secretary-General António Guterres&nbsp;paid tribute to Indonesian peacekeepers on Monday, laying a wreath in honour of four who recently lost their lives in Lebanon and offering a robust defence of UN peacekeeping in what he called “testing times for peace”."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Guterres honours Indonesian troops who paid ‘ultimate sacrifice’\nUN Secretary-General António Guterres&nbsp;paid tribute to Indonesian peacekeepers on Monday, laying a wreath in honour of four who recently lost their lives in Lebanon and offering a robust defence of UN peacekeeping in what he called “testing times for peace”.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 327,
-        "sha256": "21842cafbea78273fd7c03a52b1c7387f0d72f78ecd5c0e13c16e6692e34cb8d",
-        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168623",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T18:43:09.367Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168622",
-      "originalLanguage": "en",
-      "originalTitle": "Gaza: Funding cuts leave half a million without food assistance",
-      "originalSummary": "Funding shortages have forced the World Food Programme (WFP) to slash assistance to hungry families in the Gaza Strip by roughly one third – a move that will affect some 500,000 people as winter approaches, the UN agency announced on Monday.",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "ad67cbdaeec50b969676",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|gazafundingcutsl|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "Funding shortages have forced the World Food Programme (WFP) to slash assistance to hungry families in the Gaza Strip by roughly one third – a move that will affect some 500,000 people as winter approaches, the UN agency announced on Monday."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Gaza: Funding cuts leave half a million without food assistance\nFunding shortages have forced the World Food Programme (WFP) to slash assistance to hungry families in the Gaza Strip by roughly one third – a move that will affect some 500,000 people as winter approaches, the UN agency announced on Monday.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 305,
-        "sha256": "9894c50a412d9c82963b64e2421dd20ed6ea1b900b7522fe6a19d3bb3c7c86c0",
-        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168622",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T18:43:09.367Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "un",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168620",
-      "originalLanguage": "en",
-      "originalTitle": "Protecting Earth’s fragile biodiversity takes spotlight at Armenia talks",
-      "originalSummary": "Biodiversity losses continue to upend the lives of billions of people whose future prosperity depends on countries taking urgent action to protect our planet, the top UN official leading talks at the&nbsp;UN Biodiversity Conference in Yerevan, said on Monday.",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "87c4a289a934909f62d7",
-      "verificationStatus": "official",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|protectingearths|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "Biodiversity losses continue to upend the lives of billions of people whose future prosperity depends on countries taking urgent action to protect our planet, the top UN official leading talks at the&nbsp;UN Biodiversity Conference in Yerevan, said on Monday."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Protecting Earth’s fragile biodiversity takes spotlight at Armenia talks\nBiodiversity losses continue to upend the lives of billions of people whose future prosperity depends on countries taking urgent action to protect our planet, the top UN official leading talks at the&nbsp;UN Biodiversity Conference in Yerevan, said on Monday.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 332,
-        "sha256": "e5aba727d6f396b8537e87516017ca0c45c321b7523740b854cc8271f6941d42",
-        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168620",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T18:43:09.367Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "un-zh",
-      "sourceName": "UN News",
-      "sourceTier": "official",
-      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
-      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143025",
-      "originalLanguage": "zh",
-      "originalTitle": "人权高专：不公正导致粮食权难以真正落实",
-      "originalSummary": "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，粮食权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
-      "publishedAt": "2026-10-19T12:00:00.000Z",
-      "fetchedAt": "2026-10-19T18:43:09.367Z",
-      "id": "71d40ccc03d6488ef521",
-      "verificationStatus": "official",
-      "titleZh": "人权高专：不公正导致粮食权难以真正落实",
-      "summaryZh": "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，粮食权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [
-        "供需"
-      ],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [
-        "供需"
-      ],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 70,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|人权高专不公正导致粮食权难以真正|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，粮食权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "人权高专：不公正导致粮食权难以真正落实\n联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，粮食权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
-        "reader": "publisher-feed-summary",
-        "characterCount": 153,
-        "sha256": "2be0fa8ca54f38f4a67e25851a79136623ff2d42cbb324ad952502ff16925cc7",
-        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143025",
-        "checkedAt": "2026-10-19T18:43:09.367Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T18:43:09.367Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "invalidationReason": "superseded-source-version",
-      "supersededBy": "d4dfdb94f41c596d7494"
-    },
-    {
       "sourceId": "bbc-world",
       "sourceName": "BBC News · 世界",
       "sourceTier": "verified",
@@ -4994,7 +4056,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -5990,7 +5053,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6268,7 +5332,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -8034,6 +7099,1044 @@
   "continuing": [],
   "retainedDetails": [
     {
+      "sourceId": "un-zh",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143024",
+      "originalLanguage": "zh",
+      "originalTitle": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪",
+      "originalSummary": "联合国毒品和犯罪问题办公室执行主任莫妮卡•朱马周一在维也纳举行的《联合国打击跨国有组织犯罪公约》第十三届缔约方会议开幕式上表示，从利用人工智能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际社会必须不断完善多边合作机制，以应对日益复杂的犯罪威胁。",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "041ad43c75710671a177",
+      "verificationStatus": "official",
+      "titleZh": "联合国呼吁完善多边合作机制打击跨国有组织犯罪",
+      "summaryZh": "联合国毒品和犯罪问题办公室执行主任莫妮卡·朱马在第十三届《联合国打击跨国有组织犯罪公约》缔约方会议上指出，跨国有组织犯罪正快速演变，涉及人工智能诈骗和3D打印枪支等新技术，呼吁国际社会加强多边合作。",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|从人工智能诈骗到3d打印枪支联合|2026-10-19",
+      "detailStatus": "so-what",
+      "facts": [
+        "联合国毒品和犯罪问题办公室执行主任莫妮卡•朱马周一在维也纳举行的《联合国打击跨国有组织犯罪公约》第十三届缔约方会议开幕式上表示，从利用人工智能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际社会必须不断完善多边合作机制，以应对日益复杂的犯罪威胁。"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪\n联合国毒品和犯罪问题办公室执行主任莫妮卡•朱马周一在维也纳举行的《联合国打击跨国有组织犯罪公约》第十三届缔约方会议开幕式上表示，从利用人工智能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际社会必须不断完善多边合作机制，以应对日益复杂的犯罪威胁。",
+        "reader": "publisher-feed-summary",
+        "characterCount": 186,
+        "sha256": "0272dc5ad1f125b44fb1dd278f17fca6ce91a1caaed95a94819cb77c15fc7551",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143024",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "0272dc5ad1f125b44fb1dd278f17fca6ce91a1caaed95a94819cb77c15fc7551",
+        "count": 1,
+        "lastAttemptAt": "2026-10-19T18:43:09.367Z"
+      },
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "联合国呼吁完善多边合作机制打击跨国有组织犯罪。",
+              "evidence": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪"
+            },
+            {
+              "text": "联合国毒品和犯罪问题办公室执行主任莫妮卡·朱马在维也纳的第十三届《联合国打击跨国有组织犯罪公约》缔约方会议开幕式上发表讲话。",
+              "evidence": "联合国毒品和犯罪问题办公室执行主任莫妮卡•朱马周一在维也纳举行的《联合国打击跨国有组织犯罪公约》第十三届缔约方会议开幕式上表示，从利用人工智能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际"
+            },
+            {
+              "text": "跨国有组织犯罪正快速演变，包括利用人工智能进行大规模诈骗和3D打印制造枪支。",
+              "evidence": "能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际社会必须不断完善多边合作机制，以应对日益复杂的犯罪威胁。"
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "全球",
+            "triggerEvidence": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪",
+            "path": [
+              "AI技术被用于大规模诈骗",
+              "跨境诈骗案件激增",
+              "消费者信任受损"
+            ],
+            "invalidation": "若监管机构推出有效防诈骗措施，消费者信任恢复，消费下降效应不再出现。"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "0272dc5ad1f125b44fb1dd278f17fca6ce91a1caaed95a94819cb77c15fc7551",
+        "originalTitle": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪",
+        "reviewedAt": "2026-10-19T18:43:09.367Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "041ad43c75710671a177",
+          "title": "联合国呼吁完善多边合作机制打击跨国有组织犯罪",
+          "summary": "联合国毒品和犯罪问题办公室执行主任莫妮卡·朱马在第十三届《联合国打击跨国有组织犯罪公约》缔约方会议上指出，跨国有组织犯罪正快速演变，涉及人工智能诈骗和3D打印枪支等新技术，呼吁国际社会加强多边合作。",
+          "excerpt": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪。",
+          "sourceName": "UN News",
+          "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143024",
+          "publishedAt": "2026-10-19T12:00:00.000Z",
+          "region": "全球",
+          "topic": "跨国有组织犯罪",
+          "termIds": [],
+          "facts": [
+            "联合国呼吁完善多边合作机制打击跨国有组织犯罪。",
+            "联合国毒品和犯罪问题办公室执行主任莫妮卡·朱马在维也纳的第十三届《联合国打击跨国有组织犯罪公约》缔约方会议开幕式上发表讲话。",
+            "跨国有组织犯罪正快速演变，包括利用人工智能进行大规模诈骗和3D打印制造枪支。"
+          ],
+          "consensus": [
+            "暂无明确的国际共识，报道未提供相关市场或政策预期的共识。"
+          ],
+          "inference": [
+            "如果各国能够快速制定统一的技术监管框架，跨国犯罪的技术扩散可能被遏制。",
+            "若多边合作机制迟滞，犯罪分子可能利用监管真空进一步创新作案手段。"
+          ],
+          "risks": [
+            "多边合作进程受政治分歧阻碍。",
+            "技术监管标准不统一导致执法难度加大。",
+            "新兴技术（AI、3D打印）快速迭代超出现有法律覆盖范围。"
+          ],
+          "causalChain": [
+            {
+              "title": "AI技术被用于大规模诈骗",
+              "explanation": "犯罪组织利用生成式AI自动化制作欺诈信息，提升诈骗规模和隐蔽性。",
+              "condition": "当AI工具的获取成本低且监管缺口大时成立。"
+            },
+            {
+              "title": "跨境诈骗案件激增",
+              "explanation": "AI驱动的诈骗易于跨境传播，导致受害者分布更广。",
+              "condition": "前提是诈骗信息能够通过互联网跨境流通。"
+            },
+            {
+              "title": "国际执法压力上升，呼吁多边合作",
+              "explanation": "各国执法机构面对跨境案件增多，要求在情报共享、法律协同上加强合作。",
+              "condition": "前提是各国认识到单边措施难以根除此类犯罪。"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "社区防盗系统升级",
+            "explanation": "就像居民区在发现新型盗窃手段后会升级防盗系统，国际社会也需要在面对AI诈骗和3D打印枪支等新型犯罪手段时，更新跨国合作的‘防护’机制。该类比适用于说明合作机制的必要性，但不等同于技术本身可以完全阻止犯罪。"
+          },
+          "why": {
+            "cause": "跨国有组织犯罪利用新技术快速演变",
+            "mechanisms": [
+              "技术降低犯罪成本",
+              "跨境信息流通加速",
+              "单边法律难以覆盖"
+            ],
+            "result": "迫使国际社会必须通过多边合作机制统一监管与执法，以降低犯罪扩散风险。"
+          },
+          "focus": [
+            "技术监管",
+            "跨国执法协作",
+            "情报共享机制"
+          ],
+          "marketBet": [
+            "各国将加速制定AI监管法规",
+            "3D打印相关武器管制立法可能出现新提案",
+            "多边合作平台的预算和资源投入可能上升"
+          ],
+          "expectationGap": "报道未提供任何市场或政策预期的具体共识，故无法比较实际与先前预期的差异。",
+          "counterView": "部分国家可能倾向于以国家安全为由保持技术自主，导致多边合作进程放缓。",
+          "personalImpact": [
+            {
+              "label": "消费",
+              "impact": "AI诈骗的增多可能削弱消费者对线上交易的信任，导致部分地区线上消费下降。",
+              "why": "当诈骗案件频发且防护措施不足时，消费者倾向于减少线上支付。",
+              "invalidation": "若监管部门快速推出有效的防诈骗技术和法律，消费者信任可恢复，消费下降效应不再出现。",
+              "condition": "若监管部门快速推出有效的防诈骗技术和法律，消费者信任可恢复，消费下降效应不再出现。"
+            }
+          ],
+          "surface": "联合国呼吁完善多边合作机制打击跨国有组织犯罪",
+          "next": [
+            "AI技术被用于大规模诈骗",
+            "跨境诈骗案件激增",
+            "国际执法压力上升，呼吁多边合作"
+          ],
+          "condition": [
+            "当AI工具的获取成本低且监管缺口大时成立。",
+            "前提是诈骗信息能够通过互联网跨境流通。",
+            "前提是各国认识到单边措施难以根除此类犯罪。"
+          ]
+        },
+        "watchItems": [
+          "第十三届《联合国打击跨国有组织犯罪公约》缔约方会议后续决议",
+          "主要经济体关于AI工具监管的立法进展",
+          "各国针对3D打印枪支的法律修订情况"
+        ]
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143024",
+        "publishedAt": "2026-10-19T12:00:00.000Z",
+        "sourceHash": "0272dc5ad1f125b44fb1dd278f17fca6ce91a1caaed95a94819cb77c15fc7551",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-19T18:43:09.367Z",
+        "title": "从人工智能诈骗到3D打印枪支，联合国呼吁完善多边合作机制打击跨国有组织犯罪",
+        "summary": "联合国毒品和犯罪问题办公室执行主任莫妮卡•朱马周一在维也纳举行的《联合国打击跨国有组织犯罪公约》第十三届缔约方会议开幕式上表示，从利用人工智能实施大规模诈骗，到通过3D打印制造枪支，再到不同犯罪类型相互交织，跨国有组织犯罪正在迅速演变，国际社会必须不断完善多边合作机制，以应对日益复杂的犯罪威胁。",
+        "origin": "publisher-zh",
+        "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-19T18:43:09.367Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "reviewMigration": {
+        "sourceHash": "0272dc5ad1f125b44fb1dd278f17fca6ce91a1caaed95a94819cb77c15fc7551",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-10-19T18:43:09.367Z",
+        "state": "approved"
+      }
+    },
+    {
+      "sourceId": "un-zh",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143029",
+      "originalLanguage": "zh",
+      "originalTitle": "联合国谴责苏丹多地无人机袭击事件",
+      "originalSummary": "联合国秘书长发言人杜加里克周一在纽约对记者表示，联合国对苏丹各地持续发生的致命无人机袭击深感震惊。这些袭击造成包括儿童在内的平民死亡，并扰乱基本服务。",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "bab2d0d40cfcb8325f3b",
+      "verificationStatus": "official",
+      "titleZh": "联合国谴责苏丹多地无人机袭击事件",
+      "summaryZh": "联合国秘书长发言人杜加里克周一在纽约对记者表示，联合国对苏丹各地持续发生的致命无人机袭击深感震惊。这些袭击造成包括儿童在内的平民死亡，并扰乱基本服务。",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|联合国谴责苏丹多地无人机袭击事件|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "联合国秘书长发言人杜加里克周一在纽约对记者表示，联合国对苏丹各地持续发生的致命无人机袭击深感震惊。这些袭击造成包括儿童在内的平民死亡，并扰乱基本服务。"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "queue": {
+        "firstSeenAt": "2026-10-20T04:47:43.770Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      }
+    },
+    {
+      "sourceId": "un-zh",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143028",
+      "originalLanguage": "zh",
+      "originalTitle": "安理会通过决议：警惕数字技术助长冲突中的儿童侵害行为",
+      "originalSummary": "安理会周一以15票赞成一致通过决议，警告数字技术正被武装冲突各方用于招募和使用儿童、绑架及性暴力等侵害行为，并呼吁各国加强儿童保护，推动数字平台采取措施防范相关风险。",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "c80166e84212f1e4c3df",
+      "verificationStatus": "official",
+      "titleZh": "安理会通过决议：警惕数字技术助长冲突中的儿童侵害行为",
+      "summaryZh": "安理会周一以15票赞成一致通过决议，警告数字技术正被武装冲突各方用于招募和使用儿童、绑架及性暴力等侵害行为，并呼吁各国加强儿童保护，推动数字平台采取措施防范相关风险。",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|安理会通过决议警惕数字技术助长冲|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "安理会周一以15票赞成一致通过决议，警告数字技术正被武装冲突各方用于招募和使用儿童、绑架及性暴力等侵害行为，并呼吁各国加强儿童保护，推动数字平台采取措施防范相关风险。"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "安理会通过决议：警惕数字技术助长冲突中的儿童侵害行为\n安理会周一以15票赞成一致通过决议，警告数字技术正被武装冲突各方用于招募和使用儿童、绑架及性暴力等侵害行为，并呼吁各国加强儿童保护，推动数字平台采取措施防范相关风险。",
+        "reader": "publisher-feed-summary",
+        "characterCount": 110,
+        "sha256": "f8fe7e2d17bd055f967c00d0007040f4d34d00cee522460c903495126a787ff0",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143028",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "安理会通过决议：警惕数字技术助长冲突中的儿童侵害行为",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143028",
+        "publishedAt": "2026-10-19T12:00:00.000Z",
+        "sourceHash": "f8fe7e2d17bd055f967c00d0007040f4d34d00cee522460c903495126a787ff0",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-20T04:47:43.770Z",
+        "title": "安理会通过决议：警惕数字技术助长冲突中的儿童侵害行为",
+        "summary": "安理会周一以15票赞成一致通过决议，警告数字技术正被武装冲突各方用于招募和使用儿童、绑架及性暴力等侵害行为，并呼吁各国加强儿童保护，推动数字平台采取措施防范相关风险。",
+        "origin": "publisher-zh",
+        "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-20T04:47:43.770Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      }
+    },
+    {
+      "sourceId": "un-zh",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143027",
+      "originalLanguage": "zh",
+      "originalTitle": "亚美尼亚会议聚焦保护地球脆弱的生物多样性",
+      "originalSummary": "《生物多样性公约》第十七次缔约方大会周一在亚美尼亚首都埃里温开幕。各国将在未来两周首次全面审查《昆明-蒙特利尔全球生物多样性框架》的集体落实进展，重点讨论资金筹措、行动落实和成效监测，推动保护承诺转化为可衡量的成果。&nbsp;",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "167e0f1b7e16c9f381a0",
+      "verificationStatus": "official",
+      "titleZh": "亚美尼亚会议聚焦保护地球脆弱的生物多样性",
+      "summaryZh": "《生物多样性公约》第十七次缔约方大会周一在亚美尼亚首都埃里温开幕。各国将在未来两周首次全面审查《昆明-蒙特利尔全球生物多样性框架》的集体落实进展，重点讨论资金筹措、行动落实和成效监测，推动保护承诺转化为可衡量的成果。&nbsp;",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|亚美尼亚会议聚焦保护地球脆弱的生|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "《生物多样性公约》第十七次缔约方大会周一在亚美尼亚首都埃里温开幕。各国将在未来两周首次全面审查《昆明-蒙特利尔全球生物多样性框架》的集体落实进展，重点讨论资金筹措、行动落实和成效监测，推动保护承诺转化为可衡量的成果。&nbsp;"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "亚美尼亚会议聚焦保护地球脆弱的生物多样性\n《生物多样性公约》第十七次缔约方大会周一在亚美尼亚首都埃里温开幕。各国将在未来两周首次全面审查《昆明-蒙特利尔全球生物多样性框架》的集体落实进展，重点讨论资金筹措、行动落实和成效监测，推动保护承诺转化为可衡量的成果。&nbsp;",
+        "reader": "publisher-feed-summary",
+        "characterCount": 135,
+        "sha256": "db4da5830836bed991cd84bc5ef760e1fbf669e7c8aad417f05416e969914755",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143027",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "亚美尼亚会议聚焦保护地球脆弱的生物多样性",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143027",
+        "publishedAt": "2026-10-19T12:00:00.000Z",
+        "sourceHash": "db4da5830836bed991cd84bc5ef760e1fbf669e7c8aad417f05416e969914755",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-20T04:47:43.770Z",
+        "title": "亚美尼亚会议聚焦保护地球脆弱的生物多样性",
+        "summary": "《生物多样性公约》第十七次缔约方大会周一在亚美尼亚首都埃里温开幕。各国将在未来两周首次全面审查《昆明-蒙特利尔全球生物多样性框架》的集体落实进展，重点讨论资金筹措、行动落实和成效监测，推动保护承诺转化为可衡量的成果。&nbsp;",
+        "origin": "publisher-zh",
+        "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-20T04:47:43.770Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      }
+    },
+    {
+      "sourceId": "un-zh",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143026",
+      "originalLanguage": "zh",
+      "originalTitle": "加沙粮食援助因资金短缺大幅缩减，约50万人失去援助",
+      "originalSummary": "联合国世界粮食计划署周一表示，资金短缺迫使该署将加沙粮食援助覆盖人数削减约三分之一，从9月的160万人降至本月的110万人。随着冬季临近，继续获得援助的家庭也面临食品配给和现金支持减少。&nbsp;",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "b647780a73e2146056f4",
+      "verificationStatus": "official",
+      "titleZh": "加沙粮食援助因资金短缺大幅缩减，约50万人失去援助",
+      "summaryZh": "联合国世界粮食计划署周一表示，资金短缺迫使该署将加沙粮食援助覆盖人数削减约三分之一，从9月的160万人降至本月的110万人。随着冬季临近，继续获得援助的家庭也面临食品配给和现金支持减少。&nbsp;",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|加沙粮食援助因资金短缺大幅缩减约|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "联合国世界粮食计划署周一表示，资金短缺迫使该署将加沙粮食援助覆盖人数削减约三分之一，从9月的160万人降至本月的110万人。随着冬季临近，继续获得援助的家庭也面临食品配给和现金支持减少。&nbsp;"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "加沙粮食援助因资金短缺大幅缩减，约50万人失去援助\n联合国世界粮食计划署周一表示，资金短缺迫使该署将加沙粮食援助覆盖人数削减约三分之一，从9月的160万人降至本月的110万人。随着冬季临近，继续获得援助的家庭也面临食品配给和现金支持减少。&nbsp;",
+        "reader": "publisher-feed-summary",
+        "characterCount": 125,
+        "sha256": "d05624e56f7cbb021cb476a61f57b760bcba4742a8c4748bb485a0ae4d2f5ee8",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143026",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "加沙粮食援助因资金短缺大幅缩减，约50万人失去援助",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143026",
+        "publishedAt": "2026-10-19T12:00:00.000Z",
+        "sourceHash": "d05624e56f7cbb021cb476a61f57b760bcba4742a8c4748bb485a0ae4d2f5ee8",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-20T04:47:43.770Z",
+        "title": "加沙粮食援助因资金短缺大幅缩减，约50万人失去援助",
+        "summary": "联合国世界粮食计划署周一表示，资金短缺迫使该署将加沙粮食援助覆盖人数削减约三分之一，从9月的160万人降至本月的110万人。随着冬季临近，继续获得援助的家庭也面临食品配给和现金支持减少。&nbsp;",
+        "origin": "publisher-zh",
+        "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-20T04:47:43.770Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      }
+    },
+    {
+      "sourceId": "un-zh",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143025",
+      "originalLanguage": "zh",
+      "originalTitle": "人权高专：不公正导致食物权难以真正落实",
+      "originalSummary": "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，食物权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "d4dfdb94f41c596d7494",
+      "verificationStatus": "official",
+      "titleZh": "人权高专：不公正导致食物权难以真正落实",
+      "summaryZh": "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，食物权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|人权高专不公正导致食物权难以真正|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，食物权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "人权高专：不公正导致食物权难以真正落实\n联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，食物权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
+        "reader": "publisher-feed-summary",
+        "characterCount": 153,
+        "sha256": "54560cc152903c5056e2485b16d6abfdb4d8038296763f9fead6b3f23001002c",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143025",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "人权高专：不公正导致食物权难以真正落实",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143025",
+        "publishedAt": "2026-10-19T12:00:00.000Z",
+        "sourceHash": "54560cc152903c5056e2485b16d6abfdb4d8038296763f9fead6b3f23001002c",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-20T04:47:43.770Z",
+        "title": "人权高专：不公正导致食物权难以真正落实",
+        "summary": "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，食物权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
+        "origin": "publisher-zh",
+        "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-20T04:47:43.770Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      }
+    },
+    {
+      "sourceId": "un-zh",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143023",
+      "originalLanguage": "zh",
+      "originalTitle": "海地选举筹备取得进展 帮派暴力与安全危机仍难缓解",
+      "originalSummary": "联合国官员周一在向安理会通报海地局势时指出，海地选举筹备工作取得进展，但帮派暴力持续威胁民众安全，政治过渡和国家治理仍面临重大挑战。今年7月至9月，联合国记录到海地超过1000人被杀，境内流离失所者总数接近150万。与此同时，镇压黑帮部队逐步扩大部署，联合国正加强后勤保障，以支持部队在更多地区开展行动。",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "8b9adad7f8c0a3faa80e",
+      "verificationStatus": "official",
+      "titleZh": "海地选举筹备取得进展 帮派暴力与安全危机仍难缓解",
+      "summaryZh": "联合国官员周一在向安理会通报海地局势时指出，海地选举筹备工作取得进展，但帮派暴力持续威胁民众安全，政治过渡和国家治理仍面临重大挑战。今年7月至9月，联合国记录到海地超过1000人被杀，境内流离失所者总数接近150万。与此同时，镇压黑帮部队逐步扩大部署，联合国正加强后勤保障，以支持部队在更多地区开展行动。",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|海地选举筹备取得进展帮派暴力与安|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "联合国官员周一在向安理会通报海地局势时指出，海地选举筹备工作取得进展，但帮派暴力持续威胁民众安全，政治过渡和国家治理仍面临重大挑战。今年7月至9月，联合国记录到海地超过1000人被杀，境内流离失所者总数接近150万。与此同时，镇压黑帮部队逐步扩大部署，联合国正加强后勤保障，以支持部队在更多地区开展行动。"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "海地选举筹备取得进展 帮派暴力与安全危机仍难缓解\n联合国官员周一在向安理会通报海地局势时指出，海地选举筹备工作取得进展，但帮派暴力持续威胁民众安全，政治过渡和国家治理仍面临重大挑战。今年7月至9月，联合国记录到海地超过1000人被杀，境内流离失所者总数接近150万。与此同时，镇压黑帮部队逐步扩大部署，联合国正加强后勤保障，以支持部队在更多地区开展行动。",
+        "reader": "publisher-feed-summary",
+        "characterCount": 177,
+        "sha256": "5e421e60ee4d87bcce85fc8844659bc4a5d04e93b64a32927949c3da1a72d288",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143023",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "海地选举筹备取得进展 帮派暴力与安全危机仍难缓解",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143023",
+        "publishedAt": "2026-10-19T12:00:00.000Z",
+        "sourceHash": "5e421e60ee4d87bcce85fc8844659bc4a5d04e93b64a32927949c3da1a72d288",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-19T18:43:09.367Z",
+        "title": "海地选举筹备取得进展 帮派暴力与安全危机仍难缓解",
+        "summary": "联合国官员周一在向安理会通报海地局势时指出，海地选举筹备工作取得进展，但帮派暴力持续威胁民众安全，政治过渡和国家治理仍面临重大挑战。今年7月至9月，联合国记录到海地超过1000人被杀，境内流离失所者总数接近150万。与此同时，镇压黑帮部队逐步扩大部署，联合国正加强后勤保障，以支持部队在更多地区开展行动。",
+        "origin": "publisher-zh",
+        "evidence": []
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-19T18:43:09.367Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      }
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168628",
+      "originalLanguage": "en",
+      "originalTitle": "UN condemns deadly wave of drone strikes in war-torn Sudan",
+      "originalSummary": "Drone strikes killed and injured dozens across Sudan on Monday as the ongoing war continues to cause soaring displacement and hunger.",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "9033052b0157ae800d37",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|uncondemnsdeadly|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "Drone strikes killed and injured dozens across Sudan on Monday as the ongoing war continues to cause soaring displacement and hunger."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "UN condemns deadly wave of drone strikes in war-torn Sudan\nDrone strikes killed and injured dozens across Sudan on Monday as the ongoing war continues to cause soaring displacement and hunger.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 192,
+        "sha256": "b9b4a342ffe43a74a2e6080b184942ad0dc600922b6ef0a5dd63f0c63de9c624",
+        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168628",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-20T04:47:43.770Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "chineseSummary": {
+        "status": "pending"
+      },
+      "invalidationReason": "source-policy-expired"
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168627",
+      "originalLanguage": "en",
+      "originalTitle": "Hunger is ‘an avoidable tragedy’ in a world of plenty: Türk",
+      "originalSummary": "More than a quarter of humanity struggles to get enough food, even though the world produces enough for everyone, UN human rights chief Volker Türk said on Monday, blaming injustice and the denial of human rights for hunger in a world of plenty.&nbsp;",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "cea2c9c85896c2ab945e",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|hungerisanavoida|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "More than a quarter of humanity struggles to get enough food, even though the world produces enough for everyone, UN human rights chief Volker Türk said on Monday, blaming injustice and the denial of human rights for hunger in a world of plenty.&nbsp;"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Hunger is ‘an avoidable tragedy’ in a world of plenty: Türk\nMore than a quarter of humanity struggles to get enough food, even though the world produces enough for everyone, UN human rights chief Volker Türk said on Monday, blaming injustice and the denial of human rights for hunger in a world of plenty.&nbsp;",
+        "reader": "publisher-feed-summary",
+        "characterCount": 311,
+        "sha256": "a1e89844f64d44e6b51a4496c5bcc4aadc26479936fd8d02b82884e90ea8bc81",
+        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168627",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-20T04:47:43.770Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "chineseSummary": {
+        "status": "pending"
+      },
+      "invalidationReason": "source-policy-expired"
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168626",
+      "originalLanguage": "en",
+      "originalTitle": "Haiti: Elections on hold as gangs adapt to security crackdown, Security Council hears",
+      "originalSummary": "Armed groups in Haiti are adapting to intensified security operations, stepping up reprisals against civilians and extending their reach into rural areas, the UN warned the Security Council on Monday.",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "b2d00c0e933954645fa2",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|haitielectionson|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "Armed groups in Haiti are adapting to intensified security operations, stepping up reprisals against civilians and extending their reach into rural areas, the UN warned the Security Council on Monday."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Haiti: Elections on hold as gangs adapt to security crackdown, Security Council hears\nArmed groups in Haiti are adapting to intensified security operations, stepping up reprisals against civilians and extending their reach into rural areas, the UN warned the Security Council on Monday.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 286,
+        "sha256": "a193492a87bcc18e8fb006ffd66d0404a3f8965f2c6eb577175b8ca5624c922f",
+        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168626",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-20T04:47:43.770Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "chineseSummary": {
+        "status": "pending"
+      },
+      "invalidationReason": "source-policy-expired"
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168625",
+      "originalLanguage": "en",
+      "originalTitle": "‘Season of fear’: Escalating Israeli attacks on West Bank olive farmers, deadly strikes on Gaza",
+      "originalSummary": "Israeli attacks on war-torn Gaza over the weekend killed at least six Palestinians, including children, despite a year-old ceasefire agreement. Meanwhile, in the occupied West Bank, settler violence continued through the ongoing olive harvest, with UN independent experts on Monday urging Israel to protect Palestinian farmers.",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "8c1134d6fbe5563509fa",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|seasonoffearesca|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "Israeli attacks on war-torn Gaza over the weekend killed at least six Palestinians, including children, despite a year-old ceasefire agreement. Meanwhile, in the occupied West Bank, settler violence continued through the ongoing olive harvest, with UN independent experts on Monday urging Israel to protect Palestinian farmers."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "‘Season of fear’: Escalating Israeli attacks on West Bank olive farmers, deadly strikes on Gaza\nIsraeli attacks on war-torn Gaza over the weekend killed at least six Palestinians, including children, despite a year-old ceasefire agreement. Meanwhile, in the occupied West Bank, settler violence continued through the ongoing olive harvest, with UN independent experts on Monday urging Israel to protect Palestinian farmers.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 423,
+        "sha256": "fb4c770777cb59dfc9d16f27ace364fda530bbdc522169ec6c6ec5d26bc2c094",
+        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168625",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-20T04:47:43.770Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "chineseSummary": {
+        "status": "pending"
+      },
+      "invalidationReason": "source-policy-expired"
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168623",
+      "originalLanguage": "en",
+      "originalTitle": "Guterres honours Indonesian troops who paid ‘ultimate sacrifice’",
+      "originalSummary": "UN Secretary-General António Guterres&nbsp;paid tribute to Indonesian peacekeepers on Monday, laying a wreath in honour of four who recently lost their lives in Lebanon and offering a robust defence of UN peacekeeping in what he called “testing times for peace”.",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "070259820d9cd3b9298a",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|guterreshonoursi|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "UN Secretary-General António Guterres&nbsp;paid tribute to Indonesian peacekeepers on Monday, laying a wreath in honour of four who recently lost their lives in Lebanon and offering a robust defence of UN peacekeeping in what he called “testing times for peace”."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Guterres honours Indonesian troops who paid ‘ultimate sacrifice’\nUN Secretary-General António Guterres&nbsp;paid tribute to Indonesian peacekeepers on Monday, laying a wreath in honour of four who recently lost their lives in Lebanon and offering a robust defence of UN peacekeeping in what he called “testing times for peace”.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 327,
+        "sha256": "21842cafbea78273fd7c03a52b1c7387f0d72f78ecd5c0e13c16e6692e34cb8d",
+        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168623",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-19T18:43:09.367Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "chineseSummary": {
+        "status": "pending"
+      },
+      "invalidationReason": "source-policy-expired"
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168622",
+      "originalLanguage": "en",
+      "originalTitle": "Gaza: Funding cuts leave half a million without food assistance",
+      "originalSummary": "Funding shortages have forced the World Food Programme (WFP) to slash assistance to hungry families in the Gaza Strip by roughly one third – a move that will affect some 500,000 people as winter approaches, the UN agency announced on Monday.",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "ad67cbdaeec50b969676",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|gazafundingcutsl|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "Funding shortages have forced the World Food Programme (WFP) to slash assistance to hungry families in the Gaza Strip by roughly one third – a move that will affect some 500,000 people as winter approaches, the UN agency announced on Monday."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Gaza: Funding cuts leave half a million without food assistance\nFunding shortages have forced the World Food Programme (WFP) to slash assistance to hungry families in the Gaza Strip by roughly one third – a move that will affect some 500,000 people as winter approaches, the UN agency announced on Monday.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 305,
+        "sha256": "9894c50a412d9c82963b64e2421dd20ed6ea1b900b7522fe6a19d3bb3c7c86c0",
+        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168622",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-19T18:43:09.367Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "chineseSummary": {
+        "status": "pending"
+      },
+      "invalidationReason": "source-policy-expired"
+    },
+    {
+      "sourceId": "un",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/en/story/2026/10/1168620",
+      "originalLanguage": "en",
+      "originalTitle": "Protecting Earth’s fragile biodiversity takes spotlight at Armenia talks",
+      "originalSummary": "Biodiversity losses continue to upend the lives of billions of people whose future prosperity depends on countries taking urgent action to protect our planet, the top UN official leading talks at the&nbsp;UN Biodiversity Conference in Yerevan, said on Monday.",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-20T11:59:31.286Z",
+      "id": "87c4a289a934909f62d7",
+      "verificationStatus": "official",
+      "translationStatus": "unavailable",
+      "relatedSources": [],
+      "keyTerms": [],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|protectingearths|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "Biodiversity losses continue to upend the lives of billions of people whose future prosperity depends on countries taking urgent action to protect our planet, the top UN official leading talks at the&nbsp;UN Biodiversity Conference in Yerevan, said on Monday."
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "Protecting Earth’s fragile biodiversity takes spotlight at Armenia talks\nBiodiversity losses continue to upend the lives of billions of people whose future prosperity depends on countries taking urgent action to protect our planet, the top UN official leading talks at the&nbsp;UN Biodiversity Conference in Yerevan, said on Monday.",
+        "reader": "publisher-feed-summary",
+        "characterCount": 332,
+        "sha256": "e5aba727d6f396b8537e87516017ca0c45c321b7523740b854cc8271f6941d42",
+        "sourceUrl": "https://news.un.org/feed/view/en/story/2026/10/1168620",
+        "checkedAt": "2026-10-20T11:59:31.286Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-19T18:43:09.367Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "chineseSummary": {
+        "status": "pending"
+      },
+      "invalidationReason": "source-policy-expired"
+    },
+    {
+      "sourceId": "un-zh",
+      "sourceName": "UN News",
+      "sourceTier": "official",
+      "sourceUrl": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
+      "canonicalUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143025",
+      "originalLanguage": "zh",
+      "originalTitle": "人权高专：不公正导致粮食权难以真正落实",
+      "originalSummary": "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，粮食权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-19T18:43:09.367Z",
+      "id": "71d40ccc03d6488ef521",
+      "verificationStatus": "official",
+      "titleZh": "人权高专：不公正导致粮食权难以真正落实",
+      "summaryZh": "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，粮食权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
+      "translationStatus": "original-zh",
+      "relatedSources": [],
+      "keyTerms": [
+        "供需"
+      ],
+      "causalSignals": [],
+      "analysisLevels": [],
+      "eventTypes": [],
+      "impactChannels": [
+        "供需"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "importanceScore": 70,
+      "continuingImpactScore": 40,
+      "clusterId": "undefined|人权高专不公正导致粮食权难以真正|2026-10-19",
+      "detailStatus": "brief",
+      "facts": [
+        "联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，粮食权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。"
+      ],
+      "expectations": [],
+      "inferences": [],
+      "article": {
+        "status": "summary",
+        "text": "人权高专：不公正导致粮食权难以真正落实\n联合国人权事务高级专员蒂尔克周一在联合国世界粮食安全委员会第五十四届上指出，粮食权是一项基本人权，与生命权、饮水权、健康权、社会保障权和工作权密切相关。然而，在一个粮食供应充足的世界，仍有超过四分之一的人口难以获得足够或营养质量合格的食物。这是一场本可以避免的悲剧。",
+        "reader": "publisher-feed-summary",
+        "characterCount": 153,
+        "sha256": "2be0fa8ca54f38f4a67e25851a79136623ff2d42cbb324ad952502ff16925cc7",
+        "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/10/1143025",
+        "checkedAt": "2026-10-19T18:43:09.367Z"
+      },
+      "queue": {
+        "firstSeenAt": "2026-10-19T18:43:09.367Z",
+        "summaryAttempt": 0,
+        "summaryAttemptVersion": "summary-diagnostics-v1"
+      },
+      "invalidationReason": "superseded-source-version",
+      "supersededBy": "d4dfdb94f41c596d7494"
+    },
+    {
       "sourceId": "cnfin",
       "sourceName": "新华财经",
       "sourceTier": "verified",
@@ -9325,7 +9428,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -10885,884 +10989,6 @@
         "summaryAttemptVersion": "summary-diagnostics-v1",
         "summaryRejection": "summary-audit"
       }
-    },
-    {
-      "sourceId": "cnfin",
-      "sourceName": "新华财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261019/4482736_1.html",
-      "canonicalUrl": "https://www.cnfin.com/yw-lb/detail/20261019/4482736_1.html",
-      "originalLanguage": "zh",
-      "originalTitle": "【读财报】前三季度公募基金发行透视：新发基金募资约9000亿元 路博迈、贝莱德基金旗下单只产品募资额居前",
-      "publishedAt": "2026-10-19T01:04:45.000Z",
-      "fetchedAt": "2026-10-19T04:38:01.964Z",
-      "id": "f4306107da114ffec0c4",
-      "verificationStatus": "verified",
-      "titleZh": "【读财报】前三季度公募基金发行透视：新发基金募资约9000亿元 路博迈、贝莱德基金旗下单只产品募资额居前",
-      "translationStatus": "original-zh",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|读财报前三季度公募基金发行透视新|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [],
-      "expectations": [],
-      "inferences": [],
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6pwgzkj8zzgo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Inside the shadowy world of anti-Putin sabotage from within Russia",
-      "originalSummary": "Two men tell of the work they say they have been doing to support Ukrainian intelligence during the war.",
-      "publishedAt": "2026-10-19T00:06:25.000Z",
-      "fetchedAt": "2026-10-20T04:47:43.770Z",
-      "id": "a17e2152270c275a4f3d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|insidetheshadowy|2026-10-19",
-      "detailStatus": "brief",
-      "facts": [
-        "Two men tell of the work they say they have been doing to support Ukrainian intelligence during the war."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Inside the shadowy world of anti-Putin sabotage from within Russia\nTwo men tell of the work they say they have been doing to support Ukrainian intelligence during the war.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 171,
-        "sha256": "0ffa24b1fb794f1148c24af83f55882841c49d199db81d7e0632032db8be9a16",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6pwgzkj8zzgo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-20T04:47:43.770Z"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Inside the shadowy world of anti-Putin sabotage from within Russia",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c6pwgzkj8zzgo?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-19T00:06:25.000Z",
-        "sourceHash": "0ffa24b1fb794f1148c24af83f55882841c49d199db81d7e0632032db8be9a16",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T04:38:01.964Z",
-        "title": "Inside the shadowy world of anti-Putin sabotage from within Russia",
-        "summary": "Two men tell of the work they say they have been doing to support Ukrainian intelligence during the war.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "EU tariffs aimed at China hitting Ukraine, steel boss says",
-      "originalSummary": "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
-      "publishedAt": "2026-10-18T23:28:45.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "7e05109cc926df4fffb0",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [
-        "公司"
-      ],
-      "eventTypes": [
-        "公司经营"
-      ],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "公司经营|eutariffsaimedat|2026-10-18",
-      "detailStatus": "professional",
-      "facts": [
-        "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "EU tariffs aimed at China hitting Ukraine, steel boss says\nThe boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 200,
-        "sha256": "79886d370d6c8915eed54f6705069744c333126c58589b157264d2b3285c840a",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "EU tariffs aimed at China hitting Ukraine, steel boss says",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-18T23:28:45.000Z",
-        "sourceHash": "79886d370d6c8915eed54f6705069744c333126c58589b157264d2b3285c840a",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T04:38:01.964Z",
-        "title": "EU tariffs aimed at China hitting Ukraine, steel boss says",
-        "summary": "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T18:43:09.367Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "EU tariffs aimed at China hitting Ukraine, steel boss says",
-      "originalSummary": "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
-      "publishedAt": "2026-10-18T23:28:45.000Z",
-      "fetchedAt": "2026-10-19T04:38:01.964Z",
-      "id": "ec6054f242cfd0d796f4",
-      "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
-      "relatedSources": [
-        {
-          "name": "BBC News · 财经",
-          "url": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-10-18T23:28:45.000Z"
-        }
-      ],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [
-        "公司"
-      ],
-      "eventTypes": [
-        "公司经营"
-      ],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "公司经营|eutariffsaimedat|2026-10-18",
-      "detailStatus": "professional",
-      "facts": [
-        "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "EU tariffs aimed at China hitting Ukraine, steel boss says\nThe boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 200,
-        "sha256": "79886d370d6c8915eed54f6705069744c333126c58589b157264d2b3285c840a",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-19T04:38:01.964Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "EU tariffs aimed at China hitting Ukraine, steel boss says",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-18T23:28:45.000Z",
-        "sourceHash": "79886d370d6c8915eed54f6705069744c333126c58589b157264d2b3285c840a",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T04:38:01.964Z",
-        "title": "EU tariffs aimed at China hitting Ukraine, steel boss says",
-        "summary": "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c60rl1xvjv89o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Don't fall for this - how to protect yourself from AI scams",
-      "originalSummary": "Trading standards officers say AI is \"super-charging\" existing scams through clones and fake websites.",
-      "publishedAt": "2026-10-18T23:24:59.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "8572eecf4be06146e020",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|dontfallforthish|2026-10-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Trading standards officers say AI is \"super-charging\" existing scams through clones and fake websites."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Don't fall for this - how to protect yourself from AI scams\nTrading standards officers say AI is \"super-charging\" existing scams through clones and fake websites.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 162,
-        "sha256": "60c48165e527727645d9f69f44d77ab352b7d955987449dfd6b14f04a08acce2",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c60rl1xvjv89o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Don't fall for this - how to protect yourself from AI scams",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c60rl1xvjv89o?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-18T23:24:59.000Z",
-        "sourceHash": "60c48165e527727645d9f69f44d77ab352b7d955987449dfd6b14f04a08acce2",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T04:38:01.964Z",
-        "title": "Don't fall for this - how to protect yourself from AI scams",
-        "summary": "Trading standards officers say AI is \"super-charging\" existing scams through clones and fake websites.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
-      "originalSummary": "The US president blocked numerous sanctions on Russia two days before they were due to take effect.",
-      "publishedAt": "2026-10-18T23:20:15.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "1eb22a7fa37fae36c46f",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|trumpsayssuspens|2026-10-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The US president blocked numerous sanctions on Russia two days before they were due to take effect."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Trump says suspension of Russia sanctions is to keep peace negotiations going\nThe US president blocked numerous sanctions on Russia two days before they were due to take effect.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 177,
-        "sha256": "773bb076a213a0cbdac00606be6f6aefaaf2a9871acd32a9fecffc4fd2e0197a",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-20T11:59:31.286Z"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-18T23:20:15.000Z",
-        "sourceHash": "773bb076a213a0cbdac00606be6f6aefaaf2a9871acd32a9fecffc4fd2e0197a",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T04:38:01.964Z",
-        "title": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
-        "summary": "The US president blocked numerous sanctions on Russia two days before they were due to take effect.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cxj0ly1m3q81o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Major fire at Canada military base leaves four dead, dozens injured",
-      "originalSummary": "Prime Minister Carney said military and emergency crews fought the flames throughout the night in \"some of the worst conditions imaginable\".",
-      "publishedAt": "2026-10-18T23:06:09.000Z",
-      "fetchedAt": "2026-10-19T04:38:01.964Z",
-      "id": "1d96a51d0b70257de924",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|majorfireatcanad|2026-10-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Prime Minister Carney said military and emergency crews fought the flames throughout the night in \"some of the worst conditions imaginable\"."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Major fire at Canada military base leaves four dead, dozens injured\nPrime Minister Carney said military and emergency crews fought the flames throughout the night in \"some of the worst conditions imaginable\".",
-        "reader": "publisher-feed-summary",
-        "characterCount": 208,
-        "sha256": "6a51ae6cbddfed3c1b95113c8aaa3f8a2934ba724bf2decce8c0cb24f9600325",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cxj0ly1m3q81o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-19T04:38:01.964Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Major fire at Canada military base leaves four dead, dozens injured",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cxj0ly1m3q81o?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-18T23:06:09.000Z",
-        "sourceHash": "6a51ae6cbddfed3c1b95113c8aaa3f8a2934ba724bf2decce8c0cb24f9600325",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T04:38:01.964Z",
-        "title": "Major fire at Canada military base leaves four dead, dozens injured",
-        "summary": "Prime Minister Carney said military and emergency crews fought the flames throughout the night in \"some of the worst conditions imaginable\".",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
-      "originalLanguage": "en",
-      "originalTitle": "India’s Finance Minister blames easy exits and excess liquidity for equity market's underperformance",
-      "originalSummary": "India's finance minister said that continued capital outflows are one of the biggest risks for the country in 2027.",
-      "publishedAt": "2026-10-18T23:00:01.000Z",
-      "fetchedAt": "2026-10-19T04:38:01.964Z",
-      "id": "5b7be1bd496727ae9fbb",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|indiasfinancemin|2026-10-18",
-      "detailStatus": "brief",
-      "facts": [
-        "India's finance minister said that continued capital outflows are one of the biggest risks for the country in 2027."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "India’s Finance Minister blames easy exits and excess liquidity for equity market's underperformance\nIndia's finance minister said that continued capital outflows are one of the biggest risks for the country in 2027.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 216,
-        "sha256": "8136ee79ba2cfc019a9b94cb602d246328ddaa0e7edd9f56eb77fc19bfd8ee16",
-        "sourceUrl": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
-        "checkedAt": "2026-10-19T04:38:01.964Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "invalidationReason": "superseded-source-version",
-      "supersededBy": "f1936223108626a9ba80",
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/investingclub/2026/10/18/jim-cramer-why-i-am-taking-the-other-side-of-the-trade-that-crushed-the-market-friday.html",
-      "originalLanguage": "en",
-      "originalTitle": "Why I am taking the other side of the trade that crushed the market Friday",
-      "originalSummary": "How did this happen so quickly? Where were the buyers? I have some answers.",
-      "publishedAt": "2026-10-18T22:23:08.000Z",
-      "fetchedAt": "2026-10-19T04:38:01.964Z",
-      "id": "d59f20be70b34f538843",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|whyiamtakingtheo|2026-10-18",
-      "detailStatus": "brief",
-      "facts": [
-        "How did this happen so quickly? Where were the buyers? I have some answers."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c9dr8kem27zeo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "'Very upsetting': Residents in shock after historic French town hall set alight",
-      "originalSummary": "A historic town hall in the French city of Limoges has been damaged in an apparent arson attack following a day of nationwide protests",
-      "publishedAt": "2026-10-18T22:22:51.000Z",
-      "fetchedAt": "2026-10-19T04:38:01.964Z",
-      "id": "e0ef5b8544f971c78b3a",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|veryupsettingres|2026-10-18",
-      "detailStatus": "brief",
-      "facts": [
-        "A historic town hall in the French city of Limoges has been damaged in an apparent arson attack following a day of nationwide protests"
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "'Very upsetting': Residents in shock after historic French town hall set alight\nA historic town hall in the French city of Limoges has been damaged in an apparent arson attack following a day of nationwide protests",
-        "reader": "publisher-feed-summary",
-        "characterCount": 214,
-        "sha256": "7245bbca48306998579710131f1c76ef17a549664dde590e8727b83ce68fb96a",
-        "sourceUrl": "https://www.bbc.co.uk/news/videos/c9dr8kem27zeo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-19T04:38:01.964Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "'Very upsetting': Residents in shock after historic French town hall set alight",
-        "sourceUrl": "https://www.bbc.co.uk/news/videos/c9dr8kem27zeo?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-18T22:22:51.000Z",
-        "sourceHash": "7245bbca48306998579710131f1c76ef17a549664dde590e8727b83ce68fb96a",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T04:38:01.964Z",
-        "title": "'Very upsetting': Residents in shock after historic French town hall set alight",
-        "summary": "A historic town hall in the French city of Limoges has been damaged in an apparent arson attack following a day of nationwide protests",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c84g166kz003o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Inside Chicago's battle against the synthetic drugs flooding the US",
-      "originalSummary": "The BBC's Quentin Sommerville reports from Chicago, where communities are battling a new wave of synthetic drugs.",
-      "publishedAt": "2026-10-18T21:00:22.000Z",
-      "fetchedAt": "2026-10-19T18:43:09.367Z",
-      "id": "6c060bbd78d32063c567",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|insidechicagosba|2026-10-18",
-      "detailStatus": "brief",
-      "facts": [
-        "The BBC's Quentin Sommerville reports from Chicago, where communities are battling a new wave of synthetic drugs."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Inside Chicago's battle against the synthetic drugs flooding the US\nThe BBC's Quentin Sommerville reports from Chicago, where communities are battling a new wave of synthetic drugs.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 181,
-        "sha256": "c56ecca04818c75425c1a800b70cdc7a58294854219e0f9a15c4f3414efc6e55",
-        "sourceUrl": "https://www.bbc.co.uk/news/videos/c84g166kz003o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-19T18:43:09.367Z"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Inside Chicago's battle against the synthetic drugs flooding the US",
-        "sourceUrl": "https://www.bbc.co.uk/news/videos/c84g166kz003o?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-18T21:00:22.000Z",
-        "sourceHash": "c56ecca04818c75425c1a800b70cdc7a58294854219e0f9a15c4f3414efc6e55",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T04:38:01.964Z",
-        "title": "Inside Chicago's battle against the synthetic drugs flooding the US",
-        "summary": "The BBC's Quentin Sommerville reports from Chicago, where communities are battling a new wave of synthetic drugs.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw240zl08dm5o?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Macron calls for 'calm and order' after riots across France",
-      "originalSummary": "French President Emmanuel Macron gives a national address after widespread disorder and as some looting continued in Paris.",
-      "publishedAt": "2026-10-18T20:33:21.000Z",
-      "fetchedAt": "2026-10-19T04:38:01.964Z",
-      "id": "f48ee955bf4c2eddedf8",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|macroncallsforca|2026-10-18",
-      "detailStatus": "brief",
-      "facts": [
-        "French President Emmanuel Macron gives a national address after widespread disorder and as some looting continued in Paris."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Macron calls for 'calm and order' after riots across France\nFrench President Emmanuel Macron gives a national address after widespread disorder and as some looting continued in Paris.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 183,
-        "sha256": "0de1dc66e1484fea0d7e4e80686fea2b579a69882c3baba19b78e0d7f431ae54",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cw240zl08dm5o?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-19T04:38:01.964Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Macron calls for 'calm and order' after riots across France",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cw240zl08dm5o?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-18T20:33:21.000Z",
-        "sourceHash": "0de1dc66e1484fea0d7e4e80686fea2b579a69882c3baba19b78e0d7f431ae54",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T04:38:01.964Z",
-        "title": "Macron calls for 'calm and order' after riots across France",
-        "summary": "French President Emmanuel Macron gives a national address after widespread disorder and as some looting continued in Paris.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "bbc-world",
-      "sourceName": "BBC News · 世界",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwzrd6123jyyo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Cindy Crawford 'beyond heartbroken' after death of son Presley at 27",
-      "originalSummary": "Presley Gerber's death in September is being investigated as a suspected overdose.",
-      "publishedAt": "2026-10-18T19:53:27.000Z",
-      "fetchedAt": "2026-10-19T04:38:01.964Z",
-      "id": "a7d47f3581cb186bd89d",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|cindycrawfordbey|2026-10-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Presley Gerber's death in September is being investigated as a suspected overdose."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Cindy Crawford 'beyond heartbroken' after death of son Presley at 27\nPresley Gerber's death in September is being investigated as a suspected overdose.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 151,
-        "sha256": "5a50a220681e1ff75dbdba83dab51341003a47d89331b0f34aa5d34376ae18e7",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cwzrd6123jyyo?at_medium=RSS&at_campaign=rss",
-        "checkedAt": "2026-10-19T04:38:01.964Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "factualSummary": {
-        "language": "en",
-        "originalTitle": "Cindy Crawford 'beyond heartbroken' after death of son Presley at 27",
-        "sourceUrl": "https://www.bbc.co.uk/news/articles/cwzrd6123jyyo?at_medium=RSS&at_campaign=rss",
-        "publishedAt": "2026-10-18T19:53:27.000Z",
-        "sourceHash": "5a50a220681e1ff75dbdba83dab51341003a47d89331b0f34aa5d34376ae18e7",
-        "evidenceScope": "summary",
-        "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-19T04:38:01.964Z",
-        "title": "Cindy Crawford 'beyond heartbroken' after death of son Presley at 27",
-        "summary": "Presley Gerber's death in September is being investigated as a suspected overdose.",
-        "origin": "publisher-en",
-        "evidence": []
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "cnbc-markets",
-      "sourceName": "CNBC",
-      "sourceTier": "verified",
-      "sourceUrl": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/18/bessent-zelenskyy-starlink-ukarine-war.html",
-      "originalLanguage": "en",
-      "originalTitle": "Bessent warns Zelenskyy to 'be very careful' about claims U.S. is throttling Starlink",
-      "originalSummary": "Starlink, high-speed satellite internet provided by Elon Musk's SpaceX, is critical to Ukraine's defense.",
-      "publishedAt": "2026-10-18T19:37:28.000Z",
-      "fetchedAt": "2026-10-20T04:47:43.770Z",
-      "id": "6e3c67c2ccbd2d05fa9c",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|bessentwarnszele|2026-10-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Starlink, high-speed satellite internet provided by Elon Musk's SpaceX, is critical to Ukraine's defense."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "article": {
-        "status": "summary",
-        "text": "Bessent warns Zelenskyy to 'be very careful' about claims U.S. is throttling Starlink\nStarlink, high-speed satellite internet provided by Elon Musk's SpaceX, is critical to Ukraine's defense.",
-        "reader": "publisher-feed-summary",
-        "characterCount": 191,
-        "sha256": "279ec68f9f3d97fdc2166572f5f4840afd91d48fa084e175fb77173057986afd",
-        "sourceUrl": "https://www.cnbc.com/2026/10/18/bessent-zelenskyy-starlink-ukarine-war.html",
-        "checkedAt": "2026-10-20T04:47:43.770Z"
-      },
-      "queue": {
-        "firstSeenAt": "2026-10-18T15:50:55.613Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "summary-diagnostics-v1"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
-    },
-    {
-      "sourceId": "bbc-business",
-      "sourceName": "BBC News · 财经",
-      "sourceTier": "verified",
-      "sourceUrl": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9m26kl5y7epo?at_medium=RSS&at_campaign=rss",
-      "originalLanguage": "en",
-      "originalTitle": "Microsoft pulls out of UK's largest AI data centre",
-      "originalSummary": "Tech firm Nscale says it is still committed to building the site in Essex.",
-      "publishedAt": "2026-10-18T16:46:42.000Z",
-      "fetchedAt": "2026-10-20T11:59:31.286Z",
-      "id": "f8a0aeb282d6c29b07ec",
-      "verificationStatus": "verified",
-      "translationStatus": "unavailable",
-      "relatedSources": [],
-      "keyTerms": [],
-      "causalSignals": [],
-      "analysisLevels": [
-        "行业"
-      ],
-      "eventTypes": [],
-      "impactChannels": [],
-      "regions": [
-        "全球"
-      ],
-      "importanceScore": 55,
-      "continuingImpactScore": 40,
-      "clusterId": "undefined|microsoftpullsou|2026-10-18",
-      "detailStatus": "brief",
-      "facts": [
-        "Tech firm Nscale says it is still committed to building the site in Essex."
-      ],
-      "expectations": [],
-      "inferences": [],
-      "queue": {
-        "firstSeenAt": "2026-10-19T04:38:01.964Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
-      },
-      "chineseSummary": {
-        "status": "pending"
-      }
     }
   ],
   "sourceHealth": [
@@ -11846,57 +11072,80 @@
       "itemCount": 19
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 33
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "54e48ce82700a1155020",
+      "selectedPublishedAt": "2026-10-20T11:45:30.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 22,
-      "originalSummaries": 22,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "impact-assessment": 1,
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 78,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 78,
-      "successRate": null
+      "skipped": 76,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 103,
-      "attempted": 0,
+      "eligible": 76,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 103,
-      "successRate": null
+      "skipped": 74,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
