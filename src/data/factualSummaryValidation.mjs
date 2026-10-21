@@ -3,6 +3,7 @@ export function isSourceAllowed(record,policies,now=new Date().toISOString()){
   const p=policies.find(p=>p.id===record.sourceId),url=new URL(record.canonicalUrl),time=Date.parse(now);
   return !!p&&p.tier===record.sourceTier&&Number.isFinite(time)&&time>=Date.parse(p.verifiedAt)&&time<=Date.parse(p.expiresAt)
    &&url.protocol==='https:'&&!url.username&&!url.password&&!url.port&&p.allowedHosts.includes(url.hostname)
+   &&(!p.requiredQuery||Object.entries(p.requiredQuery).every(([key,pattern])=>url.searchParams.getAll(key).length===1&&new RegExp(pattern).test(url.searchParams.get(key)??'')))
    &&p.allowedPathPatterns.some(pattern=>new RegExp(pattern).test(url.pathname));
  }catch{return false;}
 }

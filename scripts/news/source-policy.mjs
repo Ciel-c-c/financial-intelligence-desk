@@ -4,6 +4,13 @@ import {pathToFileURL} from 'node:url';
 import {newsSources,validateRegisteredSource} from './source-registry.mjs';
 export {isSourceAllowed} from '../../src/data/factualSummaryValidation.mjs';
 const paths={
+ 'nbs-cn':['^/sj/zxfb/[0-9]{6}/t[0-9]{8}_[0-9]+\\.html$'],
+ fed:['^/newsevents/pressreleases/(?:monetary|enforcement|bcreg|other|orders)[0-9]{8}[a-z]\\.htm$'],
+ // Signed speeches/interviews and working papers are excluded by ECB copyright conditions.
+ ecb:['^/press/pr/date/[0-9]{4}/html/ecb\\.[a-z0-9~_-]+\\.en\\.html$'],
+ bea:['^/news/[0-9]{4}/[a-z0-9-]+$'],
+ sec:['^/newsroom/press-releases/[0-9]{4}-[a-z0-9-]+$'],
+ eurostat:['^/eurostat/product$'],
  'un-zh':['^/(?:feed/view/)?zh/story/[0-9]{4}/[0-9]{2}/[0-9]+/?$'],
  un:['^/(?:feed/view/)?en/story/[0-9]{4}/[0-9]{2}/[0-9]+/?$'],
  'cnbc-markets':['^/[0-9]{4}/[0-9]{2}/[0-9]{2}/[^/]+\\.html$'],
@@ -11,7 +18,7 @@ const paths={
  cnfin:['^/yw-lb/detail/[0-9]{8}/[0-9]+_1\\.html$'],
  'bbc-world':['^/news/(?:articles|videos)/[a-z0-9]+/?$','^/news/[a-z-]+-[0-9]+/?$'],
  'bbc-business':['^/news/(?:articles|videos)/[a-z0-9]+/?$','^/news/[a-z-]+-[0-9]+/?$'],
- 'bis-press':['^/press/p[0-9]+(?:[a-z])?\\.htm$'],
+ 'bis-press':['^/press/p[0-9]+(?:[a-z])?\\.htm$','^/media-releases/[0-9]{8}-[a-z0-9-]+$'],
  'eia-energy':['^/todayinenergy/detail\\.php$'],
 };
 const modes={
@@ -23,7 +30,7 @@ const modes={
 };
 export function buildSourcePolicies(sources,now){
  return sources.filter(source=>validateRegisteredSource(source,now)&&modes[source.usagePolicy]&&paths[source.id]).map(source=>({
-  id:source.id,tier:source.tier,allowedHosts:[...new Set(source.publisherDomains.flatMap(host=>host.startsWith('www.')?[host,host.slice(4)]:[host,`www.${host}`]))].sort(),
+  id:source.id,tier:source.tier,...(source.id==='eurostat'?{requiredQuery:{code:'^[0-9]-[0-9]{8}-(?:ap|bp|cp)$'}}:{}),allowedHosts:[...new Set(source.publisherDomains.flatMap(host=>host.startsWith('www.')?[host,host.slice(4)]:[host,`www.${host}`]))].sort(),
   allowedPathPatterns:paths[source.id],summaryMode:modes[source.usagePolicy],verifiedAt:`${source.verifiedAt}T00:00:00.000Z`,expiresAt:new Date(Date.parse(`${source.verifiedAt}T00:00:00Z`)+90*86400_000).toISOString(),
  }));
 }

@@ -1,3 +1,5 @@
+import {NewsArticle} from '../../src/components/NewsArticle';
+import {reviewedItem} from '../fixtures/reviewedFeed';
 import {render,screen} from '@testing-library/react';
 import {MemoryRouter} from 'react-router-dom';
 import {expect,it,vi} from 'vitest';
@@ -35,4 +37,11 @@ it('uses an explicit not-attempted state for zero-denominator metrics',()=>{
  render(<NewsFeedStatus snapshot={{...newsFeedSeed,runMetrics:{fetch:{...stage,attempted:1,succeeded:1,successRate:1},translation:stage,analysis:stage}}}/>);
  expect(screen.getByText(/中文整理：未尝试/)).toBeInTheDocument();
  expect(screen.getByText(/深度分析：未尝试/)).toBeInTheDocument();
+});
+
+it('keeps Eurostat attribution on the analysis detail and embedded article',()=>{
+ const item={...reviewedItem.editorial!.item,sourceUrl:'https://ec.europa.eu/eurostat/product?code=4-20102026-ap'};
+ render(<MemoryRouter><NewsArticle item={item} language="en" evidenceScope="summary"/></MemoryRouter>);
+ expect(screen.getByRole('link',{name:'Eurostat · CC BY 4.0'})).toHaveAttribute('href','https://creativecommons.org/licenses/by/4.0/');
+ expect(screen.getByText(/Eurostat 不对整理内容负责/)).toBeInTheDocument();
 });

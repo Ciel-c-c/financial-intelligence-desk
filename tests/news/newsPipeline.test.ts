@@ -5,7 +5,7 @@ import { afterEach, describe, expect, it } from 'vitest';
 import { buildNewsSnapshot, updateNewsFeed } from '../../scripts/news/update-news-feed.mjs';
 
 const folders:string[]=[]; afterEach(async()=>Promise.all(folders.splice(0).map(path=>rm(path,{recursive:true,force:true}))));
-const raw={sourceId:'nbs-cn',sourceName:'国家统计局',sourceTier:'official',sourceUrl:'https://www.stats.gov.cn/sj/zxfb/rss.xml',canonicalUrl:'https://www.stats.gov.cn/a',originalLanguage:'zh',originalTitle:'居民消费价格同比上涨',originalSummary:'CPI 上涨，市场关注通胀和利率。',publishedAt:'2026-09-14T10:00:00Z',fetchedAt:'2026-09-14T10:17:00Z'};
+const raw={sourceId:'nbs-cn',sourceName:'国家统计局',sourceTier:'official',sourceUrl:'https://www.stats.gov.cn/sj/zxfb/rss.xml',canonicalUrl:'https://www.stats.gov.cn/sj/zxfb/202609/t20260914_1961000.html',originalLanguage:'zh',originalTitle:'居民消费价格同比上涨',originalSummary:'CPI 上涨，市场关注通胀和利率。',publishedAt:'2026-09-14T10:00:00Z',fetchedAt:'2026-09-14T10:17:00Z'};
 
 describe('news snapshot pipeline',()=>{
   it('builds a valid three-edition snapshot with source health',async()=>{

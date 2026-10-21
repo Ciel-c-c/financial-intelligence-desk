@@ -9,7 +9,8 @@ export function parseNewsFeed(xml, source, fetchedAt) {
     const originalTitle = decode(field(block,['title']));
     const rawUrl = decode(field(block,['link','guid'])) || atomLink(block);
     const rawDate = decode(field(block,['pubDate','published','updated','dc:date']));
-    const published = Date.parse(rawDate);
+    const dated=source.dateOffset&&/^\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}:\d{2}$/.test(rawDate)?rawDate.replace(' ','T')+source.dateOffset:rawDate;
+    const published = Date.parse(dated);
     if (!originalTitle || !rawUrl || !Number.isFinite(published) || !allowed(rawUrl, source.publisherDomains)) return undefined;
     const parsedUrl=new URL(rawUrl); if(parsedUrl.protocol==='http:') parsedUrl.protocol='https:'; parsedUrl.pathname=parsedUrl.pathname.replace(/\/{2,}/g,'/'); const canonicalUrl=parsedUrl.toString();
     const summary = decode(field(block,['description','summary','content']));

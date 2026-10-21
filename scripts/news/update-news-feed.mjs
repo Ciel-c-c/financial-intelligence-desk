@@ -23,7 +23,7 @@ import {EDITORIAL_REVIEW_VERSION} from './editorial-audit.mjs';
 
 const defaultPath=resolve('public/data/news-feed.json');
 export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOptions={},reviewedNews=[],reviewDiagnostics,onNewsReady,publishedInput=false,evidenceHealth}={}){
-  const healthy=sourceResults.filter(result=>result.ok); const sourceHealth=publishedInput?(previous?.sourceHealth??[]).filter(h=>newsSources.some(s=>s.id===h.id)):sourceResults.map(result=>({id:result.id,name:result.name,status:result.ok?'ok':'error',itemCount:result.items.length,...(result.error?{error:result.error}:{})}));
+  const healthy=sourceResults.filter(result=>result.ok); const sourceHealth=publishedInput?(previous?.sourceHealth??[]).filter(h=>newsSources.some(s=>s.id===h.id)):sourceResults.map(result=>({id:result.id,name:result.name,status:result.ok?'ok':'error',itemCount:result.items.length,...(result.fetchedItemCount!==undefined?{fetchedItemCount:result.fetchedItemCount}:{}),...(result.parsedItemCount!==undefined?{parsedItemCount:result.parsedItemCount}:{}),...(result.error?{error:result.error}:{})}));
   if(evidenceHealth)sourceHealth.push(evidenceHealth);
   const rate=(ok,total)=>total?ok/total:null;
   const fetchMetrics={attempted:sourceResults.length,succeeded:healthy.length,failed:sourceResults.length-healthy.length,successRate:rate(healthy.length,sourceResults.length)};
@@ -47,8 +47,9 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
    return evidence?.sha256===record.article.sha256&&current.originalTitle===record.originalTitle&&current.publishedAt===record.publishedAt;
   });
   const normalized=healthy.flatMap(result=>result.items).filter(raw=>!reviewedNews.some(item=>item.canonicalUrl===raw.canonicalUrl)).map(normalizeNewsItem).map(classifyNewsItem).map(prepareNewsEvidence);
-  const clustered=clusterNewsItems(normalized),state={attempted:0,generated:0,rejected:0,failures:0,requests:0,limit:12,stopped:false};
-  const working=[...reviewedNews],policies=buildSourcePolicies(newsSources,now);
+  const policies=buildSourcePolicies(newsSources,now);
+  const clustered=clusterNewsItems(normalized.filter(record=>isSourceAllowed(record,policies,now))),state={attempted:0,generated:0,rejected:0,failures:0,requests:0,limit:12,stopped:false};
+  const working=[...reviewedNews];
   const previousAttempt=record=>prior.find(old=>old.canonicalUrl===record.canonicalUrl&&old.analysisAttempt?.sourceBodyHash===record.article?.sha256)?.analysisAttempt;
   const sourceCounts=new Map(),rounds=new Map(),sourceLastAttempt=new Map();
   const sourceFamily=record=>(record.sourceName??record.sourceId).split('·')[0].trim();
@@ -68,7 +69,10 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
    working.push(record);
   }
   const current=record=>{const age=Date.parse(now)-Date.parse(record.publishedAt);return age>=0&&age<=86400_000;};
-  const historical=reconcileHistory(prior,working);
+  const historical=reconcileHistory(prior,[...reviewedNews,...normalized]).map(record=>{
+   const primary=working.find(item=>item.relatedSources?.some(source=>source.url===record.canonicalUrl));
+   return primary&&record.invalidationReason==='superseded-source-version'?{...record,supersededBy:primary.id}:record;
+  });
   for(const record of historical)if(!working.some(r=>r.id===record.id))working.push(record);
   for(let i=0;i<working.length;i++){
    let record=reconcileReview(working[i],prior,now);
@@ -99,10 +103,10 @@ export async function buildNewsSnapshot({now,sourceResults,previous,enrichmentOp
    else working[index]=result;
   };
   const migrationCandidates=()=>working.map((record,index)=>({record,index})).filter(({record})=>needsReview(record)&&record.article?.text&&(record.analysisAttempt?.reviewVersion!==EDITORIAL_REVIEW_VERSION||(record.analysisAttempt?.count??0)<3)).sort((a,b)=>Date.parse(a.record.reviewMigration?.lastAttemptAt??'1970-01-01')-Date.parse(b.record.reviewMigration?.lastAttemptAt??'1970-01-01'));
-  const eligibleDeep=()=>working.map((record,index)=>({record,index})).filter(({record})=>!record.invalidationReason&&current(record)&&!record.editorial&&record.article?.text&&(record.analysisAttempt?.count??0)<3);
+  const eligibleDeep=()=>working.map((record,index)=>({record,index})).filter(({record})=>!record.invalidationReason&&current(record)&&!record.editorial&&record.article?.text&&(record.analysisAttempt?.count??0)<3).sort((a,b)=>economicNewsPriority(b.record)-economicNewsPriority(a.record)||Date.parse(b.record.publishedAt)-Date.parse(a.record.publishedAt));
   const summaryLimit=Number(enrichmentOptions.maxSummaries)===0?0:Number(enrichmentOptions.maxSummaries)===1?1:2;
   const preferChinese=enrichmentOptions.preferChineseSummaries!==false;
-  const summaryEligible=working.map((record,index)=>({record,index})).filter(({record})=>!record.invalidationReason&&needsFactualSummary(record,{preferChinese})&&(!record.editorial||needsReview(record)||preferChinese&&record.originalLanguage==='en')&&current(record)&&isSourceAllowed(record,policies,now)&&record.article?.text&&(record.queue?.summaryAttempt??0)<3).sort((a,b)=>Number(needsReview(b.record))-Number(needsReview(a.record)));
+  const summaryEligible=working.map((record,index)=>({record,index})).filter(({record})=>!record.invalidationReason&&needsFactualSummary(record,{preferChinese})&&(!record.editorial||needsReview(record)||preferChinese&&record.originalLanguage==='en')&&current(record)&&isSourceAllowed(record,policies,now)&&record.article?.text&&(record.queue?.summaryAttempt??0)<3).sort((a,b)=>economicNewsPriority(b.record)-economicNewsPriority(a.record)||Number(needsReview(b.record))-Number(needsReview(a.record))||Date.parse(b.record.publishedAt)-Date.parse(a.record.publishedAt));
   const firstEnglish=summaryEligible.find(({record})=>record.originalLanguage==='en');
   const firstChinese=summaryEligible.find(({record})=>record.originalLanguage==='zh');
   const summaryOrder=[...new Set([firstEnglish?.index,...summaryEligible.filter(({record})=>record.originalLanguage==='en').map(({index})=>index),firstChinese?.index,...summaryEligible.map(({index})=>index)].filter(index=>index!==undefined))];

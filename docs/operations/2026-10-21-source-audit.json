@@ -1,0 +1,315 @@
+{
+  "checkedAt": "2026-10-21T06:46:14.861Z",
+  "baselineSnapshotAt": "2026-10-21T04:43:56.154Z",
+  "after": {
+    "latest": 136,
+    "visible": 66,
+    "phase": "source",
+    "metrics": {
+      "fetch": {
+        "attempted": 16,
+        "succeeded": 14,
+        "failed": 2,
+        "successRate": 0.875
+      },
+      "translation": {
+        "eligible": 82,
+        "attempted": 0,
+        "succeeded": 0,
+        "failed": 0,
+        "rejected": 0,
+        "skipped": 82,
+        "successRate": null
+      },
+      "analysis": {
+        "eligible": 89,
+        "attempted": 0,
+        "succeeded": 0,
+        "rejected": 0,
+        "failed": 0,
+        "skipped": 89,
+        "successRate": null
+      }
+    }
+  },
+  "beforeTop8": [
+    {
+      "id": "cb1d7bca12e1721078d8",
+      "source": "BBC News · 财经"
+    },
+    {
+      "id": "7943fd3cb8bf09d05bc0",
+      "source": "BBC News · 财经"
+    },
+    {
+      "id": "349568ed85e5ccb7dd1a",
+      "source": "BBC News · 世界"
+    },
+    {
+      "id": "e11f74d8b698189c4601",
+      "source": "新华财经"
+    },
+    {
+      "id": "337bc2df0508ee8c7292",
+      "source": "BBC News · 世界"
+    },
+    {
+      "id": "40b2a4bc401a5afc245d",
+      "source": "新华财经"
+    },
+    {
+      "id": "632d7ce94f6f99a0f45b",
+      "source": "新华财经"
+    },
+    {
+      "id": "ad03a7d72671f78d493b",
+      "source": "BBC News · 世界"
+    }
+  ],
+  "afterTop8": [
+    {
+      "id": "cb1d7bca12e1721078d8",
+      "source": "BBC News · 财经"
+    },
+    {
+      "id": "2b39ed5aef9899832377",
+      "source": "新华财经"
+    },
+    {
+      "id": "3f8450957bc4feffc5c4",
+      "source": "BBC News · 世界"
+    },
+    {
+      "id": "2db3763c2914dc9a77ed",
+      "source": "新华财经"
+    },
+    {
+      "id": "ff8bc348f1dec7a38cdf",
+      "source": "U.S. Securities and Exchange Commission"
+    },
+    {
+      "id": "03bca584594a9cbaac40",
+      "source": "CNBC"
+    },
+    {
+      "id": "d7dba36ffb9abcd4c28c",
+      "source": "UN News"
+    },
+    {
+      "id": "b15b852d0ac3d154a448",
+      "source": "Eurostat"
+    }
+  ],
+  "rows": [
+    {
+      "id": "bea",
+      "name": "U.S. Bureau of Economic Analysis",
+      "fetched": 48,
+      "parsed": 47,
+      "ingested": 47,
+      "sourceApproved": 42,
+      "latestFromFetch": 0,
+      "visibleFromFetch": 0,
+      "latest": 0,
+      "visible": 0,
+      "clustered": 47
+    },
+    {
+      "id": "sec",
+      "name": "U.S. Securities and Exchange Commission",
+      "fetched": 25,
+      "parsed": 25,
+      "ingested": 25,
+      "sourceApproved": 25,
+      "latestFromFetch": 2,
+      "visibleFromFetch": 2,
+      "latest": 2,
+      "visible": 2,
+      "clustered": 25
+    },
+    {
+      "id": "eurostat",
+      "name": "Eurostat",
+      "fetched": 11,
+      "parsed": 11,
+      "ingested": 11,
+      "sourceApproved": 11,
+      "latestFromFetch": 1,
+      "visibleFromFetch": 1,
+      "latest": 1,
+      "visible": 1,
+      "clustered": 11
+    },
+    {
+      "id": "un-zh",
+      "name": "UN News",
+      "fetched": 30,
+      "parsed": 30,
+      "ingested": 30,
+      "sourceApproved": 30,
+      "latestFromFetch": 2,
+      "visibleFromFetch": 1,
+      "latest": 2,
+      "visible": 1,
+      "clustered": 30
+    },
+    {
+      "id": "cnbc-markets",
+      "name": "CNBC",
+      "fetched": 30,
+      "parsed": 30,
+      "ingested": 30,
+      "sourceApproved": 28,
+      "latestFromFetch": 26,
+      "visibleFromFetch": 0,
+      "latest": 47,
+      "visible": 0,
+      "clustered": 30
+    },
+    {
+      "id": "cnbc-business",
+      "name": "CNBC",
+      "fetched": 30,
+      "parsed": 30,
+      "ingested": 30,
+      "sourceApproved": 30,
+      "latestFromFetch": 5,
+      "visibleFromFetch": 1,
+      "latest": 5,
+      "visible": 1,
+      "clustered": 30
+    },
+    {
+      "id": "cnfin",
+      "name": "新华财经",
+      "fetched": null,
+      "parsed": 13,
+      "ingested": 13,
+      "sourceApproved": 13,
+      "latestFromFetch": 13,
+      "visibleFromFetch": 10,
+      "latest": 30,
+      "visible": 23,
+      "clustered": 13
+    },
+    {
+      "id": "nbs-cn",
+      "name": "国家统计局",
+      "fetched": 500,
+      "parsed": 500,
+      "ingested": 50,
+      "sourceApproved": 50,
+      "latestFromFetch": 0,
+      "visibleFromFetch": 0,
+      "latest": 0,
+      "visible": 0,
+      "clustered": 50
+    },
+    {
+      "id": "fed",
+      "name": "Federal Reserve",
+      "fetched": 20,
+      "parsed": 20,
+      "ingested": 20,
+      "sourceApproved": 20,
+      "latestFromFetch": 0,
+      "visibleFromFetch": 0,
+      "latest": 0,
+      "visible": 0,
+      "clustered": 20
+    },
+    {
+      "id": "ecb",
+      "name": "European Central Bank",
+      "fetched": 15,
+      "parsed": 15,
+      "ingested": 15,
+      "sourceApproved": 1,
+      "latestFromFetch": 0,
+      "visibleFromFetch": 0,
+      "latest": 2,
+      "visible": 0,
+      "clustered": 15
+    },
+    {
+      "id": "boj",
+      "name": "Bank of Japan",
+      "fetched": 46,
+      "parsed": 46,
+      "ingested": 46,
+      "sourceApproved": 0,
+      "latestFromFetch": 0,
+      "visibleFromFetch": 0,
+      "latest": 0,
+      "visible": 0,
+      "clustered": 46
+    },
+    {
+      "id": "un",
+      "name": "UN News",
+      "fetched": 30,
+      "parsed": 30,
+      "ingested": 30,
+      "sourceApproved": 0,
+      "latestFromFetch": 0,
+      "visibleFromFetch": 0,
+      "latest": 5,
+      "visible": 0,
+      "clustered": 30
+    },
+    {
+      "id": "bbc-world",
+      "name": "BBC News · 世界",
+      "fetched": 0,
+      "parsed": 0,
+      "ingested": 0,
+      "sourceApproved": 0,
+      "latestFromFetch": 0,
+      "visibleFromFetch": 0,
+      "latest": 26,
+      "visible": 24,
+      "clustered": 0,
+      "error": "fetch failed"
+    },
+    {
+      "id": "bbc-business",
+      "name": "BBC News · 财经",
+      "fetched": 0,
+      "parsed": 0,
+      "ingested": 0,
+      "sourceApproved": 0,
+      "latestFromFetch": 0,
+      "visibleFromFetch": 0,
+      "latest": 16,
+      "visible": 14,
+      "clustered": 0,
+      "error": "fetch failed"
+    },
+    {
+      "id": "bis-press",
+      "name": "Bank for International Settlements",
+      "fetched": 10,
+      "parsed": 10,
+      "ingested": 10,
+      "sourceApproved": 10,
+      "latestFromFetch": 0,
+      "visibleFromFetch": 0,
+      "latest": 0,
+      "visible": 0,
+      "clustered": 10
+    },
+    {
+      "id": "eia-energy",
+      "name": "U.S. Energy Information Administration",
+      "fetched": 19,
+      "parsed": 19,
+      "ingested": 19,
+      "sourceApproved": 19,
+      "latestFromFetch": 0,
+      "visibleFromFetch": 0,
+      "latest": 0,
+      "visible": 0,
+      "clustered": 19
+    }
+  ]
+}
