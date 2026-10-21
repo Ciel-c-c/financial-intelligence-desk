@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-21T04:43:21.006Z",
+  "attemptedAt": "2026-10-21T04:43:56.154Z",
   "lastSuccessfulAt": "2026-10-21T04:43:21.006Z",
   "nextExpectedAt": "2026-10-21T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-21T04:43:21.006Z",
   "status": "delayed",
   "latest": [
     {
@@ -42,7 +44,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -101,21 +104,46 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Elon Musk says Tesla-SpaceX merger being considered",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-10-20T23:24:47.000Z",
         "sourceHash": "9db01323ca40f74d3199d6ee219f07fc75735361dbeaa0d1b26ce5fd1cb8379f",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-21T04:43:21.006Z",
-        "title": "Elon Musk says Tesla-SpaceX merger being considered",
-        "summary": "Musk says special committees within both companies have been formed to look at a possible mega-merger.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-10-21T04:43:56.154Z",
+        "title": "埃隆·马斯克称正在考虑特斯拉与SpaceX合并",
+        "summary": "埃隆·马斯克表示，特斯拉与SpaceX的合并正在被审议，并已在两家公司内部成立专门委员会，以研究这一潜在的巨型合并方案。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "埃隆·马斯克称特斯拉与SpaceX的合并正在被考虑。",
+            "quote": "Elon Musk says Tesla-SpaceX merger being considered"
+          },
+          {
+            "text": "他指出，两家公司已成立专门委员会，负责研究可能的巨型合并。",
+            "quote": "Musk says special committees within both companies have been formed to look at a possible mega-merger."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-21T04:43:56.154Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "9db01323ca40f74d3199d6ee219f07fc75735361dbeaa0d1b26ce5fd1cb8379f",
+        "count": 1,
+        "lastAttemptAt": "2026-10-21T04:43:21.006Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -179,7 +207,50 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-21T04:43:56.154Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Netflix posts third-quarter earnings beat, but shares fall on advertising and revenue guidance",
+        "sourceUrl": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
+        "publishedAt": "2026-10-20T22:29:45.000Z",
+        "sourceHash": "3cae0946de631f093a4164ef7174a5b30acfc926b72432dd3af2fccc04df5023",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-21T04:43:56.154Z",
+        "title": "Netflix第三季度盈利超预期 股价因广告及收入指引下跌",
+        "summary": "Netflix公布第三季度业绩超出预期，但因广告和收入指引不佳导致股价下跌。华尔街和投资者希望公司就近期组织变动后的战略提供更多细节。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Netflix公布第三季度业绩超出预期，但因广告和收入指引不佳导致股价下跌。",
+            "quote": "Netflix posts third-quarter earnings beat, but shares fall on advertising and revenue guidance"
+          },
+          {
+            "text": "华尔街和投资者希望Netflix就公司战略提供更多细节。",
+            "quote": "Wall Street and investors will be looking for Netflix to provide additional details about the company's strategy"
+          },
+          {
+            "text": "对战略细节的需求源于近期的组织变动。",
+            "quote": "additional details about the company's strategy following recent organizational changes"
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "3cae0946de631f093a4164ef7174a5b30acfc926b72432dd3af2fccc04df5023",
+        "count": 1,
+        "lastAttemptAt": "2026-10-21T04:43:21.006Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -514,7 +585,7 @@
         "reader": "cnfin-body",
         "sha256": "18df6eb3ec3510aa80fcd597eac99151d55423d6e43f6f92eebd952b5376e352",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261021/4484154_1.html",
-        "checkedAt": "2026-10-21T04:43:21.006Z"
+        "checkedAt": "2026-10-21T04:43:56.154Z"
       },
       "id": "e11f74d8b698189c4601",
       "verificationStatus": "verified",
@@ -662,7 +733,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -815,7 +887,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -865,7 +938,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -915,7 +989,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -965,7 +1040,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1107,7 +1183,7 @@
         "reader": "cnfin-body",
         "sha256": "2124543deffd13ce7bd91e8ca12a41ff35868b1f02b4cf1ba6e0c24f457824e2",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261021/4484123_1.html",
-        "checkedAt": "2026-10-21T04:43:21.006Z"
+        "checkedAt": "2026-10-21T04:43:56.154Z"
       },
       "id": "40b2a4bc401a5afc245d",
       "verificationStatus": "verified",
@@ -2061,7 +2137,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2426,7 +2503,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2484,7 +2562,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -4073,7 +4152,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -10434,57 +10514,79 @@
       "itemCount": 19
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 34
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "9b846a6dccc2503e6ed9",
+      "selectedPublishedAt": "2026-10-20T23:24:47.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 21,
-      "originalSummaries": 21,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "unsupported-attribution": 2
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 79,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 79,
-      "successRate": null
+      "skipped": 77,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 96,
-      "attempted": 0,
+      "eligible": 76,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 96,
-      "successRate": null
+      "skipped": 74,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
