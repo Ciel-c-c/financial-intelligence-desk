@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-21T17:09:55.998Z",
+  "attemptedAt": "2026-10-21T17:10:32.886Z",
   "lastSuccessfulAt": "2026-10-21T17:09:55.998Z",
   "nextExpectedAt": "2026-10-22T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-21T17:09:55.998Z",
   "status": "delayed",
   "latest": [
     {
@@ -53,7 +55,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -103,7 +106,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -153,7 +157,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -203,7 +208,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -253,7 +259,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -268,7 +275,7 @@
       "fetchedAt": "2026-10-21T17:09:55.998Z",
       "id": "3f8e0e257f6639aafe08",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "BBC News · 财经",
@@ -278,21 +285,33 @@
       ],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "货币政策",
+        "监管"
+      ],
+      "impactChannels": [
+        "供需",
+        "盈利"
+      ],
       "regions": [
         "全球"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|burnhamproposesp|2026-10-21",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "The prime minister provided little detail, and there are questions over shifting the fees onto unit costs."
+        "Burnham提出削减燃气账单的固定费用计划",
+        "首相提供的细节很少，且有人担心费用会转嫁到单位成本上"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "如果固定费用下降，燃气公司可能通过提高单价来维持收入",
+        "费用转嫁的可能性取决于监管机构对单价上调的容忍度"
+      ],
       "article": {
         "status": "summary",
         "text": "Burnham proposes plan to cut standing charges from gas bills\nThe prime minister provided little detail, and there are questions over shifting the fees onto unit costs.",
@@ -308,21 +327,265 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Burnham proposes plan to cut standing charges from gas bills",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cw0541p65dyzo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-10-21T17:06:16.000Z",
         "sourceHash": "6ccbe5abfd0678f5b4775a95a98197f99dd002c8bfc588dbe0d49cecd9b4a276",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-21T17:09:55.998Z",
-        "title": "Burnham proposes plan to cut standing charges from gas bills",
-        "summary": "The prime minister provided little detail, and there are questions over shifting the fees onto unit costs.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-10-21T17:10:32.886Z",
+        "title": "Burnham 提议削减燃气账单的固定费用",
+        "summary": "Burnham 提出一项计划，旨在降低燃气账单中的固定费用。然而，首相对该计划细节披露甚少，外界担心此举可能会把费用转嫁到单位价格上。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Burnham 提出削减燃气账单固定费用的计划。",
+            "quote": "Burnham proposes plan to cut standing charges from gas bills"
+          },
+          {
+            "text": "首相未提供该计划的详细信息，且有人担心费用会转移到单位成本上。",
+            "quote": "The prime minister provided little detail, and there are questions over shifting the fees onto unit costs."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-21T17:10:32.886Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "6ccbe5abfd0678f5b4775a95a98197f99dd002c8bfc588dbe0d49cecd9b4a276",
+        "count": 1,
+        "lastAttemptAt": "2026-10-21T17:09:55.998Z"
+      },
+      "titleZh": "Burnham提出削减燃气账单固定费用的计划",
+      "summaryZh": "英国首相Burnham提出削减燃气账单的固定费用，但细节不足，外界担心费用可能转嫁到单位成本上。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "Burnham提出削减燃气账单的固定费用计划",
+              "evidence": "Burnham proposes plan to cut standing charges from gas bills"
+            },
+            {
+              "text": "首相提供的细节很少，且有人担心费用会转嫁到单位成本上",
+              "evidence": "The prime minister provided little detail, and there are questions over shifting the fees onto unit costs."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "英国",
+            "triggerEvidence": "Burnham proposes plan to cut standing charges from gas bills",
+            "path": [
+              "政策提出",
+              "费用结构变化",
+              "公司盈利预期",
+              "股价波动"
+            ],
+            "invalidation": "若公司通过成本削减或其他收入来源抵消影响，股价波动可能减弱"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "英国",
+            "triggerEvidence": "Burnham proposes plan to cut standing charges from gas bills",
+            "path": [
+              "固定费用削减",
+              "单价可能上调",
+              "实际燃气支出变化"
+            ],
+            "invalidation": "若监管限制单价上调，实际支出下降的可能性增加"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "英国燃气公司股票",
+            "direction": "分化",
+            "reason": "政策细节不明导致盈利预期不确定",
+            "condition": "监管对单价上调的容忍度未明",
+            "invalidation": "若监管明确限制单价上调，股价可能趋向上行",
+            "timeframe": "短期至中期"
+          }
+        ],
+        "sourceBodyHash": "6ccbe5abfd0678f5b4775a95a98197f99dd002c8bfc588dbe0d49cecd9b4a276",
+        "originalTitle": "Burnham proposes plan to cut standing charges from gas bills",
+        "reviewedAt": "2026-10-21T17:09:55.998Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "3f8e0e257f6639aafe08",
+          "title": "Burnham提出削减燃气账单固定费用的计划",
+          "summary": "英国首相Burnham提出削减燃气账单的固定费用，但细节不足，外界担心费用可能转嫁到单位成本上。",
+          "excerpt": "Burnham提出削减燃气账单的固定费用计划。首相提供的细节很少，且有人担心费用会转嫁到单位成本上。",
+          "sourceName": "BBC News · 财经",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cw0541p65dyzo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-21T17:06:16.000Z",
+          "region": "全球",
+          "topic": "能源费用政策",
+          "termIds": [],
+          "facts": [
+            "Burnham提出削减燃气账单的固定费用计划",
+            "首相提供的细节很少，且有人担心费用会转嫁到单位成本上"
+          ],
+          "consensus": [
+            "暂无明确共识"
+          ],
+          "inference": [
+            "如果固定费用下降，燃气公司可能通过提高单价来维持收入",
+            "费用转嫁的可能性取决于监管机构对单价上调的容忍度"
+          ],
+          "risks": [
+            "政策细节缺失导致实施难度增大",
+            "费用转嫁可能抵消消费者账单的下降",
+            "政治反对或监管阻碍计划执行"
+          ],
+          "causalChain": [
+            {
+              "title": "提出削减固定费用",
+              "explanation": "Burnham宣布计划降低燃气账单中的固定费用部分",
+              "condition": "政策正式发布并获批准"
+            },
+            {
+              "title": "固定费用下降",
+              "explanation": "用户每月需支付的固定费用金额减少",
+              "condition": "实施细则明确且执行到位"
+            },
+            {
+              "title": "单价可能上调",
+              "explanation": "燃气供应商为弥补收入缺口，可能提高每单位燃气的单价",
+              "condition": "监管未限制单价上调幅度"
+            },
+            {
+              "title": "总体账单变化不确定",
+              "explanation": "固定费用下降与单价上调的相互抵消决定最终账单水平",
+              "condition": "两者幅度的实际数值"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "把房租的固定租金降下来，但房东把水电费调高",
+            "explanation": "类似于租客看到租金下降，却发现水电费上涨，最终支出可能并未减少。此类类比说明费用结构变化可能被其他费用抵消，但不同点在于燃气费用受监管约束，调价空间有限。"
+          },
+          "why": {
+            "cause": "固定费用的削减",
+            "mechanisms": [
+              "直接降低用户每月固定支出",
+              "激励供应商通过单价上调弥补收入",
+              "监管政策决定单价上调的上限"
+            ],
+            "result": "用户实际燃气账单的净变化取决于固定费用下降与单价上调的相对幅度"
+          },
+          "focus": [
+            "消费者支出",
+            "能源公司收入",
+            "监管政策执行"
+          ],
+          "marketBet": [
+            "若监管限制单价上调，消费者账单可能整体下降",
+            "若监管宽松，单价上调可能抵消固定费用下降的效果",
+            "政策细节公布后，市场对燃气公司股价的预期将出现分化"
+          ],
+          "expectationGap": "来源未提供市场对该政策效果的共识或先前预期，故无法比较实际预期与先前预期的差异。",
+          "counterView": "也有观点认为固定费用占比小，削减幅度有限，即使单价上调，整体账单仍可能下降。",
+          "personalImpact": [
+            {
+              "label": "消费",
+              "impact": "家庭燃气支出可能不降反升",
+              "why": "若单价上调幅度大于固定费用削减幅度，实际支出会增加。",
+              "invalidation": "若监管部门强制限制单价上调，则支出下降的可能性增加。",
+              "condition": "若监管部门强制限制单价上调，则支出下降的可能性增加。"
+            },
+            {
+              "label": "投资",
+              "impact": "能源公司股价可能出现波动",
+              "why": "收入结构变化会影响盈利预期，进而影响股价。",
+              "invalidation": "若公司通过其他业务补偿收入缺口，股价波动可能被抑制。",
+              "condition": "若公司通过其他业务补偿收入缺口，股价波动可能被抑制。"
+            }
+          ],
+          "surface": "Burnham提出削减燃气账单固定费用的计划",
+          "next": [
+            "提出削减固定费用",
+            "固定费用下降",
+            "单价可能上调",
+            "总体账单变化不确定"
+          ],
+          "condition": [
+            "政策正式发布并获批准",
+            "实施细则明确且执行到位",
+            "监管未限制单价上调幅度",
+            "两者幅度的实际数值"
+          ]
+        },
+        "watchItems": [
+          "政府公布具体削减幅度和实施时间表",
+          "监管机构对单价上调的审查意见",
+          "燃气公司公布调整后的费率结构",
+          "消费者组织对费用转嫁的调查报告"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "6ccbe5abfd0678f5b4775a95a98197f99dd002c8bfc588dbe0d49cecd9b4a276",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-10-21T17:10:32.886Z",
+        "state": "approved"
       }
     },
     {
@@ -382,11 +645,27 @@
       },
       "queue": {
         "firstSeenAt": "2026-10-21T17:09:55.998Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "paired-evidence"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "paired-evidence",
+        "attemptedAt": "2026-10-21T17:10:32.886Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "0206adc8c40e161e72222315331171ed4a2e0416ab3e70c9458771a274a9da10",
+        "count": 1,
+        "lastAttemptAt": "2026-10-21T17:09:55.998Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[1].numbers"
+          ]
+        }
       }
     },
     {
@@ -482,7 +761,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -633,7 +913,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -1794,7 +2075,7 @@
         "reader": "cnfin-body",
         "sha256": "ad458a456d53ff4932b837e582555a1ea48a6e59711b56b60970e9dcfd9238a7",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261021/4484482_1.html",
-        "checkedAt": "2026-10-21T17:09:55.998Z"
+        "checkedAt": "2026-10-21T17:10:32.886Z"
       },
       "id": "642cd81a86f34dfe092e",
       "verificationStatus": "verified",
@@ -1838,7 +2119,7 @@
         "reader": "cnfin-body",
         "sha256": "68717a0b43fed619b77658675fc1c76ba395a90e41f15b5734491b1b02913b4a",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261021/4484478_1.html",
-        "checkedAt": "2026-10-21T17:09:55.998Z"
+        "checkedAt": "2026-10-21T17:10:32.886Z"
       },
       "id": "a850ea67ad410fc060dc",
       "verificationStatus": "verified",
@@ -8381,7 +8662,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -8534,7 +8816,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -8584,7 +8867,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -8634,7 +8918,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -8684,7 +8969,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -9733,57 +10019,81 @@
       "itemCount": 19
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 28
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "3f8e0e257f6639aafe08",
+      "selectedPublishedAt": "2026-10-21T17:06:16.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 20,
-      "originalSummaries": 20,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 8,
+      "rejectionReasons": {
+        "paired-evidence": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 1,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "facts": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 73,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 73,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 71,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 92,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 74,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 92,
-      "successRate": null
+      "skipped": 72,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
