@@ -16,5 +16,5 @@ export function chineseStatus(item:LiveNewsItem):string {
  if(item.originalLanguage!=='en')return '';
  if(item.factualSummary?.language==='zh'&&isPublishableSummary(item))return '中文整理已核验';
  if(isPublishableNews(item)&&item.editorial?.language!=='en')return '中文解读已核验';
- return ({failed:'中文整理失败，保留已核验来源',rejected:'中文整理未通过核验，保留原文',unavailable:'中文整理暂不可用，保留原文',pending:'中文整理待处理，保留原文'} as Record<string,string>)[item.chineseSummary?.status??'pending']??'中文整理待处理，保留原文';
+ return ({failed:'中文整理失败，保留已核验来源',rejected:'中文整理未通过核验，保留原文',unavailable:'中文整理暂不可用，保留原文',pending:''} as Record<string,string>)[item.chineseSummary?.status??'pending']??'';
 }
