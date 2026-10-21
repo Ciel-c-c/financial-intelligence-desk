@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-21T04:43:56.154Z",
-  "lastSuccessfulAt": "2026-10-21T04:43:21.006Z",
+  "attemptedAt": "2026-10-21T17:09:55.998Z",
+  "lastSuccessfulAt": "2026-10-21T17:09:55.998Z",
   "status": "delayed",
   "datasets": [
     {
@@ -22,7 +22,7 @@
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-21T04:43:21.006Z"
+      "lastSuccessfulAt": "2026-10-21T17:09:55.998Z"
     }
   ],
   "sourceHealth": [
@@ -164,7 +164,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 35
+      "itemCount": 38
     },
     {
       "id": "news-bbc-business",
@@ -185,52 +185,30 @@
       "itemCount": 19
     },
     {
-      "id": "news-published-evidence",
-      "name": "Published evidence recheck（新闻）",
-      "status": "error",
-      "itemCount": 2,
-      "attempted": 2,
-      "unavailable": 0,
-      "invalidated": 34
-    },
-    {
-      "id": "news-review-queue",
-      "name": "复审队列诊断（新闻）",
-      "status": "ok",
-      "itemCount": 0,
-      "withBody": 0,
-      "withoutBody": 0,
-      "selectedId": "9b846a6dccc2503e6ed9",
-      "selectedPublishedAt": "2026-10-20T23:24:47.000Z",
-      "selectedIsCurrent": true
-    },
-    {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 2,
-      "originalSummaries": 0,
-      "attempted": 2,
-      "generated": 2,
-      "requests": 10,
+      "itemCount": 20,
+      "originalSummaries": 20,
+      "attempted": 0,
+      "generated": 0,
+      "requests": 0,
       "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "error",
+      "status": "ok",
       "itemCount": 0,
-      "attempted": 2,
-      "rejected": 2,
+      "attempted": 0,
+      "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 2,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {
-        "unsupported-attribution": 2
-      }
+      "rejectionReasons": {}
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
