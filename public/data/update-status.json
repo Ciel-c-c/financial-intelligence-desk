@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-22T04:41:42.391Z",
-  "lastSuccessfulAt": "2026-10-22T04:41:12.341Z",
+  "attemptedAt": "2026-10-22T17:08:37.015Z",
+  "lastSuccessfulAt": "2026-10-22T17:08:37.015Z",
   "status": "delayed",
   "datasets": [
     {
@@ -22,7 +22,7 @@
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-22T04:41:12.341Z"
+      "lastSuccessfulAt": "2026-10-22T17:08:37.015Z"
     }
   ],
   "sourceHealth": [
@@ -152,7 +152,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 50
     },
     {
       "id": "news-un",
@@ -182,58 +182,33 @@
       "id": "news-eia-energy",
       "name": "U.S. Energy Information Administration（新闻）",
       "status": "ok",
-      "itemCount": 19
-    },
-    {
-      "id": "news-published-evidence",
-      "name": "Published evidence recheck（新闻）",
-      "status": "error",
-      "itemCount": 2,
-      "attempted": 2,
-      "unavailable": 0,
-      "invalidated": 28
-    },
-    {
-      "id": "news-review-queue",
-      "name": "复审队列诊断（新闻）",
-      "status": "ok",
-      "itemCount": 0,
-      "withBody": 0,
-      "withoutBody": 0,
-      "selectedId": "a71f934236ccfe239a02",
-      "selectedPublishedAt": "2026-10-22T04:02:29.000Z",
-      "selectedIsCurrent": true
+      "itemCount": 20
     },
     {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 1,
-      "originalSummaries": 0,
-      "attempted": 2,
-      "generated": 1,
-      "requests": 8,
-      "rejectionReasons": {
-        "translation-unavailable": 1
-      }
+      "itemCount": 37,
+      "originalSummaries": 37,
+      "attempted": 0,
+      "generated": 0,
+      "requests": 0,
+      "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "error",
+      "status": "ok",
       "itemCount": 0,
-      "attempted": 2,
-      "rejected": 2,
+      "attempted": 0,
+      "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 2,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {
-        "numbers": 1,
-        "personal-impact": 1
-      }
+      "rejectionReasons": {}
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
