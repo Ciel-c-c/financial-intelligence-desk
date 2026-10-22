@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-22T04:41:12.341Z",
+  "attemptedAt": "2026-10-22T04:41:42.391Z",
   "lastSuccessfulAt": "2026-10-22T04:41:12.341Z",
   "nextExpectedAt": "2026-10-22T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-22T04:41:12.341Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -79,7 +82,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -117,7 +121,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -172,21 +177,48 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "No purchase, no seats: Starbucks China rolls out new policy",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/ckzd6rjmlzvmo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-10-22T04:02:29.000Z",
         "sourceHash": "a0f458dcff347b28eecac086af91072a3fd6d1bb0973fcb82727f5bba02f5da4",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-22T04:41:12.341Z",
-        "title": "No purchase, no seats: Starbucks China rolls out new policy",
-        "summary": "Starbucks says it is improving customers' in-store experience as it competes with homegrown rivals.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-10-22T04:41:42.391Z",
+        "title": "星巴克中国推出“无消费不坐席”新政策",
+        "summary": "星巴克中国宣布实施“无购买不坐席”政策，旨在提升店内体验，以应对本土竞争对手的挑战。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "星巴克中国推出了“无购买不坐席”新政策。",
+            "quote": "No purchase, no seats: Starbucks China rolls out new policy"
+          },
+          {
+            "text": "星巴克表示此举旨在改善顾客的店内体验，并在与本土竞争者竞争时提升服务。",
+            "quote": "Starbucks says it is improving customers' in-store experience as it competes with homegrown rivals."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-22T04:41:42.391Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "a0f458dcff347b28eecac086af91072a3fd6d1bb0973fcb82727f5bba02f5da4",
+        "count": 1,
+        "lastAttemptAt": "2026-10-22T04:41:12.341Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -240,8 +272,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-10-22T04:41:12.341Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "factualSummary": {
         "language": "en",
@@ -258,7 +291,20 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-10-22T04:41:42.391Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "1fa8a6eb3d117a422954603a268b1c667ed1288fbc580ef2b04663e5ba725947",
+        "count": 1,
+        "lastAttemptAt": "2026-10-22T04:41:12.341Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -785,7 +831,7 @@
         "reader": "cnfin-body",
         "sha256": "8d2f94cb27e782b1269c84ed13922144b2b230a413ff194ef02beb907447485c",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261022/4484715_1.html",
-        "checkedAt": "2026-10-22T04:41:12.341Z"
+        "checkedAt": "2026-10-22T04:41:42.391Z"
       },
       "id": "fe8f81a3762bd117ff85",
       "verificationStatus": "verified",
@@ -829,7 +875,7 @@
         "reader": "cnfin-body",
         "sha256": "21d92bd4846a55aed33dac387af479adb6e7bf8fe9e71b56591b22096f31435b",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261022/4484711_1.html",
-        "checkedAt": "2026-10-22T04:41:12.341Z"
+        "checkedAt": "2026-10-22T04:41:42.391Z"
       },
       "id": "6c59e4d176d4e5d70e5a",
       "verificationStatus": "verified",
@@ -1322,7 +1368,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1372,7 +1419,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1422,7 +1470,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1472,7 +1521,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1522,7 +1572,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1572,7 +1623,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1622,7 +1674,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1672,7 +1725,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1722,7 +1776,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -2691,7 +2746,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -3445,7 +3501,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -4579,7 +4636,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -7810,7 +7868,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -11263,57 +11322,82 @@
       "itemCount": 19
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 28
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "a71f934236ccfe239a02",
+      "selectedPublishedAt": "2026-10-22T04:02:29.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 27,
-      "originalSummaries": 27,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 8,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 1,
+        "personal-impact": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 85,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 85,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 83,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 109,
-      "attempted": 0,
+      "eligible": 86,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 109,
-      "successRate": null
+      "skipped": 84,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
