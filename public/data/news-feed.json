@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-23T04:46:36.577Z",
+  "attemptedAt": "2026-10-23T04:47:16.103Z",
   "lastSuccessfulAt": "2026-10-23T04:46:36.577Z",
   "nextExpectedAt": "2026-10-23T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-23T04:46:36.577Z",
   "status": "delayed",
   "latest": [
     {
@@ -59,7 +61,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -118,21 +121,73 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "L'Oreal says weight loss drugs are impacting beauty and skin care sales",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cvglwgwpgrlpo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-10-22T22:27:53.000Z",
         "sourceHash": "bd6daa5d1a3dc5023e7ec012b77b07ee37adb9dee8916cca6ceffb2b4c3dbc08",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-23T04:46:36.577Z",
-        "title": "L'Oreal says weight loss drugs are impacting beauty and skin care sales",
-        "summary": "The beauty giant's CEO says the use of GLP-1s is \"a very important phenomenon for us\".",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-10-23T04:47:16.103Z",
+        "title": "欧莱雅称减肥药影响美容护肤销量",
+        "summary": "欧莱雅表示，减肥药的使用正在影响其美容和护肤产品的销售。该公司首席执行官称，GLP-1类药物的使用是“一项非常重要的现象”。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "欧莱雅称减肥药正在影响其美容和护肤产品的销售。",
+            "quote": "L'Oreal says weight loss drugs are impacting beauty and skin care sales"
+          },
+          {
+            "text": "该公司首席执行官表示，GLP-1药物的使用是“一项非常重要的现象”。",
+            "quote": "The beauty giant's CEO says the use of GLP-1s is \"a very important phenomenon for us\"."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-23T04:47:16.103Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "bd6daa5d1a3dc5023e7ec012b77b07ee37adb9dee8916cca6ceffb2b4c3dbc08",
+        "count": 1,
+        "lastAttemptAt": "2026-10-23T04:46:36.577Z",
+        "auditFindings": [
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 0
+          },
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 1
+          },
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 2
+          },
+          {
+            "category": "impact-scope",
+            "section": "personalImpacts",
+            "index": 0
+          },
+          {
+            "category": "impact-scope",
+            "section": "personalImpacts",
+            "index": 1
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -188,7 +243,48 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-23T04:47:16.103Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Moderna shares plunge after cancer vaccine data leaks — despite positive results",
+        "sourceUrl": "https://www.cnbc.com/2026/10/22/moderna-stock-cancer-vaccine-data-leak.html",
+        "publishedAt": "2026-10-22T21:52:02.000Z",
+        "sourceHash": "0de9caa137e00450eeb3eb5baca317fde06ff17cb837027c8acd294a0e89f667",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-23T04:47:16.103Z",
+        "title": "Moderna因癌症疫苗数据泄露股价大跌——尽管结果积极",
+        "summary": "Moderna的股价因其与Merck合作研发的癌症疫苗数据泄露而大幅下跌。与此同时，公司已公布了该疫苗的完整试验数据，显示出积极的结果。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Moderna的股价因癌症疫苗数据泄露而大幅下跌。",
+            "quote": "Moderna shares plunge after cancer vaccine data leaks — despite positive results"
+          },
+          {
+            "text": "Moderna已发布与Merck合作的癌症疫苗完整数据，显示出积极的结果。",
+            "quote": "Moderna released full data on its closely watched cancer vaccine developed with Merck."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "0de9caa137e00450eeb3eb5baca317fde06ff17cb837027c8acd294a0e89f667",
+        "count": 1,
+        "lastAttemptAt": "2026-10-23T04:46:36.577Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -338,7 +434,7 @@
         "reader": "cnfin-body",
         "sha256": "24a8f5219623d2911052bf040323d060a113056ad9403c6076715e801411eb98",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261023/4485370_1.html",
-        "checkedAt": "2026-10-23T04:46:36.577Z"
+        "checkedAt": "2026-10-23T04:47:16.103Z"
       },
       "id": "b83eb8d90f252dad3754",
       "verificationStatus": "verified",
@@ -382,7 +478,7 @@
         "reader": "cnfin-body",
         "sha256": "6d64c755aa93f98698688aa5dc57230faeb1c80fca254229cbfae73c988b9647",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261023/4485362_1.html",
-        "checkedAt": "2026-10-23T04:46:36.577Z"
+        "checkedAt": "2026-10-23T04:47:16.103Z"
       },
       "id": "e947ad0da3e9c01b02b7",
       "verificationStatus": "verified",
@@ -878,7 +974,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -928,7 +1025,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -978,7 +1076,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1028,7 +1127,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1078,7 +1178,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2295,7 +2396,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2563,7 +2665,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3110,7 +3213,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -8816,7 +8920,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -9098,7 +9203,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -9136,7 +9242,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -11153,57 +11260,80 @@
       "itemCount": 20
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 24
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "8120f0d1ec6a990edf1f",
+      "selectedPublishedAt": "2026-10-22T22:27:53.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 18,
-      "originalSummaries": 18,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "audit": 1,
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 93,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 93,
-      "successRate": null
+      "skipped": 91,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 110,
-      "attempted": 0,
+      "eligible": 91,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 110,
-      "successRate": null
+      "skipped": 89,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
