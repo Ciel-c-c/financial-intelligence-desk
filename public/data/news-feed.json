@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-24T15:55:33.518Z",
+  "attemptedAt": "2026-10-24T15:56:14.044Z",
   "lastSuccessfulAt": "2026-10-24T15:55:33.518Z",
   "nextExpectedAt": "2026-10-25T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-24T15:55:33.518Z",
   "status": "delayed",
   "latest": [
     {
@@ -66,6 +68,17 @@
         "summary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，古特雷斯表示，从欧洲街头到全球危机，美好未来正变得遥不可及；环境署警告，本世纪末升温或将达2.8℃；81年前的今天：联合国正式成立。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "27fd86df48a0f8cdb47a3d2ffb88bb580514acf229f322f28ffaaa100d718c60",
+        "count": 1,
+        "lastAttemptAt": "2026-10-24T15:55:33.518Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -81,7 +94,7 @@
       "fetchedAt": "2026-10-24T15:55:33.518Z",
       "id": "ad27199e0ddc54759827",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "CNBC",
@@ -93,7 +106,10 @@
         "供需"
       ],
       "causalSignals": [],
-      "analysisLevels": [],
+      "analysisLevels": [
+        "宏观",
+        "行业"
+      ],
       "eventTypes": [],
       "impactChannels": [
         "供需"
@@ -104,12 +120,16 @@
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|whypopularairpla|2026-10-24",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "Airplanes are getting dismantled for parts years ahead of schedule because engines and other components are in short supply."
+        "飞机因提前报废而被拆解",
+        "发动机和其他部件供应短缺导致飞机被拆解用于零件"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "如果发动机供应持续紧张，航空公司将加速提前报废飞机。",
+        "若零部件需求上升，二手零件市场价格可能上涨。"
+      ],
       "article": {
         "status": "summary",
         "text": "Why popular airplanes are getting scrapped years early\nAirplanes are getting dismantled for parts years ahead of schedule because engines and other components are in short supply.",
@@ -125,7 +145,250 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-24T15:56:14.044Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Why popular airplanes are getting scrapped years early",
+        "sourceUrl": "https://www.cnbc.com/2026/10/24/spirit-airlines-planes-scrapped-engine-shortage.html",
+        "publishedAt": "2026-10-24T15:18:30.000Z",
+        "sourceHash": "a4dae42866bb0ea42309a9a9d06455a823a48a40246df3b315fa2fba1b0262d8",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-24T15:56:14.044Z",
+        "title": "热门飞机提前报废的原因",
+        "summary": "航空公司正因发动机和其他部件供应紧张，将飞机提前拆解以获取零件，导致本应使用更久的机型提前报废。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "热门飞机正提前报废。",
+            "quote": "Why popular airplanes are getting scrapped years early"
+          },
+          {
+            "text": "飞机被拆解用于零部件，提前于原计划进行。",
+            "quote": "Airplanes are getting dismantled for parts years ahead of schedule because engines and other components are in short"
+          },
+          {
+            "text": "导致提前报废的原因是发动机和其他组件供应短缺。",
+            "quote": "because engines and other components are in short supply."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "a4dae42866bb0ea42309a9a9d06455a823a48a40246df3b315fa2fba1b0262d8",
+        "count": 1,
+        "lastAttemptAt": "2026-10-24T15:55:33.518Z"
+      },
+      "titleZh": "航空公司因发动机及关键部件短缺提前报废飞机",
+      "summaryZh": "航空公司因发动机及其他关键部件供应短缺，提前拆解飞机用于零部件，导致机队提前报废。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "飞机因提前报废而被拆解",
+              "evidence": "Why popular airplanes are getting scrapped years early"
+            },
+            {
+              "text": "发动机和其他部件供应短缺导致飞机被拆解用于零件",
+              "evidence": "Airplanes are getting dismantled for parts years ahead of schedule because engines and other components are in short"
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "全球",
+            "triggerEvidence": "Airplanes are getting dismantled for parts years ahead of schedule because engines and other components are in short",
+            "path": [
+              "发动机供应短缺",
+              "飞机提前报废",
+              "租赁资产残值下降"
+            ],
+            "invalidation": "发动机供应恢复导致报废速度放缓"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "航空租赁公司股价",
+            "direction": "下行",
+            "reason": "提前报废增加飞机供应，压低租赁资产残值",
+            "condition": "发动机短缺持续",
+            "invalidation": "发动机供应恢复",
+            "timeframe": "中期"
+          }
+        ],
+        "sourceBodyHash": "a4dae42866bb0ea42309a9a9d06455a823a48a40246df3b315fa2fba1b0262d8",
+        "originalTitle": "Why popular airplanes are getting scrapped years early",
+        "reviewedAt": "2026-10-24T15:55:33.518Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "ad27199e0ddc54759827",
+          "title": "航空公司因发动机及关键部件短缺提前报废飞机",
+          "summary": "航空公司因发动机及其他关键部件供应短缺，提前拆解飞机用于零部件，导致机队提前报废。",
+          "excerpt": "飞机因发动机和其他关键部件供应短缺，被提前拆解用于零部件。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/10/24/spirit-airlines-planes-scrapped-engine-shortage.html",
+          "publishedAt": "2026-10-24T15:18:30.000Z",
+          "region": "全球",
+          "topic": "航空业供应链",
+          "termIds": [],
+          "facts": [
+            "飞机因提前报废而被拆解",
+            "发动机和其他部件供应短缺导致飞机被拆解用于零件"
+          ],
+          "consensus": [
+            "暂无明确共识"
+          ],
+          "inference": [
+            "如果发动机供应持续紧张，航空公司将加速提前报废飞机。",
+            "若零部件需求上升，二手零件市场价格可能上涨。"
+          ],
+          "risks": [
+            "发动机供应恢复导致报废速度放缓。",
+            "航空公司通过租赁或购买新机抵消报废影响。",
+            "监管政策限制提前报废导致的资产处置。"
+          ],
+          "causalChain": [
+            {
+              "title": "关键部件供应短缺",
+              "explanation": "发动机及其他关键部件产能不足，导致供应紧张。",
+              "condition": "全球发动机制造商产能未能满足需求"
+            },
+            {
+              "title": "飞机提前报废",
+              "explanation": "航空公司为获取可用零部件，选择提前拆解飞机。",
+              "condition": "部件短缺导致维修成本高于报废收益"
+            },
+            {
+              "title": "零部件市场供给增加",
+              "explanation": "拆解的飞机提供二手零件，缓解部分供应压力。",
+              "condition": "拆解量显著提升"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "车主因零件缺货而提前卖掉旧车换零件",
+            "explanation": "就像车主在零件稀缺时会提前报废旧车以获取零件，航空公司在发动机短缺时也会提前拆解飞机。该类比适用于部件稀缺导致资产提前处置的情形，但不适用于所有航空资产，因为飞机的使用寿命和监管要求更为复杂。"
+          },
+          "why": {
+            "cause": "关键发动机和部件供应短缺",
+            "mechanisms": [
+              "维修成本上升",
+              "零部件获取困难",
+              "资产价值下降"
+            ],
+            "result": "航空公司提前拆解飞机以获取零件，导致机队提前报废"
+          },
+          "focus": [
+            "航空公司资产管理",
+            "零部件供应链",
+            "机队更新节奏"
+          ],
+          "marketBet": [
+            "航空公司可能加速机队更新",
+            "二手零部件价格可能上行",
+            "新飞机需求可能受到抑制"
+          ],
+          "expectationGap": "源文未提供市场对飞机报废速度的先前预期，故无法比较实际情况与原有预期的差异。",
+          "counterView": "若航空公司通过租赁或购买新机替代报废机，提前报废的负面影响可能被抵消。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "航空租赁公司资产价值可能下降，投资者面临潜在损失。",
+              "why": "提前报废增加了可供出售的飞机数量，压低了租赁资产的残值。",
+              "invalidation": "如果发动机供应恢复，报废速度放缓，资产价值压力减轻。",
+              "condition": "如果发动机供应恢复，报废速度放缓，资产价值压力减轻。"
+            }
+          ],
+          "surface": "航空公司因发动机及关键部件短缺提前报废飞机",
+          "next": [
+            "关键部件供应短缺",
+            "飞机提前报废",
+            "零部件市场供给增加"
+          ],
+          "condition": [
+            "全球发动机制造商产能未能满足需求",
+            "部件短缺导致维修成本高于报废收益",
+            "拆解量显著提升"
+          ]
+        },
+        "watchItems": [
+          "发动机制造商的产能扩张计划",
+          "航空公司报废飞机数量月度统计",
+          "二手航空零部件价格走势",
+          "航空公司机队更新预算变化"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "a4dae42866bb0ea42309a9a9d06455a823a48a40246df3b315fa2fba1b0262d8",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-10-24T15:56:14.044Z",
+        "state": "approved"
       }
     },
     {
@@ -181,7 +444,39 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-24T15:56:14.044Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Ukraine says Starlink and Starshield high speed restrictions have been lifted",
+        "sourceUrl": "https://www.cnbc.com/2026/10/24/ukraine-starlink-starshield-service-restored.html",
+        "publishedAt": "2026-10-24T13:00:35.000Z",
+        "sourceHash": "4bd4a0259d39328c9f53ef1e21da084eb0d83532ab519f275abc9cfbdd39cf09",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-24T15:56:14.044Z",
+        "title": "乌克兰称已解除Starlink和Starshield高速限制",
+        "summary": "乌克兰表示，针对Starlink和Starshield的高速限制已被取消，恢复了对快速机动军事系统的连接，解决了此前的中断问题。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "乌克兰称已解除Starlink和Starshield的高速限制。",
+            "quote": "Ukraine says Starlink and Starshield high speed restrictions have been lifted"
+          },
+          {
+            "text": "乌克兰表示，解除限制后恢复了对快速机动军事系统的连接。",
+            "quote": "Ukraine says restrictions on Starlink and Starshield have been lifted, restoring connectivity to fast-moving military"
+          },
+          {
+            "text": "此举在中断后重新建立了对快速机动军事系统的连接。",
+            "quote": "restoring connectivity to fast-moving military systems after disruptions."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       }
     },
     {
@@ -221,7 +516,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-business",
@@ -571,7 +867,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -671,7 +968,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -721,7 +1019,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1303,7 +1602,7 @@
         "reader": "cnfin-body",
         "sha256": "0582bf42890b50f3ee497872830e5ea4f2cff8c0a21e27c947676fc299f9e9ba",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261024/4485948_1.html",
-        "checkedAt": "2026-10-24T15:55:33.518Z"
+        "checkedAt": "2026-10-24T15:56:14.044Z"
       },
       "id": "0f16a3283eac0100e3eb",
       "verificationStatus": "verified",
@@ -1347,7 +1646,7 @@
         "reader": "cnfin-body",
         "sha256": "3b7ceb931ee5c288d16026a1de228ac5a1a387ac8b867b75cd7077812f34707d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261024/4485942_1.html",
-        "checkedAt": "2026-10-24T15:55:33.518Z"
+        "checkedAt": "2026-10-24T15:56:14.044Z"
       },
       "id": "8edb77ce5b278a8ba34d",
       "verificationStatus": "verified",
@@ -4137,7 +4436,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -6160,7 +6460,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -6756,7 +7057,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -6806,7 +7108,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -6856,7 +7159,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -6906,7 +7210,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -6956,7 +7261,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7006,7 +7312,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -8209,57 +8516,79 @@
       "itemCount": 20
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 23
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "4276983223a57b6475c5",
+      "selectedPublishedAt": "2026-10-24T12:00:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 19,
-      "originalSummaries": 19,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 12,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "unsupported-attribution": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 63,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 63,
-      "successRate": null
+      "skipped": 61,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 75,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 63,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 75,
-      "successRate": null
+      "skipped": 61,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
