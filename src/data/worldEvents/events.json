@@ -1,0 +1,2793 @@
+[
+  {
+    "schemaVersion": 1,
+    "id": "el-nino-2023",
+    "question": "厄尔尼诺如何影响粮食、能源和运输？",
+    "domain": [
+      "气候",
+      "能源",
+      "运输"
+    ],
+    "value": "把天气、供应、企业成本和价格预期之间的联系拆开看。",
+    "summary": "把天气、供应、企业成本和价格预期之间的联系拆开看。",
+    "period": {
+      "start": "2023-06-08",
+      "end": "2024-01-16",
+      "label": "2023—2024"
+    },
+    "historical": true,
+    "experience": "interactive",
+    "curatedAt": "2026-10-21",
+    "evidence": [
+      {
+        "id": "currentWmo",
+        "title": "WMO · 2026-10-16 新闻",
+        "url": "https://public.wmo.int/media/news/el-nino-looms-large-world-food-day",
+        "publisher": "public.wmo.int",
+        "publishedAt": "2026-10-16",
+        "knownAt": "2026-10-16",
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "currentNoaa",
+        "title": "NOAA · 2026-10-08 诊断",
+        "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_disc_oct2026/ensodisc.shtml",
+        "publisher": "www.cpc.ncep.noaa.gov",
+        "publishedAt": "2026-10-08",
+        "knownAt": "2026-10-08",
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "noaa",
+        "title": "NOAA · 2023-06-08 诊断",
+        "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_disc_jun2023/ensodisc.shtml",
+        "publisher": "www.cpc.ncep.noaa.gov",
+        "publishedAt": "2023-06-08",
+        "knownAt": "2023-06-08",
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "science",
+        "title": "NOAA · 2023-12-13 机制说明",
+        "url": "https://content-drupal.climate.gov/news-features/blogs/enso/december-2023-el-nino-update-adventure",
+        "publisher": "content-drupal.climate.gov",
+        "publishedAt": "2023-12-13",
+        "knownAt": "2023-12-13",
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "canal",
+        "title": "巴拿马运河管理方 · 历史时间线",
+        "url": "https://pancanal.com/en/navigating-change-a-timeline-of-recent-future-progress-at-the-panama-canal/",
+        "publisher": "pancanal.com",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "fao",
+        "title": "FAO · 2024-01-05 年度回顾",
+        "url": "https://www.fao.org/newsroom/detail/fao-food-price-index-declines-in-december/en",
+        "publisher": "www.fao.org",
+        "publishedAt": "2024-01-05",
+        "knownAt": "2024-01-05",
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      }
+    ],
+    "claims": [
+      {
+        "id": "current-wmo",
+        "kind": "fact",
+        "text": "2026 年 10 月 16 日，WMO 报道本轮厄尔尼诺增强，并讨论降雨变化与粮食生产；地区和季节不同，影响也不同。",
+        "scope": "2026-10-16 本轮追踪，不是历史案例发生日期",
+        "evidenceRefs": [
+          {
+            "evidenceId": "currentWmo",
+            "relation": "supports",
+            "locator": "开篇与 Different places. Different seasons. Different impacts."
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "current-noaa",
+        "kind": "fact",
+        "text": "NOAA 2026 年 10 月 8 日诊断确认厄尔尼诺继续增强。",
+        "scope": "2026-10-08 本轮追踪",
+        "evidenceRefs": [
+          {
+            "evidenceId": "currentNoaa",
+            "relation": "supports",
+            "locator": "Synopsis"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "forecast",
+        "kind": "scenario",
+        "text": "NOAA 对强至很强状态延续至 2027 年初的判断属于机构预测，不能直接换算为减产、运费或股价结果。",
+        "scope": "2026-10-08 发布的未来展望",
+        "evidenceRefs": [
+          {
+            "evidenceId": "currentNoaa",
+            "relation": "supports",
+            "locator": "Synopsis与季节展望"
+          }
+        ],
+        "conditions": [
+          "预测仍可能随观测更新；具体影响需分地区判断。"
+        ],
+        "invalidators": [
+          "后续海气状态与预测不同。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "background",
+        "kind": "mechanism",
+        "text": "平时信风把暖水推向太平洋西侧；信风减弱时，暖水更容易向东重新分布。海面温度又会改变上升气流、云雨和风，海洋与大气相互影响。",
+        "scope": "2023—2024",
+        "evidenceRefs": [
+          {
+            "evidenceId": "science",
+            "relation": "supports",
+            "locator": "Sky dive and SCUBA"
+          }
+        ],
+        "conditions": [
+          "区分地区与季节，不能用季节倾向确定某天的天气。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "historical-start",
+        "kind": "fact",
+        "text": "2023 年 6 月 8 日，NOAA 确认上一轮厄尔尼诺条件出现。这是历史背景，不是本轮的起始日期。",
+        "scope": "2023—2024",
+        "evidenceRefs": [
+          {
+            "evidenceId": "noaa",
+            "relation": "supports",
+            "locator": "Synopsis"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "prices-history",
+        "kind": "fact",
+        "text": "FAO 记录，2023 年综合食品价格指数年平均比 2022 年低 13.7%，大米指数却上涨 21%。大米还受印度出口限制等因素影响。这些国际商品报价不是居民 CPI，也不是股票回报。",
+        "scope": "2023—2024",
+        "evidenceRefs": [
+          {
+            "evidenceId": "fao",
+            "relation": "supports",
+            "locator": "2023全年指数与 All Rice Price Index 段"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "cost-example",
+        "kind": "illustration",
+        "text": "纯假设：食品卖 10 元，原料与运输由 6 元变成 7 元。售价不变时，这两项以外的剩余空间从 4 元缩到 3 元。是否能提价，还看顾客与竞争。这不是历史公司的财务数据。",
+        "scope": "2023—2024",
+        "evidenceRefs": [],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "illustration"
+      },
+      {
+        "id": "market",
+        "kind": "scenario",
+        "text": "如果此前已担心严重短缺，后来情况虽差却没有那么差，价格也可能回落。企业收入、成本和未来现金流，与市场原本预期什么，需要分开看。",
+        "scope": "2023—2024",
+        "evidenceRefs": [],
+        "conditions": [
+          "存在可核对的事前预期，且实际信息好于该预期。"
+        ],
+        "invalidators": [
+          "预期不同或其他冲击更强。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "unknown-market",
+        "kind": "uncertain",
+        "text": "本轮具体股价、运费的事件窗口和事前市场共识尚未核验；历史案例不代表本轮已出现同样的市场反应。",
+        "scope": "2023—2024",
+        "evidenceRefs": [],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [
+          "缺少本轮市场事件窗口与事前共识。"
+        ],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-agriculture-weather",
+        "kind": "mechanism",
+        "text": "厄尔尼诺会改变部分地区、部分季节的降雨概率，不代表全世界一起干旱。",
+        "scope": "条件机制，非本轮结果",
+        "evidenceRefs": [
+          {
+            "evidenceId": "science",
+            "relation": "context",
+            "locator": "关键产区的天气改变"
+          }
+        ],
+        "conditions": [
+          "先确认是哪一个地区、哪一个季节，不能用季节倾向确定某天的天气。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-agriculture-crop",
+        "kind": "scenario",
+        "text": "如果相关产区恰在作物需要水的时段偏干，产量可能下降；灌溉等条件也可能缓冲影响。",
+        "scope": "条件机制，非本轮结果",
+        "evidenceRefs": [],
+        "conditions": [
+          "当地确实出现不利天气，而且与关键生长期重合。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-agriculture-supply",
+        "kind": "mechanism",
+        "text": "一处少收，不等于市场无粮可卖。其他产区丰收、库存充足，都可能补上缺口。",
+        "scope": "条件机制，非本轮结果",
+        "evidenceRefs": [],
+        "conditions": [
+          "只有其他可用供应不足以抵消减产，整体供应才可能收紧。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-agriculture-price",
+        "kind": "scenario",
+        "text": "可用供应减少、需求没有同步下降、替代又有限时，该商品才更可能涨价。不是所有食品一起涨。",
+        "scope": "条件机制，非本轮结果",
+        "evidenceRefs": [],
+        "conditions": [
+          "还要看需求、库存、其他产区与贸易政策。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-agriculture-profit",
+        "kind": "scenario",
+        "text": "农民卖价高了一点，但收成少很多，总收入仍可能下降；食品企业原料变贵，若不能提价，利润也可能被挤压。",
+        "scope": "条件机制，非本轮结果",
+        "evidenceRefs": [],
+        "conditions": [
+          "比较产量、成本、售价和合同，不能把整个行业统一视为受益者。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-energy-water",
+        "kind": "uncertain",
+        "text": "不同地区的天气影响不同。这里尚未核验某个水电地区本次的来水数据。",
+        "scope": "条件机制，非本轮结果",
+        "evidenceRefs": [],
+        "conditions": [
+          "需要具体地区、时段和水文记录，不能只用厄尔尼诺标题。"
+        ],
+        "invalidators": [],
+        "unknowns": [
+          "需要具体地区、时段和水文记录，不能只用厄尔尼诺标题。"
+        ],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-energy-hydro",
+        "kind": "scenario",
+        "text": "在水电占比高的地区，如果来水不足，水电供给可能受影响。",
+        "scope": "条件机制，非本轮结果",
+        "evidenceRefs": [],
+        "conditions": [
+          "当地确实依赖水电，且没有足够缓冲。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-energy-replace",
+        "kind": "scenario",
+        "text": "如果替代电源更贵，供电成本可能上升；炎热还可能增加制冷需求。",
+        "scope": "条件机制，非本轮结果",
+        "evidenceRefs": [],
+        "conditions": [
+          "还要看其他电源、用电需求和当地安排。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-energy-business",
+        "kind": "scenario",
+        "text": "即使电力成本上升，企业利润仍取决于成本占比、合同、库存和议价能力，不能直接推断股价。",
+        "scope": "条件机制，非本轮结果",
+        "evidenceRefs": [],
+        "conditions": [
+          "先核验电价是否传到企业，再看能否转嫁成本。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-transport-canal",
+        "kind": "fact",
+        "text": "管理方记录，2023 年 10 月降雨显著不足，并计划逐步减少通行安排。计划不等于后续全部照此执行。",
+        "scope": "2023—2024 历史案例",
+        "evidenceRefs": [
+          {
+            "evidenceId": "canal",
+            "relation": "supports",
+            "locator": "运河记录了降雨不足"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "claim-transport-locks",
+        "kind": "mechanism",
+        "text": "船不是只要浮在海上就能无限通行。船闸需要淡水，水量约束会限制运输能力。",
+        "scope": "2023—2024 历史案例",
+        "evidenceRefs": [
+          {
+            "evidenceId": "canal",
+            "relation": "context",
+            "locator": "船闸运行需要淡水"
+          }
+        ],
+        "conditions": [
+          "可用淡水和运营安排共同决定通行能力。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-transport-route",
+        "kind": "scenario",
+        "text": "使用相关航线的企业可能增加运输时间、燃料与库存成本；不用这条航线的企业并不自动承受相同冲击。",
+        "scope": "2023—2024 历史案例",
+        "evidenceRefs": [],
+        "conditions": [
+          "要检查实际航线、替代选择与合同，未核验具体公司运费。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "claim-transport-update",
+        "kind": "fact",
+        "text": "节水和部分降雨改善后，官方记录 2024 年 1 月开始提供每日 24 个通行安排；更早的减量计划不能当作最终事实。",
+        "scope": "2023—2024 历史案例",
+        "evidenceRefs": [
+          {
+            "evidenceId": "canal",
+            "relation": "supports",
+            "locator": "新信息会改变旧计划"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "claim-transport-margin",
+        "kind": "scenario",
+        "text": "绕行耗油、周转变慢，也会增加成本。对货主，延迟还可能影响库存；两边的经营影响不同。",
+        "scope": "2023—2024 历史案例",
+        "evidenceRefs": [],
+        "conditions": [
+          "要同时看收入与成本，不给全行业统一贴利好标签。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      }
+    ],
+    "sections": [
+      {
+        "id": "current",
+        "title": "本轮追踪 · 2026 年 10 月",
+        "claimIds": [
+          "current-wmo",
+          "current-noaa",
+          "forecast"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "background",
+        "title": "为什么海水会影响天气？",
+        "claimIds": [
+          "background"
+        ],
+        "collapsed": true
+      },
+      {
+        "id": "history",
+        "title": "相关历史 · 2023—2024",
+        "claimIds": [
+          "historical-start"
+        ],
+        "collapsed": true
+      },
+      {
+        "id": "reality",
+        "title": "历史结果：风险不等于所有价格同涨",
+        "claimIds": [
+          "prices-history",
+          "cost-example"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "market",
+        "title": "经济变化与市场反应为什么可能不同？",
+        "claimIds": [
+          "market",
+          "unknown-market"
+        ],
+        "collapsed": true
+      }
+    ],
+    "timeline": [
+      {
+        "id": "t-start",
+        "label": "上一轮条件被确认",
+        "occurredAt": "2023-06-08",
+        "knownAt": "2023-06-08",
+        "claimIds": [
+          "historical-start"
+        ],
+        "evidenceIds": [
+          "noaa"
+        ],
+        "precision": "day"
+      },
+      {
+        "id": "t-canal",
+        "label": "历史运河通行安排调整",
+        "occurredAt": "2023-10-31",
+        "knownAt": null,
+        "claimIds": [
+          "claim-transport-canal"
+        ],
+        "evidenceIds": [
+          "canal"
+        ],
+        "precision": "day"
+      },
+      {
+        "id": "t-prices",
+        "label": "FAO 回顾 2023 年价格",
+        "occurredAt": "2024-01-05",
+        "knownAt": "2024-01-05",
+        "claimIds": [
+          "prices-history"
+        ],
+        "evidenceIds": [
+          "fao"
+        ],
+        "precision": "day"
+      },
+      {
+        "id": "t-current",
+        "label": "本轮追踪：WMO 近期消息",
+        "occurredAt": "2026-10-16",
+        "knownAt": "2026-10-16",
+        "claimIds": [
+          "current-wmo"
+        ],
+        "evidenceIds": [
+          "currentWmo"
+        ],
+        "precision": "day"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "agriculture-weather",
+        "title": "关键产区的天气改变",
+        "claimIds": [
+          "claim-agriculture-weather"
+        ],
+        "conceptIds": []
+      },
+      {
+        "id": "agriculture-crop",
+        "title": "作物产量可能承压",
+        "claimIds": [
+          "claim-agriculture-crop"
+        ],
+        "conceptIds": []
+      },
+      {
+        "id": "agriculture-supply",
+        "title": "总供应还要算库存和替代",
+        "claimIds": [
+          "claim-agriculture-supply"
+        ],
+        "conceptIds": [
+          "supply"
+        ]
+      },
+      {
+        "id": "agriculture-price",
+        "title": "供应收紧，价格才可能承压",
+        "claimIds": [
+          "claim-agriculture-price"
+        ],
+        "conceptIds": [
+          "supply"
+        ]
+      },
+      {
+        "id": "agriculture-profit",
+        "title": "卖得贵，也可能赚得少",
+        "claimIds": [
+          "claim-agriculture-profit"
+        ],
+        "conceptIds": []
+      },
+      {
+        "id": "energy-water",
+        "title": "先确认当地来水是否减少",
+        "claimIds": [
+          "claim-energy-water"
+        ],
+        "conceptIds": []
+      },
+      {
+        "id": "energy-hydro",
+        "title": "水电供给可能受约束",
+        "claimIds": [
+          "claim-energy-hydro"
+        ],
+        "conceptIds": []
+      },
+      {
+        "id": "energy-replace",
+        "title": "替代发电是否更贵？",
+        "claimIds": [
+          "claim-energy-replace"
+        ],
+        "conceptIds": []
+      },
+      {
+        "id": "energy-business",
+        "title": "再看企业的成本暴露",
+        "claimIds": [
+          "claim-energy-business"
+        ],
+        "conceptIds": []
+      },
+      {
+        "id": "transport-canal",
+        "title": "运河记录了降雨不足",
+        "claimIds": [
+          "claim-transport-canal"
+        ],
+        "conceptIds": []
+      },
+      {
+        "id": "transport-locks",
+        "title": "船闸运行需要淡水",
+        "claimIds": [
+          "claim-transport-locks"
+        ],
+        "conceptIds": []
+      },
+      {
+        "id": "transport-route",
+        "title": "排队、少装或绕行",
+        "claimIds": [
+          "claim-transport-route"
+        ],
+        "conceptIds": [
+          "supply"
+        ]
+      },
+      {
+        "id": "transport-update",
+        "title": "新信息会改变旧计划",
+        "claimIds": [
+          "claim-transport-update"
+        ],
+        "conceptIds": []
+      },
+      {
+        "id": "transport-margin",
+        "title": "运价高，不等于船公司利润高",
+        "claimIds": [
+          "claim-transport-margin"
+        ],
+        "conceptIds": []
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-agriculture-crop",
+        "from": "agriculture-weather",
+        "to": "agriculture-crop",
+        "explanationClaimId": "claim-agriculture-crop",
+        "conditions": [
+          "当地确实出现不利天气，而且与关键生长期重合。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "lag": null
+      },
+      {
+        "id": "edge-agriculture-supply",
+        "from": "agriculture-crop",
+        "to": "agriculture-supply",
+        "explanationClaimId": "claim-agriculture-supply",
+        "conditions": [
+          "只有其他可用供应不足以抵消减产，整体供应才可能收紧。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "lag": null
+      },
+      {
+        "id": "edge-agriculture-price",
+        "from": "agriculture-supply",
+        "to": "agriculture-price",
+        "explanationClaimId": "claim-agriculture-price",
+        "conditions": [
+          "还要看需求、库存、其他产区与贸易政策。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "lag": null
+      },
+      {
+        "id": "edge-agriculture-profit",
+        "from": "agriculture-price",
+        "to": "agriculture-profit",
+        "explanationClaimId": "claim-agriculture-profit",
+        "conditions": [
+          "比较产量、成本、售价和合同，不能把整个行业统一视为受益者。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "lag": null
+      },
+      {
+        "id": "edge-energy-hydro",
+        "from": "energy-water",
+        "to": "energy-hydro",
+        "explanationClaimId": "claim-energy-hydro",
+        "conditions": [
+          "当地确实依赖水电，且没有足够缓冲。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "lag": null
+      },
+      {
+        "id": "edge-energy-replace",
+        "from": "energy-hydro",
+        "to": "energy-replace",
+        "explanationClaimId": "claim-energy-replace",
+        "conditions": [
+          "还要看其他电源、用电需求和当地安排。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "lag": null
+      },
+      {
+        "id": "edge-energy-business",
+        "from": "energy-replace",
+        "to": "energy-business",
+        "explanationClaimId": "claim-energy-business",
+        "conditions": [
+          "先核验电价是否传到企业，再看能否转嫁成本。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "lag": null
+      },
+      {
+        "id": "edge-transport-locks",
+        "from": "transport-canal",
+        "to": "transport-locks",
+        "explanationClaimId": "claim-transport-locks",
+        "conditions": [
+          "可用淡水和运营安排共同决定通行能力。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "lag": null
+      },
+      {
+        "id": "edge-transport-route",
+        "from": "transport-locks",
+        "to": "transport-route",
+        "explanationClaimId": "claim-transport-route",
+        "conditions": [
+          "要检查实际航线、替代选择与合同，未核验具体公司运费。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "lag": null
+      },
+      {
+        "id": "edge-transport-update",
+        "from": "transport-route",
+        "to": "transport-update",
+        "explanationClaimId": "claim-transport-update",
+        "conditions": [
+          "以下是历史观察，不代表本轮已经再次限航，也不量化厄尔尼诺对当年降雨的独立贡献。"
+        ],
+        "invalidators": [],
+        "lag": null
+      },
+      {
+        "id": "edge-transport-margin",
+        "from": "transport-update",
+        "to": "transport-margin",
+        "explanationClaimId": "claim-transport-margin",
+        "conditions": [
+          "要同时看收入与成本，不给全行业统一贴利好标签。"
+        ],
+        "invalidators": [
+          "库存、其他产区或替代选择缓冲影响。"
+        ],
+        "lag": null
+      }
+    ],
+    "branches": [
+      {
+        "id": "agriculture",
+        "label": "农业",
+        "question": "少下雨，为什么不一定让粮价上涨？",
+        "intro": "先看农田，再看整个市场。每一步都可能被其他条件改变。",
+        "boundary": "这是一条有条件的推演，未量化本轮具体产区的减产。",
+        "nodeIds": [
+          "agriculture-weather",
+          "agriculture-crop",
+          "agriculture-supply",
+          "agriculture-price",
+          "agriculture-profit"
+        ]
+      },
+      {
+        "id": "energy",
+        "label": "能源",
+        "question": "水变少，会不会让电更贵？",
+        "intro": "这条路径解释可能发生什么，不报告一项已经测出的电价结果。",
+        "boundary": "未提供特定电站的发电量与电价数据；不能据此说全球电价已经上涨。",
+        "nodeIds": [
+          "energy-water",
+          "energy-hydro",
+          "energy-replace",
+          "energy-business"
+        ]
+      },
+      {
+        "id": "transport",
+        "label": "运输",
+        "question": "2023 年运河缺水，怎样传到运输？",
+        "intro": "2023—2024 年历史案例，用来理解运输机制，不是本轮通行状态。",
+        "boundary": "以下是历史观察，不代表本轮已经再次限航，也不量化厄尔尼诺对当年降雨的独立贡献。",
+        "nodeIds": [
+          "transport-canal",
+          "transport-locks",
+          "transport-route",
+          "transport-update",
+          "transport-margin"
+        ]
+      }
+    ],
+    "concepts": [
+      {
+        "id": "supply",
+        "title": "供给与价格",
+        "explanation": "供给是“这个价格下能提供多少”。东西更稀缺时价格可能上升，但还要同时看需求和替代。",
+        "example": "一处减产，可能被库存和其他产区的丰收缓冲。",
+        "lessonIds": [
+          "supply-demand"
+        ]
+      },
+      {
+        "id": "elasticity",
+        "title": "弹性",
+        "explanation": "价格变了，人们多快、多大幅度地调整购买或生产。越难调整，短期冲击越可能明显。",
+        "example": "有替代产区和可用库存时，一地的天气风险未必变成同样大的涨价。",
+        "lessonIds": [
+          "elasticity"
+        ]
+      },
+      {
+        "id": "inflation",
+        "title": "成本推动型通胀",
+        "explanation": "多种重要投入品持续变贵，并传到消费端时，可能推高一部分物价。单个商品涨价不等于所有物价同幅上涨。",
+        "example": "食品原料或运输更贵，能否传给顾客，还看需求与竞争。",
+        "lessonIds": [
+          "cpi"
+        ]
+      },
+      {
+        "id": "expectations",
+        "title": "预期差",
+        "explanation": "新结果和原来想法的差异，可能推动价格重新调整。事件变差，不代表价格一定继续向同一方向走。",
+        "example": "如果先前担心严重短缺，后来虽差却没那么差，价格也可能回落。",
+        "lessonIds": [
+          "expectations"
+        ]
+      }
+    ],
+    "lessonIds": [
+      "supply-demand",
+      "elasticity",
+      "cpi",
+      "expectations"
+    ],
+    "impacts": [
+      {
+        "scope": "industry",
+        "subjects": [
+          "农业",
+          "能源",
+          "航运"
+        ],
+        "claimIds": [
+          "claim-agriculture-profit",
+          "claim-energy-business",
+          "claim-transport-margin"
+        ]
+      },
+      {
+        "scope": "asset",
+        "subjects": [
+          "价格预期"
+        ],
+        "claimIds": [
+          "market",
+          "unknown-market"
+        ]
+      }
+    ],
+    "newsLinks": [
+      {
+        "canonicalUrl": "https://public.wmo.int/media/news/el-nino-looms-large-world-food-day",
+        "evidenceId": "currentWmo",
+        "relation": "same-event",
+        "rationale": "人工核对的本轮消息或明确日期的历史案例；不按关键词匹配。",
+        "expectedSourceHash": null,
+        "reviewedAt": "2026-10-21"
+      },
+      {
+        "canonicalUrl": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_disc_oct2026/ensodisc.shtml",
+        "evidenceId": "currentNoaa",
+        "relation": "same-event",
+        "rationale": "人工核对的本轮消息或明确日期的历史案例；不按关键词匹配。",
+        "expectedSourceHash": null,
+        "reviewedAt": "2026-10-21"
+      },
+      {
+        "canonicalUrl": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_disc_jun2023/ensodisc.shtml",
+        "evidenceId": "noaa",
+        "relation": "historical-case",
+        "rationale": "人工核对的本轮消息或明确日期的历史案例；不按关键词匹配。",
+        "expectedSourceHash": null,
+        "reviewedAt": "2026-10-21"
+      },
+      {
+        "canonicalUrl": "https://content-drupal.climate.gov/news-features/blogs/enso/december-2023-el-nino-update-adventure",
+        "evidenceId": "science",
+        "relation": "historical-case",
+        "rationale": "人工核对的本轮消息或明确日期的历史案例；不按关键词匹配。",
+        "expectedSourceHash": null,
+        "reviewedAt": "2026-10-21"
+      },
+      {
+        "canonicalUrl": "https://pancanal.com/en/navigating-change-a-timeline-of-recent-future-progress-at-the-panama-canal/",
+        "evidenceId": "canal",
+        "relation": "historical-case",
+        "rationale": "人工核对的本轮消息或明确日期的历史案例；不按关键词匹配。",
+        "expectedSourceHash": null,
+        "reviewedAt": "2026-10-21"
+      },
+      {
+        "canonicalUrl": "https://www.fao.org/newsroom/detail/fao-food-price-index-declines-in-december/en",
+        "evidenceId": "fao",
+        "relation": "historical-case",
+        "rationale": "人工核对的本轮消息或明确日期的历史案例；不按关键词匹配。",
+        "expectedSourceHash": null,
+        "reviewedAt": "2026-10-21"
+      }
+    ],
+    "quiz": {
+      "prompt": "某产区在生长期偏干，但其他产区丰收、库存充足。能直接断言粮价和食品公司股价上涨吗？",
+      "options": [
+        {
+          "id": "a",
+          "text": "能，粮价和食品公司股价一定一起涨。"
+        },
+        {
+          "id": "b",
+          "text": "不能，先看整体供应、成本转嫁和原有预期。"
+        },
+        {
+          "id": "c",
+          "text": "不能，因为天气永远不会影响经济。"
+        }
+      ],
+      "correctId": "b",
+      "explanation": "库存和其他产区丰收可能补上局部减产。企业还要看销量、成本与提价能力；股价还要看新信息和原有预期的差异。",
+      "revisitNodeId": "agriculture-supply"
+    },
+    "marketCoverage": {
+      "status": "not-verified",
+      "reason": "未重建事前市场共识，不将经济机制写成确定的股价归因。"
+    },
+    "revisions": [
+      {
+        "version": 1,
+        "revisedAt": "2026-10-21",
+        "reason": "从已核验设计样本人工整理；静态编辑发布，不由模型自动生成。"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "europe-gas-2022",
+    "question": "战争没结束，欧洲天然气为什么能降价？",
+    "domain": [
+      "能源",
+      "地缘政治"
+    ],
+    "value": "用供给替代、库存与需求理解稀缺，分清气价和企业利润。",
+    "summary": "用供给替代、库存与需求理解稀缺，分清气价和企业利润。",
+    "period": {
+      "start": "2022",
+      "end": "2023-03",
+      "label": "2022—2023"
+    },
+    "historical": true,
+    "experience": "basic",
+    "curatedAt": "2026-10-21",
+    "evidence": [
+      {
+        "id": "source-1",
+        "title": "IEA《Gas Market Report Q1-2023》",
+        "url": "https://iea.blob.core.windows.net/assets/c6ca64dc-240d-4a7c-b327-e1799201b98f/GasMarketReportQ12023.pdf",
+        "publisher": "iea.blob.core.windows.net",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-2",
+        "title": "BASF 能源与气候章节",
+        "url": "https://report.basf.com/2022/en/managements-report/sustainability-along-the-value-chain/safe-and-efficient-production/energy-and-climate-protection.html",
+        "publisher": "report.basf.com",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-3",
+        "title": "BASF 2022 经济环境",
+        "url": "https://report.basf.com/2022/en/managements-report/basf-group-business-year/economic-environment.html",
+        "publisher": "report.basf.com",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-4",
+        "title": "IEA 压力测试及假设",
+        "url": "https://www.iea.org/reports/how-to-avoid-gas-shortages-in-the-european-union-in-2023/the-need-for-action",
+        "publisher": "www.iea.org",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-5",
+        "title": "IEA Q2-2023，第 30 页",
+        "url": "https://iea.blob.core.windows.net/assets/6f2f0dcc-72af-4c01-bcc7-fbfe690ab521/GasMarketReportQ22023.pdf",
+        "publisher": "iea.blob.core.windows.net",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-6",
+        "title": "BASF 股东信",
+        "url": "https://report.basf.com/2022/en/shareholders/letter-from-the-chairman.html",
+        "publisher": "report.basf.com",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-7",
+        "title": "UK government expected to approve Jackdaw gas field",
+        "url": "https://www.bbc.co.uk/news/articles/cvze4wx3elj1o?at_medium=RSS&at_campaign=rss",
+        "publisher": "www.bbc.co.uk",
+        "publishedAt": "2026-10-21",
+        "knownAt": "2026-10-21",
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": "3f8e0d85d5873806e0c4332ef59d9f83c5f873a4e98e77b0421c7189fe60d21b"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p-1",
+        "kind": "illustration",
+        "text": "想象你经营一家面包店：燃气账单翻倍，面包却不能随意涨价。你可以少开炉、提价，也可以换设备。每个选择都会影响顾客、工人和供应商。2022 年欧洲面对的是这个问题的放大版，而“天然气涨价，所以所有能源股都涨”省略了最关键的几步。",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-1",
+            "relation": "context",
+            "locator": "原始披露对应段落；由人工整理的已核验样本引用。"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "illustration"
+      },
+      {
+        "id": "p-2",
+        "kind": "fact",
+        "text": "已发生事实。 IEA 对 2022 年的复盘记录：俄罗斯大幅削减对欧洲的管道气供应，欧洲增加液化天然气（LNG）进口、补充储气，同时压低用气。经合组织欧洲地区全年天然气消费估计减少约 13%，其中部分来自高耗能工业减产。这里的统计范围是 OECD Europe，不能直接换成欧盟。IEA《Gas Market Report Q1-2023》",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-1",
+            "relation": "supports",
+            "locator": "IEA《Gas Market Report Q1-2023》"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-3",
+        "kind": "mechanism",
+        "text": "机制解释。 管道供气减少 → 可用气源更紧；短期内家庭不能马上更换暖气、进口设施不能立即扩建 → 供需双方调整慢 → 价格容易剧烈变化。这是供需与短期弹性的解释，不表示战争是每一天价格变化的唯一原因。",
+        "scope": "2022—2023",
+        "evidenceRefs": [],
+        "conditions": [
+          "短期替代有限，需一起检查库存、需求与合同。"
+        ],
+        "invalidators": [
+          "替代供应、节能或暖冬缓和稀缺。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-4",
+        "kind": "mechanism",
+        "text": "家庭线：燃气和用电成本上升 → 生活预算被挤压 → 其他消费可能减少；若政府补贴账单，这个压力会部分转给财政。具体程度还看合同、补贴和收入。\n工厂线：天然气既可当燃料，也可当化工原料 → 成本上升；有定价权的企业可能提价，竞争激烈的企业可能利润下降或停产。化肥、基础化工、玻璃等应分别检查能源成本占比与替代能力。\n供应线：高价吸引替代气源、节能和设备投资 → 后续供需可能缓和；但建设与运输需要时间，供应商也要承担采购、合同和融资成本。",
+        "scope": "2022—2023",
+        "evidenceRefs": [],
+        "conditions": [
+          "短期替代有限，需一起检查库存、需求与合同。"
+        ],
+        "invalidators": [
+          "替代供应、节能或暖冬缓和稀缺。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-5",
+        "kind": "mechanism",
+        "text": "这些是有条件的机制，不是三组股票的涨跌名单。宏观上，高能源成本可能同时推高物价、压低产出；微观上，同样的气价对卖气者与用气者、长约客户与现货客户影响不同。",
+        "scope": "2022—2023",
+        "evidenceRefs": [],
+        "conditions": [
+          "短期替代有限，需一起检查库存、需求与合同。"
+        ],
+        "invalidators": [
+          "替代供应、节能或暖冬缓和稀缺。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-6",
+        "kind": "fact",
+        "text": "公司披露。 BASF 2022 年报把欧洲气价上涨、需求转弱及中国防疫限制共同列为产量下降背景；不能把产量变化全部归给天然气。BASF 能源与气候章节",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-2",
+            "relation": "supports",
+            "locator": "BASF 能源与气候章节"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-7",
+        "kind": "mechanism",
+        "text": "分析办法。 对这类企业，应继续看每单位产品用气量、售价能否跟涨、产能利用率，以及不同地区工厂的成本。气价下降若同时伴随客户订单减少，成本改善也未必变成利润增长。公司年报对欧洲年度气价的描述可提供成本背景，但不等于该公司的实际平均采购价。BASF 2022 经济环境",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-3",
+            "relation": "supports",
+            "locator": "BASF 2022 经济环境"
+          }
+        ],
+        "conditions": [
+          "短期替代有限，需一起检查库存、需求与合同。"
+        ],
+        "invalidators": [
+          "替代供应、节能或暖冬缓和稀缺。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-8",
+        "kind": "scenario",
+        "text": "当时的条件情景。 IEA 在 2022 年末的压力测试设定：俄罗斯管道气完全中断、中国 LNG 进口回到 2021 年水平等。在已有措施之外仍可能出现缺口。这是为了准备风险的条件测试，不是“市场一致认为必然断气”。当时天气、亚洲需求、替代供给都未知。IEA 压力测试及假设",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-4",
+            "relation": "supports",
+            "locator": "IEA 压力测试及假设"
+          }
+        ],
+        "conditions": [
+          "短期替代有限，需一起检查库存、需求与合同。"
+        ],
+        "invalidators": [
+          "替代供应、节能或暖冬缓和稀缺。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-9",
+        "kind": "fact",
+        "text": "后来观察。 IEA 记录，TTF 天然气现货价格在 2022 年 12 月中旬至 2023 年 3 月底下降近 70%。报告将暖冬、低于预期的用气、较强 LNG 供应和较高库存列为缓解因素；这是多因素分析，不是对每一因素的独立贡献估计。到一季度末，价格仍高于历史平均，降价也不等于危机前成本完全恢复。IEA Q2-2023，第 30 页",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-5",
+            "relation": "supports",
+            "locator": "IEA Q2-2023，第 30 页"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-10",
+        "kind": "fact",
+        "text": "市场口径。 上述近 70% 是指定时段的批发天然气价格变化，既不是居民账单降幅，也不是能源股票回报。BASF 年报另披露其股价由 2022 年 2 月 11 日年内高点 68.69 欧元回落，年末为 46.39 欧元；这只是两个时点的未复权价格，不能证明全部由气价造成，也不是含分红收益率。BASF 股东信",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-6",
+            "relation": "supports",
+            "locator": "BASF 股东信"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-11",
+        "kind": "mechanism",
+        "text": "战争持续而气价回落，说明标题不决定价格方向；需求下降能缓解稀缺，也可能包含工厂停产的代价。要判断后续，还需跟踪储气、天气、实际流量、工业订单和合同价格。这里没有重建交易者共识或公司股价事件窗口，因此不宣称测出了“预期差”的精确大小。",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-5",
+            "relation": "context",
+            "locator": "原始披露对应段落；由人工整理的已核验样本引用。"
+          }
+        ],
+        "conditions": [
+          "短期替代有限，需一起检查库存、需求与合同。"
+        ],
+        "invalidators": [
+          "替代供应、节能或暖冬缓和稀缺。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "事件解读",
+        "claimIds": [
+          "p-1"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "section-2",
+        "title": "发生了什么，为什么不能只看战争标题",
+        "claimIds": [
+          "p-2",
+          "p-3"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "section-3",
+        "title": "从同一事件分出三条路",
+        "claimIds": [
+          "p-4",
+          "p-5"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "section-4",
+        "title": "公司怎么接上：BASF 不等于“欧洲化工全行业”",
+        "claimIds": [
+          "p-6",
+          "p-7"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "section-5",
+        "title": "当时担心什么，后来发生什么",
+        "claimIds": [
+          "p-8",
+          "p-9",
+          "p-10"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "section-6",
+        "title": "反例与下一步",
+        "claimIds": [
+          "p-11"
+        ],
+        "collapsed": false
+      }
+    ],
+    "timeline": [
+      {
+        "id": "t-year",
+        "label": "年度供需回顾",
+        "occurredAt": "2022",
+        "precision": "year",
+        "knownAt": null,
+        "claimIds": [
+          "p-2"
+        ],
+        "evidenceIds": [
+          "source-1"
+        ]
+      },
+      {
+        "id": "t-easing",
+        "label": "截至3月底的价格回顾",
+        "occurredAt": "2023-03",
+        "precision": "month",
+        "knownAt": null,
+        "claimIds": [
+          "p-9"
+        ],
+        "evidenceIds": [
+          "source-5"
+        ]
+      }
+    ],
+    "nodes": [],
+    "edges": [],
+    "branches": [],
+    "concepts": [
+      {
+        "id": "supply-demand",
+        "title": "供需与价格",
+        "explanation": "价格需要同时看可用供应、需求与替代。",
+        "example": "用供给替代、库存与需求理解稀缺，分清气价和企业利润。",
+        "lessonIds": [
+          "supply-demand"
+        ]
+      },
+      {
+        "id": "elasticity",
+        "title": "弹性与税负",
+        "explanation": "谁更难调整购买或生产，谁往往承担更多成本。",
+        "example": "用供给替代、库存与需求理解稀缺，分清气价和企业利润。",
+        "lessonIds": [
+          "elasticity"
+        ]
+      },
+      {
+        "id": "cpi",
+        "title": "通胀",
+        "explanation": "单个商品变贵，不等于所有消费价格同比例上涨。",
+        "example": "用供给替代、库存与需求理解稀缺，分清气价和企业利润。",
+        "lessonIds": [
+          "cpi"
+        ]
+      }
+    ],
+    "lessonIds": [
+      "supply-demand",
+      "elasticity",
+      "cpi",
+      "geopolitics",
+      "expectations"
+    ],
+    "impacts": [
+      {
+        "scope": "industry",
+        "subjects": [
+          "能源",
+          "地缘政治"
+        ],
+        "claimIds": [
+          "p-8",
+          "p-11"
+        ]
+      }
+    ],
+    "newsLinks": [
+      {
+        "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvze4wx3elj1o?at_medium=RSS&at_campaign=rss",
+        "evidenceId": "source-7",
+        "relation": "topic-context",
+        "rationale": "这条新闻讨论新的气田供给决策；历史案例帮助理解能源供给与替代，属于主题背景，不是2022危机重演。",
+        "expectedSourceHash": "3f8e0d85d5873806e0c4332ef59d9f83c5f873a4e98e77b0421c7189fe60d21b",
+        "reviewedAt": "2026-10-21"
+      }
+    ],
+    "quiz": {
+      "prompt": "战争还在持续，但天气较暖、库存较高、替代供气增加。气价一定还要上涨吗？",
+      "options": [
+        {
+          "id": "a",
+          "text": "一定，战争标题决定价格。"
+        },
+        {
+          "id": "b",
+          "text": "不一定，要检查供需紧张程度，降价也未必代表工业恢复。"
+        },
+        {
+          "id": "c",
+          "text": "不会，气价下降说明所有工厂都已恢复。"
+        }
+      ],
+      "correctId": "b",
+      "explanation": "价格反映供需与预期变化。需求下降也可能包含工业减产的代价，不能只看标题。"
+    },
+    "marketCoverage": {
+      "status": "not-verified",
+      "reason": "未重建事前市场共识，不将经济机制写成确定的股价归因。"
+    },
+    "revisions": [
+      {
+        "version": 1,
+        "revisedAt": "2026-10-21",
+        "reason": "从已核验设计样本人工整理；静态编辑发布，不由模型自动生成。"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "tariffs-2018",
+    "question": "对进口商品加税，最后谁付钱？",
+    "domain": [
+      "贸易",
+      "政策"
+    ],
+    "value": "区分法定纳税人与成本承担者，理解供应链为何让结果分叉。",
+    "summary": "区分法定纳税人与成本承担者，理解供应链为何让结果分叉。",
+    "period": {
+      "start": "2018-06",
+      "end": "2020-05",
+      "label": "2018—2020"
+    },
+    "historical": true,
+    "experience": "basic",
+    "curatedAt": "2026-10-21",
+    "evidence": [
+      {
+        "id": "source-1",
+        "title": "USTR 2018 年 6 月声明",
+        "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases/2018/june/ustr-issues-tariffs-chinese-products",
+        "publisher": "ustr.gov",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-2",
+        "title": "USTR 2019 年 5 月声明",
+        "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases/2019/may/statement-us-trade-representative",
+        "publisher": "ustr.gov",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-3",
+        "title": "纽约联储：关税与美国家庭成本",
+        "url": "https://libertystreeteconomics.newyorkfed.org/2019/05/new-china-tariffs-increase-costs-to-us-households/",
+        "publisher": "libertystreeteconomics.newyorkfed.org",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-4",
+        "title": "Flaaen 与 Pierce，2019 工作论文",
+        "url": "https://www.federalreserve.gov/econres/feds/files/2019086pap.pdf",
+        "publisher": "www.federalreserve.gov",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-5",
+        "title": "Apple 2019 年 10-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019319000119/a10-k20199282019.htm",
+        "publisher": "www.sec.gov",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-6",
+        "title": "纽约联储：贸易战的投资成本",
+        "url": "https://libertystreeteconomics.newyorkfed.org/2020/05/the-investment-cost-of-the-us-china-trade-war/",
+        "publisher": "libertystreeteconomics.newyorkfed.org",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-7",
+        "title": "Trump sued over Canadian tariffs in latest legal challenge",
+        "url": "https://www.bbc.co.uk/news/articles/cqrkyj13m588o?at_medium=RSS&at_campaign=rss",
+        "publisher": "www.bbc.co.uk",
+        "publishedAt": "2026-10-20",
+        "knownAt": "2026-10-20",
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": "c5920afff6dfaa7954712ae3f3fde7077ffa13878b3dd09582c5ed582236ef39"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p-1",
+        "kind": "illustration",
+        "text": "假设一家美国商店从中国进口一盏灯，报关价格 100 美元。忽然多出 25 美元关税，谁承担？海关向进口环节收税，但商店可能涨价、压低进货价、少赚利润，或换供应商。“在哪个国家生产”和“谁最终承担成本”是两道问题。",
+        "scope": "2018—2020",
+        "evidenceRefs": [],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "illustration"
+      },
+      {
+        "id": "p-2",
+        "kind": "fact",
+        "text": "政策事实。 USTR 在 2018 年 6 月公布，首批约 340 亿美元中国商品将于 7 月 6 日加征 25% 关税。其声明把技术转让、知识产权及产业政策争议列为行动理由；这是美方公开政策立场，不能写成不带归属的中立裁决。USTR 2018 年 6 月声明",
+        "scope": "2018—2020",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-1",
+            "relation": "supports",
+            "locator": "USTR 2018 年 6 月声明"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-3",
+        "kind": "fact",
+        "text": "2019 年 5 月 10 日，美国将约 2000 亿美元中国进口商品的加征税率从 10% 提到 25%。这也说明“关税来了”不是一个单一日期，需要区分宣布、执行、清单和豁免。USTR 2019 年 5 月声明",
+        "scope": "2018—2020",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-2",
+            "relation": "supports",
+            "locator": "USTR 2019 年 5 月声明"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-4",
+        "kind": "mechanism",
+        "text": "进口成本线：加征税 → 到岸后的含税成本上升 → 商店在提价与少赚之间选择 → 消费者购买力或企业利润受压。若外国供货商降价，双方会分担；不能事先假定某方承担全部。\n竞争线：外国成品变贵 → 本地替代品可能多卖；但本地工厂也可能进口被加税的零件 → 成本上升。受保护的销售收入和受损的投入成本需要合并算账。\n跨境反馈线：贸易伙伴反制 → 出口商订单承压；企业改找供应商、重新认证和迁移产能 → 支出与时间成本增加；政策还会不会再变的不确定性，可能让扩产先缓一缓。",
+        "scope": "2018—2020",
+        "evidenceRefs": [],
+        "conditions": [
+          "具体清单覆盖该产品，税费确实传到其进口成本。"
+        ],
+        "invalidators": [
+          "豁免、成本分担或替代改变结果。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-5",
+        "kind": "mechanism",
+        "text": "这是税负归宿、替代弹性和供应链的条件机制。宏观上可能同时影响物价、消费和投资；汇率、需求与其他政策也会变化，不能将某个月全部通胀或增长归给关税。",
+        "scope": "2018—2020",
+        "evidenceRefs": [],
+        "conditions": [
+          "具体清单覆盖该产品，税费确实传到其进口成本。"
+        ],
+        "invalidators": [
+          "豁免、成本分担或替代改变结果。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-6",
+        "kind": "fact",
+        "text": "测量结果。 纽约联储研究者在 2019 年报告，2018 年关税几乎完整传入美国进口商品的边境含税价格，外国出口报价并未相应下降。这个证据支持“美国进口买方承担明显成本”，不能直接改写成“每家零售店都把税率原样加到货架价上”。零售端还有库存、毛利、合同及替代选择。纽约联储：关税与美国家庭成本",
+        "scope": "2018—2020",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-3",
+            "relation": "supports",
+            "locator": "纽约联储：关税与美国家庭成本"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-7",
+        "kind": "fact",
+        "text": "行业研究。 美联储研究将进口保护、投入成本和反制关税分开，发现更暴露的制造行业就业相对受压，后两项负面影响超过较小的保护收益。这是行业比较模型的结果，不是“每家美国工厂都受损”，也不是整个经济净损失的完整测算。Flaaen 与 Pierce，2019 工作论文",
+        "scope": "2018—2020",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-4",
+            "relation": "supports",
+            "locator": "Flaaen 与 Pierce，2019 工作论文"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "research-finding"
+      },
+      {
+        "id": "p-8",
+        "kind": "fact",
+        "text": "公司连接。 Apple 的 2019 年 10-K 把贸易限制列为业务风险，说明其国际制造与供应链可能受到成本和调整压力。读这份披露应追问哪些产品被覆盖、何时执行、能否获豁免，以及公司能否转移成本。风险披露说明暴露路径，并不证明损失已经按某个税率实现；本样本不填未经核实的 Apple 股价涨跌。Apple 2019 年 10-K",
+        "scope": "2018—2020",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-5",
+            "relation": "supports",
+            "locator": "Apple 2019 年 10-K"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-9",
+        "kind": "mechanism",
+        "text": "事前可知。 清单公布后，可以估算已覆盖产品的法定成本；却不能确定谈判结果、后续升级、成本转嫁和供应商切换速度。没有当时调查或价格资料，不能代替市场声称“人人原先都以为会很快结束”。",
+        "scope": "2018—2020",
+        "evidenceRefs": [],
+        "conditions": [
+          "具体清单覆盖该产品，税费确实传到其进口成本。"
+        ],
+        "invalidators": [
+          "豁免、成本分担或替代改变结果。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-10",
+        "kind": "fact",
+        "text": "事后研究。 纽约联储研究者用贸易战公告日及其附近窗口研究上市公司价格，发现对华有进口、出口或子公司销售暴露的公司，公告后的相对异常回报更低；研究也没有发现受保护企业的明确股价收益证据。这里的“异常”指相对模型基准的收益，不是简单年度涨跌；公告窗口仍可能混入其他消息，结论依赖识别方法。纽约联储：贸易战的投资成本",
+        "scope": "2018—2020",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-6",
+            "relation": "supports",
+            "locator": "纽约联储：贸易战的投资成本"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "research-finding"
+      },
+      {
+        "id": "p-11",
+        "kind": "scenario",
+        "text": "分析解释。 新消息若提高未来成本、降低订单或增加风险，估值可能承压；但若市场原本预料更严厉，实际措施较轻也可能带来正面反应。这是预期差的条件解释，不是本样本已经测出的单日因果。",
+        "scope": "2018—2020",
+        "evidenceRefs": [],
+        "conditions": [
+          "具体清单覆盖该产品，税费确实传到其进口成本。"
+        ],
+        "invalidators": [
+          "豁免、成本分担或替代改变结果。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-12",
+        "kind": "mechanism",
+        "text": "“本国企业必然受益”忽略其进口零件和出口市场；“出口商完全没承担”也忽略销量、订单与长期议价。对中国企业应另查客户结构、出口量、汇率和利润，不能把美国边境价格结果直接套过去。继续观察关税清单、进口数量、毛利、订单和资本开支，才能检查哪条路径正在发生。",
+        "scope": "2018—2020",
+        "evidenceRefs": [],
+        "conditions": [
+          "具体清单覆盖该产品，税费确实传到其进口成本。"
+        ],
+        "invalidators": [
+          "豁免、成本分担或替代改变结果。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "事件解读",
+        "claimIds": [
+          "p-1"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "section-2",
+        "title": "先把事件说清楚",
+        "claimIds": [
+          "p-2",
+          "p-3"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "section-3",
+        "title": "同一项关税，为什么影响会分叉",
+        "claimIds": [
+          "p-4",
+          "p-5"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "section-4",
+        "title": "真实研究说了什么，没说什么",
+        "claimIds": [
+          "p-6",
+          "p-7",
+          "p-8"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "section-5",
+        "title": "预期如何变，市场真的怎么反应",
+        "claimIds": [
+          "p-9",
+          "p-10",
+          "p-11"
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "section-6",
+        "title": "反例与下一步",
+        "claimIds": [
+          "p-12"
+        ],
+        "collapsed": false
+      }
+    ],
+    "timeline": [
+      {
+        "id": "t-list",
+        "label": "首批关税安排公布",
+        "occurredAt": "2018-06",
+        "precision": "month",
+        "knownAt": null,
+        "claimIds": [
+          "p-2"
+        ],
+        "evidenceIds": [
+          "source-1"
+        ]
+      },
+      {
+        "id": "t-escalation",
+        "label": "加征税率调整",
+        "occurredAt": "2019-05-10",
+        "precision": "day",
+        "knownAt": null,
+        "claimIds": [
+          "p-3"
+        ],
+        "evidenceIds": [
+          "source-2"
+        ]
+      }
+    ],
+    "nodes": [],
+    "edges": [],
+    "branches": [],
+    "concepts": [
+      {
+        "id": "elasticity",
+        "title": "弹性与税负",
+        "explanation": "谁更难调整购买或生产，谁往往承担更多成本。",
+        "example": "区分法定纳税人与成本承担者，理解供应链为何让结果分叉。",
+        "lessonIds": [
+          "elasticity"
+        ]
+      },
+      {
+        "id": "trade",
+        "title": "关税与供应链",
+        "explanation": "保护本地销售与抬高进口投入成本，可能同时发生。",
+        "example": "区分法定纳税人与成本承担者，理解供应链为何让结果分叉。",
+        "lessonIds": [
+          "trade"
+        ]
+      },
+      {
+        "id": "expectations",
+        "title": "预期差",
+        "explanation": "新信息与原来想法的差异，可能推动重新定价。",
+        "example": "区分法定纳税人与成本承担者，理解供应链为何让结果分叉。",
+        "lessonIds": [
+          "expectations"
+        ]
+      }
+    ],
+    "lessonIds": [
+      "elasticity",
+      "trade",
+      "expectations",
+      "exchange-rate"
+    ],
+    "impacts": [
+      {
+        "scope": "industry",
+        "subjects": [
+          "贸易",
+          "政策"
+        ],
+        "claimIds": [
+          "p-11",
+          "p-12"
+        ]
+      }
+    ],
+    "newsLinks": [
+      {
+        "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqrkyj13m588o?at_medium=RSS&at_campaign=rss",
+        "evidenceId": "source-7",
+        "relation": "topic-context",
+        "rationale": "这条新闻报道对加拿大关税的法律争议；2018案例用于理解关税成本归宿，国家、政策与时间不同。",
+        "expectedSourceHash": "c5920afff6dfaa7954712ae3f3fde7077ffa13878b3dd09582c5ed582236ef39",
+        "reviewedAt": "2026-10-21"
+      }
+    ],
+    "quiz": {
+      "prompt": "一家本地工厂的外国竞争品被加税，但它也进口被加税零件。利润一定增加吗？",
+      "options": [
+        {
+          "id": "a",
+          "text": "一定，关税总能保护本地企业。"
+        },
+        {
+          "id": "b",
+          "text": "不一定，销售保护可能被零件成本和反制影响抵消。"
+        },
+        {
+          "id": "c",
+          "text": "只看税率，就能算出股价涨幅。"
+        }
+      ],
+      "correctId": "b",
+      "explanation": "进口保护、投入成本和反制可能同时发生；还要看成本转嫁与原有预期。"
+    },
+    "marketCoverage": {
+      "status": "not-verified",
+      "reason": "未重建事前市场共识，不将经济机制写成确定的股价归因。"
+    },
+    "revisions": [
+      {
+        "version": 1,
+        "revisedAt": "2026-10-21",
+        "reason": "从已核验设计样本人工整理；静态编辑发布，不由模型自动生成。"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "nvidia-ai-2023",
+    "question": "收入同比下降，为什么这份 AI 财报仍值得看？",
+    "domain": [
+      "科技",
+      "企业"
+    ],
+    "value": "区分实际收入、公司指引和市场预期，看需求怎样成为现金流。",
+    "summary": "区分实际收入、公司指引和市场预期，看需求怎样成为现金流。",
+    "period": {
+      "start": "2023-05-24",
+      "end": "2023-08-23",
+      "label": "2023"
+    },
+    "historical": true,
+    "experience": "basic",
+    "curatedAt": "2026-10-21",
+    "evidence": [
+      {
+        "id": "source-1",
+        "title": "5 月财报原文",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2024",
+        "publisher": "nvidianews.nvidia.com",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-2",
+        "title": "2 月发布的上一季财报及指引",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023",
+        "publisher": "nvidianews.nvidia.com",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-3",
+        "title": "当季 SEC 10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000093/nvda-20230430.htm",
+        "publisher": "www.sec.gov",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-4",
+        "title": "8 月实际结果",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2024",
+        "publisher": "nvidianews.nvidia.com",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      }
+    ],
+    "claims": [
+      {
+        "id": "p-1",
+        "kind": "illustration",
+        "text": "假设你是开云计算公司的老板。用户开始试用生成式 AI，你面对的问题很实际：原来的机器够不够？要不要提前买一批专门处理大量并行计算的 GPU？对 NVIDIA 来说，客户的试验只有变成采购、交付和收入，才进入财报。这正是这条新闻值得追踪的地方：技术热度正在接近企业的钱包。",
+        "scope": "2023",
+        "evidenceRefs": [],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "illustration"
+      },
+      {
+        "id": "p-2",
+        "kind": "fact",
+        "text": "2023 年 5 月 24 日，NVIDIA 公布的是 2024 财年第一季度（Q1 FY2024），截至 2023 年 4 月 30 日，并非自然年“2024 年一季度”。收入为 71.92 亿美元，同比下降 13%，环比增长 19%；数据中心收入 42.8 亿美元，同比增长 14%。所以，“公司已经全面高速增长”并不符合这份成绩单。5 月财报原文",
+        "scope": "2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-1",
+            "relation": "supports",
+            "locator": "5 月财报原文"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-3",
+        "kind": "fact",
+        "text": "别急着只盯“下降”。往前翻一页：2 月公司给 Q1 FY2024 的收入指引是 65 亿美元、上下浮动 2%；到 5 月，实际收入高于这个区间。这个比较只证明“超过公司先前指引”，不能替换成“超过华尔街一致预期”。本稿未独立核实当时分析师预测的样本与时间点，该数值留空。2 月发布的上一季财报及指引",
+        "scope": "2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-2",
+            "relation": "supports",
+            "locator": "2 月发布的上一季财报及指引"
+          },
+          {
+            "evidenceId": "source-1",
+            "relation": "supports",
+            "locator": "原始披露对应段落；由人工整理的已核验样本引用。"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-4",
+        "kind": "scenario",
+        "text": "5 月更值得继续观察的是下一季：公司给 Q2 FY2024 的收入指引为 110 亿美元、上下浮动 2%。它是全公司收入预测，不是已实现收入，也不是单独的数据中心订单。管理层称正增加供应，以满足加速计算和生成式 AI 需求。这种表态值得听，但不能把管理层的信心当作客户永远买单的保证。同次发布的展望与管理层表述",
+        "scope": "2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-1",
+            "relation": "supports",
+            "locator": "同次发布的展望与管理层表述"
+          }
+        ],
+        "conditions": [
+          "采购能转化成交付，需分别判断供应与需求持续性。"
+        ],
+        "invalidators": [
+          "需求提前集中、成本或竞争改变结果。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-5",
+        "kind": "mechanism",
+        "text": "可以把它理解成开新餐厅：收到咨询不等于有客人付账；客人愿意来，还得有桌椅和厨师。云服务商与互联网公司购买计算设备，是 NVIDIA 的需求；芯片生产、配套交付能力则是供应。只有两端衔接，收入才能兑现。SEC 文件把当期计算与网络业务增长联系到生成式 AI、大语言模型和云客户需求，同时披露出口限制等风险。这支持“需求结构正在变化”，并不证明所有算力相关企业都能同步获利。当季 SEC 10-Q",
+        "scope": "2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-3",
+            "relation": "supports",
+            "locator": "当季 SEC 10-Q"
+          }
+        ],
+        "conditions": [
+          "采购能转化成交付，需分别判断供应与需求持续性。"
+        ],
+        "invalidators": [
+          "需求提前集中、成本或竞争改变结果。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-6",
+        "kind": "scenario",
+        "text": "这条链还会分叉。【条件推演】若采购持续，芯片、服务器、网络设备的供应商可能获得更多生意；但利润要看谁拥有议价权、谁承担成本。云公司的设备开支先增加，之后还要靠算力使用率和客户收费收回来。应用公司即使用户很多，也可能因计算费用太高而亏损。反例是“AI 使用量上升、应用利润反而下降”：行业有需求，并不等于产业链每一环都有好生意。竞争者、自研芯片、采购提前集中，也都是需要补证据的替代解释，不能在这里断言已成主因。",
+        "scope": "2023",
+        "evidenceRefs": [],
+        "conditions": [
+          "采购能转化成交付，需分别判断供应与需求持续性。"
+        ],
+        "invalidators": [
+          "需求提前集中、成本或竞争改变结果。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-7",
+        "kind": "fact",
+        "text": "读利润也有一道门槛。【口径】Q1 FY2024 的 GAAP 稀释每股收益为 0.82 美元，non-GAAP 为 1.09 美元，均沿用当时发布口径。上面 5 月财报的调节表说明，后者排除了股权激励等调整项；不能拿其中一个与另一个口径的往年数字拼接，也不能把 non-GAAP 直接称为现金利润。",
+        "scope": "2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-1",
+            "relation": "supports",
+            "locator": "原始披露对应段落；由人工整理的已核验样本引用。"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-8",
+        "kind": "fact",
+        "text": "8 月 23 日公布的 Q2 FY2024（截至 7 月 30 日）实际收入为 135.07 亿美元，数据中心收入为 103.2 亿美元。它验证了这一季的需求兑现，不能倒推成“5 月已经确定”，更不能证明长期增速永久持续。8 月实际结果",
+        "scope": "2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-4",
+            "relation": "supports",
+            "locator": "8 月实际结果"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-9",
+        "kind": "uncertain",
+        "text": "本稿未核验交易所历史价格和同期一致预期，不填写实际股价涨幅，也不把任何一天涨跌归因于这一条信息。可以解释的是：若新证据使未来现金流预期上修，估值可能变化；反过来，若价格早已要求更高增长，好财报也不保证上涨。",
+        "scope": "2023",
+        "evidenceRefs": [],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-10",
+        "kind": "mechanism",
+        "text": "下一次追踪，可以把三件事放在一起：数据中心收入有没有继续兑现、毛利率是否守住、客户的设备投入能否换回收费收入。若只有采购热情，却缺少终端回报，长期需求的故事就还需要证据。",
+        "scope": "2023",
+        "evidenceRefs": [],
+        "conditions": [
+          "采购能转化成交付，需分别判断供应与需求持续性。"
+        ],
+        "invalidators": [
+          "需求提前集中、成本或竞争改变结果。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "事件解读",
+        "claimIds": [
+          "p-1",
+          "p-2",
+          "p-3",
+          "p-4",
+          "p-5",
+          "p-6",
+          "p-7",
+          "p-8",
+          "p-9",
+          "p-10"
+        ],
+        "collapsed": false
+      }
+    ],
+    "timeline": [
+      {
+        "id": "t-guidance",
+        "label": "第一财季业绩与下一季展望",
+        "occurredAt": "2023-05-24",
+        "precision": "day",
+        "knownAt": "2023-05-24",
+        "claimIds": [
+          "p-2"
+        ],
+        "evidenceIds": [
+          "source-1"
+        ]
+      },
+      {
+        "id": "t-actual",
+        "label": "第二财季实际结果公布",
+        "occurredAt": "2023-08-23",
+        "precision": "day",
+        "knownAt": "2023-08-23",
+        "claimIds": [
+          "p-8"
+        ],
+        "evidenceIds": [
+          "source-4"
+        ]
+      }
+    ],
+    "nodes": [],
+    "edges": [],
+    "branches": [],
+    "concepts": [
+      {
+        "id": "supply-demand",
+        "title": "供需与价格",
+        "explanation": "价格需要同时看可用供应、需求与替代。",
+        "example": "区分实际收入、公司指引和市场预期，看需求怎样成为现金流。",
+        "lessonIds": [
+          "supply-demand"
+        ]
+      },
+      {
+        "id": "statements",
+        "title": "财报与盈利",
+        "explanation": "收入增长要经过成本、利润与现金流才能判断经营质量。",
+        "example": "区分实际收入、公司指引和市场预期，看需求怎样成为现金流。",
+        "lessonIds": [
+          "statements"
+        ]
+      },
+      {
+        "id": "expectations",
+        "title": "预期差",
+        "explanation": "新信息与原来想法的差异，可能推动重新定价。",
+        "example": "区分实际收入、公司指引和市场预期，看需求怎样成为现金流。",
+        "lessonIds": [
+          "expectations"
+        ]
+      }
+    ],
+    "lessonIds": [
+      "supply-demand",
+      "statements",
+      "expectations",
+      "moat",
+      "valuation"
+    ],
+    "impacts": [
+      {
+        "scope": "industry",
+        "subjects": [
+          "科技",
+          "企业"
+        ],
+        "claimIds": [
+          "p-7",
+          "p-10"
+        ]
+      }
+    ],
+    "newsLinks": [],
+    "quiz": {
+      "prompt": "5 月公布下一季收入指引，8 月才公布实际收入。能把两者都当作 5 月已实现收入吗？",
+      "options": [
+        {
+          "id": "a",
+          "text": "能，公司说了就已经实现。"
+        },
+        {
+          "id": "b",
+          "text": "不能，指引是待兑现判断，8 月结果是后来才知道的事实。"
+        },
+        {
+          "id": "c",
+          "text": "不能，因为好业绩一定导致股价下跌。"
+        }
+      ],
+      "correctId": "b",
+      "explanation": "指引、实际业绩和市场共识是不同信息；不能让当时的读者拥有事后知识，也不能凭业绩直接断定股价方向。"
+    },
+    "marketCoverage": {
+      "status": "not-verified",
+      "reason": "未重建事前市场共识，不将经济机制写成确定的股价归因。"
+    },
+    "revisions": [
+      {
+        "version": 1,
+        "revisedAt": "2026-10-21",
+        "reason": "从已核验设计样本人工整理；静态编辑发布，不由模型自动生成。"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "svb-2023",
+    "question": "银行有债券，为什么仍付不出钱？",
+    "domain": [
+      "银行",
+      "金融政策"
+    ],
+    "value": "从资产与负债的时间差，理解利率风险、现金和挤兑。",
+    "summary": "从资产与负债的时间差，理解利率风险、现金和挤兑。",
+    "period": {
+      "start": "2022-12-14",
+      "end": "2023-04-28",
+      "label": "2022—2023"
+    },
+    "historical": true,
+    "experience": "basic",
+    "curatedAt": "2026-10-21",
+    "evidence": [
+      {
+        "id": "source-1",
+        "title": "12 月 FOMC 声明",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20221214a.htm",
+        "publisher": "www.federalreserve.gov",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-2",
+        "title": "3 月 12 日三部门联合声明",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312b.htm",
+        "publisher": "www.federalreserve.gov",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-3",
+        "title": "官方复盘执行摘要",
+        "url": "https://www.federalreserve.gov/publications/2023-April-SVB-Executive-Summary.htm",
+        "publisher": "www.federalreserve.gov",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-4",
+        "title": "官方复盘：银行演变与倒闭经过",
+        "url": "https://www.federalreserve.gov/publications/2023-April-SVB-Evolution-of-Silicon-Valley-Bank.htm",
+        "publisher": "www.federalreserve.gov",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-5",
+        "title": "BTFP 当日公告",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312a.htm",
+        "publisher": "www.federalreserve.gov",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      },
+      {
+        "id": "source-6",
+        "title": "交易所原始停牌公告",
+        "url": "https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-halts-svb-financial-group",
+        "publisher": "ir.nasdaq.com",
+        "publishedAt": null,
+        "knownAt": null,
+        "retrievedAt": "2026-10-21",
+        "state": "active",
+        "captureState": "manual-reference",
+        "bodySha256": null
+      }
+    ],
+    "claims": [
+      {
+        "id": "p-1",
+        "kind": "illustration",
+        "text": "先想象一家银行的两边：一边是客户可以很快转走的存款，另一边是多年以后才陆续收回的钱。平时不是所有人同时提款，这种安排能够运转；但“资产最终会还钱”和“今天能拿出现金”是两回事。2023 年 3 月硅谷银行（SVB）倒闭，就把这个差别摆到了眼前。",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-2",
+            "relation": "context",
+            "locator": "原始披露对应段落；由人工整理的已核验样本引用。"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "illustration"
+      },
+      {
+        "id": "p-2",
+        "kind": "fact",
+        "text": "2022 年，美联储为应对高通胀连续加息，12 月 14 日把联邦基金利率目标区间升至 4.25%—4.50%。这是短端政策利率区间，不是每张长期债券的票息或市场收益率；长期利率还会随增长、通胀与政策预期变化。12 月 FOMC 声明",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-1",
+            "relation": "supports",
+            "locator": "12 月 FOMC 声明"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-3",
+        "kind": "mechanism",
+        "text": "假如你手里有一张固定低利息的旧债，新债却能提供更高收益，别人通常不会愿意按原价接手旧债；你得降价，让买家的回报变得有吸引力。期限越长、利率敏感度越高，价格通常受影响越大。这里的风险不是先假设债务人违约，而是市场价格变化。如果银行可以等到到期，眼前未必需要出售；储户同时要钱，就可能逼它提前变现。这是流动性和价值损失相互放大的通道。",
+        "scope": "2022—2023",
+        "evidenceRefs": [],
+        "conditions": [
+          "现金缺口及资产负债错配未被稳定资金或对冲抵消。"
+        ],
+        "invalidators": [
+          "现金缓冲、稳定存款或抵押融资打断路径。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-4",
+        "kind": "fact",
+        "text": "3 月 10 日，SVB 被关闭，FDIC 接管。3 月 12 日，财政部、美联储和 FDIC 联合宣布，储户可自 3 月 13 日起动用全部存款；股东和部分无担保债权人不在保护范围内。因此，“储户得到保护”不能写成“这家银行所有投资者都被救了”。这是当时公开的处置安排，尚不能代替完整的原因调查。3 月 12 日三部门联合声明",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-2",
+            "relation": "supports",
+            "locator": "3 月 12 日三部门联合声明"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-5",
+        "kind": "fact",
+        "text": "美联储 4 月 28 日报告显示，SVB 的问题是一组互相咬合的脆弱性：客户集中在科技和生命科学领域；此前融资活跃，存款快速流入，银行把资金配置到较长期证券；随后科技融资降温、企业持续花钱，存款承压；加息又使证券产生未实现损失。银行董事会和管理层没有及时管理好风险，监督与监管也存在缺失。把它简写为“加息让银行必然倒闭”，会漏掉这家银行自己的资产、负债和治理选择。官方复盘执行摘要",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-3",
+            "relation": "supports",
+            "locator": "官方复盘执行摘要"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-6",
+        "kind": "fact",
+        "text": "复盘记录，3 月 8 日公司宣布已出售约 210 亿美元可供出售证券，产生约 18 亿美元税后损失，并计划股权融资；3 月 9 日存款流出超过 400 亿美元。大量未投保存款和相互联系的客户网络，使担忧能够迅速变成集中提款。卖债与融资本来可用于调整资产负债表，却也可能被储户解读为危险信号；争相先走，又使银行更难筹钱。这些细节来自 4 月整理，不能伪装成 3 月 8 日每位观察者已经掌握的完整事实。官方复盘：银行演变与倒闭经过",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-4",
+            "relation": "supports",
+            "locator": "官方复盘：银行演变与倒闭经过"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-7",
+        "kind": "scenario",
+        "text": "这会怎样传到企业？【条件推演】创业公司若暂时无法使用存款，工资和供应商付款可能受阻；其他银行若担心资金流出，可能提高存款利率、增加现金缓冲或收紧贷款。前者增加融资成本，后者影响企业扩张。反例是：拥有更稳定存款、较短资产期限、有效对冲和充足可用现金的银行，承受同一轮加息的能力可能不同。加息还可能提高部分贷款收益；净影响要把资产收益、存款成本和损失一起看。",
+        "scope": "2022—2023",
+        "evidenceRefs": [],
+        "conditions": [
+          "现金缺口及资产负债错配未被稳定资金或对冲抵消。"
+        ],
+        "invalidators": [
+          "现金缓冲、稳定存款或抵押融资打断路径。"
+        ],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      },
+      {
+        "id": "p-8",
+        "kind": "fact",
+        "text": "同在 3 月 12 日，美联储宣布 BTFP，为符合条件的存款机构提供最长一年的抵押贷款，并对合格抵押证券按面值估值，意在减少被迫出售证券的压力。借到现金可以缓解提款时点的问题，却不能凭空消除资产损失、修复管理或保证盈利。这也不是把 SVB 的股权重新变成安全资产。BTFP 当日公告",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-5",
+            "relation": "supports",
+            "locator": "BTFP 当日公告"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-9",
+        "kind": "fact",
+        "text": "纳斯达克公告确认，母公司 SVB Financial Group 的股票 SIVB 于 3 月 10 日美东时间 08:35:18 暂停交易，公告所列最后成交价为 106.04 美元。它是停牌时的历史成交信息，不是当天收盘价，也不代表储户损失比例或停牌后能成交的价格。交易所原始停牌公告",
+        "scope": "2022—2023",
+        "evidenceRefs": [
+          {
+            "evidenceId": "source-6",
+            "relation": "supports",
+            "locator": "交易所原始停牌公告"
+          }
+        ],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "source-reported"
+      },
+      {
+        "id": "p-10",
+        "kind": "uncertain",
+        "text": "“所有地区银行都会倒”“危机一定带来降息、科技股必涨”都超出了这些证据。它们还取决于其他银行的资金结构、通胀和经济活动。本稿不以停牌事实推导其他资产涨跌，也不以事件先后证明价格因果。",
+        "scope": "2022—2023",
+        "evidenceRefs": [],
+        "conditions": [],
+        "invalidators": [],
+        "unknowns": [],
+        "reviewState": "curated",
+        "basis": "editor-synthesis"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "事件解读",
+        "claimIds": [
+          "p-1",
+          "p-2",
+          "p-3",
+          "p-4",
+          "p-5",
+          "p-6",
+          "p-7",
+          "p-8",
+          "p-9",
+          "p-10"
+        ],
+        "collapsed": false
+      }
+    ],
+    "timeline": [
+      {
+        "id": "t-close",
+        "label": "银行关闭与随后处置",
+        "occurredAt": "2023-03-10",
+        "precision": "day",
+        "knownAt": "2023-03-12",
+        "claimIds": [
+          "p-4"
+        ],
+        "evidenceIds": [
+          "source-2"
+        ]
+      },
+      {
+        "id": "t-review",
+        "label": "官方复盘公布",
+        "occurredAt": "2023-04-28",
+        "precision": "day",
+        "knownAt": "2023-04-28",
+        "claimIds": [
+          "p-5"
+        ],
+        "evidenceIds": [
+          "source-3"
+        ]
+      }
+    ],
+    "nodes": [],
+    "edges": [],
+    "branches": [],
+    "concepts": [
+      {
+        "id": "interest-rate",
+        "title": "利率",
+        "explanation": "政策利率会影响资金成本，但不是所有资产同一种利率。",
+        "example": "从资产与负债的时间差，理解利率风险、现金和挤兑。",
+        "lessonIds": [
+          "interest-rate"
+        ]
+      },
+      {
+        "id": "bonds",
+        "title": "债券与久期",
+        "explanation": "新旧债券收益比较会改变旧债价格，期限影响敏感度。",
+        "example": "从资产与负债的时间差，理解利率风险、现金和挤兑。",
+        "lessonIds": [
+          "bonds"
+        ]
+      },
+      {
+        "id": "bank-credit",
+        "title": "银行与挤兑",
+        "explanation": "最终有望收回资产，不等于今天就有足够现金支付。",
+        "example": "从资产与负债的时间差，理解利率风险、现金和挤兑。",
+        "lessonIds": [
+          "bank-credit"
+        ]
+      }
+    ],
+    "lessonIds": [
+      "interest-rate",
+      "bonds",
+      "bank-credit",
+      "liquidity",
+      "leverage"
+    ],
+    "impacts": [
+      {
+        "scope": "industry",
+        "subjects": [
+          "银行",
+          "金融政策"
+        ],
+        "claimIds": [
+          "p-7",
+          "p-8"
+        ]
+      }
+    ],
+    "newsLinks": [],
+    "quiz": {
+      "prompt": "银行债券到期可能足额偿还，但大量储户今天要提款。它仍可能发生支付危机吗？",
+      "options": [
+        {
+          "id": "a",
+          "text": "不会，有资产就等于有现金。"
+        },
+        {
+          "id": "b",
+          "text": "可能，现金时间差和被迫卖出损失会相互放大；稳定资金可缓冲。"
+        },
+        {
+          "id": "c",
+          "text": "可能，因此所有银行遇到加息都会倒闭。"
+        }
+      ],
+      "correctId": "b",
+      "explanation": "偿付能力与当下流动性需要分别看。存款结构、可用现金、资产期限与对冲决定承受力。"
+    },
+    "marketCoverage": {
+      "status": "not-verified",
+      "reason": "未重建事前市场共识，不将经济机制写成确定的股价归因。"
+    },
+    "revisions": [
+      {
+        "version": 1,
+        "revisedAt": "2026-10-21",
+        "reason": "从已核验设计样本人工整理；静态编辑发布，不由模型自动生成。"
+      }
+    ]
+  }
+]

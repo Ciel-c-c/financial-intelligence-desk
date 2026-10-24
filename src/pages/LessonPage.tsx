@@ -1,5 +1,6 @@
+import { safeEventReturn } from '../data/worldEvents/readingState';
 import { useEffect, useRef, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { beginnerPath, findLesson, sources, subjects } from '../data/curriculum';
 import type { Lesson } from '../data/curriculum';
 import { learningEvents, knowledgeForEvent } from '../data/learningEvents';
@@ -14,6 +15,9 @@ function explainBackground(value: string) {
 
 function LessonContent({ lesson }: { lesson: Lesson }) {
   const [answer,setAnswer] = useState(false);
+  const [searchParams]=useSearchParams();
+  const eventReturn=safeEventReturn(searchParams.get('returnTo'));
+  const lessonPath=(id:string)=>'/learn/'+id+(eventReturn?'?returnTo='+encodeURIComponent(eventReturn):'');
   const pageRef = useRef<HTMLElement>(null);
   useEffect(() => { pageRef.current?.scrollIntoView?.({ block: 'start' }); }, []);
   const { learned, update, saveError } = useLearningProgress();
@@ -27,11 +31,12 @@ function LessonContent({ lesson }: { lesson: Lesson }) {
   const nextId = path.includes(lesson.id) ? path[path.indexOf(lesson.id) + 1] : undefined;
   const next = nextId ? findLesson(nextId) : undefined;
   return <main ref={pageRef} className="page inner-page lesson-page">
+    {eventReturn && <Link className="back-link" aria-label="返回事件，继续探索" to={eventReturn}>← 返回事件，继续探索</Link>}
     <Link className="back-link" to="/learn">← 返回全部知识地图</Link>
     <header className="lesson-header"><p className="eyebrow">{group.title} / LEVEL {lesson.level}</p><h1>{lesson.title}</h1><p className="lesson-lead">{lesson.conclusion}</p><small>预计 {lesson.minutes} 分钟 · 自由阅读，无需解锁</small>
       <label className="learn-check"><input type="checkbox" checked={learned.includes(lesson.id)} onChange={e => update(lesson.id,e.target.checked)} />标记已学会</label>{saveError && <p role="alert">浏览器无法保存进度，本次仍可继续阅读。</p>}
     </header>
-    <aside className="lesson-prerequisites"><strong>建议先修</strong><div className="lesson-tags">{lesson.prerequisites.length ? lesson.prerequisites.map(id => <Link key={id} to={`/learn/${id}`}>{findLesson(id)?.title} {learned.includes(id) ? '✓' : '↗'}</Link>) : <span>无需先修，从这里开始即可。</span>}</div></aside>
+    <aside className="lesson-prerequisites"><strong>建议先修</strong><div className="lesson-tags">{lesson.prerequisites.length ? lesson.prerequisites.map(id => <Link key={id} to={lessonPath(id)}>{findLesson(id)?.title} {learned.includes(id) ? '✓' : '↗'}</Link>) : <span>无需先修，从这里开始即可。</span>}</div></aside>
     <article className="lesson-body">
       <section><h2>先说结论</h2><p>{lesson.conclusion}</p></section>
       <section className="lesson-example"><p className="eyebrow">PLAIN LANGUAGE FIRST</p><h2>举个简单例子</h2><p>{explanation.example}</p><aside><b>专业一点说：</b>{explanation.professional}</aside></section>
@@ -46,10 +51,12 @@ function LessonContent({ lesson }: { lesson: Lesson }) {
     <section className="lesson-related"><h2>相关历史教学案例</h2>{related.length ? <ul>{related.map(item => <li key={item.id}><strong>{item.title}</strong><small>{item.publishedAt} · {item.sourceName} · 历史案例（来源可能失效）</small></li>)}</ul> : <p>当前快照库暂无直接对应事件。可用本课机制分析未来资讯，不以虚构新闻补位。</p>}</section>
     <section className="lesson-related situation-related"><h2>全球局势案例 · 按原始日期阅读</h2>{situationEvents.length ? <ul>{situationEvents.map(item => <li key={item.id}><Link to={`/situation/${item.id}`}>{item.headline} →</Link><small>{item.publishedAt} · 用本课知识检查：{item.oneLine}</small></li>)}</ul> : <p>当前发布快照暂无直接案例。遇到新事件时，可用本课的变量与反例自行判断。</p>}<p><Link to="/situation">浏览全球局势 →</Link></p></section>
     <section className="lesson-quiz"><h2>快速自测</h2><p>{lesson.question}</p><button onClick={() => setAnswer(!answer)} aria-expanded={answer}>{answer ? '收起答案' : '查看答案'}</button>{answer && <p className="quiz-answer">{lesson.answer}</p>}</section>
-    <footer className="lesson-footer"><a href={source.url} target="_blank" rel="noreferrer">延伸学习：{source.title} ↗</a>{next && <Link to={`/learn/${next.id}`}>主线下一课：{next.title} →</Link>}<Link to="/learn">选择其他知识点 →</Link></footer>
+    <footer className="lesson-footer"><a href={source.url} target="_blank" rel="noreferrer">延伸学习：{source.title} ↗</a>{next && <Link to={lessonPath(next.id)}>主线下一课：{next.title} →</Link>}<Link to="/learn">选择其他知识点 →</Link></footer>
   </main>;
 }
 export function LessonPage() {
   const { id } = useParams(); const lesson = findLesson(id ?? '');
   return lesson ? <LessonContent key={lesson.id} lesson={lesson} /> : <main className="page inner-page"><h1>未找到这个知识点</h1><Link to="/learn">返回全部知识地图</Link></main>;
 }
+
+
