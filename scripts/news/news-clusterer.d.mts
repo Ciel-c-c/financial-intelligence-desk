@@ -1,0 +1,1 @@
+export function clusterNewsItems<T extends {id:string;originalTitle:string;publishedAt:string;canonicalUrl:string;sourceName:string;sourceTier:string;originalSummary?:string;relatedSources?:{name:string;url:string;publishedAt:string}[];verificationStatus?:string;article?:{status:string}}>(items:readonly T[]):T[];

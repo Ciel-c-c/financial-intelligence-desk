@@ -1,3 +1,5 @@
+import {clusterNewsItems} from '../../scripts/news/news-clusterer.mjs';
+import {orderDiverseNews} from '../data/newsDiversity.mjs';
 import { useMemo, useState } from 'react';
 import { filterLiveNews, type LiveNewsFilters } from '../data/selectors';
 import { isRecentNews } from '../data/newsDates';
@@ -10,9 +12,9 @@ import { isPublishableNews,isPublishableSummary,isPublishableSource } from '../d
 export function NewsFeedSections({snapshot,loading,error,showFilters=true}:{snapshot:NewsFeedSnapshot;loading:boolean;error?:string;showFilters?:boolean}) {
   const [filters,setFilters] = useState<LiveNewsFilters>({query:'',region:'全部',level:'全部',eventType:'全部'});
   const all = useMemo(() => [...snapshot.latest,...snapshot.continuing,...snapshot.retainedDetails].filter((item,index,list) => list.findIndex(candidate => candidate.id === item.id) === index),[snapshot]);
-  const publishable=all.filter(item=>isPublishableNews(item)||isPublishableSummary(item)||isPublishableSource(item));
+  const publishable=clusterNewsItems(all.filter(item=>isPublishableNews(item)||isPublishableSummary(item)||isPublishableSource(item)));
   const filtered = filterLiveNews(publishable,filters);
-  const latest = filtered.filter(item => isRecentNews(item.publishedAt));
+  const latest = orderDiverseNews(filtered.filter(item => isRecentNews(item.publishedAt)));
   const background = filtered.filter(item => Number.isFinite(Date.parse(item.publishedAt)) && Date.parse(item.publishedAt) <= Date.now() && !isRecentNews(item.publishedAt)).sort((a,b) => Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
   const highlights = latest.slice(0,8), more = latest.slice(8);
   if (loading) return <p className="empty-state">正在加载最新新闻…</p>;

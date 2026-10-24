@@ -1,3 +1,4 @@
+import {orderDiverseNews} from './newsDiversity.mjs';
 import { newsFeedSeed } from './newsFeedSeed'; import type { LiveNewsItem,NewsFeedSnapshot } from './newsFeedTypes';
 import { verifyNewsEvidence,isPublishableSource } from './newsAdmission';
 const valid=(value:any):value is NewsFeedSnapshot=>value?.schemaVersion===1&&['fresh','delayed','source_error'].includes(value.status)&&Array.isArray(value.latest)&&Array.isArray(value.continuing)&&value.continuing.length<=6&&Array.isArray(value.retainedDetails)&&Array.isArray(value.sourceHealth);
@@ -25,5 +26,5 @@ export async function loadNewsFeed(fetchImpl:typeof fetch=fetch):Promise<NewsFee
  const recentIds=new Set(recent.map(item=>item.id));
  const retainedDetails=[...reviewedItems.filter(item=>!recentIds.has(item.id)),...retained.filter(item=>!recentIds.has(item.id))];
  const approvedIds=new Set(approved.filter(Boolean).map(item=>item!.id));
- return {...snapshot,latest:[...recent,...latest.filter(item=>!approvedIds.has(item.id))].sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)),continuing:continuing.filter(item=>!approvedIds.has(item.id)),retainedDetails:retainedDetails.filter((item,index,list)=>list.findIndex(other=>other.id===item.id)===index)};
+ return {...snapshot,latest:orderDiverseNews([...recent,...latest.filter(item=>!approvedIds.has(item.id))]),continuing:continuing.filter(item=>!approvedIds.has(item.id)),retainedDetails:retainedDetails.filter((item,index,list)=>list.findIndex(other=>other.id===item.id)===index)};
 }
