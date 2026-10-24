@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-24T04:33:55.524Z",
+  "attemptedAt": "2026-10-24T04:34:18.128Z",
   "lastSuccessfulAt": "2026-10-24T04:33:55.524Z",
   "nextExpectedAt": "2026-10-24T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-24T04:33:55.524Z",
   "status": "delayed",
   "latest": [
     {
@@ -99,21 +101,46 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "France prepares for day of protest a week after nationwide riots",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cj62yv5k0w4yo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-10-24T04:03:46.000Z",
         "sourceHash": "ab75c1cbbf74db9bc68cfa157d636a0b060f1571d298237ec4d893b72c37b0d6",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-24T04:33:55.524Z",
-        "title": "France prepares for day of protest a week after nationwide riots",
-        "summary": "More than 70,000 police officers are to be deployed over fears protesters will defy restrictions on demonstrations.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-10-24T04:34:18.128Z",
+        "title": "法国计划在全国骚乱后一周举行抗议日",
+        "summary": "法国政府宣布将在全国骚乱后一周组织一次抗议日，并计划动员超过七万名警力，以防示威者违反示威限制。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "法国准备在全国骚乱后一周举行一次抗议日。",
+            "quote": "France prepares for day of protest a week after nationwide riots"
+          },
+          {
+            "text": "为防示威者违背示威限制，法国将部署超过70,000名警察。",
+            "quote": "More than 70,000 police officers are to be deployed over fears protesters will defy restrictions on demonstrations."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-24T04:34:18.128Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "ab75c1cbbf74db9bc68cfa157d636a0b060f1571d298237ec4d893b72c37b0d6",
+        "count": 1,
+        "lastAttemptAt": "2026-10-24T04:33:55.524Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -163,21 +190,48 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Arrest made after fire at Hitler's Eagle's Nest retreat",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cr93zwjw1k4qo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-10-24T03:51:25.000Z",
         "sourceHash": "54239309ff2299affbfeb01fee62ba121d0ead85ff0054c9a80e7e33ab06b222",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-24T04:33:55.524Z",
-        "title": "Arrest made after fire at Hitler's Eagle's Nest retreat",
-        "summary": "Around 200 emergency personnel are deployed to fight the blaze at the Nazi dictator's Alpine residence in Germany.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-10-24T04:34:18.128Z",
+        "title": "德国鹰巢火灾后逮捕嫌疑人",
+        "summary": "在德国阿尔卑斯山的希特勒“鹰巢”别墅发生火灾后，警方逮捕了一名涉案嫌疑人。约有200名紧急救援人员被调派前往现场扑灭大火。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "在希特勒的阿尔卑斯山别墅“鹰巢”发生火灾后，警方已逮捕一名嫌疑人。",
+            "quote": "Arrest made after fire at Hitler's Eagle's Nest retreat"
+          },
+          {
+            "text": "约200名紧急救援人员被派往该别墅现场进行灭火。",
+            "quote": "Around 200 emergency personnel are deployed to fight the blaze at the Nazi dictator's Alpine residence in Germany."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-24T04:34:18.128Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "54239309ff2299affbfeb01fee62ba121d0ead85ff0054c9a80e7e33ab06b222",
+        "count": 1,
+        "lastAttemptAt": "2026-10-24T04:33:55.524Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "language",
+          "fields": [
+            "title"
+          ]
+        }
       }
     },
     {
@@ -228,7 +282,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -824,7 +879,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -874,7 +930,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -924,7 +981,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -974,7 +1032,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1024,7 +1083,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1074,7 +1134,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -1214,7 +1275,7 @@
         "reader": "cnfin-body",
         "sha256": "c3ebbc726f9fc4efeacf06103d6927bce4e312d997b03f946953d740b10b62e1",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261024/4485905_1.html",
-        "checkedAt": "2026-10-24T04:33:55.524Z"
+        "checkedAt": "2026-10-24T04:34:18.128Z"
       },
       "id": "1345f711825d266ce8e1",
       "verificationStatus": "verified",
@@ -1485,7 +1546,7 @@
         "reader": "cnfin-body",
         "sha256": "29bf106945f8379a80cf42e052dd7ff0458c94cfba5703e41a48efafbf9818a2",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261024/4485893_1.html",
-        "checkedAt": "2026-10-24T04:33:55.524Z"
+        "checkedAt": "2026-10-24T04:34:18.128Z"
       },
       "id": "6893579cced54e7cdc89",
       "verificationStatus": "verified",
@@ -1805,7 +1866,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2126,7 +2188,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2843,7 +2906,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3065,7 +3129,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -9773,57 +9838,80 @@
       "itemCount": 20
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 22
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "a7ea0256c7c041289df4",
+      "selectedPublishedAt": "2026-10-24T04:03:46.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 21,
-      "originalSummaries": 21,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 9,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "personal-impact": 1,
+        "language": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 71,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 71,
-      "successRate": null
+      "skipped": 69,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 99,
-      "attempted": 0,
+      "eligible": 76,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 99,
-      "successRate": null
+      "skipped": 74,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
