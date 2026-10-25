@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-25T04:38:23.911Z",
+  "attemptedAt": "2026-10-25T04:39:06.052Z",
   "lastSuccessfulAt": "2026-10-25T04:38:23.911Z",
   "nextExpectedAt": "2026-10-25T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-25T04:38:23.911Z",
   "status": "delayed",
   "latest": [
     {
@@ -52,21 +54,54 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Almost 1,000 arrested as clashes follow another day of mass protests across France",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-10-25T04:16:52.000Z",
         "sourceHash": "fb16cadf025fbe9dafce2e66ed2f025b32f92598f851146715fb9c38a676db9d",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-25T04:38:23.911Z",
-        "title": "Almost 1,000 arrested as clashes follow another day of mass protests across France",
-        "summary": "Hundreds of thousands took part in demonstrations in France, with protests also taking place in other European countries.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-10-25T04:39:06.052Z",
+        "title": "法国大规模抗议导致近千人被捕",
+        "summary": "法国多地爆发大规模示威，数十万人走上街头，抗议活动亦蔓延至其他欧洲国家。冲突升级后，警方在法国逮捕了接近一千名示威者。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "在法国的冲突中，警方逮捕了接近一千人。",
+            "quote": "Almost 1,000 arrested as clashes follow another day of mass protests across France"
+          },
+          {
+            "text": "数十万人参与了法国的示威活动。",
+            "quote": "Hundreds of thousands took part in demonstrations in France, with protests also taking place in other European countries"
+          },
+          {
+            "text": "抗议活动同样在其他欧洲国家展开。",
+            "quote": "protests also taking place in other European countries."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-25T04:39:06.052Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "fb16cadf025fbe9dafce2e66ed2f025b32f92598f851146715fb9c38a676db9d",
+        "count": 1,
+        "lastAttemptAt": "2026-10-25T04:38:23.911Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "language",
+          "fields": [
+            "facts",
+            "consensus",
+            "soWhat.analogy"
+          ]
+        }
       }
     },
     {
@@ -85,7 +120,7 @@
         "reader": "cnfin-body",
         "sha256": "158d223b6a6c3107b76486a1b75191d9c0effed5985f6287cdecd144d63a35d0",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261025/4486012_1.html",
-        "checkedAt": "2026-10-25T04:38:23.911Z"
+        "checkedAt": "2026-10-25T04:39:06.052Z"
       },
       "id": "f8ec924e3a9c10e221d8",
       "verificationStatus": "verified",
@@ -111,6 +146,19 @@
         "firstSeenAt": "2026-10-25T04:38:23.911Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "158d223b6a6c3107b76486a1b75191d9c0effed5985f6287cdecd144d63a35d0",
+        "count": 1,
+        "lastAttemptAt": "2026-10-25T04:39:06.052Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[3].numbers"
+          ]
+        }
       }
     },
     {
@@ -161,7 +209,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -294,7 +343,7 @@
         "reader": "cnfin-body",
         "sha256": "e3c7e52842946096d3de98e306fe343f6ba32e83cc60e4b6986b0acde283d255",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261025/4486006_1.html",
-        "checkedAt": "2026-10-25T04:38:23.911Z"
+        "checkedAt": "2026-10-25T04:39:06.052Z"
       },
       "id": "0e6065859ad621bcbe5b",
       "verificationStatus": "verified",
@@ -655,11 +704,14 @@
       },
       "queue": {
         "firstSeenAt": "2026-10-23T17:04:51.609Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-10-25T04:39:06.052Z"
       }
     },
     {
@@ -1302,7 +1354,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1701,7 +1754,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2001,7 +2055,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2101,7 +2156,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6814,57 +6870,82 @@
       "itemCount": 20
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 17
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "29c080ffc069346aa6f1",
+      "selectedPublishedAt": "2026-10-25T04:16:52.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 10,
-      "originalSummaries": 10,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 7,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "language": 1,
+        "facts": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 34,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 34,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 32,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 51,
-      "attempted": 0,
+      "eligible": 35,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 51,
-      "successRate": null
+      "skipped": 33,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
