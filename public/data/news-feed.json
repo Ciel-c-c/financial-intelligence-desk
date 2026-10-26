@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-26T04:43:55.963Z",
+  "attemptedAt": "2026-10-26T04:44:28.971Z",
   "lastSuccessfulAt": "2026-10-26T04:43:55.963Z",
   "nextExpectedAt": "2026-10-26T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-26T04:43:55.963Z",
   "status": "delayed",
   "latest": [
     {
@@ -52,7 +54,50 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-26T04:44:28.971Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Brazil's Lula wins historic presidential election; Bolsonaro reportedly refuses to concede",
+        "sourceUrl": "https://www.cnbc.com/2026/10/26/brazil-lula-win-presidential-election-runoff-vote.html",
+        "publishedAt": "2026-10-26T04:09:41.000Z",
+        "sourceHash": "219249ce4b19f756c46844cc9d81aed6a285ab47879eb02d27eeb5337e5fa43c",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-26T04:44:28.971Z",
+        "title": "卢拉赢得历史性巴西总统选举，博尔索纳罗据称未承认败选",
+        "summary": "卢拉在巴西总统选举中获胜，创下自1989年恢复直接选举以来，首次有候选人在首轮落败后赢得决选的历史纪录。与此同时，有报道称博尔索纳罗拒绝承认选举结果。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "卢拉在巴西总统选举中获胜，博尔索纳罗据称拒绝承认败选。",
+            "quote": "Brazil's Lula wins historic presidential election; Bolsonaro reportedly refuses to concede"
+          },
+          {
+            "text": "这是自1989年巴西恢复直接选举以来，首次有候选人在首轮落败后赢得决选。",
+            "quote": "It's the first time since Brazil returned to direct elections in 1989 that a candidate has won the final runoff after"
+          },
+          {
+            "text": "该候选人在第一轮选举中落败后，最终在决选中获胜。",
+            "quote": "that a candidate has won the final runoff after losing in the first round."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "219249ce4b19f756c46844cc9d81aed6a285ab47879eb02d27eeb5337e5fa43c",
+        "count": 1,
+        "lastAttemptAt": "2026-10-26T04:43:55.963Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -71,7 +116,7 @@
         "reader": "cnfin-body",
         "sha256": "97daa52aea0e32bbf73680e8e181ef3d7d75b0ea10f3143b8d49cb98182def2a",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261026/4486235_1.html",
-        "checkedAt": "2026-10-26T04:43:55.963Z"
+        "checkedAt": "2026-10-26T04:44:28.971Z"
       },
       "id": "6fd5fabe970657ec4b7c",
       "verificationStatus": "verified",
@@ -97,6 +142,19 @@
         "firstSeenAt": "2026-10-26T04:43:55.963Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "97daa52aea0e32bbf73680e8e181ef3d7d75b0ea10f3143b8d49cb98182def2a",
+        "count": 1,
+        "lastAttemptAt": "2026-10-26T04:44:28.971Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "causalChain"
+          ]
+        }
       }
     },
     {
@@ -190,21 +248,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Venezuelan opposition leader María Machado returns after months in exile",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-10-26T03:05:22.000Z",
         "sourceHash": "a2ab9f29dd0f54e89f67b02d295f0e70c1c5cdb49060e8cca325fa0c29ec15dd",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-26T04:43:55.963Z",
-        "title": "Venezuelan opposition leader María Machado returns after months in exile",
-        "summary": "Machado had left the country just a month before the US government seized Venezuelan President Nicolás Maduro.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-10-26T04:44:28.971Z",
+        "title": "委内瑞拉反对派领袖玛丽亚·马查多归国",
+        "summary": "玛丽亚·马查多在流亡数月后返回委内瑞拉。她离开时正值美国政府扣押总统尼古拉斯·马杜罗前一个月。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "玛丽亚·马查多在流亡数月后返回委内瑞拉。",
+            "quote": "Venezuelan opposition leader María Machado returns after months in exile"
+          },
+          {
+            "text": "她离开委内瑞拉的时间是美国政府扣押尼古拉斯·马杜罗总统前的一个月。",
+            "quote": "Machado had left the country just a month before the US government seized Venezuelan President Nicolás Maduro."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-26T04:44:28.971Z"
       }
     },
     {
@@ -255,7 +327,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -273,7 +346,7 @@
         "reader": "cnfin-body",
         "sha256": "d39a9272321efdd4efac98baa4040334dbbf6fd749f99df1e952e8f13e8f1994",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261026/4486196_1.html",
-        "checkedAt": "2026-10-26T04:43:55.963Z"
+        "checkedAt": "2026-10-26T04:44:28.971Z"
       },
       "id": "019e5e8dcaf70db2914d",
       "verificationStatus": "verified",
@@ -594,7 +667,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -1356,7 +1430,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2029,7 +2104,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2135,7 +2211,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5410,7 +5487,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5789,7 +5867,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -6563,7 +6642,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -7026,57 +7106,80 @@
       "itemCount": 20
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 17
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "804af11ced2c7c4e2324",
+      "selectedPublishedAt": "2026-10-26T04:09:41.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 7,
-      "originalSummaries": 7,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "unsupported-attribution": 1,
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 35,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 35,
-      "successRate": null
+      "skipped": 33,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 52,
-      "attempted": 0,
+      "eligible": 35,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 52,
-      "successRate": null
+      "skipped": 33,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
