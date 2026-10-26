@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-26T18:40:58.867Z",
+  "attemptedAt": "2026-10-26T18:41:32.585Z",
   "lastSuccessfulAt": "2026-10-26T18:40:58.867Z",
   "status": "delayed",
   "datasets": [
@@ -185,30 +185,53 @@
       "itemCount": 20
     },
     {
+      "id": "news-published-evidence",
+      "name": "Published evidence recheck（新闻）",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 23
+    },
+    {
+      "id": "news-review-queue",
+      "name": "复审队列诊断（新闻）",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "3347b7e65f01c175edff",
+      "selectedPublishedAt": "2026-10-26T18:37:01.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 24,
-      "originalSummaries": 24,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
-      "failures": 0,
+      "error": "Provider JSON-generation failure",
+      "attempted": 2,
+      "rejected": 1,
+      "failures": 1,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "audit": 1
+      }
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"

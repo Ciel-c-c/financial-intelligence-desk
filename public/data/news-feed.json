@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-26T18:40:58.867Z",
+  "attemptedAt": "2026-10-26T18:41:32.585Z",
   "lastSuccessfulAt": "2026-10-26T18:40:58.867Z",
   "nextExpectedAt": "2026-10-27T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-26T18:40:58.867Z",
   "status": "delayed",
   "latest": [
     {
@@ -55,7 +57,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -105,7 +108,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -155,7 +159,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -210,7 +215,39 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-26T18:41:32.585Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "FTC and 20 states sue Dollar General, alleging retailer overcharged shoppers",
+        "sourceUrl": "https://www.cnbc.com/2026/10/26/ftc-dollar-general-lawsuit.html",
+        "publishedAt": "2026-10-26T18:37:01.000Z",
+        "sourceHash": "76131ccc78e7a28849ab7bf895cddfa4c79b1d6a494ccd8948b8a2d796e41b04",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-26T18:41:32.585Z",
+        "title": "联邦贸易委员会与20州起诉Dollar General，指其向顾客收取高于标价的费用",
+        "summary": "美国联邦贸易委员会联合20个州对连锁零售商Dollar General提起诉讼，指控该公司向消费者收取的费用高于其宣传的价格。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "联邦贸易委员会与20个州对Dollar General提起诉讼，指称该零售商向顾客收取的费用高于广告标价。",
+            "quote": "FTC and 20 states sue Dollar General, alleging retailer overcharged shoppers"
+          },
+          {
+            "text": "美国联邦贸易委员会和20个州已对Dollar General提起法律行动，声称该公司存在此类行为。",
+            "quote": "The Federal Trade Commission and 20 states have filed a lawsuit against Dollar General, claiming the retailer has"
+          },
+          {
+            "text": "诉讼指控Dollar General向顾客收取的费用超过了其宣传的价格。",
+            "quote": "against Dollar General, claiming the retailer has charged customers more than advertised prices."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       }
     },
     {
@@ -270,21 +307,68 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-10-26T16:27:17.000Z",
         "sourceHash": "d146c1f3b627d65268253e125388a0d315091157b08c785db6bfb14636654814",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-26T18:40:58.867Z",
-        "title": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
-        "summary": "The company will be the first true artificial intelligence company to go public as tech firms continue to invest heavily in AI.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-10-26T18:41:32.585Z",
+        "title": "Anthropic 警告人类面临“灾难性风险”，即将进行大型上市",
+        "summary": "Anthropic 公司在即将进行史上首家真正的人工智能公司上市前，公开警示其技术可能对人类构成灾难性风险。同时，该公司将成为首家真正的人工智能企业在股市上市，正值科技公司对人工智能的投资持续加码。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Anthropic 警告其技术可能对人类构成灾难性风险。",
+            "quote": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing"
+          },
+          {
+            "text": "该公司将成为首家真正的人工智能企业在公开市场上市。",
+            "quote": "The company will be the first true artificial intelligence company to go public as tech firms continue to invest heavily"
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-26T18:41:32.585Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "d146c1f3b627d65268253e125388a0d315091157b08c785db6bfb14636654814",
+        "count": 1,
+        "lastAttemptAt": "2026-10-26T18:40:58.867Z",
+        "auditFindings": [
+          {
+            "category": "parallel-cause",
+            "section": "causalEdges",
+            "index": 0
+          },
+          {
+            "category": "parallel-cause",
+            "section": "causalEdges",
+            "index": 1
+          },
+          {
+            "category": "parallel-cause",
+            "section": "causalEdges",
+            "index": 2
+          },
+          {
+            "category": "causal-gap",
+            "section": "personalImpacts",
+            "index": 0
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -333,7 +417,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -445,7 +530,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -883,7 +969,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2168,7 +2255,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -2186,7 +2274,7 @@
         "reader": "cnfin-body",
         "sha256": "7db907c3a5970257091bb9e72edb7e77022a8ddf1e33bab5aeac19fabb3716ef",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261026/4486596_1.html",
-        "checkedAt": "2026-10-26T18:40:58.867Z"
+        "checkedAt": "2026-10-26T18:41:32.585Z"
       },
       "id": "ab1e872e9456b3274104",
       "verificationStatus": "verified",
@@ -2238,7 +2326,7 @@
         "reader": "cnfin-body",
         "sha256": "c6850d739234a57dfd65192bc2da30aaae94f87f053e81e11c6a4d850d6d2e6a",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261026/4486578_1.html",
-        "checkedAt": "2026-10-26T18:40:58.867Z"
+        "checkedAt": "2026-10-26T18:41:32.585Z"
       },
       "id": "070a63d6cf3edaf90e6a",
       "verificationStatus": "verified",
@@ -2730,7 +2818,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -3457,7 +3546,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -5801,7 +5891,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -8615,57 +8706,80 @@
       "itemCount": 20
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 23
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "3347b7e65f01c175edff",
+      "selectedPublishedAt": "2026-10-26T18:37:01.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 24,
-      "originalSummaries": 24,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
-      "failures": 0,
+      "error": "Provider JSON-generation failure",
+      "attempted": 2,
+      "rejected": 1,
+      "failures": 1,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "audit": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 56,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 56,
-      "successRate": null
+      "skipped": 54,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 76,
-      "attempted": 0,
+      "eligible": 55,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
-      "failed": 0,
-      "skipped": 76,
-      "successRate": null
+      "rejected": 1,
+      "failed": 1,
+      "skipped": 53,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
