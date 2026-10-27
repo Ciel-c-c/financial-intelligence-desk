@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-27T17:59:17.753Z",
+  "attemptedAt": "2026-10-27T17:59:45.212Z",
   "lastSuccessfulAt": "2026-10-27T17:59:17.753Z",
   "nextExpectedAt": "2026-10-28T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-27T17:59:17.753Z",
   "status": "delayed",
   "latest": [
     {
@@ -53,7 +55,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -103,7 +106,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -118,7 +122,7 @@
       "fetchedAt": "2026-10-27T17:59:17.753Z",
       "id": "ce6c61b08ff1d0fcb0b2",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "CNBC",
@@ -129,22 +133,29 @@
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
-        "行业"
+        "宏观"
       ],
-      "eventTypes": [],
+      "eventTypes": [
+        "贸易"
+      ],
       "impactChannels": [],
       "regions": [
-        "全球"
+        "美国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|hondawarns50cana|2026-10-27",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "President Donald Trump has threatened to double tariffs on Canadian vehicles and parts from 25% to 50% if a trade deal is not reached between the two countries."
+        "本田警告将加拿大汽车关税提高至50%将对行业造成灾难性影响。",
+        "特朗普威胁若未达成贸易协定，将把加拿大车辆及零部件关税从25%提升至50%。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若关税提升至50%，加拿大汽车进口成本将显著上升。",
+        "成本上升可能导致汽车零售价格上涨，进而抑制需求。",
+        "需求下降将对本田及其他在加拿大运营的汽车制造商的销量产生负面影响。"
+      ],
       "article": {
         "status": "summary",
         "text": "Honda warns 50% Canada auto tariffs would be catastrophic for industry\nPresident Donald Trump has threatened to double tariffs on Canadian vehicles and parts from 25% to 50% if a trade deal is not reached between the two countries.",
@@ -160,7 +171,308 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-27T17:59:45.212Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Honda warns 50% Canada auto tariffs would be catastrophic for industry",
+        "sourceUrl": "https://www.cnbc.com/2026/10/27/honda-warns-50percent-canada-auto-tariffs-would-be-catastrophic.html",
+        "publishedAt": "2026-10-27T17:53:47.000Z",
+        "sourceHash": "4e98bcbe3cd76a71bfa3d38e5e13b684c641c52ce15dd67b180ccae30af32462",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-27T17:59:45.212Z",
+        "title": "本田警告加拿大汽车关税升至50%将毁行业",
+        "summary": "本田表示，若美国将对加拿大汽车及零部件的关税从25%提升至50%，将对行业造成灾难性影响。美国总统唐纳德·特朗普已威胁若未达成贸易协议，将把关税翻倍至50%。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "本田警告，将加拿大汽车关税提升至50%会对行业造成灾难性后果。",
+            "quote": "Honda warns 50% Canada auto tariffs would be catastrophic for industry"
+          },
+          {
+            "text": "美国总统唐纳德·特朗普威胁，如果未达成贸易协议，将把对加拿大车辆和零部件的关税从25%提高到50%。",
+            "quote": "President Donald Trump has threatened to double tariffs on Canadian vehicles and parts from 25% to 50% if a trade deal"
+          },
+          {
+            "text": "该关税提升至50%仅在双方未达成贸易协议时生效。",
+            "quote": "vehicles and parts from 25% to 50% if a trade deal is not reached between the two countries."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "4e98bcbe3cd76a71bfa3d38e5e13b684c641c52ce15dd67b180ccae30af32462",
+        "count": 1,
+        "lastAttemptAt": "2026-10-27T17:59:17.753Z"
+      },
+      "titleZh": "本田警告：加拿大汽车关税提升至50%将对行业造成灾难性影响",
+      "summaryZh": "本田公司警告称，如果美国将对加拿大汽车及零部件的关税从25%提升至50%，将对汽车行业产生灾难性后果。美国总统特朗普已表态若未达成贸易协定将实施此举。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "本田警告将加拿大汽车关税提高至50%将对行业造成灾难性影响。",
+              "evidence": "Honda warns 50% Canada auto tariffs would be catastrophic for industry"
+            },
+            {
+              "text": "特朗普威胁若未达成贸易协定，将把加拿大车辆及零部件关税从25%提升至50%。",
+              "evidence": "President Donald Trump has threatened to double tariffs on Canadian vehicles and parts from 25% to 50% if a trade deal"
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "加拿大",
+            "triggerEvidence": "President Donald Trump has threatened to double tariffs on Canadian vehicles and parts from 25% to 50% if a trade deal",
+            "path": [
+              "关税提升至50%",
+              "本田成本上升",
+              "利润预期下降",
+              "股价承压"
+            ],
+            "invalidation": "若美加达成贸易协定，关税不升至50%"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "加拿大",
+            "triggerEvidence": "President Donald Trump has threatened to double tariffs on Canadian vehicles and parts from 25% to 50% if a trade deal",
+            "path": [
+              "关税提升至50%",
+              "汽车售价上调",
+              "消费者购车意愿下降"
+            ],
+            "invalidation": "若政府提供购车补贴或税收优惠"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "本田加拿大子公司股价",
+            "direction": "下行",
+            "reason": "关税提升预期压缩利润空间",
+            "condition": "关税实际执行且未有补贴抵消",
+            "invalidation": "贸易协定达成后关税不升",
+            "timeframe": "短期至中期"
+          },
+          {
+            "asset": "加拿大新车零售价格指数",
+            "direction": "上行",
+            "reason": "进口关税成本转嫁",
+            "condition": "关税提升至50%并全额计入成本",
+            "invalidation": "政府补贴或税收减免抵消成本",
+            "timeframe": "中期"
+          }
+        ],
+        "sourceBodyHash": "4e98bcbe3cd76a71bfa3d38e5e13b684c641c52ce15dd67b180ccae30af32462",
+        "originalTitle": "Honda warns 50% Canada auto tariffs would be catastrophic for industry",
+        "reviewedAt": "2026-10-27T17:59:17.753Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "ce6c61b08ff1d0fcb0b2",
+          "title": "本田警告：加拿大汽车关税提升至50%将对行业造成灾难性影响",
+          "summary": "本田公司警告称，如果美国将对加拿大汽车及零部件的关税从25%提升至50%，将对汽车行业产生灾难性后果。美国总统特朗普已表态若未达成贸易协定将实施此举。",
+          "excerpt": "本田警告将加拿大汽车关税提高至50%将对行业造成灾难性影响。特朗普威胁若未达成贸易协定，将把加拿大车辆及零部件关税从25%提升至50%。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/10/27/honda-warns-50percent-canada-auto-tariffs-would-be-catastrophic.html",
+          "publishedAt": "2026-10-27T17:53:47.000Z",
+          "region": "美股",
+          "topic": "贸易政策",
+          "termIds": [],
+          "facts": [
+            "本田警告将加拿大汽车关税提高至50%将对行业造成灾难性影响。",
+            "特朗普威胁若未达成贸易协定，将把加拿大车辆及零部件关税从25%提升至50%。"
+          ],
+          "consensus": [
+            "暂无明确市场共识"
+          ],
+          "inference": [
+            "若关税提升至50%，加拿大汽车进口成本将显著上升。",
+            "成本上升可能导致汽车零售价格上涨，进而抑制需求。",
+            "需求下降将对本田及其他在加拿大运营的汽车制造商的销量产生负面影响。"
+          ],
+          "risks": [
+            "美国与加拿大达成贸易协定，关税保持或下降。",
+            "加拿大政府采取补贴或税收减免缓冲成本冲击。",
+            "相关企业通过供应链本地化降低关税影响。"
+          ],
+          "causalChain": [
+            {
+              "title": "特朗普威胁提升关税",
+              "explanation": "美国总统表示若未达成贸易协定，将把关税从25%提升至50%。",
+              "condition": "美国与加拿大未在谈判期限内达成新贸易协定"
+            },
+            {
+              "title": "关税提升至50%",
+              "explanation": "关税上调导致进口汽车及零部件成本翻倍。",
+              "condition": "特朗普的威胁转化为实际政策"
+            },
+            {
+              "title": "本田成本上升",
+              "explanation": "本田在加拿大的生产或组装业务面临更高的零部件采购费用。",
+              "condition": "关税实际执行且适用于本田供应链"
+            },
+            {
+              "title": "汽车售价上调",
+              "explanation": "企业将部分关税成本转嫁给消费者，导致零售价格上升。",
+              "condition": "企业为维持利润率选择提价"
+            },
+            {
+              "title": "需求下降",
+              "explanation": "价格上升抑制消费者购买意愿，销量下降。",
+              "condition": "消费者对价格敏感且缺乏替代补贴"
+            },
+            {
+              "title": "行业受灾",
+              "explanation": "销量下降导致本田及其他厂商在加拿大的收入和利润受损。",
+              "condition": "需求下降幅度显著且持续"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "把汽车关税提升比作在家庭预算中突然增加一笔大额固定支出",
+            "explanation": "就像家庭每月必须多支付一笔大额账单，原本用于其他消费的资金被挤压，导致整体支出结构被迫调整。此类类比适用于说明成本上升对消费行为的压缩效应，但不适用于解释企业通过技术创新降低成本的情形。"
+          },
+          "why": {
+            "cause": "关税提升导致进口成本上升",
+            "mechanisms": [
+              "成本转嫁至零售价格",
+              "消费者对价格更敏感",
+              "销量下降压缩企业收入"
+            ],
+            "result": "本田及其他在加拿大的汽车制造商面临业绩下滑风险"
+          },
+          "focus": [
+            "关税政策对成本的直接传导",
+            "价格变动对需求的弹性影响",
+            "行业整体盈利压力"
+          ],
+          "marketBet": [
+            "若关税实施，汽车零售价格将出现上行压力",
+            "需求可能出现下行趋势",
+            "本田在加拿大的销量或出现显著下降"
+          ],
+          "expectationGap": "源材料未提供市场对关税变化的具体预期或共识，故无法比较实际预期与先前预期的差异。",
+          "counterView": "若加拿大政府提供补贴或本田通过本地化供应链降低关税成本，价格传导可能被部分抵消。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "本田及其他在加拿大上市的汽车公司股价可能承压",
+              "why": "关税提升预期导致利润下降预期，投资者情绪受挫",
+              "invalidation": "若美国与加拿大达成贸易协定，关税不升至50%，股价压力减弱",
+              "condition": "若美国与加拿大达成贸易协定，关税不升至50%，股价压力减弱"
+            },
+            {
+              "label": "消费",
+              "impact": "加拿大消费者购车成本上升，可能推迟或放弃购车计划",
+              "why": "价格上调直接削弱购买力和意愿",
+              "invalidation": "若政府提供购车补贴或税收优惠，消费冲击被缓解",
+              "condition": "若政府提供购车补贴或税收优惠，消费冲击被缓解"
+            }
+          ],
+          "surface": "本田警告：加拿大汽车关税提升至50%将对行业造成灾难性影响",
+          "next": [
+            "特朗普威胁提升关税",
+            "关税提升至50%",
+            "本田成本上升",
+            "汽车售价上调",
+            "需求下降",
+            "行业受灾"
+          ],
+          "condition": [
+            "美国与加拿大未在谈判期限内达成新贸易协定",
+            "特朗普的威胁转化为实际政策",
+            "关税实际执行且适用于本田供应链",
+            "企业为维持利润率选择提价",
+            "消费者对价格敏感且缺乏替代补贴",
+            "需求下降幅度显著且持续"
+          ]
+        },
+        "political": {
+          "type": "贸易政策",
+          "channel": "关税",
+          "affected": [
+            "汽车制造",
+            "零部件供应",
+            "消费者支出"
+          ],
+          "watch": "美加贸易谈判进度及美国关税公告",
+          "counterRisk": "贸易协定达成或关税政策被司法审查阻止",
+          "id": "ce6c61b08ff1d0fcb0b2",
+          "event": "本田警告：加拿大汽车关税提升至50%将对行业造成灾难性影响",
+          "status": "关注",
+          "newsId": "ce6c61b08ff1d0fcb0b2",
+          "publishedAt": "2026-10-27T17:53:47.000Z"
+        },
+        "watchItems": [
+          "美加贸易谈判进展",
+          "美国官方关税政策公告",
+          "本田在加拿大的产销量报告",
+          "加拿大政府可能的补贴或税收政策"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "4e98bcbe3cd76a71bfa3d38e5e13b684c641c52ce15dd67b180ccae30af32462",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-10-27T17:59:45.212Z",
+        "state": "approved"
       }
     },
     {
@@ -176,7 +488,7 @@
       "fetchedAt": "2026-10-27T17:59:17.753Z",
       "id": "51bfc89256e57e42a8e8",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "CNBC",
@@ -187,24 +499,35 @@
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
-        "公司"
+        "宏观",
+        "行业"
       ],
       "eventTypes": [
-        "公司经营"
+        "公司经营",
+        "经济数据"
       ],
-      "impactChannels": [],
+      "impactChannels": [
+        "盈利",
+        "估值"
+      ],
       "regions": [
-        "全球"
+        "美国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "公司经营|boeingstocksinks|2026-10-27",
-      "detailStatus": "professional",
+      "detailStatus": "so-what",
       "facts": [
-        "Boeing is set to brief investors on its aircraft production outlook when it reports quarterly results before the market opens Tuesday."
+        "波音股价下跌9%。",
+        "公司表示将在2027年底前才大幅提升737 Max的产量。",
+        "波音将在公布季度业绩时向投资者简要说明其飞机生产前景。",
+        "该简报将在周二美国市场开盘前的季度业绩发布时进行。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若波音在2027年前未能提升产能，可能继续面临收入增长压力。",
+        "若后续业绩报告显示订单强劲，股价可能出现反弹。"
+      ],
       "article": {
         "status": "summary",
         "text": "Boeing stock sinks 9% as company says it won't significantly ramp up 737 Max production until late 2027\nBoeing is set to brief investors on its aircraft production outlook when it reports quarterly results before the market opens Tuesday.",
@@ -220,7 +543,258 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-27T17:59:45.212Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Boeing stock sinks 9% as company says it won't significantly ramp up 737 Max production until late 2027",
+        "sourceUrl": "https://www.cnbc.com/2026/10/27/-boeing-ba-q3-2026-earnings.html",
+        "publishedAt": "2026-10-27T15:45:49.000Z",
+        "sourceHash": "06786aa65585e03710174aff0762bb60aee59f0382b20ae84312050ac57c9c2f",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-27T17:59:45.212Z",
+        "title": "波音股价下跌9%，称2027年底前不会大幅提升737 Max产量",
+        "summary": "波音公司股价下跌9%，并表示将在2027年底前不大幅提升737 Max的生产。公司将在本周二公布季报前向投资者简要说明其飞机生产前景。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "波音股价下跌9%，公司称将在2027年底前不大幅提升737 Max的产量。",
+            "quote": "Boeing stock sinks 9% as company says it won't significantly ramp up 737 Max production until late 2027"
+          },
+          {
+            "text": "波音将在公布季报前向投资者简要说明其飞机生产前景。",
+            "quote": "Boeing is set to brief investors on its aircraft production outlook when it reports quarterly results before the market"
+          },
+          {
+            "text": "该简报将在本周二市场开盘前的季报发布时进行。",
+            "quote": "when it reports quarterly results before the market opens Tuesday."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "06786aa65585e03710174aff0762bb60aee59f0382b20ae84312050ac57c9c2f",
+        "count": 1,
+        "lastAttemptAt": "2026-10-27T17:59:17.753Z"
+      },
+      "titleZh": "波音宣布2027年底前才大幅提升737 Max产量，股价下跌9%",
+      "summaryZh": "波音公司透露将在2027年底前才显著提升737 Max的产量，导致其股价在消息公布后下跌9%。公司将在本周二美国市场开盘前的季度业绩发布会上向投资者简要说明其飞机生产前景。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "波音股价下跌9%。",
+              "evidence": "Boeing stock sinks 9% as company says it won't significantly ramp up 737 Max production until late 2027"
+            },
+            {
+              "text": "公司表示将在2027年底前才大幅提升737 Max的产量。",
+              "evidence": "Boeing stock sinks 9% as company says it won't significantly ramp up 737 Max production until late 2027"
+            },
+            {
+              "text": "波音将在公布季度业绩时向投资者简要说明其飞机生产前景。",
+              "evidence": "Boeing is set to brief investors on its aircraft production outlook when it reports quarterly results before the market"
+            },
+            {
+              "text": "该简报将在周二美国市场开盘前的季度业绩发布时进行。",
+              "evidence": "when it reports quarterly results before the market opens Tuesday."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "美国",
+            "triggerEvidence": "Boeing stock sinks 9% as company says it won't significantly ramp up 737 Max production until late 2027",
+            "path": [
+              "产能提升延迟",
+              "收入预期下降",
+              "股价下跌"
+            ],
+            "invalidation": "产能提前提升或订单显著增加"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "波音股票",
+            "direction": "下行",
+            "reason": "产能提升延迟导致收入预期下降",
+            "condition": "公司确认产能提升时间仍在2027年底后",
+            "invalidation": "若公司宣布提前提升产能或获得大额新订单",
+            "timeframe": "短期（数周至数月）"
+          }
+        ],
+        "sourceBodyHash": "06786aa65585e03710174aff0762bb60aee59f0382b20ae84312050ac57c9c2f",
+        "originalTitle": "Boeing stock sinks 9% as company says it won't significantly ramp up 737 Max production until late 2027",
+        "reviewedAt": "2026-10-27T17:59:17.753Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "51bfc89256e57e42a8e8",
+          "title": "波音宣布2027年底前才大幅提升737 Max产量，股价下跌9%",
+          "summary": "波音公司透露将在2027年底前才显著提升737 Max的产量，导致其股价在消息公布后下跌9%。公司将在本周二美国市场开盘前的季度业绩发布会上向投资者简要说明其飞机生产前景。",
+          "excerpt": "波音股价下跌9%，公司称2027年底前才大幅提升737 Max产量，计划在本周二的季度业绩发布会上向投资者说明生产前景。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/10/27/-boeing-ba-q3-2026-earnings.html",
+          "publishedAt": "2026-10-27T15:45:49.000Z",
+          "region": "美股",
+          "topic": "航空制造",
+          "termIds": [],
+          "facts": [
+            "波音股价下跌9%。",
+            "公司表示将在2027年底前才大幅提升737 Max的产量。",
+            "波音将在公布季度业绩时向投资者简要说明其飞机生产前景。",
+            "该简报将在周二美国市场开盘前的季度业绩发布时进行。"
+          ],
+          "consensus": [
+            "产能提升延迟通常会被市场解读为短期收入增长受限，从而压低股价。"
+          ],
+          "inference": [
+            "若波音在2027年前未能提升产能，可能继续面临收入增长压力。",
+            "若后续业绩报告显示订单强劲，股价可能出现反弹。"
+          ],
+          "risks": [
+            "供应链瓶颈导致产能提升进一步延迟。",
+            "主要航空公司削减订单或转向竞争对手机型。",
+            "监管审查或安全事件导致生产计划被迫调整。"
+          ],
+          "causalChain": [
+            {
+              "title": "产能提升延迟公告",
+              "explanation": "公司公开表示2027年底前才大幅提升737 Max产量。",
+              "condition": "公司正式发布该声明"
+            },
+            {
+              "title": "股价下跌",
+              "explanation": "投资者将产能延迟视为收入增长受限，导致股价下跌9%。",
+              "condition": "市场对公告的负面解读"
+            },
+            {
+              "title": "投资者简报",
+              "explanation": "波音将在季度业绩发布时向投资者说明生产前景。",
+              "condition": "季度业绩发布会前的准备"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "家庭装修计划被推迟",
+            "explanation": "就像一家人原计划在今年完成装修，但因材料供应延迟而推迟到明年，短期内会影响居住舒适度和支出计划，但长期仍可实现。此类类比说明延迟会带来短期负面情绪，长期影响取决于最终完成情况。"
+          },
+          "why": {
+            "cause": "产能提升延迟",
+            "mechanisms": [
+              "收入增长受限",
+              "市场对未来盈利预期下降",
+              "投资者情绪转弱"
+            ],
+            "result": "波音股价出现显著下跌"
+          },
+          "focus": [
+            "产能与收入关系",
+            "投资者情绪",
+            "后续业绩指引"
+          ],
+          "marketBet": [
+            "若2027年前产能提升未达预期，股价可能继续承压",
+            "若季度业绩显示订单强劲且产能计划提前，股价可能出现反弹"
+          ],
+          "expectationGap": "来源未提供市场对产能提升时间的具体共识，故无法量化预期差异，只能说明实际公告晚于可能的市场预期。",
+          "counterView": "部分分析师可能认为产能延迟是暂时性因素，不会对长期竞争力产生根本影响。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "持有波音股票的投资者面临短期账面亏损。",
+              "why": "股价因产能延迟预期下降而下跌9%。",
+              "invalidation": "若公司后续公布的产能提升时间提前或订单大幅增加，股价下跌的压力将被抵消。",
+              "condition": "若公司后续公布的产能提升时间提前或订单大幅增加，股价下跌的压力将被抵消。"
+            }
+          ],
+          "surface": "波音宣布2027年底前才大幅提升737 Max产量，股价下跌9%",
+          "next": [
+            "产能提升延迟公告",
+            "股价下跌",
+            "投资者简报"
+          ],
+          "condition": [
+            "公司正式发布该声明",
+            "市场对公告的负面解读",
+            "季度业绩发布会前的准备"
+          ]
+        },
+        "watchItems": [
+          "2027年上半年737 Max实际产量数据",
+          "主要航空公司对737 Max的最新订单情况",
+          "波音后续季度业绩报告中的产能指引"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "06786aa65585e03710174aff0762bb60aee59f0382b20ae84312050ac57c9c2f",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-10-27T17:59:45.212Z",
+        "state": "approved"
       }
     },
     {
@@ -585,7 +1159,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1239,7 +1814,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1813,7 +2389,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -1851,7 +2428,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -2167,7 +2745,7 @@
         "reader": "cnfin-body",
         "sha256": "7462a423bf98639df4bf8858564920b631ac7b5e3d73a725d3f9edecba654cd8",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261027/4487244_1.html",
-        "checkedAt": "2026-10-27T17:59:17.753Z"
+        "checkedAt": "2026-10-27T17:59:45.212Z"
       },
       "id": "1fccc8e88d5f0ce7c28b",
       "verificationStatus": "verified",
@@ -2251,7 +2829,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -2269,7 +2848,7 @@
         "reader": "cnfin-body",
         "sha256": "47b1f808e973ae70a952455f5de7a90d780eb3c8c29e57b3bf3e6445bbfc0855",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261027/4487217_1.html",
-        "checkedAt": "2026-10-27T17:59:17.753Z"
+        "checkedAt": "2026-10-27T17:59:45.212Z"
       },
       "id": "bac869096bad2155ce80",
       "verificationStatus": "verified",
@@ -6025,7 +6604,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -8883,7 +9463,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -9274,7 +9855,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9324,7 +9906,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9376,7 +9959,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9426,7 +10010,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9476,7 +10061,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -10093,57 +10679,77 @@
       "itemCount": 20
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 24
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "ce6c61b08ff1d0fcb0b2",
+      "selectedPublishedAt": "2026-10-27T17:53:47.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 26,
-      "originalSummaries": 26,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
+      "itemCount": 2,
+      "attempted": 2,
       "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 2,
+        "audit": 2
       },
       "rejectionReasons": {}
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 80,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 80,
-      "successRate": null
+      "skipped": 78,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 96,
-      "attempted": 0,
-      "succeeded": 0,
+      "eligible": 79,
+      "attempted": 2,
+      "succeeded": 2,
       "rejected": 0,
       "failed": 0,
-      "skipped": 96,
-      "successRate": null
+      "skipped": 77,
+      "successRate": 1
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
