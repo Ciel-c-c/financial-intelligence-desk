@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-28T05:40:23.588Z",
-  "lastSuccessfulAt": "2026-10-28T05:39:58.146Z",
+  "attemptedAt": "2026-10-28T18:20:34.370Z",
+  "lastSuccessfulAt": "2026-10-28T18:20:34.370Z",
   "status": "delayed",
   "datasets": [
     {
@@ -22,7 +22,7 @@
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-28T05:39:58.146Z"
+      "lastSuccessfulAt": "2026-10-28T18:20:34.370Z"
     }
   ],
   "sourceHealth": [
@@ -134,7 +134,7 @@
       "name": "国家统计局（新闻）",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "news-fed",
@@ -164,13 +164,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 27
+      "itemCount": 21
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 39
+      "itemCount": 45
     },
     {
       "id": "news-bis-press",
@@ -185,55 +185,30 @@
       "itemCount": 20
     },
     {
-      "id": "news-published-evidence",
-      "name": "Published evidence recheck（新闻）",
-      "status": "error",
-      "itemCount": 2,
-      "attempted": 2,
-      "unavailable": 0,
-      "invalidated": 27
-    },
-    {
-      "id": "news-review-queue",
-      "name": "复审队列诊断（新闻）",
-      "status": "ok",
-      "itemCount": 0,
-      "withBody": 0,
-      "withoutBody": 0,
-      "selectedId": "43730da4d72d1070668c",
-      "selectedPublishedAt": "2026-10-28T00:03:05.000Z",
-      "selectedIsCurrent": true
-    },
-    {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "originalSummaries": 0,
-      "attempted": 2,
+      "status": "ok",
+      "itemCount": 26,
+      "originalSummaries": 26,
+      "attempted": 0,
       "generated": 0,
-      "requests": 6,
-      "rejectionReasons": {
-        "paired-evidence": 2
-      }
+      "requests": 0,
+      "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "error",
+      "status": "ok",
       "itemCount": 0,
-      "attempted": 2,
-      "rejected": 2,
+      "attempted": 0,
+      "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 1,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {
-        "impact-assessment": 1,
-        "facts": 1
-      }
+      "rejectionReasons": {}
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
