@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-28T18:20:34.370Z",
+  "attemptedAt": "2026-10-28T18:21:18.408Z",
   "lastSuccessfulAt": "2026-10-28T18:20:34.370Z",
   "nextExpectedAt": "2026-10-29T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-28T18:20:34.370Z",
   "status": "delayed",
   "latest": [
     {
@@ -54,7 +56,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -146,7 +149,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -196,7 +200,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -246,7 +251,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -299,8 +305,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-10-28T18:20:34.370Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "factualSummary": {
         "language": "en",
@@ -317,7 +324,20 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-10-28T18:21:18.408Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "6e03d37420e86337fc9c5b1d6f41e6b5a47573d2192e7927f69e2ae73856fda6",
+        "count": 1,
+        "lastAttemptAt": "2026-10-28T18:20:34.370Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -375,21 +395,53 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Your pay, energy bills and savings: How the Budget affects you",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cr0j05vxlwjzo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-10-28T16:43:35.000Z",
         "sourceHash": "0f046a4aa41f98c66b95fef8686e080eff432be9b49b7f950974d003296fb86c",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-10-28T18:20:34.370Z",
-        "title": "Your pay, energy bills and savings: How the Budget affects you",
-        "summary": "Changes announced by Chancellor John Healey in his first Budget will affect your finances directly. Here's how.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-10-28T18:21:18.408Z",
+        "title": "预算对工资、能源账单和储蓄的影响",
+        "summary": "财政大臣约翰·希尔在首次预算中宣布的多项措施，将直接影响公众的收入、能源费用和储蓄情况。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "预算将涉及工资、能源账单和储蓄等方面的变化。",
+            "quote": "Your pay, energy bills and savings: How the Budget affects you"
+          },
+          {
+            "text": "财政大臣约翰·希尔在其首次预算中宣布的政策将直接影响个人财务。",
+            "quote": "Changes announced by Chancellor John Healey in his first Budget will affect your finances directly. Here's how."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-28T18:21:18.408Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "0f046a4aa41f98c66b95fef8686e080eff432be9b49b7f950974d003296fb86c",
+        "count": 1,
+        "lastAttemptAt": "2026-10-28T18:20:34.370Z",
+        "auditFindings": [
+          {
+            "category": "invalidation",
+            "section": "personalImpacts",
+            "index": 0
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -1209,7 +1261,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2449,7 +2502,7 @@
         "reader": "cnfin-body",
         "sha256": "4c995bc6b98aed1ffaabf8a525257d633aaa10e4e3658570ad6c2ba91ed6d6cb",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261028/4487775_1.html",
-        "checkedAt": "2026-10-28T18:20:34.370Z"
+        "checkedAt": "2026-10-28T18:21:18.408Z"
       },
       "id": "b63d93bd43c26dd1907b",
       "verificationStatus": "verified",
@@ -2493,7 +2546,7 @@
         "reader": "cnfin-body",
         "sha256": "64bffc32082b6f5e420ce43f6d332dbd1b118b61ec378d2d4b2e49fdd6fa4de8",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261028/4487772_1.html",
-        "checkedAt": "2026-10-28T18:20:34.370Z"
+        "checkedAt": "2026-10-28T18:21:18.408Z"
       },
       "id": "8acf2f3a96c7ee4ad459",
       "verificationStatus": "verified",
@@ -11118,7 +11171,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11168,7 +11222,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11218,7 +11273,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11268,7 +11324,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11318,7 +11375,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11368,7 +11426,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11418,7 +11477,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     }
   ],
   "sourceHealth": [
@@ -11502,57 +11562,82 @@
       "itemCount": 20
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 24
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "5ad11f25fa57bf1d4d01",
+      "selectedPublishedAt": "2026-10-28T17:47:37.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 26,
-      "originalSummaries": 26,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "unsupported-attribution": 1,
+        "audit": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 101,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 101,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 99,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 113,
-      "attempted": 0,
+      "eligible": 96,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 113,
-      "successRate": null
+      "skipped": 94,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
