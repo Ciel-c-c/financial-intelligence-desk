@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-27T17:59:45.212Z",
-  "lastSuccessfulAt": "2026-10-27T17:59:17.753Z",
+  "attemptedAt": "2026-10-28T05:39:58.146Z",
+  "lastSuccessfulAt": "2026-10-28T05:39:58.146Z",
   "status": "delayed",
   "datasets": [
     {
@@ -22,7 +22,7 @@
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-10-27T17:59:17.753Z"
+      "lastSuccessfulAt": "2026-10-28T05:39:58.146Z"
     }
   ],
   "sourceHealth": [
@@ -164,13 +164,13 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 24
+      "itemCount": 27
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 39
     },
     {
       "id": "news-bis-press",
@@ -185,48 +185,28 @@
       "itemCount": 20
     },
     {
-      "id": "news-published-evidence",
-      "name": "Published evidence recheck（新闻）",
-      "status": "error",
-      "itemCount": 2,
-      "attempted": 2,
-      "unavailable": 0,
-      "invalidated": 24
-    },
-    {
-      "id": "news-review-queue",
-      "name": "复审队列诊断（新闻）",
-      "status": "ok",
-      "itemCount": 0,
-      "withBody": 0,
-      "withoutBody": 0,
-      "selectedId": "ce6c61b08ff1d0fcb0b2",
-      "selectedPublishedAt": "2026-10-27T17:53:47.000Z",
-      "selectedIsCurrent": true
-    },
-    {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 2,
-      "originalSummaries": 0,
-      "attempted": 2,
-      "generated": 2,
-      "requests": 10,
+      "itemCount": 28,
+      "originalSummaries": 28,
+      "attempted": 0,
+      "generated": 0,
+      "requests": 0,
       "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
       "status": "ok",
-      "itemCount": 2,
-      "attempted": 2,
+      "itemCount": 0,
+      "attempted": 0,
       "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 2,
-        "analysis": 2,
-        "audit": 2
+        "evidence": 0,
+        "analysis": 0,
+        "audit": 0
       },
       "rejectionReasons": {}
     }
