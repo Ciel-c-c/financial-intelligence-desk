@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-29T05:45:26.479Z",
+  "attemptedAt": "2026-10-29T05:46:04.006Z",
   "lastSuccessfulAt": "2026-10-29T05:45:26.479Z",
   "nextExpectedAt": "2026-10-29T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-29T05:45:26.479Z",
   "status": "delayed",
   "latest": [
     {
@@ -54,7 +56,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -69,7 +72,7 @@
       "fetchedAt": "2026-10-29T05:45:26.479Z",
       "id": "028da275b293c48e6605",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "BBC News · 财经",
@@ -79,21 +82,29 @@
       ],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "财政政策"
+      ],
       "impactChannels": [],
       "regions": [
-        "全球"
+        "欧洲"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|iearn30000imangr|2026-10-29",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "People on a range of incomes from £4,062 to £150,000 a year tell the BBC what they made of this year's Budget."
+        "一位年收入30,000英镑的人对预算中未削减燃油税感到愤怒。",
+        "受访者的收入范围从4,062英镑到150,000英镑不等。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若政府后续考虑降低燃油税，可能缓解部分低收入群体的消费压力",
+        "若燃油价格保持或上升，可能加剧对预算的负面评价"
+      ],
       "article": {
         "status": "summary",
         "text": "I earn £30,000. I'm angry there was no fuel duty cut in the Budget\nPeople on a range of incomes from £4,062 to £150,000 a year tell the BBC what they made of this year's Budget.",
@@ -105,8 +116,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-10-29T05:45:26.479Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "factualSummary": {
         "language": "en",
@@ -123,7 +135,215 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-10-29T05:46:04.006Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "c348e4ebf54c36d46e9c9f203a0d6008ad8fb79cbcfbb9efda324fb1f9723057",
+        "count": 1,
+        "lastAttemptAt": "2026-10-29T05:45:26.479Z"
+      },
+      "titleZh": "预算未削减燃油税引发收入30,000英镑者不满",
+      "summaryZh": "一位年收入30,000英镑的英国居民对本年度预算中未削减燃油税表示愤怒，受访者收入范围从4,062英镑到150,000英镑不等。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "一位年收入30,000英镑的人对预算中未削减燃油税感到愤怒。",
+              "evidence": "I earn £30,000. I'm angry there was no fuel duty cut in the Budget"
+            },
+            {
+              "text": "受访者的收入范围从4,062英镑到150,000英镑不等。",
+              "evidence": "People on a range of incomes from £4,062 to £150,000 a year tell the BBC what they made of this year's Budget."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "投资",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "汇率",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "住房",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "工作",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "households",
+            "invalidation": "燃油价格因外部供给冲击大幅下降",
+            "label": "消费",
+            "path": [
+              "预算决定不削减燃油税",
+              "燃油成本保持或上升",
+              "低收入家庭感受负担加重",
+              "非必需消费下降"
+            ],
+            "region": "英国",
+            "score": 2,
+            "triggerEvidence": "I earn £30,000. I'm angry there was no fuel duty cut in the Budget"
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "企业经营",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "c348e4ebf54c36d46e9c9f203a0d6008ad8fb79cbcfbb9efda324fb1f9723057",
+        "originalTitle": "I earn £30,000. I'm angry there was no fuel duty cut in the Budget",
+        "reviewedAt": "2026-10-29T05:45:26.479Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "028da275b293c48e6605",
+          "title": "预算未削减燃油税引发收入30,000英镑者不满",
+          "summary": "一位年收入30,000英镑的英国居民对本年度预算中未削减燃油税表示愤怒，受访者收入范围从4,062英镑到150,000英镑不等。",
+          "excerpt": "我年收入30,000英镑，对预算中未削减燃油税感到愤怒。受访者的收入范围从4,062英镑到150,000英镑不等。",
+          "sourceName": "BBC News · 财经",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-10-29T00:00:25.000Z",
+          "region": "全球",
+          "topic": "财政预算",
+          "termIds": [],
+          "facts": [
+            "一位年收入30,000英镑的人对预算中未削减燃油税感到愤怒。",
+            "受访者的收入范围从4,062英镑到150,000英镑不等。"
+          ],
+          "consensus": [
+            "暂无明确的公众共识，仅表现为个别收入层面的不满情绪"
+          ],
+          "inference": [
+            "若政府后续考虑降低燃油税，可能缓解部分低收入群体的消费压力",
+            "若燃油价格保持或上升，可能加剧对预算的负面评价"
+          ],
+          "risks": [
+            "政府若坚持不削减燃油税，可能引发更广泛的公众抗议",
+            "燃油价格波动可能导致实际负担与预期不符"
+          ],
+          "causalChain": [
+            {
+              "condition": "预算正式公布且未出现税率调整",
+              "explanation": "财政部在本年度预算中维持燃油税率不变",
+              "title": "预算决定不削减燃油税"
+            },
+            {
+              "condition": "燃油市场供需未出现显著变化",
+              "explanation": "税率不变导致零售燃油价格未因税收下降而降低",
+              "title": "燃油成本保持或上升"
+            },
+            {
+              "condition": "家庭收入在30,000英镑左右且交通需求稳定",
+              "explanation": "燃油支出在家庭预算中占比提升，压缩其他消费",
+              "title": "低收入家庭感受负担加重"
+            },
+            {
+              "condition": "媒体或社交平台上出现相关投诉",
+              "explanation": "感受到实际负担的居民表达愤怒和失望",
+              "title": "公众对预算不满情绪上升"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "explanation": "就像水电费账单如果不降，家庭可支配收入会被挤压，导致其他开支被削减；但若家庭有其他能源替代方案，影响会减弱",
+            "image": "家庭每月水电费账单"
+          },
+          "counterView": "部分经济学者可能认为燃油税对整体通胀影响有限，削减税率对财政收入的负面影响可能超过消费刺激效应。",
+          "expectationGap": "来源未提供市场对燃油税是否会在后续预算中调整的共识，故无法比较实际预期与市场预期之间的差距。",
+          "focus": [
+            "燃油税政策",
+            "低收入家庭消费压力",
+            "预算公众满意度"
+          ],
+          "marketBet": [
+            "若燃油税在未来预算中被下调，低收入家庭的可支配收入将相对提升",
+            "若燃油税保持不变且油价上行，低收入家庭的非必需消费可能进一步收缩"
+          ],
+          "personalImpact": [
+            {
+              "impact": "低收入家庭的可支配收入被燃油支出侵蚀，导致非必需消费下降",
+              "invalidation": "若燃油价格因全球供给过剩而显著下降，燃油支出占比下降，消费压缩效应将减弱",
+              "label": "消费",
+              "why": "燃油成本在收入约30,000英镑的家庭预算中占比提升，压缩其他支出空间",
+              "condition": "若燃油价格因全球供给过剩而显著下降，燃油支出占比下降，消费压缩效应将减弱"
+            }
+          ],
+          "why": {
+            "cause": "燃油税未削减导致燃油成本保持或上升",
+            "mechanisms": [
+              "燃油成本在低收入家庭预算中占比相对较高",
+              "交通支出上升直接压缩可自由支配收入"
+            ],
+            "result": "可能抑制该收入层次的非必需消费，进而影响零售和服务业需求"
+          },
+          "surface": "预算未削减燃油税引发收入30,000英镑者不满",
+          "next": [
+            "预算决定不削减燃油税",
+            "燃油成本保持或上升",
+            "低收入家庭感受负担加重",
+            "公众对预算不满情绪上升"
+          ],
+          "condition": [
+            "预算正式公布且未出现税率调整",
+            "燃油市场供需未出现显著变化",
+            "家庭收入在30,000英镑左右且交通需求稳定",
+            "媒体或社交平台上出现相关投诉"
+          ]
+        },
+        "watchItems": [
+          "政府是否在后续预算或声明中调整燃油税政策",
+          "英国国内燃油零售价格走势",
+          "公众对预算的整体满意度调查结果"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "c348e4ebf54c36d46e9c9f203a0d6008ad8fb79cbcfbb9efda324fb1f9723057",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-10-29T05:46:04.006Z",
+        "state": "approved"
       }
     },
     {
@@ -179,7 +399,52 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-29T05:46:04.006Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "FedEx beats expectations, raises outlook in first report since calendar adjustment",
+        "sourceUrl": "https://www.cnbc.com/2026/10/28/fedex-fdx-sept-2026-earnings.html",
+        "publishedAt": "2026-10-28T22:27:00.000Z",
+        "sourceHash": "c3cdbd537132f5bfb4120399d31ca4aec446bb7c1294c507884fd79311936cba",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-29T05:46:04.006Z",
+        "title": "联邦快递业绩超预期并上调展望",
+        "summary": "联邦快递在本周三公布的第三季度业绩中，收入和利润均超过华尔街预期，并首次在日历调整后的财年报告中上调了未来展望。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "联邦快递的业绩超出预期，并在首次日历调整后的报告中上调了展望。",
+            "quote": "FedEx beats expectations, raises outlook in first report since calendar adjustment"
+          },
+          {
+            "text": "本周三，联邦快递在新对齐的财年第三季度的收入和利润均超过华尔街的预期。",
+            "quote": "FedEx on Wednesday beat Wall Street expectations on the top and bottom lines for the third quarter of its newly aligned"
+          },
+          {
+            "text": "该业绩对应的是新对齐财年的第三季度。",
+            "quote": "lines for the third quarter of its newly aligned fiscal year."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "c3cdbd537132f5bfb4120399d31ca4aec446bb7c1294c507884fd79311936cba",
+        "count": 1,
+        "lastAttemptAt": "2026-10-29T05:45:26.479Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -536,7 +801,7 @@
         "reader": "cnfin-body",
         "sha256": "b7a24e0915412c1f95f1c267139987363d56dcbe5197f0db6ba4158996fae3d8",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261029/4488016_1.html",
-        "checkedAt": "2026-10-29T05:45:26.479Z"
+        "checkedAt": "2026-10-29T05:46:04.006Z"
       },
       "id": "67ff96e012126f07b287",
       "verificationStatus": "verified",
@@ -1010,7 +1275,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1060,7 +1326,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1114,7 +1381,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1164,7 +1432,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1214,7 +1483,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1264,7 +1534,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1314,7 +1585,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1364,7 +1636,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1414,7 +1687,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1481,7 +1755,7 @@
         "reader": "cnfin-body",
         "sha256": "d9ab49672fdddc40cb03c1d51c809eb4c2fd0358549c157cf5245ac1e6b31420",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261029/4487984_1.html",
-        "checkedAt": "2026-10-29T05:45:26.479Z"
+        "checkedAt": "2026-10-29T05:46:04.006Z"
       },
       "id": "b8a0d67ee33e83c10c50",
       "verificationStatus": "verified",
@@ -2040,7 +2314,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -11500,57 +11775,81 @@
       "itemCount": 20
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 24
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "028da275b293c48e6605",
+      "selectedPublishedAt": "2026-10-29T00:00:25.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 26,
-      "originalSummaries": 26,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 11,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 12,
-      "failed": 1,
-      "successRate": 0.9230769230769231
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 97,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 97,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 95,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 118,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 95,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 118,
-      "successRate": null
+      "skipped": 93,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
