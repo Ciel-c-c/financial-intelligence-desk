@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-29T18:27:29.238Z",
+  "attemptedAt": "2026-10-29T18:28:03.952Z",
   "lastSuccessfulAt": "2026-10-29T18:27:29.238Z",
   "nextExpectedAt": "2026-10-30T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-29T18:27:29.238Z",
   "status": "delayed",
   "latest": [
     {
@@ -42,7 +44,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "ecb",
@@ -81,7 +84,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "ecb",
@@ -129,7 +133,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -181,7 +186,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -231,7 +237,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -281,7 +288,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -331,7 +339,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -390,7 +399,52 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-29T18:28:03.952Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Cruise companies aim to keep fuel costs down. Their strategies for doing so differ",
+        "sourceUrl": "https://www.cnbc.com/2026/10/29/royal-caribbean-carnival-norwegian-fuel-costs.html",
+        "publishedAt": "2026-10-29T17:45:01.000Z",
+        "sourceHash": "7f38df6d9a339f6ab249e1b35c25ae3ffe156273be990fbeec01f8033807c2ae",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-29T18:28:03.952Z",
+        "title": "邮轮公司降低燃料成本的不同做法",
+        "summary": "各大邮轮公司都在设法压低燃料支出，但采取的手段各不相同。Carnival 通过削减燃料使用量来降低成本，而皇家加勒比和挪威邮轮则主要依赖燃料对冲策略，尤其是在中东局势紧张的背景下。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "邮轮公司普遍致力于降低燃料费用，且各自采用的措施不同。",
+            "quote": "Cruise companies aim to keep fuel costs down. Their strategies for doing so differ"
+          },
+          {
+            "text": "Carnival 正在通过减少燃料使用量来控制成本。",
+            "quote": "Carnival is cutting fuel use, while Royal Caribbean and Norwegian rely on \"hedging\" to keep fuel costs down amid"
+          },
+          {
+            "text": "皇家加勒比和挪威邮轮则依靠燃料对冲手段，在中东冲突期间保持燃料成本稳定。",
+            "quote": "on \"hedging\" to keep fuel costs down amid conflict in the Middle East."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "7f38df6d9a339f6ab249e1b35c25ae3ffe156273be990fbeec01f8033807c2ae",
+        "count": 1,
+        "lastAttemptAt": "2026-10-29T18:27:29.238Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "impact-assessment",
+          "fields": [
+            "personalImpact[0].region-or-invalidation"
+          ]
+        }
       }
     },
     {
@@ -447,7 +501,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -462,7 +517,7 @@
       "fetchedAt": "2026-10-29T18:27:29.238Z",
       "id": "5b91bf77122dec4dbd2e",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "CNBC",
@@ -473,24 +528,37 @@
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
-        "公司"
+        "宏观",
+        "行业"
       ],
       "eventTypes": [
-        "公司经营"
+        "公司经营",
+        "监管"
       ],
-      "impactChannels": [],
+      "impactChannels": [
+        "供需",
+        "盈利",
+        "估值"
+      ],
       "regions": [
-        "全球"
+        "美国",
+        "欧洲"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "公司经营|elilillyhikessal|2026-10-29",
-      "detailStatus": "professional",
+      "detailStatus": "so-what",
       "facts": [
-        "Eli Lilly reported that sales of obesity drug Zepbound and diabetes treatment Mounjaro surged again in the third quarter."
+        "Eli Lilly上调了销售前景。",
+        "首席执行官称肥胖市场有“戏剧性”扩张空间。",
+        "肥胖药Zepbound在第三季度销量再次大幅增长。",
+        "糖尿病药Mounjaro在第三季度销量再次大幅增长。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若肥胖药需求持续增长，公司的收入和利润可能进一步提升。",
+        "若监管机构对新适应症批准持保守态度，增长预期可能受限。"
+      ],
       "article": {
         "status": "summary",
         "text": "Eli Lilly hikes sales outlook, as CEO says there's room for 'dramatic' obesity market expansion\nEli Lilly reported that sales of obesity drug Zepbound and diabetes treatment Mounjaro surged again in the third quarter.",
@@ -506,7 +574,267 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-29T18:28:03.952Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Eli Lilly hikes sales outlook, as CEO says there's room for 'dramatic' obesity market expansion",
+        "sourceUrl": "https://www.cnbc.com/2026/10/29/eli-lilly-lly-earnings-q3-2026.html",
+        "publishedAt": "2026-10-29T16:46:07.000Z",
+        "sourceHash": "469b1abee138632cf6dc99a7260e7dd63d96d0c045a783e5de885d0b88837308",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-29T18:28:03.952Z",
+        "title": "Eli Lilly上调销售预期，CEO称肥胖市场有“戏剧性”扩张空间",
+        "summary": "Eli Lilly在第三季度报告中提升了整体销售前景，首席执行官指出肥胖药物市场仍有显著增长空间。同时，公司透露肥胖药Zepbound和糖尿病药Mounjaro的销量在本季度再次出现大幅上升。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Eli Lilly上调了销售前景，CEO表示肥胖市场有显著扩张空间。",
+            "quote": "Eli Lilly hikes sales outlook, as CEO says there's room for 'dramatic' obesity market expansion"
+          },
+          {
+            "text": "第三季度肥胖药Zepbound和糖尿病药Mounjaro的销量再次大幅增长。",
+            "quote": "Eli Lilly reported that sales of obesity drug Zepbound and diabetes treatment Mounjaro surged again in the third quarter"
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "469b1abee138632cf6dc99a7260e7dd63d96d0c045a783e5de885d0b88837308",
+        "count": 1,
+        "lastAttemptAt": "2026-10-29T18:27:29.238Z"
+      },
+      "titleZh": "Eli Lilly上调销售前景，CEO称肥胖市场有“戏剧性”扩张空间",
+      "summaryZh": "Eli Lilly宣布肥胖药Zepbound和糖尿病药Mounjaro在第三季度销量再次大幅增长，并上调全年销售预期，CEO表示肥胖治疗市场仍有显著增长潜力。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "Eli Lilly上调了销售前景。",
+              "evidence": "Eli Lilly hikes sales outlook, as CEO says there's room for 'dramatic' obesity market expansion"
+            },
+            {
+              "text": "首席执行官称肥胖市场有“戏剧性”扩张空间。",
+              "evidence": "Eli Lilly hikes sales outlook, as CEO says there's room for 'dramatic' obesity market expansion"
+            },
+            {
+              "text": "肥胖药Zepbound在第三季度销量再次大幅增长。",
+              "evidence": "Eli Lilly reported that sales of obesity drug Zepbound and diabetes treatment Mounjaro surged again in the third quarter"
+            },
+            {
+              "text": "糖尿病药Mounjaro在第三季度销量再次大幅增长。",
+              "evidence": "Eli Lilly reported that sales of obesity drug Zepbound and diabetes treatment Mounjaro surged again in the third quarter"
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "美国",
+            "triggerEvidence": "Eli Lilly hikes sales outlook, as CEO says there's room for 'dramatic' obesity market expansion",
+            "path": [
+              "上调销售前景",
+              "提升盈利预期",
+              "股价上行"
+            ],
+            "invalidation": "若后续业绩不及预期或监管出现负面消息"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "美国",
+            "triggerEvidence": "Eli Lilly reported that sales of obesity drug Zepbound and diabetes treatment Mounjaro surged again in the third quarter",
+            "path": [
+              "肥胖药销量增长",
+              "患者获得治疗",
+              "健康支出结构改善"
+            ],
+            "invalidation": "若药价大幅上升或保险覆盖不足导致使用率下降"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "Eli Lilly股票",
+            "direction": "上行",
+            "reason": "上调销售前景提升盈利预期",
+            "condition": "销量继续保持增长",
+            "invalidation": "若监管审批受阻或竞争加剧",
+            "timeframe": "短期至中期"
+          }
+        ],
+        "sourceBodyHash": "469b1abee138632cf6dc99a7260e7dd63d96d0c045a783e5de885d0b88837308",
+        "originalTitle": "Eli Lilly hikes sales outlook, as CEO says there's room for 'dramatic' obesity market expansion",
+        "reviewedAt": "2026-10-29T18:27:29.238Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "5b91bf77122dec4dbd2e",
+          "title": "Eli Lilly上调销售前景，CEO称肥胖市场有“戏剧性”扩张空间",
+          "summary": "Eli Lilly宣布肥胖药Zepbound和糖尿病药Mounjaro在第三季度销量再次大幅增长，并上调全年销售预期，CEO表示肥胖治疗市场仍有显著增长潜力。",
+          "excerpt": "Eli Lilly上调了销售前景，首席执行官称肥胖市场有“戏剧性”扩张空间；Zepbound和Mounjaro在第三季度销量再次大幅增长。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/10/29/eli-lilly-lly-earnings-q3-2026.html",
+          "publishedAt": "2026-10-29T16:46:07.000Z",
+          "region": "美股",
+          "topic": "制药行业-肥胖药市场",
+          "termIds": [],
+          "facts": [
+            "Eli Lilly上调了销售前景。",
+            "首席执行官称肥胖市场有“戏剧性”扩张空间。",
+            "肥胖药Zepbound在第三季度销量再次大幅增长。",
+            "糖尿病药Mounjaro在第三季度销量再次大幅增长。"
+          ],
+          "consensus": [
+            "暂无明确的市场共识"
+          ],
+          "inference": [
+            "若肥胖药需求持续增长，公司的收入和利润可能进一步提升。",
+            "若监管机构对新适应症批准持保守态度，增长预期可能受限。"
+          ],
+          "risks": [
+            "监管审批不确定性可能限制Zepbound新适应症的上市。",
+            "竞争药企推出类似疗法可能分流市场份额。",
+            "价格压力或导致利润率下降。"
+          ],
+          "causalChain": [
+            {
+              "title": "上调销售前景",
+              "explanation": "公司基于Zepbound和Mounjaro的强劲销量，提升全年收入预期。",
+              "condition": "销量持续保持或提升"
+            },
+            {
+              "title": "提升投资者预期",
+              "explanation": "上调前景通常会提升分析师对公司盈利的预期，推动股价上行。",
+              "condition": "市场接受公司增长指引"
+            },
+            {
+              "title": "股价波动",
+              "explanation": "投资者情绪转好导致买盘增加，股价可能出现短期上行。",
+              "condition": "无重大负面消息出现"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "种子成长的比喻",
+            "explanation": "肥胖药市场像一颗已发芽的种子，当前已有生长（销量增长），但仍有大量土壤（未被治疗的患者）可供进一步扩展。该比喻适用于说明潜在需求的规模，但不适用于预测具体增长速度，因为受监管、竞争等因素限制。"
+          },
+          "why": {
+            "cause": "公司报告的销量大幅增长",
+            "mechanisms": [
+              "需求增长驱动收入提升",
+              "上调预期提升市场情绪",
+              "情绪提升可能带来股价上行"
+            ],
+            "result": "短期内可能出现股价上行压力，长期取决于监管和竞争环境"
+          },
+          "focus": [
+            "收入增长",
+            "监管审批",
+            "竞争格局"
+          ],
+          "marketBet": [
+            "Zepbound的市场份额能否继续扩大",
+            "监管对新适应症的批准速度",
+            "竞争药物的上市时间"
+          ],
+          "expectationGap": "来源未提供市场对公司上调预期的具体共识，故无法比较实际预期与先前预期的差异。",
+          "counterView": "若监管收紧或竞争药物抢占市场，销量增长可能放缓，甚至出现逆转。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "投资者可能因公司上调预期而短期增持Eli Lilly股票。",
+              "why": "上调预期提升盈利预期，刺激买盘。",
+              "invalidation": "若后续财报显示销量未达预期或出现监管阻碍，买盘动力将消失。",
+              "condition": "若后续财报显示销量未达预期或出现监管阻碍，买盘动力将消失。"
+            },
+            {
+              "label": "消费",
+              "impact": "患者可获得更多肥胖治疗选择，潜在改善健康支出结构。",
+              "why": "药物可帮助控制体重，降低长期糖尿病等并发症费用。",
+              "invalidation": "若药价显著上升或保险覆盖不足，患者实际使用率可能下降。",
+              "condition": "若药价显著上升或保险覆盖不足，患者实际使用率可能下降。"
+            }
+          ],
+          "surface": "Eli Lilly上调销售前景，CEO称肥胖市场有“戏剧性”扩张空间",
+          "next": [
+            "上调销售前景",
+            "提升投资者预期",
+            "股价波动"
+          ],
+          "condition": [
+            "销量持续保持或提升",
+            "市场接受公司增长指引",
+            "无重大负面消息出现"
+          ]
+        },
+        "watchItems": [
+          "Zepbound在美国和欧洲的处方量变化",
+          "监管机构对Zepbound新适应症的审查进度",
+          "竞争对手类似肥胖药的临床试验结果",
+          "公司后续财报中对销售预期的进一步调整"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "469b1abee138632cf6dc99a7260e7dd63d96d0c045a783e5de885d0b88837308",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-10-29T18:28:03.952Z",
+        "state": "approved"
       }
     },
     {
@@ -1002,7 +1330,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2323,7 +2652,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2693,7 +3023,7 @@
         "reader": "cnfin-body",
         "sha256": "a8604fc0a704e16905d3ddad455c7caf0cd4fcc5b738540ef699f99451881a6e",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261029/4488516_1.html",
-        "checkedAt": "2026-10-29T18:27:29.238Z"
+        "checkedAt": "2026-10-29T18:28:03.952Z"
       },
       "id": "109376c11740a67a9640",
       "verificationStatus": "verified",
@@ -2777,7 +3107,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -2795,7 +3126,7 @@
         "reader": "cnfin-body",
         "sha256": "b388cde8188b583ec57a76b29ae75e31b8acebbae7045526e8baa972c50d32cc",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261029/4488504_1.html",
-        "checkedAt": "2026-10-29T18:27:29.238Z"
+        "checkedAt": "2026-10-29T18:28:03.952Z"
       },
       "id": "400b04fa28c59f7ec1d5",
       "verificationStatus": "verified",
@@ -3387,7 +3718,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -8778,7 +9110,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -11296,7 +11629,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11346,7 +11680,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11400,7 +11735,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11450,7 +11786,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11500,7 +11837,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11550,7 +11888,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11600,7 +11939,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11650,7 +11990,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     }
   ],
   "sourceHealth": [
@@ -11735,57 +12076,79 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 32
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "98964d7447e03d621897",
+      "selectedPublishedAt": "2026-10-29T17:45:01.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 33,
-      "originalSummaries": 33,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "impact-assessment": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 107,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 107,
-      "successRate": null
+      "skipped": 105,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 121,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 100,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 121,
-      "successRate": null
+      "skipped": 98,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
