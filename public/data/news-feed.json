@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-10-31T17:14:36.956Z",
+  "attemptedAt": "2026-10-31T17:15:20.442Z",
   "lastSuccessfulAt": "2026-10-31T17:14:36.956Z",
   "nextExpectedAt": "2026-11-01T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-10-31T17:14:36.956Z",
   "status": "delayed",
   "latest": [
     {
@@ -53,7 +55,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -103,7 +106,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -158,7 +162,50 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-10-31T17:15:20.442Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Automakers like Rivian and Ford are ‘democratizing 3D printing’ to reduce costs and increase speed",
+        "sourceUrl": "https://www.cnbc.com/2026/10/31/automakers-3d-printing-ford-rivian-gm.html",
+        "publishedAt": "2026-10-31T12:00:01.000Z",
+        "sourceHash": "591f2e2e5d8c00fff1bd2f9c27dca27b89c8534fadbc7d237f87b7ea44bf3707",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-10-31T17:15:20.442Z",
+        "title": "福特、Rivian等汽车制造商推动3D打印降本提速",
+        "summary": "福特、Rivian等汽车公司正通过‘民主化’3D打印技术，降低制造成本并加快生产速度；包括福特、Rivian和通用在内的多家厂商正扩大3D打印的应用范围，用于制造原型、工厂工具以及小批量零部件；这些零部件的生产比传统方式更快且成本更低。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "福特和Rivian等汽车制造商正通过‘民主化’3D打印来降低成本并提升速度。",
+            "quote": "Automakers like Rivian and Ford are ‘democratizing 3D printing’ to reduce costs and increase speed"
+          },
+          {
+            "text": "包括福特、Rivian和通用在内的汽车公司正在扩大3D打印，用于制造原型、工厂工具和小批量产品。",
+            "quote": "Automakers including Ford, Rivian and GM are expanding 3D printing to make prototypes, factory tools and low-volume"
+          },
+          {
+            "text": "这些小批量零部件的生产比传统方式更快且成本更低。",
+            "quote": "make prototypes, factory tools and low-volume parts faster and at lower cost."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "591f2e2e5d8c00fff1bd2f9c27dca27b89c8534fadbc7d237f87b7ea44bf3707",
+        "count": 1,
+        "lastAttemptAt": "2026-10-31T17:14:36.956Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -204,8 +251,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-10-31T17:14:36.956Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "paired-evidence"
       },
       "factualSummary": {
         "language": "en",
@@ -222,7 +270,25 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "paired-evidence",
+        "attemptedAt": "2026-10-31T17:15:20.442Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "ea18ea30b572c1a75ebbff9ab64dbff0404edb3674bce75b00d3485d6c8351fb",
+        "count": 1,
+        "lastAttemptAt": "2026-10-31T17:14:36.956Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "inference",
+            "causalChain",
+            "soWhat.why",
+            "soWhat.personalImpact"
+          ]
+        }
       }
     },
     {
@@ -445,7 +511,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -677,7 +744,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -731,7 +799,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1325,7 +1394,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -1343,7 +1413,7 @@
         "reader": "cnfin-body",
         "sha256": "ee5f41ae3c6763242971bbde206b36525554ba972ba598ece2ee157157ae0423",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261031/4489315_1.html",
-        "checkedAt": "2026-10-31T17:14:36.956Z"
+        "checkedAt": "2026-10-31T17:15:20.442Z"
       },
       "id": "e567e5451cb7e840ad8a",
       "verificationStatus": "verified",
@@ -1387,7 +1457,7 @@
         "reader": "cnfin-body",
         "sha256": "c2a82e498b430a2de49314b5dfbf4da93d8cef164f3067e7e9c2b13cf635f66a",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261031/4489305_1.html",
-        "checkedAt": "2026-10-31T17:14:36.956Z"
+        "checkedAt": "2026-10-31T17:15:20.442Z"
       },
       "id": "eb672102a2fb835863cb",
       "verificationStatus": "verified",
@@ -3653,7 +3723,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -5207,7 +5278,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -5850,7 +5922,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -7215,7 +7288,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7265,7 +7339,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7315,7 +7390,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7365,7 +7441,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7415,7 +7492,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -8169,57 +8247,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 20
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "f0607a7879fe6e3d0749",
+      "selectedPublishedAt": "2026-10-31T12:00:01.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 9,
-      "originalSummaries": 9,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "paired-evidence": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "unsupported-attribution": 1,
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 56,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 56,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 54,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 79,
-      "attempted": 0,
+      "eligible": 58,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 79,
-      "successRate": null
+      "skipped": 56,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
