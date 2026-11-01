@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-01T17:55:22.348Z",
+  "attemptedAt": "2026-11-01T17:55:55.590Z",
   "lastSuccessfulAt": "2026-11-01T17:55:22.348Z",
   "nextExpectedAt": "2026-11-02T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-01T17:55:22.348Z",
   "status": "delayed",
   "latest": [
     {
@@ -66,6 +68,17 @@
         "summary": "联合国秘书长古特雷斯周日表示，随着联合国在西撒哈拉的维和任务开始收尾，联合国仍致力于支持在西撒哈拉达成一项公正、持久且双方都能接受的政治解决方案，以保障该地区人民的自决权。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "70716ef9ee8ef64c4958ac1f5dc1017109ab92a09b612b0c5ba147c1085ea51b",
+        "count": 1,
+        "lastAttemptAt": "2026-11-01T17:55:22.348Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -116,7 +129,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -166,7 +180,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -217,8 +232,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-01T05:59:05.907Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "paired-evidence"
       },
       "factualSummary": {
         "language": "en",
@@ -235,7 +251,24 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "paired-evidence",
+        "attemptedAt": "2026-11-01T17:55:55.590Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "ba61123b3979acdf1b0cf162a7fd2f61cea7bfc61e748ffe9d478c343a2f0ee8",
+        "count": 1,
+        "lastAttemptAt": "2026-11-01T17:55:22.348Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "inference",
+            "watchItems",
+            "causalChain"
+          ]
+        }
       }
     },
     {
@@ -287,8 +320,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-01T17:55:22.348Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "factualSummary": {
         "language": "en",
@@ -305,7 +339,9 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-01T17:55:55.590Z"
       }
     },
     {
@@ -692,7 +728,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1030,7 +1067,7 @@
         "reader": "cnfin-body",
         "sha256": "8ff621870989af84ed2c2ea0f32cb006b86cebaf4599c48d2c2eebd2392b6d2a",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261101/4489425_1.html",
-        "checkedAt": "2026-11-01T17:55:22.348Z"
+        "checkedAt": "2026-11-01T17:55:55.590Z"
       },
       "id": "68f9ca78ee3b2540a683",
       "verificationStatus": "verified",
@@ -1150,7 +1187,7 @@
         "reader": "cnfin-body",
         "sha256": "8cd8f4dd6ad67f3c6f5772f8bb9f4b5385acb3af5c376799cd0d7cfb80db912c",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261101/4489416_1.html",
-        "checkedAt": "2026-11-01T17:55:22.348Z"
+        "checkedAt": "2026-11-01T17:55:55.590Z"
       },
       "id": "deac88666e39e5a4707d",
       "verificationStatus": "verified",
@@ -2719,7 +2756,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -3001,7 +3039,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3864,7 +3903,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -3914,7 +3954,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -3964,7 +4005,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -4014,7 +4056,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5830,57 +5873,83 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 15
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "85abe93554064038bdc3",
+      "selectedPublishedAt": "2026-11-01T12:00:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
-      "status": "ok",
-      "itemCount": 13,
-      "originalSummaries": 13,
-      "attempted": 0,
+      "status": "error",
+      "itemCount": 0,
+      "originalSummaries": 0,
+      "attempted": 2,
       "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "requests": 7,
+      "rejectionReasons": {
+        "paired-evidence": 1,
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "personal-impact": 1,
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 31,
-      "attempted": 0,
+      "attempted": 2,
       "succeeded": 0,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 31,
-      "successRate": null
+      "rejected": 2,
+      "skipped": 29,
+      "successRate": 0
     },
     "analysis": {
-      "eligible": 43,
-      "attempted": 0,
+      "eligible": 32,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 43,
-      "successRate": null
+      "skipped": 30,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
