@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-02T21:42:26.270Z",
+  "attemptedAt": "2026-11-02T21:43:28.050Z",
   "lastSuccessfulAt": "2026-11-02T21:42:26.270Z",
   "nextExpectedAt": "2026-11-03T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-02T21:42:26.270Z",
   "status": "delayed",
   "latest": [
     {
@@ -66,6 +68,17 @@
         "summary": "联合国大会周一（11月2日）听取了国际刑事法院院长赤根智子（Tomoko Akane）提交的法院年度工作报告。赤根表示，国际刑事法院正面临前所未有的制裁和施压，但法院将继续独立、公正地履行职责。她同时呼吁各国采取具体行动，维护《罗马规约》和国际法治原则。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "a6bc1dc36f47e5579277419a755d0aeff342777faf8e0a35bc171984236380ff",
+        "count": 1,
+        "lastAttemptAt": "2026-11-02T21:42:26.270Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -129,6 +142,19 @@
         "summary": "联合国教科文组织周一表示，全球记者遇害案件中，凶手未受惩罚的比例十多年来首次上升。同时，无人机越来越多地被用于袭击记者，成为冲突地区新闻工作者面临的新威胁。&nbsp;",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "3a8f154e37195f786be2947edb36e22fee8a22231741f6695fae52255eb47492",
+        "count": 1,
+        "lastAttemptAt": "2026-11-02T21:42:26.270Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "causalChain"
+          ]
+        }
       }
     },
     {
@@ -179,7 +205,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -229,7 +256,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -279,7 +307,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -334,21 +363,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Shop freezers in seven European countries hit by cyber-attack",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-02T17:38:11.000Z",
         "sourceHash": "2010461b580a85e80b6fb3efd045648e1b68fb5b13cb5f708feeceb700172310",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-02T21:42:26.270Z",
-        "title": "Shop freezers in seven European countries hit by cyber-attack",
-        "summary": "The temperature of freezers in several shops across Europe reportedly rose to as high as 50C.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-02T21:43:28.050Z",
+        "title": "欧洲七国多家店铺冷冻柜遭网络攻击 温度升至约50摄氏度",
+        "summary": "七个欧洲国家的多家零售店冷冻柜受到网络攻击，导致部分冷冻柜内部温度升高，最高记录约为50摄氏度。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "七个欧洲国家的店铺冷冻柜遭到网络攻击。",
+            "quote": "Shop freezers in seven European countries hit by cyber-attack"
+          },
+          {
+            "text": "受攻击的冷冻柜温度在部分店铺升至约50摄氏度。",
+            "quote": "The temperature of freezers in several shops across Europe reportedly rose to as high as 50C."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-02T21:43:28.050Z"
       }
     },
     {
@@ -400,8 +443,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-02T21:42:26.270Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "factualSummary": {
         "language": "en",
@@ -418,7 +462,9 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-02T21:43:28.050Z"
       }
     },
     {
@@ -458,7 +504,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -572,7 +619,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1331,7 +1379,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1825,7 +1874,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2328,7 +2378,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2700,7 +2751,7 @@
         "reader": "cnfin-body",
         "sha256": "b4881fd1b6343f1a34cb2b7c4a2af0a5a3c22614f42909a1cc2568681d3a5e6c",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261102/4489973_1.html",
-        "checkedAt": "2026-11-02T21:42:26.270Z"
+        "checkedAt": "2026-11-02T21:43:28.050Z"
       },
       "id": "18d8ae188fa805a407af",
       "verificationStatus": "verified",
@@ -2744,7 +2795,7 @@
         "reader": "cnfin-body",
         "sha256": "bb989cc783f27bb41b9d2a4f0f49d288606b0f5931e08fee77de11e0825f4bbd",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261102/4489970_1.html",
-        "checkedAt": "2026-11-02T21:42:26.270Z"
+        "checkedAt": "2026-11-02T21:43:28.050Z"
       },
       "id": "d86f1ea12be370096bfd",
       "verificationStatus": "verified",
@@ -7205,7 +7256,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7255,7 +7307,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7305,7 +7358,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -9349,57 +9403,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 22
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "449985f95729c65c366e",
+      "selectedPublishedAt": "2026-11-02T12:00:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 31,
-      "originalSummaries": 31,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 9,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "personal-impact": 1,
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 63,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 63,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 61,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 82,
-      "attempted": 0,
+      "eligible": 65,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 82,
-      "successRate": null
+      "skipped": 63,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
