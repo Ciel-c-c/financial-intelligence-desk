@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-02T05:58:32.296Z",
+  "attemptedAt": "2026-11-02T05:58:58.072Z",
   "lastSuccessfulAt": "2026-11-02T05:58:32.296Z",
   "nextExpectedAt": "2026-11-02T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-02T05:58:32.296Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -79,7 +82,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -94,7 +98,7 @@
       "fetchedAt": "2026-11-02T05:58:32.296Z",
       "id": "7415853b4467bb2c2611",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "BBC News · 财经",
@@ -104,8 +108,12 @@
       ],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "监管"
+      ],
       "impactChannels": [],
       "regions": [
         "全球"
@@ -113,12 +121,16 @@
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|dontgetcaughtout|2026-11-01",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "New affordability checks mean you could be blocked from using Buy Now Pay Later but here are ways to avoid it."
+        "新的可负担性检查可能导致用户无法使用先买后付服务。",
+        "文章提醒用户防止因新规则而受影响。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若检查结果显示用户负债水平高，平台可能拒绝其使用BNPL",
+        "用户若转向其他信用渠道，可能增加信用卡或贷款需求"
+      ],
       "article": {
         "status": "summary",
         "text": "Don't get caught out by new Buy Now Pay Later rules\nNew affordability checks mean you could be blocked from using Buy Now Pay Later but here are ways to avoid it.",
@@ -134,21 +146,264 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Don't get caught out by new Buy Now Pay Later rules",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/crpdgp4y017go?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-01T23:34:49.000Z",
         "sourceHash": "de50711769e12da5ffe6960b07572bb93cb2e4bfd5fbd495799872961b56b196",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-02T05:58:32.296Z",
-        "title": "Don't get caught out by new Buy Now Pay Later rules",
-        "summary": "New affordability checks mean you could be blocked from using Buy Now Pay Later but here are ways to avoid it.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-02T05:58:58.072Z",
+        "title": "新分期付款规则可能导致使用受限",
+        "summary": "英国推出新的“先买后付”可负担性检查，消费者若未通过可能被阻止使用此类服务，文章提供了规避这些限制的方法。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "文章提醒消费者注意新的“先买后付”规则，以免被影响。",
+            "quote": "Don't get caught out by new Buy Now Pay Later rules"
+          },
+          {
+            "text": "新的可负担性检查可能导致用户被阻止使用“先买后付”，但文中提供了相应的规避方案。",
+            "quote": "New affordability checks mean you could be blocked from using Buy Now Pay Later but here are ways to avoid it."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-02T05:58:58.072Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "de50711769e12da5ffe6960b07572bb93cb2e4bfd5fbd495799872961b56b196",
+        "count": 1,
+        "lastAttemptAt": "2026-11-02T05:58:32.296Z"
+      },
+      "titleZh": "新先买后付规则可能限制使用",
+      "summaryZh": "英国推出新的先买后付（Buy Now Pay Later）可负担性检查，可能导致部分用户被阻止使用该服务，文章提供规避建议。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "新的可负担性检查可能导致用户无法使用先买后付服务。",
+              "evidence": "New affordability checks mean you could be blocked from using Buy Now Pay Later but here are ways to avoid it."
+            },
+            {
+              "text": "文章提醒用户防止因新规则而受影响。",
+              "evidence": "Don't get caught out by new Buy Now Pay Later rules"
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "英国",
+            "triggerEvidence": "New affordability checks mean you could be blocked from using Buy Now Pay Later but here are ways to avoid it.",
+            "path": [
+              "监管检查",
+              "平台拒绝用户",
+              "平台收入下降"
+            ],
+            "invalidation": "平台通过其他业务弥补收入"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "英国",
+            "triggerEvidence": "New affordability checks mean you could be blocked from using Buy Now Pay Later but here are ways to avoid it.",
+            "path": [
+              "监管检查",
+              "平台阻止BNPL使用",
+              "消费者即时消费下降"
+            ],
+            "invalidation": "消费者拥有足够现金或其他低成本支付方式"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "BNPL平台股价",
+            "direction": "下行",
+            "reason": "合规检查导致交易量可能下降",
+            "condition": "新规则执行后平台拒绝率上升",
+            "invalidation": "若平台快速推出合规产品并保持用户基数，则股价下行压力减弱",
+            "timeframe": "短期至中期"
+          },
+          {
+            "asset": "信用卡消费",
+            "direction": "上行",
+            "reason": "消费者转向信用卡以弥补BNPL受限",
+            "condition": "BNPL使用受限且信用卡审批仍宽松",
+            "invalidation": "若信用卡利率上调或额度收紧，则此上行趋势受阻",
+            "timeframe": "中期"
+          }
+        ],
+        "sourceBodyHash": "de50711769e12da5ffe6960b07572bb93cb2e4bfd5fbd495799872961b56b196",
+        "originalTitle": "Don't get caught out by new Buy Now Pay Later rules",
+        "reviewedAt": "2026-11-02T05:58:32.296Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "7415853b4467bb2c2611",
+          "title": "新先买后付规则可能限制使用",
+          "summary": "英国推出新的先买后付（Buy Now Pay Later）可负担性检查，可能导致部分用户被阻止使用该服务，文章提供规避建议。",
+          "excerpt": "新可负担性检查可能导致用户无法使用先买后付服务，提醒用户防止因新规则受影响。",
+          "sourceName": "BBC News · 财经",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/crpdgp4y017go?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-01T23:34:49.000Z",
+          "region": "全球",
+          "topic": "先买后付监管",
+          "termIds": [],
+          "facts": [
+            "新的可负担性检查可能导致用户无法使用先买后付服务。",
+            "文章提醒用户防止因新规则而受影响。"
+          ],
+          "consensus": [
+            "监管机构加强对先买后付的可负担性审查，以降低消费者债务风险"
+          ],
+          "inference": [
+            "若检查结果显示用户负债水平高，平台可能拒绝其使用BNPL",
+            "用户若转向其他信用渠道，可能增加信用卡或贷款需求"
+          ],
+          "risks": [
+            "检查标准若过于宽松，仍可能出现过度负债",
+            "平台若未及时调整风控模型，可能面临合规处罚",
+            "消费者对规避方法的依赖可能导致非法或高成本的替代方案"
+          ],
+          "causalChain": [
+            {
+              "title": "监管推出新可负担性检查",
+              "explanation": "监管部门要求BNPL提供商在授信前进行更严格的收入与负债核算",
+              "condition": "新规则正式生效后"
+            },
+            {
+              "title": "平台拒绝部分用户使用BNPL",
+              "explanation": "检查结果不符合可负担性标准的用户被阻止交易",
+              "condition": "用户负债/收入比例超出监管阈值"
+            },
+            {
+              "title": "受影响用户消费受限",
+              "explanation": "无法使用BNPL导致即时购买力下降，可能转向其他支付方式或推迟消费",
+              "condition": "用户未找到等价的低成本替代支付手段"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "信用卡额度被银行临时下调",
+            "explanation": "就像银行在发现持卡人负债过高时会降低信用额度，用户的购买力随之受限；但信用卡仍可使用，只是额度更低，BNBL可能完全拒绝使用，限制更强。"
+          },
+          "why": {
+            "cause": "监管加强可负担性审查",
+            "mechanisms": [
+              "平台必须在授信前核算收入与负债",
+              "不符合标准的用户被系统阻断",
+              "消费需求被迫转移或削减"
+            ],
+            "result": "短期内部分消费者的即时消费可能下降，整体BNPL使用量受抑制"
+          },
+          "focus": [
+            "消费者信贷可负担性",
+            "平台合规成本",
+            "即时消费需求"
+          ],
+          "marketBet": [
+            "BNPL平台的交易额可能出现短期下行",
+            "信用卡或小额贷款需求可能上升",
+            "监管进一步收紧的可能性仍待观察"
+          ],
+          "expectationGap": "源材料未提供市场对新规则的预期，因此无法比较实际与先前预期的差异。",
+          "counterView": "若平台通过技术手段精准评估风险，仍可在合规前提下维持大部分用户的使用，影响可能被低估。",
+          "personalImpact": [
+            {
+              "label": "消费",
+              "impact": "受新检查阻止的用户可能削减非必需品支出",
+              "why": "无法使用BNPL导致即时购买力下降，消费者倾向推迟或放弃此类消费",
+              "invalidation": "若用户拥有足够的现金或信用卡额度，则此影响不成立",
+              "condition": "若用户拥有足够的现金或信用卡额度，则此影响不成立"
+            },
+            {
+              "label": "投资",
+              "impact": "BNPL平台的收入可能因交易量下降而受压",
+              "why": "交易被阻断直接削减平台手续费和利息收入",
+              "invalidation": "若平台通过其他金融产品补偿收入，则此影响不成立",
+              "condition": "若平台通过其他金融产品补偿收入，则此影响不成立"
+            }
+          ],
+          "surface": "新先买后付规则可能限制使用",
+          "next": [
+            "监管推出新可负担性检查",
+            "平台拒绝部分用户使用BNPL",
+            "受影响用户消费受限"
+          ],
+          "condition": [
+            "新规则正式生效后",
+            "用户负债/收入比例超出监管阈值",
+            "用户未找到等价的低成本替代支付手段"
+          ]
+        },
+        "watchItems": [
+          "监管部门是否进一步细化可负担性指标",
+          "主要BNBL平台的合规报告和拒绝率变化",
+          "消费者对规避方法的使用频率和监管回应"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "de50711769e12da5ffe6960b07572bb93cb2e4bfd5fbd495799872961b56b196",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-02T05:58:58.072Z",
+        "state": "approved"
       }
     },
     {
@@ -194,11 +449,27 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-02T05:58:32.296Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "paired-evidence"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "paired-evidence",
+        "attemptedAt": "2026-11-02T05:58:58.072Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "64b7293cbbc645f96f12cafc17011aa571e744a1facace065b1f69f08e5ec75c",
+        "count": 1,
+        "lastAttemptAt": "2026-11-02T05:58:32.296Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[0].numbers"
+          ]
+        }
       }
     },
     {
@@ -217,7 +488,7 @@
         "reader": "cnfin-body",
         "sha256": "c022dd01ec3da26d837d60be5ab5d1efe99eafa06e3149d516bb3039aae034b4",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261102/4489627_1.html",
-        "checkedAt": "2026-11-02T05:58:32.296Z"
+        "checkedAt": "2026-11-02T05:58:58.072Z"
       },
       "id": "881f0ebe80e43a74ae94",
       "verificationStatus": "verified",
@@ -315,7 +586,7 @@
         "reader": "cnfin-body",
         "sha256": "a32f84635b84eccc6e1a585cb4d83152f8e7071736215baf785331eb57d22773",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261102/4489624_1.html",
-        "checkedAt": "2026-11-02T05:58:32.296Z"
+        "checkedAt": "2026-11-02T05:58:58.072Z"
       },
       "id": "6868104bffc1a501b6a3",
       "verificationStatus": "verified",
@@ -637,7 +908,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -687,7 +959,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -737,7 +1010,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -2732,7 +3006,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5849,7 +6124,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -5899,7 +6175,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -5949,7 +6226,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -5999,7 +6277,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6880,57 +7159,81 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 19
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "7415853b4467bb2c2611",
+      "selectedPublishedAt": "2026-11-01T23:34:49.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 14,
-      "originalSummaries": 14,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 7,
+      "rejectionReasons": {
+        "paired-evidence": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 1,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "facts": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 38,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 38,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 36,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 59,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 42,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 59,
-      "successRate": null
+      "skipped": 40,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
