@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-02T05:58:58.072Z",
-  "lastSuccessfulAt": "2026-11-02T05:58:32.296Z",
+  "attemptedAt": "2026-11-02T21:42:26.270Z",
+  "lastSuccessfulAt": "2026-11-02T21:42:26.270Z",
   "status": "delayed",
   "datasets": [
     {
@@ -22,7 +22,7 @@
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-11-02T05:58:32.296Z"
+      "lastSuccessfulAt": "2026-11-02T21:42:26.270Z"
     }
   ],
   "sourceHealth": [
@@ -134,7 +134,7 @@
       "name": "国家统计局（新闻）",
       "status": "error",
       "itemCount": 0,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "news-fed",
@@ -164,19 +164,20 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 30
+      "itemCount": 35
     },
     {
       "id": "news-bbc-business",
       "name": "BBC News · 财经（新闻）",
       "status": "ok",
-      "itemCount": 46
+      "itemCount": 49
     },
     {
       "id": "news-bis-press",
       "name": "Bank for International Settlements（新闻）",
-      "status": "ok",
-      "itemCount": 10
+      "status": "error",
+      "itemCount": 0,
+      "error": "Feed contained no usable items"
     },
     {
       "id": "news-eia-energy",
@@ -186,54 +187,30 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
-      "id": "news-published-evidence",
-      "name": "Published evidence recheck（新闻）",
-      "status": "error",
-      "itemCount": 2,
-      "attempted": 2,
-      "unavailable": 0,
-      "invalidated": 19
-    },
-    {
-      "id": "news-review-queue",
-      "name": "复审队列诊断（新闻）",
-      "status": "ok",
-      "itemCount": 0,
-      "withBody": 0,
-      "withoutBody": 0,
-      "selectedId": "7415853b4467bb2c2611",
-      "selectedPublishedAt": "2026-11-01T23:34:49.000Z",
-      "selectedIsCurrent": true
-    },
-    {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 1,
-      "originalSummaries": 0,
-      "attempted": 2,
-      "generated": 1,
-      "requests": 7,
-      "rejectionReasons": {
-        "paired-evidence": 1
-      }
+      "itemCount": 31,
+      "originalSummaries": 31,
+      "attempted": 0,
+      "generated": 0,
+      "requests": 0,
+      "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
       "status": "ok",
-      "itemCount": 1,
-      "attempted": 2,
-      "rejected": 1,
+      "itemCount": 0,
+      "attempted": 0,
+      "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 1,
-        "analysis": 1,
-        "audit": 1
+        "evidence": 0,
+        "analysis": 0,
+        "audit": 0
       },
-      "rejectionReasons": {
-        "facts": 1
-      }
+      "rejectionReasons": {}
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
