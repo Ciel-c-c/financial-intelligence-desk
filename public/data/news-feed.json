@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-03T19:29:14.714Z",
+  "attemptedAt": "2026-11-03T19:30:21.298Z",
   "lastSuccessfulAt": "2026-11-03T19:29:14.714Z",
   "nextExpectedAt": "2026-11-04T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-03T19:29:14.714Z",
   "status": "delayed",
   "latest": [
     {
@@ -62,7 +64,50 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-03T19:30:21.298Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Pfizer hikes full-year outlook on new product growth, taps company veteran as new CFO",
+        "sourceUrl": "https://www.cnbc.com/2026/11/03/pfizer-pfe-earnings-q3-2026.html",
+        "publishedAt": "2026-11-03T19:25:44.000Z",
+        "sourceHash": "351a0d2deb630bb1bab8e44c98a40de79162655f88d24b942139087991081a72",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-03T19:30:21.298Z",
+        "title": "辉瑞因新产品增长上调全年预期，任命公司老将为新任首席财务官",
+        "summary": "辉瑞宣布因新产品的增长而上调全年业绩预期，并在本月任命在公司拥有二十年领导经验的Cecile Guegan担任首席财务官。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "辉瑞因新产品增长上调了全年业绩预期。",
+            "quote": "Pfizer hikes full-year outlook on new product growth, taps company veteran as new CFO"
+          },
+          {
+            "text": "Cecile Guegan 在辉瑞担任过多项领导职务，累计二十年。",
+            "quote": "Pfizer announced that Cecile Guegan, who has held various leadership roles at the company over the last 20 years,"
+          },
+          {
+            "text": "她本月正式出任公司首席财务官。",
+            "quote": "roles at the company over the last 20 years, stepped in as CFO this month."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "351a0d2deb630bb1bab8e44c98a40de79162655f88d24b942139087991081a72",
+        "count": 1,
+        "lastAttemptAt": "2026-11-03T19:29:14.714Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -126,6 +171,20 @@
         "summary": "世界气象组织与国际滑雪和单板滑雪联合会周二联合发布报告指出，随着全球气温上升、降雪条件日益不稳定，滑雪场及冬季旅游业面临越来越大的经营压力。研究显示，如果全球平均气温较工业化前水平升高2℃，在不进行人工造雪的情况下，欧洲28个国家约53%的受调查滑雪场将面临极高的积雪不足风险，部分滑雪场可能因此难以维持经营。&nbsp;",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "47f0dabf5388572aa4b53aec926bf776ec5b5b674f7d87e88ab2b1bb7fb2f40e",
+        "count": 1,
+        "lastAttemptAt": "2026-11-03T19:29:14.714Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "causalChain",
+            "soWhat.marketBet"
+          ]
+        }
       }
     },
     {
@@ -243,7 +302,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -293,7 +353,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -352,11 +413,14 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-03T19:29:14.714Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-03T19:30:21.298Z"
       }
     },
     {
@@ -834,7 +898,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1039,7 +1104,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1345,7 +1411,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2561,7 +2628,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2707,7 +2775,7 @@
         "reader": "cnfin-body",
         "sha256": "3f3ae7f231779396773d91e9b1e7244ecf560ceeffd5dc5156f4254e191f75d4",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261103/4490540_1.html",
-        "checkedAt": "2026-11-03T19:29:14.714Z"
+        "checkedAt": "2026-11-03T19:30:21.298Z"
       },
       "id": "6fe38b287bb3109ebc24",
       "verificationStatus": "verified",
@@ -2751,7 +2819,7 @@
         "reader": "cnfin-body",
         "sha256": "f22b955462ccfa003df5b7932556531e55e677d91126be4817ce5f413f85a12d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261103/4490530_1.html",
-        "checkedAt": "2026-11-03T19:29:14.714Z"
+        "checkedAt": "2026-11-03T19:30:21.298Z"
       },
       "id": "913b59c7740ce3726873",
       "verificationStatus": "verified",
@@ -4127,7 +4195,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -4449,7 +4518,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -6369,7 +6439,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -9423,7 +9494,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9473,7 +9545,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9523,7 +9596,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9573,7 +9647,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -9920,7 +9995,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -10626,57 +10702,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 24
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "7124abf33ca8ac472801",
+      "selectedPublishedAt": "2026-11-03T19:25:44.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 30,
-      "originalSummaries": 30,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 8,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "personal-impact": 1,
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 81,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 81,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 79,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 103,
-      "attempted": 0,
+      "eligible": 83,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 103,
-      "successRate": null
+      "skipped": 81,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
