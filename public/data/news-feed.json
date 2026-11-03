@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-03T06:44:32.262Z",
+  "attemptedAt": "2026-11-03T06:45:06.006Z",
   "lastSuccessfulAt": "2026-11-03T06:44:32.262Z",
   "nextExpectedAt": "2026-11-03T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-03T06:44:32.262Z",
   "status": "delayed",
   "latest": [
     {
@@ -67,7 +69,50 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-03T06:45:06.006Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "North Korea denies links to Binance hack as researchers trace stolen billions",
+        "sourceUrl": "https://www.cnbc.com/2026/11/03/north-korea-binance-elliptic-chainalysis.html",
+        "publishedAt": "2026-11-03T06:32:10.000Z",
+        "sourceHash": "972f1da49a64cc41f7626e62b504392cd241213077afa2aeffcee8de9fa09328",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-03T06:45:06.006Z",
+        "title": "北韩否认与币安被黑有关，研究人员追踪数十亿美元被盗加密货币",
+        "summary": "北韩官方否认与币安平台被黑事件有关，称与此指控无关联。区块链研究团队追踪到数十亿美元的被盗加密资产在多个网络间流转。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "北韩否认与币安被黑有关，研究人员追踪数十亿美元被盗资产。",
+            "quote": "North Korea denies links to Binance hack as researchers trace stolen billions"
+          },
+          {
+            "text": "北韩驳斥指控称其与币安被黑有关，区块链研究人员追踪到数十亿美元被盗。",
+            "quote": "North Korea rejected allegations linking it to the Binance hack as blockchain researchers traced billions in stolen"
+          },
+          {
+            "text": "区块链研究人员在多个网络上追踪到数十亿美元的被盗加密货币。",
+            "quote": "blockchain researchers traced billions in stolen cryptocurrency across networks."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "972f1da49a64cc41f7626e62b504392cd241213077afa2aeffcee8de9fa09328",
+        "count": 1,
+        "lastAttemptAt": "2026-11-03T06:44:32.262Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -123,7 +168,57 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-03T06:45:06.006Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Supreme Court rejects DOJ's bid to block California from counting disputed ballots",
+        "sourceUrl": "https://www.cnbc.com/2026/11/02/supreme-court-california-mail-ballots-election.html",
+        "publishedAt": "2026-11-03T01:32:13.000Z",
+        "sourceHash": "08f4dc610af46d69c66790e32acfca95bde51a99c99c4d6c3503d936b5991a1b",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-03T06:45:06.006Z",
+        "title": "最高法院驳回司法部阻止加州计数有争议选票的请求",
+        "summary": "最高法院拒绝了美国司法部阻止加州计数有争议选票的请求。司法部在向最高法院提出该请求时，正就一起诉讼的驳回提起上诉。该诉讼涉及阿拉斯加参议院选举的相关争议。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "最高法院拒绝了美国司法部阻止加州计数有争议选票的请求。",
+            "quote": "Supreme Court rejects DOJ's bid to block California from counting disputed ballots"
+          },
+          {
+            "text": "司法部在向最高法院提出该请求时，正就一起诉讼的驳回提起上诉。",
+            "quote": "The Department of Justice's request to the Supreme Court in the California case came as it appeals dismissal of a"
+          },
+          {
+            "text": "该诉讼涉及阿拉斯加参议院选举的相关争议。",
+            "quote": "California case came as it appeals dismissal of a lawsuit over Alaska's Senate election."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "08f4dc610af46d69c66790e32acfca95bde51a99c99c4d6c3503d936b5991a1b",
+        "count": 1,
+        "lastAttemptAt": "2026-11-03T06:44:32.262Z",
+        "auditFindings": [
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 1
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -212,7 +307,7 @@
         "reader": "cnfin-body",
         "sha256": "a557619a7a9ca676c276102d3a424d3ae1d341ad4489695a9a50648174f865a3",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261103/4490221_1.html",
-        "checkedAt": "2026-11-03T06:44:32.262Z"
+        "checkedAt": "2026-11-03T06:45:06.006Z"
       },
       "id": "472f195f4c39d54d2438",
       "verificationStatus": "verified",
@@ -420,7 +515,7 @@
         "reader": "cnfin-body",
         "sha256": "d5daef99f09ef3842bd87e515a093a5bef9b7e5d2e5c4fb3626a000b72c6928c",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261103/4490201_1.html",
-        "checkedAt": "2026-11-03T06:44:32.262Z"
+        "checkedAt": "2026-11-03T06:45:06.006Z"
       },
       "id": "c8a12a372d1d2a621765",
       "verificationStatus": "verified",
@@ -1172,7 +1267,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1222,7 +1318,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1272,7 +1369,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1322,7 +1420,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -2012,7 +2111,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -3040,7 +3140,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -4420,7 +4521,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -6323,7 +6425,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -6459,7 +6562,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -9441,7 +9545,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     }
   ],
   "sourceHealth": [
@@ -9527,57 +9632,80 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 18
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "8817fc77d2a7a2fb5fef",
+      "selectedPublishedAt": "2026-11-03T06:32:10.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 19,
-      "originalSummaries": 19,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "unsupported-attribution": 1,
+        "audit": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 65,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 65,
-      "successRate": null
+      "skipped": 63,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 90,
-      "attempted": 0,
+      "eligible": 72,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 90,
-      "successRate": null
+      "skipped": 70,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
