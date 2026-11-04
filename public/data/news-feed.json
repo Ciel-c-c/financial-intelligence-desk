@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-04T19:43:40.057Z",
+  "attemptedAt": "2026-11-04T19:44:13.817Z",
   "lastSuccessfulAt": "2026-11-04T19:43:40.057Z",
   "nextExpectedAt": "2026-11-05T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-04T19:43:40.057Z",
   "status": "delayed",
   "latest": [
     {
@@ -72,6 +74,24 @@
         "summary": "世界卫生组织周三发布的一份报告显示，在全球推广高温健康预警、安全饮水和清洁家庭能源等六项措施，每年有望避免160万人死亡，并带来数万亿美元的经济和财政收益，同时帮助减少碳排放。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "599fae803616b77fdb8e3f2f2180ac185d43bea7c0bfb6800d859af0e719758f",
+        "count": 1,
+        "lastAttemptAt": "2026-11-04T19:43:40.057Z",
+        "auditFindings": [
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 3
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -122,7 +142,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -172,7 +193,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -231,7 +253,48 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-04T19:44:13.817Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Trump hammers Fox News, blaming network for GOP losses as ratings slide",
+        "sourceUrl": "https://www.cnbc.com/2026/11/04/trump-fox-news-gop-midterm-losses.html",
+        "publishedAt": "2026-11-04T18:37:11.000Z",
+        "sourceHash": "12d3de9796d9274eda863c3fd3456d924df92091262ce1c6024ef8506d567874",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-04T19:44:13.817Z",
+        "title": "特朗普抨击福克斯新闻，指责其导致共和党失利并收视下滑",
+        "summary": "特朗普猛烈批评福克斯新闻，称该网络导致共和党在选举中的失利，并指出其收视率正在下降。他一贯对媒体公司持批评态度，尤其是认为广播公司对他存有偏见。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "特朗普抨击福克斯新闻，指责该网络导致共和党失利并导致收视率下降。",
+            "quote": "Trump hammers Fox News, blaming network for GOP losses as ratings slide"
+          },
+          {
+            "text": "特朗普经常批评媒体公司，尤其是他认为对他持偏见的广播公司。",
+            "quote": "Trump is a frequent critic of media companies, especially broadcasters that he views as being biased against him."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "12d3de9796d9274eda863c3fd3456d924df92091262ce1c6024ef8506d567874",
+        "count": 1,
+        "lastAttemptAt": "2026-11-04T19:43:40.057Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -287,11 +350,14 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-04T19:43:40.057Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "paired-evidence"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "paired-evidence",
+        "attemptedAt": "2026-11-04T19:44:13.817Z"
       }
     },
     {
@@ -454,7 +520,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -492,7 +559,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -705,7 +773,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1418,7 +1487,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1648,7 +1718,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -1990,7 +2061,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -2028,7 +2100,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2421,7 +2494,7 @@
         "reader": "cnfin-body",
         "sha256": "a86dc69ad3db78bbcc5957766eaa794fc432281097bde4f58f8ff8b4269ae1f7",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261104/4491141_1.html",
-        "checkedAt": "2026-11-04T19:43:40.057Z"
+        "checkedAt": "2026-11-04T19:44:13.817Z"
       },
       "id": "29101614e1a168b845f7",
       "verificationStatus": "verified",
@@ -2465,7 +2538,7 @@
         "reader": "cnfin-body",
         "sha256": "2994bf9cd76ccf154b3f71fe24e6d304210e643bd2cc08f6dfc94e3edfddd841",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261104/4491137_1.html",
-        "checkedAt": "2026-11-04T19:43:40.057Z"
+        "checkedAt": "2026-11-04T19:44:13.817Z"
       },
       "id": "a9cc20dad5a7858882db",
       "verificationStatus": "verified",
@@ -2593,7 +2666,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -9045,7 +9119,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-business",
@@ -10131,7 +10206,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -10467,57 +10543,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 24
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "d128f862930f853d408f",
+      "selectedPublishedAt": "2026-11-04T12:00:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 22,
-      "originalSummaries": 22,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 9,
+      "rejectionReasons": {
+        "paired-evidence": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "audit": 1,
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 79,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 79,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 77,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 92,
-      "attempted": 0,
+      "eligible": 74,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 92,
-      "successRate": null
+      "skipped": 72,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
