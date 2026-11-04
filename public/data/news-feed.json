@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-04T06:15:45.264Z",
+  "attemptedAt": "2026-11-04T06:16:12.016Z",
   "lastSuccessfulAt": "2026-11-04T06:15:45.264Z",
   "nextExpectedAt": "2026-11-04T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-04T06:15:45.264Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -79,7 +82,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -94,7 +98,7 @@
       "fetchedAt": "2026-11-04T06:15:45.264Z",
       "id": "72624bb8f783ddd35b49",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "CNBC",
@@ -104,21 +108,31 @@
       ],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
+      "analysisLevels": [
+        "宏观",
+        "行业"
+      ],
+      "eventTypes": [
+        "货币政策"
+      ],
       "impactChannels": [],
       "regions": [
+        "美国",
         "全球"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|jetblueraisesbag|2026-11-03",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "JetBlue raised baggage fees for the third time in a year as fuel costs continued to climb."
+        "JetBlue 本年度第三次上调托运行李费用。",
+        "上调的原因是燃油成本持续上升。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若燃油成本继续上升，航空公司可能进一步提升附加费用",
+        "若燃油成本回落，费用上调的压力可能减弱"
+      ],
       "article": {
         "status": "summary",
         "text": "JetBlue raises bag fees for third time in a year as fuel costs bite\nJetBlue raised baggage fees for the third time in a year as fuel costs continued to climb.",
@@ -130,11 +144,241 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-04T06:15:45.264Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-length"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-length",
+        "attemptedAt": "2026-11-04T06:16:12.016Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "340fefa9618ae754cff80001212f0ccafea7e9a7c42695024320089ed8b0a368",
+        "count": 1,
+        "lastAttemptAt": "2026-11-04T06:15:45.264Z"
+      },
+      "titleZh": "JetBlue 再次上调托运行李费用，燃油成本上升为主要原因",
+      "summaryZh": "JetBlue 在燃油成本持续攀升的背景下，已于今年第三次上调托运行李费用。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "JetBlue 本年度第三次上调托运行李费用。",
+              "evidence": "JetBlue raises bag fees for third time in a year as fuel costs bite"
+            },
+            {
+              "text": "上调的原因是燃油成本持续上升。",
+              "evidence": "JetBlue raised baggage fees for the third time in a year as fuel costs continued to climb."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "audience": "investors",
+            "invalidation": "燃油成本下降或公司通过其他方式抵消成本",
+            "label": "投资",
+            "path": [
+              "燃油成本上升",
+              "利润压力增大",
+              "行李费上调"
+            ],
+            "region": "美国",
+            "score": 2,
+            "triggerEvidence": "JetBlue raises bag fees for third time in a year as fuel costs bite"
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "汇率",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "住房",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "工作",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "households",
+            "invalidation": "燃油成本下降或费用上调被监管限制",
+            "label": "消费",
+            "path": [
+              "燃油成本上升",
+              "行李费上调",
+              "旅行成本增加"
+            ],
+            "region": "美国",
+            "score": 2,
+            "triggerEvidence": "JetBlue raised baggage fees for the third time in a year as fuel costs continued to climb."
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "企业经营",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "航空公司股票",
+            "condition": "燃油价格保持高位",
+            "direction": "下行",
+            "invalidation": "若公司通过票价提升或其他收入抵消成本，股价压力可能减弱",
+            "reason": "成本上升导致利润压缩，市场对盈利前景担忧",
+            "timeframe": "中期"
+          },
+          {
+            "asset": "消费者旅行支出",
+            "condition": "费用上调幅度显著且持续",
+            "direction": "下行",
+            "invalidation": "若消费者对费用敏感度降低或替代交通方式增多，影响可能被抵消",
+            "reason": "行李费用上调提升整体旅行成本",
+            "timeframe": "短期"
+          }
+        ],
+        "sourceBodyHash": "340fefa9618ae754cff80001212f0ccafea7e9a7c42695024320089ed8b0a368",
+        "originalTitle": "JetBlue raises bag fees for third time in a year as fuel costs bite",
+        "reviewedAt": "2026-11-04T06:15:45.264Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "72624bb8f783ddd35b49",
+          "title": "JetBlue 再次上调托运行李费用，燃油成本上升为主要原因",
+          "summary": "JetBlue 在燃油成本持续攀升的背景下，已于今年第三次上调托运行李费用。",
+          "excerpt": "JetBlue 提高托运行李费用，这是今年第三次上调，原因是燃油成本持续上升。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/11/03/jetblue-checked-bag-fee.html",
+          "publishedAt": "2026-11-03T22:26:20.000Z",
+          "region": "美股",
+          "topic": "航空业成本与收费",
+          "termIds": [],
+          "facts": [
+            "JetBlue 本年度第三次上调托运行李费用。",
+            "上调的原因是燃油成本持续上升。"
+          ],
+          "consensus": [
+            "暂无明确的市场共识"
+          ],
+          "inference": [
+            "若燃油成本继续上升，航空公司可能进一步提升附加费用",
+            "若燃油成本回落，费用上调的压力可能减弱"
+          ],
+          "risks": [
+            "燃油价格出现意外下降，导致费用上调动机消失",
+            "监管部门对航空附加费进行限制",
+            "竞争对手不跟随上调，导致 JetBlue 市场份额受压"
+          ],
+          "causalChain": [
+            {
+              "condition": "油价持续高于去年同期水平",
+              "explanation": "全球油价上涨推高航空公司运营成本",
+              "title": "燃油成本上升"
+            },
+            {
+              "condition": "燃油成本占比未被其他成本削减抵消",
+              "explanation": "燃油成本占航空公司成本比重高，导致净利润被压缩",
+              "title": "利润压力增大"
+            },
+            {
+              "condition": "公司决定通过附加费方式分摊燃油成本",
+              "explanation": "为转嫁部分成本，JetBlue 提高行李收费",
+              "title": "托运行李费用上调"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "explanation": "就像车主因油价上涨而提高收费，航空公司也会通过提升行李费转嫁燃油成本。该类比适用于成本传导，但不适用于所有费用项目，因为航空公司还有其他收入来源。",
+            "image": "家庭用车油费上涨，车主提高每公里收费或收取额外费用"
+          },
+          "counterView": "也有观点认为航空公司可以通过提升票价或优化航线来吸收燃油成本，而非单纯上调行李费。",
+          "expectationGap": "来源未提供市场对 JetBlue 费用走势的共识，故无法比较实际与预期之间的差距。",
+          "focus": [
+            "燃油成本对航空公司利润的直接冲击",
+            "费用上调对消费者支出的影响"
+          ],
+          "marketBet": [
+            "若油价继续高位，航空公司可能进一步提升其他附加费用",
+            "竞争对手若不跟随上调，JetBlue 可能面临客源流失"
+          ],
+          "personalImpact": [
+            {
+              "impact": "旅行者在预订 JetBlue 航班时需承担更高的行李费用，增加出行成本",
+              "invalidation": "若燃油成本显著下降或监管限制行李费上调，则该成本上升效应不成立",
+              "label": "消费",
+              "why": "燃油成本上升导致公司通过行李费转嫁成本，直接提升消费者支出",
+              "condition": "若燃油成本显著下降或监管限制行李费上调，则该成本上升效应不成立"
+            },
+            {
+              "impact": "投资者对航空股的估值可能因成本上升压力而面临下调风险",
+              "invalidation": "若公司通过其他渠道（如票价提升）成功抵消燃油成本，利润压力减弱，投资风险下降",
+              "label": "投资",
+              "why": "持续的费用上调暗示公司利润空间受压，影响股价预期",
+              "condition": "若公司通过其他渠道（如票价提升）成功抵消燃油成本，利润压力减弱，投资风险下降"
+            }
+          ],
+          "why": {
+            "cause": "燃油成本上升导致运营成本增加",
+            "mechanisms": [
+              "燃油成本占航空公司总成本的较大比例",
+              "公司为维持利润率选择提升附加费用",
+              "行李费是相对易于调整的收入项目"
+            ],
+            "result": "乘客的旅行总成本上升，可能抑制短途出行需求"
+          },
+          "surface": "JetBlue 再次上调托运行李费用，燃油成本上升为主要原因",
+          "next": [
+            "燃油成本上升",
+            "利润压力增大",
+            "托运行李费用上调"
+          ],
+          "condition": [
+            "油价持续高于去年同期水平",
+            "燃油成本占比未被其他成本削减抵消",
+            "公司决定通过附加费方式分摊燃油成本"
+          ]
+        },
+        "watchItems": [
+          "国际原油价格走势",
+          "JetBlue 未来费用公告",
+          "主要竞争对手的费用调整情况"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "340fefa9618ae754cff80001212f0ccafea7e9a7c42695024320089ed8b0a368",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-04T06:16:12.016Z",
+        "state": "approved"
       }
     },
     {
@@ -180,8 +424,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-04T06:15:45.264Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "factualSummary": {
         "language": "en",
@@ -198,7 +443,20 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-04T06:16:12.016Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "8744c152086030b33930abb25a48d03b50de5e4b4f007d3dddc282fbfc253588",
+        "count": 1,
+        "lastAttemptAt": "2026-11-04T06:15:45.264Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -330,7 +588,7 @@
         "reader": "cnfin-body",
         "sha256": "10e29ad5583a418ea334a310fa628a555e5acd601c38dcea67d2fb5a09ce2cbb",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261104/4490821_1.html",
-        "checkedAt": "2026-11-04T06:15:45.264Z"
+        "checkedAt": "2026-11-04T06:16:12.016Z"
       },
       "id": "2ed055da9b9a900bee11",
       "verificationStatus": "verified",
@@ -438,7 +696,7 @@
         "reader": "cnfin-body",
         "sha256": "8502aa19921dede9e182307cf4599772c27ce7f3cf78845d2ca6fb3553ea30df",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261104/4490810_1.html",
-        "checkedAt": "2026-11-04T06:15:45.264Z"
+        "checkedAt": "2026-11-04T06:16:12.016Z"
       },
       "id": "a106b5fef62e7eccd6bb",
       "verificationStatus": "verified",
@@ -733,7 +991,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -846,7 +1105,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -896,7 +1156,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -946,7 +1207,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1000,7 +1262,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1050,7 +1313,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -3269,7 +3533,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -5508,7 +5773,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-business",
@@ -7012,7 +7278,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -7398,7 +7665,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -9365,7 +9633,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -10816,57 +11085,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 28
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "72624bb8f783ddd35b49",
+      "selectedPublishedAt": "2026-11-03T22:26:20.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
-      "status": "ok",
-      "itemCount": 16,
-      "originalSummaries": 16,
-      "attempted": 0,
+      "status": "error",
+      "itemCount": 0,
+      "originalSummaries": 0,
+      "attempted": 2,
       "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "requests": 8,
+      "rejectionReasons": {
+        "summary-length": 1,
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "personal-impact": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 84,
-      "attempted": 0,
+      "attempted": 2,
       "succeeded": 0,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 84,
-      "successRate": null
+      "rejected": 2,
+      "skipped": 82,
+      "successRate": 0
     },
     "analysis": {
-      "eligible": 105,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 85,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 105,
-      "successRate": null
+      "skipped": 83,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
