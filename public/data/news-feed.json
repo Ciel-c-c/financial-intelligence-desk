@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-05T06:42:33.700Z",
+  "attemptedAt": "2026-11-05T06:43:06.578Z",
   "lastSuccessfulAt": "2026-11-05T06:42:33.700Z",
   "nextExpectedAt": "2026-11-05T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-05T06:42:33.700Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -79,7 +82,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -138,8 +142,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-05T06:42:33.700Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "unsupported-numbers"
       },
       "factualSummary": {
         "language": "en",
@@ -156,7 +161,22 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "unsupported-numbers",
+        "attemptedAt": "2026-11-05T06:43:06.578Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "5de92942b4d0f0676b33592e537592334a02b3a67df408225fc56484c2dea1d1",
+        "count": 1,
+        "lastAttemptAt": "2026-11-05T06:42:33.700Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -206,21 +226,48 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-05T06:35:25.000Z",
         "sourceHash": "d1993ef8bda5c581546539ca78e32b0305388030d846790ac98e659d44c5d62f",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-05T06:42:33.700Z",
-        "title": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
-        "summary": "Wong, 30, is among hundreds of Hongkongers detained under the controversial national security law.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-05T06:43:06.578Z",
+        "title": "香港民主运动领袖黄之锋被判十年监禁",
+        "summary": "30岁的黄之锋是香港民主抗议的代表人物之一，他因被指违反国家安全法而被判处十年有期徒刑。与此同时，数百名香港居民也因同一法律被拘留。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "黄之锋因被指违反国家安全法被判处十年监禁。",
+            "quote": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years"
+          },
+          {
+            "text": "30岁的黄之锋是数百名因国家安全法被拘留的香港人之一。",
+            "quote": "Wong, 30, is among hundreds of Hongkongers detained under the controversial national security law."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-05T06:43:06.578Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "d1993ef8bda5c581546539ca78e32b0305388030d846790ac98e659d44c5d62f",
+        "count": 1,
+        "lastAttemptAt": "2026-11-05T06:42:33.700Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -585,7 +632,7 @@
         "reader": "cnfin-body",
         "sha256": "a3c389f20e8dbb3f0a1033eb5e21d2c9f61c6b86ba9d5e0022d23a3fdb9c137e",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261105/4491389_1.html",
-        "checkedAt": "2026-11-05T06:42:33.700Z"
+        "checkedAt": "2026-11-05T06:43:06.578Z"
       },
       "id": "84047bef3477c3ff5fc6",
       "verificationStatus": "verified",
@@ -805,7 +852,7 @@
         "reader": "cnfin-body",
         "sha256": "494d712e93cc0aa2236733fdff6cd4e645306ef24309041f60bfaa242723963b",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261105/4491383_1.html",
-        "checkedAt": "2026-11-05T06:42:33.700Z"
+        "checkedAt": "2026-11-05T06:43:06.578Z"
       },
       "id": "b92e12585ff7bcbf4be9",
       "verificationStatus": "verified",
@@ -933,7 +980,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -1329,7 +1377,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1379,7 +1428,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1429,7 +1479,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1479,7 +1530,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1529,7 +1581,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1579,7 +1632,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1629,7 +1683,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -3375,7 +3430,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -3413,7 +3469,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3743,7 +3800,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -4989,7 +5047,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -6020,7 +6079,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -8190,7 +8250,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -8564,7 +8625,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -8707,7 +8769,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -11090,57 +11153,81 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 31
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "dc82016669c3ab4fda60",
+      "selectedPublishedAt": "2026-11-05T00:00:09.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 18,
-      "originalSummaries": 18,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "unsupported-numbers": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 2
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 81,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 81,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 79,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 110,
-      "attempted": 0,
+      "eligible": 86,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 110,
-      "successRate": null
+      "skipped": 84,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
