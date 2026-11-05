@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-05T19:55:12.525Z",
+  "attemptedAt": "2026-11-05T19:55:50.358Z",
   "lastSuccessfulAt": "2026-11-05T19:55:12.525Z",
   "nextExpectedAt": "2026-11-06T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-05T19:55:12.525Z",
   "status": "delayed",
   "latest": [
     {
@@ -54,7 +56,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -70,17 +73,19 @@
       "id": "ec8695223b1b08002a21",
       "verificationStatus": "official",
       "titleZh": "“教育不能等待”基金6亿美元筹资目标近在咫尺",
-      "summaryZh": "各国政府和合作伙伴周四在瑞士日内瓦举行的高级别补充筹资会议上，宣布向联合国全球紧急教育基金“教育不能等待”新增4.058亿美元承诺资金。加上此前通过多年期捐助承诺已获得的1.358亿美元，该基金“希望从这里开始”（Hope Starts Here）筹资活动累计获得5.416亿美元资金及承诺，达到6亿美元目标的90%。&nbsp;",
+      "summaryZh": "在日内瓦的高级别补充筹资会议上，各国政府和合作伙伴新增4.058亿美元承诺，使“教育不能等待”基金累计筹得5.416亿美元，已达6亿美元目标的90%。",
       "translationStatus": "original-zh",
       "relatedSources": [],
       "keyTerms": [
         "汇率"
       ],
       "causalSignals": [],
-      "analysisLevels": [],
+      "analysisLevels": [
+        "宏观"
+      ],
       "eventTypes": [],
       "impactChannels": [
-        "汇率"
+        "供需"
       ],
       "regions": [
         "全球"
@@ -88,12 +93,19 @@
       "importanceScore": 70,
       "continuingImpactScore": 40,
       "clusterId": "undefined|教育不能等待基金6亿美元筹资目标|2026-11-05",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "各国政府和合作伙伴周四在瑞士日内瓦举行的高级别补充筹资会议上，宣布向联合国全球紧急教育基金“教育不能等待”新增4.058亿美元承诺资金。加上此前通过多年期捐助承诺已获得的1.358亿美元，该基金“希望从这里开始”（Hope Starts Here）筹资活动累计获得5.416亿美元资金及承诺，达到6亿美元目标的90%。&nbsp;"
+        "基金目标为6亿美元，已累计筹得5.416亿美元，达90%。",
+        "在日内瓦的高级别补充筹资会议上，各国政府和合作伙伴新增承诺4.058亿美元。",
+        "此前已通过多年期捐助获得1.358亿美元的承诺。",
+        "会议于周四在瑞士日内瓦举行。",
+        "基金全称为“教育不能等待”。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "如果后续继续获得承诺，基金有望在短期内完成全部目标。",
+        "若承诺未能兑现，基金可能面临资金缺口，影响项目启动。"
+      ],
       "article": {
         "status": "summary",
         "text": "“教育不能等待”基金6亿美元筹资目标近在咫尺\n各国政府和合作伙伴周四在瑞士日内瓦举行的高级别补充筹资会议上，宣布向联合国全球紧急教育基金“教育不能等待”新增4.058亿美元承诺资金。加上此前通过多年期捐助承诺已获得的1.358亿美元，该基金“希望从这里开始”（Hope Starts Here）筹资活动累计获得5.416亿美元资金及承诺，达到6亿美元目标的90%。&nbsp;",
@@ -121,6 +133,229 @@
         "summary": "各国政府和合作伙伴周四在瑞士日内瓦举行的高级别补充筹资会议上，宣布向联合国全球紧急教育基金“教育不能等待”新增4.058亿美元承诺资金。加上此前通过多年期捐助承诺已获得的1.358亿美元，该基金“希望从这里开始”（Hope Starts Here）筹资活动累计获得5.416亿美元资金及承诺，达到6亿美元目标的90%。&nbsp;",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "05583de70ad414a300c519507aa0972e2b8733af2b17c2537599d566fa7c74f7",
+        "count": 1,
+        "lastAttemptAt": "2026-11-05T19:55:12.525Z"
+      },
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "基金目标为6亿美元，已累计筹得5.416亿美元，达90%。",
+              "evidence": "加上此前通过多年期捐助承诺已获得的1.358亿美元，该基金“希望从这里开始”（Hope Starts Here）筹资活动累计获得5.416亿美元资金及承诺，达到6亿美元目标的90%。"
+            },
+            {
+              "text": "在日内瓦的高级别补充筹资会议上，各国政府和合作伙伴新增承诺4.058亿美元。",
+              "evidence": "各国政府和合作伙伴周四在瑞士日内瓦举行的高级别补充筹资会议上，宣布向联合国全球紧急教育基金“教育不能等待”新增4.058亿美元承诺资金。"
+            },
+            {
+              "text": "此前已通过多年期捐助获得1.358亿美元的承诺。",
+              "evidence": "加上此前通过多年期捐助承诺已获得的1.358亿美元，该基金“希望从这里开始”（Hope Starts Here）筹资活动累计获得5.416亿美元资金及承诺，达到6亿美元目标的90%。"
+            },
+            {
+              "text": "会议于周四在瑞士日内瓦举行。",
+              "evidence": "各国政府和合作伙伴周四在瑞士日内瓦举行的高级别补充筹资会议上，宣布向联合国全球紧急教育基金“教育不能等待”新增4.058亿美元承诺资金。"
+            },
+            {
+              "text": "基金全称为“教育不能等待”。",
+              "evidence": "“教育不能等待”基金6亿美元筹资目标近在咫尺"
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "全球",
+            "triggerEvidence": "各国政府和合作伙伴周四在瑞士日内瓦举行的高级别补充筹资会议上，宣布向联合国全球紧急教育基金“教育不能等待”新增4.058亿美元承诺资金。",
+            "path": [
+              "政府与合作伙伴新增承诺",
+              "基金累计筹资接近目标",
+              "教育项目可获更多资金支持"
+            ],
+            "invalidation": "若承诺资金未实际到账或项目执行受阻"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "教育技术企业股票",
+            "direction": "上行",
+            "reason": "基金资金到位可能增加对数字教育解决方案的需求。",
+            "condition": "资金实际到位并用于项目采购",
+            "invalidation": "若资金未兑现或项目延期，需求增长不明显",
+            "timeframe": "中期（3-6个月）"
+          }
+        ],
+        "sourceBodyHash": "05583de70ad414a300c519507aa0972e2b8733af2b17c2537599d566fa7c74f7",
+        "originalTitle": "“教育不能等待”基金6亿美元筹资目标近在咫尺",
+        "reviewedAt": "2026-11-05T19:55:12.525Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "ec8695223b1b08002a21",
+          "title": "“教育不能等待”基金6亿美元筹资目标近在咫尺",
+          "summary": "在日内瓦的高级别补充筹资会议上，各国政府和合作伙伴新增4.058亿美元承诺，使“教育不能等待”基金累计筹得5.416亿美元，已达6亿美元目标的90%。",
+          "excerpt": "各国政府和合作伙伴周四在瑞士日内瓦举行的高级别补充筹资会议上，宣布向联合国全球紧急教育基金“教育不能等待”新增4.058亿美元承诺资金。",
+          "sourceName": "UN News",
+          "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/11/1143139",
+          "publishedAt": "2026-11-05T12:00:00.000Z",
+          "region": "全球",
+          "topic": "教育融资",
+          "termIds": [],
+          "facts": [
+            "基金目标为6亿美元，已累计筹得5.416亿美元，达90%。",
+            "在日内瓦的高级别补充筹资会议上，各国政府和合作伙伴新增承诺4.058亿美元。",
+            "此前已通过多年期捐助获得1.358亿美元的承诺。",
+            "会议于周四在瑞士日内瓦举行。",
+            "基金全称为“教育不能等待”。"
+          ],
+          "consensus": [
+            "暂无公开的市场共识"
+          ],
+          "inference": [
+            "如果后续继续获得承诺，基金有望在短期内完成全部目标。",
+            "若承诺未能兑现，基金可能面临资金缺口，影响项目启动。"
+          ],
+          "risks": [
+            "捐助者承诺兑现率不确定，可能导致资金缺口。",
+            "全球经济不确定性可能削弱新一轮捐助意愿。"
+          ],
+          "causalChain": [
+            {
+              "title": "政府与合作伙伴新增承诺",
+              "explanation": "在日内瓦会议上，各国政府和合作伙伴承诺新增4.058亿美元。",
+              "condition": "会议成功召集并得到多方支持"
+            },
+            {
+              "title": "基金累计筹资接近目标",
+              "explanation": "累计5.416亿美元，已达6亿美元目标的90%。",
+              "condition": "此前多年期捐助已实现1.358亿美元"
+            },
+            {
+              "title": "教育项目可获更多资金支持",
+              "explanation": "接近目标后，基金可更快启动或扩大紧急教育项目。",
+              "condition": "资金到位并完成内部分配程序"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "建造桥梁",
+            "explanation": "基金的筹资过程类似于建桥，需要先有足够的材料（资金）才能完成结构（教育项目），但桥梁的使用效果还取决于后续的维护和交通流量。"
+          },
+          "why": {
+            "cause": "资金承诺的累计",
+            "mechanisms": [
+              "政府与合作伙伴的承诺提升基金可用资源",
+              "累计资金接近目标增强项目启动的可行性",
+              "资金到位后可快速部署紧急教育援助"
+            ],
+            "result": "有望在短期内实现对受冲突和灾害影响地区的教育救助目标"
+          },
+          "focus": [
+            "资金筹集进度",
+            "项目启动时机",
+            "捐助兑现率"
+          ],
+          "marketBet": [
+            "若后续承诺继续增加，基金将在数月内完成目标",
+            "若承诺兑现率下降，项目启动可能延迟",
+            "全球经济波动可能影响新一轮捐助规模"
+          ],
+          "expectationGap": "源文未提供市场对基金完成时间的共识，故无法比较实际进度与先前预期。",
+          "counterView": "也有观点认为，即使未达全额目标，已有资金亦足以支撑部分关键项目，影响可能有限。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "教育基金的资金到位可能提升教育相关企业的项目需求，间接利好教育技术和基础设施投资。",
+              "why": "资金用于紧急教育项目，涉及教材、数字平台和临时设施建设。",
+              "invalidation": "若承诺资金未实际到位或项目执行受阻，则相关投资需求下降。",
+              "condition": "若承诺资金未实际到位或项目执行受阻，则相关投资需求下降。"
+            }
+          ],
+          "surface": "“教育不能等待”基金6亿美元筹资目标近在咫尺",
+          "next": [
+            "政府与合作伙伴新增承诺",
+            "基金累计筹资接近目标",
+            "教育项目可获更多资金支持"
+          ],
+          "condition": [
+            "会议成功召集并得到多方支持",
+            "此前多年期捐助已实现1.358亿美元",
+            "资金到位并完成内部分配程序"
+          ]
+        },
+        "watchItems": [
+          "后续是否有新的捐助承诺公布",
+          "实际到位的资金是否与承诺金额相符",
+          "基金对紧急教育项目的具体支出计划",
+          "全球经济走势对捐助意愿的影响"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "05583de70ad414a300c519507aa0972e2b8733af2b17c2537599d566fa7c74f7",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-05T19:55:50.358Z",
+        "state": "approved"
       }
     },
     {
@@ -184,6 +419,18 @@
         "summary": "联合国儿童基金会周四发布报告指出，2021年至2025年，造成供水和环境卫生系统受损或被毁的袭击事件增至原来的三倍，儿童面临的疾病暴发、营养不良和暴力风险随之上升。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "5cb4fc641f4821651da57b1871fbcf6184b69788d274ff1ddb37b5ec486447d7",
+        "count": 1,
+        "lastAttemptAt": "2026-11-05T19:55:12.525Z",
+        "auditFindings": [],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -337,7 +584,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -387,7 +635,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -497,11 +746,14 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-05T19:55:12.525Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-05T19:55:50.358Z"
       }
     },
     {
@@ -557,11 +809,14 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-05T19:55:12.525Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-05T19:55:50.358Z"
       }
     },
     {
@@ -657,7 +912,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "ecb",
@@ -696,7 +952,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -734,7 +991,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -1356,7 +1614,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2316,7 +2575,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -2354,7 +2614,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2454,7 +2715,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2990,7 +3252,7 @@
         "reader": "cnfin-body",
         "sha256": "c23d7dca8bd387d52fd8a0b56f4a0b131fe26720b891d522b87a22c74232e9e2",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261105/4491693_1.html",
-        "checkedAt": "2026-11-05T19:55:12.525Z"
+        "checkedAt": "2026-11-05T19:55:50.358Z"
       },
       "id": "7ba170ada1bf09c7aa4d",
       "verificationStatus": "verified",
@@ -3046,7 +3308,7 @@
         "reader": "cnfin-body",
         "sha256": "be5955bec6c14f1e6a0b34061234ba32452b85537fff18929e2d79d871044da8",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261105/4491686_1.html",
-        "checkedAt": "2026-11-05T19:55:12.525Z"
+        "checkedAt": "2026-11-05T19:55:50.358Z"
       },
       "id": "e8e4f93fd3d7af5befb6",
       "verificationStatus": "verified",
@@ -9929,7 +10191,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -10374,7 +10637,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -10424,7 +10688,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -10474,7 +10739,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -10524,7 +10790,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     }
   ],
   "sourceHealth": [
@@ -10610,57 +10877,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 26
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "ec8695223b1b08002a21",
+      "selectedPublishedAt": "2026-11-05T12:00:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
-      "status": "ok",
-      "itemCount": 25,
-      "originalSummaries": 25,
-      "attempted": 0,
+      "status": "error",
+      "itemCount": 0,
+      "originalSummaries": 0,
+      "attempted": 2,
       "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "requests": 9,
+      "rejectionReasons": {
+        "translation-unavailable": 1,
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 2,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "audit": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 89,
-      "attempted": 0,
+      "attempted": 2,
       "succeeded": 0,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 89,
-      "successRate": null
+      "rejected": 2,
+      "skipped": 87,
+      "successRate": 0
     },
     "analysis": {
-      "eligible": 108,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 91,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 108,
-      "successRate": null
+      "skipped": 89,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
