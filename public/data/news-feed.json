@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-06T06:39:49.777Z",
+  "attemptedAt": "2026-11-06T06:40:19.037Z",
   "lastSuccessfulAt": "2026-11-06T06:39:49.777Z",
   "nextExpectedAt": "2026-11-06T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-06T06:39:49.777Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -98,21 +101,46 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Global tech stocks plunge as US midterms add to AI slowdown fears",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-06T06:00:59.000Z",
         "sourceHash": "df37abf0a94a2b15e79da3870d7d4690ef356387ce53a03e0ab0cfffb5793167",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-06T06:39:49.777Z",
-        "title": "Global tech stocks plunge as US midterms add to AI slowdown fears",
-        "summary": "Investors have reacted to possible tougher scrutiny of data centre construction and the AI industry.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-06T06:40:19.037Z",
+        "title": "美国中期选举引发对数据中心和AI行业监管担忧，全球科技股大幅下跌",
+        "summary": "美国中期选举期间，投资者对可能加大对数据中心建设和人工智能行业的监管力度表示担忧，导致全球科技股出现大幅下跌。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "全球科技股在美国中期选举期间大幅下跌。",
+            "quote": "Global tech stocks plunge as US midterms add to AI slowdown fears"
+          },
+          {
+            "text": "投资者对数据中心建设和人工智能行业可能面临更严格审查作出反应。",
+            "quote": "Investors have reacted to possible tougher scrutiny of data centre construction and the AI industry."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-06T06:40:19.037Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "df37abf0a94a2b15e79da3870d7d4690ef356387ce53a03e0ab0cfffb5793167",
+        "count": 1,
+        "lastAttemptAt": "2026-11-06T06:39:49.777Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -164,7 +192,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -179,11 +208,13 @@
       "fetchedAt": "2026-11-06T06:39:49.777Z",
       "id": "6275f5d71550906dcc26",
       "verificationStatus": "verified",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
+      "analysisLevels": [
+        "宏观"
+      ],
       "eventTypes": [],
       "impactChannels": [],
       "regions": [
@@ -192,12 +223,16 @@
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|ivetakenanextraj|2026-11-06",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "People in Sussex say they are taking on extra work and not heating their homes due to oil prices."
+        "有人因油价高，额外找工作来支付取暖油费用。",
+        "苏塞克斯的居民表示因油价而增加工作并且不再给家里供暖。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若油价继续上升，更多家庭可能削减取暖支出。",
+        "若油价回落，额外工作需求可能下降。"
+      ],
       "article": {
         "status": "summary",
         "text": "'I've taken an extra job to pay for heating oil'\nPeople in Sussex say they are taking on extra work and not heating their homes due to oil prices.",
@@ -213,21 +248,261 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "'I've taken an extra job to pay for heating oil'",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmj47j7e92gvo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-06T06:06:00.000Z",
         "sourceHash": "a26e08d3b7afad651c78fa75f82e7f8dab7010f17b0d628bbaf92fe08fb9554f",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-06T06:39:49.777Z",
-        "title": "'I've taken an extra job to pay for heating oil'",
-        "summary": "People in Sussex say they are taking on extra work and not heating their homes due to oil prices.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-06T06:40:19.037Z",
+        "title": "我为取暖油额外兼职",
+        "summary": "一位居民表示，为了支付取暖油费用，他不得不额外找工作；与此同时，萨塞克斯地区的居民普遍称因油价高涨而增加工作时间，并且有的甚至选择不供暖。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "一位居民称自己为支付取暖油费用而额外找了一份工作。",
+            "quote": "'I've taken an extra job to pay for heating oil'"
+          },
+          {
+            "text": "萨塞克斯的居民表示油价上涨导致他们加班并且有的甚至不供暖。",
+            "quote": "People in Sussex say they are taking on extra work and not heating their homes due to oil prices."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-06T06:40:19.037Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "a26e08d3b7afad651c78fa75f82e7f8dab7010f17b0d628bbaf92fe08fb9554f",
+        "count": 1,
+        "lastAttemptAt": "2026-11-06T06:39:49.777Z"
+      },
+      "titleZh": "油价高企致苏塞克斯居民额外工作并削减取暖",
+      "summaryZh": "英国苏塞克斯地区居民因油价上涨，选择增加兼职工作以支付取暖油费用，同时部分家庭选择不再使用取暖油供暖。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "有人因油价高，额外找工作来支付取暖油费用。",
+              "evidence": "'I've taken an extra job to pay for heating oil'"
+            },
+            {
+              "text": "苏塞克斯的居民表示因油价而增加工作并且不再给家里供暖。",
+              "evidence": "People in Sussex say they are taking on extra work and not heating their homes due to oil prices."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 2,
+            "audience": "workers",
+            "region": "英国",
+            "triggerEvidence": "People in Sussex say they are taking on extra work and not heating their homes due to oil prices.",
+            "path": [
+              "油价上涨",
+              "家庭取暖成本增加",
+              "居民额外工作"
+            ],
+            "invalidation": "油价显著回落或出现补贴"
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "英国",
+            "triggerEvidence": "People in Sussex say they are taking on extra work and not heating their homes due to oil prices.",
+            "path": [
+              "油价上涨",
+              "家庭取暖成本增加",
+              "居民削减取暖"
+            ],
+            "invalidation": "政府补贴或替代能源价格下降"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "取暖油",
+            "direction": "下行",
+            "reason": "价格高导致需求下降",
+            "condition": "油价保持高位",
+            "invalidation": "若出现大规模补贴或替代能源普及",
+            "timeframe": "中期"
+          },
+          {
+            "asset": "兼职工作市场",
+            "direction": "上行",
+            "reason": "家庭为支付高油价而增加收入需求",
+            "condition": "油价持续高位",
+            "invalidation": "油价回落或收入提升",
+            "timeframe": "短期"
+          }
+        ],
+        "sourceBodyHash": "a26e08d3b7afad651c78fa75f82e7f8dab7010f17b0d628bbaf92fe08fb9554f",
+        "originalTitle": "'I've taken an extra job to pay for heating oil'",
+        "reviewedAt": "2026-11-06T06:39:49.777Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "6275f5d71550906dcc26",
+          "title": "油价高企致苏塞克斯居民额外工作并削减取暖",
+          "summary": "英国苏塞克斯地区居民因油价上涨，选择增加兼职工作以支付取暖油费用，同时部分家庭选择不再使用取暖油供暖。",
+          "excerpt": "人们在苏塞克斯表示，由于油价高，他们不得不额外找工作并且停止给家里供暖。",
+          "sourceName": "BBC News · 财经",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cmj47j7e92gvo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-06T06:06:00.000Z",
+          "region": "全球",
+          "topic": "能源价格对家庭支出与劳动力供给的影响",
+          "termIds": [],
+          "facts": [
+            "有人因油价高，额外找工作来支付取暖油费用。",
+            "苏塞克斯的居民表示因油价而增加工作并且不再给家里供暖。"
+          ],
+          "consensus": [
+            "暂无明确共识"
+          ],
+          "inference": [
+            "若油价继续上升，更多家庭可能削减取暖支出。",
+            "若油价回落，额外工作需求可能下降。"
+          ],
+          "risks": [
+            "油价若出现大幅下跌，居民额外工作动机减弱。",
+            "若政府提供取暖补贴，家庭取暖行为可能恢复。",
+            "能源供应中断导致油价进一步波动。"
+          ],
+          "causalChain": [
+            {
+              "title": "油价上涨",
+              "explanation": "国际原油价格上行导致取暖油零售价格上升。",
+              "condition": "全球原油需求保持强劲或供应受限时"
+            },
+            {
+              "title": "家庭取暖成本增加",
+              "explanation": "油价上升直接推高家庭取暖油支出。",
+              "condition": "油价上涨幅度超过家庭可支配收入的容忍度时"
+            },
+            {
+              "title": "居民削减取暖或额外工作",
+              "explanation": "为维持整体预算，居民选择减少取暖或通过兼职增加收入。",
+              "condition": "家庭预算紧张且替代能源不可得时"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "家庭预算如同水桶，油价上涨是往水桶里倒进更多的水，水位升高迫使人们要么把水倒出（削减取暖），要么找更多的水管（额外工作）来保持水位。",
+            "explanation": "该类比说明成本上升迫使家庭在支出与收入之间重新平衡，但不适用于所有家庭，因为收入来源和取暖替代方案不同。"
+          },
+          "why": {
+            "cause": "油价上涨提升了取暖油的直接成本。",
+            "mechanisms": [
+              "家庭预算约束导致支出削减",
+              "收入需求上升促使兼职工作"
+            ],
+            "result": "居民生活方式调整，可能影响整体消费和劳动力市场供给。"
+          },
+          "focus": [
+            "家庭能源支出",
+            "劳动力供给弹性"
+          ],
+          "marketBet": [
+            "若油价继续高位，家庭取暖油需求将进一步下降",
+            "若油价回落，兼职工作需求可能减弱"
+          ],
+          "expectationGap": "来源未提供市场对油价走势的共识，故无法比较实际与预期之间的差距。",
+          "counterView": "部分家庭可能通过改用电暖或其他能源抵消油价冲击，减弱对取暖油需求的下降。",
+          "personalImpact": [
+            {
+              "label": "消费",
+              "impact": "家庭取暖支出下降，整体能源消费可能减少。",
+              "why": "油价高导致取暖油使用被削减。",
+              "invalidation": "若出现政府补贴或替代能源价格下降，取暖支出下降的趋势将不成立。",
+              "condition": "若出现政府补贴或替代能源价格下降，取暖支出下降的趋势将不成立。"
+            },
+            {
+              "label": "工作",
+              "impact": "居民增加兼职工作以弥补取暖油费用。",
+              "why": "额外收入用于支付高涨的能源成本。",
+              "invalidation": "若油价显著回落或家庭收入提升，额外兼职需求将减弱。",
+              "condition": "若油价显著回落或家庭收入提升，额外兼职需求将减弱。"
+            }
+          ],
+          "surface": "油价高企致苏塞克斯居民额外工作并削减取暖",
+          "next": [
+            "油价上涨",
+            "家庭取暖成本增加",
+            "居民削减取暖或额外工作"
+          ],
+          "condition": [
+            "全球原油需求保持强劲或供应受限时",
+            "油价上涨幅度超过家庭可支配收入的容忍度时",
+            "家庭预算紧张且替代能源不可得时"
+          ]
+        },
+        "watchItems": [
+          "英国油价月度走势",
+          "苏塞克斯地区就业兼职数据",
+          "当地取暖油消费量变化"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "a26e08d3b7afad651c78fa75f82e7f8dab7010f17b0d628bbaf92fe08fb9554f",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-06T06:40:19.037Z",
+        "state": "approved"
       }
     },
     {
@@ -432,7 +707,7 @@
         "reader": "cnfin-body",
         "sha256": "39ba4d13b3605ae1da52858b3563fb8e3ee39e064bb2665ec05e2d7e084050d6",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261106/4491964_1.html",
-        "checkedAt": "2026-11-06T06:39:49.777Z"
+        "checkedAt": "2026-11-06T06:40:19.037Z"
       },
       "id": "c69c66347dbe440ecd25",
       "verificationStatus": "verified",
@@ -692,7 +967,7 @@
         "reader": "cnfin-body",
         "sha256": "86f3a035c816eca6c35295d812ae7dbeb5685e72f4f1baff2e0b4b7130878c0c",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261106/4491949_1.html",
-        "checkedAt": "2026-11-06T06:39:49.777Z"
+        "checkedAt": "2026-11-06T06:40:19.037Z"
       },
       "id": "c3f99b44201f7f7ace7a",
       "verificationStatus": "verified",
@@ -1284,7 +1559,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1334,7 +1610,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1384,7 +1661,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1434,7 +1712,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -2590,7 +2869,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -3246,7 +3526,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -3349,7 +3630,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3481,7 +3763,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -8684,7 +8967,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -8722,7 +9006,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -10473,57 +10758,79 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 20
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "f2b06c565b7dbd21ea4a",
+      "selectedPublishedAt": "2026-11-06T06:00:59.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 19,
-      "originalSummaries": 19,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "unsupported-attribution": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 81,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 81,
-      "successRate": null
+      "skipped": 79,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 102,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 84,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 102,
-      "successRate": null
+      "skipped": 82,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
