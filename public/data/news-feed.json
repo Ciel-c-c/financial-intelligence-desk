@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-06T19:22:14.535Z",
+  "attemptedAt": "2026-11-06T19:22:50.395Z",
   "lastSuccessfulAt": "2026-11-06T19:22:14.535Z",
   "nextExpectedAt": "2026-11-07T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-06T19:22:14.535Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -91,7 +94,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -196,6 +200,24 @@
         "summary": "国际原子能机构专家组周五表示，俄罗斯拥有能力强、独立的核与辐射安全监管机构，监管体系成熟，并重视安全文化。但监管部门之间的协调、人员规划和培训等方面仍有改进空间。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "18b943975744d4c726a4f5fa9a8562a5e2c74c0848a9052bfd324e8e8a664676",
+        "count": 1,
+        "lastAttemptAt": "2026-11-06T19:22:14.535Z",
+        "auditFindings": [
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 2
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -259,6 +281,17 @@
         "summary": "联合国秘书长古特雷斯周五在西班牙萨拉曼卡大学发表演讲时指出，当今多边主义正面临和平、尊严、公平、气候正义以及技术管控五项决定性考验。他强调，国际社会必须坚持共同规则，让武力服从法律，让权力服务于公共利益。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "7a4668c10651f32ece30201f812f85b2ae08e053210260710cf94fdc94a3eb14",
+        "count": 1,
+        "lastAttemptAt": "2026-11-06T19:22:14.535Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -309,7 +342,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -359,7 +393,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -416,21 +451,39 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "AI stocks climb after trillions wiped from market values",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-06T17:03:02.000Z",
         "sourceHash": "1b6c10f3f214b0c18bdd016c63e7306d27181461ae3b4ceb9bc1eded48d91955",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-06T19:22:14.535Z",
-        "title": "AI stocks climb after trillions wiped from market values",
-        "summary": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-06T19:22:50.395Z",
+        "title": "AI 股价在数万亿美元市值被抹去后上涨",
+        "summary": "在市场价值被抹去数万亿美元的背景下，AI 相关股票出现上涨。投资者此前因担忧民主党当选会导致 AI 发展放缓而抛售科技股。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "AI 股票在数万亿美元市值被抹去后出现上涨。",
+            "quote": "AI stocks climb after trillions wiped from market values"
+          },
+          {
+            "text": "投资者因担忧民主党当选会减缓 AI 发展而部分抛售科技股。",
+            "quote": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI"
+          },
+          {
+            "text": "民主党当选将意味着 AI 发展速度放慢。",
+            "quote": "Democrat election victory would mean slower AI development."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-06T19:22:50.395Z"
       }
     },
     {
@@ -487,7 +540,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -538,11 +592,14 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-06T19:22:14.535Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-06T19:22:50.395Z"
       }
     },
     {
@@ -581,7 +638,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -907,7 +965,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1361,7 +1420,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1635,7 +1695,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2617,7 +2678,7 @@
         "reader": "cnfin-body",
         "sha256": "a0274f4f8902797ef70b0499d258d2ce36ac229008869ecfa23b04dca246b02e",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261106/4492392_1.html",
-        "checkedAt": "2026-11-06T19:22:14.535Z"
+        "checkedAt": "2026-11-06T19:22:50.395Z"
       },
       "id": "f5dddf02bd0ec4a99969",
       "verificationStatus": "verified",
@@ -2760,7 +2821,7 @@
         "reader": "cnfin-body",
         "sha256": "7594a692d0f01df4556922488b89129a99efbc6c4caefa4fb4703b10245fa7dd",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261106/4492389_1.html",
-        "checkedAt": "2026-11-06T19:22:14.535Z"
+        "checkedAt": "2026-11-06T19:22:50.395Z"
       },
       "id": "1b34061a0df72b1e3f11",
       "verificationStatus": "verified",
@@ -8035,7 +8096,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -9574,7 +9636,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9624,7 +9687,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9674,7 +9738,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9724,7 +9789,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -10291,57 +10357,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 21
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "829336a7b0644219af48",
+      "selectedPublishedAt": "2026-11-06T12:00:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 27,
-      "originalSummaries": 27,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 8,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "audit": 1,
+        "personal-impact": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 78,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 78,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 76,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 101,
-      "attempted": 0,
+      "eligible": 82,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 101,
-      "successRate": null
+      "skipped": 80,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
