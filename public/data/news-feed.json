@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-07T17:44:20.122Z",
+  "attemptedAt": "2026-11-07T17:44:58.458Z",
   "lastSuccessfulAt": "2026-11-07T17:44:20.122Z",
   "nextExpectedAt": "2026-11-08T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-07T17:44:20.122Z",
   "status": "delayed",
   "latest": [
     {
@@ -42,7 +44,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -58,26 +61,39 @@
       "id": "cafc22348c35a6272c23",
       "verificationStatus": "official",
       "titleZh": "【子午播报】2026年11月7日",
-      "summaryZh": "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，寒冬已至，战火中的民众需要温暖庇护；全球记者遇害事件攀升，近九成凶手未受惩罚；子午聚焦：来自北极的警告。",
+      "summaryZh": "本期《联合国子午播报》报道寒冬已至，战火中的民众需要温暖庇护，全球记者遇害事件上升，近九成凶手未受惩罚，并聚焦北极的警告。",
       "translationStatus": "original-zh",
       "relatedSources": [],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "地缘风险"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
       "regions": [
         "全球"
       ],
       "importanceScore": 70,
       "continuingImpactScore": 40,
       "clusterId": "undefined|子午播报2026年11月7日|2026-11-07",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，寒冬已至，战火中的民众需要温暖庇护；全球记者遇害事件攀升，近九成凶手未受惩罚；子午聚焦：来自北极的警告。"
+        "节目于2026年11月7日发布。",
+        "播出时间为纽约零点，北京时间13点。",
+        "本期内容包括寒冬来临、战火中民众需要庇护。",
+        "全球记者被害事件上升，约九成凶手未受惩罚。",
+        "节目聚焦北极发出的警告。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若寒冬进一步加剧，冲突地区的取暖需求将推动国际援助物资的运输成本上升。",
+        "若北极警告指向更快的气候变化，可能导致全球粮食供应链的不确定性增加。"
+      ],
       "article": {
         "status": "summary",
         "text": "【子午播报】2026年11月7日\n纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，寒冬已至，战火中的民众需要温暖庇护；全球记者遇害事件攀升，近九成凶手未受惩罚；子午聚焦：来自北极的警告。",
@@ -105,6 +121,232 @@
         "summary": "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，寒冬已至，战火中的民众需要温暖庇护；全球记者遇害事件攀升，近九成凶手未受惩罚；子午聚焦：来自北极的警告。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "cd702df1712a7c5cb681b1f9f9f63f8fee8745b17b1a3b34e330630d9d92bd7c",
+        "count": 1,
+        "lastAttemptAt": "2026-11-07T17:44:20.122Z"
+      },
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "节目于2026年11月7日发布。",
+              "evidence": "【子午播报】2026年11月7日"
+            },
+            {
+              "text": "播出时间为纽约零点，北京时间13点。",
+              "evidence": "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。"
+            },
+            {
+              "text": "本期内容包括寒冬来临、战火中民众需要庇护。",
+              "evidence": "本期节目您将看到，寒冬已至，战火中的民众需要温暖庇护；全球记者遇害事件攀升，近九成凶手未受惩罚；子午聚焦：来自北极的警告。"
+            },
+            {
+              "text": "全球记者被害事件上升，约九成凶手未受惩罚。",
+              "evidence": "本期节目您将看到，寒冬已至，战火中的民众需要温暖庇护；全球记者遇害事件攀升，近九成凶手未受惩罚；子午聚焦：来自北极的警告。"
+            },
+            {
+              "text": "节目聚焦北极发出的警告。",
+              "evidence": "本期节目您将看到，寒冬已至，战火中的民众需要温暖庇护；全球记者遇害事件攀升，近九成凶手未受惩罚；子午聚焦：来自北极的警告。"
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "冲突地区",
+            "triggerEvidence": "本期节目您将看到，寒冬已至，战火中的民众需要温暖庇护；全球记者遇害事件攀升，近九成凶手未受惩罚；子午聚焦：来自北极的警告。",
+            "path": [
+              "寒冬来临",
+              "战火中的民众需要庇护",
+              "人道援助需求上升"
+            ],
+            "invalidation": "若当地供暖设施快速恢复或获得足够能源补贴，取暖支出增幅将被抵消"
+          },
+          {
+            "label": "企业经营",
+            "score": 2,
+            "audience": "firms",
+            "region": "冲突地区",
+            "triggerEvidence": "本期节目您将看到，寒冬已至，战火中的民众需要温暖庇护；全球记者遇害事件攀升，近九成凶手未受惩罚；子午聚焦：来自北极的警告。",
+            "path": [
+              "寒冬来临",
+              "战火中的民众需要庇护",
+              "人道援助需求上升"
+            ],
+            "invalidation": "若冲突停火并开放安全通道，物流成本压力将显著下降"
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "cd702df1712a7c5cb681b1f9f9f63f8fee8745b17b1a3b34e330630d9d92bd7c",
+        "originalTitle": "【子午播报】2026年11月7日",
+        "reviewedAt": "2026-11-07T17:44:20.122Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "cafc22348c35a6272c23",
+          "title": "【子午播报】2026年11月7日",
+          "summary": "本期《联合国子午播报》报道寒冬已至，战火中的民众需要温暖庇护，全球记者遇害事件上升，近九成凶手未受惩罚，并聚焦北极的警告。",
+          "excerpt": "本期节目您将看到，寒冬已至，战火中的民众需要温暖庇护；全球记者遇害事件攀升，近九成凶手未受惩罚；子午聚焦：来自北极的警告。",
+          "sourceName": "UN News",
+          "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/11/1143158",
+          "publishedAt": "2026-11-07T12:00:00.000Z",
+          "region": "全球",
+          "topic": "人道危机与气候风险",
+          "termIds": [],
+          "facts": [
+            "节目于2026年11月7日发布。",
+            "播出时间为纽约零点，北京时间13点。",
+            "本期内容包括寒冬来临、战火中民众需要庇护。",
+            "全球记者被害事件上升，约九成凶手未受惩罚。",
+            "节目聚焦北极发出的警告。"
+          ],
+          "consensus": [
+            "冲突地区的民众在极端天气下对紧急庇护和基本生活物资的需求会显著上升。",
+            "记者安全风险的上升往往伴随信息不透明，削弱对冲突和人道危机的及时响应。"
+          ],
+          "inference": [
+            "若寒冬进一步加剧，冲突地区的取暖需求将推动国际援助物资的运输成本上升。",
+            "若北极警告指向更快的气候变化，可能导致全球粮食供应链的不确定性增加。"
+          ],
+          "risks": [
+            "冲突升级导致人道通道受阻，援助难以到达需要庇护的民众。",
+            "气候变化的实际影响被低估，导致准备不足的应急响应。",
+            "记者被害案件未得到有效追责，信息获取受限，影响国际社会对危机的评估。"
+          ],
+          "causalChain": [
+            {
+              "title": "寒冬来临",
+              "explanation": "极端低温增加取暖需求，尤其在冲突地区缺乏基础设施。",
+              "condition": "气象部门发布的低温预警持续数周"
+            },
+            {
+              "title": "战火中的民众需要庇护",
+              "explanation": "冲突导致住房破坏，寒冷天气进一步恶化生活条件。",
+              "condition": "冲突地区的基础设施受损且供暖设施缺乏"
+            },
+            {
+              "title": "人道援助需求上升",
+              "explanation": "民众对取暖、食物和医疗的紧急需求推动国际组织加大援助力度。",
+              "condition": "援助渠道保持开放且资金到位"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "冬季供暖系统",
+            "explanation": "就像家庭在寒冬需要打开暖气才能维持基本生活，冲突地区的民众在极端低温下也需要外部援助来提供取暖和庇护；但供暖系统若出现故障或燃料短缺，效果会受限，这对应援助渠道受阻的情形。"
+          },
+          "why": {
+            "cause": "极端天气叠加冲突导致基本生活需求激增",
+            "mechanisms": [
+              "低温提升取暖能源需求",
+              "住房破坏削弱保温能力",
+              "信息不透明削弱援助调度效率"
+            ],
+            "result": "国际人道援助需求快速上升，物流和资金压力增大"
+          },
+          "focus": [
+            "人道援助物流",
+            "能源供应",
+            "信息透明度"
+          ],
+          "marketBet": [
+            "国际救援组织的物流成本可能上行",
+            "能源价格在受冲突影响的地区可能出现波动",
+            "对冲突地区的投资者情绪可能转为谨慎"
+          ],
+          "expectationGap": "源材料未提供任何市场对上述因素的先前预期，故无法比较实际与预期的差异。",
+          "counterView": "若冲突地区能够快速恢复供暖设施，外部援助需求可能被内部供应部分抵消。",
+          "personalImpact": [
+            {
+              "label": "消费",
+              "impact": "受冲突影响的地区居民在取暖和基本生活支出上将显著增加。",
+              "why": "寒冬加剧且住房受损导致取暖需求上升，迫使家庭将更多预算用于能源和临时庇护。",
+              "invalidation": "若当地快速恢复供暖设施或获得足够的外部能源补贴，家庭取暖支出增幅将被抵消。",
+              "condition": "若当地快速恢复供暖设施或获得足够的外部能源补贴，家庭取暖支出增幅将被抵消。"
+            },
+            {
+              "label": "企业经营",
+              "impact": "物流企业在向冲突地区运送人道物资时面临成本上升和路线受限的双重压力。",
+              "why": "人道需求激增导致运输频次增加，而冲突导致通道受阻，提升运营成本。",
+              "invalidation": "若冲突停火并开放安全通道，物流成本压力将显著下降。",
+              "condition": "若冲突停火并开放安全通道，物流成本压力将显著下降。"
+            }
+          ],
+          "surface": "【子午播报】2026年11月7日",
+          "next": [
+            "寒冬来临",
+            "战火中的民众需要庇护",
+            "人道援助需求上升"
+          ],
+          "condition": [
+            "气象部门发布的低温预警持续数周",
+            "冲突地区的基础设施受损且供暖设施缺乏",
+            "援助渠道保持开放且资金到位"
+          ]
+        },
+        "watchItems": [
+          "北极最新气候监测报告",
+          "冲突地区人道援助物流数据",
+          "全球记者安全事件统计更新"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "cd702df1712a7c5cb681b1f9f9f63f8fee8745b17b1a3b34e330630d9d92bd7c",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-07T17:44:58.458Z",
+        "state": "approved"
       }
     },
     {
@@ -160,11 +402,47 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-07T17:44:20.122Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-07T17:44:58.458Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "6bfc549a71f03b7deed07257940e665aed98551b7fc70f80724083d12411b81c",
+        "count": 1,
+        "lastAttemptAt": "2026-11-07T17:44:20.122Z",
+        "auditFindings": [
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 0
+          },
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 1
+          },
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 2
+          },
+          {
+            "category": "invalidation",
+            "section": "personalImpacts",
+            "index": 0
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -214,21 +492,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Italian foreign minister says hackers leaked his personal data",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cr20wvge32j3o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-07T16:50:06.000Z",
         "sourceHash": "5555e3ee47ee96f69de2d3197b4b58a7f98d26592222e3840760a96362c55d64",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-07T17:44:20.122Z",
-        "title": "Italian foreign minister says hackers leaked his personal data",
-        "summary": "Prime Minister Giorgia Meloni has blamed pro-Russian hackers for publishing the details online.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-07T17:44:58.458Z",
+        "title": "意大利外长称黑客泄露其个人数据",
+        "summary": "意大利外长透露，黑客将其个人信息泄露至网络。与此同时，意大利总理乔治亚·梅洛尼指责亲俄黑客将这些细节公开发布。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "意大利外长称黑客泄露了他的个人数据。",
+            "quote": "Italian foreign minister says hackers leaked his personal data"
+          },
+          {
+            "text": "总理乔治亚·梅洛尼指责亲俄黑客将这些细节在线发布。",
+            "quote": "Prime Minister Giorgia Meloni has blamed pro-Russian hackers for publishing the details online."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-07T17:44:58.458Z"
       }
     },
     {
@@ -669,7 +961,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -719,7 +1012,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1225,7 +1519,7 @@
         "reader": "cnfin-body",
         "sha256": "78c3e453411cc322a2aeed2e9eac7877c640908580243f7848e527706d26c200",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261107/4492497_1.html",
-        "checkedAt": "2026-11-07T17:44:20.122Z"
+        "checkedAt": "2026-11-07T17:44:58.458Z"
       },
       "id": "7f18806179cb4ee702ce",
       "verificationStatus": "verified",
@@ -1387,7 +1681,7 @@
         "reader": "cnfin-body",
         "sha256": "e1295fb6104afea469c7be40af41d104216542dd6afcb85b06c700dcdd98d724",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261107/4492480_1.html",
-        "checkedAt": "2026-11-07T17:44:20.122Z"
+        "checkedAt": "2026-11-07T17:44:58.458Z"
       },
       "id": "0b72597054a82d7b2991",
       "verificationStatus": "verified",
@@ -3362,7 +3656,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3566,7 +3861,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -4899,7 +5195,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6730,7 +7027,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -7080,7 +7378,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7130,7 +7429,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7180,7 +7480,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7230,7 +7531,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -7517,57 +7819,81 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 15
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "cafc22348c35a6272c23",
+      "selectedPublishedAt": "2026-11-07T12:00:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 11,
-      "originalSummaries": 11,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 2,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "audit": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 48,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 48,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 46,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 72,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 54,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 72,
-      "successRate": null
+      "skipped": 52,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
