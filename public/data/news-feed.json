@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-07T05:55:40.755Z",
+  "attemptedAt": "2026-11-07T05:56:06.916Z",
   "lastSuccessfulAt": "2026-11-07T05:55:40.755Z",
   "nextExpectedAt": "2026-11-07T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-07T05:55:40.755Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -96,21 +99,49 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Elon Musk appears to signal the end of the road for Cybertruck",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cq1j33w7d232o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-06T21:49:50.000Z",
         "sourceHash": "725b8483590f41a6e38c376c9c8604084e86b2b9ee9372f73fe191fef511ed20",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-07T05:55:40.755Z",
-        "title": "Elon Musk appears to signal the end of the road for Cybertruck",
-        "summary": "Musk said it was to make room for production of its Cybercabs - autonomous taxis without a driver.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-07T05:56:06.916Z",
+        "title": "埃隆·马斯克暗示Cybertruck将停产",
+        "summary": "埃隆·马斯克暗示特斯拉将结束Cybertruck的生产，以腾出空间用于生产无人驾驶的Cybercabs自动出租车。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "埃隆·马斯克暗示Cybertruck的前景已结束。",
+            "quote": "Elon Musk appears to signal the end of the road for Cybertruck"
+          },
+          {
+            "text": "他表示此举是为了为生产无人驾驶的Cybercabs自动出租车让出产能。",
+            "quote": "Musk said it was to make room for production of its Cybercabs - autonomous taxis without a driver."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-07T05:56:06.916Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "725b8483590f41a6e38c376c9c8604084e86b2b9ee9372f73fe191fef511ed20",
+        "count": 1,
+        "lastAttemptAt": "2026-11-07T05:55:40.755Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "causalChain",
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -168,21 +199,50 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "AI stocks climb after trillions wiped from market values",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-06T21:06:25.000Z",
         "sourceHash": "1b6c10f3f214b0c18bdd016c63e7306d27181461ae3b4ceb9bc1eded48d91955",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-07T05:55:40.755Z",
-        "title": "AI stocks climb after trillions wiped from market values",
-        "summary": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-07T05:56:06.916Z",
+        "title": "AI 股价在数万亿美元市值被抹去后上涨",
+        "summary": "在市场价值被抹去数万亿美元后，AI 相关股票出现上涨。此前，投资者因担忧民主党当选会导致人工智能发展放缓而抛售科技股。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "AI 股票在数万亿美元市值被抹去后出现上涨。",
+            "quote": "AI stocks climb after trillions wiped from market values"
+          },
+          {
+            "text": "投资者因担忧民主党当选会导致 AI 发展放缓而部分抛售科技股。",
+            "quote": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI"
+          },
+          {
+            "text": "民主党选举胜利被认为会使 AI 发展变慢。",
+            "quote": "Democrat election victory would mean slower AI development."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-07T05:56:06.916Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "1b6c10f3f214b0c18bdd016c63e7306d27181461ae3b4ceb9bc1eded48d91955",
+        "count": 1,
+        "lastAttemptAt": "2026-11-07T05:55:40.755Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -201,7 +261,7 @@
         "reader": "cnfin-body",
         "sha256": "3b16eb27ac5fc9b3560e4f4875875696fb7c5e60cf0689d2f2f9f299235d447c",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261107/4492453_1.html",
-        "checkedAt": "2026-11-07T05:55:40.755Z"
+        "checkedAt": "2026-11-07T05:56:06.916Z"
       },
       "id": "db2141d928a9e531b763",
       "verificationStatus": "verified",
@@ -458,7 +518,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -808,7 +869,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -858,7 +920,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -908,7 +971,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -958,7 +1022,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -1133,7 +1198,7 @@
         "reader": "cnfin-body",
         "sha256": "45a1ad290639c01ecc9369682db9352f4b23cd18af2fc658fca9f9f8c9023cb7",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261107/4492423_1.html",
-        "checkedAt": "2026-11-07T05:55:40.755Z"
+        "checkedAt": "2026-11-07T05:56:06.916Z"
       },
       "id": "cdd4ab05e519c553f396",
       "verificationStatus": "verified",
@@ -1683,7 +1748,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2007,7 +2073,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2383,7 +2450,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2643,7 +2711,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2743,7 +2812,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6924,7 +6994,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -9638,57 +9709,80 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 18
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "659eac120e5ae1a0684e",
+      "selectedPublishedAt": "2026-11-06T21:49:50.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 15,
-      "originalSummaries": 15,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 1,
+        "unsupported-attribution": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 67,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 67,
-      "successRate": null
+      "skipped": 65,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 100,
-      "attempted": 0,
+      "eligible": 77,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 100,
-      "successRate": null
+      "skipped": 75,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
