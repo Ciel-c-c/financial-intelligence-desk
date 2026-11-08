@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-08T05:57:59.131Z",
+  "attemptedAt": "2026-11-08T05:58:34.198Z",
   "lastSuccessfulAt": "2026-11-08T05:57:59.131Z",
   "nextExpectedAt": "2026-11-08T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-08T05:57:59.131Z",
   "status": "delayed",
   "latest": [
     {
@@ -42,7 +44,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -57,25 +60,36 @@
       "fetchedAt": "2026-11-08T05:57:59.131Z",
       "id": "7b09fce95d13b8bb9bae",
       "verificationStatus": "verified",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "地缘风险"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
       "regions": [
         "全球"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|houthissayatleas|2026-11-08",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented."
+        "胡塞武装称至少33人在沙特空袭中死亡。",
+        "沙特阿拉伯领导的联军在也门与胡塞作战。",
+        "沙特方面未对该事件发表评论。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若冲突升级，地区安全形势可能进一步恶化。",
+        "若国际调解介入，可能促使停火谈判。"
+      ],
       "article": {
         "status": "summary",
         "text": "Houthis say at least 33 killed in Saudi air strike\nSaudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented.",
@@ -91,21 +105,261 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Houthis say at least 33 killed in Saudi air strike",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-08T04:03:12.000Z",
         "sourceHash": "d2aaf74732f90af805648a1f838c6adc42094df51e549aceba6d5c4b681360a2",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-08T05:57:59.131Z",
-        "title": "Houthis say at least 33 killed in Saudi air strike",
-        "summary": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-08T05:58:34.198Z",
+        "title": "胡塞组织称沙特空袭致至少33人死亡",
+        "summary": "胡塞武装宣称，沙特领导的联军对也门进行的空袭造成至少33人死亡。沙特方面未对该事件作出评论。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "胡塞组织称沙特空袭导致至少33人死亡。",
+            "quote": "Houthis say at least 33 killed in Saudi air strike"
+          },
+          {
+            "text": "沙特作为联军领袖，对此未发表任何评论。",
+            "quote": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-08T05:58:34.198Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "d2aaf74732f90af805648a1f838c6adc42094df51e549aceba6d5c4b681360a2",
+        "count": 1,
+        "lastAttemptAt": "2026-11-08T05:57:59.131Z"
+      },
+      "titleZh": "胡塞武装称沙特空袭导致至少33人死亡",
+      "summaryZh": "胡塞武装称沙特领导的联军在也门进行空袭，导致至少33人死亡，沙特方面未作评论。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "胡塞武装称至少33人在沙特空袭中死亡。",
+              "evidence": "Houthis say at least 33 killed in Saudi air strike"
+            },
+            {
+              "text": "沙特阿拉伯领导的联军在也门与胡塞作战。",
+              "evidence": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented."
+            },
+            {
+              "text": "沙特方面未对该事件发表评论。",
+              "evidence": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "全球能源市场",
+            "triggerEvidence": "Houthis say at least 33 killed in Saudi air strike",
+            "path": [
+              "沙特空袭",
+              "人员伤亡",
+              "地区紧张加剧"
+            ],
+            "invalidation": "冲突快速降温或停火"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "也门及周边地区",
+            "triggerEvidence": "Houthis say at least 33 killed in Saudi air strike",
+            "path": [
+              "沙特空袭",
+              "人员伤亡",
+              "供应链受阻"
+            ],
+            "invalidation": "人道援助顺畅或冲突降温"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "原油",
+            "direction": "上行",
+            "reason": "地区冲突升级可能推高油价",
+            "condition": "冲突未出现降温迹象",
+            "invalidation": "出现停火或冲突降温",
+            "timeframe": "短期至中期"
+          }
+        ],
+        "sourceBodyHash": "d2aaf74732f90af805648a1f838c6adc42094df51e549aceba6d5c4b681360a2",
+        "originalTitle": "Houthis say at least 33 killed in Saudi air strike",
+        "reviewedAt": "2026-11-08T05:57:59.131Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "7b09fce95d13b8bb9bae",
+          "title": "胡塞武装称沙特空袭导致至少33人死亡",
+          "summary": "胡塞武装称沙特领导的联军在也门进行空袭，导致至少33人死亡，沙特方面未作评论。",
+          "excerpt": "胡塞武装称至少33人在沙特空袭中死亡。沙特阿拉伯领导的联军在也门与胡塞作战，沙特未对该事件发表评论。",
+          "sourceName": "BBC News · 世界",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-08T04:03:12.000Z",
+          "region": "全球",
+          "topic": "中东冲突",
+          "termIds": [],
+          "facts": [
+            "胡塞武装称至少33人在沙特空袭中死亡。",
+            "沙特阿拉伯领导的联军在也门与胡塞作战。",
+            "沙特方面未对该事件发表评论。"
+          ],
+          "consensus": [
+            "冲突双方的交火往往导致平民伤亡。"
+          ],
+          "inference": [
+            "若冲突升级，地区安全形势可能进一步恶化。",
+            "若国际调解介入，可能促使停火谈判。"
+          ],
+          "risks": [
+            "冲突升级导致更多平民伤亡。",
+            "地区不稳定可能影响能源运输。",
+            "信息不对称导致误判局势。"
+          ],
+          "causalChain": [
+            {
+              "title": "沙特空袭",
+              "explanation": "沙特领导的联军对也门目标实施空袭。",
+              "condition": "联军继续执行对胡塞控制区的军事行动。"
+            },
+            {
+              "title": "人员伤亡",
+              "explanation": "空袭导致至少33人死亡。",
+              "condition": "空袭命中人口密集区域或缺乏有效防空。"
+            },
+            {
+              "title": "地区紧张加剧",
+              "explanation": "伤亡数字提升冲突双方的报复意愿。",
+              "condition": "胡塞武装继续对沙特目标进行报复性袭击。"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "一场邻里争执升级为街区冲突",
+            "explanation": "邻里争执如果不及时调解，可能蔓延至更大范围，类似也门冲突的升级风险。但邻里争执的影响范围和经济后果远小于国家间冲突。"
+          },
+          "why": {
+            "cause": "空袭导致平民伤亡",
+            "mechanisms": [
+              "伤亡提升双方报复意愿",
+              "国际舆论关注加大压力",
+              "能源运输安全受关注"
+            ],
+            "result": "地区安全环境恶化，可能波及能源市场和人道援助需求。"
+          },
+          "focus": [
+            "地区安全",
+            "人道危机",
+            "能源供应"
+          ],
+          "marketBet": [
+            "若冲突升级，油价可能出现上行压力",
+            "若出现停火谈判，油价可能趋于中性"
+          ],
+          "expectationGap": "来源未提供任何市场对油价或地区安全的先前预期，故无法比较实际与预期的差异。",
+          "counterView": "也可能出现冲突降温的情形，例如双方在国际调解下暂时停火，降低紧张度。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "能源类资产价格波动加大，投资者需关注油价走势。",
+              "why": "地区冲突升级常导致油价上行，影响能源相关投资回报。",
+              "invalidation": "若冲突迅速降温或出现有效停火，油价波动可能减弱。",
+              "condition": "若冲突迅速降温或出现有效停火，油价波动可能减弱。"
+            },
+            {
+              "label": "消费",
+              "impact": "受冲突影响的地区居民生活必需品供应可能受限。",
+              "why": "冲突导致物流受阻，影响食品和医药等基本商品的供应。",
+              "invalidation": "若人道援助渠道畅通或冲突区域得到快速恢复，供应受限的情况可能不出现。",
+              "condition": "若人道援助渠道畅通或冲突区域得到快速恢复，供应受限的情况可能不出现。"
+            }
+          ],
+          "surface": "胡塞武装称沙特空袭导致至少33人死亡",
+          "next": [
+            "沙特空袭",
+            "人员伤亡",
+            "地区紧张加剧"
+          ],
+          "condition": [
+            "联军继续执行对胡塞控制区的军事行动。",
+            "空袭命中人口密集区域或缺乏有效防空。",
+            "胡塞武装继续对沙特目标进行报复性袭击。"
+          ]
+        },
+        "watchItems": [
+          "后续胡塞武装是否宣布报复行动",
+          "沙特是否发布官方声明或采取进一步军事行动",
+          "国际组织对平民伤亡的回应",
+          "能源运输线路的安全通报"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "d2aaf74732f90af805648a1f838c6adc42094df51e549aceba6d5c4b681360a2",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-08T05:58:34.198Z",
+        "state": "approved"
       }
     },
     {
@@ -156,7 +410,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -463,7 +718,7 @@
         "reader": "cnfin-body",
         "sha256": "e2220e9cc6715893581e1409822470146eff00064fcdb4bcb4a24186dd889d0d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261108/4492551_1.html",
-        "checkedAt": "2026-11-08T05:57:59.131Z"
+        "checkedAt": "2026-11-08T05:58:34.198Z"
       },
       "id": "879eb5871f10c6d099d3",
       "verificationStatus": "verified",
@@ -472,23 +727,279 @@
       "relatedSources": [],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
+      "analysisLevels": [
+        "宏观",
+        "行业"
+      ],
+      "eventTypes": [
+        "贸易",
+        "经济数据"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
       "regions": [
+        "中国",
         "全球"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|进博会首发首秀创新高全球创新加速|2026-11-08",
-      "detailStatus": "brief",
-      "facts": [],
+      "detailStatus": "so-what",
+      "facts": [
+        "本届进博会代表性展品超过480件，其中全球首发首秀展品超过200件，创历年新高。",
+        "蔡司在进博会期间全球首发新一代非球面眼内镜 PT LUNANA 后房型有晶体人工晶状体。",
+        "GE医疗带来40余款创新技术和解决方案，其中21款为首展新品。",
+        "新一代长轴 PET/CT Omni 128具备128cm 超长轴向视野，系统灵敏度大幅提升。",
+        "施耐德电气首展电力管理原生智能体，可主动识别异常、分析原因并支持任务执行。"
+      ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若中国继续扩大高水平对外开放，更多全球首发将选择进博会作为首秀平台。",
+        "若本土企业加速采纳新技术，相关行业的产能和服务水平将提升。",
+        "若创新产品在中国市场验证成功，可能加速其全球商业化进程。"
+      ],
       "queue": {
         "firstSeenAt": "2026-11-08T05:57:59.131Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "e2220e9cc6715893581e1409822470146eff00064fcdb4bcb4a24186dd889d0d",
+        "count": 1,
+        "lastAttemptAt": "2026-11-08T05:58:34.198Z"
+      },
+      "summaryZh": "第九届进博会展示超480件代表性展品，其中200余件全球首发，凸显中国市场对跨国企业创新落地的吸引力。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "本届进博会代表性展品超过480件，其中全球首发首秀展品超过200件，创历年新高。",
+              "evidence": "记者获悉，本届进博会全球首发、亚洲首展、中国首秀的代表性展品超过480件，创历年新高，其中全球首发首秀展品超过200件。"
+            },
+            {
+              "text": "蔡司在进博会期间全球首发新一代非球面眼内镜 PT LUNANA 后房型有晶体人工晶状体。",
+              "evidence": "本届进博会期间，蔡司新一代非球面眼内镜——PT LUNANA后房型有晶体眼人工晶状体全球首发。"
+            },
+            {
+              "text": "GE医疗带来40余款创新技术和解决方案，其中21款为首展新品。",
+              "evidence": "” GE医疗带来40余款融合全球和中国智慧的创新技术、解决方案，其中21款为首展新品。"
+            },
+            {
+              "text": "新一代长轴 PET/CT Omni 128具备128cm 超长轴向视野，系统灵敏度大幅提升。",
+              "evidence": "其中，新一代长轴 PET/CT Omni 128具备128cm超长轴向视野，搭载新一代超高灵敏度探测器、“零噪声”晶体，系统灵敏度较传统PET/CT大幅提升；配合强大算力，可实现更快扫描和更低剂量下的全身动态PET成像，为癌症、心脑血管、阿"
+            },
+            {
+              "text": "施耐德电气首展电力管理原生智能体，可主动识别异常、分析原因并支持任务执行。",
+              "evidence": "其中，进博首展的电力管理原生智能体基于能源软件底座，贯通设备接入、数据采集、知识沉淀、智能诊断和任务执行全流程，能够主动识别异常、分析原因并支持任务执行，推动电力管理从“看得见、能告警”迈向“会思考、能行动、可持续优化”。"
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "中国",
+            "triggerEvidence": "记者获悉，本届进博会全球首发、亚洲首展、中国首秀的代表性展品超过480件，创历年新高，其中全球首发首秀展品超过200件。",
+            "path": [
+              "进博会展品创新高",
+              "跨国企业首发",
+              "本土合作加速",
+              "行业升级"
+            ],
+            "invalidation": "监管收紧或供应链瓶颈导致创新项目难以商业化"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "中国",
+            "triggerEvidence": "其中，新一代长轴 PET/CT Omni 128具备128cm超长轴向视野，搭载新一代超高灵敏度探测器、“零噪声”晶体，系统灵敏度较传统PET/CT大幅提升；配合强大算力，可实现更快扫描和更低剂量下的全身动态PET成像，为癌症、心脑血管、阿",
+            "path": [
+              "进博会展示新医疗技术",
+              "技术进入本土医院",
+              "提升诊疗质量"
+            ],
+            "invalidation": "技术成本高或报销政策限制导致消费者采纳受阻"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "full-body",
+        "marketSignals": [],
+        "sourceBodyHash": "e2220e9cc6715893581e1409822470146eff00064fcdb4bcb4a24186dd889d0d",
+        "originalTitle": "进博会首发首秀创新高 全球创新加速在华落地",
+        "reviewedAt": "2026-11-08T05:58:34.198Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "879eb5871f10c6d099d3",
+          "title": "进博会首发首秀创新高 全球创新加速在华落地",
+          "summary": "第九届进博会展示超480件代表性展品，其中200余件全球首发，凸显中国市场对跨国企业创新落地的吸引力。",
+          "excerpt": "本届进博会全球首发、亚洲首展、中国首秀的代表性展品超过480件，创历年新高，其中全球首发首秀展品超过200件。",
+          "sourceName": "新华财经",
+          "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261108/4492551_1.html",
+          "publishedAt": "2026-11-08T02:15:10.000Z",
+          "region": "A股",
+          "topic": "进博会创新展示与技术落地",
+          "termIds": [],
+          "facts": [
+            "本届进博会代表性展品超过480件，其中全球首发首秀展品超过200件，创历年新高。",
+            "蔡司在进博会期间全球首发新一代非球面眼内镜 PT LUNANA 后房型有晶体人工晶状体。",
+            "GE医疗带来40余款创新技术和解决方案，其中21款为首展新品。",
+            "新一代长轴 PET/CT Omni 128具备128cm 超长轴向视野，系统灵敏度大幅提升。",
+            "施耐德电气首展电力管理原生智能体，可主动识别异常、分析原因并支持任务执行。"
+          ],
+          "consensus": [
+            "中国大市场正成为跨国企业创新产品的试验场。",
+            "进博会提供集中展示与本土合作的加速平台。",
+            "本土政策支持与产业需求共同驱动创新落地。"
+          ],
+          "inference": [
+            "若中国继续扩大高水平对外开放，更多全球首发将选择进博会作为首秀平台。",
+            "若本土企业加速采纳新技术，相关行业的产能和服务水平将提升。",
+            "若创新产品在中国市场验证成功，可能加速其全球商业化进程。"
+          ],
+          "risks": [
+            "政策环境收紧或监管壁垒提升，可能削弱企业在华创新投入。",
+            "本土供应链瓶颈或技术人才短缺，限制新技术的快速落地。",
+            "国际贸易摩擦导致关键元器件成本上升，抑制创新产品的商业化。"
+          ],
+          "causalChain": [
+            {
+              "title": "进博会展品数量创新高",
+              "explanation": "全球首发、亚洲首展等超过480件，提供了大量创新成果的展示窗口。",
+              "condition": "展会组织方保持规模和开放度"
+            },
+            {
+              "title": "跨国企业选择进博会首发",
+              "explanation": "蔡司、GE医疗、施耐德等在会期间发布全球首发产品，表明对中国市场的信心。",
+              "condition": "企业认同中国市场规模与合作潜力"
+            },
+            {
+              "title": "本土合作伙伴加速技术孵化",
+              "explanation": "企业强调与中国本土合作伙伴共同研发，推动技术本土化。",
+              "condition": "本土企业具备相应研发与应用能力"
+            },
+            {
+              "title": "行业应用与产业升级",
+              "explanation": "新型医疗影像、智能电力管理等技术进入中国市场，提升行业效率和服务水平。",
+              "condition": "行业监管与标准允许新技术快速投入使用"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "把进博会比作大型科技展览的‘试跑道’",
+            "explanation": "就像汽车制造商在赛道上测试新车型，跨国企业在进博会先行展示并验证技术，成功后再大规模投产。该类比适用于技术验证阶段，但不适用于后期商业化的全部环节。"
+          },
+          "why": {
+            "cause": "进博会提供集中展示与本土合作的加速平台",
+            "mechanisms": [
+              "高曝光度吸引本土合作伙伴",
+              "政策支持降低进入壁垒",
+              "行业需求快速验证技术价值"
+            ],
+            "result": "加速创新成果在中国市场的落地，提升相关行业竞争力"
+          },
+          "focus": [
+            "创新产品的本土化进程",
+            "行业效率提升",
+            "跨国企业在华投资意愿"
+          ],
+          "marketBet": [
+            "更多跨国企业将在未来一年内选择进博会作为首发平台",
+            "本土企业对新技术的采纳率将提升",
+            "相关行业的服务成本有望下降"
+          ],
+          "expectationGap": "源文未提供市场对进博会创新效应的具体预期，故无法对比实际与先前预期。",
+          "counterView": "若本土企业创新吸收能力不足，或监管审批延迟，首发技术可能停留在展示阶段，未能实现预期的产业升级。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "跨国创新企业在华加速落地可能提升相关行业的投资机会。",
+              "why": "创新产品进入中国市场后，行业增长预期上调，吸引资本关注。",
+              "invalidation": "若监管政策收紧或本土供应链持续瓶颈，创新项目难以商业化，投资回报预期下降。",
+              "condition": "若监管政策收紧或本土供应链持续瓶颈，创新项目难以商业化，投资回报预期下降。"
+            },
+            {
+              "label": "消费",
+              "impact": "新医疗影像和智能电力管理技术的普及将提升终端用户的服务质量。",
+              "why": "更高灵敏度的PET/CT和智能电网可提供更精准的诊疗和更可靠的供电。",
+              "invalidation": "若技术成本居高不下或保险报销政策限制，消费者采纳率可能受阻。",
+              "condition": "若技术成本居高不下或保险报销政策限制，消费者采纳率可能受阻。"
+            }
+          ],
+          "surface": "进博会首发首秀创新高 全球创新加速在华落地",
+          "next": [
+            "进博会展品数量创新高",
+            "跨国企业选择进博会首发",
+            "本土合作伙伴加速技术孵化",
+            "行业应用与产业升级"
+          ],
+          "condition": [
+            "展会组织方保持规模和开放度",
+            "企业认同中国市场规模与合作潜力",
+            "本土企业具备相应研发与应用能力",
+            "行业监管与标准允许新技术快速投入使用"
+          ]
+        },
+        "watchItems": [
+          "后续几个月内跨国企业在中国的研发投入变化",
+          "本土企业对新技术的采购与试点进度",
+          "相关行业监管政策的更新情况"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "e2220e9cc6715893581e1409822470146eff00064fcdb4bcb4a24186dd889d0d",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-08T05:58:34.198Z",
+        "state": "approved"
       }
     },
     {
@@ -507,7 +1018,7 @@
         "reader": "cnfin-body",
         "sha256": "0ba288d541bb423e1c8956c17bd1ac0b78fc1d6423057631c9968e6f124a0c28",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261108/4492549_1.html",
-        "checkedAt": "2026-11-08T05:57:59.131Z"
+        "checkedAt": "2026-11-08T05:58:34.198Z"
       },
       "id": "69dfdbadc62b7a26240e",
       "verificationStatus": "verified",
@@ -582,21 +1093,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "What we know so far after Krakow gun attack",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-08T01:47:41.000Z",
         "sourceHash": "8ecbe02074d874d41675e6efd6fd1dcd6c98cd36f1095c13ee49eb97ae073d49",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-08T05:57:59.131Z",
-        "title": "What we know so far after Krakow gun attack",
-        "summary": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at the home of the attacker.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-08T05:58:34.198Z",
+        "title": "克拉科夫枪击案最新情况",
+        "summary": "在克拉科夫市中心广场发生的随机枪击导致六人死亡，随后在袭击者的住宅中发现了另外三具尸体。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "在城市中心广场的随机枪击中，六人死亡。",
+            "quote": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at the home of"
+          },
+          {
+            "text": "袭击者家中后来发现了三具尸体。",
+            "quote": "and three bodies were later found at the home of the attacker."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-08T05:58:34.198Z"
       }
     },
     {
@@ -1609,7 +2134,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2049,7 +2575,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2151,7 +2678,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -4989,7 +5517,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6206,7 +6735,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6840,57 +7370,77 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 13
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "7b09fce95d13b8bb9bae",
+      "selectedPublishedAt": "2026-11-08T04:03:12.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 9,
-      "originalSummaries": 9,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
+      "itemCount": 2,
+      "attempted": 2,
       "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 2,
+        "audit": 2
       },
       "rejectionReasons": {}
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 35,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 35,
-      "successRate": null
+      "skipped": 33,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 54,
-      "attempted": 0,
-      "succeeded": 0,
+      "eligible": 38,
+      "attempted": 2,
+      "succeeded": 2,
       "rejected": 0,
       "failed": 0,
-      "skipped": 54,
-      "successRate": null
+      "skipped": 36,
+      "successRate": 1
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
