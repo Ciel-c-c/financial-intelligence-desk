@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-09T06:21:59.063Z",
+  "attemptedAt": "2026-11-09T06:22:31.738Z",
   "lastSuccessfulAt": "2026-11-09T06:21:59.063Z",
   "nextExpectedAt": "2026-11-09T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-09T06:21:59.063Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -79,7 +82,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -117,7 +121,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -155,7 +160,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -193,7 +199,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -244,8 +251,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-09T06:21:59.063Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "factualSummary": {
         "language": "en",
@@ -262,7 +270,20 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-09T06:22:31.738Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "054a6a25ccfa5c80bb2223b8881eeb6e5c4d8ced7fc16091339e82636d63924c",
+        "count": 1,
+        "lastAttemptAt": "2026-11-09T06:21:59.063Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "causal-chain",
+          "fields": []
+        }
       }
     },
     {
@@ -312,21 +333,47 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "How you can get council's £250 cost of living help",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmd6dd3652zvo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-09T06:11:28.000Z",
         "sourceHash": "7be2a19082127f271a921c9efe463956f1705fe291ee119c95ac1f524eeb533c",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-09T06:21:59.063Z",
-        "title": "How you can get council's £250 cost of living help",
-        "summary": "Applications for household grants of up to £250 are opening to some Surrey residents.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-09T06:22:31.738Z",
+        "title": "如何获取议会250英镑生活补助",
+        "summary": "文章说明了议会提供的250英镑生活补助的获取方式，并指出该补助面向部分萨里地区居民开放，居民可申请最高250英镑的家庭补助。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "文章介绍了获取议会250英镑生活补助的具体方法。",
+            "quote": "How you can get council's £250 cost of living help"
+          },
+          {
+            "text": "针对部分萨里居民的最高250英镑家庭补助申请现已开放。",
+            "quote": "Applications for household grants of up to £250 are opening to some Surrey residents."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-09T06:22:31.738Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "7be2a19082127f271a921c9efe463956f1705fe291ee119c95ac1f524eeb533c",
+        "count": 1,
+        "lastAttemptAt": "2026-11-09T06:21:59.063Z",
+        "auditFindings": [],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -651,7 +698,7 @@
         "reader": "cnfin-body",
         "sha256": "8262fe1762da7d13005b0305b6e398e0b8d96f5fb1e73a6b385aff554a999ebf",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261109/4492799_1.html",
-        "checkedAt": "2026-11-09T06:21:59.063Z"
+        "checkedAt": "2026-11-09T06:22:31.738Z"
       },
       "id": "397a3e9f535d2c85bbf5",
       "verificationStatus": "verified",
@@ -695,7 +742,7 @@
         "reader": "cnfin-body",
         "sha256": "9e6b573e4db4d900a315d3653c09866de3653b8ff6add341f0f52aeca31a6993",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261109/4492797_1.html",
-        "checkedAt": "2026-11-09T06:21:59.063Z"
+        "checkedAt": "2026-11-09T06:22:31.738Z"
       },
       "id": "71f5b911d46cb92d8011",
       "verificationStatus": "verified",
@@ -901,7 +948,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2026,7 +2074,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2492,7 +2541,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5327,7 +5377,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5429,7 +5480,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5518,7 +5570,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6136,7 +6189,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -7147,57 +7201,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 16
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "9df7228ff4c32c186218",
+      "selectedPublishedAt": "2026-11-09T00:09:14.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 12,
-      "originalSummaries": 12,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 9,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "causal-chain": 1,
+        "audit": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 30,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 30,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 28,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 45,
-      "attempted": 0,
+      "eligible": 32,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 45,
-      "successRate": null
+      "skipped": 30,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
