@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-09T22:18:46.502Z",
+  "attemptedAt": "2026-11-09T22:19:23.105Z",
   "lastSuccessfulAt": "2026-11-09T22:18:46.502Z",
   "nextExpectedAt": "2026-11-10T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-09T22:18:46.502Z",
   "status": "delayed",
   "latest": [
     {
@@ -54,7 +56,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -113,21 +116,50 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cj3vqv3nee72o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-09T21:52:28.000Z",
         "sourceHash": "f7074e418c3759444cf1d80dbde8bd2e996e0c865850b26b8ec3793331153322",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-09T22:18:46.502Z",
-        "title": "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond",
-        "summary": "Jensen Huang is being investigated by his own company over an extramarital affair with a woman alleged to be a Chinese spy.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-09T22:19:23.105Z",
+        "title": "Nvidia CEO被公司调查涉及与疑似中国间谍的婚外情",
+        "summary": "BBC报道指出，Zoe Kleinman称Nvidia首席执行官Jensen Huang的婚外情可能在美国乃至全球引发连锁反应。该公司正对其与一名被指为中国间谍的女性的婚外关系展开内部调查。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Zoe Kleinman称Nvidia CEO的婚外情将对美国及其他地区产生影响。",
+            "quote": "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond"
+          },
+          {
+            "text": "Nvidia公司正调查首席执行官Jensen Huang与一名女性的婚外情，该女性被指为中国人。",
+            "quote": "Jensen Huang is being investigated by his own company over an extramarital affair with a woman alleged to be a Chinese"
+          },
+          {
+            "text": "该女性被指控为中国间谍。",
+            "quote": "extramarital affair with a woman alleged to be a Chinese spy."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-09T22:19:23.105Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "f7074e418c3759444cf1d80dbde8bd2e996e0c865850b26b8ec3793331153322",
+        "count": 1,
+        "lastAttemptAt": "2026-11-09T22:18:46.502Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -187,11 +219,27 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-09T22:18:46.502Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "paired-evidence"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "paired-evidence",
+        "attemptedAt": "2026-11-09T22:19:23.105Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "24513d7e2cc160dff36b9ab92178232c4c2b692895c81648e7b2a57bb9d40ffa",
+        "count": 1,
+        "lastAttemptAt": "2026-11-09T22:18:46.502Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[0].numbers"
+          ]
+        }
       }
     },
     {
@@ -808,7 +856,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -858,7 +907,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -910,7 +960,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -960,7 +1011,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1012,7 +1064,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1062,7 +1115,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1742,7 +1796,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1962,7 +2017,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2815,7 +2871,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -3417,7 +3474,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -3455,7 +3513,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -3493,7 +3552,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3689,7 +3749,7 @@
         "reader": "cnfin-body",
         "sha256": "dfd75908e7e2f147d6f5921b5ac932ab2c5944234ef74776cf5ed1b5eb23db0d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261109/4493096_1.html",
-        "checkedAt": "2026-11-09T22:18:46.502Z"
+        "checkedAt": "2026-11-09T22:19:23.105Z"
       },
       "id": "d46e58b09ec8d96fd286",
       "verificationStatus": "verified",
@@ -3733,7 +3793,7 @@
         "reader": "cnfin-body",
         "sha256": "a55a349766774a3f107042203918fe4a0efc1286b8705fcc8d5dcdd95b17a7f3",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261109/4493094_1.html",
-        "checkedAt": "2026-11-09T22:18:46.502Z"
+        "checkedAt": "2026-11-09T22:19:23.105Z"
       },
       "id": "a6a6a9191b1d7d2ff1d2",
       "verificationStatus": "verified",
@@ -7470,7 +7530,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -10305,57 +10366,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 23
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "733e855143827b00de2a",
+      "selectedPublishedAt": "2026-11-09T21:52:28.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 30,
-      "originalSummaries": 30,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 6,
+      "rejectionReasons": {
+        "paired-evidence": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "personal-impact": 1,
+        "facts": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 67,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 67,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 65,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 92,
-      "attempted": 0,
+      "eligible": 73,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 92,
-      "successRate": null
+      "skipped": 71,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
