@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-10T19:41:58.239Z",
+  "attemptedAt": "2026-11-10T19:42:33.152Z",
   "lastSuccessfulAt": "2026-11-10T19:41:58.239Z",
   "nextExpectedAt": "2026-11-11T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-10T19:41:58.239Z",
   "status": "delayed",
   "latest": [
     {
@@ -50,7 +52,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "ecb",
@@ -89,7 +92,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -152,6 +156,19 @@
         "summary": "人权理事会周二在日内瓦举行的组织会议上通过一项决定，对美国持续不配合联合国普遍定期审议机制表示遗憾，并呼吁美国恢复合作。理事会决定将原定于当天进行的美国人权审议再次推迟至2027年1月举行。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "2ffef0cd33de9ff02922171d977ac435502390189def41e962bfed4778445df5",
+        "count": 1,
+        "lastAttemptAt": "2026-11-10T19:41:58.239Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -215,6 +232,19 @@
         "summary": "联合国秘书长南苏丹问题特别代表基基·贝霍周二在安理会通报南苏丹局势时表示，距离南苏丹计划举行首次主权国家选举仅剩42天，选举筹备工作虽已加快推进，但围绕过渡期的政治共识日益脆弱。她强调，选举不能取代政治对话、建立信任以及《振兴和平协议》的持续落实。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "bf56513a311b938b742d07335eb0eba983f40dc8142b2f538c50056a041f6858",
+        "count": 1,
+        "lastAttemptAt": "2026-11-10T19:41:58.239Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -332,7 +362,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -382,7 +413,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -432,7 +464,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -482,7 +515,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -532,7 +566,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -587,11 +622,14 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-10T19:41:58.239Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-10T19:42:33.152Z"
       }
     },
     {
@@ -655,21 +693,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "US inflation higher than expected in October - here's what is happening with prices",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-10T14:45:46.000Z",
         "sourceHash": "e5aba2966c284289c6413ba14a94c0a1b2c0858e7d5b563c93a5abc817dcaec1",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-10T19:41:58.239Z",
-        "title": "US inflation higher than expected in October - here's what is happening with prices",
-        "summary": "Prices rose by 0.4% over the month, driven by increases in shelter, food and energy costs.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-10T19:42:33.152Z",
+        "title": "美国十月通胀高于预期，物价月涨0.4%",
+        "summary": "美国十月通胀率超出市场预期，整体物价环比上涨0.4%。此次涨幅主要受住房、食品和能源成本的上升推动。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "美国十月通胀率高于预期。",
+            "quote": "US inflation higher than expected in October - here's what is happening with prices"
+          },
+          {
+            "text": "物价环比上涨0.4%，主要受住房、食品和能源成本上升影响。",
+            "quote": "Prices rose by 0.4% over the month, driven by increases in shelter, food and energy costs."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-10T19:42:33.152Z"
       }
     },
     {
@@ -2019,7 +2071,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2851,7 +2904,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -2889,7 +2943,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -2927,7 +2982,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3031,7 +3087,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3099,7 +3156,7 @@
         "reader": "cnfin-body",
         "sha256": "0da8431880998680a87af9460c27a2a3a3ecb6cc0ba3a7bbbbc5a184b922e429",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261110/4493754_1.html",
-        "checkedAt": "2026-11-10T19:41:58.239Z"
+        "checkedAt": "2026-11-10T19:42:33.152Z"
       },
       "id": "0d1046eb661dd43f645a",
       "verificationStatus": "verified",
@@ -3151,7 +3208,7 @@
         "reader": "cnfin-body",
         "sha256": "2057bbe90178cf16fbd12cdac56ce662ec29f485a07723eb2bb020ba00876bd4",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261110/4493752_1.html",
-        "checkedAt": "2026-11-10T19:41:58.239Z"
+        "checkedAt": "2026-11-10T19:42:33.152Z"
       },
       "id": "afd0671ade195e34ccfd",
       "verificationStatus": "verified",
@@ -4185,7 +4242,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -11366,7 +11424,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11416,7 +11475,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11466,7 +11526,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11518,7 +11579,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11568,7 +11630,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11620,7 +11683,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11670,7 +11734,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -11919,57 +11984,81 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 27
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "8797c78877f05287f784",
+      "selectedPublishedAt": "2026-11-10T12:00:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 37,
-      "originalSummaries": 37,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 2
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 97,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 97,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 95,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 120,
-      "attempted": 0,
+      "eligible": 99,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 120,
-      "successRate": null
+      "skipped": 97,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
