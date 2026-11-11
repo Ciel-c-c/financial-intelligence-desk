@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-11T06:12:36.219Z",
+  "attemptedAt": "2026-11-11T06:13:15.947Z",
   "lastSuccessfulAt": "2026-11-11T06:12:36.219Z",
   "nextExpectedAt": "2026-11-11T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-11T06:12:36.219Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -56,7 +59,7 @@
       "fetchedAt": "2026-11-11T06:12:36.219Z",
       "id": "820220554f2f95847d12",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "BBC News · 财经",
@@ -66,21 +69,29 @@
       ],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "经济数据"
+      ],
       "impactChannels": [],
       "regions": [
-        "全球"
+        "中国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|stickersandbuild|2026-11-11",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "A bumper year so far for toy sales comes as debate intensifies over screen time and tech connectivity."
+        "贴纸和积木套装推动玩具销量在圣诞前增长。",
+        "今年玩具销量迄今为止表现强劲。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若屏幕时间争议进一步升温，实体玩具需求可能继续增长",
+        "若数字娱乐产品价格下降，玩具需求可能受到抑制"
+      ],
       "article": {
         "status": "summary",
         "text": "Stickers and building sets help drive toy sales ahead of Christmas rush\nA bumper year so far for toy sales comes as debate intensifies over screen time and tech connectivity.",
@@ -96,21 +107,235 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Stickers and building sets help drive toy sales ahead of Christmas rush",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cx5ynyg6j375o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-11T00:16:44.000Z",
         "sourceHash": "26a2455a1fd985a813299570e2feebd6d3e339ae09df3306d8b0f8b0b11bff6a",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-11T06:12:36.219Z",
-        "title": "Stickers and building sets help drive toy sales ahead of Christmas rush",
-        "summary": "A bumper year so far for toy sales comes as debate intensifies over screen time and tech connectivity.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-11T06:13:15.947Z",
+        "title": "贴纸和积木套装推动圣诞前玩具销量",
+        "summary": "贴纸和积木套装正推动圣诞前的玩具销售，整体销量已呈现显著增长。同时，围绕屏幕使用时间和技术连接的争论也在加剧。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "贴纸和积木套装帮助推动圣诞前的玩具销售。",
+            "quote": "Stickers and building sets help drive toy sales ahead of Christmas rush"
+          },
+          {
+            "text": "玩具销量今年迄今为止表现强劲，且关于屏幕时间和技术连接的讨论日益激烈。",
+            "quote": "A bumper year so far for toy sales comes as debate intensifies over screen time and tech connectivity."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-11T06:13:15.947Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "26a2455a1fd985a813299570e2feebd6d3e339ae09df3306d8b0f8b0b11bff6a",
+        "count": 1,
+        "lastAttemptAt": "2026-11-11T06:12:36.219Z"
+      },
+      "titleZh": "贴纸和积木套装推动圣诞前玩具销量增长",
+      "summaryZh": "贴纸和积木套装帮助推动圣诞前玩具销量，全年销量表现强劲，且围绕屏幕时间的争论加剧。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "贴纸和积木套装推动玩具销量在圣诞前增长。",
+              "evidence": "Stickers and building sets help drive toy sales ahead of Christmas rush"
+            },
+            {
+              "text": "今年玩具销量迄今为止表现强劲。",
+              "evidence": "A bumper year so far for toy sales comes as debate intensifies over screen time and tech connectivity."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "中国",
+            "triggerEvidence": "Stickers and building sets help drive toy sales ahead of Christmas rush",
+            "path": [
+              "节前消费需求提升",
+              "贴纸和积木套装受欢迎",
+              "整体玩具销量增长"
+            ],
+            "invalidation": "若整体消费信心下降或家庭预算紧张"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "26a2455a1fd985a813299570e2feebd6d3e339ae09df3306d8b0f8b0b11bff6a",
+        "originalTitle": "Stickers and building sets help drive toy sales ahead of Christmas rush",
+        "reviewedAt": "2026-11-11T06:12:36.219Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "820220554f2f95847d12",
+          "title": "贴纸和积木套装推动圣诞前玩具销量增长",
+          "summary": "贴纸和积木套装帮助推动圣诞前玩具销量，全年销量表现强劲，且围绕屏幕时间的争论加剧。",
+          "excerpt": "贴纸和积木套装推动玩具销量在圣诞前增长。今年玩具销量迄今为止表现强劲，伴随屏幕时间争议。",
+          "sourceName": "BBC News · 财经",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cx5ynyg6j375o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-11T00:16:44.000Z",
+          "region": "A股",
+          "topic": "玩具行业季节性需求",
+          "termIds": [],
+          "facts": [
+            "贴纸和积木套装推动玩具销量在圣诞前增长。",
+            "今年玩具销量迄今为止表现强劲。"
+          ],
+          "consensus": [
+            "节日季需求提升通常带动玩具销量上升",
+            "家长对儿童屏幕时间的担忧促使实体玩具更受欢迎"
+          ],
+          "inference": [
+            "若屏幕时间争议进一步升温，实体玩具需求可能继续增长",
+            "若数字娱乐产品价格下降，玩具需求可能受到抑制"
+          ],
+          "risks": [
+            "数字娱乐价格或内容吸引力提升，可能分流玩具需求",
+            "供应链中断或原材料成本上升，可能限制销量增长"
+          ],
+          "causalChain": [
+            {
+              "title": "节前消费需求提升",
+              "explanation": "圣诞等节日临近，家庭礼物支出意愿增强",
+              "condition": "节日临近且家庭预算相对宽裕"
+            },
+            {
+              "title": "贴纸和积木套装受欢迎",
+              "explanation": "这些产品符合家长对低屏幕、动手玩具的偏好",
+              "condition": "家长对屏幕时间的担忧持续"
+            },
+            {
+              "title": "整体玩具销量增长",
+              "explanation": "需求提升与产品受欢迎共同推动销量上升",
+              "condition": "供应链保持畅通且零售渠道正常"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "家庭在节日前为孩子挑选礼物的情景",
+            "explanation": "就像父母在节日挑选礼物时会倾向于实体玩具而非电子产品，反映出对实际互动的需求；但若电子礼物更具吸引力或更便宜，这一类比的适用性会受限"
+          },
+          "why": {
+            "cause": "节前消费热潮",
+            "mechanisms": [
+              "节日需求提升",
+              "家长对屏幕时间的担忧",
+              "产品创新（贴纸、积木）"
+            ],
+            "result": "玩具销量在圣诞前出现显著增长"
+          },
+          "focus": [
+            "消费需求",
+            "产品创新",
+            "季节性因素"
+          ],
+          "marketBet": [
+            "圣诞后玩具销量可能回落至常规水平",
+            "贴纸类产品需求在节后仍保持一定增长",
+            "数字娱乐竞争加剧可能抑制实体玩具的进一步增长"
+          ],
+          "expectationGap": "源材料未提供市场先前对玩具销量的具体预期，故无法比较实际表现与先前共识；因此不存在可量化的预期差距。",
+          "counterView": "若数字娱乐产品价格更低或内容更具吸引力，家庭可能转向电子礼物，从而削弱实体玩具的需求。",
+          "personalImpact": [
+            {
+              "label": "消费",
+              "impact": "圣诞前家庭在玩具上的支出增加",
+              "why": "节日礼物需求提升导致对贴纸和积木等实体玩具的购买意愿上升",
+              "invalidation": "若家庭预算紧张或转向数字礼物，则支出增加的效果不成立",
+              "condition": "若家庭预算紧张或转向数字礼物，则支出增加的效果不成立"
+            }
+          ],
+          "surface": "贴纸和积木套装推动圣诞前玩具销量增长",
+          "next": [
+            "节前消费需求提升",
+            "贴纸和积木套装受欢迎",
+            "整体玩具销量增长"
+          ],
+          "condition": [
+            "节日临近且家庭预算相对宽裕",
+            "家长对屏幕时间的担忧持续",
+            "供应链保持畅通且零售渠道正常"
+          ]
+        },
+        "watchItems": [
+          "主要玩具零售商月度销量报告",
+          "公众对屏幕时间争议的舆论变化"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "26a2455a1fd985a813299570e2feebd6d3e339ae09df3306d8b0f8b0b11bff6a",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-11T06:13:15.947Z",
+        "state": "approved"
       }
     },
     {
@@ -158,7 +383,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -213,21 +439,46 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Nvidia hires major US law firm to investigate alleged Chinese spy affair",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-10T22:52:15.000Z",
         "sourceHash": "7665949d5a6e6d492716d70b138dd1e487a2d05b132baaf2b3a99ea10f75bde3",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-11T06:12:36.219Z",
-        "title": "Nvidia hires major US law firm to investigate alleged Chinese spy affair",
-        "summary": "The appointment was made after it emerged Jensen Huang had an affair with a woman believed to be a spy for China.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-11T06:13:15.947Z",
+        "title": "英伟达聘请美国大型律所调查涉嫌中国间谍的绯闻",
+        "summary": "英伟达公司已委托一家美国大型律所，对一起涉及其创始人黄仁勋的涉嫌中国间谍的绯闻进行调查。该调查在媒体披露黄仁勋与一名被认为是中国间谍的女子有不正当关系后启动。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "英伟达聘请了一家美国大型律所，对涉嫌中国间谍的绯闻展开调查。",
+            "quote": "Nvidia hires major US law firm to investigate alleged Chinese spy affair"
+          },
+          {
+            "text": "此任命是在媒体披露黄仁勋与一名被认为是中国间谍的女子有绯闻后作出的。",
+            "quote": "The appointment was made after it emerged Jensen Huang had an affair with a woman believed to be a spy for China."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-11T06:13:15.947Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "7665949d5a6e6d492716d70b138dd1e487a2d05b132baaf2b3a99ea10f75bde3",
+        "count": 1,
+        "lastAttemptAt": "2026-11-11T06:12:36.219Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -412,7 +663,7 @@
         "reader": "cnfin-body",
         "sha256": "6fa403c13a7f880a9a7355f853cbbcd0cba8effe55d545284454964cc3661f10",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261111/4493975_1.html",
-        "checkedAt": "2026-11-11T06:12:36.219Z"
+        "checkedAt": "2026-11-11T06:13:15.947Z"
       },
       "id": "addd2e00d4193f752f9f",
       "verificationStatus": "verified",
@@ -477,7 +728,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -495,7 +747,7 @@
         "reader": "cnfin-body",
         "sha256": "6f25face1c3e6915be442c96dd1fb5b489778325fed39d94e080c31b9921801f",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261111/4493971_1.html",
-        "checkedAt": "2026-11-11T06:12:36.219Z"
+        "checkedAt": "2026-11-11T06:13:15.947Z"
       },
       "id": "147afe570fe5365ea658",
       "verificationStatus": "verified",
@@ -1111,7 +1363,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1161,7 +1414,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1211,7 +1465,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1261,7 +1516,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1313,7 +1569,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1363,7 +1620,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1413,7 +1671,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1463,7 +1722,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1513,7 +1773,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -3516,7 +3777,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -10505,7 +10767,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -10655,7 +10918,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -10693,7 +10957,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -11991,7 +12256,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-business",
@@ -12300,57 +12566,79 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 28
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "820220554f2f95847d12",
+      "selectedPublishedAt": "2026-11-11T00:16:44.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 26,
-      "originalSummaries": 26,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "unsupported-attribution": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 98,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 98,
-      "successRate": null
+      "skipped": 96,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 127,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 103,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 127,
-      "successRate": null
+      "skipped": 101,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
