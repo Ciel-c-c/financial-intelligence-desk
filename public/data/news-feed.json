@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-11T19:33:59.582Z",
+  "attemptedAt": "2026-11-11T19:34:36.216Z",
   "lastSuccessfulAt": "2026-11-11T19:33:59.582Z",
   "nextExpectedAt": "2026-11-12T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-11T19:33:59.582Z",
   "status": "delayed",
   "latest": [
     {
@@ -66,6 +68,19 @@
         "summary": "联合国人权事务高级专员蒂尔克周三对特立尼达和多巴哥最高法院——枢密院司法委员会——作出的判决表示欢迎。该判决宣布，将私下、双方自愿的同性关系定为犯罪的行为违宪。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "a0910eabb3ecd7a963f1cbc6fb25889168a8896ce889cd00df9a84e4a091ab32",
+        "count": 1,
+        "lastAttemptAt": "2026-11-11T19:33:59.582Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "impact-assessment",
+          "fields": [
+            "personalImpact[0].score"
+          ]
+        }
       }
     },
     {
@@ -129,6 +144,19 @@
         "summary": "世界卫生组织总干事谭德塞周三表示，刚果民主共和国（刚果（金））埃博拉疫情仍然是一起引起国际关注的公共卫生突发事件。目前，该国八个省份已报告近1.1万例确诊病例，死亡人数超过5300人。尽管部分地区疫情传播速度有所放缓，但新的疫情热点仍在出现，应对工作面临安全局势动荡等多重障碍。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "3763905f96a332497f589cdb12b1657837a890086adbd65f5d9fc3f97c0fe23d",
+        "count": 1,
+        "lastAttemptAt": "2026-11-11T19:33:59.582Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "causalChain"
+          ]
+        }
       }
     },
     {
@@ -244,7 +272,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -298,7 +327,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -353,21 +383,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Spain sees widespread disruption in first general strike for 14 years",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-11T17:44:32.000Z",
         "sourceHash": "f39ae375edfda0718c819ac3b7bde5a23c076e169d01fde28895c35385deb28b",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-11T19:33:59.582Z",
-        "title": "Spain sees widespread disruption in first general strike for 14 years",
-        "summary": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-11T19:34:36.216Z",
+        "title": "西班牙14年来首次全国大罢工导致广泛中断",
+        "summary": "西班牙在14年后举行首次全国性大罢工，导致全国范围内的广泛中断。罢工前不到三周，预计在最大城市还将出现抗议活动，正值议会选举临近。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "西班牙在14年后举行首次全国性大罢工，导致全国范围内的广泛中断。",
+            "quote": "Spain sees widespread disruption in first general strike for 14 years"
+          },
+          {
+            "text": "罢工前不到三周，预计在最大城市还将出现抗议活动，正值议会选举临近。",
+            "quote": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-11T19:34:36.216Z"
       }
     },
     {
@@ -423,7 +467,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-11T19:34:36.216Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "American Airlines brings fresh food back to NY-Chicago first class for first time since 2019",
+        "sourceUrl": "https://www.cnbc.com/2026/11/11/american-airlines-first-class-chicago-new-york.html",
+        "publishedAt": "2026-11-11T17:34:18.000Z",
+        "sourceHash": "570389484cff97239fdfed9b15ca36d52284551e92c4287c88f0ebb47d7586b7",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-11T19:34:36.216Z",
+        "title": "美国航空恢复纽约至芝加哥头等舱新鲜餐食",
+        "summary": "美国航空自2019年以来首次在纽约至芝加哥航线的头等舱重新提供新鲜餐食，包括三明治、水果和奇亚籽碗等选项。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "美国航空自2019年以来首次在纽约至芝加哥航线的头等舱重新提供新鲜餐食。",
+            "quote": "American Airlines brings fresh food back to NY-Chicago first class for first time since 2019"
+          },
+          {
+            "text": "该航线头等舱的餐食选项包括三明治、水果和奇亚籽碗。",
+            "quote": "American Airlines' first class food options include sandwiches, fruit and chia bowls"
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       }
     },
     {
@@ -1517,7 +1589,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1800,7 +1873,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2130,7 +2204,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2198,7 +2273,7 @@
         "reader": "cnfin-body",
         "sha256": "ab37299e5b1358e2517458078a1c786811ac4ba2abe7c136d6a43cb69152f661",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261111/4494305_1.html",
-        "checkedAt": "2026-11-11T19:33:59.582Z"
+        "checkedAt": "2026-11-11T19:34:36.216Z"
       },
       "id": "9a1a9db0c173ef8ef973",
       "verificationStatus": "verified",
@@ -2242,7 +2317,7 @@
         "reader": "cnfin-body",
         "sha256": "3db98b5f0281d742ad9f15c6f67ad74d3634a80ac49ccfb1845073fb339c1034",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261111/4494296_1.html",
-        "checkedAt": "2026-11-11T19:33:59.582Z"
+        "checkedAt": "2026-11-11T19:34:36.216Z"
       },
       "id": "379067d7f85cdd96fa47",
       "verificationStatus": "verified",
@@ -7637,7 +7712,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -8996,7 +9072,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -10033,57 +10110,80 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 19
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "33cdb77682250b47b9d1",
+      "selectedPublishedAt": "2026-11-11T12:00:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 24,
-      "originalSummaries": 24,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "impact-assessment": 1,
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 75,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 75,
-      "successRate": null
+      "skipped": 73,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 93,
-      "attempted": 0,
+      "eligible": 77,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 93,
-      "successRate": null
+      "skipped": 75,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
