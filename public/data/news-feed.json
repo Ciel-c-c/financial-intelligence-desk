@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-12T19:52:45.002Z",
+  "attemptedAt": "2026-11-12T19:53:19.378Z",
   "lastSuccessfulAt": "2026-11-12T19:52:45.002Z",
   "nextExpectedAt": "2026-11-13T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-12T19:52:45.002Z",
   "status": "delayed",
   "latest": [
     {
@@ -60,7 +62,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "fed",
@@ -111,7 +114,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -243,7 +247,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -293,7 +298,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -343,7 +349,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -393,7 +400,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -443,7 +451,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -498,11 +507,27 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-12T19:52:45.002Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "paired-evidence"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "paired-evidence",
+        "attemptedAt": "2026-11-12T19:53:19.378Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "f010ad60ec799fa0900798904ed9cf509fac20d5d63a708bda950f012a8405c6",
+        "count": 1,
+        "lastAttemptAt": "2026-11-12T19:52:45.002Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[2].numbers"
+          ]
+        }
       }
     },
     {
@@ -558,7 +583,52 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-12T19:53:19.378Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
+        "sourceUrl": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
+        "publishedAt": "2026-11-12T17:23:25.000Z",
+        "sourceHash": "6a98f11e7539d9c2d3757bec82b0830adebb77a00d2201ebd6c7eb5000965d5c",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-12T19:53:19.378Z",
+        "title": "迪士尼《星球大战》将于50周年前在Cosm圆顶放映",
+        "summary": "迪士尼与Cosm达成多年度电影合作，计划在其圆顶影院上映《星球大战：新希望》，并以此庆祝该系列50周年。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "迪士尼的《星球大战》将在50周年前进入Cosm圆顶影院，属于多年度电影合作的一部分。",
+            "quote": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal"
+          },
+          {
+            "text": "Cosm已与迪士尼签署新工作室合作协议，准备在圆顶放映《星球大战：新希望》。",
+            "quote": "Cosm has secured a new studio partnership with Disney that will bring \"Star Wars: A New Hope\" to its domes as part of a"
+          },
+          {
+            "text": "《星球大战：新希望》将作为多年度、多影片合作项目在Cosm圆顶上映。",
+            "quote": "\"Star Wars: A New Hope\" to its domes as part of a multiyear, multifilm collaboration."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "6a98f11e7539d9c2d3757bec82b0830adebb77a00d2201ebd6c7eb5000965d5c",
+        "count": 1,
+        "lastAttemptAt": "2026-11-12T19:52:45.002Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -667,7 +737,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -705,7 +776,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1862,7 +1934,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2014,7 +2087,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -2052,7 +2126,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2354,7 +2429,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -2392,7 +2468,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -2430,7 +2507,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -2945,7 +3023,7 @@
         "reader": "cnfin-body",
         "sha256": "a70eef75e4625a46a9ccb00ea65164ab596bca41ae0813a5ae33e3dbefe755b9",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261112/4495058_1.html",
-        "checkedAt": "2026-11-12T19:52:45.002Z"
+        "checkedAt": "2026-11-12T19:53:19.378Z"
       },
       "id": "461da63fa184dc5b098b",
       "verificationStatus": "verified",
@@ -2993,7 +3071,7 @@
         "reader": "cnfin-body",
         "sha256": "ad01db1d30af1c4bf0ed1bd51af2757a1f0acdde56592ada06101d33e6e0ac37",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261112/4495055_1.html",
-        "checkedAt": "2026-11-12T19:52:45.002Z"
+        "checkedAt": "2026-11-12T19:53:19.378Z"
       },
       "id": "de2e78ad419c34c13680",
       "verificationStatus": "verified",
@@ -8653,7 +8731,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -8707,7 +8786,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -8757,7 +8837,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -8807,7 +8888,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -9406,57 +9488,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 35
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "41c52438d63dfa570770",
+      "selectedPublishedAt": "2026-11-12T17:49:47.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 23,
-      "originalSummaries": 23,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 7,
+      "rejectionReasons": {
+        "paired-evidence": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "facts": 1,
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 68,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 68,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 66,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 84,
-      "attempted": 0,
+      "eligible": 64,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 84,
-      "successRate": null
+      "skipped": 62,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
