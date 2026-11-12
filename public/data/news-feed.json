@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-12T07:07:26.020Z",
+  "attemptedAt": "2026-11-12T07:07:51.021Z",
   "lastSuccessfulAt": "2026-11-12T07:07:26.020Z",
   "nextExpectedAt": "2026-11-12T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-12T07:07:26.020Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -79,7 +82,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -117,7 +121,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -155,7 +160,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -204,21 +210,48 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "UK economy grows at fastest rate for more than two years",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/ck3rgd429zd5o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-12T07:05:23.000Z",
         "sourceHash": "821fc38479b8de1169505e622f44e71bc104abc3e5e8b294d08aa498a28bd1d7",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-12T07:07:26.020Z",
-        "title": "UK economy grows at fastest rate for more than two years",
-        "summary": "The UK economy grew by 0.7% in the three months to September, according to official figures.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-12T07:07:51.021Z",
+        "title": "英国经济两年多来增速最快",
+        "summary": "官方数据显示，英国经济在截至九月的三个月内增长了0.7%，并创下了两年多以来的最快增速。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "英国经济两年多来增速最快。",
+            "quote": "UK economy grows at fastest rate for more than two years"
+          },
+          {
+            "text": "截至九月的三个月，英国经济增长了0.7%，数据来源为官方统计。",
+            "quote": "The UK economy grew by 0.7% in the three months to September, according to official figures."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-12T07:07:51.021Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "821fc38479b8de1169505e622f44e71bc104abc3e5e8b294d08aa498a28bd1d7",
+        "count": 1,
+        "lastAttemptAt": "2026-11-12T07:07:26.020Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[1].numbers"
+          ]
+        }
       }
     },
     {
@@ -278,7 +311,62 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-12T07:07:51.021Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Feds arrest top official of healthcare company, alleging illegal drug importation",
+        "sourceUrl": "https://www.cnbc.com/2026/11/11/canarx-official-arrested-drug-importation.html",
+        "publishedAt": "2026-11-11T22:58:11.000Z",
+        "sourceHash": "7de62513e89a563ea2cc79f2f6407590470439b8347f01a2aa0cb1e118a613df",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-12T07:07:51.021Z",
+        "title": "联邦当局逮捕一家医疗公司的高层，指控非法进口药品",
+        "summary": "美国联邦执法部门逮捕了该公司的一名高层官员，并指控该公司两名高层策划非法进口处方药的计划，法院记录显示此行为涉及跨境药品走私。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "联邦执法部门逮捕了该医疗公司的高层官员，指控其涉及非法药品进口。",
+            "quote": "Feds arrest top official of healthcare company, alleging illegal drug importation"
+          },
+          {
+            "text": "美国官员指控该加拿大公司的两名高层官员运营一个非法进口计划。",
+            "quote": "U.S. officials are accusing two top officials of a Canadian company of operating a scheme to illegally import"
+          },
+          {
+            "text": "法院记录显示，这一计划涉及非法进口处方药。",
+            "quote": "operating a scheme to illegally import prescription drugs, court records show."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "7de62513e89a563ea2cc79f2f6407590470439b8347f01a2aa0cb1e118a613df",
+        "count": 1,
+        "lastAttemptAt": "2026-11-12T07:07:26.020Z",
+        "auditFindings": [
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 0
+          },
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 1
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -297,7 +385,7 @@
         "reader": "cnfin-body",
         "sha256": "d0653f069f9f3b7313e00f440b275921ec433312de981998225d0550ba83c2d0",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261112/4494538_1.html",
-        "checkedAt": "2026-11-12T07:07:26.020Z"
+        "checkedAt": "2026-11-12T07:07:51.021Z"
       },
       "id": "ad53507f713928447a4a",
       "verificationStatus": "verified",
@@ -1491,7 +1579,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1545,7 +1634,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1595,7 +1685,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1645,7 +1736,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -2081,7 +2173,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -2277,7 +2370,7 @@
         "reader": "cnfin-body",
         "sha256": "31788f0a5b50e076308dad149d849a6a1fb856bdb6b8dea5a5820aec8a60cea9",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261112/4494402_1.html",
-        "checkedAt": "2026-11-12T07:07:26.020Z"
+        "checkedAt": "2026-11-12T07:07:51.021Z"
       },
       "id": "32e75b24aa8887378ac8",
       "verificationStatus": "verified",
@@ -2822,7 +2915,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -4148,7 +4242,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -7352,7 +7447,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -9460,57 +9556,80 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 27
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "3cfafb377469e4360874",
+      "selectedPublishedAt": "2026-11-12T07:05:23.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 21,
-      "originalSummaries": 21,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 8,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 1,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "facts": 1,
+        "audit": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 70,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 70,
-      "successRate": null
+      "skipped": 68,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 93,
-      "attempted": 0,
+      "eligible": 73,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 93,
-      "successRate": null
+      "skipped": 71,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
