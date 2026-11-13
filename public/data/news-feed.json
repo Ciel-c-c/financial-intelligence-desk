@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-13T06:41:04.897Z",
+  "attemptedAt": "2026-11-13T06:41:38.988Z",
   "lastSuccessfulAt": "2026-11-13T06:41:04.897Z",
   "nextExpectedAt": "2026-11-13T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-13T06:41:04.897Z",
   "status": "delayed",
   "latest": [
     {
@@ -60,7 +62,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -119,21 +122,52 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-13T03:57:01.000Z",
         "sourceHash": "eaa95f2ea35421a517f2e18c42ce2f7d8610e9f25ece1efbf99e4a6954d9f547",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-13T06:41:04.897Z",
-        "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
-        "summary": "Huang abruptly quit on Thursday as head of one of the world's most valuable companies after revelations of alleged extramarital affairs.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-13T06:41:38.988Z",
+        "title": "前Nvidia CEO黄仁勋被召赴国会作证涉及与疑似中国间谍的婚外情",
+        "summary": "前Nvidia首席执行官黄仁勋因被指与一名疑似中国间谍有婚外情，被召唤到美国国会作证。随后，他于周四突然辞去公司最高职务，结束了在全球最有价值公司之一的领导。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "前Nvidia首席执行官黄仁勋被召唤到国会作证，议题涉及其与一名疑似中国间谍的婚外情。",
+            "quote": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy"
+          },
+          {
+            "text": "黄仁勋在周四突然辞去职务，离开了全球最有价值公司的领导岗位。",
+            "quote": "Huang abruptly quit on Thursday as head of one of the world's most valuable companies after revelations of alleged"
+          },
+          {
+            "text": "辞职的原因是公开了其涉嫌的婚外情。",
+            "quote": "valuable companies after revelations of alleged extramarital affairs."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-13T06:41:38.988Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "eaa95f2ea35421a517f2e18c42ce2f7d8610e9f25ece1efbf99e4a6954d9f547",
+        "count": 1,
+        "lastAttemptAt": "2026-11-13T06:41:04.897Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -185,7 +219,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -232,11 +267,25 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-13T06:41:04.897Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-13T06:41:38.988Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "86c6390987a8f995fc93b61b3a91e88144847aafa22c2efd2110e2ac4082005b",
+        "count": 1,
+        "lastAttemptAt": "2026-11-13T06:41:04.897Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "causal-chain",
+          "fields": []
+        }
       }
     },
     {
@@ -606,7 +655,7 @@
         "reader": "cnfin-body",
         "sha256": "d4a383ce76602c72cb98b828109066d980117d9e34b169a18065b2a6a0ea7ca9",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261113/4495304_1.html",
-        "checkedAt": "2026-11-13T06:41:04.897Z"
+        "checkedAt": "2026-11-13T06:41:38.988Z"
       },
       "id": "6b2f564b3345f99f6d37",
       "verificationStatus": "verified",
@@ -1124,7 +1173,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1174,7 +1224,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1224,7 +1275,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1274,7 +1326,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1324,7 +1377,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1374,7 +1428,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1904,7 +1959,7 @@
         "reader": "cnfin-body",
         "sha256": "72ca89157656640c8242fb87f2bfa214441ab37613cce0fc5ba81e2cec5cfd31",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261113/4495210_1.html",
-        "checkedAt": "2026-11-13T06:41:04.897Z"
+        "checkedAt": "2026-11-13T06:41:38.988Z"
       },
       "id": "22b9c13bcc6525679d4e",
       "verificationStatus": "verified",
@@ -2540,7 +2595,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -2696,7 +2752,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2796,7 +2853,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -3178,7 +3236,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -3337,7 +3396,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3391,7 +3451,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -7148,7 +7209,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -7241,7 +7303,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -7570,7 +7633,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -7608,7 +7672,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -9759,57 +9824,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 35
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "14f6df758984a3b3fe84",
+      "selectedPublishedAt": "2026-11-13T03:57:01.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 18,
-      "originalSummaries": 18,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 9,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 1,
+        "causal-chain": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 67,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 67,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 65,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 95,
-      "attempted": 0,
+      "eligible": 71,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 95,
-      "successRate": null
+      "skipped": 69,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
