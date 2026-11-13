@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-13T19:39:24.001Z",
+  "attemptedAt": "2026-11-13T19:40:00.496Z",
   "lastSuccessfulAt": "2026-11-13T19:39:24.001Z",
   "nextExpectedAt": "2026-11-14T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-13T19:39:24.001Z",
   "status": "delayed",
   "latest": [
     {
@@ -55,7 +57,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -71,26 +74,42 @@
       "id": "51703b1ca81af07c9b1b",
       "verificationStatus": "official",
       "titleZh": "【子午播报】2026年11月13日",
-      "summaryZh": "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，古特雷斯出席任内最后一届气候大会；加沙亟需过冬援助物资；世界糖尿病日，你了解自己的血糖吗？",
+      "summaryZh": "联合国子午播报于纽约时间零点（北京时间13点）播出，内容包括古特雷斯出席任内最后一届气候大会、加沙亟需过冬援助物资以及世界糖尿病日的血糖知识宣传。",
       "translationStatus": "original-zh",
       "relatedSources": [],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "地缘风险",
+        "监管"
+      ],
+      "impactChannels": [
+        "利率",
+        "供需",
+        "估值"
+      ],
       "regions": [
         "全球"
       ],
       "importanceScore": 70,
       "continuingImpactScore": 40,
       "clusterId": "undefined|子午播报2026年11月13日|2026-11-13",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，古特雷斯出席任内最后一届气候大会；加沙亟需过冬援助物资；世界糖尿病日，你了解自己的血糖吗？"
+        "节目在纽约时间零点播出",
+        "节目在北京时间13点播出",
+        "古特雷斯将出席任内最后一届气候大会",
+        "加沙亟需过冬援助物资",
+        "世界糖尿病日将讨论血糖知识"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "如果气候大会推动更多绿色项目，相关企业可能获得融资机会",
+        "若加沙冬季援助得到国际捐助，短期人道支出将上升"
+      ],
       "article": {
         "status": "summary",
         "text": "【子午播报】2026年11月13日\n纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，古特雷斯出席任内最后一届气候大会；加沙亟需过冬援助物资；世界糖尿病日，你了解自己的血糖吗？",
@@ -118,6 +137,233 @@
         "summary": "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，古特雷斯出席任内最后一届气候大会；加沙亟需过冬援助物资；世界糖尿病日，你了解自己的血糖吗？",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "96519762fc125b1f68a596a2e240a18f3c5fca81ef8affd962ed79ab51ed2835",
+        "count": 1,
+        "lastAttemptAt": "2026-11-13T19:39:24.001Z"
+      },
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "节目在纽约时间零点播出",
+              "evidence": "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。"
+            },
+            {
+              "text": "节目在北京时间13点播出",
+              "evidence": "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。"
+            },
+            {
+              "text": "古特雷斯将出席任内最后一届气候大会",
+              "evidence": "本期节目您将看到，古特雷斯出席任内最后一届气候大会；加沙亟需过冬援助物资；世界糖尿病日，你了解自己的血糖吗？"
+            },
+            {
+              "text": "加沙亟需过冬援助物资",
+              "evidence": "本期节目您将看到，古特雷斯出席任内最后一届气候大会；加沙亟需过冬援助物资；世界糖尿病日，你了解自己的血糖吗？"
+            },
+            {
+              "text": "世界糖尿病日将讨论血糖知识",
+              "evidence": "本期节目您将看到，古特雷斯出席任内最后一届气候大会；加沙亟需过冬援助物资；世界糖尿病日，你了解自己的血糖吗？"
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "全球",
+            "triggerEvidence": "本期节目您将看到，古特雷斯出席任内最后一届气候大会；加沙亟需过冬援助物资；世界糖尿病日，你了解自己的血糖吗？",
+            "path": [
+              "气候大会提升议题关注度",
+              "绿色项目融资需求上升",
+              "企业估值或融资成本受影响"
+            ],
+            "invalidation": "若大会未形成具体融资承诺或政策执行迟缓"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "绿色能源ETF",
+            "direction": "上行",
+            "reason": "气候大会提升绿色项目可见度",
+            "condition": "大会发布具体融资或政策支持",
+            "invalidation": "若政策细节缺失或执行受阻",
+            "timeframe": "中期"
+          },
+          {
+            "asset": "人道援助相关物流公司",
+            "direction": "上行",
+            "reason": "加沙冬季援助需求增加",
+            "condition": "国际捐助资金到位并启动运输",
+            "invalidation": "若地缘政治阻碍物资进入",
+            "timeframe": "短期"
+          }
+        ],
+        "sourceBodyHash": "96519762fc125b1f68a596a2e240a18f3c5fca81ef8affd962ed79ab51ed2835",
+        "originalTitle": "【子午播报】2026年11月13日",
+        "reviewedAt": "2026-11-13T19:39:24.001Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "51703b1ca81af07c9b1b",
+          "title": "【子午播报】2026年11月13日",
+          "summary": "联合国子午播报于纽约时间零点（北京时间13点）播出，内容包括古特雷斯出席任内最后一届气候大会、加沙亟需过冬援助物资以及世界糖尿病日的血糖知识宣传。",
+          "excerpt": "本期节目您将看到，古特雷斯出席任内最后一届气候大会；加沙亟需过冬援助物资；世界糖尿病日，你了解自己的血糖吗？",
+          "sourceName": "UN News",
+          "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/11/1143191",
+          "publishedAt": "2026-11-13T12:00:00.000Z",
+          "region": "全球",
+          "topic": "国际事务与公共健康",
+          "termIds": [],
+          "facts": [
+            "节目在纽约时间零点播出",
+            "节目在北京时间13点播出",
+            "古特雷斯将出席任内最后一届气候大会",
+            "加沙亟需过冬援助物资",
+            "世界糖尿病日将讨论血糖知识"
+          ],
+          "consensus": [
+            "暂无明确的市场或政策共识"
+          ],
+          "inference": [
+            "如果气候大会推动更多绿色项目，相关企业可能获得融资机会",
+            "若加沙冬季援助得到国际捐助，短期人道支出将上升"
+          ],
+          "risks": [
+            "气候大会成果不确定，绿色投资预期可能受挫",
+            "加沙援助受地缘政治阻碍，物资难以到位"
+          ],
+          "causalChain": [
+            {
+              "title": "古特雷斯出席气候大会",
+              "explanation": "联合国秘书长出席最后一届任内气候大会，提升议题关注度",
+              "condition": "会议顺利进行并发布具体行动计划"
+            },
+            {
+              "title": "绿色项目融资需求上升",
+              "explanation": "大会强调低碳转型，吸引资本关注可再生能源等项目",
+              "condition": "投资者认可政策信号并有资金可投"
+            },
+            {
+              "title": "相关企业股价或融资成本受影响",
+              "explanation": "资本流入可能提升企业估值或降低融资成本",
+              "condition": "市场对绿色项目的预期保持积极"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "冬季供暖",
+            "explanation": "就像北方家庭在冬天需要及时供暖，全球也需要及时的气候行动和人道援助；但供暖设备的选择和使用方式会影响实际效果，同样，气候政策的细节决定其经济影响。"
+          },
+          "why": {
+            "cause": "气候大会和加沙援助的公开议程",
+            "mechanisms": [
+              "提升议题可见度吸引资本",
+              "人道需求刺激短期物资采购"
+            ],
+            "result": "可能带动绿色投资流入和人道支出增加"
+          },
+          "focus": [
+            "绿色投资机会",
+            "人道援助支出"
+          ],
+          "marketBet": [
+            "绿色项目融资需求将保持上行趋势",
+            "加沙冬季援助物资的采购需求可能短期上升"
+          ],
+          "expectationGap": "源文未提供任何市场或政策预期，故无法比较实际与先前预期的差异。",
+          "counterView": "若气候大会未能形成具体承诺，绿色投资热情可能快速降温；加沙援助若受阻，相关支出可能被迫转向其他地区。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "气候大会可能刺激全球绿色投资者配置资金",
+              "why": "会议提升低碳转型议题的关注度，吸引资本流入相关产业",
+              "invalidation": "若大会未公布具体融资机制或政策落实迟缓，绿色投资热情将下降",
+              "condition": "若大会未公布具体融资机制或政策落实迟缓，绿色投资热情将下降"
+            }
+          ],
+          "surface": "【子午播报】2026年11月13日",
+          "next": [
+            "古特雷斯出席气候大会",
+            "绿色项目融资需求上升",
+            "相关企业股价或融资成本受影响"
+          ],
+          "condition": [
+            "会议顺利进行并发布具体行动计划",
+            "投资者认可政策信号并有资金可投",
+            "市场对绿色项目的预期保持积极"
+          ]
+        },
+        "watchItems": [
+          "气候大会后是否公布具体绿色融资机制",
+          "加沙冬季援助物资的国际捐助进展",
+          "世界糖尿病日相关健康宣传的政策跟进"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "96519762fc125b1f68a596a2e240a18f3c5fca81ef8affd962ed79ab51ed2835",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-13T19:40:00.496Z",
+        "state": "approved"
       }
     },
     {
@@ -168,7 +414,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -218,7 +465,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -233,7 +481,7 @@
       "fetchedAt": "2026-11-13T19:39:24.001Z",
       "id": "7a5a702354eb46fdb19c",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "BBC News · 财经",
@@ -243,21 +491,35 @@
       ],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
+      "analysisLevels": [
+        "宏观",
+        "行业"
+      ],
+      "eventTypes": [
+        "地缘风险",
+        "公司经营"
+      ],
+      "impactChannels": [
+        "供需",
+        "盈利"
+      ],
       "regions": [
-        "全球"
+        "全球",
+        "美国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|whyismicrosoftso|2026-11-13",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "Microsoft says it is continuing to restore services including Outlook and Teams following a global outage."
+        "微软正经历一次全球性故障，影响Outlook和Teams等服务。",
+        "微软表示正在持续恢复受影响的服务。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若故障持续，企业可能临时转向其他协作平台或加速本地备份方案。",
+        "用户对云服务的信任度可能在短期内受到轻微削弱。"
+      ],
       "article": {
         "status": "summary",
         "text": "Why is Microsoft's outage lasting so long and will emails be lost?\nMicrosoft says it is continuing to restore services including Outlook and Teams following a global outage.",
@@ -269,8 +531,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-13T19:39:24.001Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "factualSummary": {
         "language": "en",
@@ -287,7 +550,222 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-13T19:40:00.496Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "6ad181e7ba786887aca3f1483bfe59152e92be58ce998ab75aa714acbcddf7c9",
+        "count": 1,
+        "lastAttemptAt": "2026-11-13T19:39:24.001Z"
+      },
+      "titleZh": "微软全球故障持续，Outlook 与 Teams 服务恢复中",
+      "summaryZh": "微软确认其全球性故障仍在影响 Outlook 与 Teams 等核心服务，正在持续恢复中。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "微软正经历一次全球性故障，影响Outlook和Teams等服务。",
+              "evidence": "Microsoft says it is continuing to restore services including Outlook and Teams following a global outage."
+            },
+            {
+              "text": "微软表示正在持续恢复受影响的服务。",
+              "evidence": "Microsoft says it is continuing to restore services including Outlook and Teams following a global outage."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "全球",
+            "triggerEvidence": "Microsoft says it is continuing to restore services including Outlook and Teams following a global outage.",
+            "path": [
+              "全球性技术故障",
+              "服务中断",
+              "恢复行动"
+            ],
+            "invalidation": "故障在短时间内完全恢复，市场情绪快速回稳。"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 2,
+            "audience": "firms",
+            "region": "全球",
+            "triggerEvidence": "Microsoft says it is continuing to restore services including Outlook and Teams following a global outage.",
+            "path": [
+              "全球性技术故障",
+              "服务中断",
+              "恢复行动"
+            ],
+            "invalidation": "若企业已有完整灾备并快速切换，业务冲击将被显著削弱。"
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "6ad181e7ba786887aca3f1483bfe59152e92be58ce998ab75aa714acbcddf7c9",
+        "originalTitle": "Why is Microsoft's outage lasting so long and will emails be lost?",
+        "reviewedAt": "2026-11-13T19:39:24.001Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "7a5a702354eb46fdb19c",
+          "title": "微软全球故障持续，Outlook 与 Teams 服务恢复中",
+          "summary": "微软确认其全球性故障仍在影响 Outlook 与 Teams 等核心服务，正在持续恢复中。",
+          "excerpt": "微软表示正在持续恢复受影响的服务，包括 Outlook 与 Teams，故障仍在全球范围内。",
+          "sourceName": "BBC News · 世界",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-13T18:36:57.000Z",
+          "region": "美股",
+          "topic": "信息技术服务中断",
+          "termIds": [],
+          "facts": [
+            "微软正经历一次全球性故障，影响Outlook和Teams等服务。",
+            "微软表示正在持续恢复受影响的服务。"
+          ],
+          "consensus": [
+            "暂无公开的市场或行业共识说明故障对经济的整体影响。"
+          ],
+          "inference": [
+            "若故障持续，企业可能临时转向其他协作平台或加速本地备份方案。",
+            "用户对云服务的信任度可能在短期内受到轻微削弱。"
+          ],
+          "risks": [
+            "故障延长可能导致企业沟通成本上升，影响项目进度。",
+            "对依赖 Outlook 邮件的业务流程出现延误风险。",
+            "长期中断可能促使部分用户迁移至竞争产品。"
+          ],
+          "causalChain": [
+            {
+              "title": "全球性技术故障",
+              "explanation": "微软的核心云基础设施出现异常，导致 Outlook 与 Teams 等服务不可用。",
+              "condition": "故障源自数据中心或网络层面的突发技术问题。"
+            },
+            {
+              "title": "服务中断",
+              "explanation": "用户无法访问邮件和即时通讯，业务沟通受阻。",
+              "condition": "故障未在短时间内被完全修复。"
+            },
+            {
+              "title": "恢复行动",
+              "explanation": "微软启动恢复程序，逐步恢复受影响的服务。",
+              "condition": "技术团队能够定位并修复根本原因。"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "城市的供水管道突然破裂，居民只能暂时使用瓶装水。",
+            "explanation": "供水中断类似于云服务故障，短期内人们会寻找替代方案（瓶装水/其他平台），但长期仍依赖恢复的自来水。此类类比帮助理解业务对持续通信的依赖，同时提醒替代方案的成本和局限。"
+          },
+          "why": {
+            "cause": "核心云服务不可用导致企业沟通受阻。",
+            "mechanisms": [
+              "邮件与即时通讯是日常业务流程的关键节点",
+              "服务中断迫使企业临时采用手工或其他工具",
+              "恢复进度不确定增加运营不确定性"
+            ],
+            "result": "企业运营效率下降，可能产生额外成本或业务延误。"
+          },
+          "focus": [
+            "企业运营效率",
+            "信息安全与数据完整性",
+            "用户对云服务的信任"
+          ],
+          "marketBet": [
+            "企业可能在短期内增加对备份与多云方案的投入",
+            "竞争协作平台的使用率可能出现短暂上行",
+            "对微软股价的短期波动仍取决于恢复速度"
+          ],
+          "expectationGap": "源文未提供任何市场对故障影响的共识或先前预期，故无法比较实际影响与预期差异。",
+          "counterView": "也有观点认为单一故障对整体业务影响有限，企业已有灾备方案，可快速切换，故冲击可能被低估。",
+          "personalImpact": [
+            {
+              "label": "企业经营",
+              "impact": "业务沟通受阻导致项目进度延迟，增加临时成本。",
+              "why": "Outlook 与 Teams 是多数企业日常协作的核心工具，故障直接影响信息流通。",
+              "invalidation": "若微软在数小时内完全恢复服务，短期冲击将被快速消除。",
+              "condition": "若微软在数小时内完全恢复服务，短期冲击将被快速消除。"
+            },
+            {
+              "label": "投资",
+              "impact": "投资者可能对微软短期业绩产生担忧，导致股价波动。",
+              "why": "服务中断被视为运营风险，影响市场对公司可靠性的评估。",
+              "invalidation": "若恢复顺利且未出现数据丢失，投资者情绪可能快速回稳。",
+              "condition": "若恢复顺利且未出现数据丢失，投资者情绪可能快速回稳。"
+            }
+          ],
+          "surface": "微软全球故障持续，Outlook 与 Teams 服务恢复中",
+          "next": [
+            "全球性技术故障",
+            "服务中断",
+            "恢复行动"
+          ],
+          "condition": [
+            "故障源自数据中心或网络层面的突发技术问题。",
+            "故障未在短时间内被完全修复。",
+            "技术团队能够定位并修复根本原因。"
+          ]
+        },
+        "watchItems": [
+          "微软官方后续恢复进度公告",
+          "主要企业客户的业务影响报告",
+          "竞争协作平台的用户增长数据",
+          "故障是否导致邮件数据丢失的官方确认"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "6ad181e7ba786887aca3f1483bfe59152e92be58ce998ab75aa714acbcddf7c9",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-13T19:40:00.496Z",
+        "state": "approved"
       }
     },
     {
@@ -327,7 +805,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -382,21 +861,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "How a sex scandal at Nvidia is putting pressure on the White House",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c67429m3vem3o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-13T12:22:30.000Z",
         "sourceHash": "bdae5611b940f37567df972ab01add6d2b0e8dc6fff8a1f00855a8dfdeccc9cf",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-13T19:39:24.001Z",
-        "title": "How a sex scandal at Nvidia is putting pressure on the White House",
-        "summary": "Jensen Huang's personal life may have triggered the crisis, but the questions now reach into the White House itself.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-13T19:40:00.496Z",
+        "title": "Nvidia性丑闻对白宫施压",
+        "summary": "Nvidia的性丑闻被认为正在对美国白宫产生压力，报道指出，创始人黄仁勋的个人生活可能是危机的导火索，且此事已引发对白宫的质疑。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Nvidia的性丑闻正对白宫施加压力。",
+            "quote": "How a sex scandal at Nvidia is putting pressure on the White House"
+          },
+          {
+            "text": "报道称黄仁勋的个人生活可能触发了危机，且相关问题已波及白宫。",
+            "quote": "Jensen Huang's personal life may have triggered the crisis, but the questions now reach into the White House itself."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-13T19:40:00.496Z"
       }
     },
     {
@@ -775,7 +1268,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1215,7 +1709,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2039,7 +2534,7 @@
         "reader": "cnfin-body",
         "sha256": "422871c3fffe63c131c3430d261c79f6f56bc03c87f04f0be71863114a9dde70",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261113/4495657_1.html",
-        "checkedAt": "2026-11-13T19:39:24.001Z"
+        "checkedAt": "2026-11-13T19:40:00.496Z"
       },
       "id": "a64489865495eaa4cb56",
       "verificationStatus": "verified",
@@ -2332,7 +2827,7 @@
         "reader": "cnfin-body",
         "sha256": "46171ec2ef5f7ba96a3e96559093aa1810c96270635cc8cb925ee337c480864d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261113/4495635_1.html",
-        "checkedAt": "2026-11-13T19:39:24.001Z"
+        "checkedAt": "2026-11-13T19:40:00.496Z"
       },
       "id": "9230d48f932c982b7571",
       "verificationStatus": "verified",
@@ -3766,7 +4261,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6869,7 +7365,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -7092,7 +7589,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-business",
@@ -9007,7 +9505,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9057,7 +9556,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9107,7 +9607,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9157,7 +9658,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9207,7 +9709,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9257,7 +9760,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -9797,57 +10301,79 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 25
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "51703b1ca81af07c9b1b",
+      "selectedPublishedAt": "2026-11-13T12:00:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 20,
-      "originalSummaries": 20,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
+      "itemCount": 2,
+      "attempted": 2,
       "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 2,
+        "audit": 2
       },
       "rejectionReasons": {}
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 76,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 76,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 74,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 97,
-      "attempted": 0,
-      "succeeded": 0,
+      "eligible": 78,
+      "attempted": 2,
+      "succeeded": 2,
       "rejected": 0,
       "failed": 0,
-      "skipped": 97,
-      "successRate": null
+      "skipped": 76,
+      "successRate": 1
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
