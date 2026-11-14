@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-14T06:18:19.082Z",
+  "attemptedAt": "2026-11-14T06:18:52.045Z",
   "lastSuccessfulAt": "2026-11-14T06:18:19.082Z",
   "nextExpectedAt": "2026-11-14T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-14T06:18:19.082Z",
   "status": "delayed",
   "latest": [
     {
@@ -46,7 +48,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -95,21 +98,48 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-14T05:52:31.000Z",
         "sourceHash": "c83a31b8d18d11b86d6a41c89c936db669d38722162a48e4321a33fae99a3561",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-14T06:18:19.082Z",
-        "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-        "summary": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-14T06:18:52.045Z",
+        "title": "特朗普、普京与习近平计划在中国举行历史性三方会晤",
+        "summary": "白宫称，特朗普、普京和习近平将于下周在中国举行历史性联合会谈，特朗普将在会谈中讨论核武器削减议题。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "白宫表示，特朗普、普京和习近平计划下周在中国举行历史性联合会晤。",
+            "quote": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says"
+          },
+          {
+            "text": "白宫发言人称，特朗普将在此次前所未有的会谈中讨论核武器削减。",
+            "quote": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-14T06:18:52.045Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "c83a31b8d18d11b86d6a41c89c936db669d38722162a48e4321a33fae99a3561",
+        "count": 1,
+        "lastAttemptAt": "2026-11-14T06:18:19.082Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -128,7 +158,7 @@
         "reader": "cnfin-body",
         "sha256": "9e0e590eff9174867a52853d1849b22eeeb9cbc8347071c36495587db4992e91",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261114/4495738_1.html",
-        "checkedAt": "2026-11-14T06:18:19.082Z"
+        "checkedAt": "2026-11-14T06:18:52.045Z"
       },
       "id": "ffe52942bbe3ca039176",
       "verificationStatus": "verified",
@@ -209,21 +239,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Microsoft 'deeply sorry' for global outage as it reports broad recovery",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-13T21:14:22.000Z",
         "sourceHash": "365b28d33e8461ec17693c99383ed3caedf96bad43d2abf7c048fb33c79c1cc6",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-14T06:18:19.082Z",
-        "title": "Microsoft 'deeply sorry' for global outage as it reports broad recovery",
-        "summary": "Experts say the event is a \"stark reminder\" of how heavily the world relies on a small group of big tech providers.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-14T06:18:52.045Z",
+        "title": "微软对全球故障深表歉意并报告广泛恢复",
+        "summary": "微软对近期导致全球服务中断的故障表示深深的歉意，并称已实现广泛的系统恢复。专家指出，此次事件凸显了全球对少数大型科技公司的高度依赖。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "微软对全球故障深表歉意，并报告已实现广泛恢复。",
+            "quote": "Microsoft 'deeply sorry' for global outage as it reports broad recovery"
+          },
+          {
+            "text": "专家称此事件是对全球高度依赖少数大型科技供应商的鲜明提醒。",
+            "quote": "Experts say the event is a \"stark reminder\" of how heavily the world relies on a small group of big tech providers."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-14T06:18:52.045Z"
       }
     },
     {
@@ -356,7 +400,7 @@
         "reader": "cnfin-body",
         "sha256": "939203c698721573da15cce6d2bd807f9b9d47e0d2af179282e7a75ae7398c76",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261114/4495733_1.html",
-        "checkedAt": "2026-11-14T06:18:19.082Z"
+        "checkedAt": "2026-11-14T06:18:52.045Z"
       },
       "id": "b18469b75fc73b300402",
       "verificationStatus": "verified",
@@ -476,7 +520,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -526,7 +571,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -578,7 +624,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -1071,7 +1118,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1121,7 +1169,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1171,7 +1220,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -2726,7 +2776,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2826,7 +2877,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2876,7 +2928,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3158,7 +3211,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -4562,7 +4616,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -10034,7 +10089,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -10241,57 +10297,80 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 25
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "5bb02d83f09ad407a3ae",
+      "selectedPublishedAt": "2026-11-14T05:52:31.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 19,
-      "originalSummaries": 19,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 8,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
-      "failures": 0,
+      "error": "HTTP 413",
+      "attempted": 2,
+      "rejected": 1,
+      "failures": 1,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 65,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 65,
-      "successRate": null
+      "skipped": 63,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 93,
-      "attempted": 0,
+      "eligible": 70,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
-      "failed": 0,
-      "skipped": 93,
-      "successRate": null
+      "rejected": 1,
+      "failed": 1,
+      "skipped": 68,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
