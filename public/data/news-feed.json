@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-15T18:49:26.305Z",
+  "attemptedAt": "2026-11-15T18:49:58.947Z",
   "lastSuccessfulAt": "2026-11-15T18:49:26.305Z",
   "nextExpectedAt": "2026-11-16T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-15T18:49:26.305Z",
   "status": "delayed",
   "latest": [
     {
@@ -53,7 +55,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -68,7 +71,7 @@
       "fetchedAt": "2026-11-15T18:49:26.305Z",
       "id": "0f9d9fcde5cde819682a",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "BBC News · 财经",
@@ -79,22 +82,31 @@
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
-        "行业"
+        "宏观"
       ],
-      "eventTypes": [],
-      "impactChannels": [],
+      "eventTypes": [
+        "地缘风险"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
       "regions": [
         "全球"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|suspectedchinasp|2026-11-15",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions."
+        "有嫌疑的中国间谍与前Nvidia高管有关，已于2025年离职。",
+        "此事引发对先进AI芯片是否流入中国的担忧。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "如果间谍获取了技术细节，可能导致芯片被非法转移。",
+        "美国监管部门可能加强对AI芯片出口的审查。",
+        "Nvidia可能面临声誉风险，进而影响投资者情绪。"
+      ],
       "article": {
         "status": "summary",
         "text": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says\nThe Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions.",
@@ -110,21 +122,241 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-15T14:56:21.000Z",
         "sourceHash": "44506c0b51711950f881abf799eb89211599fc416fd1018052fab282ad11598b",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-15T18:49:26.305Z",
-        "title": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
-        "summary": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-15T18:49:58.947Z",
+        "title": "据Megaspeed称，涉嫌中国间谍与前Nvidia高管于2025年离职",
+        "summary": "Megaspeed表示，一名涉嫌为中国从事间谍活动的人与前Nvidia高管的关联在2025年结束。该事件引发了对先进AI芯片是否在美国限制下流入中国的担忧。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Megaspeed称，涉嫌中国间谍的人员与Nvidia前高管的关联在2025年结束。",
+            "quote": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says"
+          },
+          {
+            "text": "此丑闻引发了关于先进AI芯片是否在美国限制下流入中国的疑问。",
+            "quote": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-15T18:49:58.947Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "44506c0b51711950f881abf799eb89211599fc416fd1018052fab282ad11598b",
+        "count": 1,
+        "lastAttemptAt": "2026-11-15T18:49:26.305Z"
+      },
+      "titleZh": "涉嫌中国间谍与前Nvidia高管关联 引发AI芯片出口担忧",
+      "summaryZh": "据Megaspeed称，一名涉嫌中国间谍的人员与已于2025年离职的Nvidia前高管有关，此事引发对先进AI芯片是否违规流入中国的担忧。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "有嫌疑的中国间谍与前Nvidia高管有关，已于2025年离职。",
+              "evidence": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says"
+            },
+            {
+              "text": "此事引发对先进AI芯片是否流入中国的担忧。",
+              "evidence": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "全球",
+            "triggerEvidence": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions.",
+            "path": [
+              "技术泄露担忧",
+              "监管响应",
+              "市场情绪波动"
+            ],
+            "invalidation": "若未确认技术泄露，监管不收紧，市场情绪保持稳定"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 1,
+            "audience": "firms",
+            "region": "全球",
+            "triggerEvidence": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions.",
+            "path": [
+              "技术泄露担忧",
+              "监管响应"
+            ],
+            "invalidation": "若监管未采取新措施，企业经营不受直接冲击"
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "44506c0b51711950f881abf799eb89211599fc416fd1018052fab282ad11598b",
+        "originalTitle": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+        "reviewedAt": "2026-11-15T18:49:26.305Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "0f9d9fcde5cde819682a",
+          "title": "涉嫌中国间谍与前Nvidia高管关联 引发AI芯片出口担忧",
+          "summary": "据Megaspeed称，一名涉嫌中国间谍的人员与已于2025年离职的Nvidia前高管有关，此事引发对先进AI芯片是否违规流入中国的担忧。",
+          "excerpt": "涉嫌中国间谍与前Nvidia高管有关，已于2025年离职；此事引发对先进AI芯片是否流入中国的担忧。",
+          "sourceName": "BBC News · 世界",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-15T14:56:21.000Z",
+          "region": "全球",
+          "topic": "科技出口与国家安全",
+          "termIds": [],
+          "facts": [
+            "有嫌疑的中国间谍与前Nvidia高管有关，已于2025年离职。",
+            "此事引发对先进AI芯片是否流入中国的担忧。"
+          ],
+          "consensus": [
+            "美国对高性能AI芯片的出口实行严格限制。",
+            "企业高管离职后可能涉及信息泄露风险。"
+          ],
+          "inference": [
+            "如果间谍获取了技术细节，可能导致芯片被非法转移。",
+            "美国监管部门可能加强对AI芯片出口的审查。",
+            "Nvidia可能面临声誉风险，进而影响投资者情绪。"
+          ],
+          "risks": [
+            "若证实技术泄露，可能触发美国对相关企业的制裁。",
+            "监管加强可能导致出口审批时间延长，影响供应链。",
+            "市场对相关公司信任下降，导致股价波动。"
+          ],
+          "causalChain": [
+            {
+              "title": "间谍关联",
+              "explanation": "涉嫌中国间谍与前Nvidia高管关联",
+              "condition": "已确认该人员与前高管的联系"
+            },
+            {
+              "title": "技术泄露担忧",
+              "explanation": "引发对先进AI芯片是否流入中国的担忧",
+              "condition": "间谍可能获取或传递技术信息"
+            },
+            {
+              "title": "监管响应",
+              "explanation": "美国可能加强对AI芯片出口的监管",
+              "condition": "监管部门认定存在违规风险"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "把公司内部机密比作家庭保险箱的钥匙",
+            "explanation": "如果钥匙落入陌生人手中，可能导致保险箱被打开，进而引发财产损失；但并非所有钥匙都会被滥用，实际影响取决于使用者的意图和监管力度。"
+          },
+          "why": {
+            "cause": "技术信息可能被未经授权的第三方获取",
+            "mechanisms": [
+              "信息泄露导致技术外流",
+              "外流技术被用于竞争或军事目的",
+              "监管部门加强审查"
+            ],
+            "result": "可能引发政策收紧、企业声誉受损以及市场不确定性上升"
+          },
+          "focus": [
+            "监管政策",
+            "企业声誉",
+            "市场情绪"
+          ],
+          "marketBet": [
+            "监管收紧可能导致AI芯片出口审批更严格",
+            "企业声誉受损或引发短期股价波动",
+            "市场对相关供应链的风险评估上调"
+          ],
+          "expectationGap": "源材料未提供市场对该事件的具体预期，故无法比较实际与先前预期的差异。",
+          "counterView": "若调查未发现实际技术泄露，监管可能仅作象征性回应，对市场影响有限。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "投资者可能面临对Nvidia及相关AI芯片公司的不确定性风险",
+              "why": "技术泄露或监管收紧会影响公司业绩预期和股价波动",
+              "invalidation": "若调查结果证实未发生技术泄露，监管措施保持现状，投资者风险下降",
+              "condition": "若调查结果证实未发生技术泄露，监管措施保持现状，投资者风险下降"
+            }
+          ],
+          "surface": "涉嫌中国间谍与前Nvidia高管关联 引发AI芯片出口担忧",
+          "next": [
+            "间谍关联",
+            "技术泄露担忧",
+            "监管响应"
+          ],
+          "condition": [
+            "已确认该人员与前高管的联系",
+            "间谍可能获取或传递技术信息",
+            "监管部门认定存在违规风险"
+          ]
+        },
+        "watchItems": [
+          "美国商务部是否发布新的出口限制指引",
+          "Nvidia是否公开回应此事",
+          "相关技术专利的跨境转让记录"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "44506c0b51711950f881abf799eb89211599fc416fd1018052fab282ad11598b",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-15T18:49:58.947Z",
+        "state": "approved"
       }
     },
     {
@@ -182,7 +414,53 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-15T18:49:58.947Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Rivian, Lucid, Scout CEOs aren’t counting on Democrats to restore EV federal support after midterm wins",
+        "sourceUrl": "https://www.cnbc.com/2026/11/15/rivian-lucid-scout-arent-counting-on-dems-to-restore-ev-incentives.html",
+        "publishedAt": "2026-11-15T13:00:02.000Z",
+        "sourceHash": "1c310d3df085a687f8f01b85f4f9b4e114158c62b1be983b704bda0c33a6d6f0",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-15T18:49:58.947Z",
+        "title": "Rivian、Lucid、Scout 首席执行官不指望民主党在中期选举后恢复电动车联邦支持",
+        "summary": "Rivian、Lucid 与 Scout 的首席执行官表示，他们不依赖民主党在近期中期选举获胜后重新提供联邦层面的电动车激励政策。过去，电动车制造商一直面临华盛顿对监管支持的反复变化。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Rivian、Lucid、Scout 的首席执行官不指望民主党在中期选举获胜后恢复联邦层面的电动车支持。",
+            "quote": "Rivian, Lucid, Scout CEOs aren’t counting on Democrats to restore EV federal support after midterm wins"
+          },
+          {
+            "text": "电动车制造商多年来一直要应对华盛顿监管支持的反复无常。",
+            "quote": "EV makers have had to contend with flip-flopping regulatory support from Washington over the years."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "1c310d3df085a687f8f01b85f4f9b4e114158c62b1be983b704bda0c33a6d6f0",
+        "count": 1,
+        "lastAttemptAt": "2026-11-15T18:49:26.305Z",
+        "auditFindings": [
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 0
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -631,7 +909,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -859,7 +1138,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1367,7 +1647,7 @@
         "reader": "cnfin-body",
         "sha256": "c936fe70ce205755c2a1bbaf1709e9ee7adaf5bf76a4137af1a121548c6a46b9",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261115/4495822_1.html",
-        "checkedAt": "2026-11-15T18:49:26.305Z"
+        "checkedAt": "2026-11-15T18:49:58.947Z"
       },
       "id": "711caaa8e6752cef7b14",
       "verificationStatus": "verified",
@@ -1411,7 +1691,7 @@
         "reader": "cnfin-body",
         "sha256": "eac935288d926f17db565993b248f4b1764a386bd0362b2e32e6ae9f888c7dd9",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261115/4495815_1.html",
-        "checkedAt": "2026-11-15T18:49:26.305Z"
+        "checkedAt": "2026-11-15T18:49:58.947Z"
       },
       "id": "1aeac4cd03aefbcef711",
       "verificationStatus": "verified",
@@ -4058,7 +4338,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -6225,57 +6506,79 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 15
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "0f9d9fcde5cde819682a",
+      "selectedPublishedAt": "2026-11-15T14:56:21.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 15,
-      "originalSummaries": 15,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 2,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "audit": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 32,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 32,
-      "successRate": null
+      "skipped": 30,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 45,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 33,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 45,
-      "successRate": null
+      "skipped": 31,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
