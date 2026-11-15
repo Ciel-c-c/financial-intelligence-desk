@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-15T06:25:38.689Z",
+  "attemptedAt": "2026-11-15T06:26:03.377Z",
   "lastSuccessfulAt": "2026-11-15T06:25:38.689Z",
   "nextExpectedAt": "2026-11-15T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-15T06:25:38.689Z",
   "status": "delayed",
   "latest": [
     {
@@ -18,25 +20,37 @@
       "fetchedAt": "2026-11-15T06:25:38.689Z",
       "id": "868642c1b94e1f61cb3e",
       "verificationStatus": "verified",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "地缘风险",
+        "经济数据"
+      ],
+      "impactChannels": [
+        "供需"
+      ],
       "regions": [
-        "全球"
+        "欧洲"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|couldbudapestbet|2026-11-15",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "With its mix of sights, cafés and culture, Hungary's capital Budapest has become popular with those embracing the \"work from anywhere\" trend."
+        "布达佩斯可能成为下一个数字游牧热点。",
+        "这座城市拥有景点、咖啡馆和文化氛围。",
+        "它已受到追随“随时随地工作”潮流者的欢迎。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若当地对远程工作者提供便利签证，数字游牧者数量可能进一步增长。",
+        "若租金或生活成本上升，可能抑制新进入者的兴趣。"
+      ],
       "article": {
         "status": "summary",
         "text": "Could Budapest be the next digital nomad hotspot?\nWith its mix of sights, cafés and culture, Hungary's capital Budapest has become popular with those embracing the \"work from anywhere\" trend.",
@@ -48,11 +62,230 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-15T06:25:38.689Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-15T06:26:03.377Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "c00a8c7f8fa416529fe5383fc1e51e7b54435b838b6af5dab2a0b42fc6805073",
+        "count": 1,
+        "lastAttemptAt": "2026-11-15T06:25:38.689Z"
+      },
+      "titleZh": "布达佩斯或成数字游牧新热点",
+      "summaryZh": "随着“随时随地工作”趋势的兴起，布达佩斯因其景点、咖啡馆和文化氛围吸引了越来越多的数字游牧者。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "布达佩斯可能成为下一个数字游牧热点。",
+              "evidence": "Could Budapest be the next digital nomad hotspot?"
+            },
+            {
+              "text": "这座城市拥有景点、咖啡馆和文化氛围。",
+              "evidence": "With its mix of sights, cafés and culture, Hungary's capital Budapest has become popular with those embracing the \"work"
+            },
+            {
+              "text": "它已受到追随“随时随地工作”潮流者的欢迎。",
+              "evidence": "has become popular with those embracing the \"work from anywhere\" trend."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 2,
+            "audience": "households",
+            "region": "匈牙利",
+            "triggerEvidence": "has become popular with those embracing the \"work from anywhere\" trend.",
+            "path": [
+              "工作方式转变",
+              "布达佩斯吸引力提升",
+              "本地服务需求增长"
+            ],
+            "invalidation": "若政府限制短租或租金上涨被抑制，住房需求提升效果不成立。"
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "匈牙利",
+            "triggerEvidence": "With its mix of sights, cafés and culture, Hungary's capital Budapest has become popular with those embracing the \"work",
+            "path": [
+              "工作方式转变",
+              "布达佩斯吸引力提升",
+              "本地服务需求增长"
+            ],
+            "invalidation": "若数字游牧者主要在住宿处自行烹饪，消费提升效果减弱。"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "c00a8c7f8fa416529fe5383fc1e51e7b54435b838b6af5dab2a0b42fc6805073",
+        "originalTitle": "Could Budapest be the next digital nomad hotspot?",
+        "reviewedAt": "2026-11-15T06:25:38.689Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "868642c1b94e1f61cb3e",
+          "title": "布达佩斯或成数字游牧新热点",
+          "summary": "随着“随时随地工作”趋势的兴起，布达佩斯因其景点、咖啡馆和文化氛围吸引了越来越多的数字游牧者。",
+          "excerpt": "布达佩斯因其混合的景点、咖啡馆和文化氛围，已成为追随“随时随地工作”潮流者的热门目的地。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
+          "publishedAt": "2026-11-15T06:00:01.000Z",
+          "region": "全球",
+          "topic": "数字游牧",
+          "termIds": [],
+          "facts": [
+            "布达佩斯可能成为下一个数字游牧热点。",
+            "这座城市拥有景点、咖啡馆和文化氛围。",
+            "它已受到追随“随时随地工作”潮流者的欢迎。"
+          ],
+          "consensus": [
+            "暂无明确共识"
+          ],
+          "inference": [
+            "若当地对远程工作者提供便利签证，数字游牧者数量可能进一步增长。",
+            "若租金或生活成本上升，可能抑制新进入者的兴趣。"
+          ],
+          "risks": [
+            "当地政策收紧可能限制数字游牧者的居留。",
+            "租金快速上涨可能削弱吸引力。",
+            "全球经济不确定性导致远程工作需求波动。"
+          ],
+          "causalChain": [
+            {
+              "title": "工作方式转变",
+              "explanation": "全球“随时随地工作”趋势推动人们寻找兼具生活品质的工作地点。",
+              "condition": "该趋势持续且企业支持远程工作"
+            },
+            {
+              "title": "布达佩斯吸引力提升",
+              "explanation": "城市的景点、咖啡馆和文化氛围满足数字游牧者对生活品质的需求。",
+              "condition": "城市保持其文化与生活设施的吸引力"
+            },
+            {
+              "title": "本地服务需求增长",
+              "explanation": "更多数字游牧者带动共工作空间、短租公寓和本地消费的需求上升。",
+              "condition": "数字游牧者数量持续增加"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "像是一座新开的咖啡店因独特氛围吸引了大量自由职业者",
+            "explanation": "咖啡店的氛围决定是否吸引客流，城市的文化与生活设施同理，但若咖啡店涨价或服务下降，吸引力会下降。"
+          },
+          "why": {
+            "cause": "远程工作趋势推动人们寻找兼具工作与生活品质的城市。",
+            "mechanisms": [
+              "城市文化与生活设施提升吸引力",
+              "数字游牧者需求带动本地服务扩张",
+              "服务扩张进一步提升城市的工作友好度"
+            ],
+            "result": "布达佩斯可能出现数字游牧者聚集效应，带动本地消费和服务业增长。"
+          },
+          "focus": [
+            "城市生活品质",
+            "本地服务供给",
+            "租金与住房成本"
+          ],
+          "marketBet": [
+            "若政策支持，短租市场需求将上行",
+            "若租金快速上涨，消费支出可能转向其他城市"
+          ],
+          "expectationGap": "源文未提供市场对布达佩斯成为数字游牧热点的具体预期，故无法比较实际与先前预期的差异。",
+          "counterView": "若其他欧洲城市（如里斯本、巴塞罗那）提供更优惠的税收或签证政策，可能抢走部分数字游牧者。",
+          "personalImpact": [
+            {
+              "label": "消费",
+              "impact": "数字游牧者的增加可能提升当地咖啡馆和餐饮业的客流。",
+              "why": "他们在工作之余倾向于在本地消费。",
+              "invalidation": "若数字游牧者主要选择外卖或自炊，咖啡馆客流提升效果会减弱。",
+              "condition": "若数字游牧者主要选择外卖或自炊，咖啡馆客流提升效果会减弱。"
+            },
+            {
+              "label": "住房",
+              "impact": "短租需求上升可能推高短租公寓的租金水平。",
+              "why": "数字游牧者倾向于租住短期公寓以保持灵活性。",
+              "invalidation": "若政府实施短租限制或税收上调，租金上涨压力会被抑制。",
+              "condition": "若政府实施短租限制或税收上调，租金上涨压力会被抑制。"
+            }
+          ],
+          "surface": "布达佩斯或成数字游牧新热点",
+          "next": [
+            "工作方式转变",
+            "布达佩斯吸引力提升",
+            "本地服务需求增长"
+          ],
+          "condition": [
+            "该趋势持续且企业支持远程工作",
+            "城市保持其文化与生活设施的吸引力",
+            "数字游牧者数量持续增加"
+          ]
+        },
+        "watchItems": [
+          "布达佩斯远程工作签证政策变化",
+          "当地租金和短租价格走势",
+          "共工作空间供应扩张情况"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "c00a8c7f8fa416529fe5383fc1e51e7b54435b838b6af5dab2a0b42fc6805073",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-15T06:26:03.377Z",
+        "state": "approved"
       }
     },
     {
@@ -71,7 +304,7 @@
         "reader": "cnfin-body",
         "sha256": "1be4ddff3981ce9d2702d095205b338d83cfccbea90439e4ccf6b6eed8922e81",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261115/4495794_1.html",
-        "checkedAt": "2026-11-15T06:25:38.689Z"
+        "checkedAt": "2026-11-15T06:26:03.377Z"
       },
       "id": "2378effb35a4d7aa1b67",
       "verificationStatus": "verified",
@@ -97,6 +330,18 @@
         "firstSeenAt": "2026-11-15T06:25:38.689Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "1be4ddff3981ce9d2702d095205b338d83cfccbea90439e4ccf6b6eed8922e81",
+        "count": 1,
+        "lastAttemptAt": "2026-11-15T06:26:03.377Z",
+        "auditFindings": [],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -146,21 +391,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-15T03:21:04.000Z",
         "sourceHash": "70989628a6417a3b3747627fcf1f326a85a109e1ed15850e658b8341c932b537",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-15T06:25:38.689Z",
-        "title": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
-        "summary": "It is the latest development in a months-long challenge to the president's plans for East Potomac Golf Links.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-15T06:26:03.377Z",
+        "title": "法官暂时阻止特朗普关闭华盛顿特区高尔夫球场进行翻修",
+        "summary": "法官临时阻止特朗普关闭位于华盛顿特区的高尔夫球场进行翻修，此举是对总统长期计划改造东波托马克高尔夫球场的挑战的最新进展。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "法官临时阻止特朗普关闭华盛顿特区的高尔夫球场进行翻修。",
+            "quote": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation"
+          },
+          {
+            "text": "这是对总统长期计划改造东波托马克高尔夫球场的挑战的最新进展。",
+            "quote": "It is the latest development in a months-long challenge to the president's plans for East Potomac Golf Links."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-15T06:26:03.377Z"
       }
     },
     {
@@ -211,7 +470,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -343,7 +603,7 @@
         "reader": "cnfin-body",
         "sha256": "a8738ea106a9c03d91f06147670f788eee40e165e0d4a6917b3be0a82fa57559",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261115/4495790_1.html",
-        "checkedAt": "2026-11-15T06:25:38.689Z"
+        "checkedAt": "2026-11-15T06:26:03.377Z"
       },
       "id": "a4c717fdec605a4621d8",
       "verificationStatus": "verified",
@@ -1340,7 +1600,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -4246,7 +4507,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -4498,7 +4760,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -4669,7 +4932,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6723,57 +6987,81 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 18
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "868642c1b94e1f61cb3e",
+      "selectedPublishedAt": "2026-11-15T06:00:01.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 13,
-      "originalSummaries": 13,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 2,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "audit": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 38,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 38,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 36,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 53,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 41,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 53,
-      "successRate": null
+      "skipped": 39,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
