@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-16T21:58:59.875Z",
+  "attemptedAt": "2026-11-16T21:59:34.731Z",
   "lastSuccessfulAt": "2026-11-16T21:58:59.875Z",
   "nextExpectedAt": "2026-11-17T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-16T21:58:59.875Z",
   "status": "delayed",
   "latest": [
     {
@@ -54,11 +56,27 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-16T21:58:59.875Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-16T21:59:34.731Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "f09948ef9cb2e9b1459c8f6367e8a58519bc2412e7e1b921dfce31e15cc68789",
+        "count": 1,
+        "lastAttemptAt": "2026-11-16T21:58:59.875Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "impact-assessment",
+          "fields": [
+            "personalImpact[0].score"
+          ]
+        }
       }
     },
     {
@@ -98,7 +116,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -113,7 +132,7 @@
       "fetchedAt": "2026-11-16T21:58:59.875Z",
       "id": "6c0d03e7f44c58cf1593",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "BBC News · 财经",
@@ -124,22 +143,33 @@
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
+        "宏观",
         "行业"
       ],
-      "eventTypes": [],
-      "impactChannels": [],
+      "eventTypes": [
+        "地缘风险",
+        "公司经营"
+      ],
+      "impactChannels": [
+        "供需",
+        "估值"
+      ],
       "regions": [
-        "全球"
+        "美国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|trumpbacksreturn|2026-11-16",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "A number of tech figures want the board of the AI chip giant to give Jensen Huang his job back."
+        "特朗普支持让前英伟达老板黄仁勋回归公司。",
+        "该倡议以“Bring Jensen Back”运动的形式推出。",
+        "多位科技界人士希望董事会重新任命黄仁勋。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "如果黄仁勋回归，可能影响公司治理结构和市场情绪"
+      ],
       "article": {
         "status": "summary",
         "text": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched\nA number of tech figures want the board of the AI chip giant to give Jensen Huang his job back.",
@@ -155,21 +185,238 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-16T19:16:52.000Z",
         "sourceHash": "0f1d4c89318f13a7891deb7fe8fbe71c865c621976e3b367d58809e338720183",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-16T21:58:59.875Z",
-        "title": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
-        "summary": "A number of tech figures want the board of the AI chip giant to give Jensen Huang his job back.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-16T21:59:34.731Z",
+        "title": "特朗普支持让前英伟达CEO黄仁勋复职",
+        "summary": "特朗普公开表示支持让前英伟达首席执行官黄仁勋重新回到公司董事会的职位。同时，多位科技界人士也呼吁英伟达董事会恢复黄仁勋的职务。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "特朗普公开支持让前英伟达老板黄仁勋回归公司。",
+            "quote": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched"
+          },
+          {
+            "text": "多位科技人物希望英伟达董事会重新任命黄仁勋。",
+            "quote": "A number of tech figures want the board of the AI chip giant to give Jensen Huang his job back."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-16T21:59:34.731Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "0f1d4c89318f13a7891deb7fe8fbe71c865c621976e3b367d58809e338720183",
+        "count": 1,
+        "lastAttemptAt": "2026-11-16T21:58:59.875Z"
+      },
+      "titleZh": "特朗普支持让前英伟达老板黄仁勋回归公司",
+      "summaryZh": "特朗普支持让前英伟达老板黄仁勋回归公司，倡议以“Bring Jensen Back”运动形式推出，多位科技界人士希望董事会重新任命黄仁勋。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "特朗普支持让前英伟达老板黄仁勋回归公司。",
+              "evidence": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched"
+            },
+            {
+              "text": "该倡议以“Bring Jensen Back”运动的形式推出。",
+              "evidence": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched"
+            },
+            {
+              "text": "多位科技界人士希望董事会重新任命黄仁勋。",
+              "evidence": "A number of tech figures want the board of the AI chip giant to give Jensen Huang his job back."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "美国",
+            "triggerEvidence": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
+            "path": [
+              "特朗普公开支持",
+              "媒体关注增加",
+              "投资者情绪波动"
+            ],
+            "invalidation": "若董事会不讨论人事变动，投资者情绪不会受影响"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "0f1d4c89318f13a7891deb7fe8fbe71c865c621976e3b367d58809e338720183",
+        "originalTitle": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
+        "reviewedAt": "2026-11-16T21:58:59.875Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "6c0d03e7f44c58cf1593",
+          "title": "特朗普支持让前英伟达老板黄仁勋回归公司",
+          "summary": "特朗普支持让前英伟达老板黄仁勋回归公司，倡议以“Bring Jensen Back”运动形式推出，多位科技界人士希望董事会重新任命黄仁勋。",
+          "excerpt": "特朗普公开表示支持黄仁勋回归英伟达，并有多位科技界人士呼吁董事会重新任命。",
+          "sourceName": "BBC News · 世界",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-16T19:16:52.000Z",
+          "region": "美股",
+          "topic": "企业治理",
+          "termIds": [],
+          "facts": [
+            "特朗普支持让前英伟达老板黄仁勋回归公司。",
+            "该倡议以“Bring Jensen Back”运动的形式推出。",
+            "多位科技界人士希望董事会重新任命黄仁勋。"
+          ],
+          "consensus": [
+            "暂无公开的市场共识"
+          ],
+          "inference": [
+            "如果黄仁勋回归，可能影响公司治理结构和市场情绪"
+          ],
+          "risks": [
+            "如果董事会不采纳倡议，特朗普的表态可能对公司实际人事无影响",
+            "若媒体关注度下降，投资者关注度可能快速减弱"
+          ],
+          "causalChain": [
+            {
+              "title": "特朗普公开支持",
+              "explanation": "特朗普的表态提升了该倡议的媒体曝光度。",
+              "condition": "特朗普发表支持黄仁勋回归的言论"
+            },
+            {
+              "title": "媒体关注增加",
+              "explanation": "媒体报道导致投资者对英伟达人事变动产生兴趣。",
+              "condition": "媒体对特朗普言论进行广泛报道"
+            },
+            {
+              "title": "投资者情绪波动",
+              "explanation": "投资者关注可能转化为股价的短期波动。",
+              "condition": "市场对高层人事变动的预期形成"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "职场中被迫离职的老板被员工和外部势力呼吁重新上任的情景",
+            "explanation": "类似于公司内部和外部力量共同推动高层回归，能短期提升团队士气，但若内部矛盾未解决，效果有限"
+          },
+          "why": {
+            "cause": "高层人事变动可能改变公司战略方向和市场预期",
+            "mechanisms": [
+              "董事会决策影响公司治理结构",
+              "媒体曝光改变投资者情绪",
+              "高层声誉影响品牌形象"
+            ],
+            "result": "可能导致英伟达股价出现短期波动"
+          },
+          "focus": [
+            "公司治理",
+            "市场情绪",
+            "投资者关注"
+          ],
+          "marketBet": [
+            "若黄仁勋回归，股价可能出现短期上行",
+            "若未回归，股价可能保持平稳"
+          ],
+          "expectationGap": "源文未提供市场对人事变动的预期，故无法比较实际与预期的差异",
+          "counterView": "也可能因内部冲突导致董事会维持现状，股价不受影响",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "投资者需关注英伟达股价波动",
+              "why": "高层变动可能影响公司业绩预期",
+              "invalidation": "若董事会坚持现状且无实质人事变动，则此影响不出现",
+              "condition": "若董事会坚持现状且无实质人事变动，则此影响不出现"
+            }
+          ],
+          "surface": "特朗普支持让前英伟达老板黄仁勋回归公司",
+          "next": [
+            "特朗普公开支持",
+            "媒体关注增加",
+            "投资者情绪波动"
+          ],
+          "condition": [
+            "特朗普发表支持黄仁勋回归的言论",
+            "媒体对特朗普言论进行广泛报道",
+            "市场对高层人事变动的预期形成"
+          ]
+        },
+        "watchItems": [
+          "英伟达董事会是否讨论人事变动",
+          "黄仁勋是否发表公开声明",
+          "特朗普相关言论后续是否继续发酵"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "0f1d4c89318f13a7891deb7fe8fbe71c865c621976e3b367d58809e338720183",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-16T21:59:34.731Z",
+        "state": "approved"
       }
     },
     {
@@ -222,7 +469,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -274,7 +522,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -532,7 +781,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -582,7 +832,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -632,7 +883,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -682,7 +934,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -732,7 +985,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -970,7 +1224,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1064,7 +1319,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -1104,7 +1360,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1692,7 +1949,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1999,7 +2257,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2810,7 +3069,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2950,7 +3210,7 @@
         "reader": "cnfin-body",
         "sha256": "f9127eaa24c424455c3ab2fd17db58f23adf86f26c15e5a62b6665716cb27baf",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261116/4496331_1.html",
-        "checkedAt": "2026-11-16T21:58:59.875Z"
+        "checkedAt": "2026-11-16T21:59:34.731Z"
       },
       "id": "5235a8850bfe38fd2ab8",
       "verificationStatus": "verified",
@@ -3064,7 +3324,7 @@
         "reader": "cnfin-body",
         "sha256": "db1d34cc53fe347443db77a02282c64d3d60edad597ce2ae9d3928c04e6f465d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261116/4496317_1.html",
-        "checkedAt": "2026-11-16T21:58:59.875Z"
+        "checkedAt": "2026-11-16T21:59:34.731Z"
       },
       "id": "4fc2ba7348938a1fcfe9",
       "verificationStatus": "verified",
@@ -7620,7 +7880,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7670,7 +7931,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7720,7 +7982,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -9952,57 +10215,81 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 34
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "a03bffcdd58539b0fce2",
+      "selectedPublishedAt": "2026-11-16T21:03:36.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 25,
-      "originalSummaries": 25,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "impact-assessment": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 63,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 63,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 61,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 87,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 64,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 87,
-      "successRate": null
+      "skipped": 62,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
