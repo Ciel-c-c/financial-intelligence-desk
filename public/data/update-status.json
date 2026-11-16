@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-16T06:24:50.935Z",
-  "lastSuccessfulAt": "2026-11-16T06:24:10.258Z",
+  "attemptedAt": "2026-11-16T21:58:59.875Z",
+  "lastSuccessfulAt": "2026-11-16T21:58:59.875Z",
   "status": "delayed",
   "datasets": [
     {
@@ -22,7 +22,7 @@
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-11-16T06:24:10.258Z"
+      "lastSuccessfulAt": "2026-11-16T21:58:59.875Z"
     }
   ],
   "sourceHealth": [
@@ -139,9 +139,8 @@
     {
       "id": "news-fed",
       "name": "Federal Reserve（新闻）",
-      "status": "error",
-      "itemCount": 0,
-      "error": "HTTP 404"
+      "status": "ok",
+      "itemCount": 20
     },
     {
       "id": "news-ecb",
@@ -153,7 +152,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 43
+      "itemCount": 44
     },
     {
       "id": "news-un",
@@ -187,55 +186,30 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
-      "id": "news-published-evidence",
-      "name": "Published evidence recheck（新闻）",
-      "status": "error",
-      "itemCount": 2,
-      "attempted": 2,
-      "unavailable": 0,
-      "invalidated": 15
-    },
-    {
-      "id": "news-review-queue",
-      "name": "复审队列诊断（新闻）",
-      "status": "ok",
-      "itemCount": 0,
-      "withBody": 0,
-      "withoutBody": 0,
-      "selectedId": "0f9d9fcde5cde819682a",
-      "selectedPublishedAt": "2026-11-16T01:47:57.000Z",
-      "selectedIsCurrent": true
-    },
-    {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 1,
-      "originalSummaries": 0,
-      "attempted": 2,
-      "generated": 1,
-      "requests": 10,
-      "rejectionReasons": {
-        "translation-unavailable": 1
-      }
+      "itemCount": 25,
+      "originalSummaries": 25,
+      "attempted": 0,
+      "generated": 0,
+      "requests": 0,
+      "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "error",
+      "status": "ok",
       "itemCount": 0,
-      "attempted": 2,
-      "rejected": 2,
+      "attempted": 0,
+      "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 2,
-        "analysis": 1,
+        "evidence": 0,
+        "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {
-        "numbers": 1,
-        "audit": 1
-      }
+      "rejectionReasons": {}
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
