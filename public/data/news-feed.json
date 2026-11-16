@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-16T06:24:10.258Z",
+  "attemptedAt": "2026-11-16T06:24:50.935Z",
   "lastSuccessfulAt": "2026-11-16T06:24:10.258Z",
   "nextExpectedAt": "2026-11-16T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-16T06:24:10.258Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -95,13 +98,21 @@
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
         "sourceBodyHash": "44506c0b51711950f881abf799eb89211599fc416fd1018052fab282ad11598b",
-        "count": 1,
-        "lastAttemptAt": "2026-11-15T18:49:26.305Z"
+        "count": 2,
+        "lastAttemptAt": "2026-11-16T06:24:10.258Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       },
       "queue": {
         "firstSeenAt": "2026-11-15T18:49:26.305Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "factualSummary": {
         "language": "en",
@@ -118,7 +129,9 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-16T06:24:50.935Z"
       }
     },
     {
@@ -174,21 +187,58 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Black Friday and tax return scams - don't fall for these",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cm4gnlz2p61ko?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-16T00:50:39.000Z",
         "sourceHash": "0d0bc701f80661dbe7b50856cb632748691f52d401dc3547ca171c7d12352fcb",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-16T06:24:10.258Z",
-        "title": "Black Friday and tax return scams - don't fall for these",
-        "summary": "Tens of thousands of scams are reported to HMRC - so it has advice on how to spot a fake request and refund.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-16T06:24:50.935Z",
+        "title": "黑色星期五与报税诈骗警示",
+        "summary": "英国税务海关总署（HMRC）提醒公众，黑色星期五期间以及报税季节常出现诈骗行为。该机构已收到数万起相关诈骗案件，并提供了辨别虚假退款请求的指南，帮助民众避免受骗。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "黑色星期五与报税诈骗警示的标题提醒公众防范此类骗局。",
+            "quote": "Black Friday and tax return scams - don't fall for these"
+          },
+          {
+            "text": "HMRC 收到数万起诈骗报告，并提供了识别假冒退款请求的建议。",
+            "quote": "Tens of thousands of scams are reported to HMRC - so it has advice on how to spot a fake request and refund."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-16T06:24:50.935Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "0d0bc701f80661dbe7b50856cb632748691f52d401dc3547ca171c7d12352fcb",
+        "count": 1,
+        "lastAttemptAt": "2026-11-16T06:24:10.258Z",
+        "auditFindings": [
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 0
+          },
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 1
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -647,7 +697,7 @@
         "reader": "cnfin-body",
         "sha256": "df0e37cb54d774f8cfbf84e4c2f4ce0c7a0df6a68b577ed7bc1754e75c29abfc",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261116/4495990_1.html",
-        "checkedAt": "2026-11-16T06:24:10.258Z"
+        "checkedAt": "2026-11-16T06:24:50.935Z"
       },
       "id": "2bc8c6acd0b3b3e886cc",
       "verificationStatus": "verified",
@@ -691,7 +741,7 @@
         "reader": "cnfin-body",
         "sha256": "bb35b47b2405f2975f6216bafd1394bc6678273f783689d9790b6bd078a3cdc0",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261116/4495988_1.html",
-        "checkedAt": "2026-11-16T06:24:10.258Z"
+        "checkedAt": "2026-11-16T06:24:50.935Z"
       },
       "id": "d17190a1449e7036b6f1",
       "verificationStatus": "verified",
@@ -1081,7 +1131,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1851,7 +1902,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -2482,7 +2534,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2648,7 +2701,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2876,7 +2930,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -6025,7 +6080,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -7211,57 +7267,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 15
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "0f9d9fcde5cde819682a",
+      "selectedPublishedAt": "2026-11-16T01:47:57.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 18,
-      "originalSummaries": 18,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 1,
+        "audit": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 42,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 42,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 40,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 59,
-      "attempted": 0,
+      "eligible": 45,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 59,
-      "successRate": null
+      "skipped": 43,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
