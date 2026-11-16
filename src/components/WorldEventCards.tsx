@@ -1,0 +1,3 @@
+import {Link} from 'react-router-dom';
+import {worldEvents} from '../data/worldEvents/registry';
+export function WorldEventCards(){return <section className="world-events-section" aria-labelledby="world-events-title"><div className="section-heading"><h2 id="world-events-title">今日值得理解</h2></div><p className="section-intro">人工整理的过往事件，用于理解机制，不作为今日新进展。</p><div className="world-event-grid">{worldEvents.map(event=><Link className="world-event-card" key={event.id} to={'/events/'+event.id}><div className="world-event-meta"><span>历史案例 · {event.period.label}</span><span>{event.experience==='interactive'?'交互解读':'基础解读'}</span></div><h3>{event.question}</h3><p>{event.value}</p><small>{event.domain.join(' · ')}</small></Link>)}</div></section>;}

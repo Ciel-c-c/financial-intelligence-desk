@@ -1,3 +1,5 @@
+import { WorldEventPage } from '../pages/WorldEventPage';
+import '../styles/eventReading.css';
 import { Route, Routes } from 'react-router-dom';
 import { AppShell } from './AppShell';
 import { TodayPage } from '../pages/TodayPage';
@@ -20,9 +22,10 @@ export function App() {
         <Route path="situation/:id" element={<GlobalEventPage />} />
         <Route path="learn" element={<LearnPage />} />
         <Route path="learn/:id" element={<LessonPage />} />
-        <Route path="news/:id" element={<NewsDetailPage />} />
+        <Route path="news/:id" element={<NewsDetailPage />} /><Route path="events/:id" element={<WorldEventPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes></BrowserTranslationProvider>
   );
 }
+
