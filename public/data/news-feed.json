@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-17T20:52:38.400Z",
+  "attemptedAt": "2026-11-17T20:53:14.263Z",
   "lastSuccessfulAt": "2026-11-17T20:52:38.400Z",
   "nextExpectedAt": "2026-11-18T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-17T20:52:38.400Z",
   "status": "delayed",
   "latest": [
     {
@@ -50,7 +52,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -156,11 +159,27 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-17T20:52:38.400Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-17T20:53:14.263Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "43a846e3e74a61c8a3ba2e5b600283ee53389db593974fb905f62f1a2a0cd132",
+        "count": 1,
+        "lastAttemptAt": "2026-11-17T20:52:38.400Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -224,6 +243,17 @@
         "summary": "联合国机构周二警告，加沙正面临日益严重的住所、环境卫生和粮食安全危机。冬季降雨淹没了临时住所，毁坏了本就有限的食物储备，让流离失所的家庭更难保暖和维持温饱。&nbsp;",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "e665cdb142dc33e51bf0142fdafb60ef82e2c6c431703de84830116ad3a6af10",
+        "count": 1,
+        "lastAttemptAt": "2026-11-17T20:52:38.400Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -400,7 +430,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -450,7 +481,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -500,7 +532,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -550,7 +583,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -609,21 +643,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-17T18:24:21.000Z",
         "sourceHash": "d54095f3e27bd6298e269c24c0f9226dd8128992e1e09f95a2b3933c4882b3d2",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-17T20:52:38.400Z",
-        "title": "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
-        "summary": "Huang says he has had an \"outpouring\" of calls from investors and others calling for him to return.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-17T20:53:14.263Z",
+        "title": "黄仁勋称若董事会邀请，他将荣幸重返英伟达CEO",
+        "summary": "黄仁勋表示，如果英伟达董事会提出请求，他愿意再次担任首席执行官，并称自己会感到荣幸。同时，他透露近期收到大量投资者及其他人士的来电，呼吁他回归公司领导层。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "黄仁勋称若董事会邀请，他将荣幸重新担任英伟达CEO。",
+            "quote": "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him"
+          },
+          {
+            "text": "黄仁勋表示，近期收到投资者等人士的大量来电，要求他回归公司。",
+            "quote": "Huang says he has had an \"outpouring\" of calls from investors and others calling for him to return."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-17T20:53:14.263Z"
       }
     },
     {
@@ -1085,7 +1133,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2702,7 +2751,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2824,7 +2874,7 @@
         "reader": "cnfin-body",
         "sha256": "e2402ae84e48fbfec3f805b607ea9a4f456c7875ffbdb273a4a04cdf727b67eb",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261117/4496901_1.html",
-        "checkedAt": "2026-11-17T20:52:38.400Z"
+        "checkedAt": "2026-11-17T20:53:14.263Z"
       },
       "id": "9a5d1bb2014616b2e226",
       "verificationStatus": "verified",
@@ -2913,7 +2963,7 @@
         "reader": "cnfin-body",
         "sha256": "a8ed957c8d4912d820844531274cfd0429335dc78e41ba99fa26df4f5c428227",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261117/4496894_1.html",
-        "checkedAt": "2026-11-17T20:52:38.400Z"
+        "checkedAt": "2026-11-17T20:53:14.263Z"
       },
       "id": "bcce1e34f0ed69c057aa",
       "verificationStatus": "verified",
@@ -9515,7 +9565,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -10206,7 +10257,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -10258,7 +10310,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -10596,7 +10649,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -10646,7 +10700,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -10696,7 +10751,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     }
   ],
   "sourceHealth": [
@@ -10781,57 +10837,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 21
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "5f029ab0aeae5c7dc128",
+      "selectedPublishedAt": "2026-11-17T19:44:59.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 31,
-      "originalSummaries": 31,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 9,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 1,
+        "personal-impact": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 86,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 86,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 84,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 99,
-      "attempted": 0,
+      "eligible": 82,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 99,
-      "successRate": null
+      "skipped": 80,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
