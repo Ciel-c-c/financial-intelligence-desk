@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-17T07:52:24.608Z",
+  "attemptedAt": "2026-11-17T07:52:59.736Z",
   "lastSuccessfulAt": "2026-11-17T07:52:24.608Z",
   "nextExpectedAt": "2026-11-17T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-17T07:52:24.608Z",
   "status": "delayed",
   "latest": [
     {
@@ -43,7 +45,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -58,7 +61,7 @@
       "fetchedAt": "2026-11-17T07:52:24.608Z",
       "id": "020f90c31fa6c89dd5ce",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "BBC News · 财经",
@@ -69,22 +72,32 @@
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
+        "宏观",
         "行业"
       ],
-      "eventTypes": [],
+      "eventTypes": [
+        "地缘风险",
+        "监管"
+      ],
       "impactChannels": [],
       "regions": [
+        "美国",
         "全球"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|nvidiadismissesb|2026-11-17",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "A number of tech figures have backed an effort asking the AI chip giant to give Jensen Huang his job back."
+        "英伟达驳回“让黄仁勋回归”运动",
+        "特朗普支持让黄仁勋重新担任公司职务的努力",
+        "多位科技界人士支持要求英伟达恢复黄仁勋职位的呼声"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "如果外部政治压力持续增加，英伟达可能面临更大的舆论关注",
+        "若公司内部治理结构稳固，外部呼声对实际人事安排的影响有限"
+      ],
       "article": {
         "status": "summary",
         "text": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss\nA number of tech figures have backed an effort asking the AI chip giant to give Jensen Huang his job back.",
@@ -100,21 +113,250 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-17T02:37:53.000Z",
         "sourceHash": "fec3d03996faa38dd188a662de45241c31f35bb7d36b1af2447a0db598f80602",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-17T07:52:24.608Z",
-        "title": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss",
-        "summary": "A number of tech figures have backed an effort asking the AI chip giant to give Jensen Huang his job back.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-17T07:52:59.736Z",
+        "title": "英伟达驳回“让黄仁勋回归”呼声，特朗普支持恢复其职位",
+        "summary": "英伟达否认了“让黄仁勋回归”的运动，同时美国前总统特朗普公开支持让这位前首席执行官重新担任职务。多位科技界人士也加入呼吁，要求英伟达恢复黄仁勋的职位。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "英伟达驳回了“让黄仁勋回归”的运动，并指出特朗普支持让这位前老板重新上任。",
+            "quote": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss"
+          },
+          {
+            "text": "多位科技人物支持呼吁英伟达让黄仁勋重新担任公司职务。",
+            "quote": "A number of tech figures have backed an effort asking the AI chip giant to give Jensen Huang his job back."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-17T07:52:59.736Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "fec3d03996faa38dd188a662de45241c31f35bb7d36b1af2447a0db598f80602",
+        "count": 1,
+        "lastAttemptAt": "2026-11-17T07:52:24.608Z"
+      },
+      "titleZh": "英伟达驳回“让黄仁勋回归”运动，特朗普支持呼声",
+      "summaryZh": "英伟达公开否认了要求前CEO黄仁勋复职的社交运动，同时美国前总统特朗普表达了对该呼声的支持，多位科技界人士也加入了呼吁。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "英伟达驳回“让黄仁勋回归”运动",
+              "evidence": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss"
+            },
+            {
+              "text": "特朗普支持让黄仁勋重新担任公司职务的努力",
+              "evidence": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss"
+            },
+            {
+              "text": "多位科技界人士支持要求英伟达恢复黄仁勋职位的呼声",
+              "evidence": "A number of tech figures have backed an effort asking the AI chip giant to give Jensen Huang his job back."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "美国",
+            "triggerEvidence": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss",
+            "path": [
+              "特朗普支持",
+              "舆论放大",
+              "公司驳回声明",
+              "投资者情绪波动"
+            ],
+            "invalidation": "公司若发布明确的治理稳健声明，舆论风险减弱"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "英伟达股票",
+            "direction": "中性",
+            "reason": "当前仅为舆论层面争议，未见实际治理变动",
+            "condition": "公司未发布进一步人事变动信息",
+            "invalidation": "若公司宣布重大治理调整或恢复黄仁勋职务，股价方向可能转为上行或下行",
+            "timeframe": "短期至中期"
+          }
+        ],
+        "sourceBodyHash": "fec3d03996faa38dd188a662de45241c31f35bb7d36b1af2447a0db598f80602",
+        "originalTitle": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss",
+        "reviewedAt": "2026-11-17T07:52:24.608Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "020f90c31fa6c89dd5ce",
+          "title": "英伟达驳回“让黄仁勋回归”运动，特朗普支持呼声",
+          "summary": "英伟达公开否认了要求前CEO黄仁勋复职的社交运动，同时美国前总统特朗普表达了对该呼声的支持，多位科技界人士也加入了呼吁。",
+          "excerpt": "英伟达驳回“让黄仁勋回归”运动，特朗普支持让黄仁勋重新担任公司职务的努力，多位科技界人士支持要求英伟达恢复黄仁勋职位的呼声。",
+          "sourceName": "BBC News · 世界",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-17T02:37:53.000Z",
+          "region": "美股",
+          "topic": "企业治理与政治介入",
+          "termIds": [],
+          "facts": [
+            "英伟达驳回“让黄仁勋回归”运动",
+            "特朗普支持让黄仁勋重新担任公司职务的努力",
+            "多位科技界人士支持要求英伟达恢复黄仁勋职位的呼声"
+          ],
+          "consensus": [
+            "公开的企业声明与外部政治人物的表态往往不直接决定公司治理决策"
+          ],
+          "inference": [
+            "如果外部政治压力持续增加，英伟达可能面临更大的舆论关注",
+            "若公司内部治理结构稳固，外部呼声对实际人事安排的影响有限"
+          ],
+          "risks": [
+            "政治人物介入企业人事可能引发监管审查",
+            "持续的舆论争议可能影响公司品牌形象",
+            "若公司内部股东对人事变动持不同意见，可能导致内部治理冲突"
+          ],
+          "causalChain": [
+            {
+              "title": "特朗普公开支持呼声",
+              "explanation": "前总统的表态提升了媒体关注度和公众讨论",
+              "condition": "特朗普在公开场合表达支持"
+            },
+            {
+              "title": "科技界人士加入呼声",
+              "explanation": "行业领袖的背书进一步放大了舆论压力",
+              "condition": "多位科技人物公开发表支持"
+            },
+            {
+              "title": "英伟达官方驳回运动",
+              "explanation": "公司通过声明否认恢复黄仁勋的计划，以维护治理独立性",
+              "condition": "公司发布正式声明"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "公司内部的门禁系统被外部访客敲门",
+            "explanation": "门禁系统（公司治理）由内部控制，外部访客（政治人物、行业领袖）敲门只能增加注意力，但不一定能打开门。若门禁本身设计严密，敲门不会改变进入权限。"
+          },
+          "why": {
+            "cause": "外部政治与行业声援提升了对公司人事决策的公众关注",
+            "mechanisms": [
+              "媒体报道放大舆论",
+              "政治人物的言论可能被解读为潜在监管信号",
+              "行业领袖的背书增加了内部股东的压力"
+            ],
+            "result": "英伟达选择公开驳回，以示治理独立并防止外部干预影响内部决策"
+          },
+          "focus": [
+            "公司治理独立性",
+            "品牌声誉",
+            "潜在监管风险"
+          ],
+          "marketBet": [
+            "若舆论持续升温，监管部门可能关注公司治理结构",
+            "公司若进一步澄清人事政策，品牌声誉可能恢复稳定"
+          ],
+          "expectationGap": "源材料未提供市场对英伟达人事变动的先前预期，故无法比较实际与预期的差异。",
+          "counterView": "部分观察者可能认为政治人物的介入仅是象征性表达，对公司实际运营影响有限。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "投资者可能因舆论不确定性而短期持观望态度",
+              "why": "公司人事争议可能被视为治理风险，影响股价波动预期",
+              "invalidation": "若公司随后发布明确的治理稳健声明，舆论风险将被削弱",
+              "condition": "若公司随后发布明确的治理稳健声明，舆论风险将被削弱"
+            }
+          ],
+          "surface": "英伟达驳回“让黄仁勋回归”运动，特朗普支持呼声",
+          "next": [
+            "特朗普公开支持呼声",
+            "科技界人士加入呼声",
+            "英伟达官方驳回运动"
+          ],
+          "condition": [
+            "特朗普在公开场合表达支持",
+            "多位科技人物公开发表支持",
+            "公司发布正式声明"
+          ]
+        },
+        "watchItems": [
+          "英伟达后续是否发布更详细的人事政策说明",
+          "特朗普或其他政治人物是否继续发表相关言论",
+          "科技行业领袖是否组织进一步的公开行动"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "fec3d03996faa38dd188a662de45241c31f35bb7d36b1af2447a0db598f80602",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-17T07:52:59.736Z",
+        "state": "approved"
       }
     },
     {
@@ -130,7 +372,7 @@
       "fetchedAt": "2026-11-17T07:52:24.608Z",
       "id": "51c1e4ec4131e02d5629",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "CNBC",
@@ -140,21 +382,35 @@
       ],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
+      "analysisLevels": [
+        "宏观",
+        "行业"
+      ],
+      "eventTypes": [
+        "监管",
+        "公司经营"
+      ],
+      "impactChannels": [
+        "供需",
+        "盈利"
+      ],
       "regions": [
-        "全球"
+        "美国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|unitedairlinesre|2026-11-17",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "The airline said there was no impact on flights in progress and there was no indication the outage was a cyberattack."
+        "美国联合航空的系统故障影响了起飞航班。",
+        "该故障未对正在飞行的航班产生影响。",
+        "公司未发现此故障与网络攻击有关。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若故障持续时间延长，可能导致更多航班取消。",
+        "若航空公司快速恢复系统，影响可在短期内被限制。"
+      ],
       "article": {
         "status": "summary",
         "text": "United Airlines resolves system outage that affected departing flights\nThe airline said there was no impact on flights in progress and there was no indication the outage was a cyberattack.",
@@ -166,11 +422,220 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-17T07:52:24.608Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-17T07:52:59.736Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "008a083dd8b03c8cbd058df9a41e3a5d39057d0b332d556309be503eeee2f1f9",
+        "count": 1,
+        "lastAttemptAt": "2026-11-17T07:52:24.608Z"
+      },
+      "titleZh": "美国联合航空系统故障导致起飞航班受影响",
+      "summaryZh": "联合航空确认系统故障影响了起飞航班，但未波及已在空中航班，且未发现网络攻击迹象。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "美国联合航空的系统故障影响了起飞航班。",
+              "evidence": "United Airlines resolves system outage that affected departing flights"
+            },
+            {
+              "text": "该故障未对正在飞行的航班产生影响。",
+              "evidence": "The airline said there was no impact on flights in progress and there was no indication the outage was a cyberattack."
+            },
+            {
+              "text": "公司未发现此故障与网络攻击有关。",
+              "evidence": "The airline said there was no impact on flights in progress and there was no indication the outage was a cyberattack."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "美国",
+            "triggerEvidence": "United Airlines resolves system outage that affected departing flights",
+            "path": [
+              "系统故障",
+              "起飞航班受影响",
+              "乘客延误与取消"
+            ],
+            "invalidation": "若系统在24小时内完全恢复且未出现进一步延误"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "008a083dd8b03c8cbd058df9a41e3a5d39057d0b332d556309be503eeee2f1f9",
+        "originalTitle": "United Airlines resolves system outage that affected departing flights",
+        "reviewedAt": "2026-11-17T07:52:24.608Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "51c1e4ec4131e02d5629",
+          "title": "美国联合航空系统故障导致起飞航班受影响",
+          "summary": "联合航空确认系统故障影响了起飞航班，但未波及已在空中航班，且未发现网络攻击迹象。",
+          "excerpt": "系统故障影响了起飞航班，未对正在飞行的航班产生影响，也未发现网络攻击。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/11/16/united-airlines-outage-faa.html",
+          "publishedAt": "2026-11-17T00:00:49.000Z",
+          "region": "美股",
+          "topic": "航空运营",
+          "termIds": [],
+          "facts": [
+            "美国联合航空的系统故障影响了起飞航班。",
+            "该故障未对正在飞行的航班产生影响。",
+            "公司未发现此故障与网络攻击有关。"
+          ],
+          "consensus": [
+            "系统故障通常会导致航班延误或取消。"
+          ],
+          "inference": [
+            "若故障持续时间延长，可能导致更多航班取消。",
+            "若航空公司快速恢复系统，影响可在短期内被限制。"
+          ],
+          "risks": [
+            "故障若被确认与网络攻击有关，可能引发监管审查。",
+            "若系统恢复不彻底，后续可能出现连锁延误。",
+            "乘客对航空公司信任下降，可能影响未来预订。"
+          ],
+          "causalChain": [
+            {
+              "title": "系统故障",
+              "explanation": "航空公司核心调度系统出现技术故障。",
+              "condition": "故障已被确认并导致航班调度中断。"
+            },
+            {
+              "title": "起飞航班受影响",
+              "explanation": "受故障影响的航班无法按计划起飞。",
+              "condition": "故障未在起飞前修复。"
+            },
+            {
+              "title": "乘客延误与取消",
+              "explanation": "受影响的航班导致乘客等待或改签。",
+              "condition": "航班未能及时恢复正常。"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "城市交通信号灯故障导致车辆排队",
+            "explanation": "信号灯失灵会让车辆在交叉口停滞，类似系统故障让航班无法起飞。该类比适用于说明单点技术失效的连锁效应，但不适用于解释航空公司整体财务表现。"
+          },
+          "why": {
+            "cause": "系统故障导致航班调度中断",
+            "mechanisms": [
+              "调度系统无法生成起飞指令",
+              "机组人员等待系统确认",
+              "地面服务受限"
+            ],
+            "result": "航班延误或取消，乘客体验受损"
+          },
+          "focus": [
+            "航班准点率",
+            "乘客满意度",
+            "航空公司运营成本"
+          ],
+          "marketBet": [
+            "若系统快速恢复，短期内对航空公司股价影响有限",
+            "若故障导致多次取消，可能出现股价下行压力"
+          ],
+          "expectationGap": "来源未提供市场对该故障的预期，故无法比较实际影响与先前预期的差异。",
+          "counterView": "有观点认为单次技术故障对大型航空公司整体业绩影响有限，因为其拥有备份系统和财务缓冲。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "航空公司股价可能因短期运营波动出现波动",
+              "why": "系统故障导致航班延误，投资者关注运营可靠性",
+              "invalidation": "若公司公布已完全恢复且未出现进一步延误，则股价波动可能被抑制",
+              "condition": "若公司公布已完全恢复且未出现进一步延误，则股价波动可能被抑制"
+            }
+          ],
+          "surface": "美国联合航空系统故障导致起飞航班受影响",
+          "next": [
+            "系统故障",
+            "起飞航班受影响",
+            "乘客延误与取消"
+          ],
+          "condition": [
+            "故障已被确认并导致航班调度中断。",
+            "故障未在起飞前修复。",
+            "航班未能及时恢复正常。"
+          ]
+        },
+        "watchItems": [
+          "后续是否公布故障具体技术原因。",
+          "是否有乘客投诉或赔偿请求增加。",
+          "系统恢复进度报告。",
+          "监管机构是否介入调查。"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "008a083dd8b03c8cbd058df9a41e3a5d39057d0b332d556309be503eeee2f1f9",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-17T07:52:59.736Z",
+        "state": "approved"
       }
     },
     {
@@ -189,7 +654,7 @@
         "reader": "cnfin-body",
         "sha256": "28d46365a048772ce43b19b792c397d29833e877cc078f07cf0f13d6fad3d61a",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261117/4496643_1.html",
-        "checkedAt": "2026-11-17T07:52:24.608Z"
+        "checkedAt": "2026-11-17T07:52:59.736Z"
       },
       "id": "276e7ea0eafd33d8691b",
       "verificationStatus": "verified",
@@ -297,7 +762,7 @@
         "reader": "cnfin-body",
         "sha256": "f6d7f9940af393c09b078f8e8221c9588def27baa92fec3888851b870712ec60",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261117/4496627_1.html",
-        "checkedAt": "2026-11-17T07:52:24.608Z"
+        "checkedAt": "2026-11-17T07:52:59.736Z"
       },
       "id": "0193358559a24db0aa4d",
       "verificationStatus": "verified",
@@ -1062,7 +1527,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -1411,7 +1877,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1463,7 +1930,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -1801,7 +2269,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1851,7 +2320,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1901,7 +2371,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1951,7 +2422,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -2001,7 +2473,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -2051,7 +2524,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -2101,7 +2575,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -2909,7 +3384,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -3467,7 +3943,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -3507,7 +3984,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -4159,7 +4637,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5343,7 +5822,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -7036,7 +7516,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -9971,57 +10452,79 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 29
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "020f90c31fa6c89dd5ce",
+      "selectedPublishedAt": "2026-11-17T02:37:53.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 16,
-      "originalSummaries": 16,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
+      "itemCount": 2,
+      "attempted": 2,
       "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 2,
+        "audit": 2
       },
       "rejectionReasons": {}
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 71,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 71,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 69,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 97,
-      "attempted": 0,
-      "succeeded": 0,
+      "eligible": 72,
+      "attempted": 2,
+      "succeeded": 2,
       "rejected": 0,
       "failed": 0,
-      "skipped": 97,
-      "successRate": null
+      "skipped": 70,
+      "successRate": 1
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
