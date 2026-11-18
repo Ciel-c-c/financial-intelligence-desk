@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-18T07:24:29.306Z",
+  "attemptedAt": "2026-11-18T07:25:01.087Z",
   "lastSuccessfulAt": "2026-11-18T07:24:29.306Z",
   "nextExpectedAt": "2026-11-18T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-18T07:24:29.306Z",
   "status": "delayed",
   "latest": [
     {
@@ -18,7 +20,7 @@
       "fetchedAt": "2026-11-18T07:24:29.306Z",
       "id": "d770b2bb3c15208e8ccb",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "BBC News · 财经",
@@ -34,10 +36,13 @@
         "宏观"
       ],
       "eventTypes": [
+        "货币政策",
         "经济数据"
       ],
       "impactChannels": [
-        "通胀"
+        "通胀",
+        "供需",
+        "盈利"
       ],
       "regions": [
         "全球"
@@ -45,12 +50,17 @@
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "经济数据|higherfuelprices|2026-11-18",
-      "detailStatus": "professional",
+      "detailStatus": "so-what",
       "facts": [
-        "There are also signs inflation is impacting the wider economy, with the cost raw materials and goods leaving factories climbing."
+        "由于燃料价格上升，英国通胀率升至3.6%。",
+        "通胀已开始影响更广泛的经济。",
+        "原材料和出厂商品的成本正在上升。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若燃料价格继续上行，通胀压力可能进一步加大，原材料成本将进一步上升。",
+        "若通胀持续高位，企业可能面临成本压缩，利润率受压。"
+      ],
       "article": {
         "status": "summary",
         "text": "Higher fuel prices push UK inflation to 3.6%\nThere are also signs inflation is impacting the wider economy, with the cost raw materials and goods leaving factories climbing.",
@@ -66,21 +76,257 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Higher fuel prices push UK inflation to 3.6%",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-18T07:15:33.000Z",
         "sourceHash": "0412d676d26772e7550e27af6d8ea033a7d2a50bb8b9cbdafb17bf39055ec809",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-18T07:24:29.306Z",
-        "title": "Higher fuel prices push UK inflation to 3.6%",
-        "summary": "There are also signs inflation is impacting the wider economy, with the cost raw materials and goods leaving factories climbing.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-18T07:25:01.087Z",
+        "title": "燃油价格上涨致英国通胀升至3.6%",
+        "summary": "英国通胀率因燃油价格上升而达到3.6%。与此同时，通胀已开始影响更广泛的经济，原材料和出厂商品的成本出现上升趋势。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "燃油价格上涨使英国通胀率升至3.6%。",
+            "quote": "Higher fuel prices push UK inflation to 3.6%"
+          },
+          {
+            "text": "通胀正影响更广泛的经济，原材料和出厂商品的成本正在上升。",
+            "quote": "There are also signs inflation is impacting the wider economy, with the cost raw materials and goods leaving factories"
+          },
+          {
+            "text": "原材料和出厂商品的成本呈上升趋势。",
+            "quote": "the cost raw materials and goods leaving factories climbing."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-18T07:25:01.087Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "0412d676d26772e7550e27af6d8ea033a7d2a50bb8b9cbdafb17bf39055ec809",
+        "count": 1,
+        "lastAttemptAt": "2026-11-18T07:24:29.306Z"
+      },
+      "titleZh": "燃料价格上涨推高英国通胀至3.6%",
+      "summaryZh": "燃料价格上升导致英国通胀率升至3.6%，并且原材料及出厂商品成本同步上升，显示通胀已波及更广泛的经济领域。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "由于燃料价格上升，英国通胀率升至3.6%。",
+              "evidence": "Higher fuel prices push UK inflation to 3.6%"
+            },
+            {
+              "text": "通胀已开始影响更广泛的经济。",
+              "evidence": "There are also signs inflation is impacting the wider economy, with the cost raw materials and goods leaving factories"
+            },
+            {
+              "text": "原材料和出厂商品的成本正在上升。",
+              "evidence": "the cost raw materials and goods leaving factories climbing."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "英国",
+            "triggerEvidence": "Higher fuel prices push UK inflation to 3.6%",
+            "path": [
+              "燃料价格上升",
+              "通胀率升至3.6%",
+              "原材料成本上升",
+              "企业利润受压",
+              "投资意愿下降"
+            ],
+            "invalidation": "若能源补贴显著降低燃料成本，企业利润压力减轻，投资意愿恢复。"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "英国",
+            "triggerEvidence": "There are also signs inflation is impacting the wider economy, with the cost raw materials and goods leaving factories",
+            "path": [
+              "燃料价格上升",
+              "通胀率升至3.6%",
+              "家庭能源支出上升",
+              "可支配收入被挤压",
+              "非必需品消费下降"
+            ],
+            "invalidation": "若政府提供能源补贴或税收减免，家庭能源支出下降，消费压缩效应减弱。"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "0412d676d26772e7550e27af6d8ea033a7d2a50bb8b9cbdafb17bf39055ec809",
+        "originalTitle": "Higher fuel prices push UK inflation to 3.6%",
+        "reviewedAt": "2026-11-18T07:24:29.306Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "d770b2bb3c15208e8ccb",
+          "title": "燃料价格上涨推高英国通胀至3.6%",
+          "summary": "燃料价格上升导致英国通胀率升至3.6%，并且原材料及出厂商品成本同步上升，显示通胀已波及更广泛的经济领域。",
+          "excerpt": "燃料价格上升推动英国通胀至3.6%，并导致原材料和出厂商品成本上升，表明通胀正影响更广泛的经济。",
+          "sourceName": "BBC News · 财经",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-18T07:15:33.000Z",
+          "region": "全球",
+          "topic": "通胀与能源价格",
+          "termIds": [],
+          "facts": [
+            "由于燃料价格上升，英国通胀率升至3.6%。",
+            "通胀已开始影响更广泛的经济。",
+            "原材料和出厂商品的成本正在上升。"
+          ],
+          "consensus": [
+            "暂无明确的市场共识"
+          ],
+          "inference": [
+            "若燃料价格继续上行，通胀压力可能进一步加大，原材料成本将进一步上升。",
+            "若通胀持续高位，企业可能面临成本压缩，利润率受压。"
+          ],
+          "risks": [
+            "若能源政策出现补贴或税收调整，燃料价格可能回落，通胀压力减弱。",
+            "若全球油价出现显著下跌，英国燃料成本将下降，通胀上行动力削弱。"
+          ],
+          "causalChain": [
+            {
+              "title": "燃料价格上升",
+              "explanation": "国际油价或国内税费导致零售燃料价格上涨。",
+              "condition": "燃料价格持续高于近期平均水平"
+            },
+            {
+              "title": "通胀率升至3.6%",
+              "explanation": "燃料价格是重要的消费品价格组成部分，其上涨直接推高整体CPI。",
+              "condition": "燃料价格上涨对CPI权重产生显著影响"
+            },
+            {
+              "title": "原材料及出厂商品成本上升",
+              "explanation": "通胀传导至生产环节，导致原材料采购和物流成本增加。",
+              "condition": "企业在成本转嫁过程中未能完全消化成本"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "家庭预算被燃气费涨价冲击",
+            "explanation": "就像家庭每月的燃气费突然上涨，会迫使其他开支被压缩，企业和投资者也会在成本上升时削减支出。该类比适用于短期成本冲击，但不适用于长期结构性需求变化。"
+          },
+          "why": {
+            "cause": "燃料价格上涨导致整体物价水平上升",
+            "mechanisms": [
+              "燃料是运输和生产的重要投入，价格上行直接推高物流成本",
+              "消费者支出在能源上占比提升，抑制其他消费"
+            ],
+            "result": "企业利润空间受压，投资意愿下降，消费结构可能出现调整"
+          },
+          "focus": [
+            "通胀走势",
+            "企业成本压力",
+            "投资与消费行为"
+          ],
+          "marketBet": [
+            "若燃料价格继续上行，企业资本支出可能放缓",
+            "若通胀保持高位，央行可能考虑收紧货币政策"
+          ],
+          "expectationGap": "来源未提供市场对通胀或燃料价格的具体预期，故无法比较实际与先前预期的差异。",
+          "counterView": "若政府通过能源补贴或税收减免抵消燃料涨价，通胀压力可能被部分抑制。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "企业成本上升可能导致资本支出放缓，影响投资回报预期。",
+              "why": "原材料和物流成本上升压缩利润空间，企业倾向推迟或削减新项目。",
+              "invalidation": "若能源补贴或税收减免显著降低燃料成本，企业成本压力将减轻，投资意愿恢复。",
+              "condition": "若能源补贴或税收减免显著降低燃料成本，企业成本压力将减轻，投资意愿恢复。"
+            },
+            {
+              "label": "消费",
+              "impact": "家庭能源支出上升将挤压可支配收入，削减非必需品消费。",
+              "why": "能源费用在家庭预算中占比提升，导致其他消费项目被削减。",
+              "invalidation": "若家庭能源支出因政策补贴下降，消费压缩效应将减弱。",
+              "condition": "若家庭能源支出因政策补贴下降，消费压缩效应将减弱。"
+            }
+          ],
+          "surface": "燃料价格上涨推高英国通胀至3.6%",
+          "next": [
+            "燃料价格上升",
+            "通胀率升至3.6%",
+            "原材料及出厂商品成本上升"
+          ],
+          "condition": [
+            "燃料价格持续高于近期平均水平",
+            "燃料价格上涨对CPI权重产生显著影响",
+            "企业在成本转嫁过程中未能完全消化成本"
+          ]
+        },
+        "watchItems": [
+          "英国能源部公布的燃料税率调整",
+          "英国统计局最新CPI数据",
+          "主要原材料（如钢铁、塑料）价格走势"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "0412d676d26772e7550e27af6d8ea033a7d2a50bb8b9cbdafb17bf39055ec809",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-18T07:25:01.087Z",
+        "state": "approved"
       }
     },
     {
@@ -128,7 +374,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -187,8 +434,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-18T07:24:29.306Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "factualSummary": {
         "language": "en",
@@ -205,7 +453,20 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-18T07:25:01.087Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "1a0793904df3470dbc6919a2510ecc18b8e7c8781ff078f7456c937ea7306e24",
+        "count": 1,
+        "lastAttemptAt": "2026-11-18T07:24:29.306Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -319,7 +580,7 @@
         "reader": "cnfin-body",
         "sha256": "26af36779608a4911f43ad7ee39a9ca31bc88f068ecb5c32f2bf393cc469c644",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261118/4497101_1.html",
-        "checkedAt": "2026-11-18T07:24:29.306Z"
+        "checkedAt": "2026-11-18T07:25:01.087Z"
       },
       "id": "ee27871c58735d6ede05",
       "verificationStatus": "verified",
@@ -485,7 +746,7 @@
         "reader": "cnfin-body",
         "sha256": "dee1aa2d935c522ff79d512f1d503ae1ec337d8ee254afcd0a002a77057ca37b",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261118/4497081_1.html",
-        "checkedAt": "2026-11-18T07:24:29.306Z"
+        "checkedAt": "2026-11-18T07:25:01.087Z"
       },
       "id": "ca4b79ea1b5ea688a91f",
       "verificationStatus": "verified",
@@ -1793,7 +2054,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1843,7 +2105,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1893,7 +2156,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1943,7 +2207,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1993,7 +2258,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -2043,7 +2309,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -2443,7 +2710,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -3425,7 +3693,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -8621,7 +8890,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -9597,7 +9867,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -10598,57 +10869,81 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 21
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "d770b2bb3c15208e8ccb",
+      "selectedPublishedAt": "2026-11-18T07:15:33.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 16,
-      "originalSummaries": 16,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 9,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "personal-impact": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 10,
-      "failed": 3,
-      "successRate": 0.7692307692307693
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 79,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 79,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 77,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 95,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 75,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 95,
-      "successRate": null
+      "skipped": 73,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
