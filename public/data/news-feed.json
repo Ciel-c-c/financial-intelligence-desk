@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-18T20:28:36.808Z",
+  "attemptedAt": "2026-11-18T20:29:12.901Z",
   "lastSuccessfulAt": "2026-11-18T20:28:36.808Z",
   "nextExpectedAt": "2026-11-19T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-18T20:28:36.808Z",
   "status": "delayed",
   "latest": [
     {
@@ -46,7 +48,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -105,8 +108,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-18T20:28:36.808Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "factualSummary": {
         "language": "en",
@@ -123,7 +127,47 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-18T20:29:12.901Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "ba73995c5717d737ae88e7eb55c05c26491f89478c0bbbece8b0b68c6454aeeb",
+        "count": 1,
+        "lastAttemptAt": "2026-11-18T20:28:36.808Z",
+        "auditFindings": [
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 0
+          },
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 1
+          },
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 2
+          },
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 3
+          },
+          {
+            "category": "causal-gap",
+            "section": "causalEdges",
+            "index": 4
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -187,6 +231,17 @@
         "summary": "国际原子能机构总干事格罗西周三在维也纳向理事会介绍机构工作情况时表示，伊朗核查监督工作因无法获取相关信息和进入核设施而陷入停滞，乌克兰军事冲突持续威胁核设施安全，朝鲜核计划也在进一步推进。与此同时，全球核电发展势头增强，原子能机构将继续推动核能和平利用和核技术国际合作。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "30582b38335e6fea9c5b779ba9020dfc0912af9be8d2020cfed92d22dce2a0bf",
+        "count": 1,
+        "lastAttemptAt": "2026-11-18T20:28:36.808Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -237,7 +292,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -287,7 +343,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -338,11 +395,14 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-18T20:28:36.808Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-length"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-length",
+        "attemptedAt": "2026-11-18T20:29:12.901Z"
       }
     },
     {
@@ -561,7 +621,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "ecb",
@@ -600,7 +661,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1341,7 +1403,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2821,7 +2884,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2951,7 +3015,7 @@
         "reader": "cnfin-body",
         "sha256": "6e506a85130a1e9c01ac5d198cdb5129027dd37a4faf5dbe9282f55fe438d449",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261118/4497370_1.html",
-        "checkedAt": "2026-11-18T20:28:36.808Z"
+        "checkedAt": "2026-11-18T20:29:12.901Z"
       },
       "id": "56692fbd1faaa91eba4d",
       "verificationStatus": "verified",
@@ -3179,7 +3243,7 @@
         "reader": "cnfin-body",
         "sha256": "1935b536a249c00d0ba41028c16443e35e372575d390d6c0d7ef2484e90a8b1a",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261118/4497315_1.html",
-        "checkedAt": "2026-11-18T20:28:36.808Z"
+        "checkedAt": "2026-11-18T20:29:12.901Z"
       },
       "id": "36195a3e87dd236ba1a2",
       "verificationStatus": "verified",
@@ -3255,7 +3319,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -7995,7 +8060,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -10438,7 +10504,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -10488,7 +10555,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -10538,7 +10606,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -10588,7 +10657,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -10638,7 +10708,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     }
   ],
   "sourceHealth": [
@@ -10723,57 +10794,83 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 21
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "15dba79844803154bb8a",
+      "selectedPublishedAt": "2026-11-18T19:37:27.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
-      "status": "ok",
-      "itemCount": 33,
-      "originalSummaries": 33,
-      "attempted": 0,
+      "status": "error",
+      "itemCount": 0,
+      "originalSummaries": 0,
+      "attempted": 2,
       "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "requests": 11,
+      "rejectionReasons": {
+        "summary-audit": 1,
+        "summary-length": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "audit": 1,
+        "unsupported-attribution": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 94,
-      "attempted": 0,
+      "attempted": 2,
       "succeeded": 0,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 94,
-      "successRate": null
+      "rejected": 2,
+      "skipped": 92,
+      "successRate": 0
     },
     "analysis": {
-      "eligible": 112,
-      "attempted": 0,
+      "eligible": 93,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 112,
-      "successRate": null
+      "skipped": 91,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
