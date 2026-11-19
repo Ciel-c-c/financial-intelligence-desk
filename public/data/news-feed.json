@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-19T20:32:57.348Z",
+  "attemptedAt": "2026-11-19T20:33:31.851Z",
   "lastSuccessfulAt": "2026-11-19T20:32:57.348Z",
   "nextExpectedAt": "2026-11-20T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-19T20:32:57.348Z",
   "status": "delayed",
   "latest": [
     {
@@ -54,7 +56,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -109,11 +112,27 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-19T20:32:57.348Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-19T20:33:31.851Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "1ef4073256c0e3c94352782d292511be78c23be5629a56ba24f00f9b1b9b19c9",
+        "count": 1,
+        "lastAttemptAt": "2026-11-19T20:32:57.348Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "language",
+          "fields": [
+            "soWhat.expectationGap"
+          ]
+        }
       }
     },
     {
@@ -183,6 +202,18 @@
         "summary": "国际货币基金组织总裁格奥尔基耶娃周四在中国深圳举行的2026年亚太经合组织经济领导人会议上表示，人工智能正在对全球经济增长产生实质性影响，将成为影响中期竞争力、生产率和经济增长的重要因素。她同时指出，全球通胀上升、公共债务增加以及结构性改革滞后等问题仍对经济前景构成挑战，各国需要加快采取政策行动。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "b39f9998fb2b78f661f8fe8fb9104a4996351cd8365c0cb9f7e95bddcc481bd5",
+        "count": 1,
+        "lastAttemptAt": "2026-11-19T20:32:57.348Z",
+        "auditFindings": [],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -233,7 +264,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -283,7 +315,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -333,7 +366,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -371,7 +405,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -421,7 +456,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -470,21 +506,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Myanmar committed genocide against Rohingya minority, top UN court rules",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-19T20:07:02.000Z",
         "sourceHash": "3b931f2bf04efa61bd2de8feed2d072833e794d76b3e5135957ff62f6dde88a4",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-19T20:32:57.348Z",
-        "title": "Myanmar committed genocide against Rohingya minority, top UN court rules",
-        "summary": "The unprecedented International Court of Justice verdict concerns a 2017 military crackdown that killed thousands.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-19T20:33:31.851Z",
+        "title": "国际法院裁定缅甸对罗兴亚少数族群实施种族灭绝",
+        "summary": "国际法院作出前所未有的裁决，认定缅甸在2017年的军事镇压中对罗兴亚少数族群实施了种族灭绝，导致数千人死亡。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "国际法院裁定缅甸对罗兴亚少数族群实施了种族灭绝。",
+            "quote": "Myanmar committed genocide against Rohingya minority, top UN court rules"
+          },
+          {
+            "text": "该裁决涉及2017年的军事镇压，导致数千人死亡。",
+            "quote": "The unprecedented International Court of Justice verdict concerns a 2017 military crackdown that killed thousands."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-19T20:33:31.851Z"
       }
     },
     {
@@ -1665,7 +1715,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -2111,7 +2162,7 @@
         "reader": "cnfin-body",
         "sha256": "4160a3d96191f530e3ce41709ec02a931048dd5db8961e5a0b93514564daf275",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261119/4497848_1.html",
-        "checkedAt": "2026-11-19T20:32:57.348Z"
+        "checkedAt": "2026-11-19T20:33:31.851Z"
       },
       "id": "76e9e2c719caff97bdbf",
       "verificationStatus": "verified",
@@ -2159,7 +2210,7 @@
         "reader": "cnfin-body",
         "sha256": "768faa94715e4affb85d7124acb0aeb011841bce5d1db46ed32eeb116426d086",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261119/4497843_1.html",
-        "checkedAt": "2026-11-19T20:32:57.348Z"
+        "checkedAt": "2026-11-19T20:33:31.851Z"
       },
       "id": "8f576df76b0c03faec7f",
       "verificationStatus": "verified",
@@ -5965,7 +6016,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -6820,7 +6872,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -9194,7 +9247,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9244,7 +9298,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9294,7 +9349,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -9526,7 +9582,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -9761,57 +9818,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 21
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "d8752ddc9271c9137d15",
+      "selectedPublishedAt": "2026-11-19T19:58:30.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 24,
-      "originalSummaries": 24,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 1,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "language": 1,
+        "audit": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 72,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 72,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 70,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 93,
-      "attempted": 0,
+      "eligible": 75,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 93,
-      "successRate": null
+      "skipped": 73,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
