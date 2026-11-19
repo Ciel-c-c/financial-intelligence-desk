@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-19T07:21:48.301Z",
+  "attemptedAt": "2026-11-19T07:22:23.686Z",
   "lastSuccessfulAt": "2026-11-19T07:21:48.301Z",
   "nextExpectedAt": "2026-11-19T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-19T07:21:48.301Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -83,7 +86,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -134,8 +138,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-19T07:21:48.301Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "paired-evidence"
       },
       "factualSummary": {
         "language": "en",
@@ -152,7 +157,22 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "paired-evidence",
+        "attemptedAt": "2026-11-19T07:22:23.686Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "4ba230835fe70675a25270b751a15d0ea7ad1a49ffd8802f39ab4ccfe5a836f5",
+        "count": 1,
+        "lastAttemptAt": "2026-11-19T07:21:48.301Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[0].numbers"
+          ]
+        }
       }
     },
     {
@@ -210,21 +230,46 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-19T02:20:15.000Z",
         "sourceHash": "b98e3cd848e807b139cc742fc8256e65e240e55e70b93623e1d2d280396a8694",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-19T07:21:48.301Z",
-        "title": "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
-        "summary": "The firm started just five years ago and is now one of the biggest names in artificial intelligence.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-19T07:22:23.686Z",
+        "title": "Anthropic 估值最高达 1.5 万亿美元 将首次公开募股",
+        "summary": "Anthropic 这家人工智能公司在成立仅五年后，估值已升至最高约 1.5 万亿美元，并计划在股市首次亮相。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Anthropic 的估值最高可达 1.5 万亿美元，正准备进行首次公开募股。",
+            "quote": "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut"
+          },
+          {
+            "text": "该公司成立仅五年，已成为人工智能领域的最大品牌之一。",
+            "quote": "The firm started just five years ago and is now one of the biggest names in artificial intelligence."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-19T07:22:23.686Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "b98e3cd848e807b139cc742fc8256e65e240e55e70b93623e1d2d280396a8694",
+        "count": 1,
+        "lastAttemptAt": "2026-11-19T07:21:48.301Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -268,7 +313,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -356,7 +402,7 @@
         "reader": "cnfin-body",
         "sha256": "a2d24ddfe6fc215c6da9bd87f0bdfd5d1ec66725b97a3f3b15975d272936116d",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261119/4497601_1.html",
-        "checkedAt": "2026-11-19T07:21:48.301Z"
+        "checkedAt": "2026-11-19T07:22:23.686Z"
       },
       "id": "9eb2c1a7212ab7c41e65",
       "verificationStatus": "verified",
@@ -450,7 +496,7 @@
         "reader": "cnfin-body",
         "sha256": "593929734b4f01d8859f99d6112a9ead91fbe5adf8371e4e0b0c1c014fd2ae74",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261119/4497602_1.html",
-        "checkedAt": "2026-11-19T07:21:48.301Z"
+        "checkedAt": "2026-11-19T07:22:23.686Z"
       },
       "id": "bcc21a009e93d1f9eca5",
       "verificationStatus": "verified",
@@ -1594,7 +1640,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1644,7 +1691,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1694,7 +1742,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -2711,7 +2760,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "ecb",
@@ -2750,7 +2800,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -3711,7 +3762,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -4296,7 +4348,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6128,7 +6181,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -9077,7 +9131,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -10442,57 +10497,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 19
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "1404c7aa494d622de752",
+      "selectedPublishedAt": "2026-11-19T02:59:06.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 23,
-      "originalSummaries": 23,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 7,
+      "rejectionReasons": {
+        "paired-evidence": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "facts": 1,
+        "unsupported-attribution": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 84,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 84,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 82,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 109,
-      "attempted": 0,
+      "eligible": 90,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 109,
-      "successRate": null
+      "skipped": 88,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
