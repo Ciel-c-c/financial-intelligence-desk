@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-20T20:13:42.650Z",
+  "attemptedAt": "2026-11-20T20:14:27.756Z",
   "lastSuccessfulAt": "2026-11-20T20:13:42.650Z",
   "nextExpectedAt": "2026-11-21T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-20T20:13:42.650Z",
   "status": "delayed",
   "latest": [
     {
@@ -54,7 +56,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -120,7 +123,7 @@
       "fetchedAt": "2026-11-20T20:13:42.650Z",
       "id": "06a39aed45951a164ea6",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "BBC News · 财经",
@@ -131,22 +134,34 @@
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
-        "行业"
+        "宏观"
       ],
-      "eventTypes": [],
-      "impactChannels": [],
+      "eventTypes": [
+        "监管"
+      ],
+      "impactChannels": [
+        "供需",
+        "盈利"
+      ],
       "regions": [
+        "美国",
         "全球"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|trumpthreatensba|2026-11-20",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "The US president provided little detail on the potential policy, saying others in his team were hearing about it for the first time."
+        "特朗普威胁禁止美国公司在海外建设AI数据中心",
+        "美国总统对该政策细节披露很少",
+        "他团队的其他成员首次听说此事"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "如果禁令正式出台，海外AI项目可能被迫暂停或转移。",
+        "美国企业可能转向国内或其他友好国家的投资，以规避潜在限制。",
+        "短期内相关供应链企业的订单可能下降。"
+      ],
       "article": {
         "status": "summary",
         "text": "Trump threatens ban on US firms building AI data centres overseas\nThe US president provided little detail on the potential policy, saying others in his team were hearing about it for the first time.",
@@ -162,21 +177,266 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Trump threatens ban on US firms building AI data centres overseas",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-20T19:51:52.000Z",
         "sourceHash": "a2545fdcd8a573d66d6d3744e3f9b6389f657b0c3fd48376d37f0fec6a5b8ee6",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-20T20:13:42.650Z",
-        "title": "Trump threatens ban on US firms building AI data centres overseas",
-        "summary": "The US president provided little detail on the potential policy, saying others in his team were hearing about it for the first time.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-20T20:14:27.756Z",
+        "title": "特朗普威胁禁止美国公司在海外建设AI数据中心",
+        "summary": "美国总统特朗普表示可能禁止美国企业在境外建设人工智能数据中心，但未提供具体细节。他透露，团队中有成员首次听到这一政策构想。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "特朗普威胁禁止美国公司在海外建设AI数据中心。",
+            "quote": "Trump threatens ban on US firms building AI data centres overseas"
+          },
+          {
+            "text": "美国总统对该潜在政策提供的细节很少。",
+            "quote": "The US president provided little detail on the potential policy, saying others in his team were hearing about it for the"
+          },
+          {
+            "text": "他表示团队中有人是第一次听到此事。",
+            "quote": "saying others in his team were hearing about it for the first time."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-20T20:14:27.756Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "a2545fdcd8a573d66d6d3744e3f9b6389f657b0c3fd48376d37f0fec6a5b8ee6",
+        "count": 1,
+        "lastAttemptAt": "2026-11-20T20:13:42.650Z"
+      },
+      "titleZh": "特朗普威胁禁止美国公司在海外建设AI数据中心",
+      "summaryZh": "美国总统特朗普表示可能禁止美国企业在境外建设人工智能数据中心，但未提供具体细节，且其团队成员首次听说此事。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "特朗普威胁禁止美国公司在海外建设AI数据中心",
+              "evidence": "Trump threatens ban on US firms building AI data centres overseas"
+            },
+            {
+              "text": "美国总统对该政策细节披露很少",
+              "evidence": "The US president provided little detail on the potential policy, saying others in his team were hearing about it for the"
+            },
+            {
+              "text": "他团队的其他成员首次听说此事",
+              "evidence": "saying others in his team were hearing about it for the first time."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "美国",
+            "triggerEvidence": "Trump threatens ban on US firms building AI data centres overseas",
+            "path": [
+              "特朗普威胁禁令",
+              "企业评估合规风险",
+              "项目延期或取消"
+            ],
+            "invalidation": "禁令未正式发布或被撤回"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 2,
+            "audience": "firms",
+            "region": "美国",
+            "triggerEvidence": "Trump threatens ban on US firms building AI data centres overseas",
+            "path": [
+              "特朗普威胁禁令",
+              "企业评估合规风险",
+              "项目延期或取消"
+            ],
+            "invalidation": "企业通过合资或本地化方式规避禁令"
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "美国AI企业股票",
+            "direction": "下行",
+            "reason": "政策不确定性提升风险溢价",
+            "condition": "禁令正式发布或市场预期其将发布",
+            "invalidation": "禁令未正式化或被撤回",
+            "timeframe": "短期至中期"
+          }
+        ],
+        "sourceBodyHash": "a2545fdcd8a573d66d6d3744e3f9b6389f657b0c3fd48376d37f0fec6a5b8ee6",
+        "originalTitle": "Trump threatens ban on US firms building AI data centres overseas",
+        "reviewedAt": "2026-11-20T20:13:42.650Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "06a39aed45951a164ea6",
+          "title": "特朗普威胁禁止美国公司在海外建设AI数据中心",
+          "summary": "美国总统特朗普表示可能禁止美国企业在境外建设人工智能数据中心，但未提供具体细节，且其团队成员首次听说此事。",
+          "excerpt": "特朗普威胁禁止美国公司在海外建设AI数据中心，且对政策细节披露很少，团队成员首次听说此事。",
+          "sourceName": "BBC News · 世界",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-20T19:51:52.000Z",
+          "region": "美股",
+          "topic": "政策/监管",
+          "termIds": [],
+          "facts": [
+            "特朗普威胁禁止美国公司在海外建设AI数据中心",
+            "美国总统对该政策细节披露很少",
+            "他团队的其他成员首次听说此事"
+          ],
+          "consensus": [
+            "缺乏公开的政策细节导致外界对实际执行力度和时间表存在不确定性。"
+          ],
+          "inference": [
+            "如果禁令正式出台，海外AI项目可能被迫暂停或转移。",
+            "美国企业可能转向国内或其他友好国家的投资，以规避潜在限制。",
+            "短期内相关供应链企业的订单可能下降。"
+          ],
+          "risks": [
+            "政策最终未正式发布或被软化。",
+            "企业通过合资或本地化方式规避禁令。",
+            "其他国家出台更有吸引力的激励措施抵消影响。"
+          ],
+          "causalChain": [
+            {
+              "title": "特朗普公开威胁禁令",
+              "explanation": "总统表态可能限制美国公司在海外建设AI数据中心。",
+              "condition": "仅在总统正式发布政策文件后才具备法律效力。"
+            },
+            {
+              "title": "美国企业评估合规风险",
+              "explanation": "企业根据潜在禁令审视海外项目的可行性。",
+              "condition": "企业需获得明确的监管指引。"
+            },
+            {
+              "title": "项目延期或取消",
+              "explanation": "合规风险导致企业推迟或终止在海外的AI数据中心建设。",
+              "condition": "禁令实际执行且处罚力度明确。"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "家庭装修计划被政府临时限制",
+            "explanation": "就像一家人准备在别的城市装修房子，却突然被地方规定禁止，导致计划被迫暂停或改向本地进行。此类限制的实际影响取决于规定的执行力度和时间。"
+          },
+          "why": {
+            "cause": "特朗普的政策威胁",
+            "mechanisms": [
+              "政策不确定性提升企业合规成本",
+              "海外项目融资难度上升",
+              "供应链订单可能被削减"
+            ],
+            "result": "美国AI企业在海外的投资活动受抑制，相关产业链短期需求下降。"
+          },
+          "focus": [
+            "政策执行的明确性",
+            "企业海外投资决策",
+            "供应链订单变化"
+          ],
+          "marketBet": [
+            "美国AI企业海外项目进度可能放缓",
+            "相关海外供应链企业订单或出现短期下行",
+            "若禁令未正式化，影响可能有限"
+          ],
+          "expectationGap": "来源未提供市场对该政策的具体预期或共识，故无法比较实际预期与先前预期的差异。",
+          "counterView": "企业可能通过合资、技术转让或在友好国家设立子公司等方式规避禁令，从而减弱对海外AI基础设施投资的冲击。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "美国投资者持有的涉足海外AI数据中心的公司股票可能面临短期波动。",
+              "why": "政策不确定性导致市场对相关公司未来收益预期下降。",
+              "invalidation": "若禁令未正式发布或被撤回，相关股票波动将不显著。",
+              "condition": "若禁令未正式发布或被撤回，相关股票波动将不显著。"
+            },
+            {
+              "label": "企业经营",
+              "impact": "在海外有AI数据中心项目的美国企业可能需要重新评估资本支出计划。",
+              "why": "合规风险和潜在处罚增加项目成本。",
+              "invalidation": "若企业通过本地化或合资方式规避禁令，资本支出影响将被削弱。",
+              "condition": "若企业通过本地化或合资方式规避禁令，资本支出影响将被削弱。"
+            }
+          ],
+          "surface": "特朗普威胁禁止美国公司在海外建设AI数据中心",
+          "next": [
+            "特朗普公开威胁禁令",
+            "美国企业评估合规风险",
+            "项目延期或取消"
+          ],
+          "condition": [
+            "仅在总统正式发布政策文件后才具备法律效力。",
+            "企业需获得明确的监管指引。",
+            "禁令实际执行且处罚力度明确。"
+          ]
+        },
+        "watchItems": [
+          "美国政府是否发布正式禁令文件",
+          "主要美国AI企业的海外项目进度公告",
+          "其他国家对AI基础设施的政策响应"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "a2545fdcd8a573d66d6d3744e3f9b6389f657b0c3fd48376d37f0fec6a5b8ee6",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-20T20:14:27.756Z",
+        "state": "approved"
       }
     },
     {
@@ -192,14 +452,18 @@
       "fetchedAt": "2026-11-20T20:13:42.650Z",
       "id": "1f9cfcd3484ab1b0b5ba",
       "verificationStatus": "official",
-      "titleZh": "【子午播报】2026年11月20日",
-      "summaryZh": "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，中美俄深圳会晤，联合国如何回应？国际法院认定缅甸对罗兴亚人实施种族灭绝。子午聚焦：联合国讨论管制“杀人机器人”。&nbsp;",
+      "titleZh": "联合国子午播报 2026年11月20日",
+      "summaryZh": "联合国子午播报于2026年11月20日发布，内容包括中美俄在深圳的会晤、国际法院对缅甸的种族灭绝裁决以及联合国对“杀人机器人”的管制讨论。",
       "translationStatus": "original-zh",
       "relatedSources": [],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "地缘风险"
+      ],
       "impactChannels": [],
       "regions": [
         "全球"
@@ -207,12 +471,19 @@
       "importanceScore": 70,
       "continuingImpactScore": 40,
       "clusterId": "undefined|子午播报2026年11月20日|2026-11-20",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，中美俄深圳会晤，联合国如何回应？国际法院认定缅甸对罗兴亚人实施种族灭绝。子午聚焦：联合国讨论管制“杀人机器人”。&nbsp;"
+        "节目于纽约时间零点、北京时间13点播出。",
+        "本期将讨论中美俄在深圳的会晤及联合国的回应。",
+        "国际法院认定缅甸对罗兴亚人实施种族灭绝。",
+        "子午聚焦议题是联合国讨论管制“杀人机器人”。",
+        "节目标题为《联合国子午播报》，日期为2026年11月20日。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "如果中美俄在深圳会晤达成共识，可能会降低地区紧张局势。",
+        "若联合国对“杀人机器人”达成监管框架，可能推动相关技术企业的合规成本上升。"
+      ],
       "article": {
         "status": "summary",
         "text": "【子午播报】2026年11月20日\n纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，中美俄深圳会晤，联合国如何回应？国际法院认定缅甸对罗兴亚人实施种族灭绝。子午聚焦：联合国讨论管制“杀人机器人”。&nbsp;",
@@ -240,6 +511,220 @@
         "summary": "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。本期节目您将看到，中美俄深圳会晤，联合国如何回应？国际法院认定缅甸对罗兴亚人实施种族灭绝。子午聚焦：联合国讨论管制“杀人机器人”。&nbsp;",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "4899d7a2c1485b0f27a81a40017f8fc5d9ca6a45f7f707b1c849e1ef1b5eb3cd",
+        "count": 1,
+        "lastAttemptAt": "2026-11-20T20:13:42.650Z"
+      },
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "节目于纽约时间零点、北京时间13点播出。",
+              "evidence": "纽约时间零点，北京时间13点，欢迎收看《联合国子午播报》。"
+            },
+            {
+              "text": "本期将讨论中美俄在深圳的会晤及联合国的回应。",
+              "evidence": "本期节目您将看到，中美俄深圳会晤，联合国如何回应？"
+            },
+            {
+              "text": "国际法院认定缅甸对罗兴亚人实施种族灭绝。",
+              "evidence": "国际法院认定缅甸对罗兴亚人实施种族灭绝。"
+            },
+            {
+              "text": "子午聚焦议题是联合国讨论管制“杀人机器人”。",
+              "evidence": "子午聚焦：联合国讨论管制“杀人机器人”。"
+            },
+            {
+              "text": "节目标题为《联合国子午播报》，日期为2026年11月20日。",
+              "evidence": "【子午播报】2026年11月20日"
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "全球",
+            "triggerEvidence": "本期节目您将看到，中美俄深圳会晤，联合国如何回应？",
+            "path": [
+              "中美俄深圳会晤",
+              "联合国回应",
+              "国际舆论与政策走向"
+            ],
+            "invalidation": "若会晤产生明确合作共识并得到联合国积极支持，则投资风险可能下降。"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "4899d7a2c1485b0f27a81a40017f8fc5d9ca6a45f7f707b1c849e1ef1b5eb3cd",
+        "originalTitle": "【子午播报】2026年11月20日",
+        "reviewedAt": "2026-11-20T20:13:42.650Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "1f9cfcd3484ab1b0b5ba",
+          "title": "联合国子午播报 2026年11月20日",
+          "summary": "联合国子午播报于2026年11月20日发布，内容包括中美俄在深圳的会晤、国际法院对缅甸的种族灭绝裁决以及联合国对“杀人机器人”的管制讨论。",
+          "excerpt": "本期节目将讨论中美俄深圳会晤、联合国回应、国际法院认定缅甸对罗兴亚人实施种族灭绝，以及联合国讨论管制“杀人机器人”。",
+          "sourceName": "UN News",
+          "sourceUrl": "https://news.un.org/feed/view/zh/story/2026/11/1143232",
+          "publishedAt": "2026-11-20T12:00:00.000Z",
+          "region": "全球",
+          "topic": "国际政治与安全",
+          "termIds": [],
+          "facts": [
+            "节目于纽约时间零点、北京时间13点播出。",
+            "本期将讨论中美俄在深圳的会晤及联合国的回应。",
+            "国际法院认定缅甸对罗兴亚人实施种族灭绝。",
+            "子午聚焦议题是联合国讨论管制“杀人机器人”。",
+            "节目标题为《联合国子午播报》，日期为2026年11月20日。"
+          ],
+          "consensus": [
+            "暂无明确的市场或政策共识"
+          ],
+          "inference": [
+            "如果中美俄在深圳会晤达成共识，可能会降低地区紧张局势。",
+            "若联合国对“杀人机器人”达成监管框架，可能推动相关技术企业的合规成本上升。"
+          ],
+          "risks": [
+            "会晤未达成实质性共识，导致地缘政治紧张升级。",
+            "联合国对杀人机器人监管进程受阻，技术研发可能继续缺乏约束。",
+            "国际法院裁决未得到有效执行，导致人道危机持续。"
+          ],
+          "causalChain": [
+            {
+              "title": "中美俄深圳会晤",
+              "explanation": "三国在深圳进行高层会谈，讨论地区安全与合作议题。",
+              "condition": "会晤实际举行并发布官方声明"
+            },
+            {
+              "title": "联合国回应",
+              "explanation": "联合国根据会晤内容发表声明，可能影响其后续议程。",
+              "condition": "联合国在会晤后正式发布回应"
+            },
+            {
+              "title": "国际舆论与政策走向",
+              "explanation": "联合国的回应可能塑造国际舆论，进而影响各国政策取向。",
+              "condition": "各国媒体广泛报道并解读联合国声明"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "三国围坐的棋局",
+            "explanation": "如同棋局中三位玩家的布局决定全局走向，三国会晤的议题与结果会影响全球政治格局，但每一步的走向仍受各自国内因素限制。"
+          },
+          "why": {
+            "cause": "中美俄在深圳的会晤可能产生新的外交信号",
+            "mechanisms": [
+              "高层会谈释放合作或对抗信号",
+              "联合国依据会晤内容调整议程",
+              "国际舆论随之变化影响市场情绪"
+            ],
+            "result": "全球投资者对地缘政治风险的评估可能出现波动"
+          },
+          "focus": [
+            "地缘政治风险",
+            "联合国政策动向",
+            "国际法执行"
+          ],
+          "marketBet": [
+            "若会晤产生积极共识，全球风险情绪可能趋于缓和",
+            "若监管框架迟迟未定，相关技术股可能面临不确定性"
+          ],
+          "expectationGap": "来源未提供任何市场对上述事件的预期，因此无法比较实际与先前预期的差异。",
+          "counterView": "也有观点认为单纯的会晤声明对实际政策影响有限，市场可能更关注具体经济数据。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "地缘政治不确定性上升可能导致全球股市波动，投资者需关注风险敞口。",
+              "why": "会晤结果若不明朗，市场对政策走向的猜测会增加波动性。",
+              "invalidation": "若会晤达成明确合作协议并得到联合国积极回应，则波动性可能下降。",
+              "condition": "若会晤达成明确合作协议并得到联合国积极回应，则波动性可能下降。"
+            }
+          ],
+          "surface": "联合国子午播报 2026年11月20日",
+          "next": [
+            "中美俄深圳会晤",
+            "联合国回应",
+            "国际舆论与政策走向"
+          ],
+          "condition": [
+            "会晤实际举行并发布官方声明",
+            "联合国在会晤后正式发布回应",
+            "各国媒体广泛报道并解读联合国声明"
+          ]
+        },
+        "watchItems": [
+          "中美俄深圳会晤的正式声明内容",
+          "联合国对会晤的官方回应细节",
+          "国际法院对缅甸裁决的执行进展",
+          "联合国关于杀人机器人监管的会议纪要"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "4899d7a2c1485b0f27a81a40017f8fc5d9ca6a45f7f707b1c849e1ef1b5eb3cd",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-20T20:14:27.756Z",
+        "state": "approved"
       }
     },
     {
@@ -290,7 +775,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -340,7 +826,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -394,7 +881,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -444,7 +932,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -507,7 +996,39 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-20T20:14:27.756Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Gap stock soars as retailer says Old Navy turnaround shows signs of improvement",
+        "sourceUrl": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
+        "publishedAt": "2026-11-20T17:20:29.000Z",
+        "sourceHash": "a3628c50f46edcac432378b0d5dc11b044dd926e73449626e6fd8d9e5d5e26cb",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-20T20:14:27.756Z",
+        "title": "Gap股价飙升，零售商称Old Navy转型出现改善迹象",
+        "summary": "Gap股价大幅上涨，因公司表示Old Navy的转型出现改善迹象；公司在周四宣布Ashley Kechter将担任Athleta的新CEO；此外，Gap公布了混合的第三财季业绩。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Gap股价大幅上涨，因公司称Old Navy的转型出现改善迹象。",
+            "quote": "Gap stock soars as retailer says Old Navy turnaround shows signs of improvement"
+          },
+          {
+            "text": "Gap在周四宣布Ashley Kechter将担任Athleta的新CEO。",
+            "quote": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-"
+          },
+          {
+            "text": "公司公布了混合的第三财季业绩。",
+            "quote": "The retailer also reported mixed fiscal third-quarter earnings."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       }
     },
     {
@@ -677,7 +1198,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -729,7 +1251,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1432,7 +1955,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1636,7 +2160,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2627,7 +3152,7 @@
         "reader": "cnfin-body",
         "sha256": "5d0b392a9c88c9a5947fcb21dac7ac0846bd355b66a2d2ce62b15a651200cae2",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261120/4498462_1.html",
-        "checkedAt": "2026-11-20T20:13:42.650Z"
+        "checkedAt": "2026-11-20T20:14:27.756Z"
       },
       "id": "66f974f32f870b1f35ab",
       "verificationStatus": "verified",
@@ -2841,7 +3366,7 @@
         "reader": "cnfin-body",
         "sha256": "dae4c04776a7d11779527cde536fdf343f775789791166364fae4f8c8657e88b",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261120/4498436_1.html",
-        "checkedAt": "2026-11-20T20:13:42.650Z"
+        "checkedAt": "2026-11-20T20:14:27.756Z"
       },
       "id": "68d7db59e843664dbee8",
       "verificationStatus": "verified",
@@ -8356,7 +8881,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -9309,7 +9835,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9359,7 +9886,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -9734,7 +10262,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9784,7 +10313,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9834,7 +10364,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9884,7 +10415,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -10623,57 +11155,77 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 24
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "06a39aed45951a164ea6",
+      "selectedPublishedAt": "2026-11-20T19:51:52.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 22,
-      "originalSummaries": 22,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
+      "itemCount": 2,
+      "attempted": 2,
       "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 2,
+        "audit": 2
       },
       "rejectionReasons": {}
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 85,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 85,
-      "successRate": null
+      "skipped": 83,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 105,
-      "attempted": 0,
-      "succeeded": 0,
+      "eligible": 85,
+      "attempted": 2,
+      "succeeded": 2,
       "rejected": 0,
       "failed": 0,
-      "skipped": 105,
-      "successRate": null
+      "skipped": 83,
+      "successRate": 1
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
