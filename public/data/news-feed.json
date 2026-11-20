@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-20T07:10:45.766Z",
+  "attemptedAt": "2026-11-20T07:11:29.096Z",
   "lastSuccessfulAt": "2026-11-20T07:10:45.766Z",
   "nextExpectedAt": "2026-11-20T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-20T07:10:45.766Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -100,21 +103,46 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Anthropic becomes one of world's most valuable public companies in stock market debut",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-19T23:33:51.000Z",
         "sourceHash": "fc808051bb4a1c60b886b0153bf19991e99e5e5a9da825326d47ad692743dd30",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-20T07:10:45.766Z",
-        "title": "Anthropic becomes one of world's most valuable public companies in stock market debut",
-        "summary": "Anthropic is the first purely AI company to be publicly listed, creating a test for the entire industry.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-20T07:11:29.096Z",
+        "title": "Anthropic 在首次公开募股后成为全球最有价值的上市公司之一",
+        "summary": "Anthropic 在首次公开募股后跻身全球最有价值的上市公司行列，成为首家纯人工智能公司在公开市场上市，这一事件为整个行业树立了新的标杆。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "Anthropic 在首次公开募股后成为全球最有价值的上市公司之一。",
+            "quote": "Anthropic becomes one of world's most valuable public companies in stock market debut"
+          },
+          {
+            "text": "Anthropic 是首家纯人工智能公司在公开市场上市，为整个行业设下了测试标准。",
+            "quote": "Anthropic is the first purely AI company to be publicly listed, creating a test for the entire industry."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-20T07:11:29.096Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "fc808051bb4a1c60b886b0153bf19991e99e5e5a9da825326d47ad692743dd30",
+        "count": 1,
+        "lastAttemptAt": "2026-11-20T07:10:45.766Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -164,7 +192,50 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-20T07:11:29.096Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "‘More than just a game’: How GTA VI’s blockbuster launch fuels a booming content economy",
+        "sourceUrl": "https://www.cnbc.com/2026/11/20/gta-vi-launch-streaming-content-economy.html",
+        "publishedAt": "2026-11-20T07:08:36.000Z",
+        "sourceHash": "c04851c96a175064cfb2647f0dbf1364bddb6888bec4475d7a67b488231d2578",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-20T07:11:29.096Z",
+        "title": "GTA VI发布引发内容经济热潮",
+        "summary": "《GTA VI》在全球掀起热潮，其发布不仅是一场游戏盛事，还催生了围绕直播、社交短视频和大规模内容生产的全新经济，数以百万计的观众观看他人游戏。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "《GTA VI》发布被形容为“超越游戏”的大型事件。",
+            "quote": "‘More than just a game’: How GTA VI’s blockbuster launch fuels a booming content economy"
+          },
+          {
+            "text": "该游戏的发布正在形成围绕直播、社交短视频和高产内容农场的更广阔经济。",
+            "quote": "GTA VI’s blockbuster launch is creating a wider economy around livestreams, social clips and high-volume content farms"
+          },
+          {
+            "text": "数百万观众正在观看他人玩《GTA VI》，推动这些内容形式的增长。",
+            "quote": "livestreams, social clips and high-volume content farms as millions tune in to watch others play."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "c04851c96a175064cfb2647f0dbf1364bddb6888bec4475d7a67b488231d2578",
+        "count": 1,
+        "lastAttemptAt": "2026-11-20T07:10:45.766Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -290,7 +361,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -583,7 +655,7 @@
         "reader": "cnfin-body",
         "sha256": "f6e5c983e2c3301f487a3cf905685665ba6965f67ecb6f1a018e48b25b8f2224",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261120/4498077_1.html",
-        "checkedAt": "2026-11-20T07:10:45.766Z"
+        "checkedAt": "2026-11-20T07:11:29.096Z"
       },
       "id": "61dcb475227b0927e95d",
       "verificationStatus": "verified",
@@ -741,7 +813,7 @@
         "reader": "cnfin-body",
         "sha256": "a489f5f296fdab876a1791cb38f96d00f1cea68b66bf090469d3cb198913ab28",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261120/4498071_1.html",
-        "checkedAt": "2026-11-20T07:10:45.766Z"
+        "checkedAt": "2026-11-20T07:11:29.096Z"
       },
       "id": "55d79753c5de8812af10",
       "verificationStatus": "verified",
@@ -1327,7 +1399,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -1651,7 +1724,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1701,7 +1775,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -3722,7 +3797,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3772,7 +3848,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -6679,7 +6756,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -7702,7 +7780,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -10145,57 +10224,80 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 21
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "d6008a68fca659e80113",
+      "selectedPublishedAt": "2026-11-19T23:33:51.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 24,
-      "originalSummaries": 24,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 9,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "unsupported-attribution": 1,
+        "personal-impact": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 77,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 77,
-      "successRate": null
+      "skipped": 75,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 100,
-      "attempted": 0,
+      "eligible": 83,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 100,
-      "successRate": null
+      "skipped": 81,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
