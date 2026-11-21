@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-21T19:12:43.990Z",
+  "attemptedAt": "2026-11-21T19:13:17.370Z",
   "lastSuccessfulAt": "2026-11-21T19:12:43.990Z",
   "nextExpectedAt": "2026-11-22T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-21T19:12:43.990Z",
   "status": "delayed",
   "latest": [
     {
@@ -93,7 +95,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -144,11 +147,25 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-21T19:12:43.990Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-21T19:13:17.370Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "ec0dfd7d716145017776ba3780edfdeab090ec16b8fd7ba432e94b41be11fffc",
+        "count": 1,
+        "lastAttemptAt": "2026-11-21T19:12:43.990Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -164,25 +181,37 @@
       "fetchedAt": "2026-11-21T19:12:43.990Z",
       "id": "973288928b4d7a1c58ee",
       "verificationStatus": "verified",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [],
       "keyTerms": [],
       "causalSignals": [],
-      "analysisLevels": [],
-      "eventTypes": [],
-      "impactChannels": [],
+      "analysisLevels": [
+        "宏观"
+      ],
+      "eventTypes": [
+        "地缘风险"
+      ],
+      "impactChannels": [
+        "供需",
+        "盈利",
+        "估值"
+      ],
       "regions": [
-        "全球"
+        "欧洲"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|russiaboundshipa|2026-11-21",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel."
+        "一艘前往俄罗斯的船只在芬兰湾遭到攻击。",
+        "芬兰防卫部队认为乌克兰可能是这起无人机袭击的幕后策划者。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若乌克兰被确认策划，可能导致地区海上安全警戒升级。",
+        "若攻击被证实为误判，紧张局势可能快速降温。"
+      ],
       "article": {
         "status": "summary",
         "text": "Russia-bound ship attacked in Gulf of Finland\nFinnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
@@ -198,21 +227,245 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Russia-bound ship attacked in Gulf of Finland",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-21T18:22:09.000Z",
         "sourceHash": "b72a9f33edd25a39e8620e8a706a70e296e3128062b80c09e96f72e2ed0350c3",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-21T19:12:43.990Z",
-        "title": "Russia-bound ship attacked in Gulf of Finland",
-        "summary": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-21T19:13:17.370Z",
+        "title": "俄罗斯航船在芬兰湾遭无人机袭击",
+        "summary": "一艘前往俄罗斯的船只在芬兰湾遭到无人机攻击。芬兰国防部表示，乌克兰可能是此次袭击的幕后策划者。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "一艘前往俄罗斯的船只在芬兰湾遭到无人机攻击。",
+            "quote": "Russia-bound ship attacked in Gulf of Finland"
+          },
+          {
+            "text": "芬兰国防部称乌克兰可能是此次袭击的幕后策划者。",
+            "quote": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-21T19:13:17.370Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "b72a9f33edd25a39e8620e8a706a70e296e3128062b80c09e96f72e2ed0350c3",
+        "count": 1,
+        "lastAttemptAt": "2026-11-21T19:12:43.990Z"
+      },
+      "titleZh": "俄罗斯航运船只在芬兰湾遭无人机袭击",
+      "summaryZh": "芬兰防卫部队称，乌克兰可能策划了针对前往俄罗斯的船只的无人机攻击。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "一艘前往俄罗斯的船只在芬兰湾遭到攻击。",
+              "evidence": "Russia-bound ship attacked in Gulf of Finland"
+            },
+            {
+              "text": "芬兰防卫部队认为乌克兰可能是这起无人机袭击的幕后策划者。",
+              "evidence": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "欧洲",
+            "triggerEvidence": "Russia-bound ship attacked in Gulf of Finland",
+            "path": [
+              "无人机攻击",
+              "保险费率上升",
+              "航运成本增加",
+              "投资者情绪波动"
+            ],
+            "invalidation": "若攻击被证实为误报或责任方非乌克兰，链条中断"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "b72a9f33edd25a39e8620e8a706a70e296e3128062b80c09e96f72e2ed0350c3",
+        "originalTitle": "Russia-bound ship attacked in Gulf of Finland",
+        "reviewedAt": "2026-11-21T19:12:43.990Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "973288928b4d7a1c58ee",
+          "title": "俄罗斯航运船只在芬兰湾遭无人机袭击",
+          "summary": "芬兰防卫部队称，乌克兰可能策划了针对前往俄罗斯的船只的无人机攻击。",
+          "excerpt": "俄罗斯航运船只在芬兰湾被攻击，芬兰防卫部队认为乌克兰可能是幕后策划者。",
+          "sourceName": "BBC News · 世界",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-21T18:22:09.000Z",
+          "region": "全球",
+          "topic": "地缘政治安全",
+          "termIds": [],
+          "facts": [
+            "一艘前往俄罗斯的船只在芬兰湾遭到攻击。",
+            "芬兰防卫部队认为乌克兰可能是这起无人机袭击的幕后策划者。"
+          ],
+          "consensus": [
+            "暂无明确共识"
+          ],
+          "inference": [
+            "若乌克兰被确认策划，可能导致地区海上安全警戒升级。",
+            "若攻击被证实为误判，紧张局势可能快速降温。"
+          ],
+          "risks": [
+            "后续调查若否认乌克兰 involvement，紧张局势可能缓和。",
+            "若冲突升级，航运路线可能被迫改道，增加成本。",
+            "国际舆论若对事件解释出现分歧，可能影响保险市场定价。"
+          ],
+          "causalChain": [
+            {
+              "title": "无人机攻击",
+              "explanation": "无人机对船只造成直接威胁或损害。",
+              "condition": "攻击已被确认发生"
+            },
+            {
+              "title": "安全警戒提升",
+              "explanation": "沿海国家加强海上监控和防御部署。",
+              "condition": "攻击被归因于地区冲突方"
+            },
+            {
+              "title": "航运成本上升",
+              "explanation": "保险费率和燃油附加费因风险上升而提高。",
+              "condition": "安全警戒导致风险溢价增加"
+            },
+            {
+              "title": "投资者情绪波动",
+              "explanation": "航运公司股价受成本上升预期影响出现波动。",
+              "condition": "市场对成本上升有预期"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "在繁忙的高速公路上突然出现的路障",
+            "explanation": "路障会迫使车辆减速、改道或等待，类似无人机攻击导致航运船只被迫改变航线或增加费用。该类比不适用于所有海域，因为部分航线有备选路径。"
+          },
+          "why": {
+            "cause": "无人机攻击提升了该海域的安全风险",
+            "mechanisms": [
+              "风险溢价上升导致保险费用增加",
+              "航运公司可能选择更安全但更长的航线",
+              "投资者对航运行业盈利前景产生担忧"
+            ],
+            "result": "航运成本上升，相关企业利润受压，投资者情绪波动"
+          },
+          "focus": [
+            "海运成本",
+            "保险费率",
+            "地区安全政策"
+          ],
+          "marketBet": [
+            "保险费用可能出现上行压力",
+            "航运公司短期内可能调整航线",
+            "投资者对航运板块的风险偏好可能转向更保守"
+          ],
+          "expectationGap": "来源未提供市场对该事件的具体预期，故无法比较实际与先前预期的差异。",
+          "counterView": "若调查结果显示攻击为误报或非乌克兰行为，市场可能快速恢复原有预期。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "航运相关基金或股票可能因成本上升预期出现波动。",
+              "why": "风险溢价提升导致行业盈利预期下降。",
+              "invalidation": "若后续调查证实攻击与乌克兰无关，风险溢价下降，投资影响消失。",
+              "condition": "若后续调查证实攻击与乌克兰无关，风险溢价下降，投资影响消失。"
+            }
+          ],
+          "surface": "俄罗斯航运船只在芬兰湾遭无人机袭击",
+          "next": [
+            "无人机攻击",
+            "安全警戒提升",
+            "航运成本上升",
+            "投资者情绪波动"
+          ],
+          "condition": [
+            "攻击已被确认发生",
+            "攻击被归因于地区冲突方",
+            "安全警戒导致风险溢价增加",
+            "市场对成本上升有预期"
+          ]
+        },
+        "watchItems": [
+          "芬兰防卫部队后续调查报告",
+          "乌克兰官方回应",
+          "航运公司公布的保险费用变化",
+          "地区海上安全通告"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "b72a9f33edd25a39e8620e8a706a70e296e3128062b80c09e96f72e2ed0350c3",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-21T19:13:17.370Z",
+        "state": "approved"
       }
     },
     {
@@ -474,7 +727,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -629,7 +883,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -733,7 +988,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1064,7 +1320,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -1212,7 +1469,7 @@
         "reader": "cnfin-body",
         "sha256": "9640b21efd11a0ea1eb6cbc5dfa0c59118527a770ae5f37abfad7baf25d2d0ba",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261121/4498602_1.html",
-        "checkedAt": "2026-11-21T19:12:43.990Z"
+        "checkedAt": "2026-11-21T19:13:17.370Z"
       },
       "id": "f88d7a67da561bf72ad4",
       "verificationStatus": "verified",
@@ -1256,7 +1513,7 @@
         "reader": "cnfin-body",
         "sha256": "e873979b156e700ae2d0dadccaddcbdd13e52f7afd9a436fd6f61d4127be858c",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261121/4498594_1.html",
-        "checkedAt": "2026-11-21T19:12:43.990Z"
+        "checkedAt": "2026-11-21T19:13:17.370Z"
       },
       "id": "a9a7d742da0d186647f0",
       "verificationStatus": "verified",
@@ -5519,7 +5776,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6475,7 +6733,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -7083,7 +7342,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7133,7 +7393,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7183,7 +7444,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7233,7 +7495,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7287,7 +7550,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7337,7 +7601,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -7911,57 +8176,81 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 22
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "14ed3bc17384b3b064a5",
+      "selectedPublishedAt": "2026-11-21T12:00:01.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 11,
-      "originalSummaries": 11,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 9,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "unsupported-attribution": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 47,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 47,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 45,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 63,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 46,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 63,
-      "successRate": null
+      "skipped": 44,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
