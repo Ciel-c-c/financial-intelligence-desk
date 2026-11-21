@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-20T20:14:27.756Z",
-  "lastSuccessfulAt": "2026-11-20T20:13:42.650Z",
+  "attemptedAt": "2026-11-21T07:03:01.358Z",
+  "lastSuccessfulAt": "2026-11-21T07:03:01.358Z",
   "status": "delayed",
   "datasets": [
     {
@@ -22,7 +22,7 @@
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-11-20T20:13:42.650Z"
+      "lastSuccessfulAt": "2026-11-21T07:03:01.358Z"
     }
   ],
   "sourceHealth": [
@@ -186,48 +186,28 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
-      "id": "news-published-evidence",
-      "name": "Published evidence recheck（新闻）",
-      "status": "error",
-      "itemCount": 2,
-      "attempted": 2,
-      "unavailable": 0,
-      "invalidated": 24
-    },
-    {
-      "id": "news-review-queue",
-      "name": "复审队列诊断（新闻）",
-      "status": "ok",
-      "itemCount": 0,
-      "withBody": 0,
-      "withoutBody": 0,
-      "selectedId": "06a39aed45951a164ea6",
-      "selectedPublishedAt": "2026-11-20T19:51:52.000Z",
-      "selectedIsCurrent": true
-    },
-    {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 2,
-      "originalSummaries": 0,
-      "attempted": 2,
-      "generated": 2,
-      "requests": 10,
+      "itemCount": 27,
+      "originalSummaries": 27,
+      "attempted": 0,
+      "generated": 0,
+      "requests": 0,
       "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
       "status": "ok",
-      "itemCount": 2,
-      "attempted": 2,
+      "itemCount": 0,
+      "attempted": 0,
       "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 2,
-        "analysis": 2,
-        "audit": 2
+        "evidence": 0,
+        "analysis": 0,
+        "audit": 0
       },
       "rejectionReasons": {}
     }
