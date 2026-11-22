@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-22T06:43:34.550Z",
+  "attemptedAt": "2026-11-22T06:44:13.526Z",
   "lastSuccessfulAt": "2026-11-22T06:43:34.550Z",
   "nextExpectedAt": "2026-11-22T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-22T06:43:34.550Z",
   "status": "delayed",
   "latest": [
     {
@@ -52,21 +54,48 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Dozens missing after fire at Indonesian factory",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-22T06:05:00.000Z",
         "sourceHash": "ce80c713d30e296a09c6ecc26798841618f2c3cd5d60d95c3a5227d8eac56836",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-22T06:43:34.550Z",
-        "title": "Dozens missing after fire at Indonesian factory",
-        "summary": "At least three people were killed and four injured in a fire at a confectionary factory over the weekend.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-22T06:44:13.526Z",
+        "title": "印尼工厂火灾导致数十人失踪",
+        "summary": "印尼一家糖果工厂在周末发生火灾，导致数十人失踪。火灾造成至少三人死亡，四人受伤。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "印尼一家工厂的火灾导致数十人失踪。",
+            "quote": "Dozens missing after fire at Indonesian factory"
+          },
+          {
+            "text": "火灾造成至少三人死亡，四人受伤。",
+            "quote": "At least three people were killed and four injured in a fire at a confectionary factory over the weekend."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-22T06:44:13.526Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "ce80c713d30e296a09c6ecc26798841618f2c3cd5d60d95c3a5227d8eac56836",
+        "count": 1,
+        "lastAttemptAt": "2026-11-22T06:43:34.550Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "impact-assessment",
+          "fields": [
+            "personalImpact[0].score"
+          ]
+        }
       }
     },
     {
@@ -118,7 +147,52 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-22T06:44:13.526Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
+        "sourceUrl": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
+        "publishedAt": "2026-11-22T06:00:01.000Z",
+        "sourceHash": "b30214632e890a3467a6a27f9ce2542afef909c939c2d49b478ae1f635202088",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-22T06:44:13.526Z",
+        "title": "量子计算首个实际收益可能来自能源领域",
+        "summary": "量子计算的首个实际应用收益预计将出现在能源领域，而非药物研发。多家量子计算公司正测试能源电网优化、太阳能材料以及氢催化剂，以探索实际用途。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "量子计算的首个实际收益可能来自能源，而不是药物发现。",
+            "quote": "Quantum computing’s first real-world payoff may come in energy, not drug discovery"
+          },
+          {
+            "text": "量子计算公司正在测试能源电网优化、太阳能材料和氢催化剂。",
+            "quote": "Quantum computing firms are testing energy-grid optimization, solar materials and hydrogen catalysts as they pursue"
+          },
+          {
+            "text": "这些公司旨在将上述技术用于实际用途。",
+            "quote": "materials and hydrogen catalysts as they pursue practical uses."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "b30214632e890a3467a6a27f9ce2542afef909c939c2d49b478ae1f635202088",
+        "count": 1,
+        "lastAttemptAt": "2026-11-22T06:43:34.550Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "impact-assessment",
+          "fields": [
+            "personalImpact[1].score"
+          ]
+        }
       }
     },
     {
@@ -233,7 +307,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -283,7 +358,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -341,7 +417,7 @@
         "reader": "cnfin-body",
         "sha256": "4422ff6671dfc133146463d81289bf49ea5ea01192257ef916082e84b78b2bff",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261122/4498639_1.html",
-        "checkedAt": "2026-11-22T06:43:34.550Z"
+        "checkedAt": "2026-11-22T06:44:13.526Z"
       },
       "id": "ea4da0788428a642d23a",
       "verificationStatus": "verified",
@@ -449,7 +525,7 @@
         "reader": "cnfin-body",
         "sha256": "6ebe40f3ea8e9135eaa0cea85f574bbf366af29832130800b3133a20318c4497",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261122/4498636_1.html",
-        "checkedAt": "2026-11-22T06:43:34.550Z"
+        "checkedAt": "2026-11-22T06:44:13.526Z"
       },
       "id": "1293125fd7c99b05c4b8",
       "verificationStatus": "verified",
@@ -1287,7 +1363,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1442,7 +1519,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1546,7 +1624,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -4179,7 +4258,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -6013,57 +6093,79 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 13
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "8eafa7411b89f0d39cae",
+      "selectedPublishedAt": "2026-11-22T06:05:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 8,
-      "originalSummaries": 8,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "impact-assessment": 2
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 25,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 25,
-      "successRate": null
+      "skipped": 23,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 44,
-      "attempted": 0,
+      "eligible": 26,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 44,
-      "successRate": null
+      "skipped": 24,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
