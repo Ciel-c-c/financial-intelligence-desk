@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-22T19:35:35.740Z",
+  "attemptedAt": "2026-11-22T19:36:08.753Z",
   "lastSuccessfulAt": "2026-11-22T19:35:35.740Z",
   "nextExpectedAt": "2026-11-23T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-22T19:35:35.740Z",
   "status": "delayed",
   "latest": [
     {
@@ -53,7 +55,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -103,7 +106,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -158,21 +162,48 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "What's next after no deal at COP31 climate talks?",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-22T18:57:24.000Z",
         "sourceHash": "2e44ee76366b020fb4685230519d674ad8c2378ec35df66481480644e6b07aa7",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-22T19:35:35.740Z",
-        "title": "What's next after no deal at COP31 climate talks?",
-        "summary": "The COP31 climate summit in Turkey has formally come to an end after countries failed to agree a deal.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-22T19:36:08.753Z",
+        "title": "COP31气候峰会未达成协议后将如何发展",
+        "summary": "COP31气候峰会在土耳其举行，但各国未能就气候协议达成一致，会议正式结束。会议结束后，外界关注下一步的气候行动安排。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "COP31气候谈判未达成协议后，公众关注下一步的行动。",
+            "quote": "What's next after no deal at COP31 climate talks?"
+          },
+          {
+            "text": "在土耳其举行的COP31气候峰会因各国未能就协议达成一致而正式结束。",
+            "quote": "The COP31 climate summit in Turkey has formally come to an end after countries failed to agree a deal."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-22T19:36:08.753Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "2e44ee76366b020fb4685230519d674ad8c2378ec35df66481480644e6b07aa7",
+        "count": 1,
+        "lastAttemptAt": "2026-11-22T19:35:35.740Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "marketSignals"
+          ]
+        }
       }
     },
     {
@@ -188,7 +219,7 @@
       "fetchedAt": "2026-11-22T19:35:35.740Z",
       "id": "975b29b132884795944b",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "CNBC",
@@ -199,24 +230,32 @@
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
-        "公司"
+        "宏观",
+        "行业"
       ],
       "eventTypes": [
         "公司经营"
       ],
       "impactChannels": [],
       "regions": [
-        "全球"
+        "美国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "公司经营|employeesaterict|2026-11-22",
-      "detailStatus": "professional",
+      "detailStatus": "so-what",
       "facts": [
-        "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million investment from South Korea's Base Group."
+        "员工因公司现金紧张失去健康福利",
+        "公司正在寻求紧急过桥贷款",
+        "公司正与风险投资公司进行谈判",
+        "公司等待来自韩国Base Group的150亿美元投资"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若公司成功获得桥梁贷款，可能暂时缓解现金压力并恢复福利。",
+        "若Base Group的150亿美元投资落地，公司的长期融资前景将显著改善。",
+        "若未能获得外部资金，现金紧张可能进一步恶化，导致更多成本削减。"
+      ],
       "article": {
         "status": "summary",
         "text": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens\nFoundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million investment from South Korea's Base Group.",
@@ -228,11 +267,240 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-22T19:35:35.740Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-22T19:36:08.753Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "ea5399319d46fc8038b5744d018728ec6b0929870efaa99386a5f0662e69f14c",
+        "count": 1,
+        "lastAttemptAt": "2026-11-22T19:35:35.740Z"
+      },
+      "titleZh": "Eric Trump支持的机器人初创公司因现金紧张削减员工健康福利",
+      "summaryZh": "Foundation公司因现金紧张导致员工失去健康福利，正寻求紧急过桥贷款并与风险投资及韩国Base Group洽谈150亿美元投资。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "员工因公司现金紧张失去健康福利",
+              "evidence": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens"
+            },
+            {
+              "text": "公司正在寻求紧急过桥贷款",
+              "evidence": "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million"
+            },
+            {
+              "text": "公司正与风险投资公司进行谈判",
+              "evidence": "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million"
+            },
+            {
+              "text": "公司等待来自韩国Base Group的150亿美元投资",
+              "evidence": "with VC firms as it waits for a $150 million investment from South Korea's Base Group."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "美国",
+            "triggerEvidence": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
+            "path": [
+              "现金紧张",
+              "削减健康福利",
+              "可支配收入下降",
+              "消费削减"
+            ],
+            "invalidation": "若公司成功获得桥梁贷款或Base Group投资并恢复福利，消费削减将不再出现。"
+          },
+          {
+            "label": "企业经营",
+            "score": 2,
+            "audience": "firms",
+            "region": "美国",
+            "triggerEvidence": "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million",
+            "path": [
+              "现金紧张",
+              "寻求桥梁贷款",
+              "与VC及Base Group谈判",
+              "融资不确定性影响运营决策"
+            ],
+            "invalidation": "若融资成功，运营决策的负面影响将被缓解。"
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "ea5399319d46fc8038b5744d018728ec6b0929870efaa99386a5f0662e69f14c",
+        "originalTitle": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
+        "reviewedAt": "2026-11-22T19:35:35.740Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "975b29b132884795944b",
+          "title": "Eric Trump支持的机器人初创公司因现金紧张削减员工健康福利",
+          "summary": "Foundation公司因现金紧张导致员工失去健康福利，正寻求紧急过桥贷款并与风险投资及韩国Base Group洽谈150亿美元投资。",
+          "excerpt": "员工因公司现金紧张失去健康福利；公司正在寻求紧急过桥贷款并等待来自韩国Base Group的150亿美元投资。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
+          "publishedAt": "2026-11-22T18:55:05.000Z",
+          "region": "美股",
+          "topic": "企业融资危机",
+          "termIds": [],
+          "facts": [
+            "员工因公司现金紧张失去健康福利",
+            "公司正在寻求紧急过桥贷款",
+            "公司正与风险投资公司进行谈判",
+            "公司等待来自韩国Base Group的150亿美元投资"
+          ],
+          "consensus": [
+            "暂无公开的市场共识"
+          ],
+          "inference": [
+            "若公司成功获得桥梁贷款，可能暂时缓解现金压力并恢复福利。",
+            "若Base Group的150亿美元投资落地，公司的长期融资前景将显著改善。",
+            "若未能获得外部资金，现金紧张可能进一步恶化，导致更多成本削减。"
+          ],
+          "risks": [
+            "桥梁贷款谈判失败导致现金流继续紧张。",
+            "Base Group投资延期或取消。",
+            "员工因福利削减而离职，导致人才流失。"
+          ],
+          "causalChain": [
+            {
+              "title": "现金紧张",
+              "explanation": "公司现金流不足，无法覆盖全部运营支出。",
+              "condition": "公司收入未能覆盖支出且未获新融资"
+            },
+            {
+              "title": "削减健康福利",
+              "explanation": "为降低支出，公司取消部分员工健康福利。",
+              "condition": "现金紧张导致成本压缩需求"
+            },
+            {
+              "title": "寻求桥梁贷款",
+              "explanation": "公司启动紧急融资以填补短期现金缺口。",
+              "condition": "现金紧张且福利已被削减"
+            },
+            {
+              "title": "与VC及Base Group谈判",
+              "explanation": "公司与风险投资及韩国Base Group洽谈150亿美元投资。",
+              "condition": "桥梁贷款仍未到位且现金压力持续"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "家庭收入骤降后被迫取消健康保险",
+            "explanation": "就像家庭收入下降时会削减保险支出，企业现金紧张时也会削减员工福利。此类类比适用于说明现金流对支出决策的直接影响，但不适用于预测公司整体生存，因为企业还有其他融资渠道。"
+          },
+          "why": {
+            "cause": "公司现金流不足",
+            "mechanisms": [
+              "成本压缩导致福利削减",
+              "紧急融资需求推动桥梁贷款谈判",
+              "大额外部投资预期影响融资策略"
+            ],
+            "result": "员工福利受损，企业融资不确定性上升，可能影响人才保留和运营持续性"
+          },
+          "focus": [
+            "现金流管理",
+            "员工福利成本",
+            "外部融资进展"
+          ],
+          "marketBet": [
+            "若桥梁贷款成功，短期现金压力将缓解",
+            "若Base Group投资落地，长期资本结构将显著改善",
+            "若融资均未到位，可能出现进一步裁员或资产出售"
+          ],
+          "expectationGap": "源文未提供市场对公司融资成功率的共识，故无法比较实际与预期之间的差距。",
+          "counterView": "也可能公司通过内部成本重组或其他非融资手段解决现金问题，而非完全依赖外部大额投资。",
+          "personalImpact": [
+            {
+              "label": "消费",
+              "impact": "员工因失去健康福利导致可支配收入下降，可能削减非必需消费。",
+              "why": "福利削减直接降低了员工的实际收入和福利价值。",
+              "invalidation": "若公司成功获得桥梁贷款或Base Group投资并恢复福利，消费影响将被抵消。",
+              "condition": "若公司成功获得桥梁贷款或Base Group投资并恢复福利，消费影响将被抵消。"
+            }
+          ],
+          "surface": "Eric Trump支持的机器人初创公司因现金紧张削减员工健康福利",
+          "next": [
+            "现金紧张",
+            "削减健康福利",
+            "寻求桥梁贷款",
+            "与VC及Base Group谈判"
+          ],
+          "condition": [
+            "公司收入未能覆盖支出且未获新融资",
+            "现金紧张导致成本压缩需求",
+            "现金紧张且福利已被削减",
+            "桥梁贷款仍未到位且现金压力持续"
+          ]
+        },
+        "watchItems": [
+          "公司是否公布桥梁贷款的具体进展",
+          "Base Group投资协议的签署或延期公告",
+          "风险投资提供的条款清单或否决信息",
+          "员工福利恢复或进一步削减的公告"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "ea5399319d46fc8038b5744d018728ec6b0929870efaa99386a5f0662e69f14c",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-22T19:36:08.753Z",
+        "state": "approved"
       }
     },
     {
@@ -605,7 +873,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -953,7 +1222,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -1153,7 +1423,7 @@
         "reader": "cnfin-body",
         "sha256": "d9496c22a6ae6804c92a246dce71694fce698cf1d996da33d2ba75d4ffeab607",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261122/4498735_1.html",
-        "checkedAt": "2026-11-22T19:35:35.740Z"
+        "checkedAt": "2026-11-22T19:36:08.753Z"
       },
       "id": "1c79a9fc6ff62506dd71",
       "verificationStatus": "verified",
@@ -1296,7 +1566,7 @@
         "reader": "cnfin-body",
         "sha256": "0b63627dd6731f121bf864321ea856ba39fe93f9c4fbbf9ab8d26599c3185c13",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261122/4498713_1.html",
-        "checkedAt": "2026-11-22T19:35:35.740Z"
+        "checkedAt": "2026-11-22T19:36:08.753Z"
       },
       "id": "738decce91cc1f2af7d5",
       "verificationStatus": "verified",
@@ -3059,7 +3329,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -3214,7 +3485,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3318,7 +3590,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -3717,7 +3990,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -3767,7 +4041,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -6064,57 +6339,81 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 12
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "34d37723442385775d39",
+      "selectedPublishedAt": "2026-11-22T18:57:24.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 13,
-      "originalSummaries": 13,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 27,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 27,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 25,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 44,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 28,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 44,
-      "successRate": null
+      "skipped": 26,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
