@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-23T07:33:31.639Z",
+  "attemptedAt": "2026-11-23T07:34:00.069Z",
   "lastSuccessfulAt": "2026-11-23T07:33:31.639Z",
   "nextExpectedAt": "2026-11-23T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-23T07:33:31.639Z",
   "status": "delayed",
   "latest": [
     {
@@ -58,21 +60,57 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "What's next after no deal at COP31 climate talks?",
         "sourceUrl": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-23T05:34:39.000Z",
         "sourceHash": "fa1d699cd37f03ce2ecc50f4775b5cb2983f88f8af6c96d9cf4a5fa626b82a63",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-23T07:33:31.639Z",
-        "title": "What's next after no deal at COP31 climate talks?",
-        "summary": "The talks have been the longest-running in the summit's history, with negotiations breaking down two days after they had been due to end.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-23T07:34:00.069Z",
+        "title": "COP31气候谈判未达成协议，历时最长且提前两天破裂",
+        "summary": "COP31气候谈判未能达成协议，成为峰会历史上持续时间最长的谈判，并在原定结束日期后两天出现破裂。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "COP31气候谈判未达成协议。",
+            "quote": "What's next after no deal at COP31 climate talks?"
+          },
+          {
+            "text": "本次谈判是峰会历史上持续时间最长的。",
+            "quote": "The talks have been the longest-running in the summit's history, with negotiations breaking down two days after they had"
+          },
+          {
+            "text": "谈判在原定结束日期后两天破裂。",
+            "quote": "negotiations breaking down two days after they had been due to end."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-23T07:34:00.069Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "fa1d699cd37f03ce2ecc50f4775b5cb2983f88f8af6c96d9cf4a5fa626b82a63",
+        "count": 1,
+        "lastAttemptAt": "2026-11-23T07:33:31.639Z",
+        "auditFindings": [
+          {
+            "category": "invalidation",
+            "section": "personalImpacts",
+            "index": 0
+          }
+        ],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -130,21 +168,47 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Energy bills will soar - here's how you can ease the pain",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-23T01:05:07.000Z",
         "sourceHash": "81fdfa12f62ee69281a977a4538be1bdf43571c68061ca6d03fb6f961aed81fb",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-23T07:33:31.639Z",
-        "title": "Energy bills will soar - here's how you can ease the pain",
-        "summary": "Household energy bills are about to increase but there are ways to keep a lid on your expenditure.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-23T07:34:00.069Z",
+        "title": "能源账单将飙升——如何缓解压力",
+        "summary": "能源账单即将大幅上涨，家庭支出面临压力。但仍有多种方式可以帮助控制能源开支，减轻账单增长带来的负担。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "能源账单将出现大幅上涨。",
+            "quote": "Energy bills will soar - here's how you can ease the pain"
+          },
+          {
+            "text": "尽管家庭能源费用将上升，仍有方法可以控制支出。",
+            "quote": "Household energy bills are about to increase but there are ways to keep a lid on your expenditure."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-23T07:34:00.069Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "81fdfa12f62ee69281a977a4538be1bdf43571c68061ca6d03fb6f961aed81fb",
+        "count": 1,
+        "lastAttemptAt": "2026-11-23T07:33:31.639Z",
+        "auditFindings": [],
+        "rejection": {
+          "stage": "audit",
+          "category": "audit",
+          "fields": []
+        }
       }
     },
     {
@@ -305,7 +369,7 @@
         "reader": "cnfin-body",
         "sha256": "4e36046941fc5cc740e2082434b1e70ec525410649ff9a1cbcd6be322911fe46",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261123/4499019_1.html",
-        "checkedAt": "2026-11-23T07:33:31.639Z"
+        "checkedAt": "2026-11-23T07:34:00.069Z"
       },
       "id": "eb1e296fcc7bca42192f",
       "verificationStatus": "verified",
@@ -407,7 +471,7 @@
         "reader": "cnfin-body",
         "sha256": "aa00e46069360ae74b8a33d282b9279ec4386c71c334b4eeb810f7b19a01c9ab",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261123/4499011_1.html",
-        "checkedAt": "2026-11-23T07:33:31.639Z"
+        "checkedAt": "2026-11-23T07:34:00.069Z"
       },
       "id": "3660555eaa5af0965ebe",
       "verificationStatus": "verified",
@@ -1293,7 +1357,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1343,7 +1408,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1809,7 +1875,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -1967,7 +2034,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -2398,7 +2466,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2676,7 +2745,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -4741,7 +4811,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -4896,7 +4967,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5000,7 +5072,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -5399,7 +5472,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -5449,7 +5523,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -6619,57 +6694,79 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 14
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "34d37723442385775d39",
+      "selectedPublishedAt": "2026-11-23T05:34:39.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 13,
-      "originalSummaries": 13,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
+        "evidence": 2,
+        "analysis": 2,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "audit": 2
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 31,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 31,
-      "successRate": null
+      "skipped": 29,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 47,
-      "attempted": 0,
+      "eligible": 30,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 47,
-      "successRate": null
+      "skipped": 28,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
