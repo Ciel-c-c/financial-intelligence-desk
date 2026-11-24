@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-23T23:51:44.420Z",
-  "lastSuccessfulAt": "2026-11-23T23:51:09.646Z",
+  "attemptedAt": "2026-11-24T09:51:11.410Z",
+  "lastSuccessfulAt": "2026-11-24T09:51:11.410Z",
   "status": "delayed",
   "datasets": [
     {
@@ -22,7 +22,7 @@
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-11-23T23:51:09.646Z"
+      "lastSuccessfulAt": "2026-11-24T09:51:11.410Z"
     }
   ],
   "sourceHealth": [
@@ -152,7 +152,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 44
+      "itemCount": 41
     },
     {
       "id": "news-un",
@@ -164,7 +164,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 34
+      "itemCount": 24
     },
     {
       "id": "news-bbc-business",
@@ -186,50 +186,28 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
-      "id": "news-published-evidence",
-      "name": "Published evidence recheck（新闻）",
-      "status": "error",
-      "itemCount": 2,
-      "attempted": 2,
-      "unavailable": 0,
-      "invalidated": 24
-    },
-    {
-      "id": "news-review-queue",
-      "name": "复审队列诊断（新闻）",
-      "status": "ok",
-      "itemCount": 0,
-      "withBody": 0,
-      "withoutBody": 0,
-      "selectedId": "975b29b132884795944b",
-      "selectedPublishedAt": "2026-11-23T23:28:19.000Z",
-      "selectedIsCurrent": true
-    },
-    {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 1,
-      "originalSummaries": 0,
-      "attempted": 2,
-      "generated": 1,
-      "requests": 11,
-      "rejectionReasons": {
-        "translation-unavailable": 1
-      }
+      "itemCount": 19,
+      "originalSummaries": 19,
+      "attempted": 0,
+      "generated": 0,
+      "requests": 0,
+      "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
       "status": "ok",
-      "itemCount": 2,
-      "attempted": 2,
+      "itemCount": 0,
+      "attempted": 0,
       "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 2,
-        "analysis": 2,
-        "audit": 2
+        "evidence": 0,
+        "analysis": 0,
+        "audit": 0
       },
       "rejectionReasons": {}
     }
