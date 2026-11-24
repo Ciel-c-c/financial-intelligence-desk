@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-24T22:24:07.752Z",
+  "attemptedAt": "2026-11-24T22:24:44.112Z",
   "lastSuccessfulAt": "2026-11-24T22:24:07.752Z",
   "nextExpectedAt": "2026-11-25T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-24T22:24:07.752Z",
   "status": "delayed",
   "latest": [
     {
@@ -46,7 +48,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -152,21 +155,50 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "US attorney general dodges questions about Nvidia investigation",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-24T21:19:42.000Z",
         "sourceHash": "77f2b17edd908b31a76556075dcc91e346194f93f955960715b6e3e5dbdc839d",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-24T22:24:07.752Z",
-        "title": "US attorney general dodges questions about Nvidia investigation",
-        "summary": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-24T22:24:44.112Z",
+        "title": "美国司法部长回避英伟达调查提问",
+        "summary": "美国司法部长在记者提问时回避了关于英伟达调查的细节。同时，英伟达股价因议员要求澄清特朗普总统与黄某复职的关联而下跌7%。议员们正追问特朗普在黄某复职中的具体角色。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "美国司法部长回避了关于英伟达调查的提问。",
+            "quote": "US attorney general dodges questions about Nvidia investigation"
+          },
+          {
+            "text": "英伟达股价因议员要求解释特朗普总统涉及黄某复职而下跌7%。",
+            "quote": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's"
+          },
+          {
+            "text": "特朗普总统被指涉及黄某的复职。",
+            "quote": "President Donald Trump's involvement in Huang's reinstatement."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-24T22:24:44.112Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "77f2b17edd908b31a76556075dcc91e346194f93f955960715b6e3e5dbdc839d",
+        "count": 1,
+        "lastAttemptAt": "2026-11-24T22:24:07.752Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "unsupported-attribution",
+          "fields": []
+        }
       }
     },
     {
@@ -182,7 +214,7 @@
       "fetchedAt": "2026-11-24T22:24:07.752Z",
       "id": "5ad11f25fa57bf1d4d01",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "BBC News · 财经",
@@ -193,9 +225,11 @@
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
-        "行业"
+        "宏观"
       ],
-      "eventTypes": [],
+      "eventTypes": [
+        "财政政策"
+      ],
       "impactChannels": [],
       "regions": [
         "全球"
@@ -203,12 +237,18 @@
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "undefined|willigetthe100en|2026-11-24",
-      "detailStatus": "brief",
+      "detailStatus": "so-what",
       "facts": [
-        "Here is what you need to know about the payment that millions will receive from January."
+        "文章讨论每人£100的能源补贴",
+        "文章询问何时可以收到该补贴",
+        "数百万民众将获得该补贴",
+        "补贴从一月开始发放"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若补贴按计划发放，短期内家庭能源支出可能下降",
+        "若发放延迟，可能导致部分家庭现金流紧张"
+      ],
       "article": {
         "status": "summary",
         "text": "Will I get the £100 energy payment and when will I receive it?\nHere is what you need to know about the payment that millions will receive from January.",
@@ -220,8 +260,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-24T22:24:07.752Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "factualSummary": {
         "language": "en",
@@ -238,7 +279,239 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-24T22:24:44.112Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "6e03d37420e86337fc9c5b1d6f41e6b5a47573d2192e7927f69e2ae73856fda6",
+        "count": 1,
+        "lastAttemptAt": "2026-11-24T22:24:07.752Z"
+      },
+      "titleZh": "英国£100能源补贴何时发放？",
+      "summaryZh": "英国政府将向数百万居民发放每人£100的能源补贴，补贴自一月开始发放，公众关心能否领取以及具体到账时间。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "文章讨论每人£100的能源补贴",
+              "evidence": "Will I get the £100 energy payment and when will I receive it?"
+            },
+            {
+              "text": "文章询问何时可以收到该补贴",
+              "evidence": "Will I get the £100 energy payment and when will I receive it?"
+            },
+            {
+              "text": "数百万民众将获得该补贴",
+              "evidence": "Here is what you need to know about the payment that millions will receive from January."
+            },
+            {
+              "text": "补贴从一月开始发放",
+              "evidence": "Here is what you need to know about the payment that millions will receive from January."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 2,
+            "audience": "households",
+            "region": "英国",
+            "triggerEvidence": "Here is what you need to know about the payment that millions will receive from January.",
+            "path": [
+              "政府决定发放补贴",
+              "补贴从一月开始发放",
+              "居民收到补贴"
+            ],
+            "invalidation": "若补贴金额不足以覆盖能源费用，住房成本下降幅度受限"
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 2,
+            "audience": "households",
+            "region": "英国",
+            "triggerEvidence": "Will I get the £100 energy payment and when will I receive it?",
+            "path": [
+              "政府决定发放补贴",
+              "补贴从一月开始发放",
+              "居民收到补贴"
+            ],
+            "invalidation": "若补贴未及时到账，消费提升效果不出现"
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "英镑",
+            "direction": "中性",
+            "reason": "一次性补贴规模相对整体财政支出有限，短期对汇率影响不明显",
+            "condition": "补贴按计划发放且未导致财政赤字大幅上升",
+            "invalidation": "若补贴导致财政赤字显著扩大，可能对英镑形成下行压力",
+            "timeframe": "短期"
+          }
+        ],
+        "sourceBodyHash": "6e03d37420e86337fc9c5b1d6f41e6b5a47573d2192e7927f69e2ae73856fda6",
+        "originalTitle": "Will I get the £100 energy payment and when will I receive it?",
+        "reviewedAt": "2026-11-24T22:24:07.752Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "5ad11f25fa57bf1d4d01",
+          "title": "英国£100能源补贴何时发放？",
+          "summary": "英国政府将向数百万居民发放每人£100的能源补贴，补贴自一月开始发放，公众关心能否领取以及具体到账时间。",
+          "excerpt": "数百万民众将获得该补贴，补贴从一月开始发放。",
+          "sourceName": "BBC News · 财经",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/c35yn8x748e9o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-24T20:16:24.000Z",
+          "region": "全球",
+          "topic": "能源补贴",
+          "termIds": [],
+          "facts": [
+            "文章讨论每人£100的能源补贴",
+            "文章询问何时可以收到该补贴",
+            "数百万民众将获得该补贴",
+            "补贴从一月开始发放"
+          ],
+          "consensus": [
+            "暂无公开的市场共识"
+          ],
+          "inference": [
+            "若补贴按计划发放，短期内家庭能源支出可能下降",
+            "若发放延迟，可能导致部分家庭现金流紧张"
+          ],
+          "risks": [
+            "发放系统技术故障导致延迟",
+            "财政预算不足导致补贴规模缩减",
+            "公众对资格认定产生争议"
+          ],
+          "causalChain": [
+            {
+              "title": "政府决定发放£100能源补贴",
+              "explanation": "为缓解能源价格上涨对居民的冲击，政府宣布一次性£100补贴。",
+              "condition": "政策已正式公布"
+            },
+            {
+              "title": "补贴从一月开始发放",
+              "explanation": "根据官方说明，补贴的发放时间起点为一月。",
+              "condition": "财政部门启动支付系统"
+            },
+            {
+              "title": "居民收到补贴",
+              "explanation": "符合条件的居民将在系统处理后收到款项。",
+              "condition": "个人信息已在系统中登记并通过验证"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "一次性发放的购物券",
+            "explanation": "就像商店发放的£100购物券，持有人可以在特定时间内使用，但只有在系统确认后才能使用，且若系统故障可能导致使用延迟。"
+          },
+          "why": {
+            "cause": "政府为缓解能源成本压力推出一次性补贴",
+            "mechanisms": [
+              "直接现金流入家庭",
+              "降低家庭能源账单支出",
+              "提升短期消费意愿"
+            ],
+            "result": "可能在短期内提升居民可支配收入，缓解能源费用压力"
+          },
+          "focus": [
+            "家庭现金流",
+            "能源支出",
+            "短期消费"
+          ],
+          "marketBet": [
+            "若补贴及时到账，家庭能源支出将出现短期下降",
+            "若发放延迟，可能出现短期消费抑制"
+          ],
+          "expectationGap": "来源未提供公众对补贴到账时间的具体预期，故无法比较实际与预期的差异。",
+          "counterView": "若补贴被视为一次性救助，部分家庭可能将其用于非能源支出，从而削弱能源支出下降的效果。",
+          "personalImpact": [
+            {
+              "label": "消费",
+              "impact": "家庭可支配收入增加，可能提升非必需品消费",
+              "why": "一次性£100现金直接进入家庭账户，提升可支配收入",
+              "invalidation": "若补贴发放延迟或未能到账，收入提升效果不出现",
+              "condition": "若补贴发放延迟或未能到账，收入提升效果不出现"
+            },
+            {
+              "label": "住房",
+              "impact": "能源账单压力减轻，住房维持成本下降",
+              "why": "补贴用于抵消能源费用，降低住房运行成本",
+              "invalidation": "若家庭能源账单仍高于补贴金额，成本下降幅度有限",
+              "condition": "若家庭能源账单仍高于补贴金额，成本下降幅度有限"
+            }
+          ],
+          "surface": "英国£100能源补贴何时发放？",
+          "next": [
+            "政府决定发放£100能源补贴",
+            "补贴从一月开始发放",
+            "居民收到补贴"
+          ],
+          "condition": [
+            "政策已正式公布",
+            "财政部门启动支付系统",
+            "个人信息已在系统中登记并通过验证"
+          ]
+        },
+        "watchItems": [
+          "政府是否公布具体到账时间表",
+          "支付系统的运行报告",
+          "财政预算执行情况"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "6e03d37420e86337fc9c5b1d6f41e6b5a47573d2192e7927f69e2ae73856fda6",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-24T22:24:44.112Z",
+        "state": "approved"
       }
     },
     {
@@ -355,7 +628,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -405,7 +679,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -455,7 +730,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -505,7 +781,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -555,7 +832,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -605,7 +883,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -655,7 +934,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "ecb",
@@ -694,7 +974,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1632,7 +1913,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2395,7 +2677,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2555,7 +2838,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2735,7 +3019,7 @@
         "reader": "cnfin-body",
         "sha256": "34039113451091467f0033d26ab3f50de0aa38cbf95feb05c4fc12c023ad7801",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261124/4499768_1.html",
-        "checkedAt": "2026-11-24T22:24:07.752Z"
+        "checkedAt": "2026-11-24T22:24:44.112Z"
       },
       "id": "44318d2c58ad11967fc2",
       "verificationStatus": "verified",
@@ -2965,7 +3249,7 @@
         "reader": "cnfin-body",
         "sha256": "6436b9fdbdcc85d5c7a53ef9325ad9b0d40ae1b617e7e4af1f6afa2ec1cef460",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261124/4499735_1.html",
-        "checkedAt": "2026-11-24T22:24:07.752Z"
+        "checkedAt": "2026-11-24T22:24:44.112Z"
       },
       "id": "87d8e2bdd1e32cda0c30",
       "verificationStatus": "verified",
@@ -9335,7 +9619,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -10363,7 +10648,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -10520,7 +10806,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -10771,57 +11058,81 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 22
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "f77cbce59a3238656040",
+      "selectedPublishedAt": "2026-11-24T21:19:42.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 17,
-      "originalSummaries": 17,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 9,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "unsupported-attribution": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 73,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 73,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 71,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 91,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 69,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 91,
-      "successRate": null
+      "skipped": 67,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
