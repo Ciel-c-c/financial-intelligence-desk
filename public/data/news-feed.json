@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-24T09:51:11.410Z",
+  "attemptedAt": "2026-11-24T09:51:47.475Z",
   "lastSuccessfulAt": "2026-11-24T09:51:11.410Z",
   "nextExpectedAt": "2026-11-24T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-24T09:51:11.410Z",
   "status": "delayed",
   "latest": [
     {
@@ -62,21 +64,46 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-24T09:42:54.000Z",
         "sourceHash": "78d2feb96c6ec0185aa834b47bfe6460a63cc265a8d14c575b885918b6a4a21e",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-24T09:51:11.410Z",
-        "title": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
-        "summary": "Nvidia had come under pressure from President Trump to reappoint Huang, whose comeback helped add $1tn to the company's stock value.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-24T09:51:47.475Z",
+        "title": "特朗普称说服英伟达恢复黄仁勋职位引发争议",
+        "summary": "特朗普表示自己说服英伟达重新任命首席执行官黄仁勋，随后因该言论受到公众批评。英伟达在特朗普施压后重新任命黄仁勋，其复出帮助公司市值增加约1万亿美元。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "特朗普因称自己说服英伟达恢复黄仁勋的职位而受到公众的强烈反对。",
+            "quote": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang"
+          },
+          {
+            "text": "英伟达在特朗普的压力下重新任命黄仁勋，其复出帮助公司市值增加约1万亿美元。",
+            "quote": "Nvidia had come under pressure from President Trump to reappoint Huang, whose comeback helped add $1tn to the company's"
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-24T09:51:47.475Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "78d2feb96c6ec0185aa834b47bfe6460a63cc265a8d14c575b885918b6a4a21e",
+        "count": 1,
+        "lastAttemptAt": "2026-11-24T09:51:11.410Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "personal-impact",
+          "fields": []
+        }
       }
     },
     {
@@ -115,7 +142,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -130,11 +158,12 @@
       "fetchedAt": "2026-11-24T09:51:11.410Z",
       "id": "888ac6dfe90441a813fa",
       "verificationStatus": "verified",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [],
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
+        "宏观",
         "公司"
       ],
       "eventTypes": [
@@ -142,17 +171,21 @@
       ],
       "impactChannels": [],
       "regions": [
-        "全球"
+        "美国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "公司经营|nvidiasharesfall|2026-11-24",
-      "detailStatus": "professional",
+      "detailStatus": "so-what",
       "facts": [
-        "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair."
+        "Nvidia 股价在盘前下跌 4%。",
+        "Jensen Huang 在因承认婚外情辞职后被重新任命为 CEO。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若公司高层稳定，股价可能在后市恢复",
+        "若出现进一步的管理层争议，股价可能继续承压"
+      ],
       "article": {
         "status": "summary",
         "text": "Nvidia shares fall 4% in premarket after Huang comeback rally\nJensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair.",
@@ -168,7 +201,246 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-24T09:51:47.475Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Nvidia shares fall 4% in premarket after Huang comeback rally",
+        "sourceUrl": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
+        "publishedAt": "2026-11-24T09:49:11.000Z",
+        "sourceHash": "dce36fef6c5dfa907715f2d77137855bec5e3da50ca3ce0a648249f084be03b8",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-24T09:51:47.475Z",
+        "title": "英伟达股价盘前下跌4%，黄仁勋复任CEO",
+        "summary": "英伟达公司股票在盘前交易中下跌了4%，原因是公司创始人兼首席执行官黄仁勋在因承认婚外情而辞职后重新被任命为CEO。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "英伟达股票在盘前交易中下跌了4%。",
+            "quote": "Nvidia shares fall 4% in premarket after Huang comeback rally"
+          },
+          {
+            "text": "黄仁勋在因承认婚外情而辞职后，被重新任命为英伟达的首席执行官。",
+            "quote": "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "dce36fef6c5dfa907715f2d77137855bec5e3da50ca3ce0a648249f084be03b8",
+        "count": 1,
+        "lastAttemptAt": "2026-11-24T09:51:11.410Z"
+      },
+      "titleZh": "Nvidia 股价盘前下跌 4%，CEO 黄仁勋复职后出现回调",
+      "summaryZh": "在 Jensen Huang 因承认婚外情辞职后被重新任命为 Nvidia CEO，市场曾出现短暂的回升，但盘前交易中股价仍下跌 4%。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "Nvidia 股价在盘前下跌 4%。",
+              "evidence": "Nvidia shares fall 4% in premarket after Huang comeback rally"
+            },
+            {
+              "text": "Jensen Huang 在因承认婚外情辞职后被重新任命为 CEO。",
+              "evidence": "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "label": "投资",
+            "score": 2,
+            "audience": "investors",
+            "region": "美国",
+            "triggerEvidence": "Nvidia shares fall 4% in premarket after Huang comeback rally",
+            "path": [
+              "CEO 复职",
+              "情绪提振",
+              "获利了结",
+              "股价下跌"
+            ],
+            "invalidation": "若后续业绩或行业消息转好，股价回升抵消亏损"
+          },
+          {
+            "label": "汇率",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "住房",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "工作",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "消费",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          },
+          {
+            "label": "企业经营",
+            "score": 0,
+            "audience": "none",
+            "region": "",
+            "triggerEvidence": null,
+            "path": [],
+            "invalidation": ""
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "Nvidia 股票",
+            "direction": "下行",
+            "reason": "盘前获利了结压力",
+            "condition": "复职消息发布后短期内出现抛售",
+            "invalidation": "若出现积极业绩预告或行业利好，抛售压力可能减弱",
+            "timeframe": "短期（数日）"
+          }
+        ],
+        "sourceBodyHash": "dce36fef6c5dfa907715f2d77137855bec5e3da50ca3ce0a648249f084be03b8",
+        "originalTitle": "Nvidia shares fall 4% in premarket after Huang comeback rally",
+        "reviewedAt": "2026-11-24T09:51:11.410Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "888ac6dfe90441a813fa",
+          "title": "Nvidia 股价盘前下跌 4%，CEO 黄仁勋复职后出现回调",
+          "summary": "在 Jensen Huang 因承认婚外情辞职后被重新任命为 Nvidia CEO，市场曾出现短暂的回升，但盘前交易中股价仍下跌 4%。",
+          "excerpt": "Nvidia 股价在盘前下跌 4%。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
+          "publishedAt": "2026-11-24T09:49:11.000Z",
+          "region": "美股",
+          "topic": "公司治理与股价波动",
+          "termIds": [],
+          "facts": [
+            "Nvidia 股价在盘前下跌 4%。",
+            "Jensen Huang 在因承认婚外情辞职后被重新任命为 CEO。"
+          ],
+          "consensus": [
+            "暂无明确共识"
+          ],
+          "inference": [
+            "若公司高层稳定，股价可能在后市恢复",
+            "若出现进一步的管理层争议，股价可能继续承压"
+          ],
+          "risks": [
+            "高层个人争议导致的声誉风险",
+            "监管部门对公司治理的审查可能加剧",
+            "市场对科技股情绪波动的传导效应"
+          ],
+          "causalChain": [
+            {
+              "title": "CEO 辞职",
+              "explanation": "Jensen Huang 因承认婚外情辞职，引发市场对公司治理的担忧",
+              "condition": "当高层离职被公开披露时"
+            },
+            {
+              "title": "CEO 复职",
+              "explanation": "公司宣布 Huang 重新任命为 CEO，短期内提振投资者情绪",
+              "condition": "在公司确认复职决定后"
+            },
+            {
+              "title": "股价回调",
+              "explanation": "尽管出现情绪提振，盘前交易中出现获利了结导致股价下跌 4%",
+              "condition": "复职消息发布后，短期内出现获利了结压力时"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "image": "公司像一艘航行中的船，船长临时离岗后船员会紧张，船长回归虽让船员松一口气，但若船只已偏离航道，仍需调整方向才能继续前进。",
+            "explanation": "CEO 的离职与复职类似船长的临时缺席与归来，短期情绪波动不等同于长期航向的改变，且船只（公司）仍需在市场（海面）中持续校准。"
+          },
+          "why": {
+            "cause": "高层变动引发的治理不确定性",
+            "mechanisms": [
+              "管理层变动影响投资者对公司战略执行的信心",
+              "复职消息产生短期情绪提振",
+              "获利了结导致盘前股价回调"
+            ],
+            "result": "短期内股价出现波动，投资者情绪分化"
+          },
+          "focus": [
+            "公司治理风险",
+            "短期股价波动",
+            "投资者情绪"
+          ],
+          "marketBet": [
+            "若公司发布明确的长期战略，股价有望在数周内回升",
+            "若出现进一步的高层争议，股价可能继续下行"
+          ],
+          "expectationGap": "来源未提供市场对复职后股价走势的共识，故无法比较实际表现与先前预期的差异。",
+          "counterView": "部分分析师可能认为复职已消除主要不确定性，回调仅为技术性获利了结，后市仍有上行空间。",
+          "personalImpact": [
+            {
+              "label": "投资",
+              "impact": "持有 Nvidia 股票的投资者面临短期账面亏损",
+              "why": "股价盘前下跌 4%，导致持仓价值下降",
+              "invalidation": "若后市出现业绩提振或市场情绪回暖，亏损可能被抵消",
+              "condition": "若后市出现业绩提振或市场情绪回暖，亏损可能被抵消"
+            }
+          ],
+          "surface": "Nvidia 股价盘前下跌 4%，CEO 黄仁勋复职后出现回调",
+          "next": [
+            "CEO 辞职",
+            "CEO 复职",
+            "股价回调"
+          ],
+          "condition": [
+            "当高层离职被公开披露时",
+            "在公司确认复职决定后",
+            "复职消息发布后，短期内出现获利了结压力时"
+          ]
+        },
+        "watchItems": [
+          "公司后续是否发布进一步的治理整改计划",
+          "Nvidia 是否公布新的业绩指引",
+          "科技板块整体情绪变化",
+          "监管部门是否对高层行为进行调查"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "dce36fef6c5dfa907715f2d77137855bec5e3da50ca3ce0a648249f084be03b8",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-24T09:51:47.475Z",
+        "state": "approved"
       }
     },
     {
@@ -277,7 +549,7 @@
         "reader": "cnfin-body",
         "sha256": "a6d9ae0cdc230deeeceed1aeb8a5797fad14e2d9218afbb6b90151c9d57c97a5",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261124/4499675_1.html",
-        "checkedAt": "2026-11-24T09:51:11.410Z"
+        "checkedAt": "2026-11-24T09:51:47.475Z"
       },
       "id": "17085653cae7137ad24c",
       "verificationStatus": "verified",
@@ -385,7 +657,7 @@
         "reader": "cnfin-body",
         "sha256": "2c4cc1112cfee2ffe421f3978b2bea23bb78d109ec097d22b85343e25c73691f",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261124/4499623_1.html",
-        "checkedAt": "2026-11-24T09:51:11.410Z"
+        "checkedAt": "2026-11-24T09:51:47.475Z"
       },
       "id": "76ea6a63ba32b6bb4f69",
       "verificationStatus": "verified",
@@ -1797,7 +2069,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2095,7 +2368,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -2252,7 +2526,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -2573,7 +2848,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -2623,7 +2899,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -2673,7 +2950,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2959,7 +3237,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5332,7 +5611,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -10938,7 +11218,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -10988,7 +11269,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -11038,7 +11320,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -11283,57 +11566,79 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 22
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "047cef0eebf2c262c904",
+      "selectedPublishedAt": "2026-11-24T09:42:54.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 19,
-      "originalSummaries": 19,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "itemCount": 1,
+      "attempted": 2,
+      "rejected": 1,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 1,
+        "audit": 1
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "personal-impact": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 88,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 88,
-      "successRate": null
+      "skipped": 86,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 107,
-      "attempted": 0,
-      "succeeded": 0,
-      "rejected": 0,
+      "eligible": 88,
+      "attempted": 2,
+      "succeeded": 1,
+      "rejected": 1,
       "failed": 0,
-      "skipped": 107,
-      "successRate": null
+      "skipped": 86,
+      "successRate": 0.5
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
