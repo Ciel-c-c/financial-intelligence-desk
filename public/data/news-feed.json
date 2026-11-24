@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-23T23:51:09.646Z",
+  "attemptedAt": "2026-11-23T23:51:44.420Z",
   "lastSuccessfulAt": "2026-11-23T23:51:09.646Z",
   "nextExpectedAt": "2026-11-24T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-23T23:51:09.646Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -56,7 +59,7 @@
       "fetchedAt": "2026-11-23T23:51:09.646Z",
       "id": "975b29b132884795944b",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "CNBC",
@@ -67,24 +70,32 @@
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
-        "公司"
+        "宏观",
+        "行业"
       ],
       "eventTypes": [
         "公司经营"
       ],
       "impactChannels": [],
       "regions": [
-        "全球"
+        "美国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "公司经营|employeesaterict|2026-11-23",
-      "detailStatus": "professional",
+      "detailStatus": "so-what",
       "facts": [
-        "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million investment from South Korea's Base Group."
+        "员工失去健康福利。",
+        "公司现金紧张。",
+        "公司正在寻求紧急过桥贷款。",
+        "公司正与风险投资公司洽谈。",
+        "公司在等待来自韩国Base Group的$150 million投资。"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若桥梁贷款成功，现金压力可能缓解，福利削减或可恢复",
+        "若150万美元投资延迟或未到位，公司可能面临进一步裁员或运营收缩"
+      ],
       "article": {
         "status": "summary",
         "text": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens\nFoundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million investment from South Korea's Base Group.",
@@ -97,16 +108,250 @@
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
         "sourceBodyHash": "ea5399319d46fc8038b5744d018728ec6b0929870efaa99386a5f0662e69f14c",
-        "count": 1,
-        "lastAttemptAt": "2026-11-22T19:35:35.740Z"
+        "count": 2,
+        "lastAttemptAt": "2026-11-23T23:51:09.646Z"
       },
       "queue": {
         "firstSeenAt": "2026-11-22T19:35:35.740Z",
-        "summaryAttempt": 1,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 2,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-23T23:51:44.420Z"
+      },
+      "titleZh": "Eric Trump支持的机器人初创公司因现金紧张削减员工健康福利",
+      "summaryZh": "Foundation公司因现金流紧张，已失去为员工提供健康福利，并正在寻求紧急过桥贷款，同时等待来自韩国Base Group的150万美元投资。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "员工失去健康福利。",
+              "evidence": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens"
+            },
+            {
+              "text": "公司现金紧张。",
+              "evidence": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens"
+            },
+            {
+              "text": "公司正在寻求紧急过桥贷款。",
+              "evidence": "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million"
+            },
+            {
+              "text": "公司正与风险投资公司洽谈。",
+              "evidence": "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million"
+            },
+            {
+              "text": "公司在等待来自韩国Base Group的$150 million投资。",
+              "evidence": "with VC firms as it waits for a $150 million investment from South Korea's Base Group."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "audience": "investors",
+            "invalidation": "桥梁贷款或150万美元投资成功",
+            "label": "投资",
+            "path": [
+              "现金紧张",
+              "寻求桥梁贷款",
+              "融资不确定性"
+            ],
+            "region": "美国",
+            "score": 2,
+            "triggerEvidence": "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million"
+          },
+          {
+            "audience": "households",
+            "invalidation": "公司恢复健康福利",
+            "label": "消费",
+            "path": [
+              "现金紧张",
+              "削减健康福利",
+              "可支配收入下降"
+            ],
+            "region": "美国",
+            "score": 2,
+            "triggerEvidence": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens"
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "汇率",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "住房",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "工作",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "firms",
+            "invalidation": "获得足够融资后恢复正常运营",
+            "label": "企业经营",
+            "path": [
+              "现金紧张",
+              "削减福利",
+              "运营成本调整"
+            ],
+            "region": "美国",
+            "score": 2,
+            "triggerEvidence": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens"
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [],
+        "sourceBodyHash": "ea5399319d46fc8038b5744d018728ec6b0929870efaa99386a5f0662e69f14c",
+        "originalTitle": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
+        "reviewedAt": "2026-11-23T23:51:09.646Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "975b29b132884795944b",
+          "title": "Eric Trump支持的机器人初创公司因现金紧张削减员工健康福利",
+          "summary": "Foundation公司因现金流紧张，已失去为员工提供健康福利，并正在寻求紧急过桥贷款，同时等待来自韩国Base Group的150万美元投资。",
+          "excerpt": "员工失去健康福利，公司现金紧张，正寻求紧急过桥贷款并与风险投资公司洽谈，期待150万美元投资。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
+          "publishedAt": "2026-11-23T23:28:19.000Z",
+          "region": "美股",
+          "topic": "企业融资与员工福利",
+          "termIds": [],
+          "facts": [
+            "员工失去健康福利。",
+            "公司现金紧张。",
+            "公司正在寻求紧急过桥贷款。",
+            "公司正与风险投资公司洽谈。",
+            "公司在等待来自韩国Base Group的$150 million投资。"
+          ],
+          "consensus": [
+            "暂无公开的市场共识"
+          ],
+          "inference": [
+            "若桥梁贷款成功，现金压力可能缓解，福利削减或可恢复",
+            "若150万美元投资延迟或未到位，公司可能面临进一步裁员或运营收缩"
+          ],
+          "risks": [
+            "桥梁贷款谈判失败导致现金流进一步恶化",
+            "Base Group投资未兑现导致融资缺口",
+            "行业竞争加剧使公司难以吸引新投资"
+          ],
+          "causalChain": [
+            {
+              "condition": "公司收入未能覆盖支出",
+              "explanation": "公司运营支出超过可用现金，导致流动性不足",
+              "title": "现金紧张"
+            },
+            {
+              "condition": "现金紧张导致成本削减需求",
+              "explanation": "为降低成本，公司暂停为员工提供健康保险",
+              "title": "削减健康福利"
+            },
+            {
+              "condition": "现金紧张且福利削减未能根本解决流动性问题",
+              "explanation": "公司尝试通过短期贷款获取急需资金",
+              "title": "寻求桥梁贷款"
+            },
+            {
+              "condition": "桥梁贷款仍在谈判中，且公司需要更大规模资金",
+              "explanation": "公司期待来自Base Group的大额投资以实现长期融资",
+              "title": "等待150万美元投资"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "explanation": "家庭在现金紧张时会先削减非必需支出，期待外部资金帮助恢复正常开支；但如果外部资金迟迟不到位，可能导致进一步的财务困境。此类比适用于公司现金流紧张时削减福利并寻求外部融资的情形，局限在于企业规模和融资渠道更为复杂。",
+            "image": "家庭因突发大额医疗费用而暂时削减日常开支，等待保险赔付或亲友借款"
+          },
+          "counterView": "若公司能够快速找到其他投资者或通过资产出售获得现金，可能不必依赖Bridge贷款或Base Group的投资。",
+          "expectationGap": "源文未提供市场对桥梁贷款成功率或Base Group投资时机的共识，故无法比较实际预期与市场预期的差异。",
+          "focus": [
+            "现金流管理",
+            "员工福利",
+            "融资渠道"
+          ],
+          "marketBet": [
+            "桥梁贷款能否在短期内获批",
+            "Base Group投资是否最终落地"
+          ],
+          "personalImpact": [
+            {
+              "impact": "投资者面临公司融资不确定性导致股权价值波动的风险",
+              "invalidation": "若桥梁贷款或150万美元投资成功落地，融资不确定性消除，股权价值波动风险降低",
+              "label": "投资",
+              "why": "公司现金紧张且关键融资仍在谈判中，若未获批可能影响公司估值",
+              "condition": "若桥梁贷款或150万美元投资成功落地，融资不确定性消除，股权价值波动风险降低"
+            },
+            {
+              "impact": "受影响员工的可支配收入下降，可能削减个人消费",
+              "invalidation": "若公司恢复健康福利或员工获得其他补贴，消费压力减轻",
+              "label": "消费",
+              "why": "失去健康福利后，员工需自行承担医疗保险费用，实际可支配收入下降",
+              "condition": "若公司恢复健康福利或员工获得其他补贴，消费压力减轻"
+            }
+          ],
+          "why": {
+            "cause": "公司现金流不足",
+            "mechanisms": [
+              "削减成本（停发健康福利）",
+              "寻求短期桥梁贷款",
+              "等待大额外部投资"
+            ],
+            "result": "若融资未能及时到位，可能导致进一步的运营收缩或裁员"
+          },
+          "surface": "Eric Trump支持的机器人初创公司因现金紧张削减员工健康福利",
+          "next": [
+            "现金紧张",
+            "削减健康福利",
+            "寻求桥梁贷款",
+            "等待150万美元投资"
+          ],
+          "condition": [
+            "公司收入未能覆盖支出",
+            "现金紧张导致成本削减需求",
+            "现金紧张且福利削减未能根本解决流动性问题",
+            "桥梁贷款仍在谈判中，且公司需要更大规模资金"
+          ]
+        },
+        "watchItems": [
+          "桥梁贷款谈判进展",
+          "Base Group投资是否正式签约",
+          "公司是否恢复员工福利"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "ea5399319d46fc8038b5744d018728ec6b0929870efaa99386a5f0662e69f14c",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-23T23:51:44.420Z",
+        "state": "approved"
       }
     },
     {
@@ -122,7 +367,7 @@
       "fetchedAt": "2026-11-23T23:51:09.646Z",
       "id": "0bf4e497c74e5d44de37",
       "verificationStatus": "cross-checked",
-      "translationStatus": "unavailable",
+      "translationStatus": "generated",
       "relatedSources": [
         {
           "name": "CNBC",
@@ -133,24 +378,34 @@
       "keyTerms": [],
       "causalSignals": [],
       "analysisLevels": [
-        "公司"
+        "宏观"
       ],
       "eventTypes": [
-        "公司经营"
+        "监管",
+        "经济数据"
       ],
-      "impactChannels": [],
+      "impactChannels": [
+        "供需",
+        "盈利"
+      ],
       "regions": [
-        "全球"
+        "美国"
       ],
       "importanceScore": 55,
       "continuingImpactScore": 40,
       "clusterId": "公司经营|espnnfltoshowsup|2026-11-23",
-      "detailStatus": "professional",
+      "detailStatus": "so-what",
       "facts": [
-        "In addition to ESPN channels, Super Bowl 61 will also be available on streaming platform Disney+ as well as the company's broadcast network ABC."
+        "ESPN 与 NFL 将在 IMAX 影院播放第61届超级碗",
+        "第61届超级碗也可在 Disney+ 流媒体平台观看",
+        "该赛事还将在 ABC 广播网络播出"
       ],
       "expectations": [],
-      "inferences": [],
+      "inferences": [
+        "若观众对 IMAX 现场观看需求高，影院票房可能提升。",
+        "多平台提供可能分散传统电视收视率，但提升整体观看人数。",
+        "流媒体订阅增长可能受赛事吸引而短期上升。"
+      ],
       "article": {
         "status": "summary",
         "text": "ESPN, NFL to show Super Bowl 61 in Imax theaters\nIn addition to ESPN channels, Super Bowl 61 will also be available on streaming platform Disney+ as well as the company's broadcast network ABC.",
@@ -166,7 +421,274 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-23T23:51:44.420Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
+        "sourceUrl": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
+        "publishedAt": "2026-11-23T21:55:27.000Z",
+        "sourceHash": "21cb8d995ec29b60048e0e7f3e86dc354e489facffd92bd134af6049a044f734",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-23T23:51:44.420Z",
+        "title": "ESPN 与 NFL 将在 IMAX 影院播出超级碗 61",
+        "summary": "ESPN 与美国国家橄榄球联盟计划在 IMAX 影院同步转播第 61 届超级碗。此外，赛事还将在 Disney+ 流媒体平台以及 ABC 广播网络向观众提供观看渠道。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "ESPN 与 NFL 将在 IMAX 影院同步播出第 61 届超级碗。",
+            "quote": "ESPN, NFL to show Super Bowl 61 in Imax theaters"
+          },
+          {
+            "text": "第 61 届超级碗也将在流媒体平台 Disney+ 上提供观看。",
+            "quote": "In addition to ESPN channels, Super Bowl 61 will also be available on streaming platform Disney+ as well as the company'"
+          },
+          {
+            "text": "该赛事还将在公司旗下的广播网络 ABC 播出。",
+            "quote": "streaming platform Disney+ as well as the company's broadcast network ABC."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "21cb8d995ec29b60048e0e7f3e86dc354e489facffd92bd134af6049a044f734",
+        "count": 1,
+        "lastAttemptAt": "2026-11-23T23:51:09.646Z"
+      },
+      "titleZh": "ESPN 与 NFL 将在 IMAX 影院播放第61届超级碗",
+      "summaryZh": "第61届超级碗将在 ESPN 频道、Disney+ 流媒体以及 ABC 广播网络同步播出，同时在 IMAX 影院提供大屏观看。",
+      "editorial": {
+        "language": "zh",
+        "evidence": {
+          "facts": [
+            {
+              "text": "ESPN 与 NFL 将在 IMAX 影院播放第61届超级碗",
+              "evidence": "ESPN, NFL to show Super Bowl 61 in Imax theaters"
+            },
+            {
+              "text": "第61届超级碗也可在 Disney+ 流媒体平台观看",
+              "evidence": "In addition to ESPN channels, Super Bowl 61 will also be available on streaming platform Disney+ as well as the company'"
+            },
+            {
+              "text": "该赛事还将在 ABC 广播网络播出",
+              "evidence": "streaming platform Disney+ as well as the company's broadcast network ABC."
+            }
+          ],
+          "background": [],
+          "expectations": [],
+          "uncertainties": []
+        },
+        "impactAssessment": [
+          {
+            "audience": "investors",
+            "invalidation": "若广告预算下降或观众流失，收益提升不成立",
+            "label": "投资",
+            "path": [
+              "多平台播出",
+              "观众覆盖面扩大",
+              "广告与订阅收入提升"
+            ],
+            "region": "美国",
+            "score": 2,
+            "triggerEvidence": "ESPN, NFL to show Super Bowl 61 in Imax theaters"
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "汇率",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "住房",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "none",
+            "invalidation": "",
+            "label": "工作",
+            "path": [],
+            "region": "",
+            "score": 0,
+            "triggerEvidence": null
+          },
+          {
+            "audience": "households",
+            "invalidation": "若票价或交通成本过高导致观众放弃",
+            "label": "消费",
+            "path": [
+              "多平台播出",
+              "观众选择付费观看",
+              "IMAX 票房提升"
+            ],
+            "region": "美国",
+            "score": 2,
+            "triggerEvidence": "ESPN, NFL to show Super Bowl 61 in Imax theaters"
+          },
+          {
+            "audience": "firms",
+            "invalidation": "",
+            "label": "企业经营",
+            "path": [],
+            "region": "美国",
+            "score": 1,
+            "triggerEvidence": null
+          }
+        ],
+        "evidenceScope": "summary",
+        "marketSignals": [
+          {
+            "asset": "IMAX 影院票房",
+            "condition": "观众愿意为大屏观看付费",
+            "direction": "上行",
+            "invalidation": "票价过高导致观众流失",
+            "reason": "超级碗高需求可能提升票房",
+            "timeframe": "短期"
+          },
+          {
+            "asset": "Disney+ 订阅",
+            "condition": "平台提供流畅观看体验",
+            "direction": "中性",
+            "invalidation": "技术或地区限制导致观看受阻",
+            "reason": "赛事吸引新用户，但已有用户可能已订阅",
+            "timeframe": "短期"
+          }
+        ],
+        "sourceBodyHash": "21cb8d995ec29b60048e0e7f3e86dc354e489facffd92bd134af6049a044f734",
+        "originalTitle": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
+        "reviewedAt": "2026-11-23T23:51:09.646Z",
+        "generator": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b",
+          "review": "edge-audit-v4",
+          "auditModel": "openai/gpt-oss-20b"
+        },
+        "item": {
+          "id": "0bf4e497c74e5d44de37",
+          "title": "ESPN 与 NFL 将在 IMAX 影院播放第61届超级碗",
+          "summary": "第61届超级碗将在 ESPN 频道、Disney+ 流媒体以及 ABC 广播网络同步播出，同时在 IMAX 影院提供大屏观看。",
+          "excerpt": "ESPN 与 NFL 将在 IMAX 影院播放第61届超级碗；该赛事亦可在 Disney+ 流媒体平台及 ABC 广播网络观看。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
+          "publishedAt": "2026-11-23T21:55:27.000Z",
+          "region": "美股",
+          "topic": "体育娱乐播出",
+          "termIds": [],
+          "facts": [
+            "ESPN 与 NFL 将在 IMAX 影院播放第61届超级碗",
+            "第61届超级碗也可在 Disney+ 流媒体平台观看",
+            "该赛事还将在 ABC 广播网络播出"
+          ],
+          "consensus": [
+            "大型体育赛事通过多平台同步播出已成为行业常态，以扩大观众覆盖面。"
+          ],
+          "inference": [
+            "若观众对 IMAX 现场观看需求高，影院票房可能提升。",
+            "多平台提供可能分散传统电视收视率，但提升整体观看人数。",
+            "流媒体订阅增长可能受赛事吸引而短期上升。"
+          ],
+          "risks": [
+            "IMAX 影院票价高于普通影院，若观众对价格敏感，实际入场率可能低于预期。",
+            "流媒体平台可能因带宽或地区版权限制导致部分观众无法观看。",
+            "赛事现场突发技术故障可能影响 IMAX 放映质量。"
+          ],
+          "causalChain": [
+            {
+              "condition": "各平台均能正常播出且无版权争议",
+              "explanation": "ESPN、Disney+、ABC 与 IMAX 同时提供观看渠道",
+              "title": "多平台播出"
+            },
+            {
+              "condition": "观众对渠道选择自由且无技术障碍",
+              "explanation": "不同渠道满足不同消费偏好，吸引更多观众",
+              "title": "观众覆盖面扩大"
+            },
+            {
+              "condition": "观众愿意为高质量观看付费",
+              "explanation": "IMAX 票房和 Disney+ 订阅可能因赛事需求上升",
+              "title": "票房与订阅收入提升"
+            }
+          ],
+          "mode": "今日快照"
+        },
+        "soWhat": {
+          "analogy": {
+            "explanation": "像新大片首映吸引观众排队购票，超级碗在 IMAX 放映也可能刺激观众为更佳观感付费，但不同于电影，体育赛事受赛果不可预测性影响，观众兴趣更受赛事本身吸引。",
+            "image": "电影院放映新大片的首映"
+          },
+          "counterView": "若观众更倾向于在家观看，IMAX 票房提升可能有限，流媒体订阅增长也可能被免费电视渠道分流。",
+          "expectationGap": "源文未提供市场对各渠道收入预期的具体数据，故无法确认实际表现是否符合行业常规预期。",
+          "focus": [
+            "观众覆盖面",
+            "付费渠道收入",
+            "广告与赞助价值"
+          ],
+          "marketBet": [
+            "IMAX 票房短期可能出现上行",
+            "Disney+ 订阅增长保持中性或轻微上行",
+            "传统电视收视率可能出现轻微下行"
+          ],
+          "personalImpact": [
+            {
+              "impact": "观众为观看超级碗在 IMAX 影院支付更高票价",
+              "invalidation": "若票价过高或观众对现场观看兴趣不足，消费提升将不成立",
+              "label": "消费",
+              "why": "多平台提供高质量观看选项，提升付费意愿",
+              "condition": "若票价过高或观众对现场观看兴趣不足，消费提升将不成立"
+            },
+            {
+              "impact": "媒体公司可能因广告收入和订阅费提升而受益",
+              "invalidation": "若广告主预算受宏观经济压缩或观众转向免费渠道，收益提升将受限",
+              "label": "投资",
+              "why": "赛事吸引大流量，提升广告价值和平台订阅",
+              "condition": "若广告主预算受宏观经济压缩或观众转向免费渠道，收益提升将受限"
+            }
+          ],
+          "why": {
+            "cause": "多渠道同步播出",
+            "mechanisms": [
+              "扩大覆盖面",
+              "提供差异化观看体验",
+              "提升付费意愿"
+            ],
+            "result": "可能带动影院票房、流媒体订阅和广告收入的同步增长"
+          },
+          "surface": "ESPN 与 NFL 将在 IMAX 影院播放第61届超级碗",
+          "next": [
+            "多平台播出",
+            "观众覆盖面扩大",
+            "票房与订阅收入提升"
+          ],
+          "condition": [
+            "各平台均能正常播出且无版权争议",
+            "观众对渠道选择自由且无技术障碍",
+            "观众愿意为高质量观看付费"
+          ]
+        },
+        "watchItems": [
+          "IMAX 影院票房实际表现",
+          "Disney+ 订阅增长幅度",
+          "ABC 收视率变化"
+        ]
+      },
+      "reviewMigration": {
+        "sourceHash": "21cb8d995ec29b60048e0e7f3e86dc354e489facffd92bd134af6049a044f734",
+        "reviewVersion": "edge-audit-v4",
+        "lastAttemptAt": "2026-11-23T23:51:44.420Z",
+        "state": "approved"
       }
     },
     {
@@ -206,7 +728,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -258,7 +781,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -310,7 +834,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -505,7 +1030,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -555,7 +1081,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -605,7 +1132,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "ecb",
@@ -661,7 +1189,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -749,7 +1278,7 @@
         "reader": "cnfin-body",
         "sha256": "388261c51c96509e085aa7112115070213b638cd786bef520e7f42cfc8870e96",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261124/4499362_1.html",
-        "checkedAt": "2026-11-23T23:51:09.646Z"
+        "checkedAt": "2026-11-23T23:51:44.420Z"
       },
       "id": "e17d776147ad85440d0f",
       "verificationStatus": "verified",
@@ -853,7 +1382,7 @@
         "reader": "cnfin-body",
         "sha256": "75b41a0da9a3ed248ab5ec3654059bd5ddb6a53d63c38d1014df0a6a5f204b45",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261124/4499358_1.html",
-        "checkedAt": "2026-11-23T23:51:09.646Z"
+        "checkedAt": "2026-11-23T23:51:44.420Z"
       },
       "id": "37a041028290bf189baf",
       "verificationStatus": "verified",
@@ -2016,7 +2545,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -7376,7 +7906,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7426,7 +7957,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7476,7 +8008,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -9286,57 +9819,79 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 24
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "975b29b132884795944b",
+      "selectedPublishedAt": "2026-11-23T23:28:19.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 34,
-      "originalSummaries": 34,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 11,
+      "rejectionReasons": {
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
       "status": "ok",
-      "itemCount": 0,
-      "attempted": 0,
+      "itemCount": 2,
+      "attempted": 2,
       "rejected": 0,
       "failures": 0,
       "stages": {
-        "evidence": 0,
-        "analysis": 0,
-        "audit": 0
+        "evidence": 2,
+        "analysis": 2,
+        "audit": 2
       },
       "rejectionReasons": {}
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 69,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 69,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 67,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 93,
-      "attempted": 0,
-      "succeeded": 0,
+      "eligible": 72,
+      "attempted": 2,
+      "succeeded": 2,
       "rejected": 0,
       "failed": 0,
-      "skipped": 93,
-      "successRate": null
+      "skipped": 70,
+      "successRate": 1
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
