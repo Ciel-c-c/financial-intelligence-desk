@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-25T08:28:52.512Z",
+  "attemptedAt": "2026-11-25T08:29:24.942Z",
   "lastSuccessfulAt": "2026-11-25T08:28:52.512Z",
   "nextExpectedAt": "2026-11-25T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-25T08:28:52.512Z",
   "status": "delayed",
   "latest": [
     {
@@ -41,7 +43,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -87,7 +90,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -140,8 +144,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-25T08:28:52.512Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "paired-evidence"
       },
       "factualSummary": {
         "language": "en",
@@ -158,7 +163,22 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "paired-evidence",
+        "attemptedAt": "2026-11-25T08:29:24.942Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "b50ba8a0de05006557e64afacdd1ed2a7d01395f0e0b565cee7ed6134bb92f37",
+        "count": 1,
+        "lastAttemptAt": "2026-11-25T08:28:52.512Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[0].numbers"
+          ]
+        }
       }
     },
     {
@@ -197,7 +217,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -243,7 +264,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -281,7 +303,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -337,8 +360,8 @@
       "analysisAttempt": {
         "reviewVersion": "edge-audit-v4",
         "sourceBodyHash": "77f2b17edd908b31a76556075dcc91e346194f93f955960715b6e3e5dbdc839d",
-        "count": 1,
-        "lastAttemptAt": "2026-11-24T22:24:07.752Z",
+        "count": 2,
+        "lastAttemptAt": "2026-11-25T08:28:52.512Z",
         "rejection": {
           "stage": "analysis",
           "category": "unsupported-attribution",
@@ -347,8 +370,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-24T22:24:07.752Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "translation-unavailable"
       },
       "factualSummary": {
         "language": "en",
@@ -365,7 +389,9 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "translation-unavailable",
+        "attemptedAt": "2026-11-25T08:29:24.942Z"
       }
     },
     {
@@ -456,7 +482,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -747,7 +774,7 @@
         "reader": "cnfin-body",
         "sha256": "719818db91872a02cebd54b2d72ef38416a4dba0928bc2c26bd18614d62084c5",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261125/4500129_1.html",
-        "checkedAt": "2026-11-25T08:28:52.512Z"
+        "checkedAt": "2026-11-25T08:29:24.942Z"
       },
       "id": "c5b2fa0f34495a5b43e1",
       "verificationStatus": "verified",
@@ -913,7 +940,7 @@
         "reader": "cnfin-body",
         "sha256": "bbcdd75f822101043895bfb58e433a85d8441ddd5068f8e29b503c528ea40811",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261125/4500101_1.html",
-        "checkedAt": "2026-11-25T08:28:52.512Z"
+        "checkedAt": "2026-11-25T08:29:24.942Z"
       },
       "id": "322e611a043cd73dcbad",
       "verificationStatus": "verified",
@@ -2147,7 +2174,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -2493,7 +2521,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -2543,7 +2572,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -2593,7 +2623,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -2643,7 +2674,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -2693,7 +2725,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -2743,7 +2776,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -2936,7 +2970,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -4933,7 +4968,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -8764,7 +8800,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -11456,57 +11493,83 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 24
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "cb0c4930d9f75bdbe6ea",
+      "selectedPublishedAt": "2026-11-25T08:10:56.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
-      "status": "ok",
-      "itemCount": 26,
-      "originalSummaries": 26,
-      "attempted": 0,
+      "status": "error",
+      "itemCount": 0,
+      "originalSummaries": 0,
+      "attempted": 2,
       "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "requests": 6,
+      "rejectionReasons": {
+        "paired-evidence": 1,
+        "translation-unavailable": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "facts": 1,
+        "unsupported-attribution": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 79,
-      "attempted": 0,
+      "attempted": 2,
       "succeeded": 0,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 79,
-      "successRate": null
+      "rejected": 2,
+      "skipped": 77,
+      "successRate": 0
     },
     "analysis": {
-      "eligible": 103,
-      "attempted": 0,
+      "eligible": 82,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 103,
-      "successRate": null
+      "skipped": 80,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
