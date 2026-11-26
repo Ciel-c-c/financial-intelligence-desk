@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-26T21:28:57.757Z",
+  "attemptedAt": "2026-11-26T21:29:34.983Z",
   "lastSuccessfulAt": "2026-11-26T21:28:57.757Z",
   "nextExpectedAt": "2026-11-27T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-26T21:28:57.757Z",
   "status": "delayed",
   "latest": [
     {
@@ -42,7 +44,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un-zh",
@@ -105,6 +108,19 @@
         "summary": "第三届联合国大学澳门人工智能大会11月25日至26日在澳门举行，来自全球的400多名政策制定者、教育工作者、学者和青年创新者齐聚一堂，探讨如何利用人工智能促进教育发展，同时确保技术应用符合人的主体性、社会公平和信任等原则。",
         "origin": "publisher-zh",
         "evidence": []
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "6d661a92ea5fe84318e7af1a48d3f9bcee9d853544c4dd2059a7a1d0b711d1e1",
+        "count": 1,
+        "lastAttemptAt": "2026-11-26T21:28:57.757Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "impact-assessment",
+          "fields": [
+            "personalImpact[0].score"
+          ]
+        }
       }
     },
     {
@@ -155,7 +171,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -205,7 +222,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -255,7 +273,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -318,7 +337,53 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-26T21:29:34.983Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Microdrama apps chase profits as Hollywood moves into short-form, vertical video",
+        "sourceUrl": "https://www.cnbc.com/2026/11/26/micro-drama-apps-hollywood-vertical-video.html",
+        "publishedAt": "2026-11-26T18:27:43.000Z",
+        "sourceHash": "377d80ca22feab721610b1d3a4064bfe0abc4b085fcca08b0611259f07b4a4e1",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-26T21:29:34.983Z",
+        "title": "微剧应用追求利润，Hollywood转向短视频垂直格式",
+        "summary": "微剧应用正积极追求盈利，Hollywood正向短篇垂直视频转型。微剧类别在传统媒体兴趣下降的背景下迅速增长。与此同时，YouTube声称其观看时长在增加。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "微剧应用正积极追求盈利，Hollywood正向短篇垂直视频转型。",
+            "quote": "Microdrama apps chase profits as Hollywood moves into short-form, vertical video"
+          },
+          {
+            "text": "微剧类别在传统媒体兴趣下降的背景下迅速增长。",
+            "quote": "The microdrama category has exploded at a time when traditional forms of media face waning interest and YouTube claims"
+          },
+          {
+            "text": "YouTube声称其观看时长在增加。",
+            "quote": "of media face waning interest and YouTube claims more viewing hours."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "377d80ca22feab721610b1d3a4064bfe0abc4b085fcca08b0611259f07b4a4e1",
+        "count": 1,
+        "lastAttemptAt": "2026-11-26T21:28:57.757Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "language",
+          "fields": [
+            "title",
+            "excerpt"
+          ]
+        }
       }
     },
     {
@@ -421,21 +486,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "New UK-EU treaty has 10-year termination clause",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-26T15:23:17.000Z",
         "sourceHash": "e5a51bff265670ec86b17087824149ccfcd231e2894f19144466d41d1eb935db",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-26T21:28:57.757Z",
-        "title": "New UK-EU treaty has 10-year termination clause",
-        "summary": "Text of the treaties was published this afternoon, alongside legislation designed to enact the bulk of the deal.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-26T21:29:34.983Z",
+        "title": "英欧新条约设十年终止条款",
+        "summary": "新签署的英欧条约包含十年的终止条款。条约文本于今日下午公布，同时发布了旨在实施该协议大部分内容的立法。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "该条约设有十年的终止条款。",
+            "quote": "New UK-EU treaty has 10-year termination clause"
+          },
+          {
+            "text": "条约文本今日下午发布，并伴随用于实施协议主要内容的立法。",
+            "quote": "Text of the treaties was published this afternoon, alongside legislation designed to enact the bulk of the deal."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-26T21:29:34.983Z"
       }
     },
     {
@@ -1222,7 +1301,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1554,7 +1634,7 @@
         "reader": "cnfin-body",
         "sha256": "6ce6c5ddeb1b618a10f0f74541e1b41b2ec9ce61a4fbb65931e333992e14ad3b",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261126/4500902_1.html",
-        "checkedAt": "2026-11-26T21:28:57.757Z"
+        "checkedAt": "2026-11-26T21:29:34.983Z"
       },
       "id": "e157876255195738d455",
       "verificationStatus": "verified",
@@ -1680,7 +1760,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -1823,7 +1904,7 @@
         "reader": "cnfin-body",
         "sha256": "62e2a77bc8113e4471cfe309725375cf4ee1b2cee77299b225b7e4a022359c60",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261126/4500871_1.html",
-        "checkedAt": "2026-11-26T21:28:57.757Z"
+        "checkedAt": "2026-11-26T21:29:34.983Z"
       },
       "id": "314157c69709bd9f99c1",
       "verificationStatus": "verified",
@@ -6863,7 +6944,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -7507,7 +7589,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -7976,7 +8059,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -8088,7 +8172,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -9718,7 +9803,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9768,7 +9854,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9818,7 +9905,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -9868,7 +9956,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     }
   ],
   "sourceHealth": [
@@ -9953,57 +10042,80 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 20
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "55a8b35aac718f6062e9",
+      "selectedPublishedAt": "2026-11-26T12:00:00.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 32,
-      "originalSummaries": 32,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 10,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "impact-assessment": 1,
+        "language": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 82,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 82,
-      "successRate": null
+      "skipped": 80,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 99,
-      "attempted": 0,
+      "eligible": 83,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 99,
-      "successRate": null
+      "skipped": 81,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
