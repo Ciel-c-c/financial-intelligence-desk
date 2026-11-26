@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-25T21:40:03.993Z",
-  "lastSuccessfulAt": "2026-11-25T21:39:28.264Z",
+  "attemptedAt": "2026-11-26T08:12:39.078Z",
+  "lastSuccessfulAt": "2026-11-26T08:12:39.078Z",
   "status": "delayed",
   "datasets": [
     {
@@ -22,7 +22,7 @@
     {
       "id": "news-feed",
       "status": "delayed",
-      "lastSuccessfulAt": "2026-11-25T21:39:28.264Z"
+      "lastSuccessfulAt": "2026-11-26T08:12:39.078Z"
     }
   ],
   "sourceHealth": [
@@ -132,8 +132,9 @@
     {
       "id": "news-nbs-cn",
       "name": "国家统计局（新闻）",
-      "status": "ok",
-      "itemCount": 50
+      "status": "error",
+      "itemCount": 0,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "news-fed",
@@ -151,7 +152,7 @@
       "id": "news-boj",
       "name": "Bank of Japan（新闻）",
       "status": "ok",
-      "itemCount": 45
+      "itemCount": 46
     },
     {
       "id": "news-un",
@@ -163,7 +164,7 @@
       "id": "news-bbc-world",
       "name": "BBC News · 世界（新闻）",
       "status": "ok",
-      "itemCount": 32
+      "itemCount": 30
     },
     {
       "id": "news-bbc-business",
@@ -185,55 +186,30 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
-      "id": "news-published-evidence",
-      "name": "Published evidence recheck（新闻）",
-      "status": "error",
-      "itemCount": 2,
-      "attempted": 2,
-      "unavailable": 0,
-      "invalidated": 35
-    },
-    {
-      "id": "news-review-queue",
-      "name": "复审队列诊断（新闻）",
-      "status": "ok",
-      "itemCount": 0,
-      "withBody": 0,
-      "withoutBody": 0,
-      "selectedId": "933001feac0800241ab4",
-      "selectedPublishedAt": "2026-11-25T21:26:36.000Z",
-      "selectedIsCurrent": true
-    },
-    {
       "id": "news-groq-summary",
       "name": "来源事实总结与中文整理（新闻）",
       "status": "ok",
-      "itemCount": 1,
-      "originalSummaries": 0,
-      "attempted": 2,
-      "generated": 1,
-      "requests": 9,
-      "rejectionReasons": {
-        "summary-length": 1
-      }
+      "itemCount": 27,
+      "originalSummaries": 27,
+      "attempted": 0,
+      "generated": 0,
+      "requests": 0,
+      "rejectionReasons": {}
     },
     {
       "id": "news-groq-editorial",
       "name": "Groq 新闻摘要与机制解读（新闻）",
-      "status": "error",
+      "status": "ok",
       "itemCount": 0,
-      "error": "Provider JSON-generation failure",
-      "attempted": 2,
-      "rejected": 1,
-      "failures": 1,
+      "attempted": 0,
+      "rejected": 0,
+      "failures": 0,
       "stages": {
-        "evidence": 2,
+        "evidence": 0,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {
-        "unsupported-attribution": 1
-      }
+      "rejectionReasons": {}
     }
   ],
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
