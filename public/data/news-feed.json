@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-27T08:25:35.674Z",
+  "attemptedAt": "2026-11-27T08:26:13.524Z",
   "lastSuccessfulAt": "2026-11-27T08:25:35.674Z",
   "nextExpectedAt": "2026-11-27T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-27T08:25:35.674Z",
   "status": "delayed",
   "latest": [
     {
@@ -45,7 +47,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "boj",
@@ -83,7 +86,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -148,7 +152,7 @@
         "reader": "cnfin-body",
         "sha256": "ea6ca08d2e563d52c50b81659b5770fee5652ca58aa6d466db1225cfd9205f8a",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261127/4501262_1.html",
-        "checkedAt": "2026-11-27T08:25:35.674Z"
+        "checkedAt": "2026-11-27T08:26:13.524Z"
       },
       "id": "ca2bc2d9e333c8170649",
       "verificationStatus": "verified",
@@ -176,6 +180,19 @@
         "firstSeenAt": "2026-11-27T08:25:35.674Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "ea6ca08d2e563d52c50b81659b5770fee5652ca58aa6d466db1225cfd9205f8a",
+        "count": 1,
+        "lastAttemptAt": "2026-11-27T08:26:13.524Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "impact-assessment",
+          "fields": [
+            "personalImpact[1].audience"
+          ]
+        }
       }
     },
     {
@@ -194,7 +211,7 @@
         "reader": "cnfin-body",
         "sha256": "cc5ae2b3b8a140757d7b948932220c929a3382e1cff3131684ec3c0e146729ba",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261127/4501257_1.html",
-        "checkedAt": "2026-11-27T08:25:35.674Z"
+        "checkedAt": "2026-11-27T08:26:13.524Z"
       },
       "id": "63ae56c62c50357f7f91",
       "verificationStatus": "verified",
@@ -222,6 +239,19 @@
         "firstSeenAt": "2026-11-27T08:25:35.674Z",
         "summaryAttempt": 0,
         "summaryAttemptVersion": "chinese-first-v2"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "cc5ae2b3b8a140757d7b948932220c929a3382e1cff3131684ec3c0e146729ba",
+        "count": 1,
+        "lastAttemptAt": "2026-11-27T08:26:13.524Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[0].numbers"
+          ]
+        }
       }
     },
     {
@@ -271,7 +301,39 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-27T08:26:13.524Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Private markets are more accessible than ever for investors. Getting out is another matter",
+        "sourceUrl": "https://www.cnbc.com/2026/11/27/private-markets-retail-investors-liquidity.html",
+        "publishedAt": "2026-11-27T08:05:09.000Z",
+        "sourceHash": "68c8a5d5ed0dafc0269bc80c687328b1482c79c8315cb4a680587abbfaf4c915",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-27T08:26:13.524Z",
+        "title": "私募市场对散户更开放，但退出困难",
+        "summary": "私募市场的进入门槛已大幅降低，散户投资者的参与度不断提升。然而，PwC指出，投资者教育仍不足，赎回限制导致流动性风险凸显，退出私募资产仍面临挑战。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "私募市场对投资者的可进入性达到史上最高，但退出时面临困难。",
+            "quote": "Private markets are more accessible than ever for investors. Getting out is another matter"
+          },
+          {
+            "text": "散户对私募市场的接触在增长，PwC表示教育仍滞后，赎回限制使流动性风险受到关注。",
+            "quote": "Retail access to private markets is growing, but PwC says education lags as redemption limits put liquidity risks in"
+          },
+          {
+            "text": "赎回限制将流动性风险置于焦点。",
+            "quote": "lags as redemption limits put liquidity risks in focus."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       }
     },
     {
@@ -413,21 +475,35 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "factualSummary": {
-        "language": "en",
+        "language": "zh",
         "originalTitle": "My self-care ritual is a meal at a fancy restaurant - on my own",
         "sourceUrl": "https://www.bbc.co.uk/news/articles/cw8dv11dp2yeo?at_medium=RSS&at_campaign=rss",
         "publishedAt": "2026-11-27T07:46:02.000Z",
         "sourceHash": "6a420629147be32cbf74a365368c81f817d639c1bf4f5f0e2c474b60ce940833",
         "evidenceScope": "summary",
         "reviewVersion": "factual-v1",
-        "checkedAt": "2026-11-27T08:25:35.674Z",
-        "title": "My self-care ritual is a meal at a fancy restaurant - on my own",
-        "summary": "Solo-dining is being embraced as a self-care trend and it's reshaping the restaurant industry.",
-        "origin": "publisher-en",
-        "evidence": []
+        "checkedAt": "2026-11-27T08:26:13.524Z",
+        "title": "独自享用高档餐厅餐点成为自我护理仪式",
+        "summary": "个人将独自前往高档餐厅用餐视为自我护理仪式；单人用餐正被视为自我护理潮流，并正在改变餐饮业的运营方式。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "她把独自去高档餐厅用餐当作自我护理的仪式。",
+            "quote": "My self-care ritual is a meal at a fancy restaurant - on my own"
+          },
+          {
+            "text": "单人用餐被视为自我护理趋势，正在重塑餐饮业。",
+            "quote": "Solo-dining is being embraced as a self-care trend and it's reshaping the restaurant industry."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-27T08:26:13.524Z"
       }
     },
     {
@@ -1423,7 +1499,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1683,7 +1760,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1733,7 +1811,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -1783,7 +1862,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -3718,7 +3798,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -7506,7 +7587,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -8471,57 +8553,80 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 13
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "ca2bc2d9e333c8170649",
+      "selectedPublishedAt": "2026-11-27T08:19:32.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 16,
-      "originalSummaries": 16,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
+      "itemCount": 2,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 2,
+      "requests": 8,
       "rejectionReasons": {}
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "impact-assessment": 1,
+        "facts": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 60,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 2,
       "failed": 0,
       "rejected": 0,
-      "skipped": 60,
-      "successRate": null
+      "skipped": 58,
+      "successRate": 1
     },
     "analysis": {
-      "eligible": 78,
-      "attempted": 0,
+      "eligible": 62,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 78,
-      "successRate": null
+      "skipped": 60,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
