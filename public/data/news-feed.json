@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-27T21:14:51.609Z",
+  "attemptedAt": "2026-11-27T21:15:23.903Z",
   "lastSuccessfulAt": "2026-11-27T21:14:51.609Z",
   "nextExpectedAt": "2026-11-28T00:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-27T21:14:51.609Z",
   "status": "delayed",
   "latest": [
     {
@@ -50,7 +52,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -100,7 +103,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -150,7 +154,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -203,8 +208,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-27T21:14:51.609Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-length"
       },
       "factualSummary": {
         "language": "en",
@@ -221,7 +227,22 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-length",
+        "attemptedAt": "2026-11-27T21:15:23.903Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "06aad0bde7d41b7bed481eb5140c79d0b9eda84dc00917eeaba9b247fc3bd9fd",
+        "count": 1,
+        "lastAttemptAt": "2026-11-27T21:14:51.609Z",
+        "rejection": {
+          "stage": "evidence",
+          "category": "facts",
+          "fields": [
+            "facts[0].numbers"
+          ]
+        }
       }
     },
     {
@@ -278,7 +299,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -333,7 +355,56 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-27T21:15:23.903Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "EU leaders fail to break $1.7 trillion budget deadlock as political pressure mounts",
+        "sourceUrl": "https://www.cnbc.com/2026/11/27/eu-budget-2028-2034-deadlock.html",
+        "publishedAt": "2026-11-27T14:12:55.000Z",
+        "sourceHash": "1973409b44e3a64980b6d17c70c8cb0916ce9e62133aa2456219ca39c35625e4",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-27T21:15:23.903Z",
+        "title": "欧盟领袖未能打破1.7万亿美元预算僵局，政治压力加剧",
+        "summary": "欧盟领袖未能突破约1.7万亿美元的预算僵局，导致政治压力上升。各方计划在十二月重新启动谈判，以应对即将到来的关键期限。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "欧盟领袖未能打破约1.7万亿美元的预算僵局，政治压力随之加大。",
+            "quote": "EU leaders fail to break $1.7 trillion budget deadlock as political pressure mounts"
+          },
+          {
+            "text": "谈判计划在十二月重新启动，以应对关键期限的临近。",
+            "quote": "EU leaders failed to break a deadlock over the bloc’s budget, with talks set to resume in December as a key deadline"
+          },
+          {
+            "text": "由于关键期限迫在眉睫，谈判将在十二月恢复。",
+            "quote": "talks set to resume in December as a key deadline looms."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "1973409b44e3a64980b6d17c70c8cb0916ce9e62133aa2456219ca39c35625e4",
+        "count": 1,
+        "lastAttemptAt": "2026-11-27T21:14:51.609Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "numbers",
+          "fields": [
+            "inference",
+            "watchItems",
+            "causalChain",
+            "soWhat.marketBet",
+            "soWhat.personalImpact"
+          ]
+        }
       }
     },
     {
@@ -568,7 +639,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -620,7 +692,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1070,7 +1143,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1120,7 +1194,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1288,7 +1363,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -1622,7 +1698,7 @@
         "reader": "cnfin-body",
         "sha256": "c75db09ab85d4ca088e3baee41b36b8693ecd925d78cf22949437f62892218e1",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261127/4501534_1.html",
-        "checkedAt": "2026-11-27T21:14:51.609Z"
+        "checkedAt": "2026-11-27T21:15:23.903Z"
       },
       "id": "4125be359639f9dfe501",
       "verificationStatus": "verified",
@@ -1666,7 +1742,7 @@
         "reader": "cnfin-body",
         "sha256": "059a72f1e3232c018c2b720023d1cd378f3526e5fa2009c7d1429a62f154ef97",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261127/4501523_1.html",
-        "checkedAt": "2026-11-27T21:14:51.609Z"
+        "checkedAt": "2026-11-27T21:15:23.903Z"
       },
       "id": "9904c54674c5e49cab36",
       "verificationStatus": "verified",
@@ -2544,7 +2620,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -6383,7 +6460,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -6655,7 +6733,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -7053,7 +7132,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7103,7 +7183,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -7153,7 +7234,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -8715,57 +8797,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 23
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "1ad6ef2e308c8ddb8205",
+      "selectedPublishedAt": "2026-11-27T16:05:32.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 22,
-      "originalSummaries": 22,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 7,
+      "rejectionReasons": {
+        "summary-length": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
+      "attempted": 2,
+      "rejected": 2,
       "failures": 0,
       "stages": {
-        "evidence": 0,
+        "evidence": 1,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "facts": 1,
+        "numbers": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 53,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 53,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 51,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 75,
-      "attempted": 0,
+      "eligible": 55,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
+      "rejected": 2,
       "failed": 0,
-      "skipped": 75,
-      "successRate": null
+      "skipped": 53,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
