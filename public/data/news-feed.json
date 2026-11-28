@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
-  "attemptedAt": "2026-11-28T07:44:05.595Z",
+  "attemptedAt": "2026-11-28T07:44:44.597Z",
   "lastSuccessfulAt": "2026-11-28T07:44:05.595Z",
   "nextExpectedAt": "2026-11-28T12:17:00.000Z",
+  "processingMode": "published",
+  "sourceSnapshotAt": "2026-11-28T07:44:05.595Z",
   "status": "delayed",
   "latest": [
     {
@@ -21,7 +23,7 @@
         "reader": "cnfin-body",
         "sha256": "17e06942dfcbeefe0cf00b0e6277b5576d2b41ab9fa8516adeb9f96eed902c66",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261128/4501728_1.html",
-        "checkedAt": "2026-11-28T07:44:05.595Z"
+        "checkedAt": "2026-11-28T07:44:44.597Z"
       },
       "id": "89922255762683b5f25f",
       "verificationStatus": "verified",
@@ -94,8 +96,9 @@
       },
       "queue": {
         "firstSeenAt": "2026-11-28T07:44:05.595Z",
-        "summaryAttempt": 0,
-        "summaryAttemptVersion": "chinese-first-v2"
+        "summaryAttempt": 1,
+        "summaryAttemptVersion": "chinese-first-v2",
+        "summaryRejection": "summary-audit"
       },
       "factualSummary": {
         "language": "en",
@@ -112,7 +115,22 @@
         "evidence": []
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "rejected",
+        "reason": "summary-audit",
+        "attemptedAt": "2026-11-28T07:44:44.597Z"
+      },
+      "analysisAttempt": {
+        "reviewVersion": "edge-audit-v4",
+        "sourceBodyHash": "858408a8ea75f400d5f3dd9ff0dec74e7a1c9eaee0f8c493407f6b24f6d9ecef",
+        "count": 1,
+        "lastAttemptAt": "2026-11-28T07:44:05.595Z",
+        "rejection": {
+          "stage": "analysis",
+          "category": "language",
+          "fields": [
+            "title"
+          ]
+        }
       }
     },
     {
@@ -176,7 +194,39 @@
         "summaryAttemptVersion": "chinese-first-v2"
       },
       "chineseSummary": {
-        "status": "pending"
+        "status": "complete",
+        "attemptedAt": "2026-11-28T07:44:44.597Z"
+      },
+      "factualSummary": {
+        "language": "zh",
+        "originalTitle": "Inflation has shoppers hunting for value. That bodes well for Black Friday",
+        "sourceUrl": "https://www.cnbc.com/2026/11/27/black-friday-2026-inflation-value-deals.html",
+        "publishedAt": "2026-11-27T22:00:57.000Z",
+        "sourceHash": "5e018026bacc26c15590637d7c538c9e27711d54bd7ae74bee391909b5105e5e",
+        "evidenceScope": "summary",
+        "reviewVersion": "factual-v1",
+        "checkedAt": "2026-11-28T07:44:44.597Z",
+        "title": "通胀促消费者追求性价比，利好黑色星期五",
+        "summary": "通胀使消费者更注重价值，预计在宏观经济压力下，零售商仍看好黑色星期五及其后的假日消费表现。",
+        "origin": "model",
+        "evidence": [
+          {
+            "text": "通胀让购物者更倾向于寻找性价比高的商品。",
+            "quote": "Inflation has shoppers hunting for value. That bodes well for Black Friday"
+          },
+          {
+            "text": "尽管消费者面临宏观经济逆风，零售商仍预期假日支出将保持强劲。",
+            "quote": "Even as consumers face macroeconomic headwinds, retailers are expecting robust holiday spending through Black Friday and"
+          },
+          {
+            "text": "零售商预计黑色星期五及其后期的假日消费将保持活跃。",
+            "quote": "expecting robust holiday spending through Black Friday and beyond."
+          }
+        ],
+        "review": {
+          "approved": true,
+          "model": "openai/gpt-oss-20b"
+        }
       }
     },
     {
@@ -299,7 +349,7 @@
         "reader": "cnfin-body",
         "sha256": "28388105cd40216ec376bd635090f2b9fc93e5f6c181c89502dd45d6256681bb",
         "sourceUrl": "https://www.cnfin.com/yw-lb/detail/20261128/4501685_1.html",
-        "checkedAt": "2026-11-28T07:44:05.595Z"
+        "checkedAt": "2026-11-28T07:44:44.597Z"
       },
       "id": "f25ad82934f47e840b47",
       "verificationStatus": "verified",
@@ -372,7 +422,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -944,7 +995,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "un",
@@ -994,7 +1046,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnfin",
@@ -1573,7 +1626,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -1881,7 +1935,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2407,7 +2462,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-world",
@@ -2575,7 +2631,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5817,7 +5874,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "cnbc-markets",
@@ -5969,7 +6027,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     },
     {
       "sourceId": "bbc-business",
@@ -7992,7 +8051,8 @@
       },
       "chineseSummary": {
         "status": "pending"
-      }
+      },
+      "invalidationReason": "source-policy-expired"
     }
   ],
   "sourceHealth": [
@@ -8077,57 +8137,82 @@
       "error": "The encoded data was not valid for encoding utf-8"
     },
     {
+      "id": "published-evidence",
+      "name": "Published evidence recheck",
+      "status": "error",
+      "itemCount": 2,
+      "attempted": 2,
+      "unavailable": 0,
+      "invalidated": 17
+    },
+    {
+      "id": "review-queue",
+      "name": "复审队列诊断",
+      "status": "ok",
+      "itemCount": 0,
+      "withBody": 0,
+      "withoutBody": 0,
+      "selectedId": "89922255762683b5f25f",
+      "selectedPublishedAt": "2026-11-28T07:34:02.000Z",
+      "selectedIsCurrent": true
+    },
+    {
       "id": "groq-summary",
       "name": "来源事实总结与中文整理",
       "status": "ok",
-      "itemCount": 14,
-      "originalSummaries": 14,
-      "attempted": 0,
-      "generated": 0,
-      "requests": 0,
-      "rejectionReasons": {}
+      "itemCount": 1,
+      "originalSummaries": 0,
+      "attempted": 2,
+      "generated": 1,
+      "requests": 10,
+      "rejectionReasons": {
+        "summary-audit": 1
+      }
     },
     {
       "id": "groq-editorial",
       "name": "Groq 新闻摘要与机制解读",
-      "status": "ok",
+      "status": "error",
       "itemCount": 0,
-      "attempted": 0,
-      "rejected": 0,
-      "failures": 0,
+      "error": "Provider JSON-generation failure",
+      "attempted": 2,
+      "rejected": 1,
+      "failures": 1,
       "stages": {
-        "evidence": 0,
+        "evidence": 2,
         "analysis": 0,
         "audit": 0
       },
-      "rejectionReasons": {}
+      "rejectionReasons": {
+        "language": 1
+      }
     }
   ],
-  "publicationPhase": "source",
+  "publicationPhase": "analysis",
   "runMetrics": {
     "fetch": {
-      "attempted": 13,
-      "succeeded": 11,
-      "failed": 2,
-      "successRate": 0.8461538461538461
+      "attempted": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "successRate": null
     },
     "translation": {
       "eligible": 40,
-      "attempted": 0,
-      "succeeded": 0,
+      "attempted": 2,
+      "succeeded": 1,
       "failed": 0,
-      "rejected": 0,
-      "skipped": 40,
-      "successRate": null
+      "rejected": 1,
+      "skipped": 38,
+      "successRate": 0.5
     },
     "analysis": {
-      "eligible": 68,
-      "attempted": 0,
+      "eligible": 48,
+      "attempted": 2,
       "succeeded": 0,
-      "rejected": 0,
-      "failed": 0,
-      "skipped": 68,
-      "successRate": null
+      "rejected": 1,
+      "failed": 1,
+      "skipped": 46,
+      "successRate": 0
     }
   },
   "message": "部分新闻来源暂时异常，已发布其余可靠来源。"
